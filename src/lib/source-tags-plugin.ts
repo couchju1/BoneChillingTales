@@ -19,7 +19,8 @@ const citation = (group: string): Node => {
         ],
       });
     });
-  return { type: "cite", data: { hName: "sup", hProperties: { className: ["cite"] } }, children: links };
+  // Citations stay out of search excerpts.
+  return { type: "cite", data: { hName: "sup", hProperties: { className: ["cite"], "data-pagefind-ignore": "index" } }, children: links };
 };
 
 /** Turns [S3] and [S2, S5] in story text into superscript links to the source list. */

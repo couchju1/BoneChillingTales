@@ -7,7 +7,7 @@ import { sourceTags } from "./src/lib/source-tags-plugin.ts";
 import seoAudit from "./src/integrations/seo-audit.ts";
 
 // Pages that say noindex stay out of the sitemap too.
-const NOT_IN_SITEMAP = ["/404/", "/suggest/sent/"];
+const NOT_IN_SITEMAP = ["/404/", "/search/", "/suggest/sent/"];
 
 export default defineConfig({
   site: site.domain,

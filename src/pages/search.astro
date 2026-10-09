@@ -1,0 +1,213 @@
+---
+import Base from "../layouts/Base.astro";
+import "../styles/forms.css";
+---
+
+<Base
+  title="Search | Bone Chilling Tales"
+  description="Search every Bone Chilling Tales story and case update by name, town, state or year."
+  noindex
+>
+  <div class="search wrap">
+    <h1>Search</h1>
+    <form role="search" action="/search/" method="get" data-search-form>
+      <div class="field">
+        <label for="q">Search the stories</label>
+        <div class="row">
+          <input id="q" name="q" type="search" autocomplete="off" spellcheck="false" aria-describedby="q-hint" />
+          <button type="submit" class="btn-primary">Search</button>
+        </div>
+        <span class="hint" id="q-hint">A person's name, a town, a state or a year.</span>
+      </div>
+    </form>
+
+    <noscript>
+      <p class="note">Search needs JavaScript. You can still <a href="/cases/">browse every case</a>.</p>
+    </noscript>
+
+    <p class="status ui" role="status" aria-live="polite" data-search-status></p>
+    <ol class="results" data-search-results></ol>
+    <p class="note" data-search-empty hidden>
+      Nothing matched that. Try a person's name, a town or a state, or <a href="/cases/">browse every case</a>.
+    </p>
+  </div>
+</Base>
+
+<script>
+  interface PagefindResult {
+    data(): Promise<{ url: string; excerpt: string; meta: Record<string, string> }>;
+  }
+  interface Pagefind {
+    options(o: object): Promise<void>;
+    search(q: string): Promise<{ results: PagefindResult[] }>;
+  }
+
+  const MAX = 20;
+  const STATUS: Record<string, string> = { Unsolved: "unsolved", Missing: "missing", Solved: "solved", "In court": "in-court" };
+  const form = document.querySelector<HTMLFormElement>("[data-search-form]")!;
+  const input = form.querySelector<HTMLInputElement>("#q")!;
+  const status = document.querySelector<HTMLElement>("[data-search-status]")!;
+  const list = document.querySelector<HTMLOListElement>("[data-search-results]")!;
+  const empty = document.querySelector<HTMLElement>("[data-search-empty]")!;
+  const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+  // The index only exists in a built site, not under `npm run dev`.
+  const path = "/pagefind/pagefind.js";
+  const pagefind: Promise<Pagefind | null> = import(/* @vite-ignore */ path)
+    .then(async (pf: Pagefind) => {
+      await pf.options({ excerptLength: 24 });
+      return pf;
+    })
+    .catch(() => null);
+
+  let latest = 0;
+  async function run(query: string) {
+    const id = ++latest;
+    const q = query.trim();
+    history.replaceState(null, "", q ? `?q=${encodeURIComponent(q)}` : location.pathname);
+    if (!q) {
+      list.innerHTML = "";
+      empty.hidden = true;
+      status.textContent = "";
+      return;
+    }
+    const pf = await pagefind;
+    if (!pf) {
+      status.textContent = "Search isn't available right now. Try browsing every case instead.";
+      return;
+    }
+    const search = await pf.search(q);
+    const data = await Promise.all(search.results.slice(0, MAX).map((r) => r.data()));
+    if (id !== latest) return; // a newer search started while this one ran
+
+    list.innerHTML = data
+      .map((d) => {
+        const kind = STATUS[d.meta.status ?? ""];
+        const chip = kind
+          ? `<span class="chip chip-${kind}">${esc(d.meta.status!)}</span>`
+          : d.meta.status
+            ? `<span class="tag">${esc(d.meta.status)}</span>`
+            : "";
+        return (
+          `<li><h2><a href="${esc(d.url)}">${esc(d.meta.title ?? d.url)}</a></h2>` +
+          `<p class="meta ui">${chip}${d.meta.place ? `<span>${esc(d.meta.place)}</span>` : ""}</p>` +
+          // Pagefind escapes the page text and only adds <mark> around matches.
+          `<p class="excerpt">${d.excerpt}</p></li>`
+        );
+      })
+      .join("");
+    const total = search.results.length;
+    empty.hidden = total > 0;
+    status.textContent =
+      total === 0
+        ? ""
+        : total > MAX
+          ? `Showing the top ${MAX} of ${total} results.`
+          : `${total} ${total === 1 ? "result" : "results"}.`;
+  }
+
+  let timer: number | undefined;
+  input.addEventListener("input", () => {
+    clearTimeout(timer);
+    timer = window.setTimeout(() => run(input.value), 200);
+  });
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    clearTimeout(timer);
+    run(input.value);
+  });
+
+  const initial = new URLSearchParams(location.search).get("q") ?? "";
+  if (initial) {
+    input.value = initial;
+    run(initial);
+  } else {
+    input.focus();
+  }
+</script>
+
+<style>
+  .search {
+    padding-top: var(--space-l);
+    max-width: calc(var(--measure) + 2 * var(--space-s));
+  }
+
+  h1 {
+    font-size: var(--step-5);
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs);
+  }
+
+  .row input {
+    flex: 1 1 14rem;
+    width: auto;
+    font-size: var(--step-0);
+  }
+
+  .status {
+    min-height: 1.5em;
+    color: var(--color-ash);
+  }
+
+  .note {
+    color: var(--color-ash);
+  }
+
+  .results {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .results :global(li) {
+    padding-block: var(--space-m);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .results :global(h2) {
+    margin-bottom: var(--space-2xs);
+    font-size: var(--step-2);
+  }
+
+  .results :global(h2 a) {
+    color: var(--color-bone);
+    text-decoration: none;
+  }
+
+  .results :global(h2 a:hover) {
+    color: var(--color-ember);
+  }
+
+  .results :global(.meta) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs) var(--space-s);
+    margin-bottom: var(--space-2xs);
+    color: var(--color-ash);
+  }
+
+  .results :global(.tag) {
+    color: var(--color-lamp);
+    font-weight: 600;
+  }
+
+  .results :global(.excerpt) {
+    margin: 0;
+    color: var(--color-ash);
+    font-size: var(--step--1);
+    line-height: 1.5;
+  }
+
+  .results :global(mark) {
+    background: none;
+    color: var(--color-bone);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--color-ember);
+  }
+</style>

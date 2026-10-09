@@ -74,26 +74,35 @@ const video =
   jsonLd={video ? [article, video] : [article]}
   noindex={data.draft}
 >
-  <article class="story wrap">
-    {data.draft && <p class="draft-banner ui">Draft preview. This story isn't published.</p>}
+  <article class="story wrap" data-pagefind-body>
+    {data.draft && <p class="draft-banner ui" data-pagefind-ignore>Draft preview. This story isn't published.</p>}
 
     <header class="story-header">
-      <Breadcrumbs
+      <!-- Search shows these with each result. -->
+      <span hidden data-pagefind-ignore data-pagefind-meta="status">{site.statuses[data.status].label}</span>
+      <span hidden data-pagefind-ignore data-pagefind-meta="place">{data.town}, {data.state}</span>
+      <div data-pagefind-ignore>
+        <Breadcrumbs
         items={[
           { name: "Cases", href: "/cases/" },
           { name: stateName, href: `/states/${data.state.toLowerCase()}/` },
           { name: data.person },
         ]}
       />
-      <CaseStatusLine data={data} />
+      </div>
+      <div data-pagefind-ignore>
+        <CaseStatusLine data={data} />
+      </div>
       <h1>{data.title}</h1>
       {data.summary && <p class="summary" set:html={withCitations(data.summary)} />}
-      <ShareButton title={data.title} />
+      <div data-pagefind-ignore>
+        <ShareButton title={data.title} />
+      </div>
     </header>
 
     {
       data.image && (
-        <figure class="lead-image">
+        <figure class="lead-image" data-pagefind-ignore>
           <Picture
             src={data.image.src}
             alt={data.image.alt}
@@ -122,7 +131,7 @@ const video =
 
       {hasTimeline && <Timeline events={data.timeline} />}
 
-      <div class="story-end">
+      <div class="story-end" data-pagefind-ignore>
         {isOpen && data.tipLine && (
           <TipBox person={data.person} agency={data.agency} tipLine={data.tipLine} anonymousTips={data.anonymousTips} />
         )}

@@ -7,7 +7,7 @@ Static Astro site for bonechillingtales.com. Stories are Markdown files in `src/
 ```sh
 npm install
 npm run dev      # local preview at http://localhost:4321
-npm run build    # writes the site to dist/
+npm run build    # writes the site to dist/ and builds the search index
 npm run check    # type check plus the banned-word and punctuation scan of src/content
 npm run check:launch  # same, but also fails on any [NEEDS ...] or [VERIFY] placeholder left
 ```

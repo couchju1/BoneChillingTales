@@ -10,20 +10,29 @@ interface Props {
   breadcrumbs?: Crumb[];
   jsonLd?: object[];
   noindex?: boolean;
+  /** Include this page's heading and main text in site search. */
+  searchable?: boolean;
+  /** Extra search result details, like { status: "Missing", place: "Pierre, SD" }. */
+  searchMeta?: Record<string, string>;
 }
 
-const { title, description, heading, breadcrumbs, jsonLd, noindex } = Astro.props;
+const { title, description, heading, breadcrumbs, jsonLd, noindex, searchable, searchMeta = {} } = Astro.props;
 ---
 
 <Base title={title} description={description} jsonLd={jsonLd} noindex={noindex}>
-  <div class="page wrap">
-    {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
+  <div class="page wrap" data-pagefind-body={searchable ? "" : undefined}>
+    {Object.entries(searchMeta).map(([key, value]) => <span hidden data-pagefind-ignore data-pagefind-meta={key}>{value}</span>)}
+    {breadcrumbs && <div data-pagefind-ignore><Breadcrumbs items={breadcrumbs} /></div>}
     <h1>{heading}</h1>
-    <slot name="lead" />
+    <div data-pagefind-ignore>
+      <slot name="lead" />
+    </div>
     <div class="prose">
       <slot />
     </div>
-    <slot name="after" />
+    <div data-pagefind-ignore>
+      <slot name="after" />
+    </div>
   </div>
 </Base>
 

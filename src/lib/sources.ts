@@ -12,7 +12,7 @@ export function citationHtml(group: string): string {
       (id) =>
         `<a href="#${sourceAnchor(id)}"><span class="visually-hidden">Source </span>${id.slice(1)}</a>`,
     );
-  return `<sup class="cite">${links.join('<span aria-hidden="true">,</span>')}</sup>`;
+  return `<sup class="cite" data-pagefind-ignore>${links.join('<span aria-hidden="true">,</span>')}</sup>`;
 }
 
 const escapeHtml = (s: string) =>
@@ -22,7 +22,7 @@ const escapeHtml = (s: string) =>
 export function withCitations(text: string): string {
   return escapeHtml(text)
     .replace(SOURCE_TAG, (_, group: string) => citationHtml(group))
-    .replace(/\s+(<sup class="cite">)/g, "$1");
+    .replace(/\s+(<sup class="cite")/g, "$1");
 }
 
 /** Text with its [S#] tags removed, for places a link can't hold more links. */
