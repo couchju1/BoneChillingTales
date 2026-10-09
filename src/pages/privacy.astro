@@ -1,0 +1,16 @@
+---
+import Page from "../layouts/Page.astro";
+import { requireHubCopy } from "../lib/hubs";
+import { site } from "../lib/config";
+
+const copy = await requireHubCopy("privacy");
+---
+
+<Page title={copy.seoTitle ?? copy.title} description={copy.description} heading={copy.title}>
+  <copy.Content />
+  <h2>Contact</h2>
+  <p>
+    Email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>, or use the
+    <a href="/suggest/">suggestion form</a>.
+  </p>
+</Page>
