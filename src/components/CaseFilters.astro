@@ -18,14 +18,15 @@ const decades = [...new Set(rows.map((r) => r.decade))].sort();
 const statuses = (Object.keys(site.statuses) as CaseRowData["status"][]).filter((s) => rows.some((r) => r.status === s));
 ---
 
-<!-- Hidden without JS. The "By state" links below the list do the same job with real pages. -->
+<!-- Holds its space but stays invisible and unfocusable until the script turns it on, so the
+     list below never moves. Without JS the "By state" links below the list do the same job. -->
 <form
-  class="filters ui"
+  class="filters ui pending"
+  inert
   data-filters
   data-scope-status={scopeStatus}
   data-scope-state={scopeState}
   data-empty={emptyText}
-  hidden
 >
   {
     showStatus && statuses.length > 1 && (
@@ -93,7 +94,8 @@ const statuses = (Object.keys(site.statuses) as CaseRowData["status"][]).filter(
     const select = (name: string) => form.querySelector<HTMLSelectElement>(`select[name="${name}"]`);
     let all: Promise<CaseRowData[]> | null = null;
 
-    form.hidden = false;
+    form.classList.remove("pending");
+    form.inert = false;
     form.addEventListener("submit", (e) => e.preventDefault());
 
     // A shared link like /unsolved/?state=SD&decade=1980 opens already filtered.
@@ -161,6 +163,10 @@ const statuses = (Object.keys(site.statuses) as CaseRowData["status"][]).filter(
 </script>
 
 <style>
+  .filters.pending {
+    visibility: hidden;
+  }
+
   .filters {
     display: flex;
     flex-wrap: wrap;
