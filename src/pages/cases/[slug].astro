@@ -7,6 +7,10 @@ import { site } from "../../lib/config";
 
 export async function getStaticPaths() {
   const cases = await getPublishedCases();
+  for (const c of cases) {
+    // /cases/2/ is page 2 of the case list, so a story can't use a bare number as its slug.
+    if (/^\d+$/.test(c.id)) throw new Error(`${c.filePath}: a story file name can't be only a number.`);
+  }
   return cases.map((entry) => ({
     params: { slug: entry.id },
     props: { entry, related: relatedCase(entry, cases) },

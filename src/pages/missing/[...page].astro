@@ -1,0 +1,28 @@
+---
+import type { GetStaticPaths } from "astro";
+import Hub from "../../layouts/Hub.astro";
+import { hubRows, requireHubCopy, PAGE_SIZE, EMPTY_HUB } from "../../lib/hubs";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const rows = await hubRows((c) => c.data.status === "missing");
+  return paginate(rows, { pageSize: PAGE_SIZE, props: { allRows: rows } });
+}) satisfies GetStaticPaths;
+
+const { page, allRows } = Astro.props;
+const copy = await requireHubCopy("missing");
+---
+
+<Hub
+  seoTitle={copy.seoTitle ?? copy.title}
+  description={copy.description}
+  heading={copy.title}
+  breadcrumbs={[{ name: "Cases", href: "/cases/" }, { name: "Missing" }]}
+  page={page}
+  base="/missing/"
+  allRows={allRows}
+  scopeStatus="missing"
+  emptyFilterText={copy.emptyFilter ?? "No cases match that yet."}
+  emptyHubText={EMPTY_HUB}
+>
+  <copy.Content slot="intro" />
+</Hub>

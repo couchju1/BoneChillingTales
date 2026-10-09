@@ -1,0 +1,44 @@
+---
+import type { GetStaticPaths } from "astro";
+import Hub from "../../../layouts/Hub.astro";
+import { hubRows, hubCopy, PAGE_SIZE, EMPTY_HUB } from "../../../lib/hubs";
+import { STATE_NAMES } from "../../../lib/content";
+
+// Only states with at least one published case get a page.
+export const getStaticPaths = (async ({ paginate }) => {
+  const rows = await hubRows();
+  const codes = [...new Set(rows.map((r) => r.state))];
+  return codes.flatMap((code) => {
+    const stateRows = rows.filter((r) => r.state === code);
+    return paginate(stateRows, {
+      pageSize: PAGE_SIZE,
+      params: { state: code.toLowerCase() },
+      props: { allRows: stateRows, code },
+    });
+  });
+}) satisfies GetStaticPaths;
+
+const { page, allRows, code } = Astro.props;
+const name = STATE_NAMES[code]!;
+const copy = await hubCopy(`states/${code.toLowerCase()}`);
+if (!copy) {
+  console.warn(`[needs copy] /states/${code.toLowerCase()}/ has no hand-written intro. Add src/content/pages/states/${code.toLowerCase()}.md`);
+}
+---
+
+<Hub
+  seoTitle={copy?.seoTitle ?? `Unsolved Murders in ${name} | Bone Chilling Tales`}
+  description={copy?.description ??
+    `Every ${name} case we've covered: unsolved murders, missing people, and cold cases that got solved. Sorted by the latest update.`}
+  heading={copy?.title ?? `Unsolved murders and missing people in ${name}`}
+  breadcrumbs={[{ name: "Cases", href: "/cases/" }, { name }]}
+  page={page}
+  base={`/states/${code.toLowerCase()}/`}
+  allRows={allRows}
+  scopeState={code}
+  showStatusFilter
+  emptyFilterText={copy?.emptyFilter ?? `No ${name} cases match that yet. Try another decade.`}
+  emptyHubText={EMPTY_HUB}
+>
+  {copy ? <copy.Content slot="intro" /> : <p slot="intro">Every {name} case we've covered, with the latest news first.</p>}
+</Hub>

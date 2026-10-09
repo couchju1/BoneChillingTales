@@ -1,4 +1,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import { site } from "./config";
+import { isoDate, daysBetween } from "./dates";
+import type { CaseRowData } from "./case-row";
 
 export type Case = CollectionEntry<"cases">;
 
@@ -57,4 +60,30 @@ export const STATE_NAMES: Record<string, string> = {
 export function formatPhone(e164: string): string {
   const d = e164.replace(/^\+1/, "");
   return `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}`;
+}
+
+const FRESH_DAYS = 30;
+
+export function toRowData(entry: Case): CaseRowData {
+  const d = entry.data;
+  const counterLabel = site.statuses[d.status].counterLabel;
+  const countFrom = d.status === "missing" ? d.lastSeenDate : d.incidentDate;
+  const last = lastActivity(entry);
+  const year = d.incidentDate.getUTCFullYear();
+  return {
+    id: entry.id,
+    person: d.person,
+    town: d.town,
+    state: d.state,
+    status: d.status,
+    statusLabel: site.statuses[d.status].label,
+    counterLabel: counterLabel && countFrom ? counterLabel : null,
+    countFrom: counterLabel && countFrom ? isoDate(countFrom) : null,
+    year,
+    decade: Math.floor(year / 10) * 10,
+    line: d.description,
+    lastActivity: isoDate(last),
+    incident: isoDate(d.incidentDate),
+    fresh: last > d.published && daysBetween(last, new Date()) >= 0 && daysBetween(last, new Date()) <= FRESH_DAYS,
+  };
 }

@@ -157,9 +157,12 @@ const pages = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),
   schema: z.object({
     draft: z.boolean().default(false),
+    // The page's H1.
     title: z.string().min(1),
-    seoTitle: z.string().max(60).optional(),
-    description: z.string().max(155),
+    seoTitle: z.string().max(60, "seoTitle must be 60 characters or fewer").optional(),
+    description: z.string().max(155, "description must be 155 characters or fewer"),
+    // Hubs only: shown when the filters match nothing.
+    emptyFilter: z.string().optional(),
   }),
 });
 

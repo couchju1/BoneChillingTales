@@ -1,0 +1,9 @@
+---
+import { caseRowHtml, type CaseRowData } from "../lib/case-row";
+
+interface Props {
+  row: CaseRowData;
+}
+---
+
+<Fragment set:html={caseRowHtml(Astro.props.row)} />

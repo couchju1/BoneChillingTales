@@ -1,0 +1,203 @@
+---
+import { STATE_NAMES } from "../lib/content";
+import type { CaseRowData } from "../lib/case-row";
+import { site } from "../lib/config";
+
+interface Props {
+  /** Every case in this hub's scope, across all pages. Used for the option lists. */
+  rows: CaseRowData[];
+  scopeStatus?: CaseRowData["status"];
+  scopeState?: string;
+  showStatus?: boolean;
+  emptyText: string;
+}
+
+const { rows, scopeStatus, scopeState, showStatus = false, emptyText } = Astro.props;
+const states = [...new Set(rows.map((r) => r.state))].sort((a, b) => STATE_NAMES[a]!.localeCompare(STATE_NAMES[b]!));
+const decades = [...new Set(rows.map((r) => r.decade))].sort();
+const statuses = (Object.keys(site.statuses) as CaseRowData["status"][]).filter((s) => rows.some((r) => r.status === s));
+---
+
+<!-- Hidden without JS. The "By state" links below the list do the same job with real pages. -->
+<form
+  class="filters ui"
+  data-filters
+  data-scope-status={scopeStatus}
+  data-scope-state={scopeState}
+  data-empty={emptyText}
+  hidden
+>
+  {
+    showStatus && statuses.length > 1 && (
+      <label>
+        Status
+        <select name="status">
+          <option value="">All</option>
+          {statuses.map((s) => (
+            <option value={s}>{site.statuses[s].label}</option>
+          ))}
+        </select>
+      </label>
+    )
+  }
+  {
+    !scopeState && states.length > 1 && (
+      <label>
+        State
+        <select name="state">
+          <option value="">All states</option>
+          {states.map((s) => (
+            <option value={s}>{STATE_NAMES[s]}</option>
+          ))}
+        </select>
+      </label>
+    )
+  }
+  {
+    decades.length > 1 && (
+      <label>
+        Decade
+        <select name="decade">
+          <option value="">All years</option>
+          {decades.map((d) => (
+            <option value={d}>{d}s</option>
+          ))}
+        </select>
+      </label>
+    )
+  }
+  <label>
+    Sort
+    <select name="sort">
+      <option value="latest">Latest news</option>
+      <option value="oldest">Oldest case</option>
+    </select>
+  </label>
+  <button type="button" data-clear hidden>Clear filters</button>
+</form>
+<p class="filter-status visually-hidden" aria-live="polite" data-filter-status></p>
+
+<script>
+  import { caseRowHtml, sortRows, type CaseRowData, type SortMode } from "../lib/case-row";
+  import { fillDaysSince } from "../lib/days-since";
+
+  const form = document.querySelector<HTMLFormElement>("[data-filters]");
+  const list = document.querySelector<HTMLElement>("[data-case-list]");
+  if (form && list) {
+    const status = document.querySelector<HTMLElement>("[data-filter-status]")!;
+    const clear = form.querySelector<HTMLButtonElement>("[data-clear]")!;
+    const pagination = document.querySelector<HTMLElement>("[data-pagination]");
+    const empty = document.querySelector<HTMLElement>("[data-case-empty]");
+    const original = list.innerHTML;
+    const fields = ["status", "state", "decade", "sort"] as const;
+    const select = (name: string) => form.querySelector<HTMLSelectElement>(`select[name="${name}"]`);
+    let all: Promise<CaseRowData[]> | null = null;
+
+    form.hidden = false;
+    form.addEventListener("submit", (e) => e.preventDefault());
+
+    // A shared link like /unsolved/?state=SD&decade=1980 opens already filtered.
+    const params = new URLSearchParams(location.search);
+    for (const name of fields) {
+      const el = select(name);
+      const value = params.get(name);
+      if (el && value && [...el.options].some((o) => o.value === value)) el.value = value;
+    }
+
+    const isDefault = () => fields.every((name) => !select(name) || select(name)!.selectedIndex === 0);
+
+    async function apply() {
+      const query = new URLSearchParams();
+      for (const name of fields) {
+        const el = select(name);
+        if (el && el.selectedIndex !== 0) query.set(name, el.value);
+      }
+      history.replaceState(null, "", query.size ? `?${query}` : location.pathname);
+      clear.hidden = isDefault();
+
+      if (isDefault()) {
+        list!.innerHTML = original;
+        list!.hidden = false;
+        if (pagination) pagination.hidden = false;
+        if (empty) empty.hidden = true;
+        fillDaysSince(list!);
+        status.textContent = "Showing all cases.";
+        return;
+      }
+
+      all ??= fetch("/cases.json").then((r) => r.json());
+      const rows = (await all).filter(
+        (r) =>
+          (!form!.dataset.scopeStatus || r.status === form!.dataset.scopeStatus) &&
+          (!form!.dataset.scopeState || r.state === form!.dataset.scopeState) &&
+          (!query.get("status") || r.status === query.get("status")) &&
+          (!query.get("state") || r.state === query.get("state")) &&
+          (!query.get("decade") || String(r.decade) === query.get("decade")),
+      );
+      const sorted = sortRows(rows, (query.get("sort") as SortMode) ?? "latest");
+      list!.innerHTML = sorted.map(caseRowHtml).join("");
+      list!.hidden = sorted.length === 0;
+      if (pagination) pagination.hidden = true;
+      if (empty) {
+        empty.textContent = form!.dataset.empty!;
+        empty.hidden = sorted.length > 0;
+      }
+      fillDaysSince(list!);
+      status.textContent = sorted.length === 1 ? "Showing 1 case." : `Showing ${sorted.length} cases.`;
+    }
+
+    form.addEventListener("change", apply);
+    clear.addEventListener("click", () => {
+      for (const name of fields) {
+        const el = select(name);
+        if (el) el.selectedIndex = 0;
+      }
+      apply();
+    });
+
+    fillDaysSince(list);
+    if (!isDefault()) apply();
+  }
+</script>
+
+<style>
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--space-s);
+    margin-bottom: var(--space-m);
+  }
+
+  label {
+    display: grid;
+    flex: 1 1 7.5rem;
+    max-width: 12rem;
+    gap: var(--space-3xs);
+    color: var(--color-ash);
+  }
+
+  select,
+  button {
+    min-height: 44px;
+    padding: 0 var(--space-xs);
+    border: 1px solid var(--color-input-border);
+    border-radius: var(--radius-m);
+    background: var(--color-night);
+    color: var(--color-bone);
+    font: inherit;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button:hover {
+    border-color: var(--color-ember);
+    color: var(--color-ember);
+  }
+</style>

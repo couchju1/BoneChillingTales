@@ -1,0 +1,84 @@
+---
+import type { Page } from "astro";
+
+interface Props {
+  page: Page<unknown>;
+  /** Path of page 1, like "/unsolved/". */
+  base: string;
+}
+
+const { page, base } = Astro.props;
+const href = (n: number) => (n === 1 ? base : `${base}${n}/`);
+const numbers = [...Array(page.lastPage).keys()].map((i) => i + 1);
+---
+
+{
+  page.lastPage > 1 && (
+    <nav class="pagination ui" aria-label="Pages" data-pagination>
+      {page.url.prev ? <a href={page.url.prev} rel="prev">Newer</a> : <span aria-disabled="true">Newer</span>}
+      <ol>
+        {numbers.map((n) => (
+          <li>
+            {n === page.currentPage ? (
+              <span aria-current="page">{n}</span>
+            ) : (
+              <a href={href(n)}>
+                <span class="visually-hidden">Page </span>
+                {n}
+              </a>
+            )}
+          </li>
+        ))}
+      </ol>
+      {page.url.next ? <a href={page.url.next} rel="next">Older</a> : <span aria-disabled="true">Older</span>}
+    </nav>
+  )
+}
+
+<style>
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs);
+    margin-top: var(--space-l);
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a,
+  span[aria-current],
+  span[aria-disabled] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding-inline: var(--space-xs);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-m);
+    color: var(--color-bone);
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-color: var(--color-ember);
+    color: var(--color-ember);
+  }
+
+  span[aria-current] {
+    border-color: var(--color-bone);
+    font-weight: 600;
+  }
+
+  span[aria-disabled] {
+    color: var(--color-input-border);
+  }
+</style>

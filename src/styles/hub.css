@@ -1,0 +1,97 @@
+/* Hub case rows. Global because the filter script draws rows from src/lib/case-row.ts. */
+.case-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-line);
+}
+
+.case-row {
+  position: relative;
+  display: grid;
+  gap: var(--space-3xs);
+  padding: var(--space-s) var(--space-2xs);
+  border-bottom: 1px solid var(--color-line);
+  transition: background-color var(--motion-fast) var(--ease-out);
+}
+
+.case-row:hover,
+.case-row:focus-within {
+  background: var(--color-surface);
+}
+
+.case-row-name {
+  margin: 0;
+  font-size: var(--step-1);
+  line-height: 1.25;
+}
+
+.case-row-name a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  color: var(--color-bone);
+  text-decoration: none;
+}
+
+/* The whole row is the tap target. */
+.case-row-name a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.case-row-name a:focus-visible {
+  outline: none;
+}
+
+.case-row:has(a:focus-visible) {
+  outline: 2px solid var(--color-focus);
+  outline-offset: -2px;
+}
+
+.case-row:hover .case-row-name a {
+  color: var(--color-ember);
+}
+
+.case-row-fresh {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: var(--color-lamp);
+  flex: none;
+}
+
+.case-row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3xs) var(--space-s);
+  margin: 0;
+  color: var(--color-ash);
+}
+
+.case-row-meta .days-since {
+  color: var(--color-bone);
+  font-weight: 600;
+}
+
+.case-row-line {
+  margin: 0;
+  max-width: var(--measure);
+  color: var(--color-ash);
+  font-size: var(--step--1);
+  line-height: 1.45;
+}
+
+@media (min-width: 48rem) {
+  .case-row {
+    grid-template-columns: minmax(12rem, 18rem) 1fr;
+    column-gap: var(--space-l);
+    padding-inline: var(--space-s);
+  }
+
+  .case-row-name {
+    grid-row: span 2;
+  }
+}

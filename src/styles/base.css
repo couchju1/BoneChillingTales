@@ -27,6 +27,11 @@
   box-sizing: border-box;
 }
 
+/* `hidden` always wins over a component's display rule. */
+[hidden] {
+  display: none !important;
+}
+
 html {
   color-scheme: dark;
   -webkit-text-size-adjust: 100%;
@@ -178,3 +183,28 @@ main:focus {
 .cite a:hover {
   text-decoration: underline;
 }
+
+/* Status chips. Global because hub rows are drawn from an HTML string (src/lib/case-row.ts). */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  padding: 0.15em 0.6em;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.chip::before {
+  content: "";
+  width: 0.45em;
+  height: 0.45em;
+  border-radius: 50%;
+  background: currentColor;
+}
+.chip-unsolved { color: var(--color-ember); }
+.chip-missing { color: var(--color-lamp); }
+.chip-solved { color: var(--color-solved); }
+.chip-in-court { color: var(--color-bone); }
+.chip-in-court::before { display: none; }

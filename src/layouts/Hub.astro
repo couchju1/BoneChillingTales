@@ -1,0 +1,167 @@
+---
+import Base from "./Base.astro";
+import "../styles/hub.css";
+import Breadcrumbs, { type Crumb } from "../components/Breadcrumbs.astro";
+import CaseRow from "../components/CaseRow.astro";
+import CaseFilters from "../components/CaseFilters.astro";
+import Pagination from "../components/Pagination.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+import type { Page } from "astro";
+import type { CaseRowData } from "../lib/case-row";
+import { STATE_NAMES } from "../lib/content";
+
+interface Props {
+  seoTitle: string;
+  description: string;
+  heading: string;
+  breadcrumbs: Crumb[];
+  page: Page<CaseRowData>;
+  /** Path of page 1, like "/unsolved/". */
+  base: string;
+  /** Every row in scope, all pages. Drives filter options and the state links. */
+  allRows: CaseRowData[];
+  scopeStatus?: CaseRowData["status"];
+  scopeState?: string;
+  showStatusFilter?: boolean;
+  emptyFilterText: string;
+  emptyHubText: string;
+}
+
+const {
+  seoTitle,
+  description,
+  heading,
+  breadcrumbs,
+  page,
+  base,
+  allRows,
+  scopeStatus,
+  scopeState,
+  showStatusFilter,
+  emptyFilterText,
+  emptyHubText,
+} = Astro.props;
+
+// Page 2 and on get their own title so no two pages share one.
+const title = page.currentPage > 1 ? seoTitle.replace(/( \| |$)/, `, Page ${page.currentPage}$1`) : seoTitle;
+
+const stateCounts = scopeState
+  ? []
+  : Object.entries(
+      allRows.reduce<Record<string, number>>((acc, r) => ({ ...acc, [r.state]: (acc[r.state] ?? 0) + 1 }), {}),
+    ).sort(([a], [b]) => STATE_NAMES[a]!.localeCompare(STATE_NAMES[b]!));
+---
+
+<Base title={title} description={description}>
+  <div class="hub wrap">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>{heading}</h1>
+    <div class="intro">
+      <slot name="intro" />
+    </div>
+
+    {
+      allRows.length > 0 ? (
+        <>
+          <CaseFilters
+            rows={allRows}
+            scopeStatus={scopeStatus}
+            scopeState={scopeState}
+            showStatus={showStatusFilter}
+            emptyText={emptyFilterText}
+          />
+          <ul class="case-list" data-case-list>
+            {page.data.map((row) => (
+              <CaseRow row={row} />
+            ))}
+          </ul>
+          <p class="empty" data-case-empty hidden />
+          <Pagination page={page} base={base} />
+        </>
+      ) : (
+        <p class="empty">{emptyHubText}</p>
+      )
+    }
+
+    {
+      stateCounts.length > 0 && (
+        <nav class="by-state" aria-labelledby="by-state-heading">
+          <h2 id="by-state-heading" class="ui">By state</h2>
+          <ul>
+            {stateCounts.map(([code, count]) => (
+              <li>
+                <a href={`/states/${code.toLowerCase()}/`}>{STATE_NAMES[code]}</a>
+                <span class="ui">{count}</span>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+
+    <NewsletterForm
+      heading="One email a week. New cases and real updates."
+      body="No daily blasts and no clickbait. Quit any time with one click."
+    />
+  </div>
+</Base>
+
+<style>
+  .hub {
+    padding-top: var(--space-l);
+  }
+
+  h1 {
+    font-size: var(--step-5);
+    max-width: 20ch;
+  }
+
+  .intro {
+    max-width: var(--measure);
+    margin-bottom: var(--space-l);
+    font-size: var(--step-1);
+    line-height: 1.5;
+  }
+
+  .empty {
+    padding: var(--space-l) 0;
+    color: var(--color-ash);
+  }
+
+  .by-state {
+    margin-top: var(--space-2xl);
+  }
+
+  .by-state h2 {
+    color: var(--color-ash);
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .by-state ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs) var(--space-l);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .by-state li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+  }
+
+  .by-state a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .by-state .ui {
+    color: var(--color-ash);
+  }
+</style>
