@@ -1,6 +1,6 @@
 ---
-# DRAFT. Fact-checked October 9, 2026 against the full text of every source below.
-draft: true
+# Fact-checked October 9, 2026 against the full text of every source below.
+draft: false
 title: "The 1995 killing of Colleen Slemmer in Knoxville"
 seoTitle: "Colleen Slemmer: What Happened in Knoxville, TN"
 description: "Colleen Slemmer, 19, was killed in Knoxville in 1995 by fellow Job Corps students. Christa Pike was sentenced to death. Her 2026 execution failed."
@@ -46,7 +46,7 @@ timeline:
   - { date: 2026-09-30, text: "Tennessee's attempt to execute Pike fails. [S6]", section: "september-30-2026" }
   - { date: 2026-10-06, text: "Pike's lawyers say she is conscious and speaking. [S8]", section: "september-30-2026" }
 updates:
-  - { date: 2026-10-09, text: "Story drafted and fact-checked." }
+  - { date: 2026-10-09, text: "Story published." }
 ---
 
 ## Who Colleen was
