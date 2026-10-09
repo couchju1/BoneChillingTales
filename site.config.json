@@ -18,6 +18,7 @@
   "newsletter": {
     "provider": "kit",
     "formAction": "[KIT FORM URL]",
+    "caseField": null,
     "cadence": "weekly"
   },
   "analytics": {

@@ -1,0 +1,21 @@
+---
+import Page from "../../layouts/Page.astro";
+---
+
+<!-- Where the form lands when it was sent without JavaScript. -->
+<Page
+  title="Suggestion Sent | Bone Chilling Tales"
+  description="Thanks for the suggestion. We read every one."
+  heading="Got it"
+  noindex
+>
+  <p slot="lead" class="lead">We read every one. If we write about the case, we'll reply when it's up.</p>
+  <p slot="after"><a href="/cases/">Back to the cases</a></p>
+</Page>
+
+<style>
+  .lead {
+    max-width: var(--measure);
+    font-size: var(--step-1);
+  }
+</style>

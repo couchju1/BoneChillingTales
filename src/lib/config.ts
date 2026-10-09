@@ -22,6 +22,8 @@ export interface SiteConfig {
   newsletter: {
     provider: "kit";
     formAction: string;
+    /** Kit custom field that records which story a signup came from. null leaves it off. */
+    caseField: string | null;
     cadence: "weekly";
   };
   analytics: {

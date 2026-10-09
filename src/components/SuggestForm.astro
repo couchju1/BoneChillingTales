@@ -1,0 +1,220 @@
+---
+import "../styles/forms.css";
+import { site } from "../lib/config";
+
+const fields = [
+  { name: "case", label: "Case or person's name", required: true, max: 200, autocomplete: "off" },
+  { name: "place", label: "Town and state", required: true, max: 120, autocomplete: "off" },
+  { name: "details", label: "What should we know?", required: true, max: 5000, multiline: true },
+  { name: "links", label: "Links to news or records", hint: "Optional. One per line.", max: 2000, multiline: true },
+  { name: "email", label: "Your email, if you want a reply", hint: "Optional.", max: 254, type: "email", autocomplete: "email" },
+] as const;
+---
+
+<form class="suggest" method="post" action={site.forms.suggestEndpoint} novalidate data-suggest-form>
+  <div class="error-summary" tabindex="-1" role="alert" data-error-summary hidden>
+    <h2>Check these and send it again</h2>
+    <ul data-error-list></ul>
+  </div>
+
+  {
+    fields.map((f) => (
+      <div class="field">
+        <label for={`suggest-${f.name}`}>{f.label}</label>
+        {"hint" in f && f.hint && (
+          <span class="hint" id={`suggest-${f.name}-hint`}>
+            {f.hint}
+          </span>
+        )}
+        {"multiline" in f && f.multiline ? (
+          <textarea
+            id={`suggest-${f.name}`}
+            name={f.name}
+            required={"required" in f && f.required}
+            maxlength={f.max}
+            aria-describedby={`suggest-${f.name}-error${"hint" in f ? ` suggest-${f.name}-hint` : ""}`}
+            rows={f.name === "details" ? 7 : 3}
+          />
+        ) : (
+          <input
+            id={`suggest-${f.name}`}
+            name={f.name}
+            type={"type" in f ? f.type : "text"}
+            required={"required" in f && f.required}
+            maxlength={f.max}
+            autocomplete={"autocomplete" in f ? f.autocomplete : undefined}
+            aria-describedby={`suggest-${f.name}-error${"hint" in f ? ` suggest-${f.name}-hint` : ""}`}
+          />
+        )}
+        <p id={`suggest-${f.name}-error`} class="field-error" hidden />
+      </div>
+    ))
+  }
+
+  <!-- Bot traps: a field people never see, the story this came from, and when the page was opened. -->
+  <div class="hp" aria-hidden="true">
+    <label for={`suggest-${site.forms.honeypotField}`}>Leave this empty</label>
+    <input id={`suggest-${site.forms.honeypotField}`} name={site.forms.honeypotField} type="text" tabindex="-1" autocomplete="off" />
+  </div>
+  <input type="hidden" name="story" value="" data-story />
+  <input type="hidden" name="started" value="" data-started />
+
+  <button type="submit" class="btn-primary">Send it</button>
+  <p class="form-message" role="status" data-message></p>
+</form>
+
+<div class="sent" tabindex="-1" data-sent hidden>
+  <h2>Got it</h2>
+  <p>We read every one. If we write about the case, we'll reply when it's up.</p>
+</div>
+
+<script>
+  import { EMAIL, setBusy, setFieldError, clearFieldError } from "../lib/form-ui";
+
+  const form = document.querySelector<HTMLFormElement>("[data-suggest-form]");
+  if (form) {
+    const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
+    const summary = form.querySelector<HTMLElement>("[data-error-summary]")!;
+    const list = form.querySelector<HTMLElement>("[data-error-list]")!;
+    const message = form.querySelector<HTMLElement>("[data-message]")!;
+    const sent = document.querySelector<HTMLElement>("[data-sent]")!;
+    const field = (name: string) => form.elements.namedItem(name) as HTMLInputElement | HTMLTextAreaElement;
+
+    form.querySelector<HTMLInputElement>("[data-started]")!.value = String(Date.now());
+
+    // "Suggest a correction" links pass the story: /suggest/?case=story-id
+    const story = new URLSearchParams(location.search).get("case");
+    if (story && /^[\w-]+$/.test(story)) {
+      form.querySelector<HTMLInputElement>("[data-story]")!.value = story;
+      fetch("/cases.json")
+        .then((r) => r.json())
+        .then((rows: { id: string; person: string; town: string; state: string }[]) => {
+          const row = rows.find((r) => r.id === story);
+          if (!row) return;
+          if (!field("case").value) field("case").value = row.person;
+          if (!field("place").value) field("place").value = `${row.town}, ${row.state}`;
+        })
+        .catch(() => {});
+    }
+
+    for (const el of form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>("input, textarea")) {
+      el.addEventListener("input", () => clearFieldError(el));
+    }
+
+    const showErrors = (errors: Record<string, string>) => {
+      list.innerHTML = "";
+      for (const [name, text] of Object.entries(errors)) {
+        const el = field(name);
+        if (!el) continue;
+        setFieldError(el, text);
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = `#${el.id}`;
+        a.textContent = text;
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          el.focus();
+        });
+        li.append(a);
+        list.append(li);
+      }
+      summary.hidden = false;
+      summary.focus();
+    };
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      summary.hidden = true;
+      message.textContent = "";
+      message.dataset.tone = "";
+
+      const errors: Record<string, string> = {};
+      if (!field("case").value.trim()) errors.case = "Add the case or the person's name.";
+      if (!field("place").value.trim()) errors.place = "Add the town and state.";
+      if (!field("details").value.trim()) errors.details = "Tell us what we should know.";
+      const email = field("email").value.trim();
+      if (email && !EMAIL.test(email)) errors.email = "That email doesn't look right. Check it, or leave it blank.";
+      if (Object.keys(errors).length) {
+        showErrors(errors);
+        return;
+      }
+
+      document.dispatchEvent(new CustomEvent("bct:suggest-submit"));
+      setBusy(button, true);
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" },
+        });
+        const data = await res.json();
+        if (data.ok) {
+          form.hidden = true;
+          sent.hidden = false;
+          sent.focus();
+        } else if (data.errors && Object.keys(data.errors).length) {
+          showErrors(data.errors);
+        } else {
+          message.textContent = data.message || "That didn't go through. Try again in a minute.";
+          message.dataset.tone = "error";
+        }
+      } catch {
+        message.textContent = "That didn't go through. Try again in a minute.";
+        message.dataset.tone = "error";
+      } finally {
+        setBusy(button, false);
+      }
+    });
+  }
+</script>
+
+<style>
+  .suggest {
+    position: relative;
+    max-width: var(--measure);
+  }
+
+  .error-summary {
+    margin-bottom: var(--space-l);
+    padding: var(--space-m);
+    border: 2px solid var(--color-ember);
+    border-radius: var(--radius-m);
+  }
+
+  .error-summary h2 {
+    font-size: var(--step-1);
+  }
+
+  .error-summary ul {
+    margin: 0;
+    padding-left: 1.2em;
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+  }
+
+  .error-summary a,
+  .error-summary a:visited {
+    color: var(--color-ember);
+  }
+
+  .form-message:empty {
+    display: none;
+  }
+
+  .sent {
+    max-width: var(--measure);
+    padding: var(--space-l);
+    border: 1px solid var(--color-line);
+    border-left: 3px solid var(--color-solved);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+  }
+
+  .sent h2 {
+    font-size: var(--step-2);
+  }
+
+  .sent p {
+    margin: 0;
+  }
+</style>

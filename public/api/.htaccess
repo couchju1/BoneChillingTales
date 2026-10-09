@@ -1,0 +1,12 @@
+# Only suggest.php is reachable. config.php is written at build time and only read by PHP.
+Options -Indexes
+
+<Files "config.php">
+  Require all denied
+</Files>
+
+<IfModule mod_headers.c>
+  <Files "suggest.php">
+    Header set X-Robots-Tag "noindex"
+  </Files>
+</IfModule>

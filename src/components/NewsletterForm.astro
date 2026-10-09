@@ -1,35 +1,118 @@
 ---
+import "../styles/forms.css";
 import { site, isPlaceholder } from "../lib/config";
 
 interface Props {
   heading: string;
   body: string;
   button?: string;
-  /** Case id, sent along so a signup from a story can be tagged with it later. */
+  /** Story id, sent to Kit when newsletter.caseField is set so a signup can be tagged with it. */
   caseId?: string;
 }
 
 const { heading, body, button = "Get the weekly email", caseId } = Astro.props;
 const action = site.newsletter.formAction;
 const ready = !isPlaceholder(action);
+const caseField = site.newsletter.caseField;
 const uid = `nl-${caseId ?? "site"}`;
 ---
 
 <section class="newsletter" aria-labelledby={`${uid}-heading`}>
   <h2 id={`${uid}-heading`}>{heading}</h2>
   <p>{body}</p>
-  <form method="post" action={ready ? action : undefined} data-newsletter-form>
-    <fieldset disabled={!ready}>
-      <label for={`${uid}-email`} class="ui">Email</label>
-      <div class="row">
-        <input id={`${uid}-email`} name="email_address" type="email" autocomplete="email" required />
-        {caseId && <input type="hidden" name="fields[case]" value={caseId} />}
-        <button type="submit" class="ui">{button}</button>
+  <form method="post" action={ready ? action : undefined} novalidate data-newsletter-form>
+    <fieldset disabled={!ready} data-fields>
+      <div class="field">
+        <label for={`${uid}-email`}>Email</label>
+        <div class="row">
+          <input
+            id={`${uid}-email`}
+            name="email_address"
+            type="email"
+            autocomplete="email"
+            required
+            maxlength="254"
+            aria-describedby={`${uid}-email-error`}
+          />
+          {caseId && caseField && <input type="hidden" name={`fields[${caseField}]`} value={caseId} />}
+          <button type="submit" class="btn-primary">{button}</button>
+        </div>
+        <p id={`${uid}-email-error`} class="field-error" hidden></p>
       </div>
     </fieldset>
-    {!ready && <p class="pending ui">Sign-up opens soon.</p>}
+    <p class="form-message" role="status" data-message>{!ready && "Sign-up opens soon."}</p>
   </form>
 </section>
+
+<script>
+  import { EMAIL, setBusy, setFieldError, clearFieldError } from "../lib/form-ui";
+
+  const COPY = {
+    invalid: "That email doesn't look right. Check it and try again.",
+    success: "You're in. Check your inbox to confirm.",
+    already: "You're already on the list.",
+    error: "That didn't go through. Try again in a minute.",
+  };
+
+  for (const form of document.querySelectorAll<HTMLFormElement>("[data-newsletter-form]")) {
+    if (!form.getAttribute("action")) continue;
+    const input = form.querySelector<HTMLInputElement>("input[type=email]")!;
+    const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
+    const fields = form.querySelector<HTMLFieldSetElement>("[data-fields]")!;
+    const message = form.querySelector<HTMLElement>("[data-message]")!;
+    const say = (text: string, tone: "success" | "error" | "") => {
+      message.textContent = text;
+      message.dataset.tone = tone;
+    };
+
+    input.addEventListener("input", () => clearFieldError(input));
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      say("", "");
+      const email = input.value.trim();
+      if (!EMAIL.test(email)) {
+        setFieldError(input, COPY.invalid);
+        input.focus();
+        return;
+      }
+
+      document.dispatchEvent(new CustomEvent("bct:newsletter-submit"));
+      setBusy(button, true);
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" },
+        });
+        const data = await res.json().catch(() => ({}));
+        const text = JSON.stringify(data).toLowerCase();
+        if (res.ok && data.status === "success") {
+          fields.hidden = true;
+          say(COPY.success, "success");
+          document.dispatchEvent(new CustomEvent("bct:newsletter-success"));
+        } else if (text.includes("already")) {
+          fields.hidden = true;
+          say(COPY.already, "success");
+        } else if (text.includes("email")) {
+          setFieldError(input, COPY.invalid);
+          input.focus();
+        } else {
+          say(COPY.error, "error");
+        }
+      } catch {
+        // Couldn't read Kit's answer (offline, or the browser blocked it). If online, let the browser post the form itself.
+        if (navigator.onLine) {
+          form.submit();
+          return;
+        }
+        say(COPY.error, "error");
+      } finally {
+        setBusy(button, false);
+      }
+    });
+  }
+</script>
 
 <style>
   .newsletter {
@@ -49,11 +132,14 @@ const uid = `nl-${caseId ?? "site"}`;
     margin: 0;
     padding: 0;
     border: 0;
+    min-width: 0;
   }
 
-  label {
-    display: block;
-    margin-bottom: var(--space-3xs);
+  .field {
+    margin-bottom: 0;
+  }
+
+  .field label {
     color: var(--color-ash);
   }
 
@@ -63,42 +149,18 @@ const uid = `nl-${caseId ?? "site"}`;
     gap: var(--space-2xs);
   }
 
-  input {
+  .row input {
     flex: 1 1 14rem;
-    min-height: 44px;
-    padding: 0 var(--space-xs);
-    border: 1px solid var(--color-input-border);
-    border-radius: var(--radius-m);
-    background: var(--color-night);
-    color: var(--color-bone);
-    font: inherit;
-    font-family: var(--font-ui);
+    width: auto;
   }
 
-  button {
-    min-height: 44px;
-    padding: 0 var(--space-m);
-    border: 0;
-    border-radius: var(--radius-m);
-    background: var(--color-blood);
-    color: var(--color-bone);
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color var(--motion-fast) var(--ease-out);
-  }
-
-  button:hover {
-    background: var(--color-blood-hover);
-  }
-
-  fieldset:disabled button,
-  fieldset:disabled input {
+  fieldset:disabled input,
+  fieldset:disabled button {
     opacity: 0.55;
     cursor: not-allowed;
   }
 
-  .pending {
-    margin: var(--space-2xs) 0 0;
-    color: var(--color-ash);
+  .form-message:empty {
+    display: none;
   }
 </style>

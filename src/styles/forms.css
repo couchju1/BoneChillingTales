@@ -1,0 +1,105 @@
+/* Shared form styles: labels, fields, errors, buttons. */
+.field {
+  display: grid;
+  gap: var(--space-3xs);
+  margin-bottom: var(--space-m);
+}
+
+.field label {
+  font-family: var(--font-ui);
+  font-size: var(--step--1);
+  color: var(--color-bone);
+}
+
+.field .hint {
+  font-family: var(--font-ui);
+  font-size: var(--step--1);
+  color: var(--color-ash);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--space-2xs) var(--space-xs);
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-m);
+  background: var(--color-night);
+  color: var(--color-bone);
+  font: inherit;
+  font-family: var(--font-ui);
+}
+
+.field textarea {
+  min-height: 9rem;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.field [aria-invalid="true"] {
+  border-color: var(--color-ember);
+}
+
+.field-error {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--color-ember);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 var(--space-m);
+  border: 0;
+  border-radius: var(--radius-m);
+  background: var(--color-blood);
+  color: var(--color-bone);
+  font-family: var(--font-ui);
+  font-size: var(--step--1);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--motion-fast) var(--ease-out);
+}
+
+.btn-primary:hover {
+  background: var(--color-blood-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-primary[aria-busy="true"] {
+  opacity: 0.8;
+  cursor: progress;
+}
+
+/* Hidden from people and screen readers. Only bots fill it in. */
+.hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-message {
+  margin: var(--space-s) 0 0;
+  font-family: var(--font-ui);
+}
+
+.form-message[data-tone="success"] {
+  font-family: var(--font-body);
+  font-size: var(--step-1);
+  color: var(--color-bone);
+}
+
+.form-message[data-tone="error"] {
+  font-weight: 600;
+  color: var(--color-ember);
+}

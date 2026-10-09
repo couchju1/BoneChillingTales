@@ -1,0 +1,54 @@
+---
+import Page from "../../layouts/Page.astro";
+import SuggestForm from "../../components/SuggestForm.astro";
+---
+
+<Page
+  title="Suggest a Case or a Correction | Bone Chilling Tales"
+  description="Know a case that deserves the full story, or spot a mistake? Tell us. For tips about a crime, call the agency or 911."
+  heading="Suggest a case or a correction"
+>
+  <aside slot="lead" class="warning" aria-label="Tips about a crime">
+    <p>
+      <strong>Have information about a crime?</strong> Don't send it here. Call the agency handling the case, or 911 if
+      someone is in danger.
+    </p>
+  </aside>
+
+  <div slot="after">
+    <SuggestForm />
+    <section class="next" aria-labelledby="next-heading">
+      <h2 id="next-heading">What happens next</h2>
+      <p>
+        We read every suggestion. If we write about the case, or fix a mistake you found, we'll reply when it's up. That
+        only works if you leave an email.
+      </p>
+      <p>We don't publish what you send, and we don't share your email.</p>
+    </section>
+  </div>
+</Page>
+
+<style>
+  .warning {
+    max-width: var(--measure);
+    margin-bottom: var(--space-xl);
+    padding: var(--space-m);
+    border: 1px solid var(--color-line);
+    border-left: 3px solid var(--color-lamp);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+  }
+
+  .warning p {
+    margin: 0;
+  }
+
+  .next {
+    max-width: var(--measure);
+    margin-top: var(--space-2xl);
+  }
+
+  .next h2 {
+    font-size: var(--step-2);
+  }
+</style>
