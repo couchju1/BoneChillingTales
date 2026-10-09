@@ -1,8 +1,8 @@
 ---
-# DRAFT. Fact-checked October 9, 2026 against the full text of every source below.
+# Fact-checked October 9, 2026 against the full text of every source below.
 # Legal care: Margaret Rudin's conviction was vacated (2022) and the charges dismissed with prejudice (2024).
 # Never state or imply she killed Ron. Trial evidence is always attributed to testimony or prosecutors.
-draft: true
+draft: false
 title: "The 1994 killing of Ron Rudin in Las Vegas"
 seoTitle: "Ron Rudin: What Happened in Las Vegas, NV"
 description: "Ron Rudin vanished in Las Vegas in 1994. His wife was convicted of his murder, then cleared when a judge threw out the verdict. No one stands convicted."
@@ -45,7 +45,7 @@ timeline:
   - { date: 2024-12-09, text: "The murder charges are dismissed with prejudice. [S4]", section: "a-conviction-undone" }
   - { date: 2026-01-06, text: "Her wrongful conviction lawsuit is dismissed without a ruling on the merits. [S5]", section: "where-it-stands" }
 updates:
-  - { date: 2026-10-09, text: "Story drafted and fact-checked." }
+  - { date: 2026-10-09, text: "Story published." }
 ---
 
 ## Who Ron Rudin was
