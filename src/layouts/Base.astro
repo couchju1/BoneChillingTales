@@ -1,26 +1,53 @@
 ---
 import "../styles/tokens.css";
 import "../styles/base.css";
-import { site } from "../lib/config";
+import Seo from "../components/Seo.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import MobileBar from "../components/MobileBar.astro";
+import { site, isPlaceholder } from "../lib/config";
 
 interface Props {
   title: string;
   description: string;
+  image?: string;
+  imageAlt?: string;
+  type?: "website" | "article";
+  jsonLd?: object[];
+  noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
-const canonical = new URL(Astro.url.pathname, site.domain).href;
+const { jsonLd = [], ...seo } = Astro.props;
+
+const org = {
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "@id": `${site.domain}/#org`,
+  name: site.siteName,
+  url: `${site.domain}/`,
+  logo: `${site.domain}/images/badge-512.png`,
+  // The YouTube handle isn't confirmed yet. Flip social.youtubeVerified in site.config.json once it is.
+  ...(site.social.youtubeVerified ? { sameAs: [site.social.youtube] } : {}),
+  publishingPrinciples: `${site.domain}/standards/`,
+  correctionsPolicy: `${site.domain}/standards/#corrections`,
+  founder: { "@type": "Person", "@id": `${site.domain}/about/#justin`, name: site.founder.name },
+};
+
+const verification = site.analytics.searchConsoleVerification;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <Seo {...seo} jsonLd={[org, ...jsonLd]} />
     <meta name="theme-color" content="#120F0D" />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/images/badge-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    {!isPlaceholder(verification) && <meta name="google-site-verification" content={verification} />}
     <link
       rel="preload"
       href="/fonts/newsreader-latin-opsz-normal.woff2"
@@ -31,8 +58,11 @@ const canonical = new URL(Astro.url.pathname, site.domain).href;
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <main id="main">
+    <Header />
+    <main id="main" tabindex="-1">
       <slot />
     </main>
+    <Footer />
+    <MobileBar />
   </body>
 </html>

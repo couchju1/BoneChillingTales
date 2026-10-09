@@ -131,3 +131,28 @@ a:hover {
   width: min(100% - 2 * var(--space-s), var(--bp-xl));
   margin-inline: auto;
 }
+
+/* Keep focused and anchored content clear of the sticky header and the phone bottom bar (WCAG 2.4.11). */
+html {
+  scroll-padding-top: var(--space-s);
+  scroll-padding-bottom: calc(56px + env(safe-area-inset-bottom) + var(--space-s));
+}
+
+body {
+  padding-bottom: calc(56px + env(safe-area-inset-bottom));
+}
+
+main:focus {
+  outline: none;
+}
+
+@media (min-width: 48rem) {
+  html {
+    scroll-padding-top: calc(var(--logo-height) + var(--space-l));
+    scroll-padding-bottom: var(--space-s);
+  }
+
+  body {
+    padding-bottom: 0;
+  }
+}

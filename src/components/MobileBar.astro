@@ -1,0 +1,85 @@
+---
+const path = Astro.url.pathname;
+---
+
+<nav class="mobile-bar ui" aria-label="Quick links" data-mobile-bar>
+  <a href="/search/" aria-current={path.startsWith("/search/") ? "page" : undefined}>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+      <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+      <path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+    Search
+  </a>
+  <a class="subscribe" href="/newsletter/" aria-current={path.startsWith("/newsletter/") ? "page" : undefined}>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+      <rect x="3" y="5.5" width="18" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+      <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+    </svg>
+    Subscribe
+  </a>
+</nav>
+
+<script>
+  // Get out of the way while someone types: on phones the keyboard would push the bar over the field.
+  const bar = document.querySelector<HTMLElement>("[data-mobile-bar]");
+  const isTextField = (el: EventTarget | null) =>
+    el instanceof HTMLElement && el.matches("input:not([type=checkbox],[type=radio],[type=submit],[type=button]), textarea, select");
+  if (bar) {
+    document.addEventListener("focusin", (e) => {
+      if (isTextField(e.target)) bar.hidden = true;
+    });
+    document.addEventListener("focusout", (e) => {
+      if (isTextField(e.target)) bar.hidden = false;
+    });
+  }
+</script>
+
+<style>
+  .mobile-bar {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 60;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: env(safe-area-inset-bottom);
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-line);
+  }
+
+  .mobile-bar[hidden] {
+    display: none;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2xs);
+    min-height: 56px;
+    color: var(--color-bone);
+    text-decoration: none;
+    transition: background-color var(--motion-fast) var(--ease-out);
+  }
+
+  a:active {
+    background: var(--color-surface-raised);
+  }
+
+  a:focus-visible {
+    outline-offset: -4px;
+  }
+
+  .subscribe {
+    background: var(--color-blood);
+  }
+
+  .subscribe:active {
+    background: var(--color-blood-hover);
+  }
+
+  @media (min-width: 48rem) {
+    .mobile-bar {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,124 @@
+---
+import { site } from "../lib/config";
+
+const legal = [
+  { href: "/about/", label: "About" },
+  { href: "/standards/", label: "How we report" },
+  { href: "/corrections/", label: "Corrections" },
+  { href: "/suggest/", label: "Suggest a case" },
+  { href: "/privacy/", label: "Privacy" },
+  { href: "/terms/", label: "Terms" },
+];
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div class="about">
+      <img src="/images/badge-144.webp" width="72" height="72" alt="" loading="lazy" decoding="async" />
+      <p>Bone Chilling Tales tells the full story of real cases, with sources.</p>
+    </div>
+
+    <section aria-labelledby="footer-help">
+      <h2 id="footer-help" class="ui">If you need help</h2>
+      <ul class="resources">
+        {
+          site.resources.map((r) => (
+            <li>
+              <a href={r.url} rel="noopener">{r.name}</a>
+              <span class="ui">{r.detail}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <nav class="legal ui" aria-label="Site">
+      <ul>
+        {legal.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+      <p class="copyright">© {year} {site.siteName}</p>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-3xl);
+    padding-block: var(--space-xl);
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-line);
+    color: var(--color-ash);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    max-width: 32rem;
+  }
+
+  .about p {
+    margin: 0;
+    color: var(--color-bone);
+  }
+
+  h2 {
+    margin-bottom: var(--space-2xs);
+    color: var(--color-ash);
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .resources li {
+    display: flex;
+    flex-direction: column;
+    padding-block: var(--space-3xs);
+  }
+
+  .resources a {
+    padding-block: var(--space-3xs);
+  }
+
+  .legal ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-s);
+  }
+
+  .legal a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--color-ash);
+  }
+
+  .legal a:hover {
+    color: var(--color-ember);
+  }
+
+  .copyright {
+    margin: var(--space-xs) 0 0;
+  }
+
+  @media (min-width: 64rem) {
+    .grid {
+      grid-template-columns: 1.2fr 1fr 1fr;
+      align-items: start;
+    }
+  }
+</style>

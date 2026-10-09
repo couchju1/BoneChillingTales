@@ -1,0 +1,165 @@
+---
+const nav = [
+  { href: "/cases/", label: "Cases" },
+  { href: "/unsolved/", label: "Unsolved" },
+  { href: "/missing/", label: "Missing" },
+  { href: "/solved/", label: "Solved" },
+  { href: "/watch/", label: "Watch" },
+  { href: "/newsletter/", label: "Newsletter" },
+];
+
+const path = Astro.url.pathname;
+const isHome = path === "/";
+---
+
+<header class="site-header" data-header>
+  <div class="inner wrap">
+    <a class="logo" href="/" aria-current={isHome ? "page" : undefined}>
+      <img
+        src="/images/logo-wordmark-568.webp"
+        srcset="/images/logo-wordmark-284.webp 284w, /images/logo-wordmark-568.webp 568w"
+        sizes="(min-width: 48rem) 150px, 110px"
+        width="150"
+        height="60"
+        alt="Bone Chilling Tales"
+      />
+    </a>
+    <nav class="nav ui" aria-label="Main">
+      <ul>
+        {
+          nav.map((item) => (
+            <li>
+              <a href={item.href} aria-current={path.startsWith(item.href) ? "page" : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="scroll-sentinel" data-header-sentinel aria-hidden="true"></div>
+
+<script>
+  // Compact header once the page scrolls. Without JS the header just stays full size.
+  const header = document.querySelector<HTMLElement>("[data-header]");
+  const sentinel = document.querySelector("[data-header-sentinel]");
+  if (header && sentinel && "IntersectionObserver" in window) {
+    new IntersectionObserver(([entry]) => {
+      header.toggleAttribute("data-scrolled", !entry!.isIntersecting);
+    }).observe(sentinel);
+  }
+</script>
+
+<style>
+  .site-header {
+    background: var(--color-night);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2xs);
+    padding-block: var(--space-xs) 0;
+  }
+
+  .logo {
+    display: block;
+    padding-block: var(--space-3xs);
+  }
+
+  .logo img {
+    height: var(--logo-height-mobile);
+    width: auto;
+    transition: height var(--motion-base) var(--ease-out);
+  }
+
+  /* Phones: every link stays visible in one row that scrolls sideways. No hidden menu. */
+  .nav {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Fade the right edge so it reads as a row that keeps going. */
+    mask-image: linear-gradient(to right, #000 85%, transparent);
+  }
+
+  .nav ul {
+    display: flex;
+    gap: var(--space-3xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: var(--space-xs);
+    color: var(--color-bone);
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+  }
+
+  .nav a:first-child {
+    margin-left: calc(-1 * var(--space-xs));
+  }
+
+  .nav a:hover {
+    color: var(--color-ember);
+  }
+
+  .nav a[aria-current="page"] {
+    border-bottom-color: var(--color-blood);
+  }
+
+  .nav a:focus-visible {
+    outline-offset: -2px;
+  }
+
+  .scroll-sentinel {
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 1px;
+    pointer-events: none;
+  }
+
+  @media (min-width: 48rem) {
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .inner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-l);
+      padding-block: var(--space-2xs);
+    }
+
+    .logo img {
+      height: var(--logo-height);
+    }
+
+    .site-header[data-scrolled] .logo img {
+      height: var(--logo-height-mobile);
+    }
+
+    .nav {
+      width: auto;
+      overflow: visible;
+      mask-image: none;
+    }
+
+    .nav ul {
+      gap: var(--space-2xs);
+    }
+  }
+</style>
