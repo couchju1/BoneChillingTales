@@ -1,0 +1,61 @@
+---
+import Page from "../layouts/Page.astro";
+import { getPublishedCases } from "../lib/content";
+
+const [newest] = (await getPublishedCases()).sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+---
+
+<Page
+  title="Page Not Found | Bone Chilling Tales"
+  description="This page went missing. Try a search or read the newest story."
+  heading="This page went missing"
+  noindex
+>
+  <p slot="lead" class="lead">The link may be old, or the story moved. Try a search or read the newest story.</p>
+  <p slot="after" class="actions ui">
+    <a class="button" href="/search/">Search</a>
+    <a class="button secondary" href={newest ? `/cases/${newest.id}/` : "/cases/"}>Newest story</a>
+  </p>
+</Page>
+
+<style>
+  .lead {
+    max-width: var(--measure);
+    font-size: var(--step-1);
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+    margin-top: var(--space-l);
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-m);
+    border: 1px solid var(--color-blood);
+    border-radius: var(--radius-m);
+    background: var(--color-blood);
+    color: var(--color-bone);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background: var(--color-blood-hover);
+  }
+
+  .secondary {
+    border-color: var(--color-input-border);
+    background: transparent;
+  }
+
+  .secondary:hover {
+    border-color: var(--color-ember);
+    background: transparent;
+    color: var(--color-ember);
+  }
+</style>

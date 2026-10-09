@@ -9,6 +9,7 @@ npm install
 npm run dev      # local preview at http://localhost:4321
 npm run build    # writes the site to dist/
 npm run check    # type check plus the banned-word and punctuation scan of src/content
+npm run check:launch  # same, but also fails on any [NEEDS ...] or [VERIFY] placeholder left
 ```
 
 ## Publishing a story
@@ -25,6 +26,12 @@ heading text in lowercase with dashes ("The last night" becomes `the-last-night`
 The build fails when a published case has no sources, a `[S#]` tag points at a missing source,
 sources aren't numbered S1, S2, S3 in order, an unsolved or missing case has no tip line, the
 summary is missing or over 60 words, or a timeline event points at a heading that doesn't exist.
+
+## Posting a case update
+
+Small news goes in the story's `updates:` list (and bump `lastChecked`). Bigger news also gets a
+short post: copy `src/content/updates/_example.md`, set `case:` to the story's file name, and set
+`draft: false`. Mark either kind `type: correction` to list it on the Corrections page.
 
 ## Notes
 

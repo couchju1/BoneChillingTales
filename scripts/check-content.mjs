@@ -1,6 +1,9 @@
 // Scans src/content for banned words and punctuation from the Phase 9 human pass.
 // Story bodies, titles and descriptions are checked. Source titles are skipped,
 // since those quote other publishers.
+//
+// Also lists placeholders still waiting on you, like [NEEDS CLIENT PROOF], in published
+// content and site.config.json. They're warnings normally, and fail with --launch.
 import { readdir, readFile } from "node:fs/promises";
 import { join, relative } from "node:path";
 
@@ -38,9 +41,19 @@ async function* walk(dir) {
 }
 
 const problems = [];
+const placeholders = [];
+const PLACEHOLDER = /\[(NEEDS[^\]]*|VERIFY[^\]]*|YOUR CALL[^\]]*|CLIENT TO VERIFY[^\]]*|KIT FORM URL|G-X+|TOKEN)\]/;
+const launch = process.argv.includes("--launch");
 
 for await (const file of walk(ROOT)) {
   const lines = (await readFile(file, "utf8")).split("\n");
+  const isDraft = lines.some((l) => /^draft:\s*true\b/.test(l));
+  if (!isDraft) {
+    lines.forEach((line, i) => {
+      const m = line.match(PLACEHOLDER);
+      if (m) placeholders.push(`${relative(process.cwd(), file)}:${i + 1}  ${m[0]}`);
+    });
+  }
   let inFrontmatter = lines[0] === "---";
 
   lines.forEach((line, i) => {
@@ -63,6 +76,18 @@ for await (const file of walk(ROOT)) {
       }
     }
   });
+}
+
+const configLines = (await readFile(new URL("../site.config.json", import.meta.url), "utf8")).split("\n");
+configLines.forEach((line, i) => {
+  const m = line.match(PLACEHOLDER);
+  if (m) placeholders.push(`site.config.json:${i + 1}  ${m[0]}`);
+});
+
+if (placeholders.length > 0) {
+  const label = launch ? "Not ready to launch" : "Placeholders still to fill";
+  console[launch ? "error" : "warn"](`${label} (${placeholders.length}):\n` + placeholders.map((p) => `  ${p}`).join("\n"));
+  if (launch) problems.push(`${placeholders.length} placeholder(s) above`);
 }
 
 if (problems.length > 0) {

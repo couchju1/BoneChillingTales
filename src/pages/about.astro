@@ -1,0 +1,45 @@
+---
+import Page from "../layouts/Page.astro";
+import { existsSync } from "node:fs";
+import { requireHubCopy } from "../lib/hubs";
+import { site } from "../lib/config";
+
+const copy = await requireHubCopy("about");
+// Shows once the real photo is saved at the path in site.config.json.
+const hasPhoto = existsSync(`public${site.founder.photo}`);
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${site.domain}/about/#justin`,
+  name: site.founder.name,
+  jobTitle: site.founder.role,
+  worksFor: { "@id": `${site.domain}/#org` },
+  ...(hasPhoto ? { image: new URL(site.founder.photo, site.domain).href } : {}),
+  ...(site.founder.sameAs.length ? { sameAs: site.founder.sameAs } : {}),
+};
+---
+
+<Page title={copy.seoTitle ?? copy.title} description={copy.description} heading={copy.title} jsonLd={[person]}>
+  {
+    hasPhoto && (
+      <img
+        slot="lead"
+        class="portrait"
+        src={site.founder.photo}
+        alt={`${site.founder.name.split(" ")[0]}, who runs Bone Chilling Tales`}
+        width="320"
+        height="400"
+      />
+    )
+  }
+  <copy.Content />
+</Page>
+
+<style>
+  .portrait {
+    width: min(100%, 20rem);
+    height: auto;
+    margin-bottom: var(--space-l);
+    border-radius: var(--radius-m);
+  }
+</style>

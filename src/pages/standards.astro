@@ -1,0 +1,10 @@
+---
+import Page from "../layouts/Page.astro";
+import { requireHubCopy } from "../lib/hubs";
+
+const copy = await requireHubCopy("standards");
+---
+
+<Page title={copy.seoTitle ?? copy.title} description={copy.description} heading={copy.title}>
+  <copy.Content />
+</Page>

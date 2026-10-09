@@ -10,7 +10,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check && node scripts/check-content.mjs"
+    "check": "astro check && node scripts/check-content.mjs",
+    "check:launch": "astro check && node scripts/check-content.mjs --launch"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",

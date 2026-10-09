@@ -1,0 +1,120 @@
+---
+import { render } from "astro:content";
+import Page from "../../layouts/Page.astro";
+import CaseStatusLine from "../../components/CaseStatusLine.astro";
+import SourceList from "../../components/SourceList.astro";
+import { getPublishedCases, getPublishedUpdates, type Case } from "../../lib/content";
+import { formatDate, isoDate } from "../../lib/dates";
+import { SOURCE_TAG } from "../../lib/sources";
+import { site } from "../../lib/config";
+import type { CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const cases = new Map((await getPublishedCases()).map((c) => [c.id, c]));
+  const posts = await getPublishedUpdates();
+  return posts.flatMap((post) => {
+    if (/^\d+$/.test(post.id)) throw new Error(`${post.filePath}: an update file name can't be only a number.`);
+    const story = cases.get(post.data.case.id);
+    // An update about a story that isn't published yet waits until the story is.
+    return story ? [{ params: { slug: post.id }, props: { post, story } }] : [];
+  });
+}
+
+interface Props {
+  post: CollectionEntry<"updates">;
+  story: Case;
+}
+
+const { post, story } = Astro.props;
+const { Content } = await render(post);
+// Titles stay under 60 characters: drop the site name when the headline is long.
+const branded = `${post.data.title} | Bone Chilling Tales`;
+const seoTitle = post.data.seoTitle ?? (branded.length <= 60 ? branded : post.data.title);
+
+// Source tags in an update point at the story's source list, shown below.
+const ids = new Set(story.data.sources.map((s) => s.id));
+for (const match of (post.body ?? "").matchAll(SOURCE_TAG)) {
+  for (const id of match[1]!.split(",").map((t) => t.trim())) {
+    if (!ids.has(id)) {
+      throw new Error(`${post.filePath}: [${id}] isn't in the sources of the story "${story.id}".`);
+    }
+  }
+}
+
+const article = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  headline: post.data.title,
+  description: post.data.description,
+  image: [new URL("/images/og-default.jpg", site.domain).href],
+  datePublished: isoDate(post.data.date),
+  dateModified: isoDate(post.data.date),
+  author: { "@id": `${site.domain}/about/#justin` },
+  publisher: { "@id": `${site.domain}/#org` },
+  mainEntityOfPage: new URL(`/updates/${post.id}/`, site.domain).href,
+};
+---
+
+<Page
+  title={seoTitle}
+  description={post.data.description}
+  heading={post.data.title}
+  breadcrumbs={[{ name: "Updates", href: "/updates/" }, { name: story.data.person, href: `/cases/${story.id}/` }, { name: "Update" }]}
+  jsonLd={[article]}
+  noindex={post.data.draft}
+>
+  <div slot="lead">
+    <p class="dateline ui">
+      {post.data.type === "correction" && <span class="tag">Correction</span>}
+      <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date)}</time>
+    </p>
+    <CaseStatusLine data={story.data} />
+  </div>
+
+  <Content />
+
+  <div slot="after" class="after">
+    <p class="story-link">
+      <a class="button ui" href={`/cases/${story.id}/`}>Read the full story</a>
+    </p>
+    <SourceList sources={story.data.sources} caseId={story.id} />
+  </div>
+</Page>
+
+<style>
+  .dateline {
+    display: flex;
+    gap: var(--space-s);
+    margin-bottom: var(--space-2xs);
+    color: var(--color-ash);
+  }
+
+  .tag {
+    color: var(--color-ember);
+    font-weight: 600;
+  }
+
+  .after {
+    max-width: var(--measure);
+  }
+
+  .story-link {
+    margin-top: var(--space-l);
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-m);
+    border-radius: var(--radius-m);
+    background: var(--color-blood);
+    color: var(--color-bone);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background: var(--color-blood-hover);
+  }
+</style>

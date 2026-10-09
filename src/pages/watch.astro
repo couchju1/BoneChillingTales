@@ -1,0 +1,110 @@
+---
+import Page from "../layouts/Page.astro";
+import VideoFacade from "../components/VideoFacade.astro";
+import { getPublishedCases } from "../lib/content";
+import { site } from "../lib/config";
+
+const videos = (await getPublishedCases())
+  .filter((c) => c.data.youtubeId)
+  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+const [latest, ...past] = videos;
+const subscribe = `${site.social.youtube}?sub_confirmation=1`;
+---
+
+<Page
+  title="True Crime Videos | Bone Chilling Tales"
+  description="Bone Chilling Tales videos on YouTube. Every video has a written story with the sources behind it."
+  heading="Videos"
+>
+  <p slot="lead" class="lead">Every video has a written story with the sources behind it.</p>
+
+  <div slot="after">
+    {
+      latest ? (
+        <section class="latest" aria-label="Latest video">
+          <VideoFacade youtubeId={latest.data.youtubeId!} title={latest.data.title} />
+          <p class="video-title">{latest.data.title}</p>
+          <a href={`/cases/${latest.id}/`}>Read the full story</a>
+        </section>
+      ) : (
+        <p class="lead">Videos are on the way. The written stories are already up.</p>
+      )
+    }
+
+    {
+      past.length > 0 && (
+        <section class="past" aria-labelledby="past-heading">
+          <h2 id="past-heading">More videos</h2>
+          <ul>
+            {past.map((c) => (
+              <li>
+                <VideoFacade youtubeId={c.data.youtubeId!} title={c.data.title} />
+                <p class="video-title">{c.data.title}</p>
+                <a href={`/cases/${c.id}/`}>Read the full story</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <p class="subscribe">
+      <a class="button ui" href={subscribe} rel="noopener">Subscribe on YouTube</a>
+    </p>
+  </div>
+</Page>
+
+<style>
+  .lead {
+    max-width: var(--measure);
+    font-size: var(--step-1);
+  }
+
+  .latest {
+    max-width: 52rem;
+    margin-top: var(--space-l);
+  }
+
+  .video-title {
+    margin: var(--space-s) 0 var(--space-3xs);
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+  }
+
+  .past {
+    margin-top: var(--space-2xl);
+  }
+
+  .past h2 {
+    font-size: var(--step-2);
+  }
+
+  .past ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: var(--space-l);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .subscribe {
+    margin-top: var(--space-2xl);
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-m);
+    border-radius: var(--radius-m);
+    background: var(--color-blood);
+    color: var(--color-bone);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background: var(--color-blood-hover);
+  }
+</style>

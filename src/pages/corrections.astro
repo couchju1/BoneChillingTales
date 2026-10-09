@@ -1,0 +1,73 @@
+---
+import Page from "../layouts/Page.astro";
+import { getPublishedCases, allCorrections } from "../lib/content";
+import { formatDate, isoDate } from "../lib/dates";
+import { stripCitations } from "../lib/sources";
+
+const corrections = await allCorrections(await getPublishedCases());
+---
+
+<Page
+  title="Corrections | Bone Chilling Tales"
+  description="Every correction we've made to a Bone Chilling Tales story, with the date and what changed."
+  heading="Corrections"
+>
+  <p slot="lead" class="lead">When we get something wrong, we fix it and log it here with the date.</p>
+
+  <div slot="after">
+    {
+      corrections.length > 0 ? (
+        <ol class="log">
+          {corrections.map((c) => (
+            <li>
+              <time class="ui" datetime={isoDate(c.date)}>
+                {formatDate(c.date)}
+              </time>
+              <p>
+                <a href={c.href}>{c.person}</a>: {stripCitations(c.text)}
+              </p>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p class="empty">No corrections yet.</p>
+      )
+    }
+    <p class="suggest"><a href="/suggest/">Suggest a correction</a></p>
+  </div>
+</Page>
+
+<style>
+  .lead {
+    max-width: var(--measure);
+    font-size: var(--step-1);
+  }
+
+  .log {
+    max-width: var(--measure);
+    margin: var(--space-l) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .log li {
+    padding-block: var(--space-s);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .log time {
+    color: var(--color-ash);
+  }
+
+  .log p {
+    margin: var(--space-3xs) 0 0;
+  }
+
+  .empty {
+    color: var(--color-ash);
+  }
+
+  .suggest {
+    margin-top: var(--space-l);
+  }
+</style>

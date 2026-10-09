@@ -1,0 +1,55 @@
+---
+import Page from "../layouts/Page.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+---
+
+<Page
+  title="Weekly True Crime Newsletter | Bone Chilling Tales"
+  description="One email a week with new case stories and updates on the cases we follow. Free. Quit any time."
+  heading="The weekly email"
+>
+  <p slot="lead" class="lead">
+    Every week you get the new stories and any updates on cases we follow: arrests, trials, new leads. That's it.
+  </p>
+
+  <NewsletterForm slot="after" heading="Sign up" body="Free. One email a week." />
+
+  <section slot="after" class="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Before you sign up</h2>
+    <dl>
+      <dt>How often?</dt>
+      <dd>Once a week. Sometimes a short extra email if there's big news in a case we follow.</dd>
+      <dt>Can I quit?</dt>
+      <dd>Yes. Every email has an unsubscribe link at the bottom.</dd>
+      <dt>Will you sell my email?</dt>
+      <dd>No.</dd>
+    </dl>
+  </section>
+</Page>
+
+<style>
+  .lead {
+    max-width: var(--measure);
+    font-size: var(--step-1);
+    line-height: 1.5;
+  }
+
+  .faq {
+    max-width: var(--measure);
+    margin-top: var(--space-2xl);
+  }
+
+  .faq h2 {
+    font-size: var(--step-2);
+  }
+
+  dt {
+    margin-top: var(--space-m);
+    font-family: var(--font-ui);
+    font-weight: 600;
+  }
+
+  dd {
+    margin: var(--space-3xs) 0 0;
+  }
+</style>

@@ -1,0 +1,107 @@
+---
+import type { GetStaticPaths } from "astro";
+import Page from "../../layouts/Page.astro";
+import Pagination from "../../components/Pagination.astro";
+import StatusChip from "../../components/StatusChip.astro";
+import { getPublishedCases, getPublishedUpdates } from "../../lib/content";
+import { formatDate, isoDate } from "../../lib/dates";
+import { PAGE_SIZE } from "../../lib/hubs";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const cases = new Map((await getPublishedCases()).map((c) => [c.id, c]));
+  const posts = (await getPublishedUpdates())
+    .filter((u) => cases.has(u.data.case.id))
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .map((u) => ({ post: u, story: cases.get(u.data.case.id)! }));
+  return paginate(posts, { pageSize: PAGE_SIZE });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const title = `Case Updates${page.currentPage > 1 ? `, Page ${page.currentPage}` : ""} | Bone Chilling Tales`;
+---
+
+<Page
+  title={title}
+  description="Short news on true crime cases we've already covered: arrests, trials, sentencing and new leads. Newest first."
+  heading="Case updates"
+  breadcrumbs={[{ name: "Cases", href: "/cases/" }, { name: "Updates" }]}
+>
+  <p slot="lead" class="lead">Short news on cases we've already covered. Newest first.</p>
+
+  <div slot="after">
+    {
+      page.data.length > 0 ? (
+        <ol class="posts">
+          {page.data.map(({ post, story }) => (
+            <li>
+              <p class="meta ui">
+                <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date)}</time>
+                <StatusChip status={story.data.status} />
+                <span>{story.data.person}</span>
+              </p>
+              <h2>
+                <a href={`/updates/${post.id}/`}>{post.data.title}</a>
+              </h2>
+              <p class="desc">{post.data.description}</p>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p class="empty">No updates yet. When there's news on a case we've covered, it shows up here.</p>
+      )
+    }
+    <Pagination page={page} base="/updates/" />
+  </div>
+</Page>
+
+<style>
+  .lead {
+    max-width: var(--measure);
+    font-size: var(--step-1);
+  }
+
+  .posts {
+    max-width: var(--measure);
+    margin: var(--space-l) 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .posts li {
+    padding-block: var(--space-m);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs) var(--space-s);
+    margin-bottom: var(--space-2xs);
+    color: var(--color-ash);
+  }
+
+  h2 {
+    margin-bottom: var(--space-2xs);
+    font-size: var(--step-2);
+  }
+
+  h2 a {
+    color: var(--color-bone);
+    text-decoration: none;
+  }
+
+  h2 a:hover {
+    color: var(--color-ember);
+  }
+
+  .desc {
+    margin: 0;
+    color: var(--color-ash);
+  }
+
+  .empty {
+    color: var(--color-ash);
+  }
+</style>

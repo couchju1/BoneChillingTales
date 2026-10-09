@@ -112,3 +112,20 @@ export async function latestUpdates(cases: Case[], limit: number): Promise<FeedI
   );
   return [...posts, ...logs].sort((a, b) => b.date.getTime() - a.date.getTime()).slice(0, limit);
 }
+
+/** Every correction: update log entries marked as corrections, plus update posts marked as corrections. */
+export async function allCorrections(cases: Case[]): Promise<FeedItem[]> {
+  const byId = new Map(cases.map((c) => [c.id, c]));
+  const fromLogs = cases.flatMap((c) =>
+    c.data.updates
+      .filter((u) => u.type === "correction")
+      .map((u) => ({ date: u.date, text: u.text, href: `/cases/${c.id}/#updates-heading`, person: c.data.person })),
+  );
+  const fromPosts = (await getPublishedUpdates()).flatMap((u) => {
+    const story = byId.get(u.data.case.id);
+    return u.data.type === "correction" && story
+      ? [{ date: u.data.date, text: u.data.title, href: `/updates/${u.id}/`, person: story.data.person }]
+      : [];
+  });
+  return [...fromLogs, ...fromPosts].sort((a, b) => b.date.getTime() - a.date.getTime());
+}

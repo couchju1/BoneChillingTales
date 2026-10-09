@@ -1,0 +1,39 @@
+---
+import Base from "./Base.astro";
+import "../styles/prose.css";
+import Breadcrumbs, { type Crumb } from "../components/Breadcrumbs.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+  breadcrumbs?: Crumb[];
+  jsonLd?: object[];
+  noindex?: boolean;
+}
+
+const { title, description, heading, breadcrumbs, jsonLd, noindex } = Astro.props;
+---
+
+<Base title={title} description={description} jsonLd={jsonLd} noindex={noindex}>
+  <div class="page wrap">
+    {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
+    <h1>{heading}</h1>
+    <slot name="lead" />
+    <div class="prose">
+      <slot />
+    </div>
+    <slot name="after" />
+  </div>
+</Base>
+
+<style>
+  .page {
+    padding-top: var(--space-l);
+  }
+
+  h1 {
+    max-width: 20ch;
+    font-size: var(--step-5);
+  }
+</style>

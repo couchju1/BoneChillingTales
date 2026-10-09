@@ -12,6 +12,6 @@ export default defineConfig({
     format: "directory",
   },
   markdown: {
-    processor: satteri({ mdastPlugins: [sourceTags] }),
+    processor: satteri({ mdastPlugins: [sourceTags], features: { headingAttributes: true } }),
   },
 });
