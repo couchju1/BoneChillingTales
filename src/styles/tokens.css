@@ -1,0 +1,63 @@
+/* src/styles/tokens.css */
+:root {
+  --color-night: #120F0D;
+  --color-surface: #1E1A17;
+  --color-surface-raised: #262119;
+  --color-line: #3A332D;
+  --color-input-border: #6B625A;
+  --color-bone: #E8DACB;
+  --color-ash: #A89C8E;
+  --color-blood: #AD0404;        /* logo red: fills only, never text */
+  --color-blood-hover: #8E0303;
+  --color-ember: #E85A4E;        /* red text, links, Unsolved */
+  --color-lamp: #E3A23B;         /* Missing status */
+  --color-solved: #86B58F;
+  --color-focus: #E8DACB;
+
+  --font-display: "Newsreader", Georgia, serif;
+  --font-body: "Newsreader", Georgia, serif;
+  --font-ui: "Public Sans", system-ui, sans-serif;
+
+  --step--1: clamp(0.83rem, 0.80rem + 0.15vw, 0.92rem);
+  --step-0: clamp(1.06rem, 1.00rem + 0.30vw, 1.25rem);
+  --step-1: clamp(1.27rem, 1.17rem + 0.50vw, 1.56rem);
+  --step-2: clamp(1.52rem, 1.36rem + 0.80vw, 1.95rem);
+  --step-3: clamp(1.83rem, 1.57rem + 1.30vw, 2.44rem);
+  --step-4: clamp(2.19rem, 1.80rem + 1.95vw, 3.05rem);
+  --step-5: clamp(2.63rem, 2.04rem + 2.95vw, 3.82rem);
+  --measure: 66ch;
+  --leading-body: 1.62;
+  --leading-tight: 1.08;
+
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: 6rem;
+
+  --radius-s: 2px;
+  --radius-m: 4px;
+  --radius-pill: 999px;
+
+  --shadow-raised: 0 8px 24px rgb(0 0 0 / 0.45);
+
+  --logo-height: 60px;
+  --logo-height-mobile: 44px;
+
+  --bp-s: 30rem;
+  --bp-m: 48rem;
+  --bp-l: 64rem;
+  --bp-xl: 80rem;
+
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-fast: 0ms; --motion-base: 0ms; }
+}

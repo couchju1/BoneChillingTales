@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+.DS_Store
+
+# Source packs hold copyrighted articles and records. Never commit or deploy them.
+research/*
+!research/README.md

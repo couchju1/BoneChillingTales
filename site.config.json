@@ -1,0 +1,54 @@
+{
+  "siteName": "Bone Chilling Tales",
+  "domain": "https://www.bonechillingtales.com",
+  "tagline": "True crime stories that stay with you.",
+  "description": "Full stories of real crimes and unsolved cases, with every source listed.",
+  "locale": "en_US",
+  "founder": {
+    "name": "Justin Couch",
+    "role": "Founder and editor",
+    "photo": "/images/about-justin.webp",
+    "sameAs": []
+  },
+  "contactEmail": "[NEEDS CLIENT PROOF: a site inbox, not your personal email]",
+  "social": {
+    "youtube": "https://www.youtube.com/@BoneChillingTales1",
+    "youtubeVerified": false
+  },
+  "newsletter": {
+    "provider": "kit",
+    "formAction": "[KIT FORM URL]",
+    "cadence": "weekly"
+  },
+  "analytics": {
+    "ga4Id": "[G-XXXXXXX]",
+    "searchConsoleVerification": "[TOKEN]"
+  },
+  "ads": {
+    "enabled": false,
+    "network": null,
+    "maxPerScreen": 1
+  },
+  "affiliate": {
+    "amazonTag": null,
+    "disclosure": "If you buy a book through a link on this page, we may earn a small commission. It doesn't change the price."
+  },
+  "forms": {
+    "suggestEndpoint": "/api/suggest.php",
+    "suggestTo": "[NEEDS CLIENT PROOF]",
+    "honeypotField": "website"
+  },
+  "launchStates": ["SD", "ND", "MN", "IA", "NE"],
+  "statuses": {
+    "unsolved": { "label": "Unsolved", "counterLabel": "Unsolved" },
+    "missing": { "label": "Missing", "counterLabel": "Missing" },
+    "solved": { "label": "Solved", "counterLabel": null },
+    "in-court": { "label": "In court", "counterLabel": null }
+  },
+  "resources": [
+    { "name": "988 Suicide and Crisis Lifeline", "detail": "Call or text 988", "url": "https://988lifeline.org" },
+    { "name": "National Center for Missing & Exploited Children", "detail": "1-800-THE-LOST", "url": "https://www.missingkids.org" },
+    { "name": "NamUs", "detail": "National missing and unidentified persons database", "url": "https://namus.nij.ojp.gov" }
+  ],
+  "reviewIntervalDays": 90
+}
