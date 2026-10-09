@@ -20,7 +20,7 @@ published: 2026-10-20
 agency: "the Example County Sheriff's Office"
 tipLine: "+16055550100"
 anonymousTips: { name: "Example Crime Stoppers", url: "https://example.com/tips" }
-contentNote: null # or "violence against a child" | "sexual violence"
+contentNote: null # finishes "this story describes ___", like "violence against a child"
 image:
   src: "./_example-portrait.jpg"
   alt: "Example Person in an undated photo released by the Example County Sheriff's Office"

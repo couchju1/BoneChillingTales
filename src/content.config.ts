@@ -70,7 +70,9 @@ const cases = defineCollection({
           .nullish(),
         // Crime Stoppers or a similar program, when the agency offers anonymous tips.
         anonymousTips: z.object({ name: z.string().min(1), url: z.url().optional() }).nullish(),
-        contentNote: z.enum(["violence against a child", "sexual violence"]).nullish(),
+        // Finishes the sentence "Content note: this story describes ___." Lowercase, no final period.
+        // Required by Standards for violence against a child or sexual violence.
+        contentNote: z.string().min(3).max(140).regex(/^[a-z][^.]*$/, "contentNote starts lowercase and has no period, like \"a prolonged, violent killing\"").nullish(),
         image: z
           .object({
             src: image(),
