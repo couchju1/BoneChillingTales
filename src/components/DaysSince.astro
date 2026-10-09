@@ -1,5 +1,6 @@
 ---
 import { isoDate } from "../lib/dates";
+import { daysSinceText } from "../lib/days-since";
 
 interface Props {
   /** The day the count starts from. */
@@ -9,10 +10,11 @@ interface Props {
 }
 
 const { since, label } = Astro.props;
+const day = isoDate(since);
 ---
 
-<!-- Hidden until the browser fills in today's count. Without JS the status line still shows the date. -->
-<span class="days-since ui" data-days-since={isoDate(since)} data-label={label} hidden></span>
+<!-- Holds its space invisibly until the browser fills in today's count (see src/lib/days-since.ts). -->
+<span class="days-since ui pending" data-days-since={day} data-label={label} aria-hidden="true">{daysSinceText(day, label)}</span>
 
 <script>
   import { fillDaysSince } from "../lib/days-since";

@@ -208,3 +208,8 @@ main:focus {
 .chip-solved { color: var(--color-solved); }
 .chip-in-court { color: var(--color-bone); }
 .chip-in-court::before { display: none; }
+
+/* Day counters hold their space until the browser fills in today's count. */
+.days-since.pending {
+  visibility: hidden;
+}

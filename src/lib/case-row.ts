@@ -1,6 +1,8 @@
 // Shared by the build (CaseRow.astro) and the hub filter script, so a row looks
 // the same whether the server or the browser drew it. No astro:content imports here.
 
+import { daysSinceText } from "./days-since";
+
 export interface CaseRowData {
   id: string;
   person: string;
@@ -40,7 +42,7 @@ export function caseRowHtml(d: CaseRowData, level: 2 | 3 = 2): string {
   const fresh = d.fresh ? `<span class="case-row-fresh" title="New update"><span class="visually-hidden">New update. </span></span>` : "";
   const counter =
     d.counterLabel && d.countFrom
-      ? `<span class="days-since" data-days-since="${d.countFrom}" data-label="${escape(d.counterLabel)}" hidden></span>`
+      ? `<span class="days-since pending" data-days-since="${d.countFrom}" data-label="${escape(d.counterLabel)}" aria-hidden="true">${escape(daysSinceText(d.countFrom, d.counterLabel) ?? "")}</span>`
       : "";
   return (
     `<li class="case-row">` +

@@ -1,0 +1,114 @@
+---
+import { site, isPlaceholder } from "../lib/config";
+
+// No GA4 ID yet: no analytics markup at all.
+const id = isPlaceholder(site.analytics.ga4Id) ? null : site.analytics.ga4Id;
+
+// Where the law asks for consent first, Google keeps analytics cookies off (Consent Mode v2).
+const CONSENT_REGIONS = [
+  "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IS", "IE", "IT", "LV",
+  "LI", "LT", "LU", "MT", "NL", "NO", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "GB", "CH",
+];
+---
+
+{
+  id && (
+    <script is:inline define:vars={{ id, regions: CONSENT_REGIONS }}>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        dataLayer.push(arguments);
+      };
+      var optedOut = false;
+      try {
+        optedOut = localStorage.getItem("bct-analytics") === "off";
+      } catch (e) {}
+      // Global Privacy Control or the footer opt-out turns analytics off for this visitor.
+      var off = optedOut || navigator.globalPrivacyControl === true;
+      var none = { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" };
+      gtag("consent", "default", Object.assign({ analytics_storage: "denied", region: regions }, none));
+      gtag("consent", "default", Object.assign({ analytics_storage: off ? "denied" : "granted" }, none));
+      gtag("js", new Date());
+      gtag("config", id, { debug_mode: /[?&]ga_debug=1/.test(location.search) || undefined });
+      window.bctAnalyticsOff = off;
+      // Load gtag.js after the page has finished, so it never competes with the story text.
+      addEventListener("load", function () {
+        if (off) return;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+        document.head.appendChild(s);
+      });
+    </script>
+  )
+}
+
+{
+  id && (
+    <script>
+      const track = (name: string, params: Record<string, unknown> = {}) => {
+        const w = window as unknown as { gtag?: (...args: unknown[]) => void; bctAnalyticsOff?: boolean };
+        if (!w.bctAnalyticsOff) w.gtag?.("event", name, params);
+      };
+
+      // Custom events dispatched by the forms and the video player.
+      const map: Record<string, string> = {
+        "bct:newsletter-submit": "newsletter_submit",
+        "bct:newsletter-success": "newsletter_success",
+        "bct:suggest-submit": "suggest_submit",
+        "bct:video-play": "video_play",
+      };
+      for (const [from, to] of Object.entries(map)) {
+        document.addEventListener(from, (e) => track(to, (e as CustomEvent).detail ?? {}));
+      }
+
+      // Taps on an agency tip line.
+      document.addEventListener("click", (e) => {
+        const link = (e.target as Element).closest<HTMLAnchorElement>("a[data-tip-call]");
+        if (link) track("outbound_tip_call", { link_url: link.href, page_path: location.pathname });
+      });
+
+      // read_75: the reader got three quarters of the way through a story's text. Fires once.
+      const body = document.querySelector<HTMLElement>("[data-read-target]");
+      if (body) {
+        let sent = false;
+        const check = () => {
+          if (sent) return;
+          const box = body.getBoundingClientRect();
+          if (innerHeight - box.top >= box.height * 0.75) {
+            sent = true;
+            track("read_75", { page_path: location.pathname });
+            removeEventListener("scroll", onScroll);
+          }
+        };
+        let queued = false;
+        const onScroll = () => {
+          if (queued) return;
+          queued = true;
+          requestAnimationFrame(() => {
+            queued = false;
+            check();
+          });
+        };
+        addEventListener("scroll", onScroll, { passive: true });
+      }
+
+      // Footer link: turn analytics off (or back on) for this browser.
+      const toggle = document.querySelector<HTMLButtonElement>("[data-analytics-toggle]");
+      if (toggle) {
+        const w = window as unknown as { gtag?: (...args: unknown[]) => void; bctAnalyticsOff?: boolean };
+        const label = () => (toggle.textContent = w.bctAnalyticsOff ? "Turn analytics on" : "Turn off analytics");
+        toggle.hidden = false;
+        label();
+        toggle.addEventListener("click", () => {
+          w.bctAnalyticsOff = !w.bctAnalyticsOff;
+          try {
+            if (w.bctAnalyticsOff) localStorage.setItem("bct-analytics", "off");
+            else localStorage.removeItem("bct-analytics");
+          } catch {}
+          w.gtag?.("consent", "update", { analytics_storage: w.bctAnalyticsOff ? "denied" : "granted" });
+          label();
+        });
+      }
+    </script>
+  )
+}

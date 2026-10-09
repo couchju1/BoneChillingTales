@@ -1,0 +1,62 @@
+---
+import { site } from "../lib/config";
+
+interface Props {
+  /** Where the slot sits, passed to the ad network script as data-ad-position. */
+  position: "story-after-summary" | "story-before-sources";
+}
+
+const { position } = Astro.props;
+// With ads off, nothing ships. With ads on but no network yet, a dashed box shows the reserved space for testing.
+const enabled = site.ads.enabled;
+const placeholder = enabled && !site.ads.network;
+---
+
+{
+  enabled && (
+    <aside class:list={["ad-slot", { placeholder }]} aria-label="Advertisement" data-ad-position={position} data-pagefind-ignore>
+      <span class="ad-label ui">Advertisement</span>
+      <div class="ad-unit" data-ad-unit />
+    </aside>
+  )
+}
+
+<style>
+  /* Space is held before the ad loads, so the story never jumps (CLS 0). */
+  .ad-slot {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: var(--space-3xs);
+    max-width: var(--measure);
+    min-height: 290px; /* 250px unit + label, phones */
+    margin-block: var(--space-xl);
+    contain: layout;
+  }
+
+  .ad-label {
+    color: var(--color-ash);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .ad-unit {
+    min-height: 250px;
+    overflow: hidden;
+  }
+
+  .placeholder .ad-unit {
+    border: 1px dashed var(--color-input-border);
+    border-radius: var(--radius-m);
+  }
+
+  @media (min-width: 48rem) {
+    .ad-slot {
+      min-height: 320px; /* 280px unit + label */
+    }
+
+    .ad-unit {
+      min-height: 280px;
+    }
+  }
+</style>

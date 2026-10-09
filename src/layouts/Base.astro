@@ -5,6 +5,7 @@ import Seo from "../components/Seo.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import MobileBar from "../components/MobileBar.astro";
+import Analytics from "../components/Analytics.astro";
 import { site, isPlaceholder } from "../lib/config";
 
 interface Props {
@@ -57,6 +58,7 @@ const verification = site.analytics.searchConsoleVerification;
       type="font/woff2"
       crossorigin
     />
+    <Analytics />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

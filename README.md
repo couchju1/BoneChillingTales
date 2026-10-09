@@ -42,6 +42,20 @@ short post: copy `src/content/updates/_example.md`, set `case:` to the story's f
   from `noreply@` your domain, so set up SPF and DKIM for the domain at Hostinger.
 - Spam guards: a hidden honeypot field, a 3 second minimum, and 5 sends per IP per hour.
 
+## Analytics and ads
+
+- Analytics: put your GA4 measurement ID in `analytics.ga4Id`. Nothing loads until you do.
+  Visitors in the EU, UK and Switzerland start with analytics cookies off (Google Consent Mode v2),
+  and anyone with Global Privacy Control on, or who taps "Turn off analytics" in the footer, is
+  never tracked. gtag.js loads after the page finishes, so it never slows the story.
+- Events: newsletter_submit, newsletter_success, suggest_submit, video_play, outbound_tip_call
+  and read_75. In GA4, mark newsletter_success as a key event. Add `?ga_debug=1` to any page
+  URL to watch events arrive in DebugView.
+- Ads: set `ads.enabled` to true once a network approves you. Two slots sit on each story,
+  after the summary and before the sources, with their height held so nothing jumps. With no
+  `ads.network` set they show as dashed boxes for testing. Add the network's script per its
+  instructions, and re-run PageSpeed after.
+
 ## Notes
 
 - Fonts are self-hosted from `public/fonts/` (Newsreader and Public Sans, OFL, Latin subset).

@@ -12,6 +12,7 @@ import SourceList from "../components/SourceList.astro";
 import NewsletterForm from "../components/NewsletterForm.astro";
 import ShareButton from "../components/ShareButton.astro";
 import StatusChip from "../components/StatusChip.astro";
+import AdSlot from "../components/AdSlot.astro";
 import { site } from "../lib/config";
 import { STATE_NAMES, type Case } from "../lib/content";
 import { isoDate } from "../lib/dates";
@@ -100,6 +101,8 @@ const video =
       </div>
     </header>
 
+    <AdSlot position="story-after-summary" />
+
     {
       data.image && (
         <figure class="lead-image" data-pagefind-ignore>
@@ -117,7 +120,7 @@ const video =
     }
 
     <div class:list={["story-grid", { "has-timeline": hasTimeline }]}>
-      <div class="story-body prose">
+      <div class="story-body prose" data-read-target>
         {
           data.contentNote ? (
             <ContentNote note={data.contentNote}>
@@ -136,6 +139,7 @@ const video =
           <TipBox person={data.person} agency={data.agency} tipLine={data.tipLine} anonymousTips={data.anonymousTips} />
         )}
         <UpdateLog updates={data.updates} />
+        <AdSlot position="story-before-sources" />
         <SourceList sources={data.sources} caseId={entry.id} />
         <NewsletterForm
           heading="Get updates on this case"

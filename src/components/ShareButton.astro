@@ -6,8 +6,9 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<!-- Hidden without JS. Uses the phone's own share sheet, or copies the link. No third-party scripts. -->
-<button type="button" class="share ui" data-share data-title={title} hidden>
+<!-- Holds its space but stays invisible until the script turns it on, so nothing below moves.
+     Uses the phone's own share sheet, or copies the link. No third-party scripts. -->
+<button type="button" class="share ui pending" data-share data-title={title} disabled aria-hidden="true" tabindex="-1">
   <span data-share-label aria-live="polite">Share this story</span>
 </button>
 
@@ -15,9 +16,15 @@ const { title } = Astro.props;
   for (const button of document.querySelectorAll<HTMLButtonElement>("[data-share]")) {
     const label = button.querySelector<HTMLElement>("[data-share-label]")!;
     const canShare = "share" in navigator;
-    if (!canShare && !navigator.clipboard) continue;
+    if (!canShare && !navigator.clipboard) {
+      button.hidden = true;
+      continue;
+    }
     if (!canShare) label.textContent = "Copy link";
-    button.hidden = false;
+    button.classList.remove("pending");
+    button.disabled = false;
+    button.removeAttribute("aria-hidden");
+    button.removeAttribute("tabindex");
     button.addEventListener("click", async () => {
       const url = location.href.split("#")[0]!;
       if (canShare) {
@@ -40,6 +47,10 @@ const { title } = Astro.props;
     background: transparent;
     color: var(--color-bone);
     cursor: pointer;
+  }
+
+  .share.pending {
+    visibility: hidden;
   }
 
   .share:hover {
