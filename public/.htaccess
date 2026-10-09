@@ -1,0 +1,59 @@
+# Bone Chilling Tales: server rules for Hostinger (LiteSpeed reads Apache .htaccess).
+# Folders with their own cache times have their own .htaccess: _astro/, fonts/, images/, og/, pagefind/.
+
+Options -Indexes
+DirectoryIndex index.html
+DirectorySlash On
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # bonechillingtales.com -> https://www.bonechillingtales.com, in one hop.
+  RewriteCond %{HTTP_HOST} ^bonechillingtales\.com$ [NC]
+  RewriteRule ^ https://www.bonechillingtales.com%{REQUEST_URI} [R=301,L]
+
+  # http -> https. Hostinger can end TLS in front of the site, so check its header too.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Folders need a trailing slash. Done here so it stays on https; Apache's own fix would use http behind Hostinger's proxy.
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.+[^/])$ https://www.bonechillingtales.com/$1/ [R=301,L]
+
+  # Hide dotfiles (the deploy manifest and the like), but keep .well-known for certificates.
+  RewriteRule (^|/)\.(?!well-known/) - [F]
+
+  # BEGIN REDIRECTS (written by scripts/redirects.mjs from redirects.txt)
+  # END REDIRECTS
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+  # Turn on once https works on www and the bare domain (a mistake here is hard to undo):
+  # Header always set Strict-Transport-Security "max-age=31536000"
+
+  # Pages and feeds change on every deploy: 10 minutes.
+  <FilesMatch "\.(html|xml|json|txt|webmanifest)$">
+    Header set Cache-Control "public, max-age=600"
+  </FilesMatch>
+  <FilesMatch "\.(ico|png|jpg|jpeg|webp|avif|svg)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml application/rss+xml application/json application/javascript text/javascript application/manifest+json image/svg+xml
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType text/javascript .js .mjs
+  AddType image/avif .avif
+  AddType application/wasm .wasm
+  AddCharset utf-8 .html .css .js .json .xml .txt
+</IfModule>

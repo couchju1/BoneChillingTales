@@ -56,6 +56,30 @@ short post: copy `src/content/updates/_example.md`, set `case:` to the story's f
   `ads.network` set they show as dashed boxes for testing. Add the network's script per its
   instructions, and re-run PageSpeed after.
 
+## Deploying to Hostinger
+
+Every push to `main` builds the site and uploads `dist/` with `.github/workflows/deploy.yml`.
+It stays off until you set it up:
+
+1. In hPanel, check whether your plan has **SSH Access** (Premium and up usually do). If not, use FTP.
+2. In GitHub, go to the repo's Settings > Secrets and variables > Actions.
+3. Add the variable `DEPLOY_METHOD` with `ssh` or `ftp`.
+4. Add secrets `DEPLOY_HOST`, `DEPLOY_USER` and `DEPLOY_PATH` (like `domains/bonechillingtales.com/public_html`).
+   - SSH: also `DEPLOY_PORT` (65002 on Hostinger), `DEPLOY_SSH_KEY` (a private key; add its public half
+     in hPanel > SSH Access) and `DEPLOY_KNOWN_HOSTS` (run `ssh-keyscan -p 65002 <host>` once yourself).
+   - FTP: also `DEPLOY_PASSWORD`.
+5. In the Actions tab, run **Deploy** by hand with "dry run" on. It lists what's already in the folder
+   and what it would upload, and changes nothing.
+6. Run it again with dry run off, or just push to `main`.
+
+The deploy keeps a list of the files it uploaded and only ever removes files from that list, so
+anything else in `public_html` is left alone. You can run it from your own machine too:
+`npm run build && DEPLOY_METHOD=ssh DEPLOY_HOST=... DEPLOY_PORT=65002 DEPLOY_USER=... DEPLOY_PATH=... scripts/deploy.sh`.
+
+`public/.htaccess` sends `bonechillingtales.com` and `http://` to `https://www.bonechillingtales.com`,
+serves the custom 404 page, compresses text, and sets cache times (a year for hashed files and
+fonts, 10 minutes for pages). When a story's URL changes, add a line to `redirects.txt`.
+
 ## Notes
 
 - Fonts are self-hosted from `public/fonts/` (Newsreader and Public Sans, OFL, Latin subset).

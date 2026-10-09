@@ -1,0 +1,4 @@
+# Share images are rebuilt when a headline or status changes: one day.
+<IfModule mod_headers.c>
+  Header set Cache-Control "public, max-age=86400"
+</IfModule>

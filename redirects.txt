@@ -1,0 +1,4 @@
+# Old URL, then new URL, one pair per line. Every slug that ever changes goes here so links keep working.
+# The build turns these into 301 redirects in dist/.htaccess.
+# Example:
+# /cases/old-slug/ /cases/new-slug/

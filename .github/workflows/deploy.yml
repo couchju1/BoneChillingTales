@@ -1,0 +1,82 @@
+# Builds the site and uploads it to Hostinger on every push to main.
+#
+# Setup (GitHub repo > Settings > Secrets and variables > Actions):
+#   Variable DEPLOY_METHOD  = ssh or ftp. Until it's set, this workflow skips itself.
+#   Secret   DEPLOY_HOST    = from hPanel (SSH Access or FTP Accounts)
+#   Secret   DEPLOY_USER
+#   Secret   DEPLOY_PATH    = the site folder, like domains/bonechillingtales.com/public_html
+#   ssh only: DEPLOY_PORT (Hostinger uses 65002), DEPLOY_SSH_KEY (private key whose public half
+#             is added in hPanel > SSH Access), DEPLOY_KNOWN_HOSTS (output of
+#             `ssh-keyscan -p 65002 <host>`, checked once by you so the server can't be faked)
+#   ftp only: DEPLOY_PASSWORD
+#
+# Run it by hand from the Actions tab with "dry run" on to see what would change first.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: show what would change, upload nothing"
+        type: boolean
+        default: true
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: vars.DEPLOY_METHOD != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+
+      - name: Set up SSH
+        if: vars.DEPLOY_METHOD == 'ssh'
+        env:
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          if [ -z "$KEY" ] || [ -z "$KNOWN_HOSTS" ]; then
+            echo "::error::Add the DEPLOY_SSH_KEY and DEPLOY_KNOWN_HOSTS secrets."
+            exit 1
+          fi
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Install lftp
+        if: vars.DEPLOY_METHOD == 'ftp'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Upload
+        env:
+          DEPLOY_METHOD: ${{ vars.DEPLOY_METHOD }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}
+        run: scripts/deploy.sh
+
+      - name: Clean up SSH key
+        if: always() && vars.DEPLOY_METHOD == 'ssh'
+        run: rm -f ~/.ssh/id_ed25519

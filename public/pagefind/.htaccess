@@ -1,0 +1,4 @@
+# The search index is rebuilt on every deploy: one hour.
+<IfModule mod_headers.c>
+  Header set Cache-Control "public, max-age=3600"
+</IfModule>
