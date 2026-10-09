@@ -80,6 +80,8 @@ const cases = defineCollection({
           })
           .nullish(),
         youtubeId: z.string().regex(/^[\w-]{11}$/).nullish(),
+        // The day the video went up on YouTube. Needed for video search results.
+        youtubeUploadDate: z.coerce.date().nullish(),
         sources: z.array(source).default([]),
         updates: z.array(update).default([]),
         timeline: z.array(timelineEvent).default([]),

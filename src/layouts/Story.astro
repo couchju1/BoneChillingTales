@@ -29,12 +29,17 @@ const url = new URL(`/cases/${entry.id}/`, site.domain).href;
 const isOpen = data.status === "unsolved" || data.status === "missing";
 const hasTimeline = data.timeline.length > 0;
 
+const ogImage = `/og/${entry.id}.png`;
+
 const article = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: data.title,
   description: data.description,
-  image: [new URL(data.image?.src.src ?? "/images/og-default.jpg", site.domain).href],
+  image: [
+    new URL(ogImage, site.domain).href,
+    ...(data.image ? [new URL(data.image.src.src, site.domain).href] : []),
+  ],
   datePublished: isoDate(data.published),
   dateModified: isoDate(data.lastFactChange ?? data.published),
   author: { "@id": `${site.domain}/about/#justin` },
@@ -43,13 +48,30 @@ const article = {
   about: { "@type": "Place", name: `${data.town}, ${data.state}` },
   citation: data.sources.map((s) => s.url),
 };
+
+// Video results need an upload date, so the markup only goes out when the story has one.
+const video =
+  data.youtubeId && data.youtubeUploadDate
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: data.title,
+        description: data.description,
+        thumbnailUrl: [`https://i.ytimg.com/vi/${data.youtubeId}/hqdefault.jpg`],
+        uploadDate: isoDate(data.youtubeUploadDate),
+        embedUrl: `https://www.youtube-nocookie.com/embed/${data.youtubeId}`,
+        contentUrl: `https://www.youtube.com/watch?v=${data.youtubeId}`,
+      }
+    : null;
 ---
 
 <Base
   title={data.seoTitle}
   description={data.description}
   type="article"
-  jsonLd={[article]}
+  image={ogImage}
+  imageAlt={data.title}
+  jsonLd={video ? [article, video] : [article]}
   noindex={data.draft}
 >
   <article class="story wrap">

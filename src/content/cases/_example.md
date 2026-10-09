@@ -27,6 +27,7 @@ image:
   credit: "Photo released by the Example County Sheriff's Office"
   license: "Released to the press by the agency, 1987"
 youtubeId: null
+youtubeUploadDate: null # the day the video went up, like 2026-10-20
 sources:
   - { id: S1, title: "Example press release", publisher: "Example County Sheriff's Office", url: "https://example.com/release", date: 1987-06-20 }
   - { id: S2, title: "Example missing person entry", publisher: "Example state database", url: "https://example.com/entry", date: 2020-01-01 }
