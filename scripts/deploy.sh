@@ -27,6 +27,7 @@ case "$METHOD" in
     : "${DEPLOY_HOST:?}" "${DEPLOY_USER:?}"
     PORT="${DEPLOY_PORT:-22}"
     SSH=(ssh -p "$PORT" -o BatchMode=yes -o StrictHostKeyChecking=yes "$DEPLOY_USER@$DEPLOY_HOST")
+    remote_exists() { "${SSH[@]}" "test -d '$REMOTE'"; }
     remote_cat() { "${SSH[@]}" "cat -- '$REMOTE/$1'" 2>/dev/null || true; }
     remote_ls() { "${SSH[@]}" "ls -A -- '$REMOTE'" 2>/dev/null || true; }
     upload() {
@@ -39,6 +40,7 @@ case "$METHOD" in
   ftp)
     : "${DEPLOY_HOST:?}" "${DEPLOY_USER:?}" "${DEPLOY_PASSWORD:?}"
     LFTP_OPEN="set ftp:ssl-allow yes; set net:max-retries 2; set net:timeout 20; open -u \"$DEPLOY_USER\",\"$DEPLOY_PASSWORD\" \"$DEPLOY_HOST\""
+    remote_exists() { lftp -c "$LFTP_OPEN; cd \"$REMOTE\"" >/dev/null 2>&1; }
     remote_cat() { lftp -c "$LFTP_OPEN; cat \"$REMOTE/$1\"" 2>/dev/null || true; }
     remote_ls() { lftp -c "$LFTP_OPEN; cd \"$REMOTE\"; cls -1a" 2>/dev/null | sed 's|/$||' | grep -vE '^\.\.?$' || true; }
     upload() { lftp -c "$LFTP_OPEN; mirror --reverse --parallel=4 --no-perms --exclude-glob $MANIFEST \"$DIST/\" \"$REMOTE/\""; }
@@ -51,14 +53,21 @@ case "$METHOD" in
     put_manifest() { lftp -c "$LFTP_OPEN; put \"$1\" -o \"$REMOTE/$MANIFEST\""; }
     ;;
   local)
+    remote_exists() { [ -d "$REMOTE" ]; }
     remote_cat() { cat -- "$REMOTE/$1" 2>/dev/null || true; }
     remote_ls() { ls -A -- "$REMOTE" 2>/dev/null || true; }
-    upload() { mkdir -p "$REMOTE" && rsync -rl --exclude "$MANIFEST" "$DIST/" "$REMOTE/"; }
+    upload() { rsync -rl --exclude "$MANIFEST" "$DIST/" "$REMOTE/"; }
     remove() { (cd -- "$REMOTE" && xargs -0 rm -f --) < "$1"; }
     put_manifest() { cp "$1" "$REMOTE/$MANIFEST"; }
     ;;
   *) echo "DEPLOY_METHOD must be ssh, ftp or local" >&2; exit 1 ;;
 esac
+
+# Never create the site folder: a typo in DEPLOY_PATH must not upload the site somewhere else.
+if ! remote_exists; then
+  echo "The folder $REMOTE doesn't exist on the server. Check DEPLOY_PATH (in hPanel > File Manager)." >&2
+  exit 1
+fi
 
 # What this build will upload.
 (cd "$DIST" && find . -type f ! -name "$MANIFEST" | sed 's|^\./||' | LC_ALL=C sort) > "$WORK/new"
