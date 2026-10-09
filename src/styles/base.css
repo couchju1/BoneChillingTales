@@ -156,3 +156,25 @@ main:focus {
     padding-bottom: 0;
   }
 }
+
+/* Source citations, like the 3 after a sentence. Raised without stretching the line. */
+.cite {
+  position: relative;
+  top: -0.5em;
+  margin-left: 0.1em;
+  font-family: var(--font-ui);
+  font-size: 0.68em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+.cite a {
+  display: inline-block;
+  padding-inline: 0.15em;
+  color: var(--color-ember);
+  text-decoration: none;
+}
+
+.cite a:hover {
+  text-decoration: underline;
+}

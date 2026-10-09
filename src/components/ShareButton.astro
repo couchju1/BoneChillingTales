@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!-- Hidden without JS. Uses the phone's own share sheet, or copies the link. No third-party scripts. -->
+<button type="button" class="share ui" data-share data-title={title} hidden>
+  <span data-share-label aria-live="polite">Share this story</span>
+</button>
+
+<script>
+  for (const button of document.querySelectorAll<HTMLButtonElement>("[data-share]")) {
+    const label = button.querySelector<HTMLElement>("[data-share-label]")!;
+    const canShare = "share" in navigator;
+    if (!canShare && !navigator.clipboard) continue;
+    if (!canShare) label.textContent = "Copy link";
+    button.hidden = false;
+    button.addEventListener("click", async () => {
+      const url = location.href.split("#")[0]!;
+      if (canShare) {
+        await navigator.share({ title: button.dataset.title, url }).catch(() => {});
+        return;
+      }
+      await navigator.clipboard.writeText(url);
+      label.textContent = "Link copied";
+      setTimeout(() => (label.textContent = "Copy link"), 2500);
+    });
+  }
+</script>
+
+<style>
+  .share {
+    min-height: 44px;
+    padding: 0 var(--space-s);
+    border: 1px solid var(--color-input-border);
+    border-radius: var(--radius-m);
+    background: transparent;
+    color: var(--color-bone);
+    cursor: pointer;
+  }
+
+  .share:hover {
+    border-color: var(--color-ember);
+    color: var(--color-ember);
+  }
+</style>

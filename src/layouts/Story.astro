@@ -1,0 +1,238 @@
+---
+import { Picture } from "astro:assets";
+import Base from "./Base.astro";
+import "../styles/prose.css";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CaseStatusLine from "../components/CaseStatusLine.astro";
+import ContentNote from "../components/ContentNote.astro";
+import Timeline from "../components/Timeline.astro";
+import TipBox from "../components/TipBox.astro";
+import UpdateLog from "../components/UpdateLog.astro";
+import SourceList from "../components/SourceList.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+import ShareButton from "../components/ShareButton.astro";
+import StatusChip from "../components/StatusChip.astro";
+import { site } from "../lib/config";
+import { STATE_NAMES, type Case } from "../lib/content";
+import { isoDate } from "../lib/dates";
+import { withCitations } from "../lib/sources";
+
+interface Props {
+  entry: Case;
+  related?: Case | undefined;
+}
+
+const { entry, related } = Astro.props;
+const { data } = entry;
+const stateName = STATE_NAMES[data.state]!;
+const url = new URL(`/cases/${entry.id}/`, site.domain).href;
+const isOpen = data.status === "unsolved" || data.status === "missing";
+const hasTimeline = data.timeline.length > 0;
+
+const article = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: data.title,
+  description: data.description,
+  image: [new URL(data.image?.src.src ?? "/images/og-default.jpg", site.domain).href],
+  datePublished: isoDate(data.published),
+  dateModified: isoDate(data.lastFactChange ?? data.published),
+  author: { "@id": `${site.domain}/about/#justin` },
+  publisher: { "@id": `${site.domain}/#org` },
+  mainEntityOfPage: url,
+  about: { "@type": "Place", name: `${data.town}, ${data.state}` },
+  citation: data.sources.map((s) => s.url),
+};
+---
+
+<Base
+  title={data.seoTitle}
+  description={data.description}
+  type="article"
+  jsonLd={[article]}
+  noindex={data.draft}
+>
+  <article class="story wrap">
+    {data.draft && <p class="draft-banner ui">Draft preview. This story isn't published.</p>}
+
+    <header class="story-header">
+      <Breadcrumbs
+        items={[
+          { name: "Cases", href: "/cases/" },
+          { name: stateName, href: `/states/${data.state.toLowerCase()}/` },
+          { name: data.person },
+        ]}
+      />
+      <CaseStatusLine data={data} />
+      <h1>{data.title}</h1>
+      {data.summary && <p class="summary" set:html={withCitations(data.summary)} />}
+      <ShareButton title={data.title} />
+    </header>
+
+    {
+      data.image && (
+        <figure class="lead-image">
+          <Picture
+            src={data.image.src}
+            alt={data.image.alt}
+            formats={["avif", "webp"]}
+            widths={[480, 800, 1200]}
+            sizes="(min-width: 48rem) 24rem, 100vw"
+            loading="eager"
+          />
+          <figcaption class="ui">{data.image.credit}</figcaption>
+        </figure>
+      )
+    }
+
+    <div class:list={["story-grid", { "has-timeline": hasTimeline }]}>
+      <div class="story-body prose">
+        {
+          data.contentNote ? (
+            <ContentNote note={data.contentNote}>
+              <slot />
+            </ContentNote>
+          ) : (
+            <slot />
+          )
+        }
+      </div>
+
+      {hasTimeline && <Timeline events={data.timeline} />}
+
+      <div class="story-end">
+        {isOpen && data.tipLine && (
+          <TipBox person={data.person} agency={data.agency} tipLine={data.tipLine} anonymousTips={data.anonymousTips} />
+        )}
+        <UpdateLog updates={data.updates} />
+        <SourceList sources={data.sources} caseId={entry.id} />
+        <NewsletterForm
+          heading="Get updates on this case"
+          body="We'll email you when something changes. Nothing else from this form."
+          button="Get updates"
+          caseId={entry.id}
+        />
+        {
+          related && (
+            <section class="related" aria-labelledby="related-heading">
+              <h2 id="related-heading">Read next</h2>
+              <a href={`/cases/${related.id}/`} class="related-link">
+                <StatusChip status={related.data.status} />
+                <span class="related-title">{related.data.title}</span>
+                <span class="ui related-place">
+                  {related.data.town}, {related.data.state}
+                </span>
+              </a>
+            </section>
+          )
+        }
+      </div>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .story {
+    padding-top: var(--space-l);
+  }
+
+  .draft-banner {
+    margin-bottom: var(--space-m);
+    padding: var(--space-2xs) var(--space-s);
+    border: 1px dashed var(--color-lamp);
+    color: var(--color-lamp);
+  }
+
+  .story-header {
+    max-width: var(--measure);
+  }
+
+  h1 {
+    font-size: var(--step-5);
+    margin-bottom: var(--space-m);
+  }
+
+  .summary {
+    font-size: var(--step-1);
+    line-height: 1.45;
+    margin-bottom: var(--space-m);
+  }
+
+  .lead-image {
+    max-width: 24rem;
+    margin: var(--space-l) 0 0;
+  }
+
+  .lead-image :global(img) {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-m);
+  }
+
+  .lead-image figcaption {
+    margin-top: var(--space-2xs);
+    color: var(--color-ash);
+  }
+
+  .story-grid {
+    margin-top: var(--space-xl);
+  }
+
+  .story-end {
+    max-width: var(--measure);
+  }
+
+  .related {
+    margin-top: var(--space-2xl);
+  }
+
+  .related-link {
+    display: grid;
+    gap: var(--space-2xs);
+    justify-items: start;
+    padding: var(--space-m);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-m);
+    text-decoration: none;
+    color: var(--color-bone);
+  }
+
+  .related-link:hover {
+    border-color: var(--color-ember);
+  }
+
+  .related-title {
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    line-height: var(--leading-tight);
+  }
+
+  .related-place {
+    color: var(--color-ash);
+  }
+
+  /* Wide screens: the timeline sits beside the story and follows the reader down. */
+  @media (min-width: 64rem) {
+    .story-grid.has-timeline {
+      display: grid;
+      grid-template-columns: minmax(0, var(--measure)) minmax(14rem, 18rem);
+      column-gap: var(--space-2xl);
+      align-items: start;
+    }
+
+    .has-timeline .story-body {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .has-timeline :global(.timeline) {
+      grid-column: 2;
+      grid-row: 1;
+      align-self: stretch;
+    }
+
+    .has-timeline .story-end {
+      grid-column: 1;
+    }
+  }
+</style>

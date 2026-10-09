@@ -1,0 +1,159 @@
+---
+import { formatLooseDate } from "../lib/dates";
+import { withCitations, stripCitations, citationsOnly } from "../lib/sources";
+import type { Case } from "../lib/content";
+
+interface Props {
+  events: Case["data"]["timeline"];
+}
+
+const { events } = Astro.props;
+---
+
+<aside class="timeline" aria-labelledby="timeline-heading" data-timeline>
+  <div class="sticky">
+    <h2 id="timeline-heading" class="ui">Timeline</h2>
+    <ol>
+      {
+        events.map((e) => (
+          <li data-section={e.section}>
+            <span class="date ui">{formatLooseDate(e.date)}</span>
+            {e.section ? (
+              <span class="text">
+                <a href={`#${e.section}`}>{stripCitations(e.text)}</a>
+                <Fragment set:html={citationsOnly(e.text)} />
+              </span>
+            ) : (
+              <span class="text" set:html={withCitations(e.text)} />
+            )}
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</aside>
+
+<script>
+  const timeline = document.querySelector<HTMLElement>("[data-timeline]");
+  if (timeline) {
+    const items = [...timeline.querySelectorAll<HTMLElement>("li[data-section]")];
+    const headings = items
+      .map((li) => document.getElementById(li.dataset.section!))
+      .filter((h): h is HTMLElement => h !== null);
+
+    // Jump links move focus to the section, opening a content note first if the story sits inside one.
+    timeline.addEventListener("click", (event) => {
+      const link = (event.target as Element).closest<HTMLAnchorElement>("li[data-section] > .text > a");
+      if (!link) return;
+      const target = document.getElementById(link.hash.slice(1));
+      if (!target) return;
+      event.preventDefault();
+      const note = target.closest("details");
+      if (note) note.open = true;
+      target.tabIndex = -1;
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({
+        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      });
+      history.replaceState(null, "", link.hash);
+    });
+
+    // The current section is the last heading above a line 30% down the screen.
+    // The observer only fires when a heading crosses that line, so scrolling inside a long section costs nothing.
+    const mark = () => {
+      const line = innerHeight * 0.3;
+      // Headings inside a closed content note have no box and are skipped.
+      const current = headings
+        .filter((h) => h.getClientRects().length > 0 && h.getBoundingClientRect().top <= line)
+        .at(-1);
+      for (const li of items) {
+        const link = li.querySelector("a");
+        const on = current !== undefined && li.dataset.section === current.id;
+        li.toggleAttribute("data-current", on);
+        if (on) link?.setAttribute("aria-current", "location");
+        else link?.removeAttribute("aria-current");
+      }
+    };
+    const observer = new IntersectionObserver(mark, { rootMargin: "0px 0px -70% 0px" });
+    headings.forEach((h) => observer.observe(h));
+  }
+</script>
+
+<style>
+  .timeline {
+    margin-block: var(--space-xl);
+  }
+
+  h2 {
+    margin-bottom: var(--space-s);
+    color: var(--color-ash);
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 1px solid var(--color-line);
+  }
+
+  li {
+    position: relative;
+    display: grid;
+    gap: var(--space-3xs);
+    padding: 0 0 var(--space-s) var(--space-s);
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 0.45em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-line);
+  }
+
+  li[data-current]::before {
+    background: var(--color-ember);
+  }
+
+  .date {
+    color: var(--color-ash);
+  }
+
+  .text {
+    font-size: var(--step--1);
+    line-height: 1.45;
+  }
+
+  .text > a {
+    color: var(--color-bone);
+    text-decoration: none;
+  }
+
+  .text > a:hover,
+  li[data-current] .text > a {
+    color: var(--color-ember);
+  }
+
+  @media (min-width: 64rem) {
+    .timeline {
+      margin-block: 0;
+    }
+
+    .sticky {
+      position: sticky;
+      top: calc(var(--logo-height-mobile) + var(--space-xl));
+      max-height: calc(100vh - var(--logo-height-mobile) - var(--space-2xl));
+      overflow-y: auto;
+      /* Room for the dots, which sit over the line. */
+      padding-left: 4px;
+      padding-right: var(--space-2xs);
+    }
+  }
+</style>

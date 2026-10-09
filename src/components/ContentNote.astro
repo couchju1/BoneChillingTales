@@ -1,0 +1,56 @@
+---
+interface Props {
+  note: string;
+}
+
+const { note } = Astro.props;
+---
+
+<details class="content-note" data-content-note>
+  <summary class="ui">
+    <span>Content note: this story describes {note}.</span>{" "}
+    <span class="action">Tap to read it.</span>
+  </summary>
+  <div class="inner">
+    <slot />
+  </div>
+</details>
+
+<style>
+  .content-note {
+    margin-bottom: var(--space-l);
+  }
+
+  summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3xs) var(--space-2xs);
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-s);
+    border: 1px solid var(--color-line);
+    border-left: 3px solid var(--color-lamp);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .action {
+    color: var(--color-ember);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+
+  .content-note[open] summary {
+    margin-bottom: var(--space-l);
+  }
+
+  .content-note[open] .action {
+    display: none;
+  }
+</style>

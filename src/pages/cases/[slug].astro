@@ -1,0 +1,42 @@
+---
+import { render } from "astro:content";
+import Story from "../../layouts/Story.astro";
+import { getPublishedCases, relatedCase, type Case } from "../../lib/content";
+import { daysBetween } from "../../lib/dates";
+import { site } from "../../lib/config";
+
+export async function getStaticPaths() {
+  const cases = await getPublishedCases();
+  return cases.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry, related: relatedCase(entry, cases) },
+  }));
+}
+
+interface Props {
+  entry: Case;
+  related?: Case;
+}
+
+const { entry, related } = Astro.props;
+const { Content, headings } = await render(entry);
+
+// Timeline jump links must point at a real heading in the story.
+const ids = new Set(headings.map((h) => h.slug));
+for (const event of entry.data.timeline) {
+  if (event.section && !ids.has(event.section)) {
+    throw new Error(
+      `${entry.filePath}: timeline event "${event.text}" points at section "${event.section}", ` +
+        `but the story has no heading with that id. Headings: ${[...ids].join(", ") || "none"}.`,
+    );
+  }
+}
+
+if (daysBetween(entry.data.lastChecked, new Date()) > site.reviewIntervalDays) {
+  console.warn(`[needs review] ${entry.id}: last checked more than ${site.reviewIntervalDays} days ago.`);
+}
+---
+
+<Story entry={entry} related={related}>
+  <Content />
+</Story>

@@ -1,0 +1,43 @@
+---
+import StatusChip from "./StatusChip.astro";
+import DaysSince from "./DaysSince.astro";
+import { site } from "../lib/config";
+import { formatDate, isoDate, daysBetween } from "../lib/dates";
+import type { Case } from "../lib/content";
+
+interface Props {
+  data: Case["data"];
+}
+
+const { data } = Astro.props;
+const counterLabel = site.statuses[data.status].counterLabel;
+const countFrom = data.status === "missing" ? data.lastSeenDate : data.incidentDate;
+
+const dateItem =
+  data.status === "missing" && data.lastSeenDate
+    ? { label: "Last seen", date: data.lastSeenDate }
+    : data.status === "solved" && data.resolvedDate
+      ? { label: "Solved", date: data.resolvedDate }
+      : { label: "Date of incident", date: data.incidentDate };
+
+const stale = daysBetween(data.lastChecked, new Date()) > site.reviewIntervalDays;
+---
+
+<p class="status-line ui" data-needs-review={stale ? "" : undefined}>
+  <StatusChip status={data.status} />
+  <span>{data.town}, {data.state}</span>
+  <span>{dateItem.label} <time datetime={isoDate(dateItem.date)}>{formatDate(dateItem.date)}</time></span>
+  {counterLabel && countFrom && <DaysSince since={countFrom} label={counterLabel} />}
+  <span class="checked">Last checked <time datetime={isoDate(data.lastChecked)}>{formatDate(data.lastChecked)}</time></span>
+</p>
+
+<style>
+  .status-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs) var(--space-m);
+    margin: 0 0 var(--space-m);
+    color: var(--color-ash);
+  }
+</style>

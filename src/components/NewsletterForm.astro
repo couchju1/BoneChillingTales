@@ -1,0 +1,104 @@
+---
+import { site, isPlaceholder } from "../lib/config";
+
+interface Props {
+  heading: string;
+  body: string;
+  button?: string;
+  /** Case id, sent along so a signup from a story can be tagged with it later. */
+  caseId?: string;
+}
+
+const { heading, body, button = "Get the weekly email", caseId } = Astro.props;
+const action = site.newsletter.formAction;
+const ready = !isPlaceholder(action);
+const uid = `nl-${caseId ?? "site"}`;
+---
+
+<section class="newsletter" aria-labelledby={`${uid}-heading`}>
+  <h2 id={`${uid}-heading`}>{heading}</h2>
+  <p>{body}</p>
+  <form method="post" action={ready ? action : undefined} data-newsletter-form>
+    <fieldset disabled={!ready}>
+      <label for={`${uid}-email`} class="ui">Email</label>
+      <div class="row">
+        <input id={`${uid}-email`} name="email_address" type="email" autocomplete="email" required />
+        {caseId && <input type="hidden" name="fields[case]" value={caseId} />}
+        <button type="submit" class="ui">{button}</button>
+      </div>
+    </fieldset>
+    {!ready && <p class="pending ui">Sign-up opens soon.</p>}
+  </form>
+</section>
+
+<style>
+  .newsletter {
+    margin-top: var(--space-2xl);
+    padding: var(--space-l);
+    border: 1px solid var(--color-line);
+    border-top: 3px solid var(--color-blood);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+  }
+
+  h2 {
+    font-size: var(--step-2);
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  label {
+    display: block;
+    margin-bottom: var(--space-3xs);
+    color: var(--color-ash);
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs);
+  }
+
+  input {
+    flex: 1 1 14rem;
+    min-height: 44px;
+    padding: 0 var(--space-xs);
+    border: 1px solid var(--color-input-border);
+    border-radius: var(--radius-m);
+    background: var(--color-night);
+    color: var(--color-bone);
+    font: inherit;
+    font-family: var(--font-ui);
+  }
+
+  button {
+    min-height: 44px;
+    padding: 0 var(--space-m);
+    border: 0;
+    border-radius: var(--radius-m);
+    background: var(--color-blood);
+    color: var(--color-bone);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--motion-fast) var(--ease-out);
+  }
+
+  button:hover {
+    background: var(--color-blood-hover);
+  }
+
+  fieldset:disabled button,
+  fieldset:disabled input {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+
+  .pending {
+    margin: var(--space-2xs) 0 0;
+    color: var(--color-ash);
+  }
+</style>

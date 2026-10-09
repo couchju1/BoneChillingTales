@@ -1,0 +1,91 @@
+---
+import { formatDate } from "../lib/dates";
+import { sourceAnchor } from "../lib/sources";
+import type { Case } from "../lib/content";
+
+interface Props {
+  sources: Case["data"]["sources"];
+  caseId: string;
+}
+
+const { sources, caseId } = Astro.props;
+---
+
+<section class="sources" aria-labelledby="sources-heading">
+  <h2 id="sources-heading">Sources</h2>
+  <p class="note">
+    We list every record and article we used. If you spot an error, tell us and we'll check it.{" "}
+    <a href={`/suggest/?case=${encodeURIComponent(caseId)}`}>Suggest a correction</a>
+  </p>
+  <ol>
+    {
+      sources.map((s) => (
+        <li id={sourceAnchor(s.id)} tabindex="-1">
+          <a href={s.url} rel="noopener">{s.title}</a>
+          <span class="meta ui">
+            {s.publisher}, {formatDate(s.date)}
+            {s.archive && (
+              <>
+                {" · "}
+                <a href={s.archive} rel="noopener" class="archive">
+                  Archived copy
+                </a>
+              </>
+            )}
+          </span>
+        </li>
+      ))
+    }
+  </ol>
+</section>
+
+<style>
+  .sources {
+    margin-top: var(--space-2xl);
+  }
+
+  .note {
+    color: var(--color-ash);
+    font-size: var(--step--1);
+  }
+
+  ol {
+    margin: var(--space-m) 0 0;
+    padding-left: 1.6em;
+    font-size: var(--step--1);
+  }
+
+  li {
+    padding-block: var(--space-2xs);
+    scroll-margin-top: var(--space-2xl);
+  }
+
+  li::marker {
+    font-family: var(--font-ui);
+    color: var(--color-ash);
+  }
+
+  /* Landing here from a superscript link shows which source it was. */
+  li:target {
+    outline: 1px solid var(--color-ember);
+    outline-offset: 4px;
+    border-radius: var(--radius-s);
+  }
+
+  li:focus {
+    outline: none;
+  }
+
+  li:focus-visible {
+    outline: 2px solid var(--color-focus);
+  }
+
+  .meta {
+    display: block;
+    color: var(--color-ash);
+  }
+
+  .archive {
+    color: var(--color-ash);
+  }
+</style>

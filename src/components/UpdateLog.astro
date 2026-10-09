@@ -1,0 +1,73 @@
+---
+import { formatDate, isoDate } from "../lib/dates";
+import { withCitations } from "../lib/sources";
+import type { Case } from "../lib/content";
+
+interface Props {
+  updates: Case["data"]["updates"];
+}
+
+const updates = [...Astro.props.updates].sort((a, b) => b.date.getTime() - a.date.getTime());
+---
+
+{
+  updates.length > 0 && (
+    <section class="updates" aria-labelledby="updates-heading">
+      <h2 id="updates-heading">Updates</h2>
+      <ol>
+        {updates.map((u, i) => (
+          <li class:list={[{ newest: i === 0 }]}>
+            <time class="ui" datetime={isoDate(u.date)}>
+              {formatDate(u.date)}
+            </time>
+            {u.type === "correction" && <span class="tag ui">Correction</span>}
+            <p set:html={withCitations(u.text)} />
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
+
+<style>
+  .updates {
+    margin-top: var(--space-2xl);
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: var(--space-s) 0;
+    border-top: 1px solid var(--color-line);
+  }
+
+  li.newest {
+    padding-inline: var(--space-s);
+    border: 1px solid var(--color-line);
+    border-left: 3px solid var(--color-lamp);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+  }
+
+  li.newest + li {
+    border-top: 0;
+  }
+
+  time {
+    color: var(--color-ash);
+  }
+
+  .tag {
+    margin-left: var(--space-2xs);
+    color: var(--color-ember);
+    font-weight: 600;
+  }
+
+  p {
+    margin: var(--space-3xs) 0 0;
+  }
+</style>

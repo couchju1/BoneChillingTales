@@ -1,0 +1,49 @@
+---
+import { formatPhone } from "../lib/content";
+
+interface Props {
+  person: string;
+  agency: string;
+  tipLine: string;
+  anonymousTips?: { name: string; url?: string | undefined } | null | undefined;
+}
+
+const { person, agency, tipLine, anonymousTips } = Astro.props;
+---
+
+<aside class="tip-box" aria-label="How to share information">
+  <p>
+    If you know anything about {person}'s case, call {agency} at{" "}
+    <a href={`tel:${tipLine}`} class="tel" data-tip-call>{formatPhone(tipLine)}</a>.{" "}
+    {
+      anonymousTips && (
+        <>
+          You can stay anonymous through{" "}
+          {anonymousTips.url ? <a href={anonymousTips.url} rel="noopener">{anonymousTips.name}</a> : anonymousTips.name}.
+        </>
+      )
+    }
+  </p>
+  <p class="ui">If someone is in danger, call 911.</p>
+</aside>
+
+<style>
+  .tip-box {
+    margin-top: var(--space-xl);
+    padding: var(--space-m);
+    border: 1px solid var(--color-line);
+    border-left: 3px solid var(--color-ember);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+  }
+
+  .tip-box p:last-child {
+    margin: 0;
+    color: var(--color-ash);
+  }
+
+  .tel {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+</style>

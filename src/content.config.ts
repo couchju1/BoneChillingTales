@@ -27,6 +27,20 @@ const update = z.object({
   type: z.enum(["update", "correction"]).default("update"),
 });
 
+// Timeline dates can be as loose as the record: "1987", "1987-06" or "1987-06-12".
+// YAML turns a bare 1987-06-12 into a Date and 1987 into a number, so both are folded back to text.
+const looseDate = z.preprocess(
+  (v) => (v instanceof Date ? v.toISOString().slice(0, 10) : typeof v === "number" ? String(v) : v),
+  z.string().regex(/^\d{4}(-\d{2}(-\d{2})?)?$/, 'Timeline dates look like 1987, 1987-06 or 1987-06-12'),
+);
+
+const timelineEvent = z.object({
+  date: looseDate,
+  text: z.string().min(1),
+  // Id of the story heading this event belongs to, like "the-last-night". Makes it a jump link.
+  section: z.string().optional(),
+});
+
 const cases = defineCollection({
   loader: withSourceTagCheck(glob({ pattern: "**/*.md", base: "./src/content/cases" })),
   schema: ({ image }) =>
@@ -37,6 +51,8 @@ const cases = defineCollection({
         seoTitle: z.string().max(60, "seoTitle must be 60 characters or fewer"),
         description: z.string().max(155, "description must be 155 characters or fewer"),
         person: z.string().min(1),
+        // Opening paragraph under the headline: who, where, when, where it stands. Under 60 words.
+        summary: z.string().optional(),
         status: z.enum(["unsolved", "missing", "solved", "in-court"]),
         town: z.string().min(1),
         state: z.enum(US_STATES, "state must be a 2-letter US state code, like SD"),
@@ -52,6 +68,8 @@ const cases = defineCollection({
           .string()
           .regex(/^\+1\d{10}$/, "tipLine must be E.164, like +16055551234")
           .nullish(),
+        // Crime Stoppers or a similar program, when the agency offers anonymous tips.
+        anonymousTips: z.object({ name: z.string().min(1), url: z.url().optional() }).nullish(),
         contentNote: z.enum(["violence against a child", "sexual violence"]).nullish(),
         image: z
           .object({
@@ -64,6 +82,7 @@ const cases = defineCollection({
         youtubeId: z.string().regex(/^[\w-]{11}$/).nullish(),
         sources: z.array(source).default([]),
         updates: z.array(update).default([]),
+        timeline: z.array(timelineEvent).default([]),
       })
       .superRefine((data, ctx) => {
         data.sources.forEach((s, i) => {
@@ -78,6 +97,18 @@ const cases = defineCollection({
 
         if (data.draft) return;
 
+        if (!data.summary) {
+          ctx.addIssue({ code: "custom", path: ["summary"], message: "A published case needs a summary." });
+        } else {
+          const words = data.summary.replace(SOURCE_TAG, "").trim().split(/\s+/).length;
+          if (words > 60) {
+            ctx.addIssue({
+              code: "custom",
+              path: ["summary"],
+              message: `The summary is ${words} words. Keep it under 60.`,
+            });
+          }
+        }
         if (data.sources.length === 0) {
           ctx.addIssue({
             code: "custom",
@@ -135,7 +166,7 @@ const pages = defineCollection({
 export const collections = { cases, updates, pages };
 
 /**
- * Wraps a loader so every [S#] tag in a story body must match an id in its
+ * Wraps a loader so every [S#] tag in a story (body, summary, timeline, updates) must match an id in its
  * sources list. Runs on drafts too: a dangling tag is always a mistake.
  */
 function withSourceTagCheck(inner: Loader): Loader {
@@ -151,7 +182,18 @@ function withSourceTagCheck(inner: Loader): Loader {
             );
             const missing = new Set<string>();
             const cited = new Set<string>();
-            for (const match of (entry.body ?? "").matchAll(SOURCE_TAG)) {
+            const data = entry.data as {
+              summary?: string;
+              timeline?: { text: string }[];
+              updates?: { text: string }[];
+            };
+            const text = [
+              entry.body ?? "",
+              data.summary ?? "",
+              ...(data.timeline ?? []).map((t) => t.text),
+              ...(data.updates ?? []).map((u) => u.text),
+            ].join("\n");
+            for (const match of text.matchAll(SOURCE_TAG)) {
               for (const tag of match[1]!.split(",").map((t) => t.trim())) {
                 cited.add(tag);
                 if (!ids.has(tag)) missing.add(tag);

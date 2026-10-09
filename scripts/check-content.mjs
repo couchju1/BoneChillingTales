@@ -21,7 +21,7 @@ const PUNCTUATION = [
 ];
 
 // Frontmatter keys whose values are our own words.
-const CHECKED_KEYS = /^\s*(title|seoTitle|description|person|text)\s*:|\btext:\s/;
+const CHECKED_KEYS = /^\s*(title|seoTitle|description|person|summary|text)\s*:|\btext:\s/;
 
 const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/'/g, "['\u2019]");
 const bannedPatterns = BANNED.map((word) => ({
