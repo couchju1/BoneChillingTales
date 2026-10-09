@@ -10,7 +10,7 @@
     "photo": "/images/about-justin.webp",
     "sameAs": []
   },
-  "contactEmail": "[NEEDS CLIENT PROOF: a site inbox, not your personal email]",
+  "contactEmail": "bonechillingtales1@gmail.com",
   "social": {
     "youtube": "https://www.youtube.com/@BoneChillingTales1",
     "youtubeVerified": false
@@ -36,7 +36,7 @@
   },
   "forms": {
     "suggestEndpoint": "/api/suggest.php",
-    "suggestTo": "[NEEDS CLIENT PROOF]",
+    "suggestTo": "bonechillingtales1@gmail.com",
     "honeypotField": "website"
   },
   "launchStates": ["SD", "ND", "MN", "IA", "NE"],
