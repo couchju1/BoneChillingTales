@@ -35,7 +35,8 @@ export function sortRows(rows: CaseRowData[], mode: SortMode): CaseRowData[] {
 const escape = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-export function caseRowHtml(d: CaseRowData): string {
+/** level: the row name's heading level. 2 on hubs, 3 under a section heading. */
+export function caseRowHtml(d: CaseRowData, level: 2 | 3 = 2): string {
   const fresh = d.fresh ? `<span class="case-row-fresh" title="New update"><span class="visually-hidden">New update. </span></span>` : "";
   const counter =
     d.counterLabel && d.countFrom
@@ -43,7 +44,7 @@ export function caseRowHtml(d: CaseRowData): string {
       : "";
   return (
     `<li class="case-row">` +
-    `<h2 class="case-row-name"><a href="/cases/${escape(d.id)}/">${fresh}${escape(d.person)}</a></h2>` +
+    `<h${level} class="case-row-name"><a href="/cases/${escape(d.id)}/">${fresh}${escape(d.person)}</a></h${level}>` +
     `<p class="case-row-meta ui">` +
     `<span class="chip chip-${d.status}">${escape(d.statusLabel)}</span>` +
     `<span>${escape(d.town)}, ${escape(d.state)}</span>` +

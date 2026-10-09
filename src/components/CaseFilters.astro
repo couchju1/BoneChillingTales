@@ -135,7 +135,7 @@ const statuses = (Object.keys(site.statuses) as CaseRowData["status"][]).filter(
           (!query.get("decade") || String(r.decade) === query.get("decade")),
       );
       const sorted = sortRows(rows, (query.get("sort") as SortMode) ?? "latest");
-      list!.innerHTML = sorted.map(caseRowHtml).join("");
+      list!.innerHTML = sorted.map((row) => caseRowHtml(row)).join("");
       list!.hidden = sorted.length === 0;
       if (pagination) pagination.hidden = true;
       if (empty) {

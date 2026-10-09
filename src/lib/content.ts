@@ -87,3 +87,28 @@ export function toRowData(entry: Case): CaseRowData {
     fresh: last > d.published && daysBetween(last, new Date()) >= 0 && daysBetween(last, new Date()) <= FRESH_DAYS,
   };
 }
+
+export interface FeedItem {
+  date: Date;
+  text: string;
+  href: string;
+  person: string;
+}
+
+/**
+ * Dated one-liners for "Latest on cases we follow": update posts plus the update log
+ * entries on each story, skipping the "Story published" line that lands on the publish date.
+ */
+export async function latestUpdates(cases: Case[], limit: number): Promise<FeedItem[]> {
+  const byId = new Map(cases.map((c) => [c.id, c]));
+  const posts = (await getPublishedUpdates()).flatMap((u) => {
+    const story = byId.get(u.data.case.id);
+    return story ? [{ date: u.data.date, text: u.data.title, href: `/updates/${u.id}/`, person: story.data.person }] : [];
+  });
+  const logs = cases.flatMap((c) =>
+    c.data.updates
+      .filter((u) => u.date.getTime() !== c.data.published.getTime())
+      .map((u) => ({ date: u.date, text: u.text, href: `/cases/${c.id}/#updates-heading`, person: c.data.person })),
+  );
+  return [...posts, ...logs].sort((a, b) => b.date.getTime() - a.date.getTime()).slice(0, limit);
+}

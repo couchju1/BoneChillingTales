@@ -3,7 +3,8 @@ import { caseRowHtml, type CaseRowData } from "../lib/case-row";
 
 interface Props {
   row: CaseRowData;
+  level?: 2 | 3;
 }
 ---
 
-<Fragment set:html={caseRowHtml(Astro.props.row)} />
+<Fragment set:html={caseRowHtml(Astro.props.row, Astro.props.level)} />

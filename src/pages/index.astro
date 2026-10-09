@@ -1,19 +1,323 @@
 ---
 import Base from "../layouts/Base.astro";
+import "../styles/hub.css";
+import LeadStory from "../components/LeadStory.astro";
+import StatusChip from "../components/StatusChip.astro";
+import CaseRow from "../components/CaseRow.astro";
+import VideoFacade from "../components/VideoFacade.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
 import { site } from "../lib/config";
+import { getPublishedCases, latestUpdates, toRowData, STATE_NAMES } from "../lib/content";
+import { sortRows } from "../lib/case-row";
+import { formatDate, isoDate } from "../lib/dates";
+import { stripCitations } from "../lib/sources";
+
+const cases = (await getPublishedCases()).sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+const [lead, ...rest] = cases;
+const strip = rest.slice(0, 3);
+
+const stillOpen = sortRows(
+  cases.filter((c) => c.data.status === "unsolved" || c.data.status === "missing").map(toRowData),
+  "latest",
+).slice(0, 6);
+
+// Launch states always show, Upper Midwest first. Other states show once they have a case.
+const counts = cases.reduce<Record<string, number>>((acc, c) => ({ ...acc, [c.data.state]: (acc[c.data.state] ?? 0) + 1 }), {});
+const others = Object.keys(counts)
+  .filter((s) => !site.launchStates.includes(s))
+  .sort((a, b) => STATE_NAMES[a]!.localeCompare(STATE_NAMES[b]!));
+const states = [...site.launchStates, ...others].map((code) => ({ code, name: STATE_NAMES[code]!, count: counts[code] ?? 0 }));
+
+const updates = await latestUpdates(cases, 5);
+const video = cases.find((c) => c.data.youtubeId);
 ---
 
 <Base
   title="True Crime Stories and Unsolved Cases | Bone Chilling Tales"
   description="Full stories of real crimes and unsolved cases, with every source listed. New cases every week, starting with the ones national news skipped."
 >
-  <div class="wrap">
-    <h1>{site.tagline}</h1>
+  <div class="home wrap">
+    <h1 class="ui">{site.tagline}</h1>
+
+    {
+      lead ? (
+        <LeadStory entry={lead} />
+      ) : (
+        <p class="coming">The first stories are on the way. Get the weekly email and you'll hear when they're up.</p>
+      )
+    }
+
+    {
+      strip.length > 0 && (
+        <section class="section" aria-labelledby="just-added">
+          <h2 id="just-added" class="section-heading ui">Just added</h2>
+          <ul class="strip">
+            {strip.map((c) => (
+              <li>
+                <a href={`/cases/${c.id}/`}>
+                  <span class="strip-meta ui">
+                    <StatusChip status={c.data.status} />
+                    <span>{c.data.state}</span>
+                  </span>
+                  <span class="strip-title">{c.data.title}</span>
+                  <span class="strip-date ui">{formatDate(c.data.published)}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      stillOpen.length > 0 && (
+        <section class="section" aria-labelledby="still-open">
+          <h2 id="still-open" class="section-heading ui">Still open</h2>
+          <p class="section-intro">
+            These people haven't come home, or the person who hurt them hasn't been named. The count shows how long their
+            families have waited.
+          </p>
+          <ul class="case-list" data-case-list>
+            {stillOpen.map((row) => (
+              <CaseRow row={row} level={3} />
+            ))}
+          </ul>
+          <p class="more ui">
+            <a href="/unsolved/">All unsolved murders</a>
+            <a href="/missing/">Everyone still missing</a>
+          </p>
+        </section>
+      )
+    }
+
+    {
+      cases.length > 0 && (
+        <section class="section" aria-labelledby="by-state">
+          <h2 id="by-state" class="section-heading ui">Cases by state</h2>
+          <p class="section-intro">
+            We started close to home in the Upper Midwest. More states are added as stories are finished.
+          </p>
+          <ul class="states">
+            {states.map((s) => (
+              <li>
+                {s.count > 0 ? <a href={`/states/${s.code.toLowerCase()}/`}>{s.name}</a> : <span>{s.name}</span>}
+                <span class="ui count">{s.count > 0 ? (s.count === 1 ? "1 case" : `${s.count} cases`) : "Coming soon"}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      updates.length > 0 && (
+        <section class="section" aria-labelledby="latest">
+          <h2 id="latest" class="section-heading ui">Latest on cases we follow</h2>
+          <ol class="feed">
+            {updates.map((u) => (
+              <li>
+                <time class="ui" datetime={isoDate(u.date)}>
+                  {formatDate(u.date)}
+                </time>
+                <a href={u.href}>
+                  <strong>{u.person}:</strong> {stripCitations(u.text)}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    {
+      video && video.data.youtubeId && (
+        <section class="section watch" aria-labelledby="on-youtube">
+          <h2 id="on-youtube" class="section-heading ui">On YouTube</h2>
+          <div class="watch-grid">
+            <VideoFacade youtubeId={video.data.youtubeId} title={video.data.title} />
+            <p>
+              <a href={`/cases/${video.id}/`}>Read the full story</a>
+            </p>
+          </div>
+        </section>
+      )
+    }
+
+    <NewsletterForm
+      heading="One email a week. New cases and real updates."
+      body="No daily blasts and no clickbait. Quit any time with one click."
+    />
   </div>
 </Base>
 
+<script>
+  import { fillDaysSince } from "../lib/days-since";
+  fillDaysSince();
+</script>
+
 <style>
-  .wrap {
-    padding-block: var(--space-2xl);
+  .home {
+    padding-top: var(--space-l);
+  }
+
+  /* The H1 stays small. The lead story's headline does the selling. */
+  h1 {
+    margin: 0;
+    color: var(--color-ash);
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .coming {
+    max-width: var(--measure);
+    padding-block: var(--space-xl);
+    font-size: var(--step-2);
+    line-height: 1.35;
+  }
+
+  .section {
+    margin-top: var(--space-2xl);
+  }
+
+  .section-heading {
+    margin-bottom: var(--space-s);
+    color: var(--color-ash);
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .section-intro {
+    max-width: var(--measure);
+    margin-bottom: var(--space-m);
+  }
+
+  /* Just added: a sideways row of case tabs. */
+  .strip {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(15rem, 1fr);
+    gap: var(--space-s);
+    margin: 0;
+    padding: 0 0 var(--space-2xs);
+    list-style: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .strip li {
+    scroll-snap-align: start;
+  }
+
+  .strip a {
+    display: grid;
+    gap: var(--space-2xs);
+    height: 100%;
+    padding: var(--space-s);
+    border: 1px solid var(--color-line);
+    border-top: 3px solid var(--color-line);
+    border-radius: var(--radius-m);
+    color: var(--color-bone);
+    text-decoration: none;
+  }
+
+  .strip a:hover {
+    border-top-color: var(--color-ember);
+  }
+
+  .strip-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    color: var(--color-ash);
+  }
+
+  .strip-title {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    line-height: 1.2;
+  }
+
+  .strip-date {
+    align-self: end;
+    color: var(--color-ash);
+  }
+
+  .more {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-l);
+    margin-top: var(--space-s);
+  }
+
+  .more a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .states {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: 0 var(--space-l);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .states li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-s);
+    min-height: 44px;
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .states span:not(.count) {
+    color: var(--color-ash);
+  }
+
+  .count {
+    color: var(--color-ash);
+  }
+
+  .feed {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: var(--measure);
+  }
+
+  .feed li {
+    display: grid;
+    gap: var(--space-3xs);
+    padding-block: var(--space-xs);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .feed time {
+    color: var(--color-ash);
+  }
+
+  .feed a {
+    text-decoration: none;
+  }
+
+  .feed a:hover {
+    text-decoration: underline;
+  }
+
+  .watch-grid {
+    display: grid;
+    gap: var(--space-s);
+    max-width: 44rem;
+  }
+
+  .watch-grid p {
+    margin: 0;
   }
 </style>

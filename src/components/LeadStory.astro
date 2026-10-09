@@ -1,0 +1,119 @@
+---
+import { Image } from "astro:assets";
+import StatusChip from "./StatusChip.astro";
+import { stripCitations } from "../lib/sources";
+import type { Case } from "../lib/content";
+
+interface Props {
+  entry: Case;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const href = `/cases/${entry.id}/`;
+---
+
+<article class:list={["lead", { "has-image": data.image }]} aria-labelledby="lead-title">
+  <div class="text">
+    <p class="label ui">
+      <span>Newest story</span>
+      <StatusChip status={data.status} />
+      <span>{data.town}, {data.state}</span>
+    </p>
+    <h2 id="lead-title"><a href={href}>{data.title}</a></h2>
+    {data.summary && <p class="summary">{stripCitations(data.summary)}</p>}
+    <a class="read ui" href={href} aria-describedby="lead-title">Read the story</a>
+  </div>
+  {
+    data.image && (
+      <Image
+        src={data.image.src}
+        alt={data.image.alt}
+        widths={[240, 480]}
+        sizes="(min-width: 48rem) 13rem, 8rem"
+        class="thumb"
+        loading="lazy"
+      />
+    )
+  }
+</article>
+
+<style>
+  .lead {
+    display: grid;
+    gap: var(--space-m);
+    padding-block: var(--space-l) var(--space-xl);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs) var(--space-s);
+    margin-bottom: var(--space-s);
+    color: var(--color-ash);
+  }
+
+  .label > span:first-child {
+    color: var(--color-ember);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  h2 {
+    max-width: 18ch;
+    margin-bottom: var(--space-m);
+    font-size: var(--step-5);
+  }
+
+  h2 a {
+    color: var(--color-bone);
+    text-decoration: none;
+  }
+
+  h2 a:hover {
+    color: var(--color-ember);
+  }
+
+  .summary {
+    max-width: var(--measure);
+    font-size: var(--step-1);
+    line-height: 1.45;
+  }
+
+  .read {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-m);
+    border-radius: var(--radius-m);
+    background: var(--color-blood);
+    color: var(--color-bone);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .read:hover {
+    background: var(--color-blood-hover);
+  }
+
+  /* Kept small on purpose: the headline, not the photo, is what loads first. */
+  .thumb {
+    width: 8rem;
+    height: auto;
+    border-radius: var(--radius-m);
+  }
+
+  @media (min-width: 48rem) {
+    .has-image {
+      grid-template-columns: 1fr 13rem;
+      align-items: start;
+    }
+
+    .thumb {
+      width: 13rem;
+    }
+  }
+</style>
