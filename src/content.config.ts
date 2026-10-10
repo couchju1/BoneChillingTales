@@ -89,12 +89,15 @@ const cases = defineCollection({
         timeline: z.array(timelineEvent).default([]),
       })
       .superRefine((data, ctx) => {
+        // Numbers may skip (S1, S2, S7) when they match an outside source register, but they
+        // must climb, so the list reads in order and no id repeats.
         data.sources.forEach((s, i) => {
-          if (s.id !== `S${i + 1}`) {
+          const prev = i > 0 ? Number(data.sources[i - 1]!.id.slice(1)) : 0;
+          if (Number(s.id.slice(1)) <= prev) {
             ctx.addIssue({
               code: "custom",
               path: ["sources", i, "id"],
-              message: `Source ${i + 1} has id "${s.id}". Number sources in order: S1, S2, S3...`,
+              message: `Source ${i + 1} has id "${s.id}". List sources in ascending order: S1, S2, S3...`,
             });
           }
         });

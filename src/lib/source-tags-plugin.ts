@@ -30,11 +30,19 @@ export const sourceTags = defineMdastPlugin({
     if (!node.value.includes("[S")) return;
     const parts: Node[] = [];
     let last = 0;
+    let group = "";
     for (const match of node.value.matchAll(SOURCE_TAG)) {
-      // Drop the space before a tag so the superscript sits against the word.
-      const before = node.value.slice(last, match.index).replace(/\s+$/, "");
-      if (before) parts.push({ type: "text", value: before });
-      parts.push(citation(match[1]!));
+      // Back-to-back tags like [S3][S4] read as one superscript, "3,4", not "34".
+      if (group && match.index === last) {
+        group += `, ${match[1]}`;
+        parts[parts.length - 1] = citation(group);
+      } else {
+        // Drop the space before a tag so the superscript sits against the word.
+        const before = node.value.slice(last, match.index).replace(/\s+$/, "");
+        if (before) parts.push({ type: "text", value: before });
+        group = match[1]!;
+        parts.push(citation(group));
+      }
       last = match.index + match[0].length;
     }
     if (parts.length === 0) return;
