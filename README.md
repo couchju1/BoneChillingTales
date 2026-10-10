@@ -24,7 +24,7 @@ Timeline events can link to a story section with `section: "heading-id"`, where 
 heading text in lowercase with dashes ("The last night" becomes `the-last-night`).
 
 The build fails when a published case has no sources, a `[S#]` tag points at a missing source,
-sources aren't numbered S1, S2, S3 in order, an unsolved or missing case has no tip line, the
+sources aren't numbered in ascending order (S1, S2, S3, or with gaps like S1, S4, S7), an unsolved or missing case has no tip line, the
 summary is missing or over 60 words, or a timeline event points at a heading that doesn't exist.
 
 ## Posting a case update

@@ -21,13 +21,13 @@ const { sources, caseId } = Astro.props;
     {
       sources.map((s) => (
         <li id={sourceAnchor(s.id)} tabindex="-1">
-          <a href={s.url} rel="noopener">{s.title}</a>
+          <a href={s.url} target="_blank" rel="noopener">{s.title}</a>
           <span class="meta ui">
             {s.publisher}, {formatDate(s.date)}
             {s.archive && (
               <>
                 {" · "}
-                <a href={s.archive} rel="noopener" class="archive">
+                <a href={s.archive} target="_blank" rel="noopener" class="archive">
                   Archived copy
                 </a>
               </>
