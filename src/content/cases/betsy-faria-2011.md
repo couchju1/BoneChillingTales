@@ -4,6 +4,8 @@
 # Never state or imply she killed Betsy. The case against her is always attributed to prosecutors.
 # Her Gumpenberger conviction (Alford plea, 2019) is a separate case and proves nothing about Betsy's death.
 # Russ Faria was acquitted in 2015. Never describe him as a suspect without saying so.
+# Photos: Hupp's booking photo sits in "Pam Hupp is charged" with a neutral caption. Never caption
+# it in a way that ties it to Betsy's death as anything but a charge.
 draft: false
 title: "The 2011 killing of Betsy Faria in Troy, Missouri"
 seoTitle: "Betsy Faria: What Happened in Troy, MO"
@@ -23,7 +25,11 @@ agency: "the Lincoln County Prosecuting Attorney's Office"
 tipLine: null
 anonymousTips: null
 contentNote: "a violent stabbing and a fatal shooting"
-image: null
+image:
+  src: "./betsy-faria-2011.jpg"
+  alt: "Betsy Faria and Russ Faria seated together at a dinner table"
+  credit: "Faria family photo"
+  license: "Family photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -106,6 +112,8 @@ Russ chose to have a judge, not a jury, decide the case. Hupp was not called as 
 
 On November 6, 2015, Judge Ohmer acquitted Russ of both charges. [S1]
 
+![Russ Faria in a suit and tie outside a brick courthouse, with reporters' microphones nearby](./betsy-faria-2011-russ-faria.jpg "Russ Faria talks with reporters outside the courthouse.")
+
 In July 2016, Russ sued Lincoln County in federal court. The suit settled in March 2020 for $2 million. [S1] [S4]
 
 ## Louis Gumpenberger
@@ -127,6 +135,8 @@ In June 2019, Hupp entered an Alford plea. Under an Alford plea, a defendant doe
 ## Pam Hupp is charged
 
 In July 2021, Lincoln County Prosecuting Attorney Mike Wood charged Hupp with first-degree murder in Betsy's death. [S1] [S4] Prosecutors allege she killed Betsy for the life insurance money and staged the scene to make Russ look guilty. [S4] Hupp has pleaded not guilty. [S5]
+
+![Pam Hupp in a booking photo, wearing an orange jail uniform](./betsy-faria-2011-pam-hupp.jpg "Pam Hupp in a booking photo. Image: KSDK")
 
 The case had been moved to Springfield, about four hours from Lincoln County. In October 2023, Wood dropped and refiled the charge so he could ask for a trial closer to home. He said the long trip was "too much to ask of witnesses" and of Betsy's family. [S4]
 

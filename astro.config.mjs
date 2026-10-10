@@ -4,6 +4,7 @@ import { satteri } from "@astrojs/markdown-satteri";
 import sitemap from "@astrojs/sitemap";
 import site from "./site.config.json" with { type: "json" };
 import { sourceTags } from "./src/lib/source-tags-plugin.ts";
+import { figures } from "./src/lib/figure-plugin.ts";
 import seoAudit from "./src/integrations/seo-audit.ts";
 
 // Pages that say noindex stay out of the sitemap too.
@@ -17,7 +18,7 @@ export default defineConfig({
     format: "directory",
   },
   markdown: {
-    processor: satteri({ mdastPlugins: [sourceTags], features: { headingAttributes: true } }),
+    processor: satteri({ mdastPlugins: [figures, sourceTags], features: { headingAttributes: true } }),
   },
   integrations: [
     sitemap({

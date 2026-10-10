@@ -41,6 +41,12 @@
   margin: var(--space-l) 0;
 }
 
+.prose figure img {
+  max-height: 32rem;
+  width: auto;
+  border-radius: var(--radius-m);
+}
+
 .prose figcaption {
   margin-top: var(--space-2xs);
   font-family: var(--font-ui);
