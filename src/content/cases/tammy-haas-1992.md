@@ -1,6 +1,7 @@
 ---
-# DRAFT. Story text revised and supplied final by Justin on October 10, 2026. Text and source
-# tags are unchanged except the phone numbers and tips.fbi.gov are now links. Source numbers
+# Published October 10, 2026. Story text revised and supplied final by Justin on October 10, 2026. Text and source
+# tags are unchanged except the phone numbers and tips.fbi.gov are now links, one semicolon
+# became a period, and the "turned 48" tag points at S8 (KELO never mentions the birthday). Source numbers
 # skip on purpose (S1, S2, S3, S4, S7, S8, S16) to match the research source register.
 # TODO image: a featured image will be added later. Alt text to use:
 #   "A fog-covered ditch at the edge of a rural golf course at dusk."
@@ -8,7 +9,7 @@
 # Legal care: Eric Stukel was charged with manslaughter and ACQUITTED by a jury. Never state
 # or imply he caused Tammy's death. The FBI lists the death as unexplained, not a homicide.
 # Sally Smith's "cover-up" is her belief, attributed to her (S2).
-draft: true
+draft: false
 title: "Across the River: The Unanswered Death of Tammy Haas"
 seoTitle: "Tammy Haas: What Happened in Crofton, NE"
 description: "In 1992, Tammy Haas, 19, went to a party near Crofton, Nebraska, and never came home. Decades later, the FBI still calls her death unexplained."
@@ -125,7 +126,7 @@ Two mothers. Two families. Both still living with that September.
 
 Then, in 2021, the case took a turn that's quietly unsettling once you sit with it.
 
-On April 13, 2021, the FBI and Yankton Police held a news conference in Yankton [S7][S8]. It was the day Tammy would have turned 48 [S1][S7].
+On April 13, 2021, the FBI and Yankton Police held a news conference in Yankton [S7][S8]. It was the day Tammy would have turned 48 [S1][S8].
 
 They announced a reward of up to $15,000 [S1][S7].
 
@@ -143,7 +144,7 @@ Here is where things stand.
 
 **What's documented:** Tammy Haas, 19, of Yankton, went to a party near Crofton, Nebraska, on September 17, 1992 [S1][S3]. Her body was found on September 23 [S3]. The FBI says an autopsy attributed her death to hyperflexation of her neck [S1]. Eric Stukel was charged with manslaughter in October 1995 and acquitted by a jury [S16]. In 2021, the FBI and Yankton Police offered up to $15,000 for information about how she died [S1][S7].
 
-**Where the sources disagree:** The FBI says ditch; newspapers say ravine [S1][S3][S4]. Sources give the trial year as 1996 or 1995 [S4][S16][S8].
+**Where the sources disagree:** The FBI says ditch. Newspapers say ravine [S1][S3][S4]. Sources give the trial year as 1996 or 1995 [S4][S16][S8].
 
 **What's reported but not proven:** Authorities believed she had been in a car trunk, according to NBC [S2]. A childhood friend believes there was a cover-up [S2].
 
