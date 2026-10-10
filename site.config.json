@@ -16,8 +16,8 @@
     "youtubeVerified": false
   },
   "newsletter": {
-    "provider": "kit",
-    "formAction": "[KIT FORM URL]",
+    "provider": "email",
+    "formAction": "/api/subscribe.php",
     "caseField": null,
     "cadence": "weekly"
   },

@@ -6,7 +6,7 @@ seoTitle: "Privacy Policy | Bone Chilling Tales"
 description: "What Bone Chilling Tales collects, why, who else sees it, and how to opt out. No accounts, no data sales, and analytics you can turn off."
 ---
 
-Last updated October 9, 2026.
+Last updated October 10, 2026.
 
 Bone Chilling Tales is a website about real crimes and unsolved cases. You can read every story without an account, and we keep what we collect about you small. This page explains what that is.
 
@@ -20,7 +20,7 @@ Bone Chilling Tales is a website about real crimes and unsolved cases. You can r
 
 ## What we collect and why
 
-**Newsletter.** If you sign up, your email address goes to Kit (formerly ConvertKit), the service that sends our weekly email. If you signed up from a story, Kit may also note which story it was, so we can tell you when that case changes. Every email has an unsubscribe link. Unsubscribing stops the emails, and you can ask us to delete your address completely.
+**Newsletter.** If you sign up, the form sends us an email with your email address, and the story you signed up from if there was one, so we can tell you when that case changes. We use your address only to send the weekly email. To unsubscribe, reply to any newsletter and ask, and we'll take you off the list and delete your address. To stop spam, the site keeps a scrambled code made from your internet address for up to an hour, to limit how many sign-ups one connection can send. It can't be turned back into your address.
 
 **Suggest a case or a correction.** The form sends us an email with what you type: the case, the town, your message, any links, and your email address if you give one. We use it to look into the case or fix the mistake, and to reply if you asked us to. We don't publish what you send or share your email address. To stop spam, the site keeps a scrambled code made from your internet address for up to an hour, to limit how many messages one connection can send. It can't be turned back into your address.
 

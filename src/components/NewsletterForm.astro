@@ -6,21 +6,22 @@ interface Props {
   heading: string;
   body: string;
   button?: string;
-  /** Story id, sent to Kit when newsletter.caseField is set so a signup can be tagged with it. */
+  /** Story id. Sent with email sign-ups, and to Kit when newsletter.caseField is set. */
   caseId?: string;
 }
 
 const { heading, body, button = "Get the weekly email", caseId } = Astro.props;
-const action = site.newsletter.formAction;
-const ready = !isPlaceholder(action);
-const caseField = site.newsletter.caseField;
+const { provider, formAction: action, caseField } = site.newsletter;
+const byEmail = provider === "email";
+// Email sign-ups go to the Suggest-a-case inbox, so they wait on that address too.
+const ready = !isPlaceholder(action) && !(byEmail && isPlaceholder(site.forms.suggestTo));
 const uid = `nl-${caseId ?? "site"}`;
 ---
 
 <section class="newsletter" aria-labelledby={`${uid}-heading`}>
   <h2 id={`${uid}-heading`}>{heading}</h2>
   <p>{body}</p>
-  <form method="post" action={ready ? action : undefined} novalidate data-newsletter-form>
+  <form method="post" action={ready ? action : undefined} novalidate data-newsletter-form data-provider={provider}>
     <fieldset disabled={!ready} data-fields>
       <div class="field">
         <label for={`${uid}-email`}>Email</label>
@@ -34,12 +35,24 @@ const uid = `nl-${caseId ?? "site"}`;
             maxlength="254"
             aria-describedby={`${uid}-email-error`}
           />
-          {caseId && caseField && <input type="hidden" name={`fields[${caseField}]`} value={caseId} />}
+          {!byEmail && caseId && caseField && <input type="hidden" name={`fields[${caseField}]`} value={caseId} />}
           <button type="submit" class="btn-primary">{button}</button>
         </div>
         <p id={`${uid}-email-error`} class="field-error" hidden></p>
       </div>
     </fieldset>
+    {
+      byEmail && (
+        <>
+          <div class="hp" aria-hidden="true">
+            <label for={`${uid}-${site.forms.honeypotField}`}>Leave this empty</label>
+            <input id={`${uid}-${site.forms.honeypotField}`} name={site.forms.honeypotField} type="text" tabindex="-1" autocomplete="off" />
+          </div>
+          {caseId && <input type="hidden" name="story" value={caseId} />}
+          <input type="hidden" name="started" value="" data-started />
+        </>
+      )
+    }
     <p class="form-message" role="status" data-message>{!ready && "Sign-up opens soon."}</p>
   </form>
 </section>
@@ -50,6 +63,7 @@ const uid = `nl-${caseId ?? "site"}`;
   const COPY = {
     invalid: "That email doesn't look right. Check it and try again.",
     success: "You're in. Check your inbox to confirm.",
+    joined: "You're on the list. The next weekly email will come to your inbox.",
     already: "You're already on the list.",
     error: "That didn't go through. Try again in a minute.",
   };
@@ -60,6 +74,9 @@ const uid = `nl-${caseId ?? "site"}`;
     const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
     const fields = form.querySelector<HTMLFieldSetElement>("[data-fields]")!;
     const message = form.querySelector<HTMLElement>("[data-message]")!;
+    const byEmail = form.dataset.provider === "email";
+    const started = form.querySelector<HTMLInputElement>("[data-started]");
+    if (started) started.value = String(Date.now());
     const say = (text: string, tone: "success" | "error" | "") => {
       message.textContent = text;
       message.dataset.tone = tone;
@@ -89,7 +106,7 @@ const uid = `nl-${caseId ?? "site"}`;
         const text = JSON.stringify(data).toLowerCase();
         if (res.ok && data.status === "success") {
           fields.hidden = true;
-          say(COPY.success, "success");
+          say(byEmail ? COPY.joined : COPY.success, "success");
           document.dispatchEvent(new CustomEvent("bct:newsletter-success"));
         } else if (text.includes("already")) {
           fields.hidden = true;
@@ -101,7 +118,7 @@ const uid = `nl-${caseId ?? "site"}`;
           say(COPY.error, "error");
         }
       } catch {
-        // Couldn't read Kit's answer (offline, or the browser blocked it). If online, let the browser post the form itself.
+        // Couldn't read the answer (offline, or the browser blocked it). If online, let the browser post the form itself.
         if (navigator.onLine) {
           form.submit();
           return;

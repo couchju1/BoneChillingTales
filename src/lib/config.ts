@@ -20,7 +20,9 @@ export interface SiteConfig {
     youtubeVerified: boolean;
   };
   newsletter: {
-    provider: "kit";
+    /** "email" sends each sign-up to forms.suggestTo. "kit" posts to a Kit form. */
+    provider: "email" | "kit";
+    /** "/api/subscribe.php" for "email", or the Kit form's URL for "kit". */
     formAction: string;
     /** Kit custom field that records which story a signup came from. null leaves it off. */
     caseField: string | null;

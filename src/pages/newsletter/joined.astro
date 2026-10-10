@@ -1,0 +1,21 @@
+---
+import Page from "../../layouts/Page.astro";
+---
+
+<!-- Where the sign-up form lands when it was sent without JavaScript. -->
+<Page
+  title="Signed Up | Bone Chilling Tales"
+  description="You're on the list for the weekly email."
+  heading="You're on the list"
+  noindex
+>
+  <p slot="lead" class="lead">The next weekly email will come to your inbox.</p>
+  <p slot="after"><a href="/cases/">Back to the cases</a></p>
+</Page>
+
+<style>
+  .lead {
+    max-width: var(--measure);
+    font-size: var(--step-1);
+  }
+</style>

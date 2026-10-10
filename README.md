@@ -35,8 +35,10 @@ short post: copy `src/content/updates/_example.md`, set `case:` to the story's f
 
 ## Forms
 
-- Newsletter: set `newsletter.formAction` in `site.config.json` to your Kit form's URL. To tag
-  signups by story, create a custom field in Kit and put its key in `newsletter.caseField`.
+- Newsletter: with `newsletter.provider` set to `"email"` (the default), each sign-up is emailed
+  to `forms.suggestTo` by `public/api/subscribe.php`, with the story it came from. Keep the list
+  yourself. To move to Kit later, set `provider` to `"kit"` and `formAction` to your Kit form's URL.
+  To tag Kit signups by story, create a custom field in Kit and put its key in `newsletter.caseField`.
 - Suggest a case: set `forms.suggestTo` to the inbox that should get suggestions. The build writes
   it into `api/config.php`, which `public/api/suggest.php` reads. Mail goes out through PHP `mail()`
   from `noreply@` your domain, so set up SPF and DKIM for the domain at Hostinger.
