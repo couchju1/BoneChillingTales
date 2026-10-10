@@ -29,7 +29,7 @@ anonymousTips: { name: "the FBI's online tip form", url: "https://tips.fbi.gov" 
 contentNote: null
 image:
   src: "./tammy-haas-1992.jpg"
-  alt: "Tammy Haas in a 1990 portrait photo released by the FBI"
+  alt: "Tammy Haas smiling, chin on her hand, in a 1990 photo released by the FBI"
   credit: "Photo released by the FBI"
   license: "Released to the public by the FBI on its Tamara Ann Haas poster, 1990 photo"
 youtubeId: null
