@@ -3,9 +3,8 @@
 # tags are unchanged except the phone numbers and tips.fbi.gov are now links, one semicolon
 # became a period, and the "turned 48" tag points at S8 (KELO never mentions the birthday). Source numbers
 # skip on purpose (S1, S2, S3, S4, S7, S8, S16) to match the research source register.
-# TODO image: a featured image will be added later. Alt text to use:
-#   "A fog-covered ditch at the edge of a rural golf course at dusk."
-#   Never a photo of Tammy Haas or any real person.
+# Photo: the FBI's own 1990 photo from its Tamara Ann Haas poster (S1). Use only photos the
+# FBI or the family released. Never a photo of Eric Stukel.
 # Legal care: Eric Stukel was charged with manslaughter and ACQUITTED by a jury. Never state
 # or imply he caused Tammy's death. The FBI lists the death as unexplained, not a homicide.
 # Sally Smith's "cover-up" is her belief, attributed to her (S2).
@@ -28,7 +27,11 @@ agency: "the FBI's Sioux Falls office"
 tipLine: "+16053346881"
 anonymousTips: { name: "the FBI's online tip form", url: "https://tips.fbi.gov" }
 contentNote: null
-image: null
+image:
+  src: "./tammy-haas-1992.jpg"
+  alt: "Tammy Haas in a 1990 portrait photo released by the FBI"
+  credit: "Photo released by the FBI"
+  license: "Released to the public by the FBI on its Tamara Ann Haas poster, 1990 photo"
 youtubeId: null
 youtubeUploadDate: null
 sources:
