@@ -19,7 +19,11 @@ agency: "Knox County Criminal Court"
 tipLine: null
 anonymousTips: null
 contentNote: "a prolonged, violent killing and childhood sexual abuse"
-image: null
+image:
+  src: "./colleen-slemmer-1995.jpg"
+  alt: "Colleen Slemmer as a smiling teenager in a striped shirt, in a school portrait"
+  credit: "Slemmer family photo"
+  license: "Family photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -81,11 +85,17 @@ Pike was tried in Knox County. A psychologist testified for the defense that she
 
 On March 22, 1996, the jury convicted Pike of first-degree murder and conspiracy to commit first-degree murder. [S7] It sentenced her to death. The jury found two reasons the law requires for a death sentence: the killing involved torture or serious physical abuse beyond what it took to cause death, and it was done to keep Colleen from reporting the attack. [S1] The judge added 25 years for the conspiracy. [S1]
 
+![Christa Pike as a young woman in a red jail uniform, in a courtroom](./colleen-slemmer-1995-pike-trial.jpg "Christa Pike in court in Knoxville.")
+
 ## The other two
 
 Tadaryl Shipp was convicted of first-degree murder and conspiracy to commit first-degree murder. He was tried as an adult, but because he was 17, he could not be sentenced to death. He was sentenced to life in prison with the possibility of parole. [S7] In October 2025 the state parole board turned him down, citing how serious the crime was. His next review is set for October 2031. [S3]
 
+![Tadaryl Shipp, with a gray beard, glasses and a knit cap, in a prison photo](./colleen-slemmer-1995-shipp.jpg "Tadaryl Shipp in a prison photo.")
+
 Shadolla Peterson became an informant and was convicted as an accessory. She was sentenced to six years of probation. [S7]
+
+![Shadolla Peterson in a green top, in a courtroom](./colleen-slemmer-1995-peterson.jpg "Shadolla Peterson in court.")
 
 ## Thirty years in court
 
@@ -108,5 +118,7 @@ May Martinez traveled from Orange Park to Nashville to be there. Afterward, she 
 ## Where it stands
 
 Christa Pike's death sentence still stands. As of October 7, 2026, her lawyers said she was conscious and expected a long recovery. [S8] The state has not said whether it will try to execute her again. [S6]
+
+![Christa Pike holding a Tennessee Department of Correction booking board](./colleen-slemmer-1995-pike-tdoc.jpg "Christa Pike in a Tennessee Department of Correction photo.")
 
 Tadaryl Shipp remains in prison. [S3]
