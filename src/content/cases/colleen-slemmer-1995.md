@@ -5,7 +5,7 @@ title: "The 1995 killing of Colleen Slemmer in Knoxville"
 seoTitle: "Colleen Slemmer: What Happened in Knoxville, TN"
 description: "Colleen Slemmer, 19, was killed in Knoxville in 1995 by fellow Job Corps students. Christa Pike was sentenced to death. Her 2026 execution failed."
 person: "Colleen Slemmer"
-summary: "Colleen Slemmer was 19 and training at the Knoxville Job Corps Center when fellow students led her away on January 12, 1995. [S1] She was killed that night. Christa Pike was sentenced to death. [S1] On September 30, 2026, Tennessee tried to execute Pike and failed. [S6]"
+summary: "Colleen Slemmer was 19 and training at the Knoxville Job Corps Center when fellow students led her away on January 12, 1995. [S1] She was killed that night. Christa Pike was sentenced to death. [S1] On September 30, 2026, Tennessee tried to execute Pike and failed. [S6] She survived and is back in prison. [S12]"
 status: in-court
 town: "Knoxville"
 state: TN
