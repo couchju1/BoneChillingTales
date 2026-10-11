@@ -65,6 +65,8 @@ She wanted to make computers her career, so she enrolled in Job Corps, a federal
 
 Three other Job Corps students were convicted in connection with her death. Christa Pike was 18. [S2] Her boyfriend, Tadaryl Shipp, was 17. Shadolla Peterson was 18. [S7]
 
+![Three side-by-side photos of Christa Pike, Tadaryl Shipp and Shadolla Peterson as teenagers](./colleen-slemmer-1995-three.jpg "From left: Christa Pike, Tadaryl Shipp and Shadolla Peterson.")
+
 Pike told police that she and Colleen had been having problems, and that she believed Colleen was "trying to get" her boyfriend. [S1] On January 11, 1995, Pike told another student she intended to kill Colleen because she "had just felt mean that day." [S1]
 
 The next evening, around 8 p.m., Colleen left the center with Pike, Shipp and Peterson. Pike had told her they were going to a music store, and that she had marijuana hidden in a park. The group walked to the steam plant on the University of Tennessee's agricultural campus. [S1] Around 10:15 p.m., Pike, Shipp and Peterson came back. Colleen was not with them. [S1]
@@ -83,9 +85,11 @@ On January 14, Pike waived her right to stay silent and gave police a recorded s
 
 Pike was tried in Knox County. A psychologist testified for the defense that she had lost control rather than planned the killing. Under questioning by the prosecution, he agreed there was no question she killed Colleen. [S1]
 
+![Christa Pike as a teenager with curly hair and a white bow, in a courtroom](./colleen-slemmer-1995-pike-court.jpg "Christa Pike in court.")
+
 On March 22, 1996, the jury convicted Pike of first-degree murder and conspiracy to commit first-degree murder. [S7] It sentenced her to death. The jury found two reasons the law requires for a death sentence: the killing involved torture or serious physical abuse beyond what it took to cause death, and it was done to keep Colleen from reporting the attack. [S1] The judge added 25 years for the conspiracy. [S1]
 
-![Christa Pike as a young woman in a red jail uniform, in a courtroom](./colleen-slemmer-1995-pike-trial.jpg "Christa Pike in court in Knoxville.")
+![Christa Pike in a red jail uniform, looking over her shoulder from the defense table](./colleen-slemmer-1995-pike-1996.jpg "Christa Pike at the defense table during her trial.")
 
 ## The other two
 
@@ -101,6 +105,8 @@ Shadolla Peterson became an informant and was convicted as an accessory. She was
 
 In 1998 the Tennessee Supreme Court upheld Pike's conviction and death sentence. [S1]
 
+![Christa Pike as a young woman in a red jail uniform, in a courtroom](./colleen-slemmer-1995-pike-trial.jpg "Christa Pike in court in Knoxville.")
+
 Her later appeals centered on her childhood. Her lawyers argued that her trial attorneys never put on the evidence they had of her abusive upbringing, including sexual abuse she suffered as a child. [S2] In 2019 a federal appeals court ruled against her. It found the evidence the jury never heard was similar to what Pike's relatives had told jurors at sentencing. [S2]
 
 Pike was 18 when Colleen was killed. Had she been 17, like Shipp, she could not have been sentenced to death. One of the federal judges noted that difference in 2019. [S2] At a hearing in August 2026, the state said it did not dispute the childhood abuse Pike suffered. [S8]
@@ -108,6 +114,8 @@ Pike was 18 when Colleen was killed. Had she been 17, like Shipp, she could not 
 ## September 30, 2026
 
 Pike would have been the first woman executed in Tennessee in more than 200 years. [S9] At the last minute, a federal appeals court paused the execution so it could consider a new motion from her lawyers. The U.S. Supreme Court lifted that pause. [S8]
+
+![An execution chamber with an electric chair in front and a lethal injection gurney behind it](./colleen-slemmer-1995-chamber.jpg "Tennessee's execution chamber at Riverbend Maximum Security Institution in Nashville, in an older photo.")
 
 The execution began on the night of September 30, 2026, after a series of last-minute legal challenges. [S5] Executioners struggled to place the IV lines. When the first dose of pentobarbital did not work, they gave a second. [S6] Pike did not die. She was taken to a hospital, where she was unconscious and on a ventilator for days. [S6] On October 6 her lawyers said she was conscious and speaking, though only a little. [S8]
 
