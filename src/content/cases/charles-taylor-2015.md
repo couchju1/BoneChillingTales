@@ -3,10 +3,12 @@
 # summary only. The full chapter is paywalled.
 # Family wishes: in April 2015, Rex Taylor's aunt asked people to "let him rest." Keep Rex at the
 # edges of the story and never describe how he died beyond what is here.
-# Keep Charles at the center. No lead photo until there is one of him. Never describe or link the
+# Keep Charles at the center. No lead photo until there is one of him confirmed. His obituary
+# (S10) shows a stag, not a portrait. The Gun Memorial page's photos are not reliably identified. Never describe or link the
 # photo taken at the scene, and never name the Tumblr blog or the website it was sent to.
 # Amanda Taylor's claims about Charles were never proven. Always attribute them to her.
-# Photos: no photos of Rex or of the couple's children. Captions say who, nothing more.
+# Photos: the only photo of Rex is the one his family gave WSLS, cropped to remove the child.
+# Never show the couple's children. Captions say who, nothing more.
 draft: false
 title: "The 2015 killing of Charles Taylor in Montgomery County, Virginia"
 seoTitle: "Charles Taylor: What Happened in Montgomery County, VA"
@@ -39,7 +41,9 @@ sources:
   - { id: S7, title: "EXCLUSIVE: Amanda Taylor talks about Montgomery Co. murder, planned crime spree", publisher: "WDBJ7", url: "https://www.wdbj7.com/content/news/EXCLUSIVE-Amanda-Taylor-talks-about-Montgomery-Co-murder-planned-crime-spree-373366421.html", date: 2016-03-24 }
   - { id: S8, title: "The murder of Charles Taylor (chapter in Social Media Homicide Confessions, by Elizabeth Yardley)", publisher: "Bristol University Press, via Cambridge Core", url: "https://www.cambridge.org/core/books/social-media-homicide-confessions/murder-of-charles-taylor/10C4C897B806E0EA774F091ED27B915E", date: 2017-01-01 }
   - { id: S9, title: "Appeals court upholds life sentence for woman who killed father-in-law", publisher: "WSET", url: "https://wset.com/news/local/appeals-court-upholds-life-sentence-for-woman-who-killed-father-in-law", date: 2017-03-23 }
+  - { id: S10, title: "Charles Earnest Taylor obituary", publisher: "Horne Funeral Home & Cremation Service", url: "https://www.hornefuneralservice.com/obituaries/Charles-Taylor-15/", date: 2015-04-04 }
 timeline:
+  - { date: 1955-08-08, text: "Charles Earnest Taylor is born. [S10]", section: "a-father-and-a-son" }
   - { date: 2014-08, text: "Rex Taylor, Charles's son, dies by suicide. [S3]", section: "a-father-and-a-son" }
   - { date: 2015-04-04, text: "Charles Taylor is killed at his home on Den Hill Road. [S1]", section: "april-4-2015" }
   - { date: 2015-04-05, text: "Amanda Taylor is arrested in North Carolina after a chase on I-40. Sean Ball is found injured on the Blue Ridge Parkway. [S1]", section: "the-road-south" }
@@ -65,11 +69,15 @@ Then she asked for something harder. She asked everyone to let him rest. [S3]
 
 ## A father and a son
 
-Charles Taylor was 59. He lived on Den Hill Road, in the Ellett area of Montgomery County. [S1] His elderly father, Allen, lived with him and was bedridden. [S4, S8] His son, Rex, was living with him too, in the last part of his life. [S3]
+Charles Earnest Taylor was born on August 8, 1955. [S10] He was 59 when he died. He lived on Den Hill Road, in the Ellett area of Montgomery County. [S1] His elderly father, Allen, lived with him and was bedridden. [S4, S8] His son, Rex, was living with him too, in the last part of his life. [S3]
 
-That is very nearly all the surviving coverage says about Charles, and it's worth stopping on how little that is. Notice where the record spends its words. Hold onto that. It matters later.
+His obituary lists the people he left behind. His father. A brother in North Carolina. Two aunts in Christiansburg. Two grandchildren. Nieces and nephews. His mother, Ruth, had died before him, and so had a brother, James, and his son. The family kept the services private and asked that any gifts go to the cemetery at North Fork Baptist Church. [S10]
+
+That is very nearly all the surviving record says about Charles, and it's worth stopping on how little that is. Notice where the record spends its words. Hold onto that. It matters later.
 
 Rex died by suicide in August 2014. His family said he had struggled with depression. [S3] He was married to Amanda Taylor, which made her Charles's daughter-in-law. They had two small children. [S3]
+
+![Rex Taylor and Amanda Taylor standing together and smiling, in a framed photo](./charles-taylor-2015-rex.jpg "Rex and Amanda Taylor, in a family photo shown by WSLS.")
 
 After Rex died, Amanda blamed Charles. She accused him of causing Rex's drug addiction, and she held him responsible for her husband's death. [S4, S8] Those were her accusations. Nothing in the public record shows that any of it was true.
 
@@ -139,7 +147,7 @@ Those are the verdicts. They settle who killed Charles Taylor. They do not settl
 
 The accusation Amanda made against Charles, that he had a hand in his son's addiction and death, was never proven. It survives only as her claim. The question of who held the camera was argued in court and never cleanly answered in the reporting. [S4] And the federal case over the shooting on the Blue Ridge Parkway trails off without an ending.
 
-Here's where the record goes quiet on the thing that matters most. We don't know who Charles Taylor was on an ordinary Tuesday. We don't know what he did for work, what he cared about, or what his son remembered about him as a boy. We know he shared his home with his father and, at the end, with his son. Someone knows the rest. It just isn't what got written down.
+Here's where the record goes quiet on the thing that matters most. We don't know who Charles Taylor was on an ordinary Tuesday. We don't know what he did for work, what he cared about, or what his son remembered about him as a boy. We know he shared his home with his father and, at the end, with his son, and that his family chose to grieve him privately. Someone knows the rest. It just isn't what got written down.
 
 ## What the family asked for
 
