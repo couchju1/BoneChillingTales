@@ -1,9 +1,11 @@
 ---
 # Fact-checked October 9, 2026 against the full text of every source below.
+# Rewritten October 11, 2026 from Justin's new draft. New facts checked against S1 (via S10), S2, S3, S7, S8, S10, S11, S12.
+# Wound details and the carving are left out on purpose.
 draft: false
-title: "The 1995 killing of Colleen Slemmer in Knoxville"
+title: "Four Walked Out, Three Came Back: The Murder of Colleen Slemmer"
 seoTitle: "Colleen Slemmer: What Happened in Knoxville, TN"
-description: "Colleen Slemmer, 19, was killed in Knoxville in 1995 by fellow Job Corps students. Christa Pike was sentenced to death. Her 2026 execution failed."
+description: "Colleen Slemmer, 19, left Florida to study computers at Knoxville Job Corps. In 1995, four students walked out. Only three came back."
 person: "Colleen Slemmer"
 summary: "Colleen Slemmer was 19 and training at the Knoxville Job Corps Center when fellow students led her away on January 12, 1995. [S1] She was killed that night. Christa Pike was sentenced to death. [S1] On September 30, 2026, Tennessee tried to execute Pike and failed. [S6]"
 status: in-court
@@ -36,97 +38,161 @@ sources:
   - { id: S7, title: "Christa Pike wasn't the only one who tortured, killed Colleen Slemmer. Here's what happened to the other 2", publisher: "WSMV", url: "https://www.wsmv.com/2026/10/02/christa-pike-wasnt-only-one-who-tortured-killed-colleen-slemmer-heres-what-happened-other-2-who-were-involved/", date: 2026-10-02 }
   - { id: S8, title: "Christa Pike (case updates)", publisher: "Death Penalty Information Center", url: "https://deathpenaltyinfo.org/tag/christa-pike", date: 2026-10-07 }
   - { id: S9, title: "'No tengo miedo de morir': Tennessee ejecuta hoy a una mujer, la primera en más de 200 años", publisher: "Telemundo Nashville, via KTTC (in Spanish)", url: "https://www.kttc.com/2026/09/30/no-tengo-miedo-de-morir-tennessee-ejecuta-hoy-una-mujer-la-primera-en-ms-de-200-aos/", date: 2026-09-30 }
+  - { id: S10, title: "Pike v. Freeman, No. 1:12-cv-35 (memorandum opinion denying habeas relief, quoting the Tennessee Supreme Court's account of the trial)", publisher: "U.S. District Court for the Eastern District of Tennessee, via GovInfo", url: "https://www.govinfo.gov/content/pkg/USCOURTS-tned-1_12-cv-00035/pdf/USCOURTS-tned-1_12-cv-00035-1.pdf", date: 2016-03-11 }
+  - { id: S11, title: "Colleen Slemmer, murdered by Christa Pike, remembered as a 'computer geek' with a nurturing heart", publisher: "CNN, via KION", url: "https://kioncentralcoast.com/news/national-world/cnn-national/2026/10/09/colleen-slemmer-murdered-by-christa-pike-remembered-as-a-computer-geek-with-a-nurturing-heart/", date: 2026-10-09 }
+  - { id: S12, title: "Colleen Slemmer's family asks public to remember victim after failed execution attempt", publisher: "WZTV (Fox 17 Nashville)", url: "https://fox17.com/news/local/colleen-slemmers-family-asks-public-to-remember-victim-after-failed-execution-attempt", date: 2026-10-02 }
 timeline:
-  - { date: 1975-09-20, text: "Colleen Slemmer is born in Orange Park, Florida. [S9]", section: "who-colleen-was" }
-  - { date: 1994-10-31, text: "Colleen says goodbye to her family and leaves for Job Corps in Knoxville. [S9]", section: "who-colleen-was" }
-  - { date: 1995-01-11, text: "Pike tells another student she plans to kill Colleen. [S1]", section: "the-night-of-january-12" }
-  - { date: 1995-01-12, text: "Around 8 p.m., Colleen leaves the center with Pike, Shipp and Peterson. Only three come back. [S1]", section: "the-night-of-january-12" }
-  - { date: 1995-01-13, text: "A university grounds worker finds Colleen's body near the agricultural campus greenhouses. [S1]", section: "what-investigators-found" }
-  - { date: 1995-01-14, text: "Pike gives police a recorded statement. [S1]", section: "what-investigators-found" }
+  - { date: 1975-09-20, text: "Colleen Slemmer is born in Orange Park, Florida. [S9]", section: "five-hundred-miles" }
+  - { date: 1994-10-31, text: "Colleen says goodbye to her family and leaves for Job Corps in Knoxville. [S9]", section: "five-hundred-miles" }
+  - { date: 1995-01-11, text: "Pike tells another student she plans to kill Colleen. [S1]", section: "a-grievance" }
+  - { date: 1995-01-12, text: "Around 8 p.m., Colleen leaves the center with Pike, Shipp and Peterson. Only three come back. [S1]", section: "the-walk" }
+  - { date: 1995-01-13, text: "A university grounds worker finds Colleen's body near the agricultural campus greenhouses. [S1]", section: "the-morning-after" }
+  - { date: 1995-01-14, text: "Pike gives police a recorded statement. [S1]", section: "what-was-in-the-pocket" }
   - { date: 1996-03-22, text: "A Knox County jury convicts Pike of first-degree murder and conspiracy. [S7]", section: "the-trial" }
-  - { date: 1998-10-05, text: "The Tennessee Supreme Court upholds the conviction and death sentence. [S1]", section: "thirty-years-in-court" }
-  - { date: 2019-08-22, text: "A federal appeals court rules against Pike's habeas appeal. [S2]", section: "thirty-years-in-court" }
-  - { date: 2025-10, text: "The parole board denies Tadaryl Shipp parole. His next review is set for 2031. [S3]", section: "the-other-two" }
-  - { date: 2026-09-30, text: "Tennessee's attempt to execute Pike fails. [S6]", section: "september-30-2026" }
-  - { date: 2026-10-06, text: "Pike's lawyers say she is conscious and speaking. [S8]", section: "september-30-2026" }
+  - { date: 1998-10-05, text: "The Tennessee Supreme Court upholds the conviction and death sentence. [S1]", section: "thirty-one-years" }
+  - { date: 2019-08-22, text: "A federal appeals court rules against Pike's habeas appeal. [S2]", section: "thirty-one-years" }
+  - { date: 2025-10, text: "The parole board denies Tadaryl Shipp parole. His next review is set for 2031. [S3]", section: "the-trial" }
+  - { date: 2026-09-30, text: "Tennessee's attempt to execute Pike fails. [S6]", section: "thirty-one-years" }
+  - { date: 2026-10-06, text: "Pike's lawyers say she is conscious and speaking. [S8]" }
 updates:
   - { date: 2026-10-09, text: "Story published." }
+  - { date: 2026-10-11, text: "Story rewritten, with three new sources." }
 ---
 
-## Who Colleen was
+Around 8 o'clock on the night of January 12, 1995, a student named Kim Iloilo watched four people leave the Knoxville Job Corps Center. [S1]
 
-Colleen Slemmer was born on September 20, 1975, in Orange Park, Florida. She grew up there with her mother, May Martinez, her stepfather and her younger sister. [S9] Her mother ran a daycare for 40 years. [S4]
+Three of them were Christa Pike, Pike's boyfriend Tadaryl Shipp, and Shadolla Peterson. The fourth was a 19-year-old from Florida named Colleen Slemmer. [S1]
 
-"Colleen loved doing things," her mother said. She babysat and loved anything to do with kids. She ran marathons, roller skated every weekend and was, in her mother's words, a "computer geek." [S4] She volunteered with the Special Olympics, helping children with special needs. [S9]
+At about 10:15, Iloilo saw the group come back. There were three of them. [S1]
 
-She wanted to make computers her career, so she enrolled in Job Corps, a federal job training program, to study them. At 19 she left Florida for the Job Corps center in Knoxville, Tennessee. She said goodbye to her family on Halloween 1994. It was the last time they saw her. [S9]
+Colleen was not with them. [S1]
 
-## The night of January 12
+What makes that moment hard to read now is something Iloilo had heard the day before. Pike told her she intended to kill Colleen. The reason Pike gave was that she "had just felt mean that day." [S1]
 
-Three other Job Corps students were convicted in connection with her death. Christa Pike was 18. [S2] Her boyfriend, Tadaryl Shipp, was 17. Shadolla Peterson was 18. [S7]
+## Five hundred miles
+
+Colleen Anne Slemmer grew up around Orange Park, Florida, with her mother, May Martinez, her stepfather and her younger sister. [S9]
+
+Her family and teachers remembered her as independent and kind. She was interested in computers, enough that she would later be remembered as a computer geek with a nurturing heart. [S11]
+
+The nurturing part showed in how she spent her time. She volunteered with the Special Olympics and helped children with disabilities and autism. [S9] [S11]
+
+The computers are what took her away from home. She moved more than 500 miles to Knoxville, Tennessee, to study computer technology at Job Corps, a federal education and career-training program. [S11]
+
+She had been there about three months when another student announced she was going to kill her. [S1] [S11]
+
+## A grievance
+
+Christa Gail Pike was 18. [S2] Tadaryl Shipp was 17. Shadolla Peterson was 18. All three were Job Corps students, like Colleen. [S7]
 
 ![Three side-by-side photos of Christa Pike, Tadaryl Shipp and Shadolla Peterson as teenagers](./colleen-slemmer-1995-three.jpg "From left: Christa Pike, Tadaryl Shipp and Shadolla Peterson.")
 
-Pike told police that she and Colleen had been having problems, and that she believed Colleen was "trying to get" her boyfriend. [S1] On January 11, 1995, Pike told another student she intended to kill Colleen because she "had just felt mean that day." [S1]
+Pike's complaint, as she later told it, was that Colleen had been trying to get her boyfriend and had been "running her mouth." She told police the two of them had been having problems for some time. [S1]
 
-The next evening, around 8 p.m., Colleen left the center with Pike, Shipp and Peterson. Pike had told her they were going to a music store, and that she had marijuana hidden in a park. The group walked to the steam plant on the University of Tennessee's agricultural campus. [S1] Around 10:15 p.m., Pike, Shipp and Peterson came back. Colleen was not with them. [S1]
+That was the grievance. A boyfriend, and some talk.
 
-Pike later described what happened in a recorded statement to police. She said Colleen was beaten and cut, and that each time Colleen tried to run, she was caught and pushed back to the ground. [S1] Pike said Colleen bargained for her life, promising that if they let her go, she would walk home to Florida. [S1] Pike said it went on for 30 minutes to an hour. [S1] The medical examiner found that Colleen died of blunt force injuries to her head. [S1]
+Then came the conversation with Kim Iloilo, and the line about feeling mean. [S1]
 
-## What investigators found
+The next evening, Pike invited Colleen out. [S1]
 
-At about 8:05 the next morning, January 13, a University of Tennessee grounds worker found Colleen's body near the greenhouses on the agricultural campus. [S1]
+## The walk
 
-Pike had already started talking. That night and the next morning, she told two classmates she had killed Colleen, and showed them a piece of bone she said came from Colleen's skull. [S1] Job Corps staff later turned over a leather jacket Pike had left in an office. Police found a small piece of bone in its inside pocket. A forensic anthropologist at the University of Tennessee showed it fit the missing piece of Colleen's skull. [S1]
+Pike gave Colleen reasons to come along. They could go to a music store. They could share some marijuana, which Pike said she had hidden in a park. [S1]
 
-On January 14, Pike waived her right to stay silent and gave police a recorded statement. She then walked an investigator through her steps that night and led him to the spot where Colleen's body had been found. [S1] Blood on clothing belonging to Pike and Shipp matched Colleen's DNA. [S1]
+Picture how that sounds to a 19-year-old far from home. An errand, a little weed. Ordinary reasons to go out on a weeknight.
+
+Pike had a box cutter and a miniature meat cleaver with her. [S1]
+
+They did not go to a music store. Pike led the group to the steam plant, in an isolated part of the University of Tennessee's agricultural campus. [S1]
+
+Most of what happened next comes from Pike herself, in a statement she gave police on tape two days later. [S1] Only a little of it needs to be told here.
+
+Colleen was beaten and cut. She tried to get away more than once and was held down. She begged them to let her go. She said she would walk home to Florida. [S1]
+
+Pike told her to shut up. [S1]
+
+At one point, Pike walked off to check on a noise and make sure no one was nearby. Then she came back. [S1]
+
+Pike estimated the attack lasted between 30 minutes and an hour. The medical examiner found that Colleen died of blunt-force injuries to her head. [S1]
+
+Back at the center, Kim Iloilo watched three people come in. [S1]
+
+## The morning after
+
+A University of Tennessee grounds employee found Colleen near the campus greenhouses at about 8:05 the next morning. [S1]
+
+The area investigators eventually secured measured roughly 100 feet by 60. It held blood, clothing, footprints and broken plants. [S1]
+
+Pike, meanwhile, was talking.
+
+She told classmates she had killed Colleen. Iloilo later testified that Pike described the weapons and the attack while dancing in a circle, smiling and singing. [S1]
+
+That afternoon she went to the taped-off area and asked a police officer who the victim was and whether there were any suspects. He said she giggled. She was wearing a pentagram necklace. [S1]
+
+And she showed another student, Stephanie Wilson, something she had with her. [S1]
+
+## What was in the pocket
+
+Police interviewed Pike and Shipp separately on January 14. Pike waived her rights, gave her recorded statement, agreed to a search of her room, and walked an investigator along her route that night. She led him to the place where Colleen had been found. [S1]
+
+The physical evidence piled up. Blood on clothing belonging to both Pike and Shipp matched Colleen's DNA. Colleen's black gloves and two of her ID cards were in a trash can at a gas station, where Pike said she had thrown them. [S1]
+
+Then Job Corps staff turned over Pike's black leather jacket. [S1]
+
+In its pocket was a small piece of bone. [S1]
+
+Stephanie Wilson would testify about what Pike had shown her. It was a piece of bone. Pike had pointed to brown spots on her shoes and said, "that ain't mud on my shoes, that's blood." She said the bone came from Colleen's skull. [S1]
+
+A forensic anthropologist reconstructed Colleen's skull. The fragment from Pike's jacket fit the missing piece. [S1]
+
+The prosecution would bring that reconstructed skull into the courtroom. [S1]
 
 ## The trial
 
-Pike was tried in Knox County. A psychologist testified for the defense that she had lost control rather than planned the killing. Under questioning by the prosecution, he agreed there was no question she killed Colleen. [S1]
+Pike's defense never argued that she didn't kill Colleen. Psychologist Eric Engum testified that she had a very severe borderline personality disorder, and that she had lost control rather than planned it. [S1]
 
 ![Christa Pike as a teenager with curly hair and a white bow, in a courtroom](./colleen-slemmer-1995-pike-court.jpg "Christa Pike in court.")
 
-On March 22, 1996, the jury convicted Pike of first-degree murder and conspiracy to commit first-degree murder. [S7] It sentenced her to death. The jury found two reasons the law requires for a death sentence: the killing involved torture or serious physical abuse beyond what it took to cause death, and it was done to keep Colleen from reporting the attack. [S1] The judge added 25 years for the conspiracy. [S1]
+Under cross-examination, he agreed with the facts that pointed the other way. She enticed Colleen to the park, she brought weapons, and she stopped partway through to check for witnesses. [S1]
+
+A Knox County jury convicted Pike on March 22, 1996, of first-degree murder and conspiracy. [S7] The jurors found two reasons for death: the killing involved torture or serious abuse beyond what was needed to kill, and it was done to stop Colleen from reporting the attack. The judge added 25 years for the conspiracy. [S1]
 
 ![Christa Pike in a red jail uniform, looking over her shoulder from the defense table](./colleen-slemmer-1995-pike-1996.jpg "Christa Pike at the defense table during her trial.")
 
-## The other two
+The second reason came from Pike's own words. After Colleen threatened to report her, Pike said, she felt she had to do something to keep Colleen from telling on her. [S1]
 
-Tadaryl Shipp was convicted of first-degree murder and conspiracy to commit first-degree murder. He was tried as an adult, but because he was 17, he could not be sentenced to death. He was sentenced to life in prison with the possibility of parole. [S7] In October 2025 the state parole board turned him down, citing how serious the crime was. His next review is set for October 2031. [S3]
+Shipp was tried as an adult and convicted of first-degree murder and conspiracy. At 17, he was too young for a death sentence, so he was sentenced to life in prison with the possibility of parole. [S7] The parole board turned him down in October 2025, citing the seriousness of the crime. His next review is in 2031. [S3]
 
 ![Tadaryl Shipp, with a gray beard, glasses and a knit cap, in a prison photo](./colleen-slemmer-1995-shipp.jpg "Tadaryl Shipp in a prison photo.")
 
-Shadolla Peterson became an informant and was convicted as an accessory. She was sentenced to six years of probation. [S7]
+Peterson's path was different. She became an informant and was convicted as an accessory. She was sentenced to six years' probation. [S7]
 
 ![Shadolla Peterson in a green top, in a courtroom](./colleen-slemmer-1995-peterson.jpg "Shadolla Peterson in court.")
 
-## Thirty years in court
+## Thirty-one years
 
-In 1998 the Tennessee Supreme Court upheld Pike's conviction and death sentence. [S1]
+The Tennessee Supreme Court upheld Pike's conviction and death sentence in 1998. [S1] The appeals that followed came back again and again to what the jury never heard. [S2]
 
 ![Christa Pike as a young woman in a red jail uniform, in a courtroom](./colleen-slemmer-1995-pike-trial.jpg "Christa Pike in court in Knoxville.")
 
-Her later appeals centered on her childhood. Her lawyers argued that her trial attorneys never put on the evidence they had of her abusive upbringing, including sexual abuse she suffered as a child. [S2] In 2019 a federal appeals court ruled against her. It found the evidence the jury never heard was similar to what Pike's relatives had told jurors at sentencing. [S2]
+Her trial lawyers had hired a mitigation specialist who built a three-volume report on Pike's life, then decided at the last minute not to call her at sentencing. [S10] Later lawyers described sexual abuse beginning when Pike was 2, along with neglect, PTSD and bipolar disorder. [S8] [S10] By 2026, Tennessee did not dispute the abuse. [S8] The argument was over whether it legally required a new sentencing. [S2]
 
-Pike was 18 when Colleen was killed. Had she been 17, like Shipp, she could not have been sentenced to death. One of the federal judges noted that difference in 2019. [S2] At a hearing in August 2026, the state said it did not dispute the childhood abuse Pike suffered. [S8]
+Pike was 18 when Colleen died. When a federal appeals court ruled against her in 2019, Judge Jane Stranch agreed with the result but wrote separately. She called whether 18-year-olds should be sentenced to death "an issue with which our society must be concerned," and noted that at 17, like Shipp, Pike would not have been eligible. [S2]
 
-## September 30, 2026
+From here the record splits, depending on who is telling it. The case is often called a Satanic killing. A psychiatrist who testified at sentencing said there were satanic elements in the crime, but that the pattern was that of an adolescent dabbling in Satanism. [S1] Pike's lawyers now describe her as a survivor. [S8] Whether she deserves mercy was never a question of who killed Colleen.
 
-Pike would have been the first woman executed in Tennessee in more than 200 years. [S9] At the last minute, a federal appeals court paused the execution so it could consider a new motion from her lawyers. The U.S. Supreme Court lifted that pause. [S8]
+The Tennessee Supreme Court set the execution for September 30, 2026. Governor Bill Lee denied clemency. [S8] Pike would have been the first woman executed in Tennessee in more than 200 years. [S9]
 
 ![An execution chamber with an electric chair in front and a lethal injection gurney behind it](./colleen-slemmer-1995-chamber.jpg "Tennessee's execution chamber at Riverbend Maximum Security Institution in Nashville, in an older photo.")
 
-The execution began on the night of September 30, 2026, after a series of last-minute legal challenges. [S5] Executioners struggled to place the IV lines. When the first dose of pentobarbital did not work, they gave a second. [S6] Pike did not die. She was taken to a hospital, where she was unconscious and on a ventilator for days. [S6] On October 6 her lawyers said she was conscious and speaking, though only a little. [S8]
-
-Governor Bill Lee ordered an independent review and stopped all executions for the rest of 2026. [S5] The head of the state prison system said he would step down. [S6] A judge ordered the state to preserve all evidence from the attempt. [S8]
-
-May Martinez traveled from Orange Park to Nashville to be there. Afterward, she said the state owes her an apology. "All I wanted was justice," she said. [S5]
-
-## Where it stands
-
-Christa Pike's death sentence still stands. As of October 7, 2026, her lawyers said she was conscious and expected a long recovery. [S8] The state has not said whether it will try to execute her again. [S6]
+The execution failed. Pike survived and was taken to a hospital. [S6]
 
 ![Christa Pike holding a Tennessee Department of Correction booking board](./colleen-slemmer-1995-pike-tdoc.jpg "Christa Pike in a Tennessee Department of Correction photo.")
 
-Tadaryl Shipp remains in prison. [S3]
+## Still waiting
+
+For three decades, May Martinez has asked people to remember her daughter as a person and not let Pike's notoriety swallow her. [S4] [S11] A girl who liked computers. A girl who spent her free time with kids who needed help. [S9] [S11]
+
+After the failed execution, Colleen's family said they were once again waiting for closure. [S12]
+
+A jury decided in 1996 what justice for Colleen should be. The state has now tried once to carry it out and failed. What should happen next, and whose voice should count most in deciding it?
