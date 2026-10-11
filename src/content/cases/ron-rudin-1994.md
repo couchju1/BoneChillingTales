@@ -2,6 +2,8 @@
 # Fact-checked October 9, 2026 against the full text of every source below.
 # Legal care: Margaret Rudin's conviction was vacated (2022) and the charges dismissed with prejudice (2024).
 # Never state or imply she killed Ron. Trial evidence is always attributed to testimony or prosecutors.
+# Photos: captions say who and where, nothing more. Never caption a photo of Margaret as a suspect,
+# fugitive or killer.
 draft: false
 title: "The 1994 killing of Ron Rudin in Las Vegas"
 seoTitle: "Ron Rudin: What Happened in Las Vegas, NV"
@@ -21,7 +23,11 @@ agency: "the Las Vegas Metropolitan Police Department homicide section"
 tipLine: "+17028283521"
 anonymousTips: { name: "Crime Stoppers of Southern Nevada (702-385-5555)", url: "https://crimestoppersofnv.com" }
 contentNote: null
-image: null
+image:
+  src: "./ron-rudin-1994.jpg"
+  alt: "Ron Rudin and Margaret Rudin sitting together and smiling"
+  credit: "Rudin family photo"
+  license: "Family photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -56,6 +62,8 @@ People who knew him said he had charm and knew how to use it. He stayed away fro
 
 His third wife, Peggy, died of a gunshot wound in their home. Authorities ruled her death a suicide. [S2] He met Margaret at church, and they married in September 1987. [S1] [S2]
 
+![Ron Rudin and Margaret Rudin relaxing together at home](./ron-rudin-1994-at-home.jpg "Ron and Margaret Rudin at home.")
+
 ## December 18, 1994
 
 On the evening of Sunday, December 18, 1994, a tenant at the strip mall saw Ron walking toward Margaret's antique store. Around 8:10 p.m., a friend of Margaret's called the house and spoke to Ron. [S1]
@@ -87,6 +95,8 @@ On January 27, 1995, while police searched her house, Margaret left Nevada. [S1]
 
 In November 1999, police in Massachusetts tracked her to Revere, after a tip that she was mailing packages from the post office there. [S1] [S2] They arrested her with the help of an officer posing as a pizza delivery man. [S2]
 
+![Margaret Rudin with her glasses pushed up on her head, resting her hand on her forehead](./ron-rudin-1994-margaret.jpg "Margaret Rudin.")
+
 ## The trial
 
 The trial began on March 2, 2001. [S1] Her lead lawyer, Michael Amador, gave an opening statement the Nevada Supreme Court later quoted at length, and Margaret told the judge in the first days of the trial that he wasn't prepared. [S1] Prosecutors were also looking into reports that Amador had taken money from media companies for her story. [S1]
@@ -94,6 +104,8 @@ The trial began on March 2, 2001. [S1] Her lead lawyer, Michael Amador, gave an 
 One juror held out for a not guilty verdict for six days. She later said that giving in was the biggest regret of her life. [S2] On May 2, 2001, the jury found Margaret guilty of first-degree murder. She was sentenced to life in prison with a chance of parole after 20 years. [S2] Over the years she turned down five plea deals, saying she wouldn't plead guilty to something she didn't do. [S2]
 
 The trial judge, Joseph Bonaventure, later told ABC News: "In 42 years, that is the worst trial that I've ever had." [S2]
+
+![Margaret Rudin seated in a courtroom, looking down](./ron-rudin-1994-court.jpg "Margaret Rudin in court.")
 
 ## A conviction undone
 
@@ -104,6 +116,8 @@ In May 2022, U.S. District Judge Richard Boulware threw out her conviction. He f
 The state and the Clark County District Attorney's Office chose not to try her again. [S5] On December 9, 2024, a Clark County judge dismissed the murder charges with prejudice, which means she can never be tried for them again. [S4] "Margaret has never been convicted legally of any crimes and she can never be re-prosecuted," her lawyer, Adam Breeden, said. [S4]
 
 The state did not admit she was innocent. It agreed she had poor legal representation at trial. [S5]
+
+![Margaret Rudin, with short gray hair, standing in front of a brick wall](./ron-rudin-1994-margaret-recent.jpg "Margaret Rudin in a recent photo.")
 
 ## Where it stands
 
