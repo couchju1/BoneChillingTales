@@ -71,6 +71,8 @@ Then she asked for something harder. She asked everyone to let him rest. [S3]
 
 Charles Earnest Taylor was born on August 8, 1955. [S10] He was 59 when he died. He lived on Den Hill Road, in the Ellett area of Montgomery County. [S1] His elderly father, Allen, lived with him and was bedridden. [S4, S8] His son, Rex, was living with him too, in the last part of his life. [S3]
 
+![An older man in a red cap and plaid shirt, wearing an oxygen tube, beside a bearded young man in a car](./charles-taylor-2015-father-son.jpg "Rex Taylor, right, with an older man the Daily Mail identified as his father, Charles. Image: Facebook, via the Daily Mail")
+
 His obituary lists the people he left behind. His father. A brother in North Carolina. Two aunts in Christiansburg. Two grandchildren. Nieces and nephews. His mother, Ruth, had died before him, and so had a brother, James, and his son. The family kept the services private and asked that any gifts go to the cemetery at North Fork Baptist Church. [S10]
 
 That is very nearly all the surviving record says about Charles, and it's worth stopping on how little that is. Notice where the record spends its words. Hold onto that. It matters later.
