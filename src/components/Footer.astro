@@ -45,6 +45,9 @@ const analyticsOn = !isPlaceholder(site.analytics.ga4Id);
         </button>
       )}
       <p class="copyright">© {year} {site.siteName}</p>
+      <p class="credit">
+        Website created by <a href="https://www.couchandcraft.com" rel="noopener">Couch &amp; Craft</a>
+      </p>
     </nav>
   </div>
 </footer>
@@ -136,6 +139,15 @@ const analyticsOn = !isPlaceholder(site.analytics.ga4Id);
 
   .copyright {
     margin: var(--space-xs) 0 0;
+  }
+
+  .credit {
+    margin: var(--space-3xs) 0 0;
+  }
+
+  .legal .credit a {
+    display: inline;
+    min-height: 0;
   }
 
   @media (min-width: 64rem) {
