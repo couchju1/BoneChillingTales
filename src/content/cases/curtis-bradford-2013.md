@@ -9,7 +9,7 @@
 # the 2025 sentence in the second prison assault (not found), and dispositions for Lori Jenkins,
 # Melonie Jenkins and Priscilla Fields. Erica's new legal name is left out on purpose.
 # Keep the four people killed at the front. Nikko and Erica are never the lead photo.
-# Photos: Erica's four came from Justin. A fifth, a professional portrait in a white sweater
+# Photos: all from Justin. Victims' photos go in the section on the people lost. Erica's four came from Justin. A fifth, a professional portrait in a white sweater
 # (Radiance Refined Photography watermark), was left out until it's confirmed to be her.
 draft: false
 title: "Brother and Sister: The Jenkins Siblings and the Omaha Killings of August 2013"
@@ -78,6 +78,8 @@ A few hours later, a cousin would say, the brother and sister were at his house,
 Before the brother and sister, the people they took from the world.
 
 Juan Uribe-Pena was 26. Jorge Cajiga-Ruiz was 29. Curtis Bradford was 22. Andrea Kruger was 33. [S4]
+
+![Juan Uribe-Pena, a young man with short dark hair, against a blue background](./curtis-bradford-2013-uribe-pena.jpg "Juan Uribe-Pena.")
 
 That is nearly all the public record holds about them. The court opinions describe where they were found and who was convicted. They don't say what these four people did for a living, who waited for them at home, or what anyone said about them at their funerals. Their stories deserve more than ages, and that gap is worth naming before going further.
 
