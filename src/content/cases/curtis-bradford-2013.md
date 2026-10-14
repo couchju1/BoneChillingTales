@@ -9,8 +9,10 @@
 # the 2025 sentence in the second prison assault (not found), and dispositions for Lori Jenkins,
 # Melonie Jenkins and Priscilla Fields. Erica's new legal name is left out on purpose.
 # Keep the four people killed at the front. Nikko and Erica are never the lead photo.
-# Photos: all from Justin. Victims' photos go in the section on the people lost. Erica's four came from Justin. A fifth, a professional portrait in a white sweater
-# (Radiance Refined Photography watermark), was left out until it's confirmed to be her.
+# Photos: all from Justin. Lead is Curtis. An album cover with a photo of a boy and a man
+# ("Murderface II") was left out: it is someone's artwork, and who is in it is unclear.
+# Other victims' photos go in the section on the people lost. A fifth Erica photo, a professional
+# portrait in a white sweater (Radiance Refined Photography watermark), was left out until it's confirmed to be her.
 draft: false
 title: "Brother and Sister: The Jenkins Siblings and the Omaha Killings of August 2013"
 seoTitle: "Curtis Bradford: What Happened in Omaha, NE"
@@ -30,7 +32,11 @@ agency: "the Omaha Police Department"
 tipLine: null
 anonymousTips: null
 contentNote: "the shooting deaths of four people and a violent assault"
-image: null
+image:
+  src: "./curtis-bradford-2013.jpg"
+  alt: "Curtis Bradford in a blue baseball cap and an earring"
+  credit: "Curtis Bradford, in a photo published in news coverage of the case"
+  license: "Photo published in news coverage of the case. Original source not confirmed"
 youtubeId: null
 youtubeUploadDate: null
 sources:
