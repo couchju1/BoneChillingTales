@@ -12,6 +12,8 @@
 # Photos: all from Justin. Lead is Curtis. An album cover with a photo of a boy and a man
 # ("Murderface II") was left out: it is someone's artwork, and who is in it is unclear.
 # Jorge's is a booking photo, the only one Justin has. Swap it if a family photo turns up.
+# Nikko: booking photo cropped to remove a TV station's frame. Unused: a later prison photo and one
+# in a yellow jumpsuit with officers behind him. Keep "What's left" free of photos of the two of them.
 # Andrea's family photo shows her children and is never used.
 # Other victims' photos go in the section on the people lost. A fifth Erica photo, a professional
 # portrait in a white sweater (Radiance Refined Photography watermark), was left out until it's confirmed to be her.
@@ -151,6 +153,8 @@ The woman in the picture was Lori Jenkins. Erica and Nikko's mother. [S1]
 
 That led police to Nikko, who was arrested around August 29. In his Birch Street apartment, officers found a shortened shotgun and a rifle in a gym bag, partly under a bed. Sayles identified them as the guns the two men carried that night. [S1]
 
+![Nikko Jenkins in a booking photo, in a yellow jail uniform, with tattoos covering his face and neck](./curtis-bradford-2013-nikko-booking.jpg "Nikko Jenkins in a booking photo.")
+
 Erica, Melonie and their mother were arrested around the same time. [S1]
 
 ![Erica Jenkins smiling in a booking photo, with long wavy hair and facial piercings](./curtis-bradford-2013-erica-booking.jpg "Erica Jenkins in a booking photo.")
@@ -168,6 +172,8 @@ Family accounts did not hold perfectly still.
 Sayles first told police Nikko carried both weapons back to the car. Later she said Erica carried the rifle, and admitted she'd been trying to protect her sister. [S1] Sayles and Melonie also described a later argument between Erica and their mother differently. One said it began over a niece damaging a plant. The other said it was about the killing. [S1]
 
 Nikko Jenkins pleaded no contest in 2014 to four counts of first-degree murder for the killings that August. In 2017, a three-judge panel sentenced him to death. [S7]
+
+![Nikko Jenkins in a courtroom, wearing tinted glasses, with tattoos across his face and head](./curtis-bradford-2013-nikko-court.jpg "Nikko Jenkins in court.")
 
 In January 2015, a jury convicted Erica of first-degree murder in Bradford's death, along with two weapons counts. [S5] She was sentenced to life. [S6] Separately, she was convicted of the two robberies near the park, not of those men's murders, and sentenced to two back-to-back terms of 30 to 50 years. [S2] Nothing in this record ties her to Andrea Kruger's death.
 
