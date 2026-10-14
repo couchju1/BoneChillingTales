@@ -9,7 +9,7 @@ export const EMPTY_HUB = "No stories here yet. New cases are added every week.";
 /** Rows for a hub, newest news first. */
 export async function hubRows(filter: (c: Case) => boolean = () => true) {
   const cases = await getPublishedCases();
-  return sortRows(cases.filter(filter).map(toRowData), "latest");
+  return sortRows(await Promise.all(cases.filter(filter).map(toRowData)), "latest");
 }
 
 /** A hub's copy from src/content/pages. */

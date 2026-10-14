@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import "../styles/hub.css";
 import LeadStory from "../components/LeadStory.astro";
 import StatusChip from "../components/StatusChip.astro";
+import CasePhoto from "../components/CasePhoto.astro";
 import CaseRow from "../components/CaseRow.astro";
 import VideoFacade from "../components/VideoFacade.astro";
 import NewsletterForm from "../components/NewsletterForm.astro";
@@ -17,7 +18,7 @@ const [lead, ...rest] = cases;
 const strip = rest.slice(0, 3);
 
 const stillOpen = sortRows(
-  cases.filter((c) => c.data.status === "unsolved" || c.data.status === "missing").map(toRowData),
+  await Promise.all(cases.filter((c) => c.data.status === "unsolved" || c.data.status === "missing").map(toRowData)),
   "latest",
 ).slice(0, 6);
 
@@ -55,6 +56,7 @@ const video = cases.find((c) => c.data.youtubeId);
             {strip.map((c) => (
               <li>
                 <a href={`/cases/${c.id}/`}>
+                  <CasePhoto entry={c} widths={[320, 640]} sizes="(min-width: 48rem) 22rem, 80vw" class="strip-photo" />
                   <span class="strip-meta ui">
                     <StatusChip status={c.data.status} />
                     <span>{c.data.state}</span>
@@ -214,6 +216,7 @@ const video = cases.find((c) => c.data.youtubeId);
 
   .strip a {
     display: grid;
+    grid-template-rows: auto auto 1fr auto;
     gap: var(--space-2xs);
     height: 100%;
     padding: var(--space-s);
@@ -224,8 +227,30 @@ const video = cases.find((c) => c.data.youtubeId);
     text-decoration: none;
   }
 
+  .strip a {
+    overflow: hidden;
+  }
+
   .strip a:hover {
     border-top-color: var(--color-ember);
+  }
+
+  /* Bleeds to the card's edges, above the text. */
+  .strip a :global(.strip-photo) {
+    width: calc(100% + 2 * var(--space-s));
+    max-width: none;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    margin: calc(-1 * var(--space-s)) calc(-1 * var(--space-s)) var(--space-2xs);
+    border: 0;
+    border-bottom: 1px solid var(--color-line);
+    border-radius: 0;
+    filter: grayscale(0.35);
+    transition: filter var(--motion-base) var(--ease-out);
+  }
+
+  .strip a:hover :global(.strip-photo) {
+    filter: none;
   }
 
   .strip-meta {

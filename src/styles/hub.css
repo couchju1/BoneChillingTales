@@ -9,7 +9,8 @@
 .case-row {
   position: relative;
   display: grid;
-  gap: var(--space-3xs);
+  grid-template-columns: 4rem 1fr;
+  gap: var(--space-3xs) var(--space-s);
   padding: var(--space-s) var(--space-2xs);
   border-bottom: 1px solid var(--color-line);
   transition: background-color var(--motion-fast) var(--ease-out);
@@ -18,6 +19,34 @@
 .case-row:hover,
 .case-row:focus-within {
   background: var(--color-surface);
+}
+
+/* The photo sits left of everything and runs the row's full height. */
+.case-row-thumb {
+  grid-row: 1 / span 3;
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--radius-m);
+  object-fit: cover;
+  object-position: center 25%;
+  background: var(--color-surface-raised);
+  filter: grayscale(0.35);
+  transition: filter var(--motion-base) var(--ease-out);
+}
+
+.case-row:hover .case-row-thumb,
+.case-row:focus-within .case-row-thumb {
+  filter: none;
+}
+
+.case-row-thumb-empty {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-line);
+  color: var(--color-ash);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  letter-spacing: 0.04em;
 }
 
 .case-row-name {
@@ -86,9 +115,15 @@
 
 @media (min-width: 48rem) {
   .case-row {
-    grid-template-columns: minmax(12rem, 18rem) 1fr;
+    grid-template-columns: 5rem minmax(12rem, 18rem) 1fr;
     column-gap: var(--space-l);
     padding-inline: var(--space-s);
+  }
+
+  .case-row-thumb {
+    grid-row: 1 / span 2;
+    width: 5rem;
+    height: 5rem;
   }
 
   .case-row-name {

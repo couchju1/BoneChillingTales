@@ -1,6 +1,6 @@
 ---
-import { Image } from "astro:assets";
 import StatusChip from "./StatusChip.astro";
+import CasePhoto from "./CasePhoto.astro";
 import { stripCitations } from "../lib/sources";
 import type { Case } from "../lib/content";
 
@@ -13,7 +13,7 @@ const { data } = entry;
 const href = `/cases/${entry.id}/`;
 ---
 
-<article class:list={["lead", { "has-image": data.image }]} aria-labelledby="lead-title">
+<article class="lead" aria-labelledby="lead-title">
   <div class="text">
     <p class="label ui">
       <span>Newest story</span>
@@ -24,18 +24,9 @@ const href = `/cases/${entry.id}/`;
     {data.summary && <p class="summary">{stripCitations(data.summary)}</p>}
     <a class="read ui" href={href} aria-describedby="lead-title">Read the story</a>
   </div>
-  {
-    data.image && (
-      <Image
-        src={data.image.src}
-        alt={data.image.alt}
-        widths={[240, 480]}
-        sizes="(min-width: 48rem) 13rem, 8rem"
-        class="thumb"
-        loading="lazy"
-      />
-    )
-  }
+  <a class:list={["photo", { "no-photo": !data.image }]} href={href} tabindex="-1" aria-hidden={data.image ? undefined : "true"}>
+    <CasePhoto entry={entry} widths={[400, 800]} sizes="(min-width: 48rem) 24rem, 100vw" class="lead-photo" loading="eager" />
+  </a>
 </article>
 
 <style>
@@ -99,21 +90,51 @@ const href = `/cases/${entry.id}/`;
     background: var(--color-blood-hover);
   }
 
-  /* Kept small on purpose: the headline, not the photo, is what loads first. */
-  .thumb {
-    width: 8rem;
-    height: auto;
+  .photo {
+    display: block;
+    max-width: 28rem;
     border-radius: var(--radius-m);
+    overflow: hidden;
+    box-shadow: var(--shadow-raised);
+    text-decoration: none;
+  }
+
+  .photo :global(.lead-photo) {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    transition: transform var(--motion-base) var(--ease-out);
+  }
+
+  .photo:hover :global(.lead-photo) {
+    transform: scale(1.02);
+  }
+
+  /* Photo first on phones, so the page opens on a face. The no-photo card waits for wider screens. */
+  .photo {
+    order: -1;
+  }
+
+  .no-photo {
+    display: none;
   }
 
   @media (min-width: 48rem) {
-    .has-image {
-      grid-template-columns: 1fr 13rem;
+    .lead {
+      grid-template-columns: 1fr 24rem;
       align-items: start;
+      gap: var(--space-xl);
     }
 
-    .thumb {
-      width: 13rem;
+    .photo {
+      order: 0;
+    }
+
+    .no-photo {
+      display: block;
+    }
+
+    .photo :global(.lead-photo) {
+      aspect-ratio: 4 / 5;
     }
   }
 </style>

@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import { getImage } from "astro:assets";
 import { site } from "./config";
 import { isoDate, daysBetween } from "./dates";
 import type { CaseRowData } from "./case-row";
@@ -64,8 +65,20 @@ export function formatPhone(e164: string): string {
 
 const FRESH_DAYS = 30;
 
-export function toRowData(entry: Case): CaseRowData {
+/** "Charles Taylor" → "CT". Stands in on cases with no photo. */
+export function initials(person: string): string {
+  return person
+    .split(/\s+/)
+    .map((w) => w[0] ?? "")
+    .filter((c) => /\p{L}/u.test(c))
+    .slice(0, 2)
+    .join("")
+    .toUpperCase();
+}
+
+export async function toRowData(entry: Case): Promise<CaseRowData> {
   const d = entry.data;
+  const thumb = d.image ? (await getImage({ src: d.image.src, width: 192, format: "webp" })).src : null;
   const counterLabel = site.statuses[d.status].counterLabel;
   const countFrom = d.status === "missing" ? d.lastSeenDate : d.incidentDate;
   const last = lastActivity(entry);
@@ -84,6 +97,8 @@ export function toRowData(entry: Case): CaseRowData {
     line: d.description,
     lastActivity: isoDate(last),
     incident: isoDate(d.incidentDate),
+    thumb,
+    initials: initials(d.person),
     fresh: last > d.published && daysBetween(last, new Date()) >= 0 && daysBetween(last, new Date()) <= FRESH_DAYS,
   };
 }
