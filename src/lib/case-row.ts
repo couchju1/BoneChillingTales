@@ -20,6 +20,10 @@ export interface CaseRowData {
   /** ISO date of the newest update, or the publish date. */
   lastActivity: string;
   incident: string;
+  /** Small photo URL, or null when the case has no photo. */
+  thumb: string | null;
+  /** Shown in place of the photo when there is none. */
+  initials: string;
   /** Updated in the last 30 days. Shows the amber dot. */
   fresh: boolean;
 }
@@ -44,8 +48,13 @@ export function caseRowHtml(d: CaseRowData, level: 2 | 3 = 2): string {
     d.counterLabel && d.countFrom
       ? `<span class="days-since pending" data-days-since="${d.countFrom}" data-label="${escape(d.counterLabel)}" aria-hidden="true">${escape(daysSinceText(d.countFrom, d.counterLabel) ?? "")}</span>`
       : "";
+  // Decorative: the name sits right beside it.
+  const thumb = d.thumb
+    ? `<img class="case-row-thumb" src="${escape(d.thumb)}" alt="" width="80" height="80" loading="lazy" decoding="async">`
+    : `<span class="case-row-thumb case-row-thumb-empty" aria-hidden="true">${escape(d.initials)}</span>`;
   return (
     `<li class="case-row">` +
+    thumb +
     `<h${level} class="case-row-name"><a href="/cases/${escape(d.id)}/">${fresh}${escape(d.person)}</a></h${level}>` +
     `<p class="case-row-meta ui">` +
     `<span class="chip chip-${d.status}">${escape(d.statusLabel)}</span>` +

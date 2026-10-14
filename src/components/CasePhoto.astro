@@ -1,0 +1,71 @@
+---
+import { Image } from "astro:assets";
+import { initials, type Case } from "../lib/content";
+
+interface Props {
+  entry: Case;
+  widths: number[];
+  sizes: string;
+  class?: string;
+  loading?: "lazy" | "eager";
+}
+
+const { entry, widths, sizes, class: className, loading = "lazy" } = Astro.props;
+const { image, person, town, state, incidentDate } = entry.data;
+---
+
+{
+  image ? (
+    <Image
+      src={image.src}
+      alt={image.alt}
+      widths={widths}
+      sizes={sizes}
+      class:list={["case-photo", className]}
+      loading={loading}
+    />
+  ) : (
+    // No confirmed photo yet: a plain card in its place, never a stand-in face.
+    <div class:list={["case-photo", "case-photo-empty", className]} aria-hidden="true">
+      <span class="mark">{initials(person)}</span>
+      <span class="place ui">
+        {town}, {state} · {incidentDate.getUTCFullYear()}
+      </span>
+    </div>
+  )
+}
+
+<style>
+  .case-photo {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    background: var(--color-surface-raised);
+  }
+
+  .case-photo-empty {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: var(--space-2xs);
+    border: 1px solid var(--color-line);
+    background:
+      radial-gradient(ellipse at 50% 35%, rgb(173 4 4 / 0.16), transparent 70%),
+      var(--color-surface);
+    text-align: center;
+  }
+
+  .mark {
+    color: var(--color-ash);
+    font-family: var(--font-display);
+    font-size: var(--step-4);
+    line-height: 1;
+    letter-spacing: 0.06em;
+  }
+
+  .place {
+    color: var(--color-ash);
+    font-size: var(--step--1);
+  }
+</style>
