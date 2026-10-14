@@ -9,6 +9,8 @@
 # the 2025 sentence in the second prison assault (not found), and dispositions for Lori Jenkins,
 # Melonie Jenkins and Priscilla Fields. Erica's new legal name is left out on purpose.
 # Keep the four people killed at the front. Nikko and Erica are never the lead photo.
+# Photos: Erica's four came from Justin. A fifth, a professional portrait in a white sweater
+# (Radiance Refined Photography watermark), was left out until it's confirmed to be her.
 draft: false
 title: "Brother and Sister: The Jenkins Siblings and the Omaha Killings of August 2013"
 seoTitle: "Curtis Bradford: What Happened in Omaha, NE"
@@ -135,6 +137,10 @@ The woman in the picture was Lori Jenkins. Erica and Nikko's mother. [S1]
 
 That led police to Nikko, who was arrested around August 29. In his Birch Street apartment, officers found a shortened shotgun and a rifle in a gym bag, partly under a bed. Sayles identified them as the guns the two men carried that night. [S1]
 
+Erica, Melonie and their mother were arrested around the same time. [S1]
+
+![Erica Jenkins smiling in a booking photo, with long wavy hair and facial piercings](./curtis-bradford-2013-erica-booking.jpg "Erica Jenkins in a booking photo.")
+
 The court later noted there was no evidence connecting Erica to that apartment. [S1]
 
 The physical evidence pointed hard at Nikko and only weakly at his sister. The smaller bullet could have come from a 9 mm, a .38 or a .357, and a database search turned up 26 possible guns. Bradford's DNA was strongly linked to the rifle and to blood in the car. Mixed DNA on the rifle couldn't rule out Erica or several relatives, but the analyst admitted that result carried very little weight. [S1]
@@ -151,6 +157,8 @@ Nikko Jenkins pleaded no contest in 2014 to four counts of first-degree murder f
 
 In January 2015, a jury convicted Erica of first-degree murder in Bradford's death, along with two weapons counts. [S5] She was sentenced to life. [S6] Separately, she was convicted of the two robberies near the park, not of those men's murders, and sentenced to two back-to-back terms of 30 to 50 years. [S2] Nothing in this record ties her to Andrea Kruger's death.
 
+![Erica Jenkins in profile in a courtroom, her hair pulled back in a long ponytail](./curtis-bradford-2013-erica-court.jpg "Erica Jenkins in court.")
+
 The Nebraska Supreme Court upheld the murder conviction on August 19, 2016. [S1] Three years to the day after Bradford was found.
 
 Erica wasn't finished with the people who had testified.
@@ -163,11 +171,15 @@ About two weeks before September 24, 2016, inside the Nebraska Correctional Cent
 
 A few days before the 24th, prison officials moved Erica into the cell Bordeaux shared with two other women. Whether Erica asked for that move is disputed. One employee remembered her wanting it. Defense witnesses said she opposed it. [S3]
 
+![Erica Jenkins in a tan prison shirt, with a headband and her hair pulled to one side](./curtis-bradford-2013-erica-prison.jpg "Erica Jenkins in a prison photo.")
+
 That afternoon, Bordeaux came back from the shower and sat at the sink to brush her hair. Cameras in the common area showed Erica following her in. [S3] Bordeaux testified that Erica pulled her to the floor from behind and beat her, and then hit her again and again with a padlock. Another inmate, Priscilla Fields, joined in and kicked her. [S3] Fields, who testified under a plea deal, first told investigators it was a mutual fight. At trial, she said she saw Erica hitting Bordeaux with the padlock. [S3]
 
 Afterward, by Bordeaux's account, Erica told her she was sorry, and that now Bordeaux was going to sign the papers. [S3]
 
 Bordeaux left that cell in a wheelchair, with a broken nose, a broken finger and a concussion. A jury convicted Erica of assault, though it acquitted her of a separate weapons count. She received another 20 to 40 years. [S3, S8] An appeals court upheld it in 2020. [S3]
+
+![Erica Jenkins in a brown jacket and headband, seated in a courtroom beside a man in a gray suit](./curtis-bradford-2013-erica-court-2.jpg "Erica Jenkins in court.")
 
 In December 2024, KOLN reported that a York jury had convicted her of another assault at the same prison, under a new legal name. [S9] We have not checked that report against the court file, or found a report of the sentence.
 
