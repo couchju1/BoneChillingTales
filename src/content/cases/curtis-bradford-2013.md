@@ -23,11 +23,12 @@
 #   time. The exact term is unknown. Don't use the deal's maximum as her sentence.
 # - Earlier research credited an Aug 2 ammunition purchase to Christine Bordeaux. The federal release
 #   credits Lori. Treat the Bordeaux version as unresolved. The story does not use either one.
-# Keep the four people killed at the front. Nikko and Erica are never the lead photo.
-# Photos: all from Justin. Lead is Curtis. An album cover with a photo of a boy and a man
+# Keep the four people killed at the front in the text. The lead image is Erica and Nikko's booking
+# photos side by side, Justin's call (October 14, 2026). Curtis's photo sits with the other victims.
+# Photos: all from Justin. An album cover with a photo of a boy and a man
 # ("Murderface II") was left out: it is someone's artwork, and who is in it is unclear.
 # Jorge's is a booking photo, the only one Justin has. Swap it if a family photo turns up.
-# Nikko: booking photo cropped to remove a TV station's frame. Unused: a later prison photo and one
+# Nikko: unused, besides the cover and the court photo: a later prison photo and one
 # in a yellow jumpsuit with officers behind him. Keep "What's left" free of photos of the two of them.
 # Andrea's family photo shows her children and is never used.
 # Other victims' photos go in the section on the people lost. A fifth Erica photo, a professional
@@ -52,10 +53,10 @@ tipLine: null
 anonymousTips: null
 contentNote: "the shooting deaths of four people and a violent assault"
 image:
-  src: "./curtis-bradford-2013.jpg"
-  alt: "Curtis Bradford in a blue baseball cap and an earring"
-  credit: "Curtis Bradford, in a photo published in news coverage of the case"
-  license: "Photo published in news coverage of the case. Original source not confirmed"
+  src: "./curtis-bradford-2013-cover.jpg"
+  alt: "Booking photos of Erica Jenkins, smiling, and Nikko Jenkins, with tattoos covering his face and neck, side by side"
+  credit: "Erica Jenkins, left, and Nikko Jenkins in booking photos"
+  license: "Booking photos published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -107,6 +108,8 @@ Juan Uribe-Pena was 26. Jorge Cajiga-Ruiz was 29. Curtis Bradford was 22. Andrea
 ![Juan Uribe-Pena, a young man with short dark hair, against a blue background](./curtis-bradford-2013-uribe-pena.jpg "Juan Uribe-Pena.")
 
 ![Jorge Cajiga-Ruiz, a young man with a shaved head and a thin mustache](./curtis-bradford-2013-cajiga-ruiz.jpg "Jorge Cajiga-Ruiz.")
+
+![Curtis Bradford in a blue baseball cap and an earring](./curtis-bradford-2013.jpg "Curtis Bradford.")
 
 ![Andrea Kruger smiling, with long blonde hair](./curtis-bradford-2013-kruger.jpg "Andrea Kruger.")
 
@@ -168,11 +171,7 @@ The woman in the picture was Lori Jenkins. Erica and Nikko's mother. [S1]
 
 That led police to Nikko, who was arrested around August 29. In his Birch Street apartment, officers found a shortened shotgun and a rifle in a gym bag, partly under a bed. Sayles identified them as the guns the two men carried that night. [S1]
 
-![Nikko Jenkins in a booking photo, in a yellow jail uniform, with tattoos covering his face and neck](./curtis-bradford-2013-nikko-booking.jpg "Nikko Jenkins in a booking photo.")
-
 Erica, Melonie and their mother were arrested around the same time. [S1]
-
-![Erica Jenkins smiling in a booking photo, with long wavy hair and facial piercings](./curtis-bradford-2013-erica-booking.jpg "Erica Jenkins in a booking photo.")
 
 The court later noted there was no evidence connecting Erica to that apartment. [S1]
 

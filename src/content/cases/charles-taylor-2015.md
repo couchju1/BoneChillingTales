@@ -3,8 +3,9 @@
 # summary only. The full chapter is paywalled.
 # Family wishes: in April 2015, Rex Taylor's aunt asked people to "let him rest." Keep Rex at the
 # edges of the story and never describe how he died beyond what is here.
-# Keep Charles at the center. No lead photo until there is one of him confirmed. His obituary
-# (S10) shows a stag, not a portrait. The Gun Memorial page's photos are not reliably identified. Never describe or link the
+# Keep Charles at the center. No photo of him is confirmed, so the lead is an illustration Justin
+# chose (October 14, 2026). Its caption must always say it is not his home. Swap it for a real photo
+# of Charles if one is confirmed. His obituary (S10) shows a stag, not a portrait. The Gun Memorial page's photos are not reliably identified. Never describe or link the
 # photo taken at the scene, and never name the Tumblr blog or the website it was sent to.
 # Amanda Taylor's claims about Charles were never proven. Always attribute them to her.
 # Photos: the only photo of Rex is the one his family gave WSLS, cropped to remove the child.
@@ -28,7 +29,11 @@ agency: "the Montgomery County Sheriff's Office"
 tipLine: null
 anonymousTips: null
 contentNote: "a violent killing and a suicide"
-image: null
+image:
+  src: "./charles-taylor-2015-illustration.jpg"
+  alt: "Illustration of a porch light glowing on a house at dusk, beside bare trees and fog in the hills"
+  credit: "Illustration, generated with AI. Not Charles Taylor's home."
+  license: "Illustration made for Bone Chilling Tales"
 youtubeId: null
 youtubeUploadDate: null
 sources:
