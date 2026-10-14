@@ -16,6 +16,13 @@ export const GET: APIRoute<{ entry: Case }> = async ({ props }) => {
     statusLabel: site.statuses[data.status].label,
     place: `${data.town}, ${data.state}`,
     year: data.incidentDate.getUTCFullYear(),
-  });
+  }, photoPath(data.image?.src));
   return new Response(new Uint8Array(png), { headers: { "Content-Type": "image/png" } });
 };
+
+/** Where a lead photo sits on disk. Astro sets fsPath on imported images, but doesn't type it. */
+function photoPath(src: unknown): string | undefined {
+  const path = (src as { fsPath?: string } | undefined)?.fsPath;
+  // The card can embed JPEG and PNG. Anything else keeps the headline card.
+  return path && /\.(jpe?g|png)$/i.test(path) ? path : undefined;
+}
