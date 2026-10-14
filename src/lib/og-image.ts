@@ -44,9 +44,14 @@ export interface OgCard {
   year: number;
 }
 
-/** 1200x630 PNG share card: headline, status chip, place and year on Night, wordmark in the corner. */
-export async function renderOgImage(card: OgCard): Promise<Buffer> {
+/**
+ * 1200x630 PNG share card. With a lead photo, the photo fills the card above the red rule, so
+ * Facebook and others show the picture next to the headline they print themselves. Without one:
+ * headline, status chip, place and year on Night, wordmark in the corner.
+ */
+export async function renderOgImage(card: OgCard, photoPath?: string): Promise<Buffer> {
   const { fonts, logo } = await loadAssets();
+  if (photoPath) return renderPhotoCard(photoPath, fonts);
   const color = STATUS_COLOR[card.status];
   const size = card.title.length > 70 ? 60 : card.title.length > 45 ? 72 : 84;
 
@@ -105,6 +110,25 @@ export async function renderOgImage(card: OgCard): Promise<Buffer> {
     },
     [body, h("div", { height: 12, background: "#AD0404" })],
   );
+
+  const svg = await satori(tree as never, { width: 1200, height: 630, fonts });
+  return new Resvg(svg, { fitTo: { mode: "width", value: 1200 } }).render().asPng();
+}
+
+async function renderPhotoCard(photoPath: string, fonts: Parameters<typeof satori>[1]["fonts"]): Promise<Buffer> {
+  const ext = photoPath.split(".").pop()!.toLowerCase();
+  const type = ext === "png" ? "png" : "jpeg";
+  const photo = `data:image/${type};base64,${(await readFile(photoPath)).toString("base64")}`;
+
+  const tree = h("div", { width: 1200, height: 630, display: "flex", flexDirection: "column", background: "#120F0D" }, [
+    // Same crop as the photo on the site: centered, a little above middle, where faces usually are.
+    h("img", { width: 1200, height: 618, objectFit: "cover", objectPosition: "center 25%" }, undefined, {
+      src: photo,
+      width: 1200,
+      height: 618,
+    }),
+    h("div", { height: 12, background: "#AD0404" }),
+  ]);
 
   const svg = await satori(tree as never, { width: 1200, height: 630, fonts });
   return new Resvg(svg, { fitTo: { mode: "width", value: 1200 } }).render().asPng();
