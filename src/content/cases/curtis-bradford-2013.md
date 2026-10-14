@@ -5,9 +5,24 @@
 # Bordeaux assault follows S3's order (hair, punches, then the padlock).
 # "Spring Lake Park" is not named in any source here (S2 says "near a park"). Add it back once a
 # source names it.
-# Still open before this goes on main: victim-family privacy screening (flagged in the brief),
-# the 2025 sentence in the second prison assault (not found), and dispositions for Lori Jenkins,
-# Melonie Jenkins and Priscilla Fields. Erica's new legal name is left out on purpose.
+# Erica's new legal name is left out on purpose. The 2025 sentence in her second prison assault
+# was not found.
+# Open items, per Justin's research of October 14, 2026 (none of this is in the story yet):
+# - Family privacy: OPEN. Public-source screening found no request against coverage, but no family
+#   has been contacted. Kruger's family has spoken to the press (KETV), which is not consent.
+#   Never write "families approved."
+# - Lori Jenkins: mostly resolved. Federal jury convicted her April 3, 2014, of two counts of felon
+#   in possession of ammunition (Canfield's Aug 2, Sol's Aug 20, 2013). Concurrent 120-month terms,
+#   3 years supervised release (U.S. Attorney, D. Neb.). State felony-accessory sentences April 2015:
+#   8-10 years and 20-24 months (KETV). Another report says the state case added 5-6 years. Do not
+#   total her sentence until the state order is in hand.
+# - Melonie Jenkins: OPEN. Charged with two counts of witness tampering, pleaded not guilty Feb 2014
+#   (Omaha World-Herald). Later testified against Erica (S1). Final disposition unknown. Never call
+#   her convicted, cleared or never charged.
+# - Priscilla Fields: partly resolved. Her deal is in S3. York News-Times reports she got more prison
+#   time. The exact term is unknown. Don't use the deal's maximum as her sentence.
+# - Earlier research credited an Aug 2 ammunition purchase to Christine Bordeaux. The federal release
+#   credits Lori. Treat the Bordeaux version as unresolved. The story does not use either one.
 # Keep the four people killed at the front. Nikko and Erica are never the lead photo.
 # Photos: all from Justin. Lead is Curtis. An album cover with a photo of a boy and a man
 # ("Murderface II") was left out: it is someone's artwork, and who is in it is unclear.
