@@ -11,6 +11,7 @@
 # Keep the four people killed at the front. Nikko and Erica are never the lead photo.
 # Photos: all from Justin. Lead is Curtis. An album cover with a photo of a boy and a man
 # ("Murderface II") was left out: it is someone's artwork, and who is in it is unclear.
+# Jorge's is a booking photo, the only one Justin has. Swap it if a family photo turns up.
 # Other victims' photos go in the section on the people lost. A fifth Erica photo, a professional
 # portrait in a white sweater (Radiance Refined Photography watermark), was left out until it's confirmed to be her.
 draft: false
@@ -86,6 +87,8 @@ Before the brother and sister, the people they took from the world.
 Juan Uribe-Pena was 26. Jorge Cajiga-Ruiz was 29. Curtis Bradford was 22. Andrea Kruger was 33. [S4]
 
 ![Juan Uribe-Pena, a young man with short dark hair, against a blue background](./curtis-bradford-2013-uribe-pena.jpg "Juan Uribe-Pena.")
+
+![Jorge Cajiga-Ruiz, a young man with a shaved head and a thin mustache](./curtis-bradford-2013-cajiga-ruiz.jpg "Jorge Cajiga-Ruiz.")
 
 That is nearly all the public record holds about them. The court opinions describe where they were found and who was convicted. They don't say what these four people did for a living, who waited for them at home, or what anyone said about them at their funerals. Their stories deserve more than ages, and that gap is worth naming before going further.
 
