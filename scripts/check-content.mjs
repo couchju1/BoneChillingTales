@@ -6,8 +6,10 @@
 // content and site.config.json. They're warnings normally, and fail with --launch.
 import { readdir, readFile } from "node:fs/promises";
 import { join, relative } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = new URL("../src/content/", import.meta.url).pathname;
+// fileURLToPath, not .pathname, so this also works on Windows.
+const ROOT = fileURLToPath(new URL("../src/content/", import.meta.url));
 
 const BANNED = [
   "delve", "elevate", "empower", "seamless", "unlock", "robust", "leverage", "streamline",
