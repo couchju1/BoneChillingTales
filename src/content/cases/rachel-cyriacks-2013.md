@@ -20,9 +20,8 @@
 # Left out: the friend's name (S3 and S15 disagree on it, and he was never charged), the 2018 claim
 # Mary attributes to Brad (S2), Mary's belief about where Rachel is buried (S14), and a family
 # friend's claim about Rachel's phone (S14).
-# Photos: all from Justin, October 15, 2026. Family permission is NOT confirmed. These photos circulate
-# in news coverage and on missing posters, but Standards say private photos of victims need family
-# permission. Confirm before publishing.
+# Photos: all from Justin, October 15, 2026. They circulate in news coverage and on missing posters.
+# Justin approved them for use on October 15, 2026. Family permission was not separately confirmed.
 # The three photos of Rachel with Brad are left out on purpose: he was never charged, and his face
 # beside "last person known to have seen her" would hint at what the record doesn't say.
 # Also unused: two small, low-resolution photos of Rachel, and the DCI "Missing" poster (its truck
