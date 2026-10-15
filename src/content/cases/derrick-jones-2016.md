@@ -20,9 +20,9 @@
 # The BAC figures in S10 ("0.5," "0.9," "1.5") are garbled and are not used.
 # Legal care: Hodge was convicted and the conviction was affirmed (S7). Jones was never accused of
 # anything. Never imply he caused the crash. His toxicology appears only as reported claims.
-# Photos: all from Justin, October 15, 2026, identified by him: Hodge's booking photo, Hodge in a
-# later interview (probably a still from the A&E episode), and Jones.
-# [VERIFY] Confirm who each photo shows and that they're fine to use before publishing.
+# Photos: all from Justin, October 15, 2026: Hodge's booking photo, Hodge in a later interview
+# (probably a still from the A&E episode), and Jones. Justin confirmed them and approved publishing
+# on October 15, 2026. Family permission was not separately confirmed.
 draft: false
 title: "Deadly Driver or Tragic Survivor? The Heckscher Drive Case"
 seoTitle: "Derrick Jones: What Happened on Heckscher Drive, FL"
