@@ -5,6 +5,7 @@ import Seo from "../components/Seo.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import MobileBar from "../components/MobileBar.astro";
+import NewsletterPopup from "../components/NewsletterPopup.astro";
 import Analytics from "../components/Analytics.astro";
 import { site, isPlaceholder } from "../lib/config";
 
@@ -68,5 +69,6 @@ const verification = site.analytics.searchConsoleVerification;
     </main>
     <Footer />
     <MobileBar />
+    <NewsletterPopup />
   </body>
 </html>

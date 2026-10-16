@@ -1,0 +1,159 @@
+---
+import NewsletterForm from "./NewsletterForm.astro";
+import { site, isPlaceholder } from "../lib/config";
+
+// Same readiness rule as the form: no popup until sign-ups can go somewhere.
+const { provider, formAction } = site.newsletter;
+const ready = !isPlaceholder(formAction) && !(provider === "email" && isPlaceholder(site.forms.suggestTo));
+---
+
+{
+  ready && (
+    <dialog class="nl-popup" aria-labelledby="popup-site-heading" data-newsletter-popup>
+      <button type="button" class="close" aria-label="Close" data-close>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <NewsletterForm
+        idPrefix="popup"
+        bare
+        heading="Get the weekly email"
+        body="New case stories and updates on the cases we follow, once a week. Free. Quit any time."
+        button="Sign me up"
+      />
+      <button type="button" class="later" data-close>No thanks</button>
+    </dialog>
+  )
+}
+
+<script>
+  // Opens once when a visitor arrives, then stays away for 30 days; signing up keeps it away for good.
+  const KEY = "bct-newsletter-popup";
+  const SNOOZE_MS = 30 * 24 * 60 * 60 * 1000;
+
+  const read = () => {
+    try {
+      return localStorage.getItem(KEY);
+    } catch {
+      return null;
+    }
+  };
+  const write = (value: string) => {
+    try {
+      localStorage.setItem(KEY, value);
+    } catch {
+      // Private window or blocked storage: the popup may show again next visit.
+    }
+  };
+
+  const dialog = document.querySelector<HTMLDialogElement>("[data-newsletter-popup]");
+  const saved = read();
+  const snoozed = saved !== null && (saved === "joined" || Date.now() - Number(saved) < SNOOZE_MS);
+  const onNewsletterPage = location.pathname.startsWith("/newsletter");
+
+  if (dialog && typeof dialog.showModal === "function" && !snoozed && !onNewsletterPage) {
+    // Counted as seen the moment it opens, so it can't follow the reader from page to page.
+    write(String(Date.now()));
+    for (const button of dialog.querySelectorAll("[data-close]")) {
+      button.addEventListener("click", () => dialog.close());
+    }
+    // A click on the dimmed backdrop (outside the box) closes it too.
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+    document.addEventListener("bct:newsletter-success", () => {
+      write("joined");
+      const later = dialog.querySelector<HTMLButtonElement>(".later");
+      if (later) later.textContent = "Close";
+    });
+    dialog.showModal();
+  } else if (saved !== "joined") {
+    // Signing up from a form on the page also stops the popup.
+    document.addEventListener("bct:newsletter-success", () => write("joined"));
+  }
+</script>
+
+<style>
+  .nl-popup {
+    width: min(34rem, calc(100vw - 2rem));
+    max-height: calc(100dvh - 2rem);
+    overflow-y: auto;
+    padding: var(--space-l) var(--space-l) var(--space-m);
+    border: 1px solid var(--color-line);
+    border-top: 3px solid var(--color-blood);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+    color: var(--color-bone);
+    box-shadow: var(--shadow-raised);
+  }
+
+  .nl-popup::backdrop {
+    background: rgb(0 0 0 / 0.7);
+  }
+
+  .nl-popup[open] {
+    animation: pop-in var(--motion-base) var(--ease-out);
+  }
+
+  .nl-popup :global(h2) {
+    margin-top: 0;
+    padding-right: var(--space-l);
+  }
+
+  .close {
+    position: absolute;
+    top: var(--space-2xs);
+    right: var(--space-2xs);
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: var(--radius-m);
+    background: none;
+    color: var(--color-ash);
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: var(--color-bone);
+  }
+
+  .later {
+    display: block;
+    margin: var(--space-xs) auto 0;
+    min-height: 44px;
+    padding: 0 var(--space-s);
+    border: 0;
+    background: none;
+    color: var(--color-ash);
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .later:hover {
+    color: var(--color-bone);
+  }
+
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.75rem);
+    }
+  }
+
+  @media (max-width: 30rem) {
+    .nl-popup {
+      padding: var(--space-m) var(--space-s) var(--space-s);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nl-popup[open] {
+      animation: none;
+    }
+  }
+</style>

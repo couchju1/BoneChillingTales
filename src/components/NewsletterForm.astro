@@ -1,6 +1,7 @@
 ---
 import "../styles/forms.css";
 import { site, isPlaceholder } from "../lib/config";
+import { STATE_NAMES } from "../lib/content";
 
 interface Props {
   heading: string;
@@ -8,38 +9,72 @@ interface Props {
   button?: string;
   /** Story id. Sent with email sign-ups, and to Kit when newsletter.caseField is set. */
   caseId?: string;
+  /** Makes field ids unique when the same story has more than one form (the popup). */
+  idPrefix?: string;
+  /** Drops the bordered box, for forms that sit inside the popup. */
+  bare?: boolean;
 }
 
-const { heading, body, button = "Get the weekly email", caseId } = Astro.props;
+const { heading, body, button = "Get the weekly email", caseId, idPrefix = "nl", bare = false } = Astro.props;
 const { provider, formAction: action, caseField } = site.newsletter;
 const byEmail = provider === "email";
 // Email sign-ups go to the Suggest-a-case inbox, so they wait on that address too.
 const ready = !isPlaceholder(action) && !(byEmail && isPlaceholder(site.forms.suggestTo));
-const uid = `nl-${caseId ?? "site"}`;
+const uid = `${idPrefix}-${caseId ?? "site"}`;
+const states = Object.entries(STATE_NAMES).sort((a, b) => a[1].localeCompare(b[1]));
+// Kit takes first_name and custom fields; email sign-ups use plain names.
+const name = (field: string) => (byEmail || field === "email_address" || field === "first_name" ? field : `fields[${field}]`);
+const textFields = [
+  { key: "first_name", label: "First name", autocomplete: "given-name", max: 80 },
+  { key: "last_name", label: "Last name", autocomplete: "family-name", max: 80 },
+  { key: "email_address", label: "Email", autocomplete: "email", max: 254, type: "email" as const, wide: true },
+  { key: "city", label: "City", autocomplete: "address-level2", max: 100 },
+];
 ---
 
-<section class="newsletter" aria-labelledby={`${uid}-heading`}>
+<section class:list={["newsletter", { bare }]} aria-labelledby={`${uid}-heading`}>
   <h2 id={`${uid}-heading`}>{heading}</h2>
   <p>{body}</p>
   <form method="post" action={ready ? action : undefined} novalidate data-newsletter-form data-provider={provider}>
     <fieldset disabled={!ready} data-fields>
-      <div class="field">
-        <label for={`${uid}-email`}>Email</label>
-        <div class="row">
-          <input
-            id={`${uid}-email`}
-            name="email_address"
-            type="email"
-            autocomplete="email"
+      <div class="grid">
+        {
+          textFields.map((f) => (
+            <div class:list={["field", { wide: f.wide }]}>
+              <label for={`${uid}-${f.key}`}>{f.label}</label>
+              <input
+                id={`${uid}-${f.key}`}
+                name={name(f.key)}
+                type={f.type ?? "text"}
+                autocomplete={f.autocomplete}
+                required
+                maxlength={f.max}
+                aria-describedby={`${uid}-${f.key}-error`}
+                data-label={f.label}
+              />
+              <p id={`${uid}-${f.key}-error`} class="field-error" hidden />
+            </div>
+          ))
+        }
+        <div class="field">
+          <label for={`${uid}-state`}>State</label>
+          <select
+            id={`${uid}-state`}
+            name={name("state")}
+            autocomplete="address-level1"
             required
-            maxlength="254"
-            aria-describedby={`${uid}-email-error`}
-          />
-          {!byEmail && caseId && caseField && <input type="hidden" name={`fields[${caseField}]`} value={caseId} />}
-          <button type="submit" class="btn-primary">{button}</button>
+            aria-describedby={`${uid}-state-error`}
+            data-label="State"
+          >
+            <option value="">Choose one</option>
+            {states.map(([code, label]) => <option value={code}>{label}</option>)}
+            <option value="Outside the US">Outside the US</option>
+          </select>
+          <p id={`${uid}-state-error`} class="field-error" hidden />
         </div>
-        <p id={`${uid}-email-error`} class="field-error" hidden></p>
       </div>
+      {!byEmail && caseId && caseField && <input type="hidden" name={`fields[${caseField}]`} value={caseId} />}
+      <button type="submit" class="btn-primary">{button}</button>
     </fieldset>
     {
       byEmail && (
@@ -62,15 +97,20 @@ const uid = `nl-${caseId ?? "site"}`;
 
   const COPY = {
     invalid: "That email doesn't look right. Check it and try again.",
+    missing: (label: string) => `Enter your ${label.toLowerCase()}.`,
+    pickState: "Choose your state.",
     success: "You're in. Check your inbox to confirm.",
     joined: "You're on the list. The next weekly email will come to your inbox.",
     already: "You're already on the list.",
     error: "That didn't go through. Try again in a minute.",
   };
 
+  type Field = HTMLInputElement | HTMLSelectElement;
+
   for (const form of document.querySelectorAll<HTMLFormElement>("[data-newsletter-form]")) {
     if (!form.getAttribute("action")) continue;
-    const input = form.querySelector<HTMLInputElement>("input[type=email]")!;
+    const required = [...form.querySelectorAll<Field>("[data-label]")];
+    const email = form.querySelector<HTMLInputElement>("input[type=email]")!;
     const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
     const fields = form.querySelector<HTMLFieldSetElement>("[data-fields]")!;
     const message = form.querySelector<HTMLElement>("[data-message]")!;
@@ -82,15 +122,36 @@ const uid = `nl-${caseId ?? "site"}`;
       message.dataset.tone = tone;
     };
 
-    input.addEventListener("input", () => clearFieldError(input));
+    for (const field of required) {
+      field.addEventListener(field instanceof HTMLSelectElement ? "change" : "input", () =>
+        clearFieldError(field),
+      );
+    }
+
+    /** Marks every empty or bad field and returns the first one, or null when all are fine. */
+    const firstProblem = (): Field | null => {
+      let first: Field | null = null;
+      for (const field of required) {
+        const value = field.value.trim();
+        let problem = "";
+        if (!value) problem = field instanceof HTMLSelectElement ? COPY.pickState : COPY.missing(field.dataset.label!);
+        else if (field === email && !EMAIL.test(value)) problem = COPY.invalid;
+        if (problem) {
+          setFieldError(field, problem);
+          first ??= field;
+        } else {
+          clearFieldError(field);
+        }
+      }
+      return first;
+    };
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
       say("", "");
-      const email = input.value.trim();
-      if (!EMAIL.test(email)) {
-        setFieldError(input, COPY.invalid);
-        input.focus();
+      const problem = firstProblem();
+      if (problem) {
+        problem.focus();
         return;
       }
 
@@ -111,11 +172,12 @@ const uid = `nl-${caseId ?? "site"}`;
         } else if (text.includes("already")) {
           fields.hidden = true;
           say(COPY.already, "success");
+          document.dispatchEvent(new CustomEvent("bct:newsletter-success"));
         } else if (text.includes("email")) {
-          setFieldError(input, COPY.invalid);
-          input.focus();
+          setFieldError(email, COPY.invalid);
+          email.focus();
         } else {
-          say(COPY.error, "error");
+          say(typeof data.message === "string" && data.message ? data.message : COPY.error, "error");
         }
       } catch {
         // Couldn't read the answer (offline, or the browser blocked it). If online, let the browser post the form itself.
@@ -141,6 +203,13 @@ const uid = `nl-${caseId ?? "site"}`;
     background: var(--color-surface);
   }
 
+  .newsletter.bare {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+
   h2 {
     font-size: var(--step-2);
   }
@@ -152,26 +221,53 @@ const uid = `nl-${caseId ?? "site"}`;
     min-width: 0;
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--space-s);
+    max-width: 40rem;
+  }
+
+  @media (max-width: 30rem) {
+    .grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .grid .wide {
+    grid-column: 1 / -1;
+  }
+
   .field {
-    margin-bottom: 0;
+    margin-bottom: var(--space-s);
   }
 
   .field label {
     color: var(--color-ash);
   }
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2xs);
+  .field select {
+    width: 100%;
+    min-height: 44px;
+    padding: var(--space-2xs) var(--space-xs);
+    border: 1px solid var(--color-input-border);
+    border-radius: var(--radius-m);
+    background: var(--color-night);
+    color: var(--color-bone);
+    font: inherit;
+    font-family: var(--font-ui);
   }
 
-  .row input {
-    flex: 1 1 14rem;
-    width: auto;
+  .field select[aria-invalid="true"] {
+    border-color: var(--color-ember);
+  }
+
+  button {
+    margin-top: var(--space-2xs);
   }
 
   fieldset:disabled input,
+  fieldset:disabled select,
   fieldset:disabled button {
     opacity: 0.55;
     cursor: not-allowed;

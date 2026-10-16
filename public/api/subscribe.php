@@ -57,6 +57,23 @@ if ($email === '' || mb_strlen($email) > 254 || !filter_var($email, FILTER_VALID
     respond(false, 422, 'That email doesn\'t look right. Check it and try again.');
 }
 
+/** Trims and drops control characters, capped at $max characters. */
+function field(string $key, int $max): string
+{
+    $value = (string) preg_replace('/\p{C}/u', '', trim((string) ($_POST[$key] ?? '')));
+    return mb_substr($value, 0, $max);
+}
+
+$firstName = field('first_name', 80);
+$lastName = field('last_name', 80);
+$city = field('city', 100);
+$state = field('state', 40);
+foreach (['first name' => $firstName, 'last name' => $lastName, 'city' => $city, 'state' => $state] as $label => $value) {
+    if ($value === '') {
+        respond(false, 422, "Enter your {$label} and try again.");
+    }
+}
+
 // Set when the reader signed up from a story.
 $story = (string) ($_POST['story'] ?? '');
 $story = preg_match('/^[a-z0-9_-]{1,120}$/', $story) ? $story : '';
@@ -86,8 +103,12 @@ if ($handle !== false && flock($handle, LOCK_EX)) {
     fclose($handle);
 }
 
-$subject = "Newsletter sign-up: {$email}";
-$body = "New newsletter sign-up: {$email}\n"
+$subject = "Newsletter sign-up: {$firstName} {$lastName} ({$city}, {$state})";
+$body = "New newsletter sign-up\n\n"
+    . "Name:  {$firstName} {$lastName}\n"
+    . "Email: {$email}\n"
+    . "City:  {$city}\n"
+    . "State: {$state}\n\n"
     . ($story ? "Signed up from the story: https://www.{$domain}/cases/{$story}/\n" : '')
     . "\n-- Sent from the newsletter form, " . gmdate('Y-m-d H:i') . " UTC\n";
 

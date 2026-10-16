@@ -6,7 +6,7 @@ seoTitle: "Privacy Policy | Bone Chilling Tales"
 description: "What Bone Chilling Tales collects, why, who else sees it, and how to opt out. No accounts, no data sales, and analytics you can turn off."
 ---
 
-Last updated October 10, 2026.
+Last updated October 16, 2026.
 
 Bone Chilling Tales is a website about real crimes and unsolved cases. You can read every story without an account, and we keep what we collect about you small. This page explains what that is.
 
@@ -14,13 +14,13 @@ Bone Chilling Tales is a website about real crimes and unsolved cases. You can r
 
 - We don't sell your information, and we don't share it for advertising.
 - We don't have accounts, comments or logins.
-- The newsletter gets your email address only if you sign up.
+- The newsletter gets your name, email address, city and state only if you sign up.
 - The suggestion form sends what you type to our inbox. It isn't stored on the website.
 - Analytics tells us which stories people read. You can turn it off, and we honor Global Privacy Control.
 
 ## What we collect and why
 
-**Newsletter.** If you sign up, the form sends us an email with your email address, and the story you signed up from if there was one, so we can tell you when that case changes. We use your address only to send the weekly email. To unsubscribe, reply to any newsletter and ask, and we'll take you off the list and delete your address. To stop spam, the site keeps a scrambled code made from your internet address for up to an hour, to limit how many sign-ups one connection can send. It can't be turned back into your address.
+**Newsletter.** If you sign up, the form sends us an email with your first and last name, email address, city and state, and the story you signed up from if there was one, so we can tell you when that case changes. We use your name to address the email and your city and state to know which cases are near you. We use all of it only for the weekly email. To unsubscribe, reply to any newsletter and ask, and we'll take you off the list and delete what you gave us. To stop spam, the site keeps a scrambled code made from your internet address for up to an hour, to limit how many sign-ups one connection can send. It can't be turned back into your address.
 
 **Suggest a case or a correction.** The form sends us an email with what you type: the case, the town, your message, any links, and your email address if you give one. We use it to look into the case or fix the mistake, and to reply if you asked us to. We don't publish what you send or share your email address. To stop spam, the site keeps a scrambled code made from your internet address for up to an hour, to limit how many messages one connection can send. It can't be turned back into your address.
 
@@ -42,7 +42,7 @@ Our fonts and images are stored on our own server, so loading a page doesn't con
 
 ## Cookies and browser storage
 
-We don't set cookies ourselves. Google Analytics sets cookies when it's turned on. If you turn analytics off, the site saves that choice in your browser's local storage so it remembers next time.
+We don't set cookies ourselves. Google Analytics sets cookies when it's turned on. If you turn analytics off, the site saves that choice in your browser's local storage so it remembers next time. The newsletter sign-up box that opens when you arrive also saves a note in local storage the first time it opens, so it stays away for 30 days, or for good once you've signed up. That note never leaves your browser.
 
 ## Ads
 

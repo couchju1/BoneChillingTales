@@ -1,7 +1,7 @@
 // Browser helpers shared by the newsletter and suggest forms.
 
 /** Marks a field invalid and shows its message in the element its aria-describedby points to. */
-export function setFieldError(field: HTMLInputElement | HTMLTextAreaElement, message: string) {
+export function setFieldError(field: HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement, message: string) {
   const box = document.getElementById(`${field.id}-error`);
   field.setAttribute("aria-invalid", "true");
   if (box) {
@@ -10,7 +10,7 @@ export function setFieldError(field: HTMLInputElement | HTMLTextAreaElement, mes
   }
 }
 
-export function clearFieldError(field: HTMLInputElement | HTMLTextAreaElement) {
+export function clearFieldError(field: HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement) {
   const box = document.getElementById(`${field.id}-error`);
   field.removeAttribute("aria-invalid");
   if (box) {
