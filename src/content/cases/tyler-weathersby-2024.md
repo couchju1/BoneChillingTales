@@ -10,7 +10,7 @@
 #   open and active investigation, said federal and local agencies had reviewed the file, and KELOLAND
 #   reported no suspects and no foul play suspected (S3). August 2025: still actively investigating (S5).
 # - The draft said "no FBI role confirmed." The chief said unnamed federal agencies reviewed the file (S3).
-# - Cut "scruffy beard" (no source; his head was shaved, S1, S6) and NamUs MP129352 (couldn't confirm).
+# - Cut "scruffy beard" (no source, his head was shaved, S1, S6) and NamUs MP129352 (couldn't confirm).
 # - Cut "He would be 34 now." KXRB says 33 in September 2026 (S7) and 34 in October 2026 (S8), and
 #   Dateline said he would be 32 by October 2024 (S1). No source gives his birthday.
 # - Silver Hyundai Santa Fe and the boy on the bike are sourced to KXRB's description of the Legal Eye
