@@ -19,7 +19,8 @@
 #   assault victims unless they chose to speak publicly. Tucson Weekly used a pseudonym for her (S4).
 # - Graphic details of the restraints and of Regina's body (S1, S4).
 # - Estimates of dozens or hundreds of victims. No source proves any count beyond the three pleas.
-# - Whether Rhoades is alive today. No current official source was found. Check before adding.
+# Rhoades's custody: IDOC inmate search, checked October 16, 2026 (S5). B24683, in custody at Menard,
+#   life sentence from Bond County, projected discharge "INELIGIBLE." Born 11/22/1945, so 80 on that date.
 # Photos: from Justin, October 16, 2026, identified by him. They circulate in news coverage of the case.
 # Family permission was not separately confirmed.
 # Used: Regina's school portrait (cover), a colorized and enhanced portrait of Regina (captioned as such),
@@ -44,7 +45,7 @@ incidentDate: 1990-02-03
 lastSeenDate: null
 resolvedDate: 2012-03-29
 lastChecked: 2026-10-16
-lastFactChange: null
+lastFactChange: 2026-10-16
 published: 2026-10-16
 agency: "the Bond County Circuit Court"
 tipLine: null
@@ -62,6 +63,7 @@ sources:
   - { id: S2, title: "'Torture dungeon' trucker pleads guilty", publisher: "Associated Press, via The Spokesman-Review", url: "https://www.spokesman.com/stories/2012/mar/30/torture-dungeon-trucker-pleads-guilty/", date: 2012-03-30 }
   - { id: S3, title: "Serial killer with Utah ties gets 2 more life sentences in Texas", publisher: "Deseret News", url: "https://www.deseret.com/2012/3/29/20500547/serial-killer-with-utah-ties-gets-2-more-life-sentences-in-texas", date: 2012-03-29 }
   - { id: S4, title: "Dead End (cover story by Karen Brandel)", publisher: "Tucson Weekly", url: "https://www.tucsonweekly.com/tw/02-29-96/cover.htm", date: 1996-02-29 }
+  - { id: S5, title: "Individual in Custody Search: Robert B. Rhoades, B24683", publisher: "Illinois Department of Corrections", url: "https://idoc.illinois.gov/offender/inmatesearch.html", date: 2026-10-16 }
 timeline:
   - { date: 1989-11, text: "Newlyweds Douglas Zyskowski and Patricia Walsh leave Seattle, hitchhiking to Georgia. Near El Paso they accept a ride from Rhoades. [S2]", section: "two-people-headed-east" }
   - { date: 1990-01, text: "Douglas's body is found beside Interstate 10 east of Ozona, Texas. He had been shot. [S2]", section: "two-people-headed-east" }
@@ -74,6 +76,7 @@ timeline:
   - { date: 2012-03, text: "Rhoades pleads guilty to two counts of capital murder for Douglas and Patricia and gets two more life sentences. [S2, S3]", section: "the-pleas" }
 updates:
   - { date: 2026-10-16, text: "Story published." }
+  - { date: 2026-10-16, text: "Added Rhoades's current custody status from the Illinois Department of Corrections." }
 ---
 
 The truck was parked on the shoulder of Interstate 10, its hazard lights blinking. [S4]
@@ -171,6 +174,8 @@ Utah charged Rhoades in Patricia's death first. That charge was dropped after Ut
 In March 2012, in Sutton County, Texas, Rhoades pleaded guilty to two counts of capital murder. [S3] He took two life sentences with no chance of parole, and gave up his right to appeal. [S2, S3] The Texas sentences would keep him locked up even if he were ever released in Illinois. [S2]
 
 Three murders. Three guilty pleas.
+
+Rhoades is still alive. As of October 2026, he is 80 and held at Menard Correctional Center in Illinois. The state lists him as ineligible for release. [S5]
 
 ## What the record doesn't say
 
