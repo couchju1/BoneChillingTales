@@ -24,6 +24,8 @@ export interface SiteConfig {
     provider: "email" | "kit";
     /** "/api/subscribe.php" for "email", or the Kit form's URL for "kit". */
     formAction: string;
+    /** Extra inbox copied on each "email" sign-up. Empty or a placeholder leaves it off. */
+    cc?: string;
     /** Kit custom field that records which story a signup came from. null leaves it off. */
     caseField: string | null;
     cadence: "weekly";

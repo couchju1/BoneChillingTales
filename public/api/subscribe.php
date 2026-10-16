@@ -40,6 +40,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
 $config = is_file(__DIR__ . '/config.php') ? require __DIR__ . '/config.php' : [];
 $to = (string) ($config['to'] ?? '');
 $domain = (string) ($config['domain'] ?? 'bonechillingtales.com');
+$cc = (string) ($config['newsletterCc'] ?? '');
 
 // Bots fill in the hidden "website" field, or post faster than a person can type.
 // Both get the same answer as a real sign-up, and nothing is sent.
@@ -96,6 +97,9 @@ $headers = [
     'Content-Type' => 'text/plain; charset=UTF-8',
     'X-Mailer' => 'bct-subscribe',
 ];
+if ($cc !== '' && filter_var($cc, FILTER_VALIDATE_EMAIL) && strcasecmp($cc, $to) !== 0) {
+    $headers['Cc'] = $cc;
+}
 
 $sent = mail($to, mb_encode_mimeheader($subject, 'UTF-8'), $body, $headers);
 if (!$sent) {

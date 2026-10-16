@@ -10,7 +10,7 @@
     "photo": "/images/about-justin.webp",
     "sameAs": []
   },
-  "contactEmail": "bonechillingtales1@gmail.com",
+  "contactEmail": "info@bonechillingtales.com",
   "social": {
     "youtube": "https://www.youtube.com/@BoneChillingTales1",
     "youtubeVerified": false
@@ -18,6 +18,7 @@
   "newsletter": {
     "provider": "email",
     "formAction": "/api/subscribe.php",
+    "cc": "bonechillingtales1@gmail.com",
     "caseField": null,
     "cadence": "weekly"
   },
@@ -36,7 +37,7 @@
   },
   "forms": {
     "suggestEndpoint": "/api/suggest.php",
-    "suggestTo": "bonechillingtales1@gmail.com",
+    "suggestTo": "info@bonechillingtales.com",
     "honeypotField": "website"
   },
   "launchStates": ["SD", "ND", "MN", "IA", "NE"],
