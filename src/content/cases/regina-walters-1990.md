@@ -20,7 +20,17 @@
 # - Graphic details of the restraints and of Regina's body (S1, S4).
 # - Estimates of dozens or hundreds of victims. No source proves any count beyond the three pleas.
 # - Whether Rhoades is alive today. No current official source was found. Check before adding.
-# Photos: none sent with this draft. Add only family-approved or public-record photos.
+# Photos: from Justin, October 16, 2026, identified by him. They circulate in news coverage of the case.
+# Family permission was not separately confirmed.
+# Used: Regina's school portrait (cover), a colorized and enhanced portrait of Regina (captioned as such),
+# Douglas's portrait, and Rhoades's 2005 Millard County booking photo (convicted, so allowed by Standards).
+# Left out on purpose:
+# - A photo of Regina sitting in a vehicle. Its origin is unknown. Police recovered photos Rhoades took of her
+#   inside his truck (S1). Don't publish it unless a family source confirms it predates her disappearance.
+# - A close-cropped photo of Patricia with bare shoulders. Same reasoning: Rhoades's apartment held photos of
+#   nude women (S1, S2). Use a confirmed family photo of her instead when one turns up.
+# - A photo of Regina's companion, who is left out of the text.
+# - Two other prison photos of Rhoades (one booking photo is enough) and a photo of him in a leather harness.
 draft: false
 title: "Behind the Cab Door: Regina Walters, Patricia Walsh and Douglas Zyskowski"
 seoTitle: "Regina Walters: What Happened in Greenville, IL"
@@ -40,7 +50,11 @@ agency: "the Bond County Circuit Court"
 tipLine: null
 anonymousTips: null
 contentNote: "the murder of a child, kidnapping, torture and sexual violence against women"
-image: null
+image:
+  src: "./regina-walters-1990.webp"
+  alt: "Black and white school portrait of Regina Walters as a young girl with shoulder-length dark hair, smiling"
+  credit: "Regina Walters in an undated school photo"
+  license: "Photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -86,6 +100,8 @@ It belonged to a 14-year-old girl from Texas named Regina Kay Walters. [S1]
 
 Regina was last seen at her mother's apartment in Pasadena, Texas, on February 3, 1990. [S1] She had left with an 18-year-old boyfriend, who told friends the two of them planned to hitchhike to Mexico. [S2]
 
+![Color portrait of Regina Walters with curly dark hair in a navy sweater, smiling at the camera](./regina-walters-1990-portrait.webp "Regina Walters in an undated portrait. This copy has been colorized and enhanced.")
+
 By the time of Rhoades's arrest, she had been gone for two months.
 
 After the Arizona stop, investigators got a warrant to search Rhoades's home in Houston. [S1] They found women's clothing and items that could be used to restrain a person. They found photographs of women. Regina was in some of them. [S1]
@@ -122,6 +138,8 @@ Part of this case began before Regina ever left home.
 
 In November 1989, Douglas Scott Zyskowski, 28, and Patricia Walsh, 24, left Seattle together. They were newlyweds. They were hitchhiking to Georgia to preach, authorities said. [S2]
 
+![Yearbook-style portrait of Douglas Zyskowski as a young man with blond hair, in a dark suit and tie](./regina-walters-1990-douglas.jpg "Douglas Scott Zyskowski in an undated photo.")
+
 Near El Paso, Texas, they accepted a ride from Rhoades. [S2]
 
 In January 1990, Douglas's body was found beside Interstate 10 east of Ozona, Texas, about 320 miles east of El Paso. He had been shot. [S2] He went unidentified until 1992. [S2]
@@ -147,6 +165,8 @@ He later challenged the plea and the sentence. In July 2001, the Illinois Appell
 Justice for Douglas and Patricia took another two decades.
 
 Utah charged Rhoades in Patricia's death first. That charge was dropped after Utah agreed, at the families' request, to let Texas try him for both murders. [S3] Texas authorities said that was where the couple had been kidnapped. [S2] Prosecutors planned to seek the death penalty. The trial was delayed again and again. [S2]
+
+![Booking photo of Robert Ben Rhoades, bald and wearing glasses and an orange jumpsuit, holding a Millard County Sheriff's Office placard dated April 2, 2005](./regina-walters-1990-rhoades-2005.jpg "Robert Ben Rhoades in a Millard County, Utah, booking photo dated April 2, 2005.")
 
 In March 2012, in Sutton County, Texas, Rhoades pleaded guilty to two counts of capital murder. [S3] He took two life sentences with no chance of parole, and gave up his right to appeal. [S2, S3] The Texas sentences would keep him locked up even if he were ever released in Illinois. [S2]
 
