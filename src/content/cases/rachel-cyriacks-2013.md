@@ -5,7 +5,7 @@
 # Changes from the second draft: the gas station is not placed "near the county jail" (no source),
 # and Jackley's words are kept as "a couple of people had information," per S12, not "knew what happened."
 # Rachel's birthday, October 31, 1983, comes from the Doe Network (S16), which cites NamUs case 23091.
-# Pronunciation: "SEER-icks" is from Justin's draft. No published source confirms it. A genealogy forum
+# Pronunciation line cut October 16, 2026, until confirmed. No published source gives it. A genealogy forum
 # says branches of the family say both "SEER-icks" and "SEER-ee-acks." Confirm with family or a broadcast.
 # The "two weeks from now" and "thirteen years ago this November" lines are written for mid-October 2026.
 # Update them after October 31.
@@ -99,7 +99,7 @@ That was thirteen years ago this November. Rachel hasn't called anyone since. [S
 
 ## A girl who liked to be outside
 
-Her name is Cyriacks, and you say it SEER-icks. Say it once out loud. Missing people get turned into posters, and posters turn into wallpaper, and it helps to remember there's a person under the laminate.
+Missing people get turned into posters, and posters turn into wallpaper, and it helps to remember there's a person under the laminate.
 
 When Rachel was five or six, the family kept horses, and she loved to ride. Her mother remembers a tomboy who wanted to be outdoors for everything. [S6] She was the baby of the family. [S2]
 
