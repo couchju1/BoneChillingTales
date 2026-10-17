@@ -78,6 +78,7 @@ const video =
   <article class="story wrap" data-pagefind-body>
     {data.draft && <p class="draft-banner ui" data-pagefind-ignore>Draft preview. This story isn't published.</p>}
 
+    <div class:list={["story-top", { "has-image": data.image }]}>
     <header class="story-header">
       <!-- Search shows these with each result. -->
       <span hidden data-pagefind-ignore data-pagefind-meta="status">{site.statuses[data.status].label}</span>
@@ -101,8 +102,6 @@ const video =
       </div>
     </header>
 
-    <AdSlot position="story-after-summary" />
-
     {
       data.image && (
         <figure class="lead-image" data-pagefind-ignore>
@@ -118,6 +117,9 @@ const video =
         </figure>
       )
     }
+    </div>
+
+    <AdSlot position="story-after-summary" />
 
     <div class:list={["story-grid", { "has-timeline": hasTimeline }]}>
       <div class="story-body prose" data-read-target>
@@ -246,8 +248,20 @@ const video =
     color: var(--color-ash);
   }
 
-  /* Wide screens: the timeline sits beside the story and follows the reader down. */
+  /* Wide screens: the lead photo sits to the right of the headline, and the timeline sits beside
+     the story and follows the reader down. */
   @media (min-width: 64rem) {
+    .story-top.has-image {
+      display: grid;
+      grid-template-columns: minmax(0, var(--measure)) minmax(14rem, 24rem);
+      column-gap: var(--space-2xl);
+      align-items: start;
+    }
+
+    .has-image .lead-image {
+      margin-top: 0;
+    }
+
     .story-grid.has-timeline {
       display: grid;
       grid-template-columns: minmax(0, var(--measure)) minmax(14rem, 18rem);
