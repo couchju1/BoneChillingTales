@@ -19,14 +19,14 @@
 # Conflicts left in the text: "Greger" (S4, S5) vs. "Gregor" (S6). Prom queen and "Little Miss Fish
 # Days" (grandmother, S6) vs. 2018 Homecoming Queen and 2018 Miss Fish Days Queen (S5). Susan Patterson
 # is a cousin in S6. S5 lists her among survivors on her own and says Kara lived with her.
-# Archive links: the Wayback Machine was rate-limiting on October 18, 2026, so none were added yet.
+# Archive links: existing Wayback snapshots, found by Sherlock in fact-check. S4 had none and was saved October 18, 2026.
 # Status: no status fits a death officials called a suicide. "unsolved" is provisional. See the PR.
 draft: false
-title: "The Ride Home: The Death of Kara Greger"
+title: "The Call for a Ride: The Death of Kara Greger"
 seoTitle: "Kara Greger: What Happened in Harrisburg, SD"
 description: "Kara Greger, 21, died of a gunshot in Harrisburg, SD, in 2022 after a fight at a concert. Officials found no foul play. Her family still has questions."
 person: "Kara Greger"
-summary: "Kara Greger, 21, of Lake Andes, South Dakota, died of a gunshot in Harrisburg early on September 10, 2022, hours after a fight at a concert. [S3, S5, S6] The Lincoln County Sheriff's Office said foul play was not suspected. [S2] Her family has publicly questioned what happened. [S6]"
+summary: "Kara Greger, 21, of Lake Andes, South Dakota, died of a gunshot in Harrisburg early on September 10, 2022, after a fight at a concert earlier that night. [S3, S5, S6] The Lincoln County Sheriff's Office said foul play was not suspected. [S2] Her family has publicly questioned what happened. [S6]"
 status: unsolved
 town: "Harrisburg"
 state: SD
@@ -38,19 +38,19 @@ lastFactChange: null
 published: 2026-10-20
 agency: "the Lincoln County Sheriff's Office"
 tipLine: "+16057645651"
-anonymousTips: null
+anonymousTips: { name: "the sheriff's online tip form", url: "https://lincoln-so-sd.zuercherportal.com/#/submit_tip" }
 contentNote: "a gun death that officials have called a suicide"
 image: null
 youtubeId: null
 youtubeUploadDate: null
 sources:
-  - { id: S1, title: "Fatal shooting early Saturday morning in Harrisburg", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2022/09/10/fatal-shooting-early-saturday-morning-harrisburg/", date: 2022-09-10 }
-  - { id: S2, title: "Lincoln County Sheriff: Foul play not suspected in Harrisburg death", publisher: "Sioux Falls Argus Leader, via Yahoo News", url: "https://sports.yahoo.com/lincoln-county-sheriff-foul-play-195604708.html", date: 2022-09-12 }
-  - { id: S3, title: "Police: No foul play in Harrisburg's unattended death", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2022/09/12/police-no-foul-play-saturdays-harrisburg-unattended-death/", date: 2022-09-12 }
-  - { id: S4, title: "Kara Greger", publisher: "Yankton Press & Dakotan", url: "https://www.yankton.net/obituaries/article_ab0abf5c-3307-11ed-999c-3f9b915cae1f.html", date: 2022-09-12 }
+  - { id: S1, title: "Fatal shooting early Saturday morning in Harrisburg", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2022/09/10/fatal-shooting-early-saturday-morning-harrisburg/", date: 2022-09-10, archive: "https://web.archive.org/web/20220910153127/https://www.dakotanewsnow.com/2022/09/10/fatal-shooting-early-saturday-morning-harrisburg/" }
+  - { id: S2, title: "Lincoln County Sheriff: Foul play not suspected in Harrisburg death", publisher: "Sioux Falls Argus Leader, via Yahoo News", url: "https://sports.yahoo.com/lincoln-county-sheriff-foul-play-195604708.html", date: 2022-09-12, archive: "https://web.archive.org/web/20220914154239/https://sports.yahoo.com/lincoln-county-sheriff-foul-play-195604708.html" }
+  - { id: S3, title: "Police: No foul play in Harrisburg's unattended death", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2022/09/12/police-no-foul-play-saturdays-harrisburg-unattended-death/", date: 2022-09-12, archive: "https://web.archive.org/web/20220914011321/https://www.dakotanewsnow.com/2022/09/12/police-no-foul-play-saturdays-harrisburg-unattended-death/" }
+  - { id: S4, title: "Kara Greger", publisher: "Yankton Press & Dakotan", url: "https://www.yankton.net/obituaries/article_ab0abf5c-3307-11ed-999c-3f9b915cae1f.html", date: 2022-09-12, archive: "https://web.archive.org/web/20261018210720/https://www.yankton.net/obituaries/article_ab0abf5c-3307-11ed-999c-3f9b915cae1f.html" }
   # The obituary page shows no publication date. Funeral was September 16, 2022.
-  - { id: S5, title: "Kara Lynn Greger obituary", publisher: "Peters Funeral Home", url: "https://www.petersfh.net/obituaries/kara-greger", date: 2022-09-12 }
-  - { id: S6, title: "One month after shooting in Harrisburg, family wants answers in Kara Gregor's death", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2022/10/17/one-month-after-shooting-death-harrisburg-family-wants-answers-kara-gregors-death/", date: 2022-10-17 }
+  - { id: S5, title: "Kara Lynn Greger obituary", publisher: "Peters Funeral Home", url: "https://www.petersfh.net/obituaries/kara-greger", date: 2022-09-12, archive: "https://web.archive.org/web/20260607233105/https://www.petersfh.net/obituaries/kara-greger" }
+  - { id: S6, title: "One month after shooting in Harrisburg, family wants answers in Kara Gregor's death", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2022/10/17/one-month-after-shooting-death-harrisburg-family-wants-answers-kara-gregors-death/", date: 2022-10-17, archive: "https://web.archive.org/web/20250821164914/https://www.dakotanewsnow.com/2022/10/17/one-month-after-shooting-death-harrisburg-family-wants-answers-kara-gregors-death/" }
   # Agency contact page. Date is the day it was checked.
   - { id: S7, title: "Sheriff", publisher: "Lincoln County, South Dakota", url: "https://www.lincolncountysd.gov/198/Sheriff", date: 2026-10-18 }
 timeline:
@@ -74,13 +74,13 @@ On a night in September 2022, she went to a concert in Harrisburg. [S6] A fight 
 
 Her cousin sent her brother to get her. [S6]
 
-He didn't make it in time.
+He got there too late, her cousin said. [S6]
 
 Around 1 a.m. on Saturday, September 10, Lincoln County deputies answered a report of gunshots and found her dead. [S3, S6]
 
 Two days later, the sheriff's office said it didn't suspect foul play. [S2] The mayor of Harrisburg said investigators were sure it was a suicide. [S6]
 
-Her family has asked, in public, how that could be. [S6]
+Her family has asked, in public, how she ended up dead. [S6]
 
 ## Three jobs in Lake Andes
 
@@ -101,8 +101,6 @@ That's when the three jobs started. The library job wasn't new. She had worked t
 "She was very responsible. She had three jobs," her grandmother said. [S6]
 
 ## Thelma & Louise
-
-Her obituary doesn't read like a form. It reads like a family that wanted people to know her.
 
 She liked shows about history and aliens, and "a lot of odd comedy." [S5] She sang in the shower "as loud as can be." [S5] She was "a roller skating and dancing machine," her family wrote, and nobody could keep up with her on the dance floor. [S5]
 
@@ -146,9 +144,9 @@ Those two accounts don't have to conflict. Kara may have turned down one ride an
 
 The call came in around 1 a.m. Saturday. Someone had heard gunshots. [S2, S3]
 
-Witnesses told Dakota News Now it happened at the intersection of Elm Street and Railroad Avenue. [S3] Deputies found Kara dead when they got there. [S2, S3]
+Witnesses told Dakota News Now it happened at the intersection of Elm Street and Railroad Avenue. [S3] Deputies found Kara dead when they got there. [S2, S3, S6]
 
-Susan Patterson's brother was still on his way. He got there too late, she said. He saw two sheriff's vehicles go by. [S6]
+Susan Patterson's brother was still on his way. He got there too late, she said. "He's seen two sheriffs go by," she told Dakota News Now. [S6]
 
 A neighbor told a reporter they heard the shots. When they looked outside, they didn't see anything. [S3]
 
@@ -164,7 +162,7 @@ The sheriff's office never used the word suicide in any statement we could find.
 
 The Harrisburg mayor did. Derick Wenck spoke with Dakota News Now just after the shooting. "They're 100% positive that it was a suicide. A gun was stolen out of a vehicle," he said. [S6]
 
-He said the fight had started it all, earlier in the evening. [S3] He also said the women from the fight would still face assault charges, even though the sheriff's office didn't believe they were "directly involved" in the death. [S6]
+The mayor said the night's events began earlier in the evening, with a fight at a bar. [S3] He also said the women from the fight would still face assault charges, even though the sheriff's office didn't believe they were "directly involved" in the death. [S6]
 
 That is what the mayor said. It is not a court record. We could not find any public record showing whether anyone was charged with assault.
 
@@ -176,7 +174,7 @@ A month after Kara died, her family went on television. [S6]
 
 "She went to a dance with a friend, and how did you end up dead? I just can't believe that," her grandmother said. [S6]
 
-They had questions, Dakota News Now reported. Was the fight connected to the shooting? Who pulled the trigger? [S6] Those are the family's questions. No investigator has said anyone else was involved.
+They had questions, Dakota News Now reported. Was the fight connected to the shooting? Who pulled the trigger? [S6] Those are the family's questions. No investigator has said anyone else was involved. [S2, S3, S6]
 
 By then, the sheriff's office said the bar fight was still under investigation and some of the people involved had been identified. [S6] The shooting was still considered an unattended death with no foul play. [S6]
 
@@ -184,15 +182,15 @@ By then, the sheriff's office said the bar fight was still under investigation a
 
 "We want to know the truth," Susan Patterson said. [S6]
 
-The family believes some people know who else was involved that night. [S6] "I'm asking people to please come forward," her grandmother said. "This could happen to your child." [S6]
+The family believes some people know the identity of others involved. [S6] "I'm asking people to please come forward," her grandmother said. "This could happen to your child." [S6]
 
 That interview, in October 2022, is the last public reporting we could find on Kara's death.
 
 ## Where it stands
 
-**What's documented:** Kara Greger, 21, of Lake Andes, died early on September 10, 2022, in Harrisburg. [S4, S5] Deputies responding to a report of gunshots around 1 a.m. found her dead. [S2, S3] The sheriff's office said foul play was not suspected and released no more details. [S2] Earlier that night, a fight broke out at the Phoenix Lounge and Kara was told to leave. [S6] The mayor said she was part of it, but couldn't say what her role was. [S3]
+**What's documented:** Kara Greger, 21, of Lake Andes, died early on September 10, 2022, in Harrisburg. [S4, S5] Deputies responding to a report of gunshots around 1 a.m. found her dead. [S2, S3, S6] The sheriff's office said foul play was not suspected and released no more details. [S2] Earlier that night, a fight broke out at the Phoenix Lounge and Kara was told to leave. [S6] The mayor said she was part of it, but couldn't say what her role was. [S3]
 
-**Where the sources disagree:** Her obituary spells her name Greger. [S5] Dakota News Now mostly spells it Gregor. [S6] Her obituary says Homecoming Queen and Miss Fish Days Queen in 2018. Her grandmother said prom queen and Little Miss Fish Days. [S5, S6]
+**Where the sources disagree:** Her obituary and death notice spell her name Greger. [S4, S5] Dakota News Now uses both spellings, and its headline says Gregor. [S6] Her obituary says Homecoming Queen and Miss Fish Days Queen in 2018. Her grandmother said prom queen and Little Miss Fish Days. [S5, S6]
 
 **What's reported but not proven:** The mayor said investigators were "100% positive" it was a suicide and that the gun had been stolen from a vehicle. [S6] He said the women in the fight would face assault charges. [S6] We could not find a sheriff's report, a death certificate or a court record that confirms any of it.
 
@@ -204,4 +202,4 @@ If you were at the Phoenix Lounge that night, or near Elm Street and Railroad Av
 
 If you or someone you know is struggling, call or text 988 to reach the 988 Suicide and Crisis Lifeline.
 
-Kara asked for a ride home. What do you think her family deserves to know about the hours before it came?
+Kara called for a ride. It never reached her. What do you think her family deserves to know about that night?
