@@ -62,11 +62,11 @@ The PR description has these sections:
 6. **Photo options**: agency-released images you found, with links, or "None found".
 7. **Facebook post**: the full post, written to the style guide and modeled on the examples in `agents/facebook-examples/`, ready to copy. Then the first-comment text with the story link.
 
-Then post the PR link in the Buzz thread and tag the Fact-checker.
+Then post the PR link in the Buzz thread and tag the Fact-checker, @Sherlock. Always use that exact handle. "@Fact-checker" doesn't reach anyone.
 
 ## When the Fact-checker or Justin asks for changes
 
-Fix them on the same branch, rerun the build and check, and reply in the thread with what you changed. If a fix changes the facts in the Facebook post, update the post in the PR description too.
+Fix them on the same branch, rerun the build and check, and reply in the thread with what you changed and tag @Sherlock to recheck. If a fix changes the facts in the Facebook post, update the post in the PR description too.
 
 ## Never
 
