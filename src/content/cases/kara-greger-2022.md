@@ -20,6 +20,12 @@
 # Days" (grandmother, S6) vs. 2018 Homecoming Queen and 2018 Miss Fish Days Queen (S5). Susan Patterson
 # is a cousin in S6. S5 lists her among survivors on her own and says Kara lived with her.
 # Archive links: existing Wayback snapshots, found by Sherlock in fact-check. S4 had none and was saved October 18, 2026.
+# Photos: all seven from Justin, October 18, 2026 (Buzz #stories). Justin confirmed he has the family's
+# permission for the five photos of Kara. Captions say only what each photo shows: no dates, places or
+# events beyond what is visible. The Ed Sheeran truck photo is not evidence she went to that concert.
+# Phoenix Lounge exterior: appears to be a TV news frame, rights unconfirmed. Justin chose to use it anyway
+# (October 18, 2026). Remove it if a station or the bar objects. Stage photo: from the Phoenix Lounge's
+# Facebook page, per Justin. Credited in the caption. Neither is from the night she died.
 # Status: "unresolved" ("Questions remain"), added in PR #10 for this case. Justin chose it October 18, 2026.
 draft: false
 title: "The Call for a Ride: The Death of Kara Greger"
@@ -40,7 +46,11 @@ agency: "the Lincoln County Sheriff's Office"
 tipLine: "+16057645651"
 anonymousTips: { name: "the sheriff's online tip form", url: "https://lincoln-so-sd.zuercherportal.com/#/submit_tip" }
 contentNote: "a gun death that officials have called a suicide"
-image: null
+image:
+  src: "./kara-greger-2022.jpg"
+  alt: "Kara Greger smiling, with long dark red hair and a crown of pink flowers, in a crowd at an indoor event"
+  credit: "Kara Greger in an undated photo"
+  license: "Family photo, used with the family's permission"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -100,11 +110,17 @@ That's when the three jobs started. The library job wasn't new. She had worked t
 
 "She was very responsible. She had three jobs," her grandmother said. [S6]
 
+![Kara Greger, with red hair, smiling in a white blouse with a black collar in a banquet hall](./kara-greger-2022-banquet.jpg "Kara Greger in an undated photo.")
+
 ## Thelma & Louise
 
 She liked shows about history and aliens, and "a lot of odd comedy." [S5] She sang in the shower "as loud as can be." [S5] She was "a roller skating and dancing machine," her family wrote, and nobody could keep up with her on the dance floor. [S5]
 
 She loved Halloween for the costumes, the makeup and the hair. She made sure to find the best haunted houses. [S5]
+
+![Kara Greger outdoors near a lake, her face painted with a sunset, palm tree and ocean waves](./kara-greger-2022-face-paint.jpg "Kara Greger with her face painted, in an undated photo.")
+
+![Kara Greger in a flower crown and black jacket, standing in front of an Ed Sheeran official merchandise truck](./kara-greger-2022-concert.jpg "Kara Greger beside an Ed Sheeran merchandise truck, in an undated photo.")
 
 She went to fairs, festivals, carnivals, concerts and powwows with her aunts. [S5] She played family bingo. She stayed up late cooking with her mom, her dad and her Uncle Joe, telling them "stories, theories, observations and ideas all night and all day." [S5]
 
@@ -112,13 +128,19 @@ And there was her Grandma Stephanie. The family called the two of them "our vers
 
 Her family said she was good with children, patient and kind with them. [S5] They said she had a hearty laugh. [S5]
 
+![Kara Greger making a kissy face at the camera against a blue sky, her hair blowing](./kara-greger-2022-selfie.jpg "Kara Greger in an undated selfie.")
+
 "She was very popular with everybody," her grandmother said. [S6]
 
 ## The concert
 
 Kara and a friend went to a concert at the Phoenix Lounge in Harrisburg. [S6] Her grandmother put it more simply. "She went to a dance with a friend," she said. [S6]
 
+![A tan, single-story building with brown trim and a Phoenix Lounge sign, next to the post office on a small-town street](./kara-greger-2022-phoenix-lounge.jpg "The Phoenix Lounge in Harrisburg, in an undated photo.")
+
 The public record doesn't say who was playing. It doesn't say when the two of them got there.
+
+![An empty outdoor stage with drums, guitars and speakers under a lit-up Phoenix sign](./kara-greger-2022-phoenix-stage.jpg "The stage at the Phoenix Lounge, in an undated photo from the bar's Facebook page.")
 
 Sometime that night, a fight broke out at the bar. [S3, S6] Kara was told to leave. [S6]
 
