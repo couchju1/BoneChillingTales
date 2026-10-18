@@ -8,7 +8,7 @@ export interface CaseRowData {
   person: string;
   town: string;
   state: string;
-  status: "unsolved" | "missing" | "solved" | "in-court";
+  status: "unsolved" | "missing" | "solved" | "in-court" | "unresolved";
   statusLabel: string;
   /** "Missing" or "Unsolved" when the row shows a days-since count. */
   counterLabel: string | null;
