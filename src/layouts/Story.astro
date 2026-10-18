@@ -27,7 +27,7 @@ const { entry, related } = Astro.props;
 const { data } = entry;
 const stateName = STATE_NAMES[data.state]!;
 const url = new URL(`/cases/${entry.id}/`, site.domain).href;
-const isOpen = data.status === "unsolved" || data.status === "missing";
+const isOpen = data.status === "unsolved" || data.status === "missing" || data.status === "unresolved";
 const hasTimeline = data.timeline.length > 0;
 
 const ogImage = `/og/${entry.id}.png`;

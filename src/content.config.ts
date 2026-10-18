@@ -53,7 +53,7 @@ const cases = defineCollection({
         person: z.string().min(1),
         // Opening paragraph under the headline: who, where, when, where it stands. Under 60 words.
         summary: z.string().optional(),
-        status: z.enum(["unsolved", "missing", "solved", "in-court"]),
+        status: z.enum(["unsolved", "missing", "solved", "in-court", "unresolved"]),
         town: z.string().min(1),
         state: z.enum(US_STATES, "state must be a 2-letter US state code, like SD"),
         incidentDate: z.coerce.date(),

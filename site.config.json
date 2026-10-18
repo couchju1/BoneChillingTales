@@ -45,7 +45,8 @@
     "unsolved": { "label": "Unsolved", "counterLabel": "Unsolved" },
     "missing": { "label": "Missing", "counterLabel": "Missing" },
     "solved": { "label": "Solved", "counterLabel": null },
-    "in-court": { "label": "In court", "counterLabel": null }
+    "in-court": { "label": "In court", "counterLabel": null },
+    "unresolved": { "label": "Questions remain", "counterLabel": null }
   },
   "resources": [
     { "name": "988 Suicide and Crisis Lifeline", "detail": "Call or text 988", "url": "https://988lifeline.org" },
