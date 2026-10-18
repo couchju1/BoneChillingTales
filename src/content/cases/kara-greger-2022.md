@@ -20,11 +20,12 @@
 # Days" (grandmother, S6) vs. 2018 Homecoming Queen and 2018 Miss Fish Days Queen (S5). Susan Patterson
 # is a cousin in S6. S5 lists her among survivors on her own and says Kara lived with her.
 # Archive links: existing Wayback snapshots, found by Sherlock in fact-check. S4 had none and was saved October 18, 2026.
-# Photos: all seven from Justin, October 18, 2026 (Buzz #stories). Family permission was not separately
-# confirmed. The five of Kara appear to be personal photos. Standards: "Private photos of victims, unless
-# their family gives permission." Captions say only what the photo shows: no dates, places or events
-# beyond what is visible. The Ed Sheeran truck photo is not evidence she went to that concert.
-# The two Phoenix Lounge photos are undated and not from the night she died. Source and rights unknown.
+# Photos: all seven from Justin, October 18, 2026 (Buzz #stories). Justin confirmed he has the family's
+# permission for the five photos of Kara. Captions say only what each photo shows: no dates, places or
+# events beyond what is visible. The Ed Sheeran truck photo is not evidence she went to that concert.
+# Phoenix Lounge exterior: appears to be a TV news frame, rights unconfirmed. Justin chose to use it anyway
+# (October 18, 2026). Remove it if a station or the bar objects. Stage photo: from the Phoenix Lounge's
+# Facebook page, per Justin. Credited in the caption. Neither is from the night she died.
 # Status: "unresolved" ("Questions remain"), added in PR #10 for this case. Justin chose it October 18, 2026.
 draft: false
 title: "The Call for a Ride: The Death of Kara Greger"
@@ -49,7 +50,7 @@ image:
   src: "./kara-greger-2022.jpg"
   alt: "Kara Greger smiling, with long dark red hair and a crown of pink flowers, in a crowd at an indoor event"
   credit: "Kara Greger in an undated photo"
-  license: "Photo supplied by Justin, October 18, 2026"
+  license: "Family photo, used with the family's permission"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -139,7 +140,7 @@ Kara and a friend went to a concert at the Phoenix Lounge in Harrisburg. [S6] He
 
 The public record doesn't say who was playing. It doesn't say when the two of them got there.
 
-![An empty outdoor stage with drums, guitars and speakers under a lit-up Phoenix sign](./kara-greger-2022-phoenix-stage.jpg "The stage at the Phoenix Lounge, in an undated photo.")
+![An empty outdoor stage with drums, guitars and speakers under a lit-up Phoenix sign](./kara-greger-2022-phoenix-stage.jpg "The stage at the Phoenix Lounge, in an undated photo from the bar's Facebook page.")
 
 Sometime that night, a fight broke out at the bar. [S3, S6] Kara was told to leave. [S6]
 
