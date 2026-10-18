@@ -34,7 +34,7 @@ Some stories are about a death that officials say wasn't a crime, but the family
 - Set a `contentNote`, like `"a gun death that officials have called a suicide"`.
 - End with the agency line if the agency is still investigating anything, or if the family asked people to come forward. Then add the 988 Suicide and Crisis Lifeline: "If you or someone you know is struggling, call or text 988."
 - The Facebook post follows the same rules, and ends with the 988 line after the agency number.
-- No status fits these cases yet. Flag it under "Open questions for Justin" in the PR.
+- Use `status: unresolved`. It shows as "Questions remain" with no day counter. A tip line is optional, but set one if you end with the agency line.
 
 ## Sources
 

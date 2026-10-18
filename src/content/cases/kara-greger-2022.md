@@ -20,14 +20,14 @@
 # Days" (grandmother, S6) vs. 2018 Homecoming Queen and 2018 Miss Fish Days Queen (S5). Susan Patterson
 # is a cousin in S6. S5 lists her among survivors on her own and says Kara lived with her.
 # Archive links: existing Wayback snapshots, found by Sherlock in fact-check. S4 had none and was saved October 18, 2026.
-# Status: no status fits a death officials called a suicide. "unsolved" is provisional. See the PR.
+# Status: "unresolved" ("Questions remain"), added in PR #10 for this case. Justin chose it October 18, 2026.
 draft: false
 title: "The Call for a Ride: The Death of Kara Greger"
 seoTitle: "Kara Greger: What Happened in Harrisburg, SD"
 description: "Kara Greger, 21, died of a gunshot in Harrisburg, SD, in 2022 after a fight at a concert. Officials found no foul play. Her family still has questions."
 person: "Kara Greger"
 summary: "Kara Greger, 21, of Lake Andes, South Dakota, died of a gunshot in Harrisburg early on September 10, 2022, after a fight at a concert earlier that night. [S3, S5, S6] The Lincoln County Sheriff's Office said foul play was not suspected. [S2] Her family has publicly questioned what happened. [S6]"
-status: unsolved
+status: unresolved
 town: "Harrisburg"
 state: SD
 incidentDate: 2022-09-10
