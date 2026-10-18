@@ -30,4 +30,4 @@ Post in the Buzz thread. For each of three options:
 
 Then add all three to `agents/QUEUE.md` under "Suggested" with today's date. Commit that change on a branch named `queue/[date]` and open a PR, or post the lines for Justin to add if you can't push.
 
-When Justin picks one, move it to "Picked" and hand off to the Writer with your notes. The other two stay in "Suggested" for next time unless he passes on them.
+When Justin picks one, move it to "Picked" and hand off to the Writer by tagging @Poe in the thread with your notes. The other two stay in "Suggested" for next time unless he passes on them.

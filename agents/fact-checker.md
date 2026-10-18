@@ -63,6 +63,11 @@ Post one comment on the PR, in this order:
 3. **Should fix**: Partial support, weak sources, style problems.
 4. **Claim table**: every tagged claim with its status. Keep the OK rows short so Justin can scan the problems.
 
-Post a one-line summary in the Buzz thread with the verdict and a link to the comment.
+Post a one-line summary in the Buzz thread with the verdict and a link to the comment. Then hand off:
+
+- **Needs fixes**: tag the Writer, @Poe, so it picks up the fixes.
+- **Ready for Justin** or **Don't publish**: tag Justin. Don't tag @Poe.
+
+Always use the exact handles. "@Writer" doesn't reach anyone.
 
 When the Writer pushes fixes, recheck only what changed plus anything those changes touch, then update your verdict.
