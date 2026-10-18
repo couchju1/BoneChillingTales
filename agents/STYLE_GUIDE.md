@@ -21,6 +21,21 @@ Launch states get priority: SD, ND, MN, IA, NE. Cases from other states are fine
 9. Violence against a child or sexual violence requires a `contentNote`.
 10. Open cases (`unsolved`, `missing`) must give the agency tip line, and the story should end by pointing readers to it.
 
+## Deaths ruled suicide or no foul play
+
+Some stories are about a death that officials say wasn't a crime, but the family doesn't accept that. Justin approved telling these on October 18, 2026, starting with Kara Greger. The rules above still apply, plus these.
+
+- Lead with the official position, and attribute it to the agency or person who stated it. Say who actually used the word "suicide." A sheriff saying "no foul play" isn't the same as a mayor saying "suicide."
+- The family's doubts are their questions, attributed to them. Never present them as findings. "Her family asked who pulled the trigger. [S6]" Not "Someone pulled the trigger."
+- Never name, describe or line up anyone in a way that suggests they caused the death. That includes people in an earlier fight or argument and the last person who saw them. Keep each person's part to what the record says.
+- Use "died by suicide" or "officials called it a suicide." Never "committed suicide."
+- Give the method only as far as the official account and the family's questions depend on it. No details about wounds or the scene, and no step-by-step account of how it happened.
+- Don't present suicide as the result of one thing, like the fight, the breakup or the bad night, unless a source says so.
+- Set a `contentNote`, like `"a gun death that officials have called a suicide"`.
+- End with the agency line if the agency is still investigating anything, or if the family asked people to come forward. Then add the 988 Suicide and Crisis Lifeline: "If you or someone you know is struggling, call or text 988."
+- The Facebook post follows the same rules, and ends with the 988 line after the agency number.
+- No status fits these cases yet. Flag it under "Open questions for Justin" in the PR.
+
 ## Sources
 
 Good sources, in rough order: agency press releases and wanted/missing posters (FBI, state DCI, sheriff), court filings and appeals decisions, NamUs and state missing person records, established local news (KELO, Argus Leader, Yankton Press & Dakotan, Omaha World-Herald, etc.), national outlets (AP, NBC/Dateline).
