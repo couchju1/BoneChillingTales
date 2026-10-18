@@ -43,7 +43,7 @@ import "../styles/forms.css";
   }
 
   const MAX = 20;
-  const STATUS: Record<string, string> = { Unsolved: "unsolved", Missing: "missing", Solved: "solved", "In court": "in-court" };
+  const STATUS: Record<string, string> = { Unsolved: "unsolved", Missing: "missing", Solved: "solved", "In court": "in-court", "Questions remain": "unresolved" };
   const form = document.querySelector<HTMLFormElement>("[data-search-form]")!;
   const input = form.querySelector<HTMLInputElement>("#q")!;
   const status = document.querySelector<HTMLElement>("[data-search-status]")!;

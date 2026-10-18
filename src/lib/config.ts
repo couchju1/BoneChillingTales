@@ -1,6 +1,7 @@
 import raw from "../../site.config.json";
 
-export type CaseStatus = "unsolved" | "missing" | "solved" | "in-court";
+// "unresolved": officials found no crime, but questions remain. No day counter, since that would suggest one.
+export type CaseStatus = "unsolved" | "missing" | "solved" | "in-court" | "unresolved";
 
 export interface SiteConfig {
   siteName: string;

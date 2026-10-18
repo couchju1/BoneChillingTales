@@ -9,6 +9,7 @@ const STATUS_COLOR: Record<CaseStatus, string> = {
   missing: "#E3A23B",
   solved: "#86B58F",
   "in-court": "#E8DACB",
+  unresolved: "#A89C8E",
 };
 
 type Node = { type: string; props: Record<string, unknown> & { children?: unknown } };
