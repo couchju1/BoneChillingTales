@@ -27,7 +27,7 @@
 # (October 18, 2026). Remove it if a station or the bar objects. Stage photo: from the Phoenix Lounge's
 # Facebook page, per Justin. Credited in the caption. Neither is from the night she died.
 # Rewritten October 19, 2026 at Justin's request, using the mailer-true-crime skill for structure and
-# rhythm only: titled parts, numbered sections, short flat paragraphs, sources quoted as documents. No free
+# rhythm only: titled parts, sections split by * * * breaks (numbers removed at Justin's request), short flat paragraphs, sources quoted as documents. No free
 # indirect discourse. Nobody's thoughts are written unless a source records them. Same sources and facts.
 # Status: "unresolved" ("Questions remain"), added in PR #10 for this case. Justin chose it October 18, 2026.
 draft: false
@@ -81,8 +81,6 @@ updates:
 
 ## Lake Andes
 
-### 1
-
 Kara Greger liked to stay up late cooking. [S5]
 
 She cooked and visited with her mom and her dad and her Uncle Joe Swatek. She would tell them stories, theories, observations and ideas. All night and all day, her family wrote. [S5]
@@ -93,7 +91,7 @@ She grew up in Lake Andes and Wagner and Sioux Falls. [S5, S6]
 
 For a while she lived in Wagner with her Grandma Bernadette Patterson and with Susan Patterson. [S5]
 
-### 2
+* * *
 
 She went to high school at Andes Central in Lake Andes. [S5]
 
@@ -109,7 +107,7 @@ Then she moved to Sioux Falls. Her family put it this way. She went "to live you
 
 That lasted until the summer of 2021. [S5]
 
-### 3
+* * *
 
 When she came home to Lake Andes she worked three jobs. [S5]
 
@@ -125,7 +123,7 @@ She volunteered at tribal and community events. [S5]
 
 ![Kara Greger, with red hair, smiling in a white blouse with a black collar in a banquet hall](./kara-greger-2022-banquet.jpg "Kara Greger in an undated photo.")
 
-### 4
+* * *
 
 She watched shows about history. Shows about aliens. A lot of odd comedy. [S5]
 
@@ -137,7 +135,7 @@ Halloween was the big one. The costumes, the makeup, the hair. She made sure she
 
 ![Kara Greger outdoors near a lake, her face painted with a sunset, palm tree and ocean waves](./kara-greger-2022-face-paint.jpg "Kara Greger with her face painted, in an undated photo.")
 
-### 5
+* * *
 
 Her family wrote down where she went with her aunts. Fairs. Festivals. Carnivals. Concerts. Powwows. [S5]
 
@@ -163,8 +161,6 @@ She made friends with anyone, her family wrote. She took people as they were. [S
 
 ## The Phoenix Lounge
 
-### 6
-
 In September 2022, Kara and a friend went to a concert at the Phoenix Lounge in Harrisburg. [S6]
 
 Her grandmother would say it more simply later. "She went to a dance with a friend." [S6]
@@ -175,7 +171,7 @@ Nobody on the record says who was playing. Nobody says what time they got there.
 
 ![An empty outdoor stage with drums, guitars and speakers under a lit-up Phoenix sign](./kara-greger-2022-phoenix-stage.jpg "The stage at the Phoenix Lounge, in an undated photo from the bar's Facebook page.")
 
-### 7
+* * *
 
 A fight broke out at the bar. [S3, S6]
 
@@ -187,7 +183,7 @@ The mayor of Harrisburg said Kara was part of the altercation. He said he couldn
 
 The reporting doesn't say if Kara is the woman in the video.
 
-### 8
+* * *
 
 The calls started after that. People in Kara's family were getting asked for a ride. [S6]
 
@@ -197,7 +193,7 @@ It was Kara. She asked for a ride. [S6]
 
 Patterson sent her brother. [S6]
 
-### 9
+* * *
 
 The friend remembered a different part of the night. [S6]
 
@@ -213,8 +209,6 @@ The message doesn't say whose car. It doesn't say what time it was. The record d
 
 ## Elm and Railroad
 
-### 10
-
 A call came in to the Lincoln County Sheriff's Office around 1 a.m. on Saturday, September 10. Somebody had heard gunshots. [S2, S3]
 
 Witnesses said it happened at Elm Street and Railroad Avenue. [S3]
@@ -223,13 +217,13 @@ Deputies got there and found Kara dead. [S2, S3, S6]
 
 She was 21. [S4]
 
-### 11
+* * *
 
 Susan Patterson's brother was still on his way. [S6]
 
 "He made it down there too late because he's seen two sheriffs go by," she said. [S6]
 
-### 12
+* * *
 
 A neighbor heard the shots. [S3]
 
@@ -239,13 +233,11 @@ By Monday somebody had set up a vigil on the boulevard in front of a house nearb
 
 ## No foul play
 
-### 13
-
 Saturday, September 10, 2022, as Dakota News Now reported it that morning. [S1]
 
 The Lincoln County Sheriff's Office confirmed one person was fatally shot early that morning. It was believed to be an isolated incident. There was no threat to the public. [S1]
 
-### 14
+* * *
 
 Monday, September 12, 2022, as the Argus Leader reported it. [S2]
 
@@ -255,7 +247,7 @@ No arrests were announced. [S3]
 
 Nobody from the sheriff's office used the word suicide in any statement we could find.
 
-### 15
+* * *
 
 The mayor did. [S6]
 
@@ -271,15 +263,13 @@ He said the women from the fight would still face assault charges. He said the s
 
 That was the mayor talking. It isn't a court record. We could not find any public record that shows whether anyone was charged.
 
-### 16
+* * *
 
 Wake services were set to begin that Tuesday at the 4-H Center. [S4, S5]
 
 On Friday, September 16, at 11 a.m., the funeral was set for the 4-H building in Lake Andes. Peters Funeral Home in Wagner handled the arrangements. [S4, S5]
 
 ## A month later
-
-### 17
 
 In mid-October 2022, Kara's family talked to Dakota News Now. [S6]
 
@@ -291,13 +281,13 @@ The family had questions. Was the fight connected to the shooting? Who pulled th
 
 Those were their questions. No investigator has said anyone else was involved. [S2, S3, S6]
 
-### 18
+* * *
 
 By then the sheriff's office said the bar fight was still under investigation. Some of the people in it had been identified. [S6]
 
 The shooting was still an unattended death. No foul play. [S6]
 
-### 19
+* * *
 
 > **STEPHANIE COURNOYER**:
 >
@@ -309,7 +299,7 @@ She didn't want it brushed under the rug. [S6]
 >
 > "We want to know the truth." [S6]
 
-### 20
+* * *
 
 The family believed some people knew the identity of others involved. [S6]
 
