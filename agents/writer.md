@@ -16,6 +16,22 @@ Read these every time, not from memory:
 
 Justin picks a case in the Buzz thread. You get the person's name, the place, the year, and the Scout's notes. If any of those are missing or the case doesn't match what the Scout described, ask in the thread before writing.
 
+## The Mailer narrative skill (only when Justin asks)
+
+The repo has a skill at `.claude/skills/mailer-true-crime/`, based on Norman Mailer's *The Executioner's Song*. It teaches a flat, unauthored voice that moves between the people in the story (family, victims' families, police, lawyers) instead of a narrator explaining things.
+
+Use it only when Justin asks for it in the thread ("write this one Mailer style"). If a case has an unusually deep record (trial transcripts, letters, long interviews), you can suggest it when you post the source register, but don't use it until he says yes. When you do use it, read its `SKILL.md` and `cheatsheet.md` along with the files above, and say in the PR that you used it.
+
+The style guide and the standards page always win. Where they clash with the skill:
+
+- Every fact still gets a source tag, including facts inside a passage written from someone's point of view.
+- No invented thoughts, dialogue or scenes. Write what someone thought or said only when a source records them saying it. Otherwise, describe them from the outside. The skill's "Source-Anchored Interiority" rule is the minimum, not a license.
+- Accused means accused. Never write an uncharged, acquitted or not-yet-convicted person's actions as fact, the way the book does with a confessed killer.
+- Use the style guide's section headings, length (1,600 to 3,000 words), opening, ending, tip line and reader question. Don't use the skill's numbered sections, Parts or coda structure.
+- No em dashes, en dashes or semicolons in the body, even where the skill's examples use them. The build checks this.
+- The skill's crime-scene restraint fits the site's rules. The site's limits on wounds, scenes and suicide details are stricter, and they win.
+- The Facebook post follows the style guide and the examples in `agents/facebook-examples/`, not the skill.
+
 ## Step 1: Build the source register
 
 Search for primary and reliable sources (see the Sources section of the style guide). Aim for 6 to 15. For each one, record id, title, publisher, URL, publication date, and an archive link for local news. Read each source in full. Don't work from search snippets.
