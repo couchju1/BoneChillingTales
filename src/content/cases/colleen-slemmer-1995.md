@@ -14,6 +14,9 @@
 # - The defense team's testimony about Dr. McCoy and the lead prosecutor, William Crabtree, is sworn
 #   post-conviction testimony as summarized by the federal court (S10). It stays attributed to Rice and
 #   Talman. Nobody found that it was improper. Don't add to it.
+#   Talman's side is kept with it: McCoy told him she never discussed the case with Crabtree, and he never
+#   doubted either one (S10, pp. 25-26). Keep those lines if the dating line stays.
+# Pike's letter is quoted from WVLT's English text (S16), not from Telemundo's Spanish translation (S9).
 # - Wound details and the carving are left out on purpose. Sources disagree on who carved it: Pike denied
 #   it in her statement (S1), her own expert agreed on cross-examination that she did (S1), Shipp later
 #   said he did (S7), and S13 states it as Shipp.
@@ -27,7 +30,7 @@ title: "Four Walked Out, Three Came Back: The Murder of Colleen Slemmer"
 seoTitle: "Colleen Slemmer: What Happened in Knoxville, TN"
 description: "Colleen Slemmer, 19, left Florida to study computers at Knoxville Job Corps. In 1995, four students walked out. Only three came back."
 person: "Colleen Slemmer"
-summary: "Colleen Slemmer was 19 and training at the Knoxville Job Corps Center when fellow students led her away on January 12, 1995. [S1] She was killed that night. Christa Pike was sentenced to death. [S1] On September 30, 2026, Tennessee tried to execute Pike and failed. [S6] She is back in prison. [S8]"
+summary: "Colleen Slemmer was 19 and training at the Knoxville Job Corps Center when she left the center with three fellow students on January 12, 1995. [S1] She was killed that night. Christa Pike was sentenced to death. [S1] On September 30, 2026, Tennessee tried to execute Pike and failed. [S6] She is back in prison. [S8]"
 status: in-court
 town: "Knoxville"
 state: TN
@@ -51,19 +54,20 @@ youtubeUploadDate: null
 sources:
   - { id: S1, title: "State of Tennessee v. Christa Gail Pike, No. 03S01-9712-CR-00147 (opinion affirming the conviction and death sentence)", publisher: "Tennessee Supreme Court", url: "https://tncourts.gov/node/19969", date: 1998-10-05 }
   - { id: S2, title: "Pike v. Warden, application for extension of time to file a petition for certiorari (describes the Sixth Circuit's 2019 ruling)", publisher: "Supreme Court of the United States, No. 19A642", url: "https://www.supremecourt.gov/DocketPDF/19/19A642/124745/20191206143532120_Pike%20cert%20extension%20request.pdf", date: 2019-12-06 }
-  - { id: S3, title: "Board denies parole for man convicted in 1995 'Job Corps Murder'", publisher: "WVLT", url: "https://www.wvlt.tv/2025/10/21/board-denies-parole-man-convicted-1995-job-corps-murder/", date: 2025-10-21 }
-  - { id: S4, title: "'It's hard to deal with': 'Job Corps Murder' victim's mother continues to fight for justice in brutal Knoxville case", publisher: "WVLT", url: "https://www.wvlt.tv/2025/10/09/its-hard-deal-with-murder-victims-mother-continues-fight-justice-brutal-1995-murder/", date: 2025-10-09 }
+  - { id: S3, title: "Board denies parole for man convicted in 1995 'Job Corps Murder'", publisher: "WVLT", url: "https://www.wvlt.tv/2025/10/21/board-denies-parole-man-convicted-1995-job-corps-murder/", date: 2025-10-21, archive: "http://web.archive.org/web/20261008211945/https://www.wvlt.tv/2025/10/21/board-denies-parole-man-convicted-1995-job-corps-murder/" }
+  - { id: S4, title: "'It's hard to deal with': 'Job Corps Murder' victim's mother continues to fight for justice in brutal Knoxville case", publisher: "WVLT", url: "https://www.wvlt.tv/2025/10/09/its-hard-deal-with-murder-victims-mother-continues-fight-justice-brutal-1995-murder/", date: 2025-10-09, archive: "http://web.archive.org/web/20260917160204/https://www.wvlt.tv/2025/10/09/its-hard-deal-with-murder-victims-mother-continues-fight-justice-brutal-1995-murder/" }
   - { id: S5, title: "Mother of Christa Pike's victim says she is owed an apology after botched execution", publisher: "Good Morning America (ABC News)", url: "https://www.goodmorningamerica.com/news/story/mother-christa-pikes-victim-speaks-botched-execution-broke-136950906", date: 2026-10-02 }
   - { id: S6, title: "Tennessee's outgoing prison chief had a history of execution missteps before Christa Pike, officials say", publisher: "CNN", url: "https://www.cnn.com/2026/10/05/us/christa-pike-execution-tennessee", date: 2026-10-05 }
-  - { id: S7, title: "Christa Pike wasn't the only one who tortured, killed Colleen Slemmer. Here's what happened to the other 2", publisher: "WSMV", url: "https://www.wsmv.com/2026/10/02/christa-pike-wasnt-only-one-who-tortured-killed-colleen-slemmer-heres-what-happened-other-2-who-were-involved/", date: 2026-10-02 }
+  - { id: S7, title: "Christa Pike wasn't the only one who tortured, killed Colleen Slemmer. Here's what happened to the other 2", publisher: "WSMV", url: "https://www.wsmv.com/2026/10/02/christa-pike-wasnt-only-one-who-tortured-killed-colleen-slemmer-heres-what-happened-other-2-who-were-involved/", date: 2026-10-02, archive: "http://web.archive.org/web/20261010204814/https://www.wsmv.com/2026/10/02/christa-pike-wasnt-only-one-who-tortured-killed-colleen-slemmer-heres-what-happened-other-2-who-were-involved/" }
   - { id: S8, title: "Christa Pike (case updates)", publisher: "Death Penalty Information Center", url: "https://deathpenaltyinfo.org/tag/christa-pike", date: 2026-10-10 }
-  - { id: S9, title: "'No tengo miedo de morir': Tennessee ejecuta hoy a una mujer, la primera en más de 200 años", publisher: "Telemundo Nashville, via KTTC (in Spanish)", url: "https://www.kttc.com/2026/09/30/no-tengo-miedo-de-morir-tennessee-ejecuta-hoy-una-mujer-la-primera-en-ms-de-200-aos/", date: 2026-09-30 }
+  - { id: S9, title: "'No tengo miedo de morir': Tennessee ejecuta hoy a una mujer, la primera en más de 200 años", publisher: "Telemundo Nashville, via KTTC (in Spanish)", url: "https://www.kttc.com/2026/09/30/no-tengo-miedo-de-morir-tennessee-ejecuta-hoy-una-mujer-la-primera-en-ms-de-200-aos/", date: 2026-09-30, archive: "http://web.archive.org/web/20261004114330/https://www.kttc.com/2026/09/30/no-tengo-miedo-de-morir-tennessee-ejecuta-hoy-una-mujer-la-primera-en-ms-de-200-aos/" }
   - { id: S10, title: "Pike v. Freeman, No. 1:12-cv-35 (memorandum opinion denying habeas relief, quoting the Tennessee Supreme Court's account of the trial)", publisher: "U.S. District Court for the Eastern District of Tennessee, via GovInfo", url: "https://www.govinfo.gov/content/pkg/USCOURTS-tned-1_12-cv-00035/pdf/USCOURTS-tned-1_12-cv-00035-1.pdf", date: 2016-03-11 }
-  - { id: S11, title: "Colleen Slemmer, murdered by Christa Pike, remembered as a 'computer geek' with a nurturing heart", publisher: "CNN, via KION", url: "https://kioncentralcoast.com/news/national-world/cnn-national/2026/10/09/colleen-slemmer-murdered-by-christa-pike-remembered-as-a-computer-geek-with-a-nurturing-heart/", date: 2026-10-09 }
-  - { id: S12, title: "Colleen Slemmer's family asks public to remember victim after failed execution attempt", publisher: "WZTV (Fox 17 Nashville)", url: "https://fox17.com/news/local/colleen-slemmers-family-asks-public-to-remember-victim-after-failed-execution-attempt", date: 2026-10-02 }
+  - { id: S11, title: "Colleen Slemmer, murdered by Christa Pike, remembered as a 'computer geek' with a nurturing heart", publisher: "CNN, via KION", url: "https://kioncentralcoast.com/news/national-world/cnn-national/2026/10/09/colleen-slemmer-murdered-by-christa-pike-remembered-as-a-computer-geek-with-a-nurturing-heart/", date: 2026-10-09, archive: "http://web.archive.org/web/20261009111253/https://kioncentralcoast.com/news/national-world/cnn-national/2026/10/09/colleen-slemmer-murdered-by-christa-pike-remembered-as-a-computer-geek-with-a-nurturing-heart/" }
+  - { id: S12, title: "Colleen Slemmer's family asks public to remember victim after failed execution attempt", publisher: "WZTV (Fox 17 Nashville)", url: "https://fox17.com/news/local/colleen-slemmers-family-asks-public-to-remember-victim-after-failed-execution-attempt", date: 2026-10-02, archive: "http://web.archive.org/web/20261002141909/https://fox17.com/news/local/colleen-slemmers-family-asks-public-to-remember-victim-after-failed-execution-attempt" }
   - { id: S13, title: "Inside the chamber: The agonizing moments of Christa Pike's stalled execution", publisher: "FOX 5 Atlanta (FOX Television Stations), from the accounts of six media witnesses", url: "https://www.fox5atlanta.com/news/christina-pike-stalled-execution-witnesses-describe-chaos", date: 2026-09-30 }
-  - { id: S14, title: "Witnesses to Christa Pike's failed execution say their view was blocked multiple times", publisher: "WVLT/Gray News, via KOLD", url: "https://www.kold.com/2026/10/01/witnesses-christa-pikes-failed-execution-say-their-view-was-blocked-multiple-times/", date: 2026-10-01 }
-  - { id: S15, title: "911 call transcript from botched Christa Pike execution released", publisher: "WSMV", url: "https://www.wsmv.com/2026/10/12/911-call-transcript-botched-christa-pike-execution-released/", date: 2026-10-12 }
+  - { id: S14, title: "Witnesses to Christa Pike's failed execution say their view was blocked multiple times", publisher: "WVLT/Gray News, via KOLD", url: "https://www.kold.com/2026/10/01/witnesses-christa-pikes-failed-execution-say-their-view-was-blocked-multiple-times/", date: 2026-10-01, archive: "http://web.archive.org/web/20261007211203/https://www.kold.com/2026/10/01/witnesses-christa-pikes-failed-execution-say-their-view-was-blocked-multiple-times/" }
+  - { id: S15, title: "911 call transcript from botched Christa Pike execution released", publisher: "WSMV", url: "https://www.wsmv.com/2026/10/12/911-call-transcript-botched-christa-pike-execution-released/", date: 2026-10-12, archive: "http://web.archive.org/web/20261013122909/https://www.wsmv.com/2026/10/12/911-call-transcript-botched-christa-pike-execution-released/" }
+  - { id: S16, title: "In letter, Christa Gail Pike says 'I am not afraid to die' ahead of Tennessee execution", publisher: "WVLT, via WSMV", url: "https://www.wsmv.com/2026/09/29/letter-christa-gail-pike-says-i-am-not-afraid-die-ahead-tennessee-execution/", date: 2026-09-29 }
 timeline:
   - { date: 1975-09-20, text: "Colleen Slemmer is born in Orange Park, Florida. [S9]", section: "orange-park" }
   - { date: 1994-10-31, text: "Colleen says goodbye to her family and leaves for Job Corps in Knoxville. [S9]", section: "orange-park" }
@@ -72,7 +76,7 @@ timeline:
   - { date: 1995-01-13, text: "A university grounds worker finds Colleen's body near the agricultural campus greenhouses. [S1]", section: "the-greenhouses" }
   - { date: 1995-01-14, text: "Pike gives police a recorded statement. [S1]", section: "the-jacket" }
   - { date: 1995-01-17, text: "Job Corps staff turn over Pike's jacket. A piece of bone is in the pocket. [S1]", section: "the-jacket" }
-  - { date: 1996-03-22, text: "A Knox County jury convicts Pike of first-degree murder and conspiracy. [S7]", section: "the-trial" }
+  - { date: 1996-03-22, text: "A Knox County jury convicts Pike of first-degree murder and conspiracy. [S7, S10]", section: "the-trial" }
   - { date: 1998-10-05, text: "The Tennessee Supreme Court upholds the conviction and death sentence. [S1]", section: "thirty-one-years" }
   - { date: 2019-08-22, text: "A federal appeals court rules against Pike's habeas appeal. [S2]", section: "thirty-one-years" }
   - { date: 2026-09-28, text: "Gov. Bill Lee denies clemency. [S8]", section: "thirty-one-years" }
@@ -295,8 +299,6 @@ Marks had reconstructed Colleen's skull. One piece was missing. The bone from th
 
 ## The trial
 
-Pike's lawyers never argued she didn't kill Colleen. [S1]
-
 Psychologist Eric Engum testified for the defense. He called Pike an "extremely bright young woman." She had an IQ of 111. She had no brain damage, he said, and she wasn't insane. [S1]
 
 He diagnosed a very severe borderline personality disorder. Once the attack started, he said, she had lost control. [S1]
@@ -309,7 +311,7 @@ He agreed she had enticed Colleen to the park. He agreed that carrying weapons s
 
 * * *
 
-On March 22, 1996, a Knox County jury found Pike guilty of first-degree murder and conspiracy. [S7]
+On March 22, 1996, a Knox County jury found Pike guilty of first-degree murder and conspiracy. [S7, S10]
 
 At sentencing, the state put on no new evidence. [S1]
 
@@ -321,7 +323,7 @@ The state called Officer Underwood. He told the jury about the giggling at the t
 
 The jury found two reasons for a death sentence. The killing involved torture or serious physical abuse beyond what it took to kill. And it was done to keep Colleen from reporting her. [S1]
 
-The sentence was death by electrocution, plus 25 years for the conspiracy. [S1]
+The sentence was death by electrocution, plus 25 years for the conspiracy. [S1, S10]
 
 * * *
 
@@ -331,7 +333,9 @@ Pike's lawyers had hired a mitigation specialist, Dr. McCoy. She put together a 
 
 Years later, at a hearing on Pike's appeal, her co-counsel, Julie Martin Rice, testified that several theories had been "floating around" about why they didn't call her. She wasn't sure which one decided it. One was that they had learned Dr. McCoy was dating the lead prosecutor, William Crabtree. [S10]
 
-The lead lawyer, Bill Talman, testified that the main reason was that she wouldn't back up Engum. He said the decision was made the morning the sentencing began, in "one of those little huddles outside during a break." [S10]
+The lead lawyer, Bill Talman, testified that the main reason was that she wouldn't back up Engum. Talman testified to the relationship too. When he asked Dr. McCoy, she told him she had never talked to Crabtree about the case. He said he "never doubted Dr. McCoy's work or Mr. Crabtree's integrity." [S10]
+
+Talman said the decision was made the morning the sentencing began, in "one of those little huddles outside during a break." [S10]
 
 "One of those last minute decisions that . . . you just [make]," he said. [S10]
 
@@ -375,7 +379,7 @@ The fight was over what that meant in law. [S2, S8]
 
 * * *
 
-In Florida, May Martinez had waited decades for the state to carry out the sentence. [S13]
+In Florida, May Martinez said she had waited decades for the state to carry out the sentence. [S13]
 
 "Justice has to serve," she said in October 2025. "It cannot go on like this." [S4]
 
@@ -387,11 +391,11 @@ She asked for help with the cost of getting to Nashville. People in Jacksonville
 
 On September 28, 2026, Governor Bill Lee denied clemency. [S8]
 
-Pike had written a letter before he decided. Telemundo Nashville quoted it in Spanish. This is our translation of one part:
+Pike had written a letter before he decided. [S16]
 
-> **CHRISTA PIKE**, letter, September 2026, as quoted by Telemundo Nashville:
+> **CHRISTA PIKE**, letter, September 2026, as quoted by WVLT:
 >
-> "Whether or not I'm granted clemency, I'm at peace. I'm not afraid to die. I'm just nervous about the process." [S9]
+> "Whether my clemency is granted or not, I am at peace. I am not afraid to die. I am only nervous about the process." [S16]
 
 ## September 30
 
@@ -471,7 +475,7 @@ She asked what would happen now. [S5]
 
 Pike was taken to Vanderbilt University Medical Center. [S15]
 
-She was unconscious and on a ventilator. Her lawyers said she had significant injuries to both arms. [S5]
+Two days later, her lawyers said she was unconscious and on a ventilator, with significant injuries to both arms. [S5]
 
 * * *
 
@@ -515,7 +519,7 @@ Tadaryl Shipp is in prison. The parole board turned him down in October 2025, ci
 
 Shadolla Peterson has kept a private life. Where she is now isn't known. [S7]
 
-Christa Pike's death sentence still stands. [S6] As of October 5, the state hadn't said whether it would try again, her lawyer said. [S6]
+Christa Pike's death sentence still stands. [S6] As of October 4, the state hadn't said whether it would try again, her lawyer said. [S6]
 
 Governor Lee leaves office in January. [S6]
 
@@ -539,4 +543,4 @@ Colleen's family marked her birthday in September. She would have been 51. [S11]
 
 The last time they saw her was Halloween. [S9]
 
-A jury decided in 1996 what justice for Colleen should be. Thirty-one years later, it hasn't been carried out, and no one has said what comes next. What do you think should happen now, and whose voice should count most?
+A jury decided in 1996 what justice for Colleen should be. Thirty-one years later, it hasn't been carried out, and as of early October, no one had said what comes next. What do you think should happen now, and whose voice should count most?
