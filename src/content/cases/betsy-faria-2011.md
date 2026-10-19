@@ -15,7 +15,7 @@
 # Left out on purpose: Hupp's mother's death (police did not deem it suspicious), the anonymous affair
 # allegation against prosecutor Askey (Judge Ohmer said he found no evidence of it), and wound detail
 # beyond the count in the court record.
-# Conflicts in the text: the voicemail at 7:04 (S1, S7) or about 7:05 (S2). The drive home timed at 23 minutes
+# Conflicts in the text: the voicemail at 7:04 (S1, S7) or about 7:05 (S2). Time since death: at least two hours (S7) or more than an hour (S2). The drive home timed at 23 minutes
 # (S2) or 26 and a half (S7). S7 says the appeals court reversed the conviction. S8 and S1 say it remanded
 # and Judge Ohmer granted a new trial. S1 says Hupp kept all the money. S8 shows a $100,000 trust funded,
 # emptied ($99,700) and revoked.
@@ -48,7 +48,7 @@ image:
 youtubeId: null
 youtubeUploadDate: null
 sources:
-  - { id: S1, title: "Russell Faria", publisher: "The National Registry of Exonerations", url: "https://exonerationregistry.org/cases/11907", date: 2026-10-09, archive: "http://web.archive.org/web/20261006164851/https://exonerationregistry.org/cases/11907" }
+  - { id: S1, title: "Russell Faria", publisher: "The National Registry of Exonerations", url: "https://exonerationregistry.org/cases/11907", date: 2015-11-16, archive: "http://web.archive.org/web/20261006164851/https://exonerationregistry.org/cases/11907" }
   - { id: S2, title: "The unimaginable, infamous case of Pam Hupp", publisher: "St. Louis Magazine", url: "https://www.stlmag.com/longform/pam-hupp/", date: 2017-01-19, archive: "http://web.archive.org/web/20261007120353/https://www.stlmag.com/longform/pam-hupp/" }
   - { id: S3, title: "Prosecutor charges Pam Hupp with first-degree murder, alleges attempt to frame Russ Faria", publisher: "NBC News (Dateline)", url: "https://www.nbcnews.com/dateline/prosecutor-charges-pam-hupp-1st-degree-murder-alleges-attempt-frame-n636841", date: 2016-08-23, archive: "http://web.archive.org/web/20261007120357/https://www.nbcnews.com/dateline/prosecutor-charges-pam-hupp-1st-degree-murder-alleges-attempt-frame-n636841" }
   - { id: S4, title: "Pamela Hupp murder case dropped and refiled in Missouri", publisher: "CBS News and The Associated Press", url: "https://www.cbsnews.com/news/pamela-hupp-murder-case-refiled-missouri-tv-miniseries-the-thing-about-pam/", date: 2023-10-30, archive: "http://web.archive.org/web/20261007120354/https://www.cbsnews.com/news/pamela-hupp-murder-case-refiled-missouri-tv-miniseries-the-thing-about-pam/" }
@@ -99,7 +99,7 @@ She worked in a State Farm office, and on the side she worked as a DJ. St. Louis
 
 She had two daughters, Leah and Mariah Day. In December 2011, Leah was 21 and Mariah was 17. [S8]
 
-Russ was 41. [S1] He liked to fish and ride motorcycles. On Tuesday nights he played role-playing games with the same group of friends. [S2]
+Russ was 41. [S1] He liked to fish and ride motorcycles. On Tuesday nights he played role-playing games with friends. [S2]
 
 Rita Wolf had been one of Betsy's best friends since St. Dominic High School. [S2]
 
@@ -107,7 +107,7 @@ Rita Wolf had been one of Betsy's best friends since St. Dominic High School. [S
 
 Doctors found the cancer in January 2010. [S2]
 
-An old coworker showed up to help. Pam Hupp had come to work at that State Farm office, and Betsy was the first person she met there. [S2] The two had lost touch for years. [S2]
+An old coworker showed up to help. Pam Hupp had come to work at that State Farm office, and Betsy was the first person she met there. [S2]
 
 That summer, Betsy's father, Ken Meyer, asked whether she had made plans for her daughters. She was worried the girls would spend the money foolishly. She was afraid her husband would "piss it away," Meyer recalled. [S2]
 
@@ -161,7 +161,7 @@ A federal judge later described texts in which Hupp insisted on driving Betsy ho
 
 * * *
 
-Russ left the house around 5. A federal court later laid out his stops by the minute. [S7]
+Russ left the house around 5. [S7]
 
 5:16 to 5:20, gas at the Conoco in Troy. 5:31, cigarettes at a U-Gas in Wentzville. 5:52, a bag of dog food at Green's Country Store in Lake Saint Louis. 5:56 to 5:58, two bottles of iced tea at a QuikTrip in O'Fallon. Three of the four stops were on camera. The fourth had a timestamped receipt. [S7]
 
@@ -185,11 +185,13 @@ Leah called from the store at 7:21. No answer. She called at 7:26 and 7:30. No a
 
 At 7:27, a call from Pam Hupp's phone went unanswered too. [S7] The phone was still in Troy. [S2]
 
+Hupp told officers she was calling to say she had reached the part of the drive where she knew the way home. She later gave two slightly different reasons. [S7] When phone records put her in Troy, she said she had pulled over at a fork in the road to call. [S2]
+
 The federal court called the voicemail the last evidence that Betsy was alive. [S7]
 
 * * *
 
-At 9:09, after game night, Russ ordered two junior cheddar melts at the Arby's in Lake Saint Louis. [S7]
+At 9:09, Russ ordered two junior cheddar melts at the Arby's in Lake Saint Louis. [S7]
 
 The drive home was 25 miles. Officers later timed it at 26 and a half minutes. [S7]
 
@@ -201,7 +203,7 @@ She had been stabbed about 55 times. [S7]
 
 * * *
 
-A fire captain found her body cold and stiff and judged she had been dead at least two hours. [S7]
+A fire captain found her body cold and stiff and judged she had been dead at least two hours. [S7] St. Louis Magazine says he and an EMS supervisor put it at more than an hour. [S2]
 
 ## The slippers
 
@@ -227,7 +229,7 @@ She told them about a document on Betsy's laptop that showed Betsy was afraid of
 
 Police found Russ's bedroom slippers in his closet, smeared with Betsy's blood. [S1]
 
-A week after the murder, investigators sprayed the house with a chemical that glows on contact with blood and some other substances. The lead detective, Sgt. Ryan McCarrick, wrote that it showed blood had been cleaned up. [S7] Lab tests later found no human blood in the samples. [S7]
+A week after the murder, investigators sprayed the house with a chemical that glows on contact with blood and some other substances. Detective Sgt. Ryan McCarrick, who took over the investigation when the Major Case Squad disbanded, wrote that it showed blood had been cleaned up. [S2, S7] Lab tests later found no human blood in the samples. [S7]
 
 On January 4, 2012, after Betsy's funeral, Russ was charged with first-degree murder and armed criminal action. [S1]
 
@@ -235,7 +237,7 @@ On January 4, 2012, after Betsy's funeral, Russ was charged with first-degree mu
 
 Russ's cousin hired a defense lawyer named Joel Schwartz. [S2]
 
-Reading the police reports, Schwartz kept stopping, St. Louis Magazine reported. Pam Hupp was the last person to see Betsy alive. She had become the beneficiary four days earlier. She had given several versions of the night. [S2]
+Reading the police reports, Schwartz kept stopping, St. Louis Magazine reported. Pam Hupp was the last person known to have seen Betsy alive. She had become the beneficiary four days earlier. She had given several versions of the night. [S2]
 
 * * *
 
@@ -275,13 +277,21 @@ On March 20, 2013, Schwartz deposed her. She brought up her husband's life insur
 >
 > **PAM HUPP:**
 >
-> "Betsy." [S2]
+> "Betsy."
+>
+> **JOEL SCHWARTZ:**
+>
+> "Who said you killed Betsy?"
+>
+> **PAM HUPP:**
+>
+> "You did. Or your private detectives told my friends that." [S2]
 
-A few lines later she said, "I did not kill Betsy." Asked if she would still take a polygraph, she said, "No." [S2]
+A moment later she said, "I did not kill Betsy." Asked if she would still take a polygraph, she said, "No." [S2]
 
 ## The first trial
 
-The trial opened in Lincoln County on November 18, 2013. Askey told the jury the motive was greed. [S2]
+The trial opened in Lincoln County on November 18, 2013. [S1, S2] Lincoln County prosecutor Leah Askey told the jury the motive was greed. [S1, S2]
 
 The judge kept out cell phone evidence that appeared to show Hupp had stayed near the house for as long as 30 minutes after she said she left. [S1] Schwartz wasn't allowed to raise her motive either, because the prosecutor argued she had "no direct connection" to the case. [S2]
 
@@ -301,9 +311,9 @@ Russ was sentenced to life without parole. [S1]
 
 ## The trust
 
-A month after the trial, Hupp took $99,700 out of the trust. [S8]
+In December 2013, the month after the trial, Hupp took $99,700 out of the trust. [S8]
 
-In February 2014, the St. Louis Post-Dispatch and KTVI Fox 2 published what they had found. [S1] They had tracked down the 911 operator who actually took Russ's call, Tammy Vaughn. [S1]
+In February 2014, the St. Louis Post-Dispatch and KTVI Fox 2 tracked down the 911 operator who actually took Russ's call, Tammy Vaughn. [S1]
 
 "You can't fake that," Vaughn said. "You can't fake that emotion. In my personal opinion, you can't." [S1]
 
@@ -317,7 +327,7 @@ In July 2014, Hupp sat for a deposition in the daughters' case. A few days befor
 
 * * *
 
-The deposition reached Schwartz. It didn't match what Hupp had told the jury about the money, and he took it to the appeals court as new evidence. [S2, S8] On February 24, 2015, the court sent the case back. [S8]
+The deposition reached Schwartz. It didn't match what Hupp had said under oath at the trial, and he took it to the appeals court as new evidence. [S2, S8] On February 24, 2015, the court sent the case back. [S8]
 
 In June 2015, Circuit Judge Steven Ohmer granted Russ a new trial. He walked out on bond on June 15. [S1] He had spent three and a half years locked up, he said. [S6]
 
@@ -335,7 +345,7 @@ Before the retrial, the defense found more than 100 crime scene photographs that
 
 A crime scene investigator, Amy Buettner, testified that the slippers didn't look like they had stepped in blood. They looked more like they had been dipped. She had seen no sign of a cleanup. [S2]
 
-The laptop document came up too. A defense expert found it was the only document on the laptop with its author listed as "Unknown." [S2] In the gallery, Rita Wolf's reaction, as St. Louis Magazine recorded it: "Betsy would never articulate things that way." [S2]
+A defense expert found the laptop document was the only one with its author listed as "Unknown." [S2] Rita Wolf's reaction, as St. Louis Magazine recorded it: "Betsy would never articulate things that way." [S2]
 
 * * *
 
@@ -363,7 +373,7 @@ His name was Louis Gumpenberger. He was 33. [S3] A car crash in 2005 had left hi
 
 Hupp told police he had held a knife on her and demanded she take him to a bank "to get Russ's money." [S4]
 
-In his pockets, police found $900 and a note. According to the probable cause statement, it told him to kidnap Hupp, get Russ's money from her bank and kill her to collect the rest of $10,000. The name Faria was on it. [S3]
+In his pockets, police found $900 and a note. According to the probable cause statement, it appeared to be instructions to kidnap Hupp, get Russ's money from her bank and kill her to collect the rest of $10,000. The name Faria was on it. [S3]
 
 Prosecutors said she had lured him to her house by posing as a Dateline producer, to make it look as if Russ had hired a hit man. [S3, S4] In June 2019, she entered an Alford plea to first-degree murder, which means she didn't admit guilt but agreed the evidence could convict her. That August she was sentenced to life without parole. [S1, S5]
 
@@ -372,8 +382,6 @@ Prosecutors said she had lured him to her house by posing as a Dateline producer
 In July 2021, Lincoln County Prosecuting Attorney Mike Wood charged Pam Hupp with first-degree murder and armed criminal action in Betsy's death. [S4, S9] She pleaded not guilty. [S9]
 
 The charging documents allege that she waited until Betsy was weak from chemotherapy and stabbed her as she lay on the couch under a blanket. They allege she then dipped Betsy's socks in her blood and spread it around the house to make it look like her husband did it. [S9]
-
-"It was really quick, but it was a long time coming," Russ's sister, Rachel Faria, said after Hupp's first court appearance. [S9]
 
 * * *
 
@@ -387,9 +395,9 @@ On April 28, 2026, Hupp gave up her right to a jury. Prosecutors agreed not to s
 
 * * *
 
-"Nearly 15 years ago was when this all started," he said in September. "When Pam Hupp allegedly murdered my wife, Betsy, and then pinned it on me." [S6]
+"Nearly 15 years ago was when this all started," Russ said in September. "When Pam Hupp allegedly murdered my wife, Betsy, and then pinned it on me." [S6]
 
-He is waiting to testify. He hasn't done it in 15 years, he said. [S6]
+He is waiting to testify. [S6]
 
 ## Where it stands
 
@@ -411,7 +419,7 @@ In the daughters' case, the judge singled out what Hupp told police the day afte
 
 "She said, I'm going to make you the beneficiary. If you could, when my daughters are older, give them some money. I said, 'Okay.'" [S8]
 
-Leah and Mariah were 21 and 17 that December. [S8] Rita Wolf remembered the list. The weddings. The cosmetology license. The graduation, the car, the college. [S8]
+Rita Wolf remembered the list. The weddings. The cosmetology license. The graduation, the car, the college. [S8]
 
 Betsy wrote it all down, Wolf said. Then she took the notes with her. [S8]
 
