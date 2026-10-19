@@ -85,7 +85,7 @@ updates:
 
 Kara Greger liked to stay up late cooking. [S5]
 
-She cooked with her mom and her dad and her Uncle Joe Swatek. While they cooked she talked. Stories, theories, observations and ideas. All night and all day, her family wrote. [S5]
+She cooked and visited with her mom and her dad and her Uncle Joe Swatek. She would tell them stories, theories, observations and ideas. All night and all day, her family wrote. [S5]
 
 She was born on November 10, 2000. Her mother was Larina. Her father was Todd. [S5]
 
@@ -131,7 +131,7 @@ She watched shows about history. Shows about aliens. A lot of odd comedy. [S5]
 
 She sang in the shower as loud as she could. [S5]
 
-On roller skates or on a dance floor, nobody could keep up with her. Her family called her a roller skating and dancing machine. [S5]
+She was a roller skating and dancing machine, her family wrote. Nobody could keep up with her on the dance floor. [S5]
 
 Halloween was the big one. The costumes, the makeup, the hair. She made sure she found the best haunted houses. [S5]
 
@@ -193,7 +193,7 @@ The calls started after that. People in Kara's family were getting asked for a r
 
 One call came to Susan Patterson. Dakota News Now called her Kara's cousin. [S6]
 
-It was Kara. She needed a ride. [S6]
+It was Kara. She asked for a ride. [S6]
 
 Patterson sent her brother. [S6]
 
@@ -241,11 +241,15 @@ By Monday somebody had set up a vigil on the boulevard in front of a house nearb
 
 ### 13
 
-> **HARRISBURG, S.D.**, Saturday, September 10, 2022. The Lincoln County Sheriff's Office confirmed one person was fatally shot early that morning. It called it an isolated incident. It said there was no threat to the public. [S1]
+Saturday, September 10, 2022, as Dakota News Now reported it that morning. [S1]
+
+The Lincoln County Sheriff's Office confirmed one person was fatally shot early that morning. It was believed to be an isolated incident. There was no threat to the public. [S1]
 
 ### 14
 
-> **Monday, September 12, 2022.** Sheriff Steve Swenson said in a news release that the death was being investigated as an unattended death. Foul play was not suspected. Given the nature of the death, no more details would be released. [S2, S3]
+Monday, September 12, 2022, as the Argus Leader reported it. [S2]
+
+Sheriff Steve Swenson said in a news release that the death was being investigated as an unattended death. Foul play was not suspected. Given the nature of the death, no more details would be released. [S2, S3]
 
 No arrests were announced. [S3]
 
@@ -269,15 +273,15 @@ That was the mayor talking. It isn't a court record. We could not find any publi
 
 ### 16
 
-The wake started that Tuesday at the 4-H Center in Lake Andes. [S4, S5]
+Wake services were set to begin that Tuesday at the 4-H Center. [S4, S5]
 
-On Friday, September 16, at 11 a.m., there was a funeral at the 4-H building. Peters Funeral Home in Wagner handled the arrangements. [S4, S5]
+On Friday, September 16, at 11 a.m., the funeral was set for the 4-H building in Lake Andes. Peters Funeral Home in Wagner handled the arrangements. [S4, S5]
 
 ## A month later
 
 ### 17
 
-On October 17, 2022, Kara's family talked to Dakota News Now. [S6]
+In mid-October 2022, Kara's family talked to Dakota News Now. [S6]
 
 > **STEPHANIE COURNOYER**, Kara's grandmother:
 >
