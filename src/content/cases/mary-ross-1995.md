@@ -6,8 +6,8 @@
 # Legal care:
 # - Robert Power, Eric Coon and Robert Poppen pleaded guilty. Michael Lee Smith was convicted by a jury
 #   of accessory to murder and conspiracy to commit murder (S1). Their acts are stated as the court
-#   record gives them. Walter Craft Jr. pleaded guilty to charges involving the murder (S3). His exact
-#   charge and sentence come only from KELOLAND (S4) and stay attributed.
+#   record gives them. Walter Craft Jr. pleaded guilty (S3) to accessory to murder (S4, and S8 citing the
+#   Argus Leader). His sentence comes only from KELOLAND (S4) and stays attributed.
 # - Amy (Aimee) Power was never charged with anything. She appears only as Mary's friend and roommate
 #   who lost a key ring (S2). Never place her near the planning or imply she knew of it. S1 says the
 #   murder was set for a weekend she was out of state.
@@ -27,12 +27,16 @@
 #   the stabbing felt, and the Facebook page "Justice For Mary K Ross" (Facebook pages are not sources
 #   under the style guide).
 # Quote edits: the build bans semicolons, so S2's affidavit summary is split into its four numbered
-# items, and the semicolon inside Mary's quoted words (after "him") became a period.
+# items, and Mary's quoted words are split in two at the semicolon after "him", with no words changed.
 # Conflicts in the text: "Amy" (S2) or "Aimee Enright Power" (S4). "Power" or "Powers" within S2.
 # "Mary Kay Ross" (S1) or "Mary K. Ross" (S2, S3). Power's offer to Smith: $10,000 or two pounds of meth
 # (S1), or a pound of meth and $10,000 (S4, quoting Nelson). S3 says $10,000 each for Coon and Poppen.
-# Amy's lost keys: July (S2) or June, in the parking lot (S8, citing the landlords' brief). Kristian's age:
-# 13 months in March 1994 (S8) or 14 months in July 1995 (S4, S7). Those can't both be right.
+# Amy's lost keys: S2 says July in one paragraph and June in another. S8, citing the landlords' brief, says June.
+# Kristian's age: 13 months in March 1994 (S8) or 14 months in July 1995 (S4, S7). S6 calls her 29 in
+# August 2022, which fits S8. Story states no exact age as fact.
+# Who passed the key: S1 and S2 say Power gave it to Smith, who gave it to the killers. S4 (Armstrong, 1995)
+# says Power gave Coon the key and supplies. S3 doesn't say who. Court version leads, S4 attributed.
+# 911 timing: during the attack (S3) or after the killers left (S8). Both given.
 # Smith's sentence: ten years plus life without parole, concurrent (S1), or "also got life" (S5).
 draft: false
 title: "A Key to the Apartment: The Murder of Mary K. Ross"
@@ -69,7 +73,7 @@ timeline:
   - { date: 1994-03-26, text: "Mary K. Ross signs a lease at Westport in Sioux Falls for herself and her daughter. [S2, S8]", section: "westport" }
   - { date: 1995-02, text: "Mary gives Robert Power her key so he can copy it for her babysitter. [S2]", section: "westport" }
   - { date: 1995-05, text: "Trouble between Amy Power and her husband, Robert, grows worse. [S2]", section: "robert-power" }
-  - { date: 1995-07, text: "Amy Power loses a key ring with Mary's key on it. Mary tells the maintenance man. The landlords' brief says June. [S2, S8]", section: "the-missing-key" }
+  - { date: 1995-07, text: "Amy Power loses a key ring with Mary's key on it. Mary tells the maintenance man. The Supreme Court's opinion says July in one place and June in another. [S2, S8]", section: "the-missing-key" }
   - { date: 1995-07-09, text: "Eric Coon and Robert Poppen let themselves into Mary's apartment around 4 a.m. and kill her. [S3]", section: "4-am" }
   - { date: 1995-08-01, text: "Police gather suspects. Coon and Poppen confess. Michael Lee Smith says Power hired them. [S3]", section: "the-address-book" }
   - { date: 1995-12-15, text: "Poppen pleads guilty. [S3]", section: "a-major-miracle" }
@@ -93,7 +97,7 @@ The Supreme Court couldn't say how Power got the key they used. [S2]
 
 ## Westport
 
-Mary was 25. She was studying to be a paralegal. She had a baby girl, Kristian, who was 14 months old that summer. [S4, S7]
+Mary was 25. She was studying to be a paralegal. She had a baby girl, Kristian. [S4, S7]
 
 On March 26, 1994, she signed a lease at the Westport Apartments in Sioux Falls for herself and her daughter. [S2, S8] Westport was a low-income development. [S2] Her apartment was on the third floor, the Argus Leader reported. [S8]
 
@@ -108,8 +112,6 @@ The apartment came with a sheet of policies. One of them read:
 A lost key cost $45. That covered a new lock if one was needed. A tenant who couldn't pay right away could have it taken out of the security deposit. [S2]
 
 * * *
-
-That is about as much as the sources found for this story hold about Mary's daily life.
 
 Nothing in the sources found for this story says where she grew up, where she worked or what she liked to do.
 
@@ -153,15 +155,15 @@ The prosecutor, Dave Nelson, later described the deal differently. A pound of me
 
 Power gave Smith a key to Mary's apartment and a map of its floor plan. [S1]
 
-At his trial, Smith said he owned a key-making machine and had used it to copy the key to Mary's apartment. That testimony comes from the trial transcript as cited in a 2003 South Dakota Law Review note. [S8]
+Power told Smith it had to happen the weekend of July 9, when Power's wife would be out of the state. [S1]
 
-He said it had to happen the weekend of July 9, when his wife would be out of the state. [S1]
+At his trial, Smith said he owned a key-making machine and had used it to copy the key to Mary's apartment, according to the transcript as cited in a 2003 South Dakota Law Review note. [S8]
 
 ## The missing key
 
 Amy lost her key ring. Mary's apartment key was on it. [S2]
 
-The Supreme Court put the loss in July 1995. The landlords' brief, as quoted in a 2003 law review note, put it in June, in the parking lot, as Amy was leaving the complex with Robert. [S2, S8]
+The Supreme Court's opinion says July in one place and June in another. A 2003 law review note, citing the landlords' brief, says June. [S2, S8]
 
 Mary told the maintenance man, Watson Lewing. He told the manager, Jodi Bentz, that one of the keys to Mary's apartment was missing. [S2]
 
@@ -191,7 +193,7 @@ Her sworn account, as the court summed it up:
 >
 > "(3) Ross told her she needed money to pay for a lock change"
 >
-> "(4) she detected fear in Ross's voice, and Ross refused to discuss the Robert and Amy Power situation, telling her mother, 'I do not want to talk about him. He's psycho.'" [S2]
+> "(4) she detected fear in Ross's voice, and Ross refused to discuss the Robert and Amy Power situation, telling her mother, 'I do not want to talk about him,'" and that "he's psycho." [S2]
 
 * * *
 
@@ -199,7 +201,9 @@ The lock wasn't changed. [S2]
 
 ## The Hy-Vee
 
-Power gave Coon a map of the apartment and the parking lot, a key, the keys to his car and $50. [S3, S4]
+The courts say Power gave Smith the apartment key, and Smith passed it to the two men. [S1, S2]
+
+The two men were given a map of the apartment and the parking lot, the key, Power's car and $50, the court wrote. [S3] Jessica Armstrong reported in 1995 that it was Power who handed those things to Coon. [S4]
 
 The $50 was for supplies. [S3]
 
@@ -213,7 +217,7 @@ They believed killing her would make people afraid of them. It would give their 
 
 Poppen said it was all about "power and money." [S3]
 
-They thought Power would pay. He "seemed like a nice enough person," they said. [S3]
+They thought Power would pay. He "seemed like a nice enough person," the court wrote. [S3]
 
 ## 4 a.m.
 
@@ -229,6 +233,8 @@ Their knives broke. They went through her kitchen drawers for more. [S3]
 
 Mary got away to the kitchen and called 911. [S3, S4]
 
+The sources tell the timing differently. The court wrote that she reached the phone during the attack. The law review note says she called after the men left. [S3, S8]
+
 * * *
 
 Jessica Armstrong read the 911 transcript on KELOLAND in 1995:
@@ -241,6 +247,8 @@ Jessica Armstrong read the 911 transcript on KELOLAND in 1995:
 >
 > "All over."
 >
+> ...
+>
 > The last words the dispatcher could make out:
 >
 > "I have a baby." [S4]
@@ -251,7 +259,7 @@ The men left her on the living room couch. They thought she was dead. [S3]
 
 The court counted 16 stab and sharp-force wounds. [S3]
 
-Police found her baby unharmed in her crib, the Argus Leader reported. [S8] At a later court hearing, Poppen said they hadn't known she had a child. [S8]
+Police found her baby unharmed in her crib, the Argus Leader reported. [S8] A 1997 record from Poppen's case, as cited in the law review note, says the two men didn't know she had a child. [S8]
 
 ## The address book
 
@@ -261,13 +269,13 @@ From Mary's address book and from informants, they put together a list of suspec
 
 * * *
 
-On August 1, detectives began rounding people up. They hadn't planned to have everyone at the station at once, but that is how it went. They were put in separate rooms. Some rooms had tape running. Detectives went from room to room as the story came together. [S3]
+On August 1, detectives began rounding people up. They were put in separate rooms. Some rooms had tape running. Detectives went from room to room as the story came together. [S3]
 
 Coon and Poppen each waived their rights. Each confessed. [S3]
 
 * * *
 
-Smith came in that afternoon with his girlfriend, who was being questioned too. He walked past one of the men who had done the stabbing. [S1]
+Smith came in that afternoon with his girlfriend, who was being questioned too. [S1]
 
 His first interview ran from 1:15 to 2:40. He wasn't under arrest. On the tape he starts out confident. As he keeps talking, he gets nervous. At one point he cries. [S1]
 
@@ -283,7 +291,7 @@ Coon's and Poppen's lawyers moved to throw out the confessions. [S3]
 
 The case could carry the death penalty. "It was clearly a death case because it was murder for hire," Nelson said years later. [S4]
 
-The defense asked for a deal with a term of years. The State's Attorney wasn't interested. It would be life or death, they were told. [S3]
+The defense asked for a deal with a term of years. The State's Attorney wasn't interested. [S3]
 
 * * *
 
@@ -307,7 +315,7 @@ KELOLAND reported that Power pleaded guilty to first-degree murder and got life 
 
 * * *
 
-KELOLAND reported that Craft was charged with accessory to murder for throwing away Mary's clothing, and that he got less than three years. [S4] [VERIFY] The court records found for this story don't give his charge or his sentence. [S3]
+Craft's charge was accessory to murder, for getting rid of Mary's bloody clothing. KELOLAND reported it, and the law review note cites the Argus Leader saying the same. [S4, S8] KELOLAND reported that he got less than three years in prison. [S4] The court opinions found for this story don't give his sentence. [S3]
 
 ## The videotape
 
@@ -345,7 +353,7 @@ A circuit judge threw the case out. Landlords, the judge ruled, owed no duty to 
 
 On March 13, 2002, the Supreme Court sent it back, three votes to two. [S2]
 
-Justice Konenkamp wrote for the court. Somebody had to decide whether Mary asked for a new lock. Her mother said yes. The employees said no. At that stage, the court had to assume she had asked. [S2]
+Justice Konenkamp wrote for the court. Somebody had to decide whether Mary asked for a new lock. Her mother said Mary told her she had asked. The employees said no. At that stage, the court had to assume she had asked. [S2]
 
 > **JUSTICE KONENKAMP**, Smith v. Lagow, 2002:
 >
@@ -399,8 +407,6 @@ Terry Van Zanten ran the prison metal shop. "The Eric that started for us is not
 
 Minnehaha County State's Attorney Daniel Haggar spoke against it. He cited 90 violations in prison, from theft to assault to escape. [S6]
 
-"They didn't want to be here," Haggar said of the family. [S6]
-
 * * *
 
 Mary's sister held up her photo. [S6]
@@ -429,8 +435,6 @@ The committee was hearing a bill that would make inmates serving life for violen
 
 "This idea that life means life was a small comfort after all the trauma we had suffered to that point," Brindle said. [S7]
 
-About the 2022 hearing: "To say I was retraumatized would be a gross understatement." [S7]
-
 * * *
 
 Kristian said she would come to clemency hearings for all four men if she had to. Four times a year, if it came to that. [S7]
@@ -441,22 +445,24 @@ The committee changed the bill to let the parole board choose a wait of one to f
 
 ## Where it stands
 
-Robert Power, Eric Coon and Robert Poppen pleaded guilty and were sentenced to life. [S2, S3, S5] Michael Lee Smith was convicted at trial and sentenced to life without parole on the conspiracy count. [S1] Walter Craft Jr. pleaded guilty to charges involving her murder. [S3] By January 2024, the governor had granted clemency to two people serving life without parole. Neither was from this case. [S7]
+Robert Power, Eric Coon and Robert Poppen pleaded guilty and were sentenced to life. [S2, S3, S5] Michael Lee Smith was convicted at trial and sentenced to life without parole on the conspiracy count. [S1] Walter Craft Jr. pleaded guilty to accessory to murder. [S3, S4, S8] By January 2024, the governor had granted clemency to two people serving life without parole. Neither was from this case. [S7]
 
 What's documented: Mary told Westport staff a key was missing before she was killed. [S2] Coon and Poppen used a key to get in. [S3]
 
-Where the sources disagree: what Power offered, a pound of methamphetamine or two, and $10,000 for Smith or for each killer. [S1, S3, S4] How Smith's sentence reads. [S1, S5] How Amy Power's first name is spelled. [S2, S4] Whether Amy lost her keys in June or July. [S2, S8] How old Kristian was: 13 months in March 1994 (S8), or 14 months in July 1995. [S4, S7]
+Where the sources disagree: what Power offered, a pound of methamphetamine or two, and $10,000 for Smith or for each killer. [S1, S3, S4] How Smith's sentence reads. [S1, S5] How Amy Power's first name is spelled. [S2, S4] Whether Amy lost her keys in June or July. The Supreme Court's opinion gives both. [S2, S8] How old Kristian was. The law review note says 13 months in March 1994. KELOLAND and SD Searchlight say 14 months in July 1995. KELOLAND calling her 29 in August 2022 fits the note better. [S4, S6, S7, S8]
 
-What's sworn but never decided in public: whether Mary asked for a new lock. Her mother said Mary told her she did. The landlord's employees said she didn't. [S2]
+What's sworn, and not decided in any source found for this story: whether Mary asked for a new lock. Her mother said Mary told her she did. The landlord's employees said she didn't. [S2]
 
-What no one has answered: which key Smith copied, the one Mary lent Power in February or one from Amy's lost key ring. The Supreme Court said it was unclear. [S2, S8]
+What the sources found don't answer: how Power got the key. The Supreme Court said it was unclear. [S2] Smith testified that he copied a key, the law review note says, but not which one. [S8]
 
 * * *
 
-Kristian Ross was 14 months old when she lost her mother. [S7]
+Kristian Ross was a baby when she lost her mother. [S4, S7]
 
-She has children now. Her mother never had a chance to know them, the family wrote. [S4]
+Mary never had a chance to know her grandchildren, the family wrote. [S4]
 
 On the 911 tape, the last words the dispatcher could make out were about her. [S4]
 
-If the lock had been changed that July, would it have mattered? The court's majority wrote that perhaps she would not have died. The dissent said the landlord had no way to see the danger. What do you think?
+If her lock had been changed, the court's majority wrote, perhaps she would not have died. [S2] The dissent said the landlord had no way to see the danger. [S2]
+
+Would a new lock that summer have mattered? What do you think?
