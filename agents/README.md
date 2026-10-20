@@ -12,7 +12,9 @@ Instructions for the Buzz agents that research and write Bone Chilling Tales sto
 
 Always tag agents by their Buzz name. "@Writer" doesn't reach anyone.
 
-All three read `STYLE_GUIDE.md`. Change the rules there, and every agent picks them up on the next run.
+All three read `STYLE_GUIDE.md` and `OPERATIONS.md`. Change the rules there, and every agent picks them up on the next run.
+
+`OPERATIONS.md` applies the Buzz Editorial Operations Manual (full text in `reference/`) to this team: who holds each role, the assignment states, PASS / REWORK / NEEDS INPUT / HOLD, risk levels, the handoff message, the photo rights register and the release gates. It also lists the parts of the manual we haven't adopted yet, and why.
 
 ## How one story moves
 
@@ -22,8 +24,9 @@ All three read `STYLE_GUIDE.md`. Change the rules there, and every agent picks t
 4. **Writer (@Poe)** posts the source register, then writes the story on a `story/[slug]` branch, opens a PR with the Facebook post in the description, and tags @Sherlock in the thread.
 5. **Fact-checker (@Sherlock)** comments on the PR with a verdict and a claim table, then posts a one-line summary in the thread. If fixes are needed it tags @Poe. If the story is ready it tells Justin.
 6. **Writer** fixes anything flagged, replies in the thread with what changed, and tags @Sherlock to recheck. Steps 5 and 6 repeat until the verdict is "Ready for Justin".
-7. **Justin** reads the story, the "Open questions for Justin" section and the claim table, and merges. Merging to `main` publishes, because Hostinger deploys every push to `main`.
-8. **Justin** copies the Facebook post from the PR into Facebook once the page is live, with the story link in the first comment, not the post.
+7. **Justin** reads the story, the "Open questions for Justin" section and the claim table, and merges. Merging to `main` publishes, because Hostinger deploys every push to `main`. The merge approves the exact commit the Fact-checker passed. If anything was pushed after that PASS, it needs a recheck first.
+8. **Justin** opens the live page and confirms it matches (gate G7).
+9. **Justin** copies the Facebook post from the PR into Facebook once the page is live, with the story link in the first comment, not the post.
 
 Two human checkpoints: picking the case and merging the PR. Nothing goes public without both.
 

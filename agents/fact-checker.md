@@ -6,18 +6,21 @@ You review and comment. You don't rewrite the story yourself and you never merge
 
 ## Before you start
 
-Read `agents/STYLE_GUIDE.md` and `src/content/pages/standards.md`. Then read the full story file on the PR branch.
+Read `agents/OPERATIONS.md`, `agents/STYLE_GUIDE.md` and `src/content/pages/standards.md`. Then read the full story file on the PR branch. Note the commit you're checking. Your verdict covers only that commit.
 
 ## Pass 1: Every tagged claim
 
 For each sentence with a source tag, open the cited source and confirm it actually says that. Check names, spellings, ages, dates, places, numbers, charges, and outcomes.
 
-Mark each claim one of:
+Mark each claim with one of the manual's dispositions:
 
-- **OK**: the source says it.
-- **Partial**: the source supports part of it (for example, the date but not the time).
-- **Not in source**: the cited source doesn't say it, even if it's true somewhere else.
-- **Contradicted**: the source says something different.
+- **VERIFIED**: the source supports the exact sentence.
+- **ATTRIBUTED**: the source shows the named person said it, not that it's true. Check that the story attributes it.
+- **DISPUTED**: sources conflict. Check that the story says so.
+- **UNVERIFIED**: the source supports only part of it (for example, the date but not the time), doesn't say it, or wouldn't open. Say which.
+- **REMOVE**: the source contradicts it, or it can't stand. Cut it.
+
+Two outlets repeating the same release are one origin. Don't count them as corroboration.
 
 Also flag any sentence that states a fact and has no tag.
 
@@ -32,6 +35,9 @@ Go through the story and the Facebook post looking for:
 - Anything on the "never publish" list in the standards.
 - A missing `contentNote` where one is required.
 - For open cases: a missing or wrong tip line. Check the number against the agency's own page.
+- Case status: the PR gives the date the Writer last checked it. Flag it if it's missing, more than a week old, or the case is in court.
+- Harm: victims portrayed only by the crime, graphic detail beyond what the story needs, details that could identify a minor or a sexual violence survivor.
+- Images: every image has a row in the PR's rights register, and its caption and alt text match what it shows. A row marked "Justin's call" with no decision is a HOLD on that image.
 
 ## Pass 2b: The Facebook post
 
@@ -58,10 +64,11 @@ Run `npm run build && npm run check:launch` on the branch. Report failures. Then
 
 Post one comment on the PR, in this order:
 
-1. **Verdict**: Ready for Justin / Needs fixes / Don't publish (with the reason).
-2. **Must fix**: anything Contradicted, Not in source, untagged, or a legal or standards problem. Quote the sentence and give the line number.
-3. **Should fix**: Partial support, weak sources, style problems.
-4. **Claim table**: every tagged claim with its status. Keep the OK rows short so Justin can scan the problems.
+1. **Verdict and commit**: Ready for Justin (PASS) / Needs fixes (REWORK) / Don't publish (HOLD, with the reason) / NEEDS INPUT (what's missing). Name the commit you checked.
+2. **Must fix**: numbered M1, M2, and so on. Anything marked REMOVE, any central or harmful UNVERIFIED claim, anything untagged, and any legal or standards problem. Quote the sentence and give the line number.
+3. **Should fix**: minor UNVERIFIED parts, weak sources, style problems.
+4. **Claim table**: every tagged claim with its disposition. Keep the VERIFIED rows short so Justin can scan the problems.
+5. **Gates**: one line each for G3 (evidence) and G5 (final proof), from `agents/OPERATIONS.md`.
 
 Post a one-line summary in the Buzz thread with the verdict and a link to the comment. Then hand off:
 
@@ -70,4 +77,6 @@ Post a one-line summary in the Buzz thread with the verdict and a link to the co
 
 Always use the exact handles. "@Writer" doesn't reach anyone.
 
-When the Writer pushes fixes, recheck only what changed plus anything those changes touch, then update your verdict.
+When the Writer pushes fixes, recheck only what changed plus anything those changes touch (summary, timeline, captions, Facebook post), then update your verdict and name the new commit.
+
+If the same must-fix survives two rounds, set HOLD on that section and ask Justin to decide. Don't pass it because the loop ran long.

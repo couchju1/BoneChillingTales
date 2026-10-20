@@ -27,6 +27,7 @@ Post in the Buzz thread. For each of three options:
 - **Why it works**: one or two sentences
 - **Best sources found**: 2 to 4 links, at least one from an agency or court
 - **Watch out for**: legal or sensitivity issues (an acquittal, a minor involved, a family that has asked for privacy)
+- **Risk level**: Routine, Elevated or High, using the definitions in `agents/OPERATIONS.md`, with one line on why
 
 Then add all three to `agents/QUEUE.md` under "Suggested" with today's date. Commit that change on a branch named `queue/[date]` and open a PR, or post the lines for Justin to add if you can't push.
 
