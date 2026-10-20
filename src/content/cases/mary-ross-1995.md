@@ -57,7 +57,11 @@ agency: "the Minnehaha County State's Attorney's Office"
 tipLine: null
 anonymousTips: null
 contentNote: "a violent stabbing in a murder-for-hire plot"
-image: null
+image:
+  src: "./mary-ross-1995.jpg"
+  alt: "Mary K. Ross smiling, with curly hair, in a striped sweater with a collar"
+  credit: "Ross family photo"
+  license: "Family photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -99,6 +103,8 @@ The Supreme Court couldn't say how Power got the key they used. [S2]
 
 Mary was 25. She was studying to be a paralegal. She had a baby girl, Kristian. [S4, S7]
 
+![Mary K. Ross smiling in a plaid coat, holding a laughing baby](./mary-ross-1995-with-baby.jpg "Mary K. Ross holding a baby, in a family photo.")
+
 On March 26, 1994, she signed a lease at the Westport Apartments in Sioux Falls for herself and her daughter. [S2, S8] Westport was a low-income development. [S2] Her apartment was on the third floor, the Argus Leader reported. [S8]
 
 * * *
@@ -117,6 +123,8 @@ Nothing in the sources found for this story says where she grew up, where she wo
 
 "Mary K. was the fabric that held our family together," her brother, Shand Ross, told the parole board in 2022. [S6]
 
+![Mary K. Ross laughing in a graduation gown, with a corsage pinned to it](./mary-ross-1995-graduation.jpg "Mary K. Ross in a graduation gown, in a family photo.")
+
 ## Robert Power
 
 Mary had a close friend named Amy Power. KELOLAND called her Mary's best friend. [S2, S4]
@@ -133,6 +141,8 @@ In May 1995, the trouble between Amy and her husband, Robert Power, got worse. [
 
 The courts recorded what Power believed. He believed Mary was interfering with his marriage. He was upset that she had smoked marijuana in front of his child. [S3]
 
+![Robert Power, with long hair and an orange jail uniform, looking down, under an on-screen caption with his name](./mary-ross-1995-power-news.jpg "Robert Power in TV news footage of the case.")
+
 "Power wanted Ross killed because she was interfering in his marriage," KELOLAND crime reporter Jessica Armstrong said in 1995. [S4]
 
 * * *
@@ -144,6 +154,8 @@ According to the Supreme Court, he offered Smith $10,000 or two pounds of metham
 Smith introduced Power to two of the others. He was to handle the payment and keep $1,500 to $2,000 for himself. [S1]
 
 The two men were Smith's roommates, Eric Coon and Robert Poppen. [S4] Smith was 21. [S1] The five men in the case ranged in age from 18 to 22. [S4]
+
+![Michael Lee Smith as a young man with a mustache, in a striped shirt](./mary-ross-1995-smith-news.jpg "Michael Lee Smith in TV news footage of the case.")
 
 * * *
 
@@ -307,7 +319,11 @@ Poppen's lawyer said the case "had the death penalty written all over it." [S3]
 
 Poppen pleaded guilty on December 15, 1995. He told the judge one reason was that he was afraid of the death penalty. [S3]
 
+![Robert Poppen with a shaved head and an orange jail uniform, looking down](./mary-ross-1995-poppen-news.jpg "Robert Poppen in TV news footage of the case.")
+
 On December 18, Coon pleaded guilty. So did Robert Power. So did a fifth man, Walter Craft Jr. [S3]
+
+![Eric Coon with long dark hair, in an orange jail uniform](./mary-ross-1995-coon-news.jpg "Eric Coon in TV news footage of the case.")
 
 Coon and Poppen were sentenced to life. The conspiracy charges against them were dropped, and they would not face death. As part of the deals, they agreed to testify against the others. [S3]
 
@@ -343,6 +359,8 @@ He got ten years for the accessory count and life without parole for the conspir
 
 He appealed, saying his confession wasn't voluntary. On January 14, 1998, the South Dakota Supreme Court turned him down. [S1]
 
+![Michael Lee Smith, older, with a white beard and glasses, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-smith-doc.jpg "Michael Lee Smith in a South Dakota Department of Corrections photo.")
+
 ## A locked door
 
 Sherry Smith sued Westport's owner and its management company, for Mary's estate and for Kristian. [S2]
@@ -377,6 +395,8 @@ In South Dakota, life means no parole. But a lifer can ask for clemency, which o
 
 All four men asked. [S5] Poppen was turned down by a two-person panel five times. [S6] Coon was turned down for a hearing in 2019. [S7]
 
+![Robert Poppen, older and bald with a gray goatee, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-poppen-doc.jpg "Robert Poppen in a South Dakota Department of Corrections photo.")
+
 In 2022, Coon got a hearing in front of the full Board of Pardons and Paroles. [S6, S7]
 
 * * *
@@ -387,6 +407,8 @@ Mary's family put out a statement:
 >
 > "If we could bring back our amazing and much-loved Mary K., our world would be filled with the joy and laughter she brought to all our lives. We miss her more than anyone can imagine. She has been absent a lifetime with her precious daughter and never had a chance to know her grandchildren." [S4]
 
+![Mary K. Ross with long feathered hair and red lipstick, smiling slightly](./mary-ross-1995-portrait.jpg "Mary K. Ross in a family photo.")
+
 They organized a letter-writing campaign against any shorter sentence. [S4]
 
 * * *
@@ -394,6 +416,8 @@ They organized a letter-writing campaign against any shorter sentence. [S4]
 The hearing was on Wednesday, August 10, 2022, at the state penitentiary in Sioux Falls. Family members came from around the country. [S4, S5, S6]
 
 Coon was 46. [S6]
+
+![Eric Coon, older, with a shaved head and a goatee, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-coon-doc.jpg "Eric Coon in a South Dakota Department of Corrections photo.")
 
 > **ERIC COON**, before the Board of Pardons and Paroles, August 10, 2022:
 >
@@ -446,6 +470,8 @@ The committee changed the bill to let the parole board choose a wait of one to f
 ## Where it stands
 
 Robert Power, Eric Coon and Robert Poppen pleaded guilty and were sentenced to life. [S2, S3, S5] Michael Lee Smith was convicted at trial and sentenced to life without parole on the conspiracy count. [S1] Walter Craft Jr. pleaded guilty to accessory to murder. [S3, S4, S8] By January 2024, the governor had granted clemency to two people serving life without parole. Neither was from this case. [S7]
+
+![Robert Power, older, with short hair and a beard, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-power-doc.jpg "Robert Power in a South Dakota Department of Corrections photo.")
 
 What's documented: Mary told Westport staff a key was missing before she was killed. [S2] Coon and Poppen used a key to get in. [S3]
 
