@@ -74,7 +74,7 @@ sources:
   - { id: S6, title: "Mary K. Ross' daughter confronts her mother's killer", publisher: "KELOLAND News", url: "https://www.keloland.com/news/investigates/mary-k-ross-daughter-confronts-her-mothers-killer/", date: 2022-08-10, archive: "https://web.archive.org/web/20220813002659/https://www.keloland.com/news/investigates/mary-k-ross-daughter-confronts-her-mothers-killer/" }
   - { id: S7, title: "Panel backs longer waits between clemency requests for prisoners sentenced to life", publisher: "South Dakota Searchlight", url: "https://southdakotasearchlight.com/2024/01/23/panel-backs-longer-waits-between-clemency-requests-for-prisoners-sentenced-to-life/", date: 2024-01-23, archive: "https://web.archive.org/web/20240124065408/https://southdakotasearchlight.com/2024/01/23/panel-backs-longer-waits-between-clemency-requests-for-prisoners-sentenced-to-life/" }
   - { id: S8, title: "South Dakota Supreme Court Opens the Door to Landlord Liability for Criminal Attacks Committed by Third Parties on the Premises: Smith v. Lagow Construction & Developing Company (48 S.D. L. Rev. 365)", publisher: "South Dakota Law Review (Shannon E. Kelly), via USD RED", url: "https://red.library.usd.edu/sdlrev/vol48/iss2/11", date: 2003-01-01 }
-  - { id: S9, title: "Senate votes to return clemency bill for lifers to earlier, more stringent form", publisher: "South Dakota Searchlight", url: "https://southdakotasearchlight.com/2024/01/25/senate-votes-to-return-clemency-bill-for-lifers-to-earlier-more-stringent-form/", date: 2024-01-25, archive: "https://web.archive.org/web/2024/https://southdakotasearchlight.com/2024/01/25/senate-votes-to-return-clemency-bill-for-lifers-to-earlier-more-stringent-form/" }
+  - { id: S9, title: "Senate votes to return clemency bill for lifers to earlier, more stringent form", publisher: "South Dakota Searchlight", url: "https://southdakotasearchlight.com/2024/01/25/senate-votes-to-return-clemency-bill-for-lifers-to-earlier-more-stringent-form/", date: 2024-01-25, archive: "https://web.archive.org/web/20241231222259/https://southdakotasearchlight.com/2024/01/25/senate-votes-to-return-clemency-bill-for-lifers-to-earlier-more-stringent-form/" }
   - { id: S10, title: "Clemency request provides window into new law requiring longer wait times", publisher: "South Dakota Searchlight", url: "https://southdakotasearchlight.com/2024/03/17/serial-bank-robber-who-learned-yoga-took-courses-in-prison-offered-future-chance-for-freedom/", date: 2024-03-17, archive: "https://web.archive.org/web/20241230223645/https://southdakotasearchlight.com/2024/03/17/serial-bank-robber-who-learned-yoga-took-courses-in-prison-offered-future-chance-for-freedom/" }
   - { id: S11, title: "Post about Mary K. Ross's schooling", publisher: "Justice For Mary K Ross (the Ross family's Facebook page)", url: "https://www.facebook.com/JusticeForMaryKRoss", date: 2022-07-21 }
 timeline:
@@ -139,7 +139,7 @@ In May 1995, the trouble between Amy and her husband, Robert Power, got worse. [
 
 Power believed Mary was interfering with his marriage, the courts recorded. He was also upset that she had smoked marijuana in front of his child. [S3]
 
-![Robert Power, with long hair and an orange jail uniform, looking down, under an on-screen caption with his name](./mary-ross-1995-power-news.jpg "Robert Power in TV news footage of the case.")
+![Robert Power, with long hair and an orange jail uniform, looking down, under an on-screen caption with his name](./mary-ross-1995-power-news.jpg "Robert Power in TV footage of the case.")
 
 "Power wanted Ross killed because she was interfering in his marriage," KELOLAND crime reporter Jessica Armstrong said in 1995. [S4]
 
@@ -151,15 +151,17 @@ Robert Power wanted her dead. [S1, S3]
 
 Michael Lee Smith, 21, was the go-between. Power offered him money or methamphetamine to kill Mary. Smith said no. But he agreed to find someone who would, and to handle the payment. [S1]
 
-![Michael Lee Smith as a young man with a mustache, in a striped shirt](./mary-ross-1995-smith-news.jpg "Michael Lee Smith in TV news footage of the case.")
+![Michael Lee Smith as a young man with a mustache, in a striped shirt](./mary-ross-1995-smith-news.jpg "Michael Lee Smith in TV footage of the case.")
 
 Smith's roommates, Eric Coon and Robert Poppen, were the ones who went into her apartment. [S1, S3, S4]
+
+![Robert Poppen with a shaved head and an orange jail uniform, looking down](./mary-ross-1995-poppen-news.jpg "Robert Poppen in TV footage of the case.")
 
 Walter Craft Jr. got rid of Mary's bloody clothing afterward. [S4, S8]
 
 * * *
 
-Power promised money and drugs.
+Power promised money and drugs. [S1, S4]
 
 "And he didn't have either one," the prosecutor, Dave Nelson, said years later. [S4]
 
@@ -177,7 +179,7 @@ Mary told the maintenance man, Watson Lewing. He told the manager, Jodi Bentz, t
 
 What happened next was later disputed under oath. [S2]
 
-Bentz said Lewing told her Mary didn't want the lock changed, because she thought the keys would "turn up." The next day, Bentz said, she asked Mary herself, and Mary said no. Another employee, Monica Price, told it the same way. Lewing said he didn't remember whether Mary asked. [S2]
+Bentz said Lewing told her Mary didn't want the lock changed, because she thought the keys would "turn up." The next day, Bentz said, she asked Mary herself, and Mary said no. Another employee, Monica Price, told it the same way. The court said all three employees testified consistently that Mary decided not to ask for a new lock, though Lewing said he didn't remember whether she asked. [S2]
 
 Mary's mother, Sherry Smith, told it differently. She said she talked to her daughter often. [S2] (She shares a last name with Michael Lee Smith. No source connects them. [S1, S2])
 
@@ -241,7 +243,7 @@ Investigators were at the apartment within about an hour. From Mary's address bo
 
 On August 1, detectives brought them in and questioned them in separate rooms. Coon and Poppen each confessed. [S3]
 
-Smith insisted at first that Power never told him who he wanted dead. [S1] By evening, he said Power had hired Coon and Poppen. [S3]
+Smith insisted that Power never told him who he wanted dead. [S1] By evening, he said Power had hired Coon and Poppen. [S3]
 
 ## A major miracle
 
@@ -251,11 +253,9 @@ One of Coon's lawyers wrote to the other that "a major miracle would be necessar
 
 Poppen pleaded guilty on December 15, 1995. He told the judge one reason was that he was afraid of the death penalty. [S3]
 
-![Robert Poppen with a shaved head and an orange jail uniform, looking down](./mary-ross-1995-poppen-news.jpg "Robert Poppen in TV news footage of the case.")
-
 On December 18, Coon pleaded guilty. So did Power. So did Craft. [S3]
 
-![Eric Coon with long dark hair, in an orange jail uniform](./mary-ross-1995-coon-news.jpg "Eric Coon in TV news footage of the case.")
+![Eric Coon with long dark hair, in an orange jail uniform](./mary-ross-1995-coon-news.jpg "Eric Coon in TV footage of the case.")
 
 Coon and Poppen were sentenced to life. As part of their deals, they agreed to testify against the others. [S3] Power pleaded guilty to first-degree murder and got life without parole. [S2, S5]
 
@@ -273,7 +273,7 @@ It convicted him of accessory to murder and conspiracy to commit murder. He got 
 
 He appealed, saying his confession wasn't voluntary. On January 14, 1998, the South Dakota Supreme Court turned him down. [S1]
 
-![Michael Lee Smith, older, with a white beard and glasses, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-smith-doc.jpg "Michael Lee Smith in a South Dakota Department of Corrections photo.")
+![Michael Lee Smith, older, with a white beard and glasses, above a South Dakota Department of Corrections booking board](./mary-ross-1995-smith-doc.jpg "Michael Lee Smith in a South Dakota Department of Corrections photo.")
 
 ## A locked door
 
@@ -353,7 +353,7 @@ Then Mary's daughter spoke. Kristian was 29. [S6, S7]
 
 The board voted unanimously against recommending a shorter sentence. [S6]
 
-Did the apology mean anything? "Not really," Shand Ross told KELOLAND afterward. [S6]
+Did the apology mean anything? "Not really," Shand Ross told KELOLAND. [S6]
 
 "I hope this is a one-time deal, but if we do have to do it, I will be up here every single year." [S6]
 
@@ -379,9 +379,9 @@ Gov. Kristi Noem signed Senate Bill 9 on March 4, 2024. It took effect July 1, 2
 
 ## Where it stands
 
-Robert Power, Eric Coon and Robert Poppen pleaded guilty and were sentenced to life. [S2, S3, S5] Michael Lee Smith was convicted at trial and sentenced to life without parole on the conspiracy count. [S1] Walter Craft Jr. pleaded guilty to accessory to murder. [S3, S4, S8] By January 2024, the governor had granted clemency to two people serving life without parole. Neither was from this case. [S7] Since July 1, 2024, someone serving life for a violent crime has had to wait four years between clemency requests. [S10]
+Robert Power, Eric Coon and Robert Poppen pleaded guilty and were sentenced to life. [S2, S3, S5] Michael Lee Smith was convicted at trial and sentenced to life without parole on the conspiracy count. [S1] Walter Craft Jr. pleaded guilty to accessory to murder. [S3, S4, S8] By January 2024, the governor had granted clemency to two people serving life without parole. Neither was from this case. [S7] Senate Bill 9 took effect July 1, 2024. It makes someone serving life for a violent crime wait four years after a denial before asking again. [S10]
 
-![Robert Power, older, with short hair and a beard, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-power-doc.jpg "Robert Power in a South Dakota Department of Corrections photo.")
+![Robert Power, older, with short hair and a beard, above a South Dakota Department of Corrections booking board](./mary-ross-1995-power-doc.jpg "Robert Power in a South Dakota Department of Corrections photo.")
 
 What's documented: Mary told Westport staff a key was missing before she was killed. [S2] Coon and Poppen used a key to get in. [S3]
 
@@ -405,6 +405,6 @@ Mary K. Ross was 25. She was studying to be a paralegal. She was raising a daugh
 
 She never had a chance to know her grandchildren, her family wrote. [S4]
 
-Her family came to Coon's hearing, and then to the Senate committee. They have said they will keep coming. [S6, S7]
+Her family came to Coon's hearing, and then to the Senate committee. They have said they will keep coming if they have to. [S6, S7]
 
 What should a life sentence mean to the family left behind?
