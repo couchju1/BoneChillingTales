@@ -9,6 +9,8 @@
 #   that night (being in the area, a call she didn't answer) is left out on purpose. It rests only on his
 #   word and would line him up beside the disappearance.
 # - Floyd Tapson was considered and cleared by an alibi (S3, S6, S7). He stays cleared.
+#   Never call him a killer. His 1999 Montana sentence was for attempted murder (S13). His links to
+#   missing women were suspicions. Corrected October 21, 2026, after the published text said "convicted killer."
 # - Chief Plautz's line that previously cleared people aren't ruled out (S3) stays attributed to her.
 # - Left out on purpose: town rumors and the psychic (S6, S7), Waldahl's "suspicions about who started
 #   the fire" (S6), the boyfriend's name (no source gives it), and NamUs's clinical physical descriptors.
@@ -44,7 +46,7 @@ incidentDate: 1987-11-13
 lastSeenDate: 1987-11-13
 resolvedDate: null
 lastChecked: 2026-10-20
-lastFactChange: null
+lastFactChange: 2026-10-21
 published: 2026-10-21
 agency: "the Wadena Police Department"
 tipLine: "+12186317700"
@@ -70,6 +72,7 @@ sources:
   - { id: S10, title: "$25K reward offered in cold case from 1987 of missing Wadena woman", publisher: "KSTP", url: "https://kstp.com/kstp-news/top-news/25k-reward-offered-in-cold-case-from-1987-of-missing-wadena-woman-anderson/", date: 2026-06-15, archive: "https://web.archive.org/web/20261021023736/https://kstp.com/kstp-news/top-news/25k-reward-offered-in-cold-case-from-1987-of-missing-wadena-woman-anderson/" }
   - { id: S11, title: "Wadena woman still missing after 28 years", publisher: "Grand Forks Herald", url: "https://www.grandforksherald.com/newsmd/wadena-woman-still-missing-after-28-years", date: 2015-11-17, archive: "https://web.archive.org/web/20261021023755/https://www.grandforksherald.com/newsmd/wadena-woman-still-missing-after-28-years" }
   - { id: S12, title: "Carla Beth Anderson went missing in 1987. Police believe a $25,000 reward will lead them to the smoking gun", publisher: "Duluth News Tribune (Trisha Taurinskas)", url: "https://www.duluthnewstribune.com/news/the-vault/carla-beth-anderson-went-missing-in-1987-police-believe-a-25-000-reward-will-lead-them-to-the-smoking-gun", date: 2026-06-25, archive: "https://web.archive.org/web/20260729122059/https://www.duluthnewstribune.com/news/the-vault/carla-beth-anderson-went-missing-in-1987-police-believe-a-25-000-reward-will-lead-them-to-the-smoking-gun" }
+  - { id: S13, title: "Serial killer or victim of police smear?", publisher: "MPR News (Dan Gunderson)", url: "https://archive.mpr.org/stories/1999/08/10/serial-killer-or-victim-of-police-smear", date: 1999-08-10, archive: "https://web.archive.org/web/20261021162049/https://archive.mpr.org/stories/1999/08/10/serial-killer-or-victim-of-police-smear" }
 timeline:
   - { date: 1987-11-13, text: "Carla is named employee of the month at Hardee's. Her mother and stepfather take her to dinner and rent movies, then drop her at the Greenwood Apartments around 8 p.m. [S1, S6, S7]", section: "friday-the-13th" }
   - { date: 1987-11-14, text: "She misses her shift at Hardee's and doesn't answer phone calls. [S1, S7]", section: "the-shift" }
@@ -80,6 +83,7 @@ timeline:
   - { date: 2026-06-15, text: "Spotlight on Crime offers a reward of up to $25,000. [S1]", section: "where-it-stands" }
 updates:
   - { date: 2026-10-21, text: "Story published." }
+  - { date: 2026-10-21, type: correction, text: "An earlier version of this story called Floyd Tapson a convicted killer. He was sentenced in 1999 for attempted murder in Montana. [S13] The story has been corrected." }
 ---
 
 On Friday, November 13, 1987, Carla Beth Anderson found out she had been named employee of the month. [S6, S7]
@@ -238,7 +242,9 @@ Carla's boyfriend and members of her family were ruled out after they passed pol
 
 In the 1990s, police interviewed a man Carla's mother had reported for harassing her. He and a friend both passed polygraph tests, CNN reported, citing a 1995 Pioneer Journal story. [S3]
 
-Floyd Tapson, a convicted killer, was looked at for a time because he targeted women with mental disabilities, according to a 1999 Star Tribune report cited by CNN. He had an alibi that cleared him. [S3, S6, S7]
+Floyd Tapson was looked at for a time because he targeted women with mental disabilities, according to a 1999 Star Tribune report cited by CNN. [S3, S6, S7] That year, a Montana court sentenced him to life in prison for the attempted murder of a developmentally disabled woman, MPR News reported. [S13]
+
+He had an alibi that cleared him. [S3, S6, S7]
 
 Plautz told CNN that police aren't ruling out anyone who was cleared in the past. Investigators are using new tools, like DNA analysis, on old and new leads, she said. [S3]
 
