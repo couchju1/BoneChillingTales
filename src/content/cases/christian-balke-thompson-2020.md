@@ -14,8 +14,11 @@
 # (S12). Trial set November 17. One line only. Never give the complainant's age, sex, town or anything
 # else that could identify them. No source connects that case to Christian's.
 # Left out on purpose: Wolfe's date of birth and street address (both in S1), the farm's street number,
-# his booking photo (Justin's call), the names of Christian's sons (minors), and any detail of the
-# alleged killing beyond the one sentence in S1.
+# the names of Christian's sons (minors), and any detail of the alleged killing beyond the one sentence in S1.
+# Photos: all from Justin, October 21, 2026: Christian (a close crop and a photo with two young children),
+# a 1997 Toyota Corolla, and Wolfe's booking photo (dated January 22, 2026 on the image). The children's
+# faces are blurred and they are not identified. The Corolla is similar to Christian's, not his car, and
+# the caption says so. The booking caption is neutral and repeats the not-guilty plea.
 # Conflicts in the text: date reported missing (May 2 in S2 and S11, May 3 in S4, S5 and S6, formally
 # entered May 5 in S1). Last contact (6:45 a.m. phone ping May 2, but the family's report to police
 # describes silence since about 2 a.m. May 3, both S1). Hometown (Rockwell City S4, S5, Farnhamville S6,
@@ -44,7 +47,11 @@ agency: "the Iowa Attorney General's Cold Case Unit"
 tipLine: "+18002425100"
 anonymousTips: null
 contentNote: "an alleged shooting and the burning of a body, and separate sexual abuse charges involving a minor"
-image: null
+image:
+  src: "./christian-balke-thompson-2020.jpg"
+  alt: "Christian Balke-Thompson smiling, in dark-framed glasses, with a mustache"
+  credit: "Christian Balke-Thompson in an undated photo"
+  license: "Photo supplied to Bone Chilling Tales"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -89,11 +96,17 @@ Christian Daniel Balke-Thompson was 26, and people called him "B-T." [S1, S4] He
 
 He had two young sons. [S4] He liked to skateboard and spend time with them. [S6] His mother, talking to The Messenger in 2021, remembered him as funny, helpful, generous and stubborn. [S6] "He'd give you his pair of shoes and walk off," she said. She also called him "such a mama's boy." [S6]
 
+![Christian Balke-Thompson in glasses and a black cap, smiling, with two young children on his lap. The children's faces are blurred.](./christian-balke-thompson-2020-family.jpg "Christian Balke-Thompson in an undated photo. The children's faces are blurred.")
+
 Where he lived depends on which report you read. In 2020, both local papers called him a Rockwell City man. [S4, S5] A year later, The Messenger said he was from Farnhamville. [S6] The Attorney General's office later said Carroll. [S3]
 
 ## The green Corolla
 
-Around April 28, Christian bought a green 1997 Toyota Corolla from a private seller. According to the charging documents, it was his only way to get around. [S1] Those documents, a complaint and affidavit filed in January 2026, lay out the investigators' account of the days that followed, and most of what comes next is drawn from them. [S1]
+Around April 28, Christian bought a green 1997 Toyota Corolla from a private seller. According to the charging documents, it was his only way to get around. [S1]
+
+![A dark green 1997 Toyota Corolla sedan parked in a lot](./christian-balke-thompson-2020-corolla.jpg "A 1997 Toyota Corolla similar to Christian's. It is not his car.")
+
+Those documents, a complaint and affidavit filed in January 2026, lay out the investigators' account of the days that followed, and most of what comes next is drawn from them. [S1]
 
 On the evening of Friday, May 1, Christian and a female friend drove the Corolla to a get-together at a house in Rockwell City. They stayed a while, then left in his car. [S1] Around 3 a.m. on Saturday, May 2, they stopped at a convenience store in Lake City. Then they drove to another one on the west side of Fort Dodge, where they stayed until about 5:30 a.m. [S1]
 
@@ -151,7 +164,11 @@ She also told investigators she stayed on Wolfe's farm for an extended time afte
 
 In July 2024, Iowa Attorney General Brenna Bird launched a statewide Cold Case Unit. Her office said the unit gave the case "a focused team to meet with witnesses and pursue leads." [S3]
 
-On January 22, 2026, Albert John Wolfe, 33, of Lanesboro, was arrested and charged with first-degree murder in Christian's death. [S2, S3] One TV report, citing court records, gives the arrest date as January 21. [S11] The investigation was conducted by the Carroll County Sheriff's Office, the Iowa Division of Criminal Investigation and the Attorney General's Cold Case Unit. [S2]
+On January 22, 2026, Albert John Wolfe, 33, of Lanesboro, was arrested and charged with first-degree murder in Christian's death. [S2, S3]
+
+![Albert Wolfe in a booking photo, with a full beard, in a yellow jail uniform](./christian-balke-thompson-2020-wolfe-booking.jpg "Albert Wolfe in a booking photo. He has pleaded not guilty.")
+
+One TV report, citing court records, gives the arrest date as January 21. [S11] The investigation was conducted by the Carroll County Sheriff's Office, the Iowa Division of Criminal Investigation and the Attorney General's Cold Case Unit. [S2]
 
 "This arrest is a milestone in securing justice for Christian Balke-Thompson and his family," Bird said. "No one should get away with murder, and no family should have to wait for answers." [S3] A criminal charge is an accusation, though, and Wolfe is presumed innocent unless proven guilty. [S2, S3]
 
