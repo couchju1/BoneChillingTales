@@ -25,6 +25,8 @@
 # the Hardee's logo (S2), or a "rainbow jacket" just given to her (Plautz, S3). The stolen car: Plautz said
 # in 2022 "They've got to be related" (S6), and in 2026 that there's no evidence it was (S3).
 # Her stepfather's first name: Verne (S6, S7) or Vern (as Dan said it, FOX 9 earlier piece, not cited).
+# Photos: supplied by Justin, October 21, 2026. Rights basis: family permission (Justin confirmed he has it). Captions say only what each photo shows. None is dated,
+# and the baby in the with-baby photo is not identified.
 draft: false
 title: "Employee of the Month: The Disappearance of Carla Beth Anderson"
 seoTitle: "Carla Beth Anderson: What Happened in Wadena, MN"
@@ -44,7 +46,11 @@ agency: "the Wadena Police Department"
 tipLine: "+12186317700"
 anonymousTips: null
 contentNote: null
-image: null
+image:
+  src: "./carla-anderson-1987.jpg"
+  alt: "Carla Anderson smiling, with curled strawberry blonde hair and small white flowers in it, wearing a corsage, against a blue background"
+  credit: "Family photo, digitally enhanced"
+  license: "Used with family permission"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -90,11 +96,15 @@ Her older brother Dan remembers a 9-year-old holding a spatula at the stove of t
 
 She was small. Most accounts put her at 4 feet 10 inches and about 80 pounds. [S4, S5, S9] CNN gives 90. [S3] She had strawberry blonde hair and blue eyes. [S2, S5]
 
+![Carla Anderson smiling, with short blonde hair, in a striped blouse with a wide white ruffled collar](./carla-anderson-1987-striped.jpg "Carla Anderson in a family photo, digitally enhanced.")
+
 The state calls her a vulnerable adult. [S1] CNN reported that she had a learning disability, and that she took part in a living skills program and met with a social worker. [S3] Her family worried that her size and her disability left her vulnerable living alone. [S3]
 
 She lived alone anyway.
 
 "After high school, she was anxious to get going on her own, and she did," Dan told CNN. "Had a job, had her own place." [S3]
+
+![Carla Anderson smiling in a teal graduation cap and gown, holding a single white rose, in front of a brick wall](./carla-anderson-1987-graduation.jpg "Carla Anderson in a graduation cap and gown, in a family photo, digitally enhanced.")
 
 "Fiercely independent," he called her. "Loved living on her own, making her own money, doing her own thing." [S3, S9]
 
@@ -103,6 +113,8 @@ Her apartment at the Greenwood Apartments was a couple of blocks from work, so s
 Her manager, Wayne Wolden, called her "spud." "She was like a little potato," he said in an earlier interview quoted by the Pioneer Journal in 2022. It doesn't say when or to whom. [S6]
 
 "Carla is just an exemplary bubbly, happy, just joyous individual who just brought so many smiles to everybody, employees and customers alike," Wolden told FOX 9 in 2026. He later became mayor of Wadena. [S8]
+
+![Carla Anderson laughing, with short hair and a white rose tucked behind her ear, in front of a red brick wall](./carla-anderson-1987-rose.jpg "Carla Anderson in a family photo, digitally enhanced.")
 
 * * *
 
@@ -119,6 +131,8 @@ Her three brothers looked out for her, Dan said. [S3]
 Her mother was Roberta Wells. Her stepfather was Verne Wells. They celebrated at the new Taco John's. [S6, S7]
 
 She would have stayed at her parents' place that weekend, Dan said. But they were working on a new house on a lake about an hour away, and Carla didn't want to go. [S3]
+
+![Carla Anderson standing in a pale blue dress with puffed sleeves and a satin sash, a white rose in her hair, beside a table with a punch bowl](./carla-anderson-1987-white-dress.jpg "Carla Anderson in a family photo, digitally enhanced.")
 
 Greenwood sits near Second Street Northwest and Hemlock Avenue. [S5]
 
@@ -240,6 +254,8 @@ Verne Wells died that February. Roberta Wells died that June. [S6] A year before
 
 "As vulnerable as I knew she was, I never dreamed of her not being with us forever," she said. "I always knew she would be my child. I always knew I would always be a mother for as long as I lived because I had Carla." [S3]
 
+![Carla Anderson smiling, with long curled strawberry blonde hair, in a white lace top with a large corsage, against a blue background](./carla-anderson-1987-lace.jpg "Carla Anderson in a family photo, digitally enhanced.")
+
 She had arranged a shared headstone for Carla and Carla's brother Scott, who died in 2007. [S3]
 
 Waldahl retired in 2002. [S6] "It's never gone away. It's always there," he said in 2022. "I hope someone finds her before I go." [S6]
@@ -269,6 +285,8 @@ What no one has answered: where Carla went after she got home, what became of he
 Five of her seven nieces and nephews were born after she disappeared, CNN reported. [S3] Her mother, her stepfather and her brother Scott all died without knowing what happened to her. [S3]
 
 "She very possibly would have had kids of her own by now," Dan said. "What would her life look like? It's hard not to think about that." [S3]
+
+![Carla Anderson with curly hair, in a navy sweater over a white turtleneck, with a baby's head in front of her](./carla-anderson-1987-with-baby.jpg "Carla Anderson holding a baby, in a family photo, digitally enhanced.")
 
 The employee of the month photo was supposed to be taken that Monday. [S6]
 
