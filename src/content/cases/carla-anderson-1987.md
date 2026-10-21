@@ -27,9 +27,10 @@
 # Her stepfather's first name: Verne (S6, S7) or Vern (as Dan said it, FOX 9 earlier piece, not cited).
 # Photos: supplied by Justin, October 21, 2026. Rights basis: family permission (Justin confirmed he has it). Captions say only what each photo shows. None is dated,
 # and the baby in the with-baby photo is not identified.
-# Second set, supplied by Justin the same day: a Hardee's building, a brown Plymouth Horizon and a Missing
-# People In America poster. The Hardee's is not identified as the Wadena restaurant, and the car is not the
-# stolen car, so the captions don't say either. The car's license plate is blurred.
+# Second set, supplied by Justin the same day: a Hardee's building, a brown hatchback and a Missing People
+# In America poster. Rights basis: Justin confirmed he has the rights. Per Justin, the Hardee's is similar to
+# the one she worked at and the car is similar to the stolen car; neither is the real one, and the captions
+# say so. The car's license plate is blurred.
 draft: false
 title: "Employee of the Month: The Disappearance of Carla Beth Anderson"
 seoTitle: "Carla Beth Anderson: What Happened in Wadena, MN"
@@ -153,7 +154,7 @@ Nobody has ever shown that any of it had anything to do with Carla. [S3, S6]
 
 ## The shift
 
-![A brick Hardee's restaurant with an orange sign, and older cars parked in front](./carla-anderson-1987-hardees.jpg "A Hardee's restaurant, in an undated photo.")
+![A brick Hardee's restaurant with an orange sign, and older cars parked in front](./carla-anderson-1987-hardees.jpg "A Hardee's similar to the one in Wadena where Carla worked.")
 
 Carla was due at Hardee's at noon on Saturday, November 14. [S1, S7]
 
@@ -223,7 +224,7 @@ The stolen car has stayed with people too.
 
 It was never recovered. [S3, S6] In 2022, Waldahl told the Pioneer Journal he still thought there was a connection, and that the car might be in a lake or a gravel pit. [S6] "If you were to find that vehicle, you would probably find her," Carr said. [S6]
 
-![A brown Plymouth Horizon hatchback parked among trees](./carla-anderson-1987-horizon.jpg "A brown Plymouth Horizon, the same model as the car stolen in Wadena that night. It is not the stolen car.")
+![A brown hatchback parked among trees](./carla-anderson-1987-horizon.jpg "A car similar to the brown Plymouth Horizon stolen in Wadena that night. It is not the stolen car.")
 
 "They've got to be related, but we just can't prove or disprove it, yet," Plautz said that year. [S6]
 
