@@ -27,6 +27,9 @@
 # Her stepfather's first name: Verne (S6, S7) or Vern (as Dan said it, FOX 9 earlier piece, not cited).
 # Photos: supplied by Justin, October 21, 2026. Rights basis: family permission (Justin confirmed he has it). Captions say only what each photo shows. None is dated,
 # and the baby in the with-baby photo is not identified.
+# Second set, supplied by Justin the same day: a Hardee's building, a brown Plymouth Horizon and a Missing
+# People In America poster. The Hardee's is not identified as the Wadena restaurant, and the car is not the
+# stolen car, so the captions don't say either. The car's license plate is blurred.
 draft: false
 title: "Employee of the Month: The Disappearance of Carla Beth Anderson"
 seoTitle: "Carla Beth Anderson: What Happened in Wadena, MN"
@@ -150,6 +153,8 @@ Nobody has ever shown that any of it had anything to do with Carla. [S3, S6]
 
 ## The shift
 
+![A brick Hardee's restaurant with an orange sign, and older cars parked in front](./carla-anderson-1987-hardees.jpg "A Hardee's restaurant, in an undated photo.")
+
 Carla was due at Hardee's at noon on Saturday, November 14. [S1, S7]
 
 She didn't come. [S1]
@@ -218,6 +223,8 @@ The stolen car has stayed with people too.
 
 It was never recovered. [S3, S6] In 2022, Waldahl told the Pioneer Journal he still thought there was a connection, and that the car might be in a lake or a gravel pit. [S6] "If you were to find that vehicle, you would probably find her," Carr said. [S6]
 
+![A brown Plymouth Horizon hatchback parked among trees](./carla-anderson-1987-horizon.jpg "A brown Plymouth Horizon, the same model as the car stolen in Wadena that night. It is not the stolen car.")
+
 "They've got to be related, but we just can't prove or disprove it, yet," Plautz said that year. [S6]
 
 In 2026 she told CNN that police have never found any evidence that it was. "It could have been just a coincidence, although it also could have been part of Carla's disappearance," she said. [S3]
@@ -271,6 +278,8 @@ Dan stood at the microphone in Wadena. His father, Marvin, and his brother Doug 
 Police said the reward wasn't timed to any new development in the case. [S10] In November 2025, the Pioneer Journal reported that police had some new leads and suspects. None has been named. [S7] At the 2026 news conference, Plautz wouldn't discuss suspects or leads. [S5] She told CNN that some leads are getting more attention than others. [S3]
 
 "We've got evidence all over the place and we're looking at it pretty hard," she said. "I'm confident it will be solved." [S5]
+
+![A Missing People In America poster for Carla Anderson, with her photo in a striped blouse and the Wadena Police Department tip line](./carla-anderson-1987-poster.jpg "A missing person poster for Carla from Missing People In America.")
 
 What's documented: Carla was dropped off at her apartment on the night of November 13, 1987. She missed her shift the next day. Her door was locked, and her purse was inside. No one has been arrested. [S1] Investigators do not believe she would have chosen to disappear. [S1, S9]
 
