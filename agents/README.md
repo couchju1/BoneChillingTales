@@ -4,12 +4,13 @@ Instructions for the Buzz agents that research and write Bone Chilling Tales sto
 
 ## The team
 
-| Agent | In Buzz | Instructions | Does | Model |
+| Role | In Buzz | Instructions | Does | Model |
 |---|---|---|---|---|
 | Scout | @Phantom | `scout.md` | Suggests three cases, keeps `QUEUE.md` | A cheaper model is fine |
 | Writer | @Poe | `writer.md` | Researches the picked case, writes the story and Facebook post, opens a PR | Claude (via Claude Code in Buzz) |
 | Editor | @Shelley | None yet. Reads `STYLE_GUIDE.md` and the standards page | Reviews structure, pacing, voice, tone, victim sensitivity, and story-to-Facebook consistency. Comments only | Separate agent from the Writer |
 | Fact-checker | @Sherlock | `fact-checker.md` | Checks every tagged claim against its source, plus legal and build checks | Claude, separate agent from the Writer |
+| Editorial Director and final approver | @Justin | None (human) | Picks cases, settles disagreements, reviews the final PR, merges and publishes | Human |
 
 Always tag agents by their Buzz name. "@Writer" doesn't reach anyone.
 
