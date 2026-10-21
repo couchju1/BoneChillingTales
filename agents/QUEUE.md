@@ -6,7 +6,6 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 
 | Date | Person | Town, state | Status | Why now | Notes |
 |---|---|---|---|---|---|
-| 2026-10-20 | Carla Beth Anderson | Wadena, MN | missing | 39th anniversary Nov. 13; $25K Spotlight on Crime reward (June 2026) | Wadena PD + BCA. Risk Elevated. BCA called her a vulnerable adult; CNN reports a learning disability. Handle with care. |
 | 2026-10-20 | Christian Balke-Thompson | Carroll County, IA | in-court | Albert Wolfe charged with first-degree murder Jan. 22, 2026; trial reportedly set Jan. 26, 2027 | Iowa DCI + AG Cold Case Unit. Risk High: active case, uncharged eyewitness, separate sexual abuse case against the same defendant. |
 | 2026-10-20 | Linda Dillard | Table Rock, NE | missing | NSP renewed its appeal Sept. 1, 2026; otherwise evergreen | Nebraska State Patrol. Risk High: unnamed man in court records, drug use in the record. |
 
@@ -14,6 +13,7 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 
 | Date | Person | Town, state | Status | Branch / PR |
 |---|---|---|---|---|
+| 2026-10-20 | Carla Beth Anderson | Wadena, MN | missing | Assigned to Poe 2026-10-20. Branch and PR pending |
 
 ## Passed
 
