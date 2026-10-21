@@ -28,9 +28,9 @@
 draft: false
 title: "The Car in the Shed: The Disappearance of Christian Balke-Thompson"
 seoTitle: "Christian Balke-Thompson: What Happened Near Carroll, IA"
-description: "In May 2020, Christian Balke-Thompson, 26, disappeared in Iowa. His burned car was found on a farm. In 2026, a man was charged with his murder."
+description: "Christian Balke-Thompson, 26, vanished in Iowa in May 2020. A burned car believed to be his was found on a farm. In 2026, a man was charged with murder."
 person: "Christian Balke-Thompson"
-summary: "Christian Balke-Thompson, 26, was last seen in the early hours of May 2, 2020, in Iowa. His car was found burned on a farm north of Carroll. [S1, S3] He has never been found. In 2026, Albert Wolfe was charged with first-degree murder. He has pleaded not guilty, and his trial is set for January 2027. [S11, S12]"
+summary: "Christian Balke-Thompson, 26, was last seen in the early hours of May 2, 2020, in Iowa. A burned car believed to be his was found on a farm north of Carroll. [S1, S3] He has never been found. In 2026, Albert Wolfe was charged with first-degree murder. He has pleaded not guilty, and his trial is set for January 2027. [S11, S12]"
 status: in-court
 town: "Carroll"
 state: IA
@@ -81,7 +81,7 @@ On April 29, 2020, Michelle Balke saw her son Christian at his son's birthday pa
 
 That Saturday, May 2, she tried to call and text him, and his phone was off. [S4] "I just thought it was off or dead and didn't think much of it," she said. [S4]
 
-Within a week, a burned car that investigators believe was his would be found on a farm north of Carroll. [S1, S3] Nearly six years later, the man who lived on that farm was charged with first-degree murder in Christian's death, and he has pleaded not guilty. [S1, S2, S3, S11] Christian has never been found. [S1, S3] The account at the center of the charge comes from a woman who was with him that night, and it hasn't been tested in court. [S1]
+Within a week, a burned car believed to be his would be found on a farm north of Carroll. [S1, S3] Nearly six years later, the man who lived on that farm was charged with first-degree murder in Christian's death, and he has pleaded not guilty. [S1, S2, S3, S11] Christian has never been found. [S1, S3] The account at the center of the charge comes from a woman who was with him that night, and it hasn't been tested in court. [S1]
 
 ## B-T
 
