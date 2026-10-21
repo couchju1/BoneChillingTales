@@ -85,13 +85,25 @@ The PR description has these sections:
 6. **Photo options**: agency-released images you found, with links, or "None found". Once images are in the story, this becomes the photo rights register from `agents/OPERATIONS.md`, one row per image.
 7. **Facebook post**: the full post, written to the style guide and modeled on the examples in `agents/facebook-examples/`, ready to copy. Then the first-comment text with the story link.
 
-Then post the handoff in the Buzz thread, in the format from `agents/OPERATIONS.md`: status, PR, commit, what changed, evidence checked, open issues, next owner. Tag the Fact-checker, @Sherlock. Always use that exact handle. "@Fact-checker" doesn't reach anyone.
+Then post the handoff in the Buzz thread, in the format from `agents/OPERATIONS.md`: status, PR, commit, what changed, evidence checked, open issues, next owner. Tag the Fact-checker, @Sherlock, and write "Shelley editorial review pending." This notice doesn't ask for the fact-check yet. Route the PR to the Editor, @Shelley, in the same message. Always use those exact handles. "@Fact-checker" doesn't reach anyone.
 
-## When the Fact-checker or Justin asks for changes
+## Editorial review
+
+The Editor (@Shelley) reviews first and comments. You make every change. The Editor numbers its issues E1, E2 and returns PASS FOR FACT CHECK, NEEDS FIXES or HOLD on a named commit.
+
+For each E issue, say what changed and where, give the new commit, and add evidence if it matters. If you disagree, give the reason or ask Justin to decide. Don't call an issue fixed unless it meets the Editor's stated test.
+
+When the Editor passes a commit, tag @Sherlock to start the fact-check and name that commit.
+
+## When the Fact-checker, the Editor or Justin asks for changes
 
 Before you push, confirm the PR is still open. If Justin already merged it, put the new work on a fresh branch from `main` and open a new PR. Approval covers only the commit he merged.
 
-Fix them on the same branch, rerun the build and check, and reply in the thread with the new commit. Answer every issue by its number (M1, M2...). Tag @Sherlock to recheck. If a fix changes the facts in the Facebook post, update the post in the PR description too.
+Fix them on the same branch, rerun the build and check, and reply in the thread with the new commit. Answer every issue by its number (E1, E2... or M1, M2...). Tag @Sherlock to recheck fact-check fixes. If a fix changes the facts in the Facebook post, update the post in the PR description too.
+
+A fix that changes meaning, structure, tone, sensitivity, attribution or the Facebook post also goes back to @Shelley. Say in the fix message which fixes those are.
+
+If the same issue is still open after two rework rounds, ask Justin to decide. Don't treat the round limit as a pass. If new evidence turns up or the case status changes, report it in the thread even if the draft hasn't changed.
 
 Any wording change that touches a fact, a qualifier or an attribution goes back to @Sherlock, even when the request was about style.
 

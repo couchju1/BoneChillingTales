@@ -1,6 +1,6 @@
 # Editorial operations
 
-How Bone Chilling Tales applies the Buzz Editorial Operations Manual (v1.0, October 19, 2026). The full manual is in `reference/EDITORIAL_OPERATIONS_MANUAL_v1.0.md`. This file is the short version every agent follows. If the two disagree, the manual wins on process and the standards page (`src/content/pages/standards.md`) wins on what we publish. Where this file leaves something out, it says why, under "Not adopted yet".
+How Bone Chilling Tales applies the Buzz Editorial Operations Manual (v1.1, updated October 19, 2026). The full manual is in `reference/EDITORIAL_OPERATIONS_MANUAL_v1.1.md`. Version 1.1 supersedes v1.0 for new assignments. The v1.0 text stays in `reference/` as the record for stories checked under it. This file is the short version every agent follows. If the two disagree, the manual wins on process and the standards page (`src/content/pages/standards.md`) wins on what we publish. Where this file leaves something out, it says why, under "Not adopted yet".
 
 Every story is a **NARRATIVE** assignment (manual section 8). The book and news workflows don't apply. A story about a case still moving through the courts also takes the news freshness check below.
 
@@ -11,8 +11,10 @@ Every story is a **NARRATIVE** assignment (manual section 8). The book and news 
 | Human publisher and release authority | Justin | Approves an exact commit by merging it. Owns policy and every risk, rights and legal call. |
 | Backup release authority | None named yet | Justin decides. Until then, nothing merges without Justin. |
 | Editorial Director | Justin | Routes cases, accepts handoffs, settles disagreements between agents. Agents can't act as Director, because the Director recommends release. |
-| Researcher, author, structural, line and copy editor | Writer (@Poe) | One agent may do these in sequence. The manual allows it. |
-| Fact Checker and final proof | Fact-checker (@Sherlock) | Must be a different agent from the Writer. |
+| Researcher, author, structural, line and copy editor | Writer (@Poe) | Makes every story and Facebook change. One agent may do these in sequence. The manual allows it. |
+| Editor (editorial reviewer) | Editor (@Shelley) | Reviews structure, pacing, clarity, repetition, voice, tone, victim sensitivity, style, and story-to-Facebook consistency. Comments only. Doesn't rewrite files, push commits or certify facts. |
+| Fact Checker | Fact-checker (@Sherlock) | Must be a different agent from the Writer. Starts after the Editor passes the PR. |
+| Final proof | Editor and Fact-checker | The Editor's final read covers language and story-to-Facebook alignment. The Fact-checker covers facts, the build and the launch check. Justin accepts. |
 | Case intake | Scout (@Phantom) | Suggests cases and records the first risk level. |
 | Release operator | Hostinger auto-deploy | Merging to `main` publishes. Justin confirms the live page. |
 | Specialist and legal reviewer | None | See "Not adopted yet". |
@@ -26,11 +28,11 @@ Use these words in the thread and in PRs, so anyone can see where a story is.
 | INTAKE | Scout has posted options, or Justin has named a case. |
 | ASSIGNED | Justin picked the case and tagged the Writer. |
 | IN PROGRESS | The Writer is researching or drafting. |
-| READY FOR REVIEW | The PR is open and the Fact-checker is tagged. |
-| REWORK | The Fact-checker or Justin returned fixes. |
+| READY FOR REVIEW | The PR is open. The Fact-checker has been notified and the Editor's review is pending. |
+| REWORK | The Editor, the Fact-checker or Justin returned fixes. |
 | NEEDS INPUT | Work is blocked on a missing source, file or decision. Name the owner and the exact question. |
 | HOLD | A specific publication risk is unresolved. Nothing in the affected part moves until Justin clears it. |
-| READY FOR HUMAN APPROVAL | The Fact-checker's verdict is PASS on a named commit. |
+| READY FOR HUMAN APPROVAL | The Editor's PASS FOR FACT CHECK and the Fact-checker's PASS both cover the current head commit (see "Approval covers one commit"). |
 | APPROVED FOR RELEASE | Justin merges that exact commit. |
 | PUBLISHED | The page is live and Justin has checked it. |
 | CORRECTION REVIEW | A complaint, an error or a change in the case reopened a published story. |
@@ -39,16 +41,16 @@ Use these words in the thread and in PRs, so anyone can see where a story is.
 
 Every handoff ends with one of these.
 
-- **PASS**: the stage's criteria are met. The Fact-checker's "Ready for Justin" is a PASS.
-- **REWORK**: fixable defects. The Fact-checker's "Needs fixes" is REWORK.
+- **PASS**: the stage's criteria are met. The Editor's "PASS FOR FACT CHECK" and the Fact-checker's "Ready for Justin" are PASSes.
+- **REWORK**: fixable defects. The Editor's "NEEDS FIXES" and the Fact-checker's "Needs fixes" are REWORK.
 - **NEEDS INPUT**: missing material. Ask the exact question and keep going on anything that doesn't depend on the answer.
-- **HOLD**: an unresolved publication risk. The Fact-checker's "Don't publish" is a HOLD.
+- **HOLD**: an unresolved publication risk. The Editor's "HOLD" and the Fact-checker's "Don't publish" are HOLDs.
 
 No agent status is approval to publish. Only Justin's merge is.
 
 ## The handoff message
 
-Every handoff in the thread (Writer to Fact-checker, Fact-checker to Writer or Justin) gives:
+Every handoff in the thread (Writer to Editor or Fact-checker, Editor to Writer, Fact-checker to Writer or Justin) gives:
 
 1. **Status** (PASS, REWORK, NEEDS INPUT or HOLD) and the **PR**.
 2. **Input commit and output commit.** The commit is the revision ID. Never say "the PR" without a commit.
@@ -58,6 +60,19 @@ Every handoff in the thread (Writer to Fact-checker, Fact-checker to Writer or J
 6. **Next owner**, tagged by exact Buzz handle.
 
 The receiver checks that the commit exists and the files open before working. An unreadable attachment or a missing commit isn't accepted. Say so and return NEEDS INPUT.
+
+A mention is a notification. It doesn't prove the handoff was accepted or a review was done.
+
+## Review order
+
+1. **Writer opens the PR.** In the same handoff, the Writer notifies the Fact-checker (@Sherlock) and writes "Shelley editorial review pending." Then the Writer routes the PR to the Editor (@Shelley). The notice tells the Fact-checker a PR exists. It isn't a request to check it.
+2. **Editor reviews** the named commit and returns PASS FOR FACT CHECK, NEEDS FIXES or HOLD. Each issue is numbered (E1, E2 and so on) and gives the location, the reason, a priority, and what counts as fixed. Factual concerns go to the Fact-checker. Legal or safety concerns go to Justin.
+3. **Writer revises** on the same branch and answers every E number with what changed, where, and the new commit. If the Writer disagrees, the Writer gives the reason or asks Justin to decide.
+4. **Editor rechecks** the changed text and records PASS FOR FACT CHECK on a named commit.
+5. **Writer requests the fact-check.** The Writer tags @Sherlock with the commit the Editor passed.
+6. **Fact-checker checks** independently. The Fact-checker doesn't start before the Editor has passed a commit. If asked earlier, it returns NEEDS INPUT and asks Justin.
+7. **Fixes.** The Writer fixes Needs fixes issues on the same branch. Any fix that changes meaning, structure, tone, sensitivity, attribution or the Facebook post also goes back to the Editor. The Writer says which fixes those are. The Editor or Justin can ask for a recheck of any fix anyway. Every fix goes back to the Fact-checker.
+8. **Justin reviews** only after both current checks pass.
 
 ## Risk level
 
@@ -97,25 +112,25 @@ The rights basis is one of: agency-released, public record, licensed, family per
 
 ## Release gates
 
-Justin merges only when all of these are true. The Fact-checker's report shows G3 and G5. The Writer's PR shows G1, G2 and G4.
+Justin merges only when all of these are true. The Fact-checker's report shows G3 and G5. The Writer's PR shows G1, G2 and G4. The Editor's review record supports G2 and G5.
 
 | Gate | What has to be true | Shown by |
 |---|---|---|
 | G1 Scope | The case, the angle, the risk level and any special instructions (like Mailer style) are recorded in the thread. | Writer, in the PR "Case" section |
-| G2 Content | The structure is settled, and Justin's editorial decisions are applied. | Writer |
+| G2 Content | The structure is settled, the Editor has passed it, and Justin's editorial decisions are applied. | Writer, with the Editor's PASS FOR FACT CHECK |
 | G3 Evidence | Every claim has a disposition. No blocking UNVERIFIED claims. Contradictions are named in the story. Case status was checked. | Fact-checker |
 | G4 Risk and rights | Legal care notes are complete, and every image has a rights row with a decision. | Writer, with Justin's decisions |
-| G5 Final proof | Build and launch check pass on the exact commit. The Facebook post, title, description, summary, captions and alt text match the checked story. | Fact-checker |
+| G5 Final proof | Build and launch check pass on the exact commit. The Facebook post, title, description, summary, captions and alt text match the checked story. The language and story-to-Facebook alignment have the Editor's acceptance. | Fact-checker, and the Editor for language and alignment |
 | G6 Release | Justin merges that commit. | GitHub |
 | G7 Live check | Justin opens the live page and confirms it matches. | Justin |
 
-**Approval covers one commit.** A PASS covers the commit it names. Anything pushed after that needs a recheck before merge. If a PR is merged while work is still going, the remaining work goes in a new PR from `main`. Agents check that the PR is still open before pushing to its branch.
+**Approval covers one commit.** A PASS covers the commit it names. Anything pushed after that needs a recheck before merge. Facts go to the Fact-checker. Changes to meaning, structure, tone, sensitivity, attribution or the Facebook post also go to the Editor. New evidence or a change in case status can reopen a check even when the draft hasn't changed. If a PR is merged while work is still going, the remaining work goes in a new PR from `main`. Agents check that the PR is still open before pushing to its branch.
 
 ## Rework loop
 
-The Fact-checker numbers each issue (M1, M2 for must-fix). The Writer answers every number in the fix message. The Fact-checker rechecks the changed lines and anything that depends on them, including the summary, timeline and Facebook post.
+The Editor numbers its issues E1, E2. The Fact-checker numbers its issues M1, M2 for must-fix. The Writer answers every number in the fix message. Each reviewer rechecks the changed lines and anything that depends on them, including the summary, timeline and Facebook post.
 
-If the same material defect survives two rework rounds, the Fact-checker sets HOLD on that section and asks Justin to decide: find more evidence, narrow the claim, cut it, or drop the story. Never pass something just because the loop ran long.
+If the same material defect survives two rework rounds, the reviewer who raised it sets HOLD on that section and asks Justin to decide: find more evidence, narrow the claim, cut it, change the approach, or drop the story. Never pass something just because the loop ran long.
 
 ## After publication
 
@@ -134,4 +149,6 @@ These parts of the manual don't fit how the site runs today. Each one is listed 
 4. **Separate issue, revision and approval logs.** GitHub already does this job. The commit history is the revision log, PR comments are the issue log, and the merge is the approval record. No separate files.
 5. **Version file names** (`ASSIGNMENTID_stage_vNN`). Git commit hashes do this. The branch name is the assignment ID.
 6. **Style sheet per assignment.** `agents/STYLE_GUIDE.md` is the house style. Case-specific spelling and name decisions go in the story's frontmatter comment block, which already serves as the assignment's style sheet.
-7. **Training-case test run (manual section 19).** Not run. Justin can ask the agents to run the five cases in section 18 against these files.
+7. **Training-case test run (manual sections 19 and 21).** Not run. Justin can ask the agents to run the five cases in section 18, and the section 21 test PR, against these files.
+8. **Role mentions @Fact-checker and @Writer (manual v1.1 profile).** The manual says to keep these role mentions and to check in Buzz that they reach the intended agents. On October 20, 2026, a Buzz name lookup found no profile named "Fact-checker" or "Writer". It did find Sherlock, Shelley and Justin. Until Justin changes the Buzz setup, agents tag by Buzz name: @Poe, @Shelley, @Sherlock and @Justin.
+9. **An Editor instruction file.** The manual says the Editor reads an instruction file only if Justin configures one. There isn't one. This file's Editor rules reach Shelley only if Justin adds `agents/OPERATIONS.md` to Shelley's required reads.

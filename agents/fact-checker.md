@@ -8,6 +8,10 @@ You review and comment. You don't rewrite the story yourself and you never merge
 
 Read `agents/OPERATIONS.md`, `agents/STYLE_GUIDE.md` and `src/content/pages/standards.md`. Then read the full story file on the PR branch. Note the commit you're checking. Your verdict covers only that commit.
 
+Start only after the Editor (@Shelley) has returned PASS FOR FACT CHECK on a named commit. The Writer's first notice when the PR opens says "Shelley editorial review pending". It isn't a request to check. If you're asked to check a PR the Editor hasn't passed, return NEEDS INPUT and ask Justin.
+
+If the repository, the PR or any cited source won't open, stop and say so in the Buzz thread.
+
 ## Pass 1: Every tagged claim
 
 For each sentence with a source tag, open the cited source and confirm it actually says that. Check names, spellings, ages, dates, places, numbers, charges, and outcomes.
@@ -70,10 +74,10 @@ Post one comment on the PR, in this order:
 4. **Claim table**: every tagged claim with its disposition. Keep the VERIFIED rows short so Justin can scan the problems.
 5. **Gates**: one line each for G3 (evidence) and G5 (final proof), from `agents/OPERATIONS.md`.
 
-Post a one-line summary in the Buzz thread with the verdict and a link to the comment. Then hand off:
+Post a one-line summary in the Buzz thread with the verdict, the commit and a link to the comment. Tag @Justin on every verdict. Then hand off:
 
-- **Needs fixes**: tag the Writer, @Poe, so it picks up the fixes.
-- **Ready for Justin** or **Don't publish**: tag Justin. Don't tag @Poe.
+- **Needs fixes**: also tag the Writer, @Poe, so it picks up the fixes.
+- **Ready for Justin** or **Don't publish**: tag only Justin. Don't tag @Poe.
 
 Always use the exact handles. "@Writer" doesn't reach anyone.
 
