@@ -43,6 +43,8 @@ If a source you need won't open, mark it NEEDS INPUT in the thread and ask for i
 
 Note anywhere sources disagree (dates, places, spellings, ages). The story has to say so.
 
+Describe a person's criminal record (a conviction, a sentence, an offense) only from a court record, an agency release, or a report of the verdict or sentencing itself. Name the exact offense. Don't take a label like "convicted killer" from a later story's summary. (Added October 21, 2026, after the Carla Anderson story called Floyd Tapson a convicted killer on CNN's word. His sentence was for attempted murder.)
+
 Mark sources that share an origin (two outlets running the same police release are one origin, not two). Note any claim that matters to the story and rests on one source.
 
 Check the latest case status (charges, verdict, appeal, custody, parole) and write down the date you checked.

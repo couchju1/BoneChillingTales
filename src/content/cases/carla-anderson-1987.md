@@ -42,7 +42,7 @@ incidentDate: 1987-11-13
 lastSeenDate: 1987-11-13
 resolvedDate: null
 lastChecked: 2026-10-20
-lastFactChange: null
+lastFactChange: 2026-10-21
 published: 2026-10-21
 agency: "the Wadena Police Department"
 tipLine: "+12186317700"
