@@ -74,197 +74,104 @@ timeline:
   - { date: 2026-09-16, text: "The murder trial is set for January 26, 2027. [S12]", section: "where-it-stands" }
 updates:
   - { date: 2026-10-22, text: "Story published." }
+  - { date: 2026-10-22, text: "Story rewritten for flow. No facts changed." }
 ---
 
-On April 29, 2020, Michelle Balke saw her son Christian at his son's birthday party. [S4]
+On April 29, 2020, Michelle Balke saw her son Christian at his son's birthday party. It was the last time she saw him. [S4] "He wanted to talk to me, we didn't get to talk that night," she told The Messenger a few weeks later. [S4]
 
-"He wanted to talk to me, we didn't get to talk that night," she told The Messenger a few weeks later. [S4]
+That Saturday, she tried to call and text him, and his phone was off. [S4] "I just thought it was off or dead and didn't think much of it," she said. [S4]
 
-That Saturday, she tried to call and text him. His phone was off. [S4]
-
-"I just thought it was off or dead and didn't think much of it," she said. [S4]
+Within a week, his car would be found burned on a farm north of Carroll. [S1, S3] Nearly six years later, the man who lived on that farm was charged with first-degree murder in Christian's death, and he has pleaded not guilty. [S1, S2, S3, S11] Christian has never been found. [S1, S3] The account at the center of the charge comes from a woman who was with him that night, and it hasn't been tested in court. [S1]
 
 ## B-T
 
-Christian Daniel Balke-Thompson was 26. [S1, S4] People called him "B-T." [S4]
+Christian Daniel Balke-Thompson was 26, and people called him "B-T." [S1, S4] He was six foot one and wore glasses. He had a bullet tattooed on the side of his neck and his mother's name tattooed on his left forearm. [S4]
 
-He was six foot one, wore glasses, and had a bullet tattooed on the side of his neck. His mother's name was tattooed on his left forearm. [S4]
-
-He had two young sons. [S4] He liked to skateboard and spend time with them. [S6]
-
-His mother remembered him as funny, helpful, generous and stubborn. [S6]
-
-"He'd give you his pair of shoes and walk off," she said. [S6]
-
-She also called him "such a mama's boy." [S6]
-
-* * *
+He had two young sons. [S4] He liked to skateboard and spend time with them. [S6] His mother, talking to The Messenger in 2021, remembered him as funny, helpful, generous and stubborn. [S6] "He'd give you his pair of shoes and walk off," she said. She also called him "such a mama's boy." [S6]
 
 Where he lived depends on which report you read. In 2020, both local papers called him a Rockwell City man. [S4, S5] A year later, The Messenger said he was from Farnhamville. [S6] The Attorney General's office later said Carroll. [S3]
 
 ## The green Corolla
 
-Around April 28, Christian bought a green 1997 Toyota Corolla from a private seller. According to the charging documents, it was his only way to get around. [S1]
+Around April 28, Christian bought a green 1997 Toyota Corolla from a private seller. According to the charging documents, it was his only way to get around. [S1] Those documents, a complaint and affidavit filed in January 2026, lay out the investigators' account of the days that followed, and most of what comes next is drawn from them. [S1]
 
-What follows comes from the complaint and affidavit filed in January 2026, which lays out the investigators' account. [S1]
+On the evening of Friday, May 1, Christian and a female friend drove the Corolla to a get-together at a house in Rockwell City. They stayed a while, then left in his car. [S1] Around 3 a.m. on Saturday, May 2, they stopped at a convenience store in Lake City. Then they drove to another one on the west side of Fort Dodge, where they stayed until about 5:30 a.m. [S1]
 
-On the evening of Friday, May 1, Christian and a female friend drove the Corolla to a get-together at a house in Rockwell City. They stayed a while, then left in his car. [S1]
+At 6:45 a.m., his phone pinged for the last time that investigators have reported. It pinged near a farm about five miles north of Carroll. [S1, S3]
 
-Around 3 a.m. on Saturday, May 2, they stopped at a convenience store in Lake City. Then they drove to another one on the west side of Fort Dodge. They stayed there until about 5:30 a.m. [S1]
-
-At 6:45 a.m., his phone pinged for the last time that investigators have reported. [S1]
-
-It pinged near a farm about five miles north of Carroll. [S1, S3]
-
-* * *
-
-A man named Albert Wolfe lived alone on that farm. [S1]
-
-The affidavit describes him as an acquaintance of the friend who was with Christian that night, and her former boyfriend. [S1]
+A man named Albert Wolfe lived alone on that farm. The affidavit describes him as an acquaintance of the friend who was with Christian that night, and her former boyfriend. [S1]
 
 ## The fire
 
-Christian's family noticed the silence. [S1, S4]
+Christian's family noticed the silence. [S1, S4] On Sunday night, May 3, at 8:55 p.m., family and friends called the Rockwell City Police Department and asked officers to try to find him. Nobody had heard from him in about 18 hours, they said, and that wasn't like him. [S1]
 
-On Sunday night, May 3, at 8:55 p.m., family and friends called the Rockwell City Police Department. They asked officers to try to find him. Nobody had heard from him in about 18 hours, they said, and that wasn't like him. [S1]
+The next night, Monday, May 4, at about 9 p.m., one of Wolfe's neighbors called 911 to report a fire on his farm. [S1] The fire seemed to have started in or near a small four-door sedan parked inside a shed. The shed was a total loss, and the car was burned past recognizing. [S1] At the time, the affidavit says, Carroll County authorities didn't know the farm had any connection to a missing man. [S1]
 
-* * *
+On Tuesday afternoon, May 5, Christian's mother and another woman drove out to the farm. [S1] According to the affidavit, Wolfe "came down the driveway and denied knowing anything about Balke-Thompson before kicking them off his property." [S1]
 
-On Monday night, May 4, at about 9 p.m., one of Wolfe's neighbors called 911. There was a fire on his farm. [S1]
+About 5 p.m. that day, a Rockwell City officer called Carroll County dispatch and asked for help finding him. The officer said family and friends hadn't heard from Christian since around 2 a.m. on May 3. [S1] That doesn't line up with the affidavit's own phone record, which puts his phone near the farm at 6:45 a.m. on May 2. [S1] His mother, for her part, said his phone was already off when she tried him that Saturday. [S4]
 
-The fire seemed to have started in or near a small four-door sedan parked inside a shed. The shed was a total loss. The car was burned past recognizing. [S1]
-
-At the time, the affidavit says, Carroll County authorities didn't know the farm had any connection to a missing man. [S1]
-
-* * *
-
-On Tuesday afternoon, May 5, Christian's mother and another woman drove out to the farm. [S1]
-
-According to the affidavit, Wolfe "came down the driveway and denied knowing anything about Balke-Thompson before kicking them off his property." [S1]
-
-About 5 p.m. that day, a Rockwell City officer called Carroll County dispatch and asked for help. [S1] At 10 p.m., Rockwell City police formally entered Christian as a missing person. [S1]
-
-Later that night, officers served a search warrant on the farm. [S1]
+At 10 p.m., Rockwell City police formally entered Christian as a missing person. [S1] Other accounts give other dates for when he was reported missing. The state's arrest release says May 2. [S2] News reports from 2020 and 2021 say May 3. [S4, S5, S6]
 
 ## What was under the rubble
 
-A Carroll County deputy and an Iowa State Patrol trooper saw what the affidavit calls "fresh activity around the burn site, including a car buried underneath rubble." [S1]
+Later that night, officers served a search warrant on the farm. [S1] A Carroll County deputy and an Iowa State Patrol trooper saw what the affidavit calls "fresh activity around the burn site, including a car buried underneath rubble." A skid loader nearby appeared to have been used to pile dirt, manure and debris on top of it. [S1] The Attorney General's office puts it more simply, saying the car was "found burned in a shed." [S3]
 
-A skid loader nearby appeared to have been used to pile dirt, manure and debris on top of it. [S1]
+The car was too badly burned, and too deeply buried, for anyone to find a vehicle identification number. So the deputy compared what was left of the engine compartment and the rear light moldings to pictures of a 1997 Toyota Corolla online, and determined that they were consistent. [S1] Calls to Christian's phone went straight to voicemail. [S1]
 
-The car was too badly burned, and too deeply buried, to find a vehicle identification number. So the deputy compared what was left of the engine compartment and the rear light moldings to pictures of a 1997 Toyota Corolla online, and determined that they were consistent. [S1]
-
-Calls to Christian's phone went straight to voicemail. [S1]
-
-* * *
-
-Wolfe talked to investigators. [S1]
-
-According to the affidavit, he admitted taking the Corolla apart and cutting it up. He denied knowing anything about Christian's disappearance. He said that when the car caught fire, it burned the car, the shed and some of what was inside. [S1]
-
-He also told them something else. He had found a phone in a plastic bag near his mailbox. [S1]
+Wolfe talked to investigators. According to the affidavit, he admitted taking the Corolla apart and cutting it up, but he denied knowing anything about Christian's disappearance. He said that when the car caught fire, it burned the car, the shed and some of what was inside. [S1] He also told them he had found a phone in a plastic bag near his mailbox. [S1]
 
 Investigators later determined it was Christian's. [S1]
 
 ## Four years of searching
 
-In mid-May 2020, the Iowa Division of Criminal Investigation still wasn't saying much in public. [S4]
+In mid-May 2020, the Iowa Division of Criminal Investigation still wasn't saying much in public. [S4] "We're just continuing running down leads and really don't know if he left on his own," Special Agent Ray Fiedler told The Messenger. "I can't say there was foul play, I can't say he left on his own, I just don't know." [S4]
 
-"We're just continuing running down leads and really don't know if he left on his own," Special Agent Ray Fiedler told The Messenger. "I can't say there was foul play, I can't say he left on his own, I just don't know." [S4]
+The DCI wouldn't say whether Christian was believed to have a vehicle with him. "There are certain things that we're looking at, but I don't want to give that out because only certain people would know that," Fiedler said. [S4] In June, the Carroll Times Herald reported that officers had recovered what they believed was "debris" from Christian's car. Further details were being withheld while the investigation went on. [S5]
 
-The DCI wouldn't say whether Christian was believed to have a vehicle with him. "There are certain things that we're looking at, but I don't want to give that out because only certain people would know that," Fiedler said. [S4]
+His mother did her own asking. She told The Messenger that May that she had been "going around in circles," talking to his friends and trying to learn where he was. [S4] "Why wouldn't you help somebody come home to their children and their mother, whether it gets you in trouble or not?" she said. "It's just unbelievable." [S4]
 
-In June, the Carroll Times Herald reported that officers had recovered what they believed was "debris" from Christian's car. Further details were being withheld while the investigation went on. [S5]
-
-* * *
-
-His mother did her own asking. She said she had been "going around in circles," talking to his friends and trying to learn where he was. [S4]
-
-"Why wouldn't you help somebody come home to their children and their mother, whether it gets you in trouble or not?" she said. "It's just unbelievable." [S4]
-
-A year later, she told The Messenger she had "slammed and picked and poked and prodded at every person I could possibly." [S6]
-
-The family had told his boys that their father was in heaven. "We told the boys that he was gone because we had no other choice," she said. [S6]
-
-She didn't think he was still alive. He had gone through two Mother's Days without calling her, she said, and he never would have. [S6]
+A year later, she said she had "slammed and picked and poked and prodded at every person I could possibly." [S6] The family had told his boys that their father was in heaven. "We told the boys that he was gone because we had no other choice," she said. [S6] She didn't think he was still alive. He had gone through two Mother's Days without calling her, she said, and he never would have. [S6]
 
 "Somebody knows something," she said. [S6]
 
-* * *
-
-From June 2020 through March 2024, investigators searched Wolfe's property more than once. [S1]
-
-They didn't find Christian. [S1]
+From June 2020 through March 2024, investigators searched Wolfe's property more than once. They didn't find Christian. [S1]
 
 ## The friend's account
 
-The woman who was with Christian that night kept talking to investigators. According to the affidavit, she gave them her account in interviews over the next three years. [S1]
+The woman who was with Christian that night kept talking to investigators. According to the affidavit, she gave them her account in interviews over the next three years. [S1] What follows is that account as the affidavit sets it out. It is her account, and it hasn't been tested in court. [S1]
 
-Here is what she told them, as the affidavit sets it out. It is her account, and it hasn't been tested in court. [S1]
+She said she was driving the Corolla when they got to Wolfe's farm, because Christian was asleep. She said Wolfe told her to pull the car into a shed, and she did. Then she went into the house, leaving Christian in the car. [S1]
 
-She said she was driving the Corolla when they got to Wolfe's farm, because Christian was asleep. She said Wolfe told her to pull the car into a shed. She did, and then went into the house, leaving Christian in the car. [S1]
+Minutes later, she said, she heard what she described as a shotgun blast. She said she ran to the shed and saw that Wolfe had shot Christian. [S1] She said Christian was wrapped in a tarp, taken to a burn pile on the property, and set on fire. [S1]
 
-Minutes later, she said, she heard what she described as a shotgun blast. She ran to the shed and saw that Wolfe had shot Christian. [S1]
-
-She said Christian was wrapped in a tarp, taken to a burn pile on the property, and set on fire. [S1]
-
-She also admitted staying on Wolfe's farm for an extended time after Christian's death, the affidavit says. [S1]
-
-* * *
-
-No source reviewed for this story reports any charge against her.
+She also admitted staying on Wolfe's farm for an extended time after Christian's death, the affidavit says. [S1] No source reviewed for this story reports any charge against her.
 
 ## The charge
 
 In July 2024, Iowa Attorney General Brenna Bird launched a statewide Cold Case Unit. Her office said the unit gave the case "a focused team to meet with witnesses and pursue leads." [S3]
 
-On January 22, 2026, Albert John Wolfe, 33, of Lanesboro, was arrested and charged with first-degree murder in Christian's death. [S2, S3] One TV report, citing court records, gives the arrest date as January 21. [S11]
+On January 22, 2026, Albert John Wolfe, 33, of Lanesboro, was arrested and charged with first-degree murder in Christian's death. [S2, S3] One TV report, citing court records, gives the arrest date as January 21. [S11] The investigation was conducted by the Carroll County Sheriff's Office, the Iowa Division of Criminal Investigation and the Attorney General's Cold Case Unit. [S2]
 
-The investigation was conducted by the Carroll County Sheriff's Office, the Iowa Division of Criminal Investigation and the Attorney General's Cold Case Unit. [S2]
+"This arrest is a milestone in securing justice for Christian Balke-Thompson and his family," Bird said. "No one should get away with murder, and no family should have to wait for answers." [S3] A criminal charge is an accusation, though, and Wolfe is presumed innocent unless proven guilty. [S2, S3]
 
-"This arrest is a milestone in securing justice for Christian Balke-Thompson and his family," Bird said. "No one should get away with murder, and no family should have to wait for answers." [S3]
-
-A criminal charge is an accusation. Wolfe is presumed innocent unless proven guilty. [S2, S3]
-
-* * *
-
-On February 6, court filings showed Wolfe had entered a written plea of not guilty. He demanded a speedy trial. [S11]
-
-He had been held without bail after his arrest. At a hearing that day, a $500,000 cash-only bond was set. That afternoon he was still in the Carroll County Jail. [S11]
-
-If convicted of first-degree murder, he could be sentenced to life in prison with no possibility of parole. [S10]
-
-* * *
+On February 6, court filings showed Wolfe had entered a written plea of not guilty and demanded a speedy trial. [S11] He had been held without bail after his arrest. At a hearing that day, a $500,000 cash-only bond was set, and that afternoon he was still in the Carroll County Jail. [S11] If convicted of first-degree murder, he could be sentenced to life in prison with no possibility of parole. [S10]
 
 In a separate case, Wolfe is also charged with five counts of third-degree sexual abuse, plus grooming and lascivious conduct with a minor. The charges are for conduct alleged in late 2025. He has not been convicted, and a jury trial in that case is set for November 17. [S12] Nothing in the reports reviewed for this story connects that case to Christian.
 
 ## Where it stands
 
-Wolfe's murder trial is set for January 26, 2027, in Carroll County. [S3, S12] The Attorney General's office and the Carroll County Attorney's Office will prosecute. The office says the investigation is still active. [S3]
+Wolfe's murder trial is set for January 26, 2027, in Carroll County. [S3, S12] The Attorney General's office and the Carroll County Attorney's Office will prosecute, and the Attorney General's office says the investigation is still active. [S3] I last checked the case status on October 21, 2026. I couldn't confirm whether Wolfe is still in jail.
 
-I last checked the case status on October 21, 2026. I couldn't confirm whether Wolfe is still in jail.
+The record documents a good deal. Christian and a friend were at a Fort Dodge convenience store until about 5:30 a.m. on May 2, 2020, and his phone last pinged near Wolfe's farm at 6:45 a.m. [S1] A car burned in Wolfe's shed two days later, and officers found a burned car buried under debris there the next night. [S1] Wolfe told investigators he took the Corolla apart and cut it up, and he said he found a phone near his mailbox that turned out to be Christian's. [S1]
 
-Christian has not been found. [S1, S3]
+What the record doesn't establish is the part at the center of the charge. The claim that Wolfe shot Christian, and that his body was burned on the farm, comes from the friend's account in the affidavit, and a court hasn't tested it. [S1] Wolfe has pleaded not guilty. [S11]
 
-**What the record documents.** Christian and a friend were at a Fort Dodge convenience store until about 5:30 a.m. on May 2, 2020. His phone last pinged near Wolfe's farm at 6:45 a.m. A car burned in Wolfe's shed on May 4. Officers found a burned car buried under debris there on May 5. Wolfe told investigators he took the Corolla apart and cut it up, and said he found a phone near his mailbox that turned out to be Christian's. [S1]
-
-**Where sources disagree.** The state's arrest release says his family reported him missing on May 2. [S2] News reports from 2020 and 2021 say May 3. [S4, S5, S6] The affidavit records the family's first call to police on the night of May 3 and his formal entry as missing on May 5. [S1]
-
-The affidavit also disagrees with itself about when he was last heard from. It puts his phone near the farm at 6:45 a.m. on May 2. But it also records a Rockwell City officer telling Carroll County dispatch, on May 5, that family and friends hadn't heard from him since around 2 a.m. on May 3. [S1] His mother said his phone was already off when she tried him on Saturday, May 2. [S4]
-
-The Attorney General's office says the car was "found burned in a shed." [S3] The affidavit says it was found buried under rubble near the burn site the night after the fire. [S1]
-
-**What is alleged but not proven.** That Wolfe shot Christian, and that his body was burned on the farm. That comes from the friend's account in the affidavit. A court hasn't tested it. [S1] Wolfe has pleaded not guilty. [S11]
-
-**What no one has answered in public.** Where Christian is. How the timeline fits together, from a phone ping at the farm on the morning of May 2 to a last contact the family reported as May 3. What a jury will make of the friend's account.
+Some questions haven't been answered in public at all. Christian has not been found. [S1, S3] No one has publicly explained the gap described earlier, between a phone ping at the farm on the morning of May 2 and a last contact his family put at May 3. And no one yet knows what a jury will make of the friend's account.
 
 * * *
 
-In 2021, his mother said what she wanted most. [S6]
-
-"That's all I want to know, what happened, because then he's not missing, he's not missing," she said. [S6]
-
-His oldest boy, she said, is "a carbon copy of Christian." [S6]
+In 2021, his mother said what she wanted most. "That's all I want to know, what happened, because then he's not missing, he's not missing," she said. [S6] His oldest boy, she said, is "a carbon copy of Christian." [S6]
 
 The Iowa Attorney General's office says the investigation is still active. If you know anything about what happened to Christian Balke-Thompson in May 2020, call the office's cold case line at [1-800-242-5100](tel:+18002425100) or email coldcase@ag.iowa.gov. [S3]
 
