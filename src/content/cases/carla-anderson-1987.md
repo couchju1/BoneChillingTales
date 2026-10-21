@@ -65,8 +65,8 @@ timeline:
   - { date: 1987-11-14, text: "She misses her shift at Hardee's and doesn't answer phone calls. [S1, S7]", section: "the-shift" }
   - { date: 1987-11-15, text: "By Sunday, her parents contact law enforcement. [S7]", section: "the-shift" }
   - { date: 1987-11-18, text: "The Civil Air Patrol searches from the air. College students join the ground search. The FBI is called in. [S7]", section: "five-thousand-posters" }
-  - { date: 1995, text: "Investigator Lane Waldahl says Carla is probably dead and that the main thing is for her body to be found. [S3]", section: "probably-dead" }
-  - { date: 2008, text: "Carla is put on the BCA's cold case playing cards. Her mother and stepfather die months apart. [S6, S7]", section: "probably-dead" }
+  - { date: 1995, text: "Investigator Lane Waldahl says Carla is probably dead and that the main thing is for her body to be found. [S3]", section: "dental-records-to-boston" }
+  - { date: 2008, text: "Carla is put on the BCA's cold case playing cards. Her mother and stepfather die months apart. [S6, S7]", section: "dental-records-to-boston" }
   - { date: 2026-06-15, text: "Spotlight on Crime offers a reward of up to $25,000. [S1]", section: "where-it-stands" }
 updates:
   - { date: 2026-11-13, text: "Story published." }
@@ -82,13 +82,13 @@ She was 23. [S1]
 
 No one has seen her since. [S1, S2]
 
-## Spud
+## Delta Dawn
 
 Carla was born and raised in Brainerd, the Wadena Pioneer Journal reported. [S6]
 
 Her older brother Dan remembers a 9-year-old holding a spatula at the stove of the family camper in Alaska. He remembers her record player, and Carla singing "Delta Dawn" over and over in her room until her brothers pounded on the door. [S3]
 
-She was small. Most accounts put her at 4 feet 10 inches and about 80 pounds. [S4, S5, S9] She had strawberry blonde hair and blue eyes. [S2, S5]
+She was small. Most accounts put her at 4 feet 10 inches and about 80 pounds. [S4, S5, S9] CNN gives 90. [S3] She had strawberry blonde hair and blue eyes. [S2, S5]
 
 The state calls her a vulnerable adult. [S1] CNN reported that she had a learning disability, and that she took part in a living skills program and met with a social worker. [S3] Her family worried that her size and her disability left her vulnerable living alone. [S3]
 
@@ -100,7 +100,7 @@ She lived alone anyway.
 
 Her apartment at the Greenwood Apartments was a couple of blocks from work, so she could walk. [S6] She sometimes volunteered to come in on days she wasn't scheduled. [S6]
 
-Her manager, Wayne Wolden, called her "spud." "She was like a little potato," he said in an earlier interview. [S6]
+Her manager, Wayne Wolden, called her "spud." "She was like a little potato," he said in an earlier interview quoted by the Pioneer Journal in 2022. It doesn't say when or to whom. [S6]
 
 "Carla is just an exemplary bubbly, happy, just joyous individual who just brought so many smiles to everybody, employees and customers alike," Wolden told FOX 9 in 2026. He later became mayor of Wadena. [S8]
 
@@ -108,7 +108,7 @@ Her manager, Wayne Wolden, called her "spud." "She was like a little potato," he
 
 It wasn't always kind out there.
 
-Some people in town bullied her, CNN reported. Her mother told a newspaper she worried Carla would be taken advantage of. [S3] Her family said local people sometimes harassed her. [S6]
+Some people in town bullied her, CNN reported. In CNN's account, her mother told the Brainerd Daily Dispatch she worried Carla would be taken advantage of. [S3] Her family said local people sometimes harassed her. [S6]
 
 Her three brothers looked out for her, Dan said. [S3]
 
@@ -116,13 +116,13 @@ Her three brothers looked out for her, Dan said. [S3]
 
 ## Friday the 13th
 
-The employee of the month news came that day. [S7] Carla, her mother, Roberta Wells, and her stepfather, Verne Wells, went out to eat at the new Taco John's. [S6, S7]
+Her mother was Roberta Wells. Her stepfather was Verne Wells. They celebrated at the new Taco John's. [S6, S7]
 
 She would have stayed at her parents' place that weekend, Dan said. But they were working on a new house on a lake about an hour away, and Carla didn't want to go. [S3]
 
-They rented movies for her. They dropped her off at Greenwood, near Second Street Northwest and Hemlock Avenue. [S5, S7]
+Greenwood sits near Second Street Northwest and Hemlock Avenue. [S5]
 
-The time varies a little by source. The BCA says about 8 p.m. [S1] The Wadena Pioneer Journal, in 2022, put the drop-off between 7:30 and 8. [S6] Her federal missing person record says she was last seen at 7. [S2]
+The time of the drop-off varies a little by source. The BCA says about 8 p.m. [S1] The Wadena Pioneer Journal, in 2022, put the drop-off between 7:30 and 8. [S6] Her federal missing person record says she was last seen at 7. [S2]
 
 She was carrying a cup of soda from dinner. [S6]
 
@@ -148,17 +148,19 @@ Her mother called all weekend, she told the Brainerd Daily Dispatch in 2007. The
 
 By Sunday, her parents had gone to law enforcement, the Pioneer Journal reported. [S7]
 
-Dan was working in Eagan, about three hours away. His mother called him that Monday morning, he told CNN. He packed and drove to Wadena. [S3] Then he called their father, Marvin Anderson, who flew down from Alaska. [S3]
+Dan was working in Eagan, about three hours away. His mother called him at about 9 a.m. that Monday, he told CNN, to say Carla hadn't shown up for work. He packed and drove to Wadena. [S3] CNN's account doesn't mention the Saturday shift. Then he called their father, Marvin Anderson, who flew down from Alaska. [S3]
 
 ## What was in the apartment
 
-The door was locked. [S1] The 2022 Pioneer Journal story says it was locked from the outside. [S6]
+Her mother went to the apartment that weekend and found it untouched, CNN reported. [S3] Investigators also searched it. [S7, S12] The public record found for this story doesn't say exactly when, or who went in first.
+
+According to the BCA, the door was locked. [S1] The 2022 Pioneer Journal story says it was locked from the outside. [S6]
 
 There was no sign of a break-in. Nothing showed a struggle. [S1]
 
 Her purse was still inside. [S1] So was her checkbook. [S7] The empty soda cup was in the garbage. [S7] One of the rented movies was still in the VCR. [S1]
 
-Two things were gone. Her apartment keys, and her Hardee's jacket. [S1]
+The BCA says two things were gone. Her apartment keys, and her Hardee's jacket. [S1]
 
 Even the jacket comes down in more than one version. Chief Naomi Plautz told CNN it was a Hardee's "rainbow jacket" Carla had just gotten for being employee of the month. [S3] Other descriptions say brown and orange, or brown with the Hardee's logo. [S2, S6]
 
@@ -174,11 +176,11 @@ Volunteers, including the Wadena Pioneer Journal's staff, made more than 5,000 p
 
 The Civil Air Patrol searched from the air. [S7] A WCCO helicopter flew too. [S6] Students from Wadena Technical College walked the ground. [S7] Hunters were asked to watch for anything. [S6] A search committee went out looking for her about five days after she disappeared. [S6]
 
-The ground was bare when she disappeared, Sheriff Michael Carr Jr. recalled. Searchers knew snow was coming and would cover any disturbed earth. Within days, it snowed. [S6]
+Michael Carr Jr., now the Wadena County sheriff, was a high school sophomore that fall. He told the Pioneer Journal in 2022 that authorities moved fast because the ground was bare and snow would soon cover any disturbed ground. Within days, he said, it snowed. [S6]
 
 The FBI was called in. [S7] Authorities believed it was possibly a kidnapping, CNN reported. [S3]
 
-The family offered a $10,000 reward. [S3]
+In those first weeks, the family offered a $10,000 reward. [S3]
 
 Nothing turned up. [S3, S7]
 
@@ -208,7 +210,7 @@ In 2026 she told CNN that police have never found any evidence that it was. "It 
 
 ## Cleared
 
-Investigators have interviewed hundreds of people. [S1] Every person whose part has been reported publicly was cleared. [S3, S6, S7]
+Investigators have interviewed hundreds of people. [S1] A few have been named or described in news reports. Each of those was cleared, the reports say. [S3, S6, S7]
 
 Carla's boyfriend and members of her family were ruled out after they passed polygraph tests. [S3, S6, S7]
 
@@ -218,7 +220,7 @@ Floyd Tapson, a convicted killer, was looked at for a time because he targeted w
 
 Plautz told CNN that police aren't ruling out anyone who was cleared in the past. Investigators are using new tools, like DNA analysis, on old and new leads, she said. [S3]
 
-## Probably dead
+## Dental records to Boston
 
 "My mom was convinced very early on that she was not alive anymore," Dan told CNN. [S3]
 
@@ -244,7 +246,7 @@ Waldahl retired in 2002. [S6] "It's never gone away. It's always there," he said
 
 ## Where it stands
 
-On June 15, 2026, Spotlight on Crime announced a reward of up to $25,000 for information leading to Carla's whereabouts and to whoever is responsible for her disappearance. [S1] Her family is offering another $10,000. [S5]
+On June 15, 2026, Spotlight on Crime announced a reward of up to $25,000 for information leading to Carla's whereabouts and to whoever is responsible for her disappearance. [S1] The family is also offering $10,000, the Wadena Pioneer Journal reported. [S5] The sources don't say whether that is the same reward the family put up in 1987.
 
 Dan stood at the microphone in Wadena. His father, Marvin, and his brother Doug stood with him. [S5]
 
@@ -254,13 +256,13 @@ Police said the reward wasn't timed to any new development in the case. [S10] Pl
 
 "We've got evidence all over the place and we're looking at it pretty hard," she said. "I'm confident it will be solved." [S5]
 
-What's documented: Carla was dropped off at her apartment on the night of November 13, 1987. She missed her shift the next day. Her door was locked, her purse was inside, and her keys and Hardee's jacket were gone. No one has been arrested. [S1]
+What's documented: Carla was dropped off at her apartment on the night of November 13, 1987. She missed her shift the next day. Her door was locked, and her purse was inside. No one has been arrested. [S1] Investigators do not believe she would have chosen to disappear. [S1, S9]
 
-Where the sources disagree: the time she was last seen, 7 or about 8 p.m. [S1, S2, S6] Whether her shift was at noon or in the morning. [S1, S6] Whether she weighed 80 or 90 pounds. [S3, S5] What the jacket looked like. [S2, S3, S6] Whether anything at all was missing. [S1, S2] Whether the stolen car is connected. Plautz has said both that it must be and that there's no evidence it is. [S3, S6]
+Where the sources disagree: the time she was last seen, 7 or about 8 p.m. [S1, S2, S6] Whether her shift was at noon or in the morning, and whether her brother heard she'd missed work on the Monday. [S1, S3, S6] Whether she weighed 80 or 90 pounds. [S3, S5] What the jacket looked like. [S2, S3, S6] Whether anything at all was missing. The BCA says her keys and jacket were. NamUs says all her belongings remained. [S1, S2] Whether the stolen car is connected. Plautz has said both that it must be and that there's no evidence it is. [S3, S6]
 
-What's been suggested but not shown: that she walked out to see the swamp fire. [S3, S6] That she left with someone who came to the door. [S3] Investigators do not believe she chose to disappear. [S1]
+What's been suggested but not shown: that she walked out to see the swamp fire. [S3, S6] That the stolen car is part of it, which Waldahl still believed in 2022. [S6] Dan has raised the possibility that she went with someone who came to the door, and said no one knows. [S3]
 
-What no one has answered: where Carla went after she got home, who has her keys, and where she is now. [S1]
+What no one has answered: where Carla went after she got home, what became of her keys and jacket, and where she is now. [S1]
 
 * * *
 
@@ -274,6 +276,6 @@ It never was.
 
 When she disappeared, Carla was believed to be wearing blue jeans, a white sweatshirt with three Pepsi and Mountain Dew bears on it, a brown Hardee's jacket and pink sneakers. She had a half-inch scar over her right eye. [S2, S6]
 
-If you lived in Wadena in November 1987, if you saw Carla after 8 p.m. that Friday, or if you know anything about a brown Plymouth Horizon stolen that night, call the Wadena Police Department at [218-631-7700](tel:+12186317700) or the Minnesota Bureau of Criminal Apprehension at [877-996-6222](tel:+18779966222). You can stay anonymous. [S1]
+If you lived in Wadena in November 1987, if you saw Carla after 8 p.m. that Friday, or if you remember anything about that night, call the Wadena Police Department at [218-631-7700](tel:+12186317700) or the Minnesota Bureau of Criminal Apprehension at [877-996-6222](tel:+18779966222). You can stay anonymous. [S1]
 
 Thirty-nine years on, what would it take for the person who knows to finally make that call?
