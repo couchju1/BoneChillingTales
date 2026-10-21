@@ -296,4 +296,4 @@ When she disappeared, Carla was believed to be wearing blue jeans, a white sweat
 
 If you lived in Wadena in November 1987, if you saw Carla after 8 p.m. that Friday, or if you remember anything about that night, call the Wadena Police Department at [218-631-7700](tel:+12186317700) or the Minnesota Bureau of Criminal Apprehension at [877-996-6222](tel:+18779966222). You can stay anonymous. [S1]
 
-Thirty-nine years on, what would it take for the person who knows to finally make that call?
+Nearly thirty-nine years on, what would it take for the person who knows to finally make that call?
