@@ -41,7 +41,7 @@ lastSeenDate: 1987-11-13
 resolvedDate: null
 lastChecked: 2026-10-20
 lastFactChange: null
-published: 2026-11-13
+published: 2026-10-21
 agency: "the Wadena Police Department"
 tipLine: "+12186317700"
 anonymousTips: null
@@ -75,7 +75,7 @@ timeline:
   - { date: 2008, text: "Carla is put on the BCA's cold case playing cards. Her mother and stepfather die months apart. [S6, S7]", section: "dental-records-to-boston" }
   - { date: 2026-06-15, text: "Spotlight on Crime offers a reward of up to $25,000. [S1]", section: "where-it-stands" }
 updates:
-  - { date: 2026-11-13, text: "Story published." }
+  - { date: 2026-10-21, text: "Story published." }
 ---
 
 On Friday, November 13, 1987, Carla Beth Anderson found out she had been named employee of the month. [S6, S7]
@@ -296,4 +296,4 @@ When she disappeared, Carla was believed to be wearing blue jeans, a white sweat
 
 If you lived in Wadena in November 1987, if you saw Carla after 8 p.m. that Friday, or if you remember anything about that night, call the Wadena Police Department at [218-631-7700](tel:+12186317700) or the Minnesota Bureau of Criminal Apprehension at [877-996-6222](tel:+18779966222). You can stay anonymous. [S1]
 
-Thirty-nine years on, what would it take for the person who knows to finally make that call?
+Nearly thirty-nine years on, what would it take for the person who knows to finally make that call?
