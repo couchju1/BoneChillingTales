@@ -77,7 +77,7 @@ It is the last time anyone is known to have heard from her. [S2] She was due at 
 
 When police got into her Watertown apartment that day, the door was locked and her purse was on the table. [S7, S10] Her car was still in the lot. [S4] Five years later, a jury convicted Asmussen of kidnapping her, and he is serving life in prison. [S3, S4] He maintains he is innocent. [S8] Pam has never been found. [S10]
 
-This December marks 25 years since she disappeared. [S1] A man is in prison for taking her. The question her family has asked ever since is the one no court has answered: where is she? [S6]
+This December marks 25 years since she disappeared. [S1] A man is in prison for kidnapping her. The question her family has asked ever since is the one no court has answered: where is she? [S6]
 
 ## Pam
 
@@ -99,7 +99,7 @@ Three threatening and abusive messages were saved on her voice mail. The caller 
 
 ## The last calls
 
-On the evening of December 9, around 8 p.m., Pam's daughter called her to ask whether she had a phone number for someone they knew. Pam said she didn't, but that Asmussen would. Then Pam talked with Asmussen in the background. She explained that he was there picking up the last of his things. [S2]
+On the evening of December 9, around 8 p.m., Pam's daughter called her to ask whether she had a phone number for someone they knew. Pam said she didn't, but that Asmussen would. While they were on the phone, Pam talked with Asmussen in the background. She explained that he was there picking up the last of his things. [S2]
 
 Then came the 11 p.m. call to her mother. [S2] The missing poster lists December 9 as the day she went missing, and later news reports give December 10, the day she didn't come to work. [S1, S4] Both are true to the record. December 9 is the last day anyone heard from her, and December 10 is the day people noticed she was gone. [S2]
 
@@ -113,13 +113,17 @@ The door had been bolted, and her keys were inside. [S7] The only other person w
 
 ## His account
 
-Asmussen came to the Watertown Police Department on the day she disappeared, according to Forum, and denied having anything to do with it. [S7] "You'd think that a guy whose love of his life has gone missing, that he'd be worried about finding her. He was worried about defending himself," Vincent Foley, then the Codington County state's attorney, told Forum. [S7]
+Forum reported that Asmussen came to the Watertown Police Department on "the day of Dunn's disappearance," without saying whether that meant December 9 or December 10, and denied having anything to do with it. [S7]
 
 At first, the court documents say, he denied being at her apartment the night before. Then he told officers he had been there from about 6:30 to 8:30 p.m., that the two had argued and then made up, and that he had spent the night at his trailer in Bemis, about 20 minutes away. [S7] The state Supreme Court records that he admitted being at her home and talking to her on the phone on December 8 and 9. [S2]
+
+## The blue Cavalier
 
 Investigators also tracked the vehicles he drove on December 9 and 10. According to Forum's account of the court documents, his story about them didn't match what other people told police. On the evening of December 9 he picked up a blue Chevy Cavalier from a friend. The next morning he left it at an associate's shop, where, the associate said, the two of them took off the license plate. [S7] The car was sold before police could inspect it. When they did search it, they found hair consistent with Pam's in color and length, but DNA testing couldn't show it was hers. [S7]
 
 After December 9, the court documents show, his calls to her stopped. [S8]
+
+What stood out to investigators, Forum reported, was his lack of concern for Pam herself. [S7] "You'd think that a guy whose love of his life has gone missing, that he'd be worried about finding her. He was worried about defending himself," Vincent Foley, then the Codington County state's attorney, told Forum. [S7]
 
 ## Two trials
 
@@ -159,7 +163,7 @@ In an email to Pam's family, which KELOLAND obtained, Codington County State's A
 
 This story's case status was last checked on October 21, 2026. Asmussen is serving life for kidnapping Pam. [S3, S10] His motion to correct the sentence was the most recent court action found, and no ruling on it has been reported. [S9, S10]
 
-The record documents a lot. A protection order was in place, and he called her anyway. [S2] He was at her apartment the night of December 9. [S2] The next day the door was bolted, her keys and coat were inside, and her ring was gone. [S7] Two juries convicted him, first of stalking her and then of kidnapping her. [S2, S3]
+The record documents a lot. A protection order was in place, and he called her anyway. [S2] He was at her apartment the night of December 9. [S2] The next day, according to Forum's account of the affidavit, the door was bolted, her keys and coat were inside, and her engagement ring appeared to be gone. [S7] Two juries convicted him, first of stalking her and then of kidnapping her. [S2, S3]
 
 What the record doesn't show is what happened to Pam after that night. Kidnapping is the only crime Asmussen has been convicted of in her case, and he says he didn't take her. [S3, S8] Searches have turned up hair that couldn't be tested and bones that weren't hers. [S5, S6]
 
@@ -171,4 +175,4 @@ Watertown police say they still follow up on any leads they get. [S6] Stahl has 
 
 If you know anything about what happened to Pamela Dunn after December 9, 2001, call the Watertown Police Department at [605-882-6210](tel:+16058826210). [S1, S6]
 
-Twenty-five years on, Pam's family still believes someone out there knows where she is. [S6] What do you think it would take for that person to come forward?
+Nearly 25 years on, Pam is still missing. [S10] In 2021, Deb said someone out there knows where she is. [S6] What do you think it would take for that person to come forward?
