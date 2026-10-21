@@ -14,7 +14,7 @@
 #   the fire" (S6), the boyfriend's name (no source gives it), and NamUs's clinical physical descriptors.
 # - Disability: use the agencies' "vulnerable adult" (S1, S2) and the family's and reporters' own words.
 #   Never use it as a hook.
-# Sourcing: S5, S6, S7, S11 and S12 are Forum Communications papers. S5, S6, S7 and S12 carry Forum's label that an
+# Sourcing: S5, S6, S7, S11 and S12 are Forum Communications papers. S5, S7, S11 and S12 carry Forum's label that an
 # organization or individual paid for the work but didn't review it (flagged for Justin). Quotes from
 # 1987 to 2007 papers (Brainerd Dispatch, WPJ, Star Tribune, Grand Forks Herald) are only seen through
 # S3, S6 and S7 and are attributed that way.
@@ -56,7 +56,7 @@ sources:
   - { id: S6, title: "Just named employee of the month, Wadena 23-year-old was never seen again", publisher: "Wadena Pioneer Journal (Michael Johnson)", url: "https://www.wadenapj.com/just-named-employee-of-the-month-wadena-23-year-old-was-never-seen-again", date: 2022-01-04, archive: "https://web.archive.org/web/20251113120117/https://www.wadenapj.com/just-named-employee-of-the-month-wadena-23-year-old-was-never-seen-again" }
   - { id: S7, title: "Do you know what happened to Carla Beth Anderson?", publisher: "Wadena Pioneer Journal (Nicole Stracek), via InForum", url: "https://www.inforum.com/news/the-vault/do-you-know-what-happened-to-carla-beth-anderson", date: 2025-11-14, archive: "https://web.archive.org/web/20260806101113/https://www.inforum.com/news/the-vault/do-you-know-what-happened-to-carla-beth-anderson" }
   - { id: S8, title: "Minnesota cold case: New reward offered in 1987 disappearance of Wadena woman", publisher: "FOX 9 (Corin Hoggard)", url: "https://www.fox9.com/news/minnesota-cold-case-new-reward-offered-1987-disappearance-wadena-woman", date: 2026-06-15, archive: "https://web.archive.org/web/20260625064757/https://www.fox9.com/news/minnesota-cold-case-new-reward-offered-1987-disappearance-wadena-woman" }
-  - { id: S9, title: "Minnesota authorities announce $25K reward in 1987 missing persons cold case", publisher: "CBS Minnesota (Riley Moser)", url: "https://www.cbsnews.com/minnesota/news/carla-anderson-wadena-cold-case-reward/", date: 2026-06-15, archive: "https://web.archive.org/web/20260713044537/https://www.cbsnews.com/minnesota/news/carla-anderson-wadena-cold-case-reward/" }
+  - { id: S9, title: "Minnesota authorities announce $25K reward in 1987 missing persons cold case", publisher: "CBS Minnesota (Riley Moser)", url: "https://www.cbsnews.com/minnesota/news/carla-anderson-wadena-cold-case-reward/", date: 2026-06-15, archive: "https://web.archive.org/web/20261021025424/https://www.cbsnews.com/minnesota/news/carla-anderson-wadena-cold-case-reward/" }
   - { id: S10, title: "$25K reward offered in cold case from 1987 of missing Wadena woman", publisher: "KSTP", url: "https://kstp.com/kstp-news/top-news/25k-reward-offered-in-cold-case-from-1987-of-missing-wadena-woman-anderson/", date: 2026-06-15, archive: "https://web.archive.org/web/20261021023736/https://kstp.com/kstp-news/top-news/25k-reward-offered-in-cold-case-from-1987-of-missing-wadena-woman-anderson/" }
   - { id: S11, title: "Wadena woman still missing after 28 years", publisher: "Grand Forks Herald", url: "https://www.grandforksherald.com/newsmd/wadena-woman-still-missing-after-28-years", date: 2015-11-17, archive: "https://web.archive.org/web/20261021023755/https://www.grandforksherald.com/newsmd/wadena-woman-still-missing-after-28-years" }
   - { id: S12, title: "Carla Beth Anderson went missing in 1987. Police believe a $25,000 reward will lead them to the smoking gun", publisher: "Duluth News Tribune (Trisha Taurinskas)", url: "https://www.duluthnewstribune.com/news/the-vault/carla-beth-anderson-went-missing-in-1987-police-believe-a-25-000-reward-will-lead-them-to-the-smoking-gun", date: 2026-06-25, archive: "https://web.archive.org/web/20260729122059/https://www.duluthnewstribune.com/news/the-vault/carla-beth-anderson-went-missing-in-1987-police-believe-a-25-000-reward-will-lead-them-to-the-smoking-gun" }
@@ -108,7 +108,7 @@ Her manager, Wayne Wolden, called her "spud." "She was like a little potato," he
 
 It wasn't always kind out there.
 
-Some people in town bullied her, CNN reported. In CNN's account, her mother told the Brainerd Daily Dispatch she worried Carla would be taken advantage of. [S3] Her family said local people sometimes harassed her. [S6]
+Some people in town bullied her, CNN reported. Her mother told a newspaper she worried Carla would be taken advantage of, CNN reported. [S3] Her family said local people sometimes harassed her. [S6]
 
 Her three brothers looked out for her, Dan said. [S3]
 
@@ -124,7 +124,7 @@ Greenwood sits near Second Street Northwest and Hemlock Avenue. [S5]
 
 The time of the drop-off varies a little by source. The BCA says about 8 p.m. [S1] The Wadena Pioneer Journal, in 2022, put the drop-off between 7:30 and 8. [S6] Her federal missing person record says she was last seen at 7. [S2]
 
-She was carrying a cup of soda from dinner. [S6]
+She was carrying a cup of soda from dinner. [S6, S7]
 
 * * *
 
@@ -142,17 +142,17 @@ She didn't come. [S1]
 
 Not showing up wasn't like her, her mother and Wolden told the Wadena Pioneer Journal in 1987. [S7] People called her apartment. No one answered. [S1, S7]
 
-Her mother called all weekend, she told the Brainerd Daily Dispatch in 2007. Then she went to the apartment herself. [S3]
+Her mother called several times that weekend, she told the Brainerd Daily Dispatch in 2007. No one picked up. Then she went to the apartment herself and found it untouched. [S3]
 
 "I knew then that life would never be the same," Roberta Wells said. "Immediately I got my husband and went down to the police station." [S3]
 
 By Sunday, her parents had gone to law enforcement, the Pioneer Journal reported. [S7]
 
-Dan was working in Eagan, about three hours away. His mother called him at about 9 a.m. that Monday, he told CNN, to say Carla hadn't shown up for work. He packed and drove to Wadena. [S3] CNN's account doesn't mention the Saturday shift. Then he called their father, Marvin Anderson, who flew down from Alaska. [S3]
+Dan was working in Eagan, about three hours away. His mother called him at about 9 a.m. that Monday to say Carla hadn't shown up for work, CNN reported. He packed and drove to Wadena. Then he called their father, Marvin Anderson, who flew down from Alaska. [S3] CNN's account doesn't mention the Saturday shift.
 
 ## What was in the apartment
 
-Her mother went to the apartment that weekend and found it untouched, CNN reported. [S3] Investigators also searched it. [S7, S12] The public record found for this story doesn't say exactly when, or who went in first.
+Investigators also searched it. [S7, S12] The public record found for this story doesn't say exactly when, or who went in first.
 
 According to the BCA, the door was locked. [S1] The 2022 Pioneer Journal story says it was locked from the outside. [S6]
 
@@ -176,7 +176,7 @@ Volunteers, including the Wadena Pioneer Journal's staff, made more than 5,000 p
 
 The Civil Air Patrol searched from the air. [S7] A WCCO helicopter flew too. [S6] Students from Wadena Technical College walked the ground. [S7] Hunters were asked to watch for anything. [S6] A search committee went out looking for her about five days after she disappeared. [S6]
 
-Michael Carr Jr., now the Wadena County sheriff, was a high school sophomore that fall. He told the Pioneer Journal in 2022 that authorities moved fast because the ground was bare and snow would soon cover any disturbed ground. Within days, he said, it snowed. [S6]
+Michael Carr Jr., who later became Wadena County sheriff, was a high school sophomore that fall. He told the Pioneer Journal in 2022 that authorities moved fast because the ground was bare and snow would soon cover any disturbed ground. Within days, he said, it snowed. [S6]
 
 The FBI was called in. [S7] Authorities believed it was possibly a kidnapping, CNN reported. [S3]
 
@@ -210,7 +210,7 @@ In 2026 she told CNN that police have never found any evidence that it was. "It 
 
 ## Cleared
 
-Investigators have interviewed hundreds of people. [S1] A few have been named or described in news reports. Each of those was cleared, the reports say. [S3, S6, S7]
+Investigators have conducted hundreds of interviews. [S1] A few have been named or described in news reports. Each of those was cleared, the reports say. [S3, S6, S7]
 
 Carla's boyfriend and members of her family were ruled out after they passed polygraph tests. [S3, S6, S7]
 
@@ -228,7 +228,7 @@ Plautz told CNN that police aren't ruling out anyone who was cleared in the past
 
 In 1995, eight years on, she said she hoped hunters might help find her daughter's body. [S7] As awful as it was to imagine her daughter murdered, the paper wrote, she found it easier than imagining someone taking advantage of Carla. "That's just more than I can bear," she said. [S7]
 
-That same year, Waldahl had Carla's photo age-enhanced. He read the descriptions of bodies found and sent her dental records as far as Boston. [S3]
+By 1995, Waldahl had Carla's photo age-enhanced. He read the descriptions of bodies found and sent her dental records as far as Boston. [S3]
 
 "Carla is probably dead," he said. "The main thing now is that her body be found." [S3]
 
@@ -252,13 +252,13 @@ Dan stood at the microphone in Wadena. His father, Marvin, and his brother Doug 
 
 "We're ready for closure," Dan said. "Somebody's got to know something." [S5]
 
-Police said the reward wasn't timed to any new development in the case. [S10] Plautz wouldn't discuss suspects or leads. [S5] She told CNN that some leads are getting more attention than others. [S3]
+Police said the reward wasn't timed to any new development in the case. [S10] In November 2025, the Pioneer Journal reported that police had some new leads and suspects. None has been named. [S7] At the 2026 news conference, Plautz wouldn't discuss suspects or leads. [S5] She told CNN that some leads are getting more attention than others. [S3]
 
 "We've got evidence all over the place and we're looking at it pretty hard," she said. "I'm confident it will be solved." [S5]
 
 What's documented: Carla was dropped off at her apartment on the night of November 13, 1987. She missed her shift the next day. Her door was locked, and her purse was inside. No one has been arrested. [S1] Investigators do not believe she would have chosen to disappear. [S1, S9]
 
-Where the sources disagree: the time she was last seen, 7 or about 8 p.m. [S1, S2, S6] Whether her shift was at noon or in the morning, and whether her brother heard she'd missed work on the Monday. [S1, S3, S6] Whether she weighed 80 or 90 pounds. [S3, S5] What the jacket looked like. [S2, S3, S6] Whether anything at all was missing. The BCA says her keys and jacket were. NamUs says all her belongings remained. [S1, S2] Whether the stolen car is connected. Plautz has said both that it must be and that there's no evidence it is. [S3, S6]
+Where the sources disagree: the time she was last seen, 7 or about 8 p.m. [S1, S2, S6] Whether her shift was at noon or in the morning, and whether her brother heard she'd missed work on the Monday. [S1, S3, S6] Whether she weighed 80 or 90 pounds. [S3, S5] What the jacket looked like. [S2, S3, S6] Whether anything at all was missing. The BCA says her keys and jacket were. NamUs says all her belongings remained. [S1, S2] Whether the stolen car is connected. Plautz said in 2022 that they've "got to be related" but it couldn't be proven, and in 2026 that police have no evidence it was. [S3, S6]
 
 What's been suggested but not shown: that she walked out to see the swamp fire. [S3, S6] That the stolen car is part of it, which Waldahl still believed in 2022. [S6] Dan has raised the possibility that she went with someone who came to the door, and said no one knows. [S3]
 
