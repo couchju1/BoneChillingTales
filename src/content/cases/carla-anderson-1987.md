@@ -25,7 +25,7 @@
 # the Hardee's logo (S2), or a "rainbow jacket" just given to her (Plautz, S3). The stolen car: Plautz said
 # in 2022 "They've got to be related" (S6), and in 2026 that there's no evidence it was (S3).
 # Her stepfather's first name: Verne (S6, S7) or Vern (as Dan said it, FOX 9 earlier piece, not cited).
-# Photos: supplied by Justin, October 21, 2026. Captions say only what each photo shows. None is dated,
+# Photos: supplied by Justin, October 21, 2026. Rights basis: family permission (Justin confirmed he has it). Captions say only what each photo shows. None is dated,
 # and the baby in the with-baby photo is not identified.
 draft: false
 title: "Employee of the Month: The Disappearance of Carla Beth Anderson"
@@ -49,8 +49,8 @@ contentNote: null
 image:
   src: "./carla-anderson-1987.jpg"
   alt: "Carla Anderson smiling, with curled strawberry blonde hair and small white flowers in it, wearing a corsage, against a blue background"
-  credit: "Anderson family photo, digitally enhanced"
-  license: "Family photo published in news coverage of the case"
+  credit: "Family photo, digitally enhanced"
+  license: "Used with family permission"
 youtubeId: null
 youtubeUploadDate: null
 sources:
