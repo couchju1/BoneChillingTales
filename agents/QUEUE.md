@@ -7,6 +7,9 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 | Date | Person | Town, state | Status | Why now | Notes |
 |---|---|---|---|---|---|
 | 2026-10-20 | Linda Dillard | Table Rock, NE | missing | NSP renewed its appeal Sept. 1, 2026; otherwise evergreen | Nebraska State Patrol. Risk High: unnamed man in court records, drug use in the record. |
+| 2026-10-21 | Pamela Jean Dunn | Watertown, SD | missing | 25th anniversary Dec. 9 (or 10), 2026 | Watertown PD + SD DCI. Ex-boyfriend David Asmussen convicted of kidnapping (jury, Dec. 2006, life). Not charged with murder. Risk High. |
+| 2026-10-21 | Barbara Lenz | Woodbine, IA | solved | Robert Davis convicted of second-degree murder (Mar. 31, 2026), sentenced to 50 years (May 22, 2026). Body never found | Iowa AG Cold Case Unit. Domestic violence in the record; daughter's sentencing statement describes being choked as a child (contentNote). Appeal status unknown. Risk High. |
+| 2026-10-21 | Cassandra Rhines | Minneapolis / Gooseberry Falls, MN | unsolved | Evergreen. Remains found 2014, ruled homicide 2015 | Lake County Sheriff + BCA. Sex work in the agency record; a deceased man police wanted to question is named in 2021 coverage. Risk Elevated. |
 
 ## Picked
 
