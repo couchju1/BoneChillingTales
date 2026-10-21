@@ -16,7 +16,7 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 |---|---|---|---|---|
 | 2026-10-20 | Carla Beth Anderson | Wadena, MN | missing | `story/carla-anderson-1987`, PR #21 |
 | 2026-10-21 | Christian Balke-Thompson | Carroll County, IA | in-court | Assigned to Poe 2026-10-21. Branch and PR pending |
-| 2026-10-21 | Pamela Jean Dunn | Watertown, SD | missing | Assigned to Poe 2026-10-21. Branch and PR pending |
+| 2026-10-21 | Pamela Jean Dunn | Watertown, SD | missing | `story/pamela-dunn-2001`, PR pending |
 
 ## Passed
 
