@@ -74,14 +74,14 @@ timeline:
   - { date: 2026-09-16, text: "The murder trial is set for January 26, 2027. [S12]", section: "where-it-stands" }
 updates:
   - { date: 2026-10-22, text: "Story published." }
-  - { date: 2026-10-22, text: "Story rewritten for flow. No facts changed." }
+  - { date: 2026-10-22, text: "Story rewritten for flow. Wording on the burned car and on the friend's account was made more precise, and the closing question no longer puts words in his mother's mouth." }
 ---
 
 On April 29, 2020, Michelle Balke saw her son Christian at his son's birthday party. It was the last time she saw him. [S4] "He wanted to talk to me, we didn't get to talk that night," she told The Messenger a few weeks later. [S4]
 
-That Saturday, she tried to call and text him, and his phone was off. [S4] "I just thought it was off or dead and didn't think much of it," she said. [S4]
+That Saturday, May 2, she tried to call and text him, and his phone was off. [S4] "I just thought it was off or dead and didn't think much of it," she said. [S4]
 
-Within a week, his car would be found burned on a farm north of Carroll. [S1, S3] Nearly six years later, the man who lived on that farm was charged with first-degree murder in Christian's death, and he has pleaded not guilty. [S1, S2, S3, S11] Christian has never been found. [S1, S3] The account at the center of the charge comes from a woman who was with him that night, and it hasn't been tested in court. [S1]
+Within a week, a burned car that investigators believe was his would be found on a farm north of Carroll. [S1, S3] Nearly six years later, the man who lived on that farm was charged with first-degree murder in Christian's death, and he has pleaded not guilty. [S1, S2, S3, S11] Christian has never been found. [S1, S3] The account at the center of the charge comes from a woman who was with him that night, and it hasn't been tested in court. [S1]
 
 ## B-T
 
@@ -115,7 +115,7 @@ At 10 p.m., Rockwell City police formally entered Christian as a missing person.
 
 ## What was under the rubble
 
-Later that night, officers served a search warrant on the farm. [S1] A Carroll County deputy and an Iowa State Patrol trooper saw what the affidavit calls "fresh activity around the burn site, including a car buried underneath rubble." A skid loader nearby appeared to have been used to pile dirt, manure and debris on top of it. [S1] The Attorney General's office puts it more simply, saying the car was "found burned in a shed." [S3]
+Later that night, officers served a search warrant on the farm. [S1] A Carroll County deputy and an Iowa State Patrol trooper saw what the affidavit calls "fresh activity around the burn site, including a car buried underneath rubble." A skid loader nearby appeared to have been used to pile dirt, manure and debris on top of it. [S1] The Attorney General's office describes it differently, saying a vehicle believed to be his was "found burned in a shed." [S3]
 
 The car was too badly burned, and too deeply buried, for anyone to find a vehicle identification number. So the deputy compared what was left of the engine compartment and the rear light moldings to pictures of a 1997 Toyota Corolla online, and determined that they were consistent. [S1] Calls to Christian's phone went straight to voicemail. [S1]
 
@@ -127,11 +127,11 @@ Investigators later determined it was Christian's. [S1]
 
 In mid-May 2020, the Iowa Division of Criminal Investigation still wasn't saying much in public. [S4] "We're just continuing running down leads and really don't know if he left on his own," Special Agent Ray Fiedler told The Messenger. "I can't say there was foul play, I can't say he left on his own, I just don't know." [S4]
 
-The DCI wouldn't say whether Christian was believed to have a vehicle with him. "There are certain things that we're looking at, but I don't want to give that out because only certain people would know that," Fiedler said. [S4] In June, the Carroll Times Herald reported that officers had recovered what they believed was "debris" from Christian's car. Further details were being withheld while the investigation went on. [S5]
-
 His mother did her own asking. She told The Messenger that May that she had been "going around in circles," talking to his friends and trying to learn where he was. [S4] "Why wouldn't you help somebody come home to their children and their mother, whether it gets you in trouble or not?" she said. "It's just unbelievable." [S4]
 
-A year later, she said she had "slammed and picked and poked and prodded at every person I could possibly." [S6] The family had told his boys that their father was in heaven. "We told the boys that he was gone because we had no other choice," she said. [S6] She didn't think he was still alive. He had gone through two Mother's Days without calling her, she said, and he never would have. [S6]
+The DCI wouldn't say whether Christian was believed to have a vehicle with him. "There are certain things that we're looking at, but I don't want to give that out because only certain people would know that," Fiedler said. [S4] In June, the Carroll Times Herald reported that officers had recovered what they believed was "debris" from Christian's car. Further details were being withheld while the investigation went on. [S5]
+
+A year later, his mother said she had "slammed and picked and poked and prodded at every person I could possibly." [S6] The family had told his boys that their father was in heaven. "We told the boys that he was gone because we had no other choice," she said. [S6] She didn't think he was still alive. He had gone through two Mother's Days without calling her, she said, and he never would have. [S6]
 
 "Somebody knows something," she said. [S6]
 
@@ -145,7 +145,7 @@ She said she was driving the Corolla when they got to Wolfe's farm, because Chri
 
 Minutes later, she said, she heard what she described as a shotgun blast. She said she ran to the shed and saw that Wolfe had shot Christian. [S1] She said Christian was wrapped in a tarp, taken to a burn pile on the property, and set on fire. [S1]
 
-She also admitted staying on Wolfe's farm for an extended time after Christian's death, the affidavit says. [S1] No source reviewed for this story reports any charge against her.
+She also told investigators she stayed on Wolfe's farm for an extended time afterward, the affidavit says. [S1] No source reviewed for this story reports any charge against her.
 
 ## The charge
 
@@ -161,7 +161,7 @@ In a separate case, Wolfe is also charged with five counts of third-degree sexua
 
 ## Where it stands
 
-Wolfe's murder trial is set for January 26, 2027, in Carroll County. [S3, S12] The Attorney General's office and the Carroll County Attorney's Office will prosecute, and the Attorney General's office says the investigation is still active. [S3] I last checked the case status on October 21, 2026. I couldn't confirm whether Wolfe is still in jail.
+Wolfe's murder trial is set for January 26, 2027, in Carroll County. [S3, S12] The Attorney General's office and the Carroll County Attorney's Office will prosecute, and the Attorney General's office says the investigation is still active. [S3] This story's case status was last checked on October 21, 2026. The sources reviewed for it don't say whether Wolfe is still in jail.
 
 The record documents a good deal. Christian and a friend were at a Fort Dodge convenience store until about 5:30 a.m. on May 2, 2020, and his phone last pinged near Wolfe's farm at 6:45 a.m. [S1] A car burned in Wolfe's shed two days later, and officers found a burned car buried under debris there the next night. [S1] Wolfe told investigators he took the Corolla apart and cut it up, and he said he found a phone near his mailbox that turned out to be Christian's. [S1]
 
@@ -175,4 +175,4 @@ In 2021, his mother said what she wanted most. "That's all I want to know, what 
 
 The Iowa Attorney General's office says the investigation is still active. If you know anything about what happened to Christian Balke-Thompson in May 2020, call the office's cold case line at [1-800-242-5100](tel:+18002425100) or email coldcase@ag.iowa.gov. [S3]
 
-So here's the question his mother asked, and it's still the right one: if somebody knows something, what are they waiting for?
+In 2020, his mother asked why anyone wouldn't help him come home. [S4] If you know something about what happened to Christian, what's stopping you?
