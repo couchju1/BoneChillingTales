@@ -15,7 +15,7 @@ Launch states get priority: SD, ND, MN, IA, NE. Cases from other states are fine
 3. Accused means accused. Someone charged is "charged with" or "accused of" a crime until a court convicts them. If a jury acquitted them or charges were dropped, say so near the top, and never hint they did it anyway.
 4. Only use roles the record gives. If police never called someone a suspect, the story doesn't either.
 5. Opinions are labeled and attributed. "A childhood friend believes there was a cover-up. [S2]" Not "There was a cover-up."
-6. When sources disagree, say so plainly instead of picking one silently. ("The FBI says ditch. Newspapers say ravine.")
+6. When sources disagree, say so plainly, once, instead of picking one silently. ("The FBI says ditch. Newspapers say ravine.")
 7. Say what the record doesn't show. Gaps are part of the story. ("The public record doesn't say when she left the farm.")
 8. Never publish: crime scene photos, private photos of victims without family permission, names of accused minors (unless charged as adults and named by the court), names of sexual assault victims who haven't spoken publicly, mugshots of people not convicted (unless agency-released and directly newsworthy).
 9. Violence against a child or sexual violence requires a `contentNote`.
@@ -46,17 +46,27 @@ Each source in the frontmatter needs `id`, `title`, `publisher`, `url`, and `dat
 
 ## How stories sound
 
-Read two or three published stories in `src/content/cases/` before writing. Tammy Haas, Rachel Cyriacks and Curtis Bradford are good models.
+Read two or three published stories in `src/content/cases/` before writing. Tammy Haas, Rachel Cyriacks and Curtis Bradford are good models. They predate the flow rules below, so use them for sourcing, attribution and care, and use the rules below for paragraphing and transitions.
 
-- Short paragraphs. One to three sentences. Single-sentence paragraphs are common.
-- Plain words. Short sentences. Write like you're telling a friend something serious.
-- Open on a concrete moment or detail, not a summary. ("Her mother's birthday is November 14." / "On September 23, 1992, a golfer went looking for lost balls near Crofton, Nebraska.")
+The story should read like a good newspaper feature: one connected account that pulls the reader from paragraph to paragraph, not a stack of separate facts. Justin set this standard on October 21, 2026, using the Detroit Lakes Tribune's "20 years gone" (2007) as the model for flow. Copy its flow, not its wording. Some of its wording breaks the rules below.
+
+- Paragraphs are usually two to four sentences. Keep one-line paragraphs for moments that need to land, like "Carla's door was locked from the outside." If every other paragraph is one line, nothing lands.
+- Plain words. Vary sentence length. A sentence that explains cause and effect can run 20 or 30 words with a clause or two. Then a short one. Write like you're telling a friend something serious.
+- Connect paragraphs. Each one should follow from the last: "So when she didn't show up...", "Meanwhile...", "That's part of what makes the case hard." Say how things relate when the sources say how they relate.
+- Open on a concrete moment or detail, not a summary. ("Her mother's birthday is November 14." / "On September 23, 1992, a golfer went looking for lost balls near Crofton, Nebraska.") Within the first few paragraphs, say what the mystery is and why it matters, so the reader knows the question before the details start.
 - Treat victims as people first. A section about who they were, built only from what's on the record. If the record is thin, say so and leave it there. Don't invent warmth.
 - Section headings are short and specific, pulled from the story: "The last morning", "The slug", "A pizza in Revere". Not "Background" or "Investigation".
+- Let scenes breathe. Small recorded details, told in order, carry a scene better than a list: "One of the rented movies was still in the VCR. The empty soda cup was in the garbage."
+- Quotes: let a speaker run. Quote, paraphrase, then quote them again. Keep the tag short and after the quote ("Dan said."). After the first full name, use first names for family members, and last names for officials. Say where a quote came from (the outlet and year) the first time that speaker appears in a section, not on every quote. Use it again only when the outlet or year changes.
+- Theories: give the reasoning first, attributed to whoever holds the theory, then say plainly what the evidence does and doesn't show. Don't close down a theory in the same sentence that introduces it.
+- Name each source conflict once, where it comes up in the story. Don't repeat the same conflict later.
+- Use `* * *` scene breaks sparingly. Two or three per story at most. Use a transition sentence instead when one will do. Space photos out so they don't interrupt every few paragraphs.
 - Length: 1,600 to 3,000 words.
-- Ending, for open cases: a "where it stands" section that separates what's documented, where sources disagree, what's reported but not proven, and what no one has answered. Then the tip line as a `tel:` link. Then one reader question.
+- Ending, for open cases: a "where it stands" section in prose. It covers what's documented, what's been suggested but not shown, and what no one has answered. Refer back to conflicts already named instead of listing them again. Then the tip line as a `tel:` link. Then one reader question.
 - Ending, for solved cases: what the outcome was, what the record still leaves open, and something that keeps the victims at the center.
 - Close with one honest question for the reader. It drives comments.
+
+Flow never outranks the rules above it. Every fact still gets a source tag. Accused still means accused. Don't smooth over a gap or a conflict to make a paragraph read better, and don't write a transition that claims a link between events the sources don't make. ("So" and "because" are claims.)
 
 ### Banned
 
