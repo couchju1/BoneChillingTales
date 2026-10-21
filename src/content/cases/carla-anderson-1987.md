@@ -108,7 +108,7 @@ Her manager, Wayne Wolden, called her "spud." "She was like a little potato," he
 
 It wasn't always kind out there.
 
-Some people in town bullied her, CNN reported. Her mother told a newspaper she worried Carla would be taken advantage of, CNN reported. [S3] Her family said local people sometimes harassed her. [S6]
+According to CNN, some people in town bullied her, and her mother told a newspaper she worried Carla would be taken advantage of. [S3] Her family said local people sometimes harassed her. [S6]
 
 Her three brothers looked out for her, Dan said. [S3]
 
@@ -152,7 +152,7 @@ Dan was working in Eagan, about three hours away. His mother called him at about
 
 ## What was in the apartment
 
-Investigators also searched it. [S7, S12] The public record found for this story doesn't say exactly when, or who went in first.
+Investigators also searched Carla's apartment. [S7, S12] The public record found for this story doesn't say exactly when, or who went in first.
 
 According to the BCA, the door was locked. [S1] The 2022 Pioneer Journal story says it was locked from the outside. [S6]
 
