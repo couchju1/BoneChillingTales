@@ -13,7 +13,7 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 
 | Date | Person | Town, state | Status | Branch / PR |
 |---|---|---|---|---|
-| 2026-10-20 | Carla Beth Anderson | Wadena, MN | missing | Assigned to Poe 2026-10-20. Branch and PR pending |
+| 2026-10-20 | Carla Beth Anderson | Wadena, MN | missing | `story/carla-anderson-1987`, PR #21 |
 
 ## Passed
 
