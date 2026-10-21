@@ -27,6 +27,10 @@
 # - Left out on purpose: wound details beyond the court's count, the throat, Poppen's statements about how
 #   the stabbing felt, Shand Ross's "rag doll" line (it repeats the stabbing account), and the end of
 #   Brindle's quote ("Little did we know...", a phrase the build bans).
+# Photos: on October 20, 2026 Justin replaced every photo with an AI-enhanced copy and chose to run them,
+#   each captioned "digitally enhanced." The enhancement changed details: Power's TV still lost its on-screen
+#   caption and shows a short-haired, clearer face, Poppen's TV still shows more of his face, and the
+#   booking-board dates were filled in. Don't cite any of those details as fact.
 # Quote edits: the build bans semicolons, so Mary's quoted words from S2 are split in two at the semicolon
 # after "him", with no words changed.
 # Conflicts in the text: "Amy" (S2) or "Aimee Enright Power" (S4). "Power" or "Powers" within S2.
@@ -61,7 +65,7 @@ contentNote: "a violent stabbing in a murder-for-hire plot"
 image:
   src: "./mary-ross-1995.jpg"
   alt: "Mary K. Ross smiling, with curly hair, in a striped sweater with a collar"
-  credit: "Ross family photo"
+  credit: "Ross family photo, digitally enhanced"
   license: "Family photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
@@ -115,13 +119,13 @@ She graduated from La Junta High School in Colorado in 1988, her family wrote. [
 
 She had a baby girl, Kristian. [S7]
 
-![Mary K. Ross smiling in a plaid coat, holding a laughing baby](./mary-ross-1995-with-baby.jpg "Mary K. Ross holding a baby, in a family photo.")
+![Mary K. Ross smiling in a plaid coat, holding a laughing baby](./mary-ross-1995-with-baby.jpg "Mary K. Ross holding a baby, in a family photo, digitally enhanced.")
 
 Her family remembers "the joy and laughter she brought to all our lives." [S4]
 
 "Mary K. was the fabric that held our family together," her brother, Shand Ross, said in 2022. [S6]
 
-![Mary K. Ross laughing in a graduation gown, with a corsage pinned to it](./mary-ross-1995-graduation.jpg "Mary K. Ross in a graduation gown, in a family photo.")
+![Mary K. Ross laughing in a graduation gown, with a corsage pinned to it](./mary-ross-1995-graduation.jpg "Mary K. Ross in a graduation gown, in a family photo, digitally enhanced.")
 
 * * *
 
@@ -139,7 +143,7 @@ In May 1995, the trouble between Amy and her husband, Robert Power, got worse. [
 
 Power believed Mary was interfering with his marriage, the courts recorded. He was also upset that she had smoked marijuana in front of his child. [S3]
 
-![Robert Power, with long hair and an orange jail uniform, looking down, under an on-screen caption with his name](./mary-ross-1995-power-news.jpg "Robert Power in TV footage of the case.")
+![Robert Power, with short hair and an orange jail uniform, looking down](./mary-ross-1995-power-news.jpg "Robert Power in TV footage of the case, digitally enhanced.")
 
 "Power wanted Ross killed because she was interfering in his marriage," KELOLAND crime reporter Jessica Armstrong said in 1995. [S4]
 
@@ -151,11 +155,11 @@ Robert Power wanted her dead. [S1, S3]
 
 Michael Lee Smith, 21, was the go-between. Power offered him money or methamphetamine to kill Mary. Smith said no. But he agreed to find someone who would, and to handle the payment. [S1]
 
-![Michael Lee Smith as a young man with a mustache, in a striped shirt](./mary-ross-1995-smith-news.jpg "Michael Lee Smith in TV footage of the case.")
+![Michael Lee Smith as a young man with a mustache, in a striped shirt](./mary-ross-1995-smith-news.jpg "Michael Lee Smith in TV footage of the case, digitally enhanced.")
 
 Smith's roommates, Eric Coon and Robert Poppen, were the ones who went into her apartment. [S1, S3, S4]
 
-![Robert Poppen with a shaved head and an orange jail uniform, looking down](./mary-ross-1995-poppen-news.jpg "Robert Poppen in TV footage of the case.")
+![Robert Poppen with a shaved head and an orange jail uniform, looking down](./mary-ross-1995-poppen-news.jpg "Robert Poppen in TV footage of the case, digitally enhanced.")
 
 Walter Craft Jr. got rid of Mary's bloody clothing afterward. [S4, S8]
 
@@ -255,7 +259,7 @@ Poppen pleaded guilty on December 15, 1995. He told the judge one reason was tha
 
 On December 18, Coon pleaded guilty. So did Power. So did Craft. [S3]
 
-![Eric Coon with long dark hair, in an orange jail uniform](./mary-ross-1995-coon-news.jpg "Eric Coon in TV footage of the case.")
+![Eric Coon with long dark hair, in an orange jail uniform](./mary-ross-1995-coon-news.jpg "Eric Coon in TV footage of the case, digitally enhanced.")
 
 Coon and Poppen were sentenced to life. As part of their deals, they agreed to testify against the others. [S3] Power pleaded guilty to first-degree murder and got life without parole. [S2, S5]
 
@@ -273,7 +277,7 @@ It convicted him of accessory to murder and conspiracy to commit murder. He got 
 
 He appealed, saying his confession wasn't voluntary. On January 14, 1998, the South Dakota Supreme Court turned him down. [S1]
 
-![Michael Lee Smith, older, with a white beard and glasses, above a South Dakota Department of Corrections booking board](./mary-ross-1995-smith-doc.jpg "Michael Lee Smith in a South Dakota Department of Corrections photo.")
+![Michael Lee Smith, older, with a white beard and glasses, above a South Dakota Department of Corrections booking board](./mary-ross-1995-smith-doc.jpg "Michael Lee Smith in a South Dakota Department of Corrections photo, digitally enhanced.")
 
 ## A locked door
 
@@ -303,7 +307,7 @@ In South Dakota, life means no parole. But a lifer can ask the governor for clem
 
 All four men asked. [S5] Poppen was turned down by a two-person panel five times. [S6] Coon was turned down for a hearing in 2019. [S7]
 
-![Robert Poppen, older and bald with a gray goatee, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-poppen-doc.jpg "Robert Poppen in a South Dakota Department of Corrections photo.")
+![Robert Poppen, older and bald with a gray goatee, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-poppen-doc.jpg "Robert Poppen in a South Dakota Department of Corrections photo, digitally enhanced.")
 
 In 2022, Coon got a hearing in front of the full Board of Pardons and Paroles. [S6, S7]
 
@@ -315,7 +319,7 @@ The family put out a statement:
 
 > "If we could bring back our amazing and much-loved Mary K., our world would be filled with the joy and laughter she brought to all our lives. We miss her more than anyone can imagine. She has been absent a lifetime with her precious daughter and never had a chance to know her grandchildren." [S4]
 
-![Mary K. Ross with long feathered hair and red lipstick, smiling slightly](./mary-ross-1995-portrait.jpg "Mary K. Ross in a family photo.")
+![Mary K. Ross with long feathered hair and red lipstick, smiling slightly](./mary-ross-1995-portrait.jpg "Mary K. Ross in a family photo, digitally enhanced.")
 
 They organized a letter-writing campaign against any shorter sentence. [S4]
 
@@ -325,7 +329,7 @@ The hearing was on Wednesday, August 10, 2022, at the state penitentiary in Siou
 
 Coon was 46. [S6]
 
-![Eric Coon, older, with a shaved head and a goatee, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-coon-doc.jpg "Eric Coon in a South Dakota Department of Corrections photo.")
+![Eric Coon, older, with a shaved head and a goatee, holding a South Dakota Department of Corrections booking board](./mary-ross-1995-coon-doc.jpg "Eric Coon in a South Dakota Department of Corrections photo, digitally enhanced.")
 
 "I took a mom away from her child. I took a child away from her mom and her family. And there's nothing I can do to bring her back," he told the board. "I truly today apologize to the family. I wish I could turn around and face you." [S6]
 
@@ -381,7 +385,7 @@ Gov. Kristi Noem signed Senate Bill 9 on March 4, 2024. It took effect July 1, 2
 
 Robert Power, Eric Coon and Robert Poppen pleaded guilty and were sentenced to life. [S2, S3, S5] Michael Lee Smith was convicted at trial and sentenced to life without parole on the conspiracy count. [S1] Walter Craft Jr. pleaded guilty to accessory to murder. [S3, S4, S8] By January 2024, the governor had granted clemency to two people serving life without parole. Neither was from this case. [S7] Senate Bill 9 took effect July 1, 2024. It makes someone serving life for a violent crime wait four years after a denial before asking again. [S10]
 
-![Robert Power, older, with short hair and a beard, above a South Dakota Department of Corrections booking board](./mary-ross-1995-power-doc.jpg "Robert Power in a South Dakota Department of Corrections photo.")
+![Robert Power, older, with short hair and a beard, above a South Dakota Department of Corrections booking board](./mary-ross-1995-power-doc.jpg "Robert Power in a South Dakota Department of Corrections photo, digitally enhanced.")
 
 What's documented: Mary told Westport staff a key was missing before she was killed. [S2] Coon and Poppen used a key to get in. [S3]
 
