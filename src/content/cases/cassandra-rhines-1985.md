@@ -58,7 +58,7 @@ timeline:
   - { date: 2013-05, text: "After a WCCO story on the BCA's DNA lab, a family in Texas contacts the BCA. [S4]", section: "a-family-in-texas" }
   - { date: 2013, text: "Cassandra's sister gives a DNA sample late in the year. [S3]", section: "a-family-in-texas" }
   - { date: 2014-05-06, text: "An off-duty Lake County Sheriff's Office employee finds skeletal remains in Gooseberry Falls State Park. [S1]", section: "the-dogs" }
-  - { date: 2014-08, text: "BCA scientists match DNA from the remains to her family. [S1, S4]", section: "a-family-in-texas" }
+  - { date: 2014-08, text: "BCA scientists match DNA from the remains to her family. [S1, S4]", section: "the-match" }
   - { date: 2015-05-20, text: "The BCA and the sheriff's office identify her and announce a homicide investigation. [S1]", section: "may-20-2015" }
   - { date: 2016-05, text: "The sheriff says tips identified the man in the photograph, who has since died. [S7]", section: "the-photograph" }
   - { date: 2021-11, text: "The lead investigator says there are no more leads to follow. [S8]", section: "the-case-file" }
@@ -87,6 +87,12 @@ In June 1985, Cassandra called a friend. She was confirming that she would be at
 
 The public record doesn't give the day of that call, the friend's name, or who reported her missing. [S1, S5]
 
+## A family in Texas
+
+In May 2013, WCCO aired a story about the BCA's DNA laboratory. A few days later, a family in Texas got in touch. They wanted to ask about Minnesota's unsolved missing persons cases. [S4]
+
+That year the BCA had begun asking relatives of long-missing Minnesotans for DNA samples. It had a grant from the National Institute of Justice to test remains against possible relatives. [S3] Late in 2013, Cassandra's sister gave a sample. [S3]
+
 ## The dogs
 
 Gooseberry Falls is about 200 miles from Minneapolis, northeast of Two Harbors on Lake Superior. [S3, S6, S7] The spot was secluded. [S3] "Her body wasn't buried in the park, it was the years of debris since 1985 that covered up her remains," Sheriff Johnson said. [S4] Apart from some brush, there didn't appear to have been any serious attempt to hide her. [S3]
@@ -105,11 +111,7 @@ The St. Louis County Medical Examiner's Office and a forensic anthropologist exa
 
 They still didn't know who she was. "We knew we had human remains, but we didn't have anything else to tell," Johnson said. [S3]
 
-## A family in Texas
-
-A year before the dogs found her, in May 2013, WCCO aired a story about the BCA's DNA laboratory. A few days later, a family in Texas got in touch. They wanted to ask about Minnesota's unsolved missing persons cases. [S4]
-
-That year the BCA had begun asking relatives of long-missing Minnesotans for DNA samples. It had a grant from the National Institute of Justice to test remains against possible relatives. [S3] Late in 2013, Cassandra's sister gave a sample. [S3]
+## The match
 
 Scientists at the BCA lab in St. Paul pulled a DNA profile from the bones and entered it in a national missing persons database. [S4] Catherine Knutson, who directed the BCA's forensic science services, described what came next.
 
@@ -137,7 +139,7 @@ Officials released a photograph of Cassandra with a man. They didn't know who he
 
 Tips came in. By May 2016, investigators had a name for the man in the photograph. They confirmed that he had been living with her when she disappeared. He had since died. [S7] The public record doesn't call him a suspect. [S1, S7, S8]
 
-The tips also led to a friend who had worked with Cassandra as an exotic dancer. Investigators tracked her down. She had died too. [S7]
+The tips also led to a friend who had worked with Cassandra. Investigators tracked her down. She had died too. [S7]
 
 > "Once you start following up and finding that these persons of interest that you want to talk to to get the information you need to help solve the case are deceased, it just makes it that much more difficult." [S7]
 
