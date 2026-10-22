@@ -66,13 +66,13 @@ youtubeUploadDate: null
 # "Picture it the way she describes it.", "Each day without a call made that harder to believe.",
 # "Think about what he was carrying..." (its facts are already in the text), and the closing lines
 # about the driver and the boy ("Somewhere, there's a driver...", "One of them might hold the next piece.").
+# Also cut as transitions: "By morning, he was already out the door." and "He also walked." (the walking facts stay).
 # Cut with the old tip paragraph: the Crime Stoppers number 605-367-7007 (S5). anonymousTips still links Crime Stoppers.
 poster:
   - { label: "Age then", text: "31 [S9]" }
   - { label: "Height", text: "6 feet [S9]" }
   - { label: "Weight", text: "155 pounds [S9]" }
   - { label: "Hair and eyes", text: "Black and brown [S9]" }
-  - { label: "Last place", text: "Near Marion Road and West Madison Street, Sioux Falls [S4, S7]" }
   - { label: "Case", text: "Police say the case is open and active. No one has been named a suspect. [S3, S5]" }
 readerQuestion: "Tyler walked out without his phone, wallet or keys, and police have said they saw no sign of a crime. What do you think the public still needs to know about that morning?"
 sources:
@@ -156,7 +156,7 @@ At home, MonaLisa noticed it too. The things Tyler said that night were "really,
 
 The first walk came and went before MonaLisa was up. Tyler was home again as she got the kids ready to go. [S1]
 
-The family in the garage. A kiss. Love you, bye. [S1]
+As MonaLisa tells it, the family was in the garage. A kiss. Love you, bye. [S1]
 
 She pulled away. He set out on foot. Police put the time at about 7:45 a.m. [S1, S2] The Charley Project lists it as 7:15. [S6]
 
