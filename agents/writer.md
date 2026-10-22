@@ -134,7 +134,7 @@ Title the PR `Rewrite: [Story title]`. The description has these sections:
 4. **New material**: the `poster` facts with their source, and the `readerQuestion`.
 5. **Legal care**: "Unchanged" if the frontmatter notes didn't change, otherwise what changed.
 
-Then hand off to @Sherlock as usual, and say it's a rewrite.
+Then post the handoff the same way as a new story: tag @Sherlock with "Shelley editorial review pending," route the PR to @Shelley in the same message, and say it's a rewrite. The "Editorial review" section applies. Shelley reviews the voice, tone and the `readerQuestion` first, and @Sherlock starts the rewrite check only after Shelley passes a commit.
 
 ## Never
 
