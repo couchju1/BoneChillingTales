@@ -11,7 +11,7 @@
 # Update them after October 31.
 # Known conflicts: her mother's birthday is the 14th in S2 and S3 but the 13th in S7. The truck was found
 # in December 2013 (S4) or January 2014 (S3, S16). Three children (S3, S7, S9) or two (S5). The story
-# follows S3.
+# follows S3 and, since the October 22, 2026 rewrite, names each conflict once in the text.
 # Legal care: Brad Cyriacks has never been charged. Never state or imply he caused her disappearance.
 # A DCI agent called him a "prime suspect" (S2, 2018) and the "prime subject" (S3, 2021), other
 # reports say authorities called him "not a suspect" (S6), and the AG says no one has been ruled out
@@ -56,8 +56,12 @@ youtubeUploadDate: null
 # New material: the poster, from the state's missing persons clearinghouse (S17, checked October 22,
 # 2026), and readerQuestion. S17 lists her hair as brown (the body keeps "dark blonde" from S15), her
 # agency as the Sanborn County Sheriff's Office at 605-796-4511, and says she "was last seen in Mitchell."
-# The poster leaves out "Last place" because S17 conflicts with the official releases (S1, S4).
-# Wording changed for care: "the last person known to have seen Rachel alive" is now "...seen Rachel".
+# The poster leaves out "Last place" because S17 conflicts with the official releases (S1, S4), and
+# leaves out hair because S17's "brown" conflicts with S15's "dark blonde".
+# Also cut: "Sand Creek Township sits west of Huron, near Wolsey." (untagged).
+# Wording changed for care: "the last person known to have seen Rachel alive" is now "...seen Rachel",
+# and "would turn 43" is now "turns 43". The undercarriage line now quotes Agent Neuharth (S3), and
+# Mary's belief quotes her own words (S14). Her burial belief in S14 stays out.
 # Cut as narrator commentary, not facts: "Hold onto that. It's a small thing, the kind of date that lives
 # on a kitchen calendar...", "Families learn to live with that.", "But a promise was a promise, and Mary
 # Schabot waited.", "Not a knock at the door. Not a deputy with his hat in his hands. Just a birthday that
@@ -74,7 +78,7 @@ poster:
   - { label: "Age then", text: "30 [S17]" }
   - { label: "Height", text: "5 feet 5 [S17]" }
   - { label: "Weight", text: "140 pounds [S17]" }
-  - { label: "Hair and eyes", text: "Brown and hazel [S17]" }
+  - { label: "Eyes", text: "Hazel [S17]" }
   - { label: "Case", text: "No one has been charged in her disappearance. [S12]" }
 readerQuestion: "In 2023, the attorney general said a couple of people had information about what happened to Rachel. What would it take for them to finally pick up the phone?"
 sources:
@@ -139,7 +143,7 @@ Mary tells a story when people ask who Rachel was. If a friend's kid had a birth
 
 "She was a giver," Mary said. [S3]
 
-She had three kids. She also had a quilt she cherished, green and pink and white, that she kept at home in Woonsocket. [S3, S4, S15]
+She had three kids. She also had a quilt she cherished, which she kept at home in Woonsocket. [S3, S4, S15] Dakota News Now called her a mother of two in 2023. [S5]
 
 Rachel and Brad Cyriacks married young. Both had a history with drugs, and by 2013 their three children were living with relatives. Mary says Rachel was fighting her way back. She was seeking a divorce and working to regain custody. [S3]
 
@@ -175,13 +179,13 @@ A few missing persons databases list her last day as November 11 or 12. [S15, S1
 
 Brad told investigators they drove home to Woonsocket and stayed a short while. Then, he said, Rachel drove him back to Huron and dropped him off at a friend's house. That was the last time he saw her. [S3, S16] The phone records line up with his account. [S3]
 
-He is the last person known to have seen Rachel. He has been questioned. He has never been charged in connection with her disappearance. [S12]
+Brad has been questioned. He has never been charged in connection with her disappearance. [S12]
 
 No one else has come forward to say they saw her again. [S4]
 
 ## Fourteen
 
-The next day was the fourteenth.
+The next day was the fourteenth. A 2023 Forum report puts her mother's birthday on November 13 instead. [S7]
 
 Mary gave it a week. Then she took the key she had to her daughter's house and let herself in. She has said she didn't know what she was going to walk into. [S3]
 
@@ -195,11 +199,11 @@ The quilt was gone. [S4]
 
 Investigators looked for it and couldn't find it. They came to believe it disappeared at the same time she did. [S4] They put its picture on her missing poster, beside her face. [S2]
 
-One database describes the quilt as red and white with green squares. [S16] The state says green, pink and white. [S4]
+The state describes the quilt as green, pink and white. [S4] One database describes it as red and white with green squares. [S16]
 
 ## The Quonset
 
-In January 2014, the truck turned up. [S3]
+In January 2014, the truck turned up. [S3] The attorney general's 2023 release says it was found in December 2013. [S4]
 
 ![A gray Chevy Silverado extended-cab pickup parked in a garage](./rachel-cyriacks-2013-truck.jpg "Rachel's 1995 Chevy Silverado, from a South Dakota Division of Criminal Investigation missing poster.")
 
@@ -207,13 +211,13 @@ It was parked behind a Quonset on a bee farm outside Huron, more or less out of 
 
 Brad and his friend told investigators they'd been working on repairs. Brad said he'd been driving the truck regularly after the thirteenth. How the truck got from Rachel's hands to that farm has never been explained. [S3]
 
-Investigators searched every inch of it. They tested it for DNA. They examined the undercarriage, wondering whether the damage had anything to do with her death. The agent on the case said all of it failed to answer any questions. [S3]
+Investigators searched every inch of it. They tested it for DNA. "We searched the undercarriage of it, wondering if maybe some of the damage under there was related to her death," Tyler Neuharth, the state agent on the case, told Forum News Service. He said all of it failed to answer any questions. [S3]
 
 The state still has the truck. [S3]
 
 ## Wells and junkyards
 
-A tip sent searchers to the Sand Creek area near Wolsey with ground-penetrating radar. [S3] Sand Creek Township sits west of Huron, near Wolsey.
+A tip sent searchers to the Sand Creek area near Wolsey with ground-penetrating radar. [S3]
 
 They brought cadaver dogs, dive teams, sonar and a highway patrol plane. They checked 20 wells, junkyards and abandoned buildings, and they worked the James River where it runs through Huron. [S3]
 
@@ -229,10 +233,10 @@ In December, Attorney General Marty Jackley announced a reward of up to $25,000 
 
 ![A South Dakota Division of Criminal Investigation poster offering a reward of up to $25,000 in the disappearance of Rachel Cyriacks, with her photo and description](./rachel-cyriacks-2013-reward-poster.jpg "The Division of Criminal Investigation's reward poster.")
 
-What the items from the river turned out to be has never been made public. Mary doesn't believe her daughter is alive. [S14] No one has been charged. [S12] The quilt has never turned up.
+What the items from the river turned out to be has never been made public. "I mean, she's not alive," Mary told Dakota News Now in 2024. [S14] No one has been charged. [S12] The quilt has never turned up.
 
 ## Thirteen years
 
-On October 31, Rachel would turn 43. [S16] On November 13, it will be 13 years since that drive to Huron.
+On October 31, Rachel turns 43. [S16] On November 13, it will be 13 years since that drive to Huron.
 
 The day after that is November 14. Her mother's birthday. The day Rachel promised to call. [S2, S3]
