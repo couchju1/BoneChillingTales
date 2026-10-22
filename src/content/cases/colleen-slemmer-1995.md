@@ -31,7 +31,7 @@
 # the media-rights release and Talman's book talk with Carrie Ross (S10), Officer Mark Waggoner fetching the
 # gloves (S1), the Jacksonville fundraising (S5), the reporters interrupted by emergency vehicles (S8), and
 # Ed Stanton named to lead the review (S6). The outside review itself stays. The closing question moved to
-# readerQuestion. Two Pike quotes and two Martinez quotes are joined without a second "she said". No words changed.
+# readerQuestion, reworded October 22 to count 30 years from the verdict and to match the commutation request (S18). Two Pike quotes and two Martinez quotes are joined without a second "she said". No words changed.
 # Updated October 22, 2026 from S17 and S18. S18 reports what her lawyers told TMZ, so her condition stays
 # attributed to them. A Davidson County evidence-preservation order appears in search results but no source
 # for it could be opened, so it is left out.
@@ -103,7 +103,7 @@ updates:
   - { date: 2026-10-18, text: "Story rewritten in a new structure, with three new sources on the September 30 execution attempt and Pike's return to prison." }
   - { date: 2026-10-22, text: "Updated: Pike's lawyers renewed their request for commutation, and a chancery court hearing in her case against the attorney general was taken off the docket." }
   - { date: 2026-10-22, text: "Story rewritten. No facts changed." }
-readerQuestion: "A jury decided in 1996 what justice for Colleen should be. Thirty-one years later, it hasn't been carried out, and as of early October, no one had said what comes next. What do you think should happen now, and whose voice should count most?"
+readerQuestion: "A jury decided in 1996 what justice for Colleen should be. Thirty years later, the sentence hasn't been carried out. As of early October, the state hadn't said whether it would try again. Pike's lawyers have since asked the governor to commute it. What do you think should happen now, and whose voice should count most?"
 ---
 On Halloween 1994, Colleen Slemmer said goodbye to her family in Orange Park, Florida, and headed north. [S9] She was 19. She was going to study computers in Knoxville, Tennessee. [S11] It was the last time her family saw her. [S9]
 
@@ -213,7 +213,7 @@ The jury found two reasons for a death sentence. The killing involved torture or
 
 ## Dr. McCoy
 
-There was a witness the jury never heard. [S10] Pike's lawyers had hired a mitigation specialist, Dr. McCoy. She put together a three-volume report on Pike's life. [S10]
+Pike's lawyers had hired a mitigation specialist, Dr. McCoy. She put together a three-volume report on Pike's life. The jury never heard from her. [S10]
 
 Years later, at a hearing on Pike's appeal, her co-counsel, Julie Martin Rice, testified that several theories had been "floating around" about why they didn't call her. She wasn't sure which one decided it. One was that they had learned Dr. McCoy was dating the lead prosecutor, William Crabtree. [S10]
 
