@@ -42,7 +42,7 @@ state: SD
 incidentDate: 2024-09-04
 lastSeenDate: 2024-09-04
 resolvedDate: null
-lastChecked: 2026-10-16
+lastChecked: 2026-10-22
 lastFactChange: null
 published: 2026-10-16
 agency: "the Sioux Falls Police Department"
@@ -56,6 +56,25 @@ image:
   license: "Photo shared in the public search for Tyler"
 youtubeId: null
 youtubeUploadDate: null
+# Rewritten October 22, 2026 in the house voice. No new facts. The tip line and reader question moved
+# out of the body, and "Where it stands" folded into "Two years". New material: the poster, from the
+# state's missing persons clearinghouse (S9, checked October 22, 2026), and readerQuestion.
+# S9 lists his hair as black and says "Tyler has a scruffy beard." The poster uses only the S9 fields
+# below. The body still says his head was shaved (S1, S6) and doesn't add the beard.
+# Cut as narrator commentary, not facts: "Remember that. It's the reason nobody panicked at first.",
+# "Here's where the record gets less precise.", "His family's own poster split the difference.",
+# "Picture it the way she describes it.", "Each day without a call made that harder to believe.",
+# "Think about what he was carrying..." (its facts are already in the text), and the closing lines
+# about the driver and the boy ("Somewhere, there's a driver...", "One of them might hold the next piece.").
+# Cut with the old tip paragraph: the Crime Stoppers number 605-367-7007 (S5). anonymousTips still links Crime Stoppers.
+poster:
+  - { label: "Age then", text: "31 [S9]" }
+  - { label: "Height", text: "6 feet [S9]" }
+  - { label: "Weight", text: "155 pounds [S9]" }
+  - { label: "Hair and eyes", text: "Black and brown [S9]" }
+  - { label: "Last place", text: "Near Marion Road and West Madison Street, Sioux Falls [S4, S7]" }
+  - { label: "Case", text: "Police say the case is open and active. No one has been named a suspect. [S3, S5]" }
+readerQuestion: "Tyler walked out without his phone, wallet or keys, and police say they see no sign of a crime. What do you think the public still needs to know about that morning?"
 sources:
   - { id: S1, title: "Tyler Weathersby walked away from his South Dakota home in September and hasn't returned", publisher: "NBC News, Dateline", url: "https://www.nbcnews.com/dateline/missing-in-america/tyler-weathersby-missing-sioux-falls-rcna176891", date: 2024-10-23 }
   - { id: S2, title: "Sioux Falls Police ask public for info on Tyler Weathersby", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2024/09/19/sioux-falls-police-ask-public-info-tyler-weathersby/", date: 2024-09-19 }
@@ -65,136 +84,154 @@ sources:
   - { id: S6, title: "Tyler Blake Weathersby", publisher: "The Charley Project", url: "https://charleyproject.org/case/tyler-blake-weathersby", date: 2026-06-03 }
   - { id: S7, title: "Sioux Falls Continues Search for Tyler Weathersby 2 Years Later", publisher: "KXRB", url: "https://kxrb.com/sioux-falls-tyler-weathersby-missing-anniversary/", date: 2026-09-02 }
   - { id: S8, title: "Sioux Falls Protest Set For Missing Local Man Tyler Weathersby", publisher: "KXRB", url: "https://kxrb.com/sioux-falls-police-protest-tyler-weathersby/", date: 2026-10-12 }
+  - { id: S9, title: "Tyler Weathersby, South Dakota missing persons clearinghouse", publisher: "South Dakota Attorney General's Office", url: "https://missingpersons.sd.gov/", date: 2026-10-22 }
 timeline:
-  - { date: 2021, text: "Tyler marries MonaLisa Perez, his partner in the Wake brand. [S1]", section: "the-one-behind-the-camera" }
-  - { date: 2024-03, text: "The couple's daughter is born. [S1]", section: "the-one-behind-the-camera" }
-  - { date: 2024-09-03, text: "Tyler and his mother argue. That evening he drives her to the airport a day early. [S1]", section: "the-night-before" }
-  - { date: 2024-09-04, text: "Tyler leaves home on foot around 7:45 a.m. without his phone, wallet or keys. Police get the missing person report that afternoon. [S1]", section: "the-second-walk" }
-  - { date: 2024-09-19, text: "Police say they've had well over 100 tips. [S2]", section: "the-second-walk" }
-  - { date: 2025-02, text: "The chief calls it an open and active investigation. Private investigators release dashcam video from Marion Road and Madison Street. [S3, S4]", section: "the-car-at-the-intersection" }
-  - { date: 2026-10-21, text: "A community group plans a demonstration outside the Sioux Falls Police Department. [S8]", section: "where-it-stands" }
+  - { date: 2021, text: "Tyler marries MonaLisa Perez, his partner in the Wake brand. [S1]", section: "wake" }
+  - { date: 2024-03, text: "The couple's daughter is born. [S1]", section: "wake" }
+  - { date: 2024-09-03, text: "Tyler and his mother argue. That evening he drives her to the airport a day early. [S1]", section: "september-3" }
+  - { date: 2024-09-04, text: "Tyler leaves home on foot around 7:45 a.m. without his phone, wallet or keys. Police get the missing person report that afternoon. [S1]", section: "the-garage" }
+  - { date: 2024-09-19, text: "Police say they've had well over 100 tips. [S2]", section: "toward-the-interstate" }
+  - { date: 2025-02, text: "The chief calls it an open and active investigation. Private investigators release dashcam video from Marion Road and Madison Street. [S3, S4]", section: "the-silver-hyundai" }
+  - { date: 2026-10-21, text: "A community group plans a demonstration outside the Sioux Falls Police Department. [S8]", section: "two-years" }
 updates:
   - { date: 2026-10-16, text: "Story published." }
+  - { date: 2026-10-22, text: "Story rewritten. No facts changed." }
 ---
 
 He had already been out once that morning.
 
-By the time MonaLisa Perez got up on Wednesday, September 4, 2024, her husband had gone for a walk and come back. [S1] As she tells it, the family said goodbye in the garage as she left to take the kids to school. "We give him a kiss," she told Dateline. The words were the everyday kind: love you, bye. [S1]
+By the time MonaLisa Perez got up on Wednesday, September 4, 2024, her husband had gone for a walk and come back. [S1] The family said goodbye in the garage as she left to take the kids to school, she told Dateline. "We give him a kiss," she said. The words were the everyday kind: love you, bye. [S1]
 
-Then she pulled out of the driveway, and Tyler Weathersby started walking again. [S1]
+Then she pulled out of the driveway, and Tyler Weathersby started walking again. He didn't take his phone. He didn't take his wallet or his keys. [S1]
 
-He didn't take his phone. He didn't take his wallet or his keys. [S1] Cameras would later catch him alone, heading toward the interstate. [S1]
+More than two years later, no one has been able to say where the second walk went. [S7] Police say they have no reason to believe a crime happened. No one has been named a suspect. [S1, S3]
 
-That's about where the certainty ends. More than two years later, no one has been able to say where the second walk went. [S7]
-
-## The one behind the camera
+## Two peas in a pod
 
 Janine Weathersby Harris raised four children. [S1] Tyler was shy as a boy, she said, "but he was inquisitive." He never stopped telling her he loved her. "Mama, I love you," he'd write in his texts. [S1]
 
 He was closest to his brother, Gregory. Their mother called them "two peas in a pod." [S1]
 
-As teenagers the brothers got into dance and started a performance group. Gregory says a talent agency in Los Angeles signed them. Later they made music and toured two or three times. [S1] Tyler shot all of Gregory's music videos and his photos, and helped market the work. Together they started a clothing brand called Millions United. [S1]
+As teenagers the brothers got into dance and started a performance group. Gregory says a talent agency in Los Angeles signed them. Later they made music and toured two or three times. [S1]
+
+Tyler shot all of Gregory's music videos and his photos, and helped market the work. Together they started a clothing brand called Millions United. [S1]
 
 ![Tyler Weathersby in a black cap, white tank top and open black shirt, standing beside railroad tracks with an orange locomotive behind him](./tyler-weathersby-2024-railyard.jpg "Tyler Weathersby in an undated photo.")
 
+## Wake
+
 Eventually Tyler wanted a path of his own, and Gregory respected that. In the mid-2010s Tyler moved to South Dakota and started a business built around "self-love and community." [S1]
 
-He called it Wake. It began as streetwear. MonaLisa became his business partner, and together they ran pop-up shops, fashion shows and mental health events. Over time Wake grew into a creative agency doing marketing and public relations for other brands. [S1]
+He called it Wake. It began as streetwear. MonaLisa became his business partner. Together they ran pop-up shops, fashion shows and mental health events. Over time Wake grew into a creative agency doing marketing and public relations for other brands. [S1]
 
 They married in 2021. Tyler became a stepfather to MonaLisa's two children, and in March 2024 the couple had a daughter. [S1]
 
 "He loves to create and build and just really influence the people around him in such a positive way," MonaLisa said. [S1]
 
-He also walked. Tyler sometimes struggled with depression, his wife said, and walking was how he meditated and reset, how he would "revamp and rejuvenate." [S1] His mother described a disciplined life: daily exercise, clean eating, intermittent fasting. [S1]
+He is 6 feet tall, about 155 pounds, with brown eyes. He has a scar on one leg from ankle to knee and a tattoo on his right wrist of a crown with a halo above it. [S1, S5, S6]
+
+## The walks
+
+Tyler sometimes struggled with depression, his wife said. Walking was how he meditated and reset, how he would "revamp and rejuvenate." [S1]
+
+His mother described a disciplined life: daily exercise, clean eating, intermittent fasting. [S1]
 
 A walk could last an hour and a half. Sometimes two. [S1]
 
-Remember that. It's the reason nobody panicked at first.
-
-## The night before
+## September 3
 
 Janine's visit to Sioux Falls was planned for August 26 through September 4, so she could spend time with her new granddaughter. By her account, everything was good. [S1]
 
-Then came September 3.
+On September 3, she and Tyler argued. For her, it had no precedent. "We've never had an argument," she told Dateline. [S1] What the argument was about has never been made public.
 
-She and Tyler argued that day. For her, it had no precedent. "We've never had an argument," she told Dateline. [S1] What the argument was about has never been made public.
+That evening Tyler drove his mother to the airport. Her flight wasn't until the next day. Gregory arranged a hotel room for her. [S1]
 
-That evening, Tyler drove his mother to the airport. Her flight wasn't until the next day. Gregory arranged a hotel room for her. [S1]
+## Speaking in circles
 
-Then Gregory got his brother on the phone. Tyler didn't sound like himself, he said, and never clearly explained what had happened. "It was like he was speaking in circles." [S1]
+Then Gregory got his brother on the phone. Tyler didn't sound like himself, he said, and never clearly explained what had happened. [S1]
 
-At home, MonaLisa noticed it too. The things Tyler said that night, she later said, were "really, really odd." He was still upset when he got back. Neither of them slept much. [S1]
+"It was like he was speaking in circles," Gregory said. [S1]
 
-By morning, he was already out the door.
+At home, MonaLisa noticed it too. The things Tyler said that night were "really, really odd," she said later. He was still upset when he got back. Neither of them slept much. [S1]
 
-## The second walk
+## The garage
 
 The first walk came and went before MonaLisa was up. Tyler was home again as she got the kids ready to go. [S1]
 
-Picture it the way she describes it. The family in the garage. A kiss. Love you, bye. [S1]
+The family in the garage. A kiss. Love you, bye. [S1]
 
-She pulled away. He set out on foot. Police put the time at about 7:45 a.m. [S1, S2]
-
-Behind him, at home, were his phone, his wallet and his keys. [S1]
-
-![A man in a white T-shirt, black shorts and dark sneakers walking along a residential sidewalk, seen from above near a parked car](./tyler-weathersby-2024-walking.jpg "A frame from surveillance video of Tyler walking on the morning of September 4, 2024.")
-
-For the first couple of hours, MonaLisa wasn't worried. That was a normal walk for Tyler. By about 10:30, it wasn't. She called her family. She searched the neighborhood. She checked the place where he went to meditate. [S1]
-
-He wasn't there.
-
-"We were called in the afternoon, maybe around 4:30 p.m.," the police spokesperson said of the missing person report. [S1]
-
-The next day, MonaLisa reached Gregory, and he called their mother right away. At first Gregory thought his brother might have needed to blow off some steam. [S1] Each day without a call made that harder to believe.
-
-Within two weeks, police had received well over 100 tips. "We believe that somebody out there has some piece of information," spokesperson Sam Clemens said. [S2]
-
-## The car at the intersection
-
-The footage police found, from the neighborhood and a nearby business, showed Tyler walking on his own. Clemens told Dateline it did not show anyone forcing him to go anywhere. He seemed to be heading toward an interstate. Whether he reached it, or turned off somewhere, investigators said they didn't know. [S1]
-
-Here's where the record gets less precise. The Charley Project places Tyler on a surveillance camera near West Madison Street and North Marion Road at 7:50 a.m., walking east toward Interstate 29. It lists his departure as 7:15, not 7:45. [S6] Dateline described his neighborhood as northeast Sioux Falls. [S1] Dakota News Now says northwest, and KELOLAND says western. [S4, S5]
-
-His family's own poster split the difference.
+She pulled away. He set out on foot. Police put the time at about 7:45 a.m. [S1, S2] The Charley Project lists it as 7:15. [S6]
 
 ![A red and white missing person poster for Tyler Weathersby, saying he left home for his daily walk on Wednesday, September 4, between 7:15 and 7:45 a.m.](./tyler-weathersby-2024-family-poster.jpg "A missing poster shared in the search gives a window of 7:15 to 7:45 a.m. Police put it at about 7:45.")
 
-Then, in February 2025, Legal Eye Investigations, the private firm his family hired, released a dashcam video from the intersection of Marion Road and West Madison Street. [S1, S4]
+He was last seen in a white T-shirt, black shorts and a tan stocking cap. [S5, S6] His head was shaved, and his hair and beard may have grown back since. [S1, S5, S6] Behind him, at home, were his phone, his wallet and his keys. [S1]
 
-According to KXRB's description of it, Tyler is waiting to cross the street. He talks with a young boy on a bicycle. Then he approaches the driver of a silver Hyundai Santa Fe. [S7, S8] MonaLisa said police had given her the same outline: he was talking to a car, and to someone on a bike. [S4]
+## 10:30
 
-Think about what he was carrying. No phone to call anyone. No wallet. No keys. A man who walked to clear his head, on a morning when the people closest to him said he wasn't himself, stepping toward a car.
+For the first couple of hours, MonaLisa wasn't worried. That was a normal walk for Tyler. [S1]
+
+By about 10:30, it wasn't. She called her family. She searched the neighborhood. She checked the place where he went to meditate. He wasn't there. [S1]
+
+"We were called in the afternoon, maybe around 4:30 p.m.," the police spokesperson said of the missing person report. [S1]
+
+The next day, MonaLisa reached Gregory, and he called their mother right away. At first Gregory thought his brother might have needed to blow off some steam. [S1]
+
+## Toward the interstate
+
+Police found footage from the neighborhood and a nearby business. It showed Tyler walking on his own. [S1]
+
+![A man in a white T-shirt, black shorts and dark sneakers walking along a residential sidewalk, seen from above near a parked car](./tyler-weathersby-2024-walking.jpg "A frame from surveillance video of Tyler walking on the morning of September 4, 2024.")
+
+Sam Clemens, the police spokesperson, told Dateline it did not show anyone forcing him to go anywhere. He seemed to be heading toward an interstate. Whether he reached it, or turned off somewhere, investigators said they didn't know. [S1]
+
+The Charley Project places Tyler on a surveillance camera near West Madison Street and North Marion Road at 7:50 a.m., walking east toward Interstate 29. [S6]
+
+Dateline described his neighborhood as northeast Sioux Falls. [S1] Dakota News Now says northwest. KELOLAND says western. [S4, S5]
+
+Within two weeks, police had received well over 100 tips. "We believe that somebody out there has some piece of information," Clemens said. [S2]
+
+## The silver Hyundai
+
+In February 2025, Legal Eye Investigations, the private firm his family hired, released a dashcam video from the intersection of Marion Road and West Madison Street. [S1, S4]
+
+According to KXRB's description of it, Tyler is waiting to cross the street. He talks with a young boy on a bicycle. Then he approaches the driver of a silver Hyundai Santa Fe. [S7, S8]
+
+MonaLisa said police had given her the same outline. He was talking to a car, and to someone on a bike. [S4]
 
 What was said has never been made public. Neither has whether police identified the boy or the driver. Nothing in the public record suggests either one did anything wrong.
 
 It's the last glimpse of Tyler the public has been given.
 
-## What we know now
+## The police report
 
-Police said they'd had the dashcam video "for quite some time." It's part of the police report, Clemens said, and the department doesn't release police reports or their details. [S4] MonaLisa called the video "very helpful and eye-opening" and said she believes police have more footage of Tyler walking toward the interstate. [S4] That hasn't been confirmed.
+Police said they'd had the dashcam video "for quite some time." It's part of the police report, Clemens said, and the department doesn't release police reports or their details. [S4]
 
-In the first weeks, investigators reviewed video, talked at length with the people closest to Tyler, and flew a drone over different areas. Tips came in. None led to him. [S1] "We don't have any reason at this point to believe there was anything criminal that happened," Clemens told Dateline in October 2024. [S1]
+MonaLisa called the video "very helpful and eye-opening." She said she believes police have more footage of Tyler walking toward the interstate. [S4] That hasn't been confirmed.
 
-In February 2025, Police Chief Jon Thum said the file had been reviewed by other agencies, federal and local, though he didn't name them. "This is still an open and active investigation," he said. [S3] KELOLAND reported there were no suspects and no foul play suspected. [S3]
+In the first weeks, investigators reviewed video, talked at length with the people closest to Tyler, and flew a drone over different areas. Tips came in. None led to him. [S1]
 
-The family organized searches, some with dog teams. Legal Eye hung posters, searched, reviewed neighbors' video and interviewed people connected to the case. [S1] Gregory started a GoFundMe to help pay for it and said online questions about the money hurt. "I'm past being hurt. I'm angry," he said. [S1] Nothing in the reporting supports any claim of wrongdoing.
+"We don't have any reason at this point to believe there was anything criminal that happened," Clemens told Dateline in October 2024. [S1]
+
+In February 2025, Police Chief Jon Thum said the file had been reviewed by other agencies, federal and local, though he didn't name them. [S3]
+
+> "This is still an open and active investigation." [S3]
+
+KELOLAND reported there were no suspects and no foul play suspected. [S3]
+
+## Legal Eye
+
+The family organized searches, some with dog teams. Legal Eye hung posters, searched, reviewed neighbors' video and interviewed people connected to the case. [S1]
+
+Gregory started a GoFundMe to help pay for it. He said online questions about the money hurt. "I'm past being hurt. I'm angry," he said. [S1] Nothing in the reporting supports any claim of wrongdoing.
 
 His mother and his wife have both said they don't believe Tyler would hurt himself. MonaLisa thinks he's alive somewhere, just not thinking clearly. [S1]
 
-## Where it stands
+## Two years
 
-In August 2025, a police spokesperson said there was no new information. "The department is still actively investigating this case." [S5]
+In August 2025, a police spokesperson said there was no new information. [S5]
 
-Two years on, the frustration has gone public. A community group called the Lone Wolves Initiative has announced a demonstration outside the Sioux Falls Police Department for Wednesday, October 21, at 11 a.m. It's calling for transparency, independent reviews and digital evidence work, among other things. [S8] Those are demands, not findings.
+> "The department is still actively investigating this case." [S5]
 
-Tyler Blake Weathersby is still missing. [S6, S7] He was 31 when he walked away from his garage. [S1]
+In October 2026, a community group called the Lone Wolves Initiative announced a demonstration outside the Sioux Falls Police Department for Wednesday, October 21, at 11 a.m. It called for transparency, independent reviews and digital evidence work, among other things. [S8] Those are the group's demands. They aren't findings.
 
-He's 6 feet tall, about 155 pounds, with brown eyes. His head was shaved when he disappeared, and his hair and beard may have grown back. He has a scar on one leg from ankle to knee and a tattoo of a crown with a halo above it on his right wrist. [S1, S5, S6] He was last seen in a white T-shirt, black shorts and a tan stocking cap. [S5, S6]
-
-Somewhere, there's a driver who had a man in a white T-shirt walk up to their silver Hyundai one September morning in Sioux Falls. [S7] Somewhere, there's a boy, older now, who remembers a stranger at an intersection.
-
-One of them might hold the next piece.
-
-If you were near Madison Street and Marion Road that morning, or you know anything at all, don't post it in the comments. Call the Sioux Falls Police Department at [605-367-7000](tel:+16053677000), or Crime Stoppers at [605-367-7007](tel:+16053677007). [S5]
-
-What do you think happened after Tyler reached that car?
+Tyler Blake Weathersby is still missing. [S6, S7] He was 31 when he walked out of his garage. [S1]
