@@ -62,7 +62,8 @@ youtubeUploadDate: null
 # family's question (S6), all restated from later sections. "Where it stands" and the tip paragraph
 # moved out. Its open questions are one paragraph at the end. The 988 line stays as the last line of the
 # story text, the one exception the guide allows. Cut with the tip paragraph: "Don't post it in the
-# comments." The Greger/Gregor spelling conflict, which was only in "Where it stands", is now in
+# comments." Single-line paragraphs in the who-she-was sections and "Elm and Railroad" are joined
+# into fuller ones, no words or tags changed. The Greger/Gregor spelling conflict, which was only in "Where it stands", is now in
 # "Lake Andes". First-person record gaps ("we could find", "We could not find") are now impersonal.
 readerQuestion: "Kara called for a ride. It never reached her. What do you think her family deserves to know about that night?"
 sources:
@@ -97,55 +98,35 @@ Her family has asked whether a fight earlier that night had anything to do with 
 
 ## Lake Andes
 
-Kara Greger liked to stay up late cooking. [S5]
+Kara Greger liked to stay up late cooking. [S5] She cooked and visited with her mom and her dad and her Uncle Joe Swatek. She would tell them stories, theories, observations and ideas. All night and all day, her family wrote. [S5]
 
-She cooked and visited with her mom and her dad and her Uncle Joe Swatek. She would tell them stories, theories, observations and ideas. All night and all day, her family wrote. [S5]
+She was born on November 10, 2000. Her mother was Larina. Her father was Todd. [S5] Her obituary and death notice spell her name Greger. [S4, S5] Dakota News Now uses both spellings, and its headline says Gregor. [S6]
 
-She was born on November 10, 2000. Her mother was Larina. Her father was Todd. [S5]
-
-Her obituary and death notice spell her name Greger. [S4, S5] Dakota News Now uses both spellings, and its headline says Gregor. [S6]
-
-She grew up in Lake Andes and Wagner and Sioux Falls. [S5, S6]
-
-For a while she lived in Wagner with her Grandma Bernadette Patterson and with Susan Patterson. [S5]
+She grew up in Lake Andes and Wagner and Sioux Falls. [S5, S6] For a while she lived in Wagner with her Grandma Bernadette Patterson and with Susan Patterson. [S5]
 
 ## Andes Central
 
-She went to high school at Andes Central in Lake Andes. [S5]
+She went to high school at Andes Central in Lake Andes. [S5] In 2018 she was the Andes Central Homecoming Queen. That same year she was the Miss Fish Days Queen. That is how her obituary has it. [S5]
 
-In 2018 she was the Andes Central Homecoming Queen. That same year she was the Miss Fish Days Queen. That is how her obituary has it. [S5]
-
-Her grandmother Stephanie Cournoyer had it a little different. [S6]
-
-"She was the prom queen. The Little Miss Fish Days," she told Dakota News Now. "She was very popular with everybody." [S6]
+Her grandmother Stephanie Cournoyer had it a little different. [S6] "She was the prom queen. The Little Miss Fish Days," she told Dakota News Now. "She was very popular with everybody." [S6]
 
 Kara finished her last semester at Wagner Community School. She graduated with the Class of 2019. [S5]
 
-Then she moved to Sioux Falls. Her family put it this way. She went "to live young, wild and free." [S5]
-
-That lasted until the summer of 2021. [S5]
+Then she moved to Sioux Falls. Her family put it this way. She went "to live young, wild and free." [S5] That lasted until the summer of 2021. [S5]
 
 ## Three jobs
 
-When she came home to Lake Andes she worked three jobs. [S5]
+When she came home to Lake Andes she worked three jobs. [S5] The Lake Andes Carnegie Public Library. Knotheads Bar & Grill. The Gus Stop. [S5]
 
-The Lake Andes Carnegie Public Library. Knotheads Bar & Grill. The Gus Stop. [S5]
+The library wasn't new. She had worked there all through high school, with Mary Jo Parker. Her family wrote that Kara absolutely adored her. [S5] Before that she had a summer youth job at the Native American Women's Health and Education Resource Center, with her good buddy Everdale Song Hawk. [S5]
 
-The library wasn't new. She had worked there all through high school, with Mary Jo Parker. Her family wrote that Kara absolutely adored her. [S5]
-
-Before that she had a summer youth job at the Native American Women's Health and Education Resource Center, with her good buddy Everdale Song Hawk. [S5]
-
-She volunteered at tribal and community events. [S5]
-
-"She was very responsible. She had three jobs," her grandmother said. [S6]
+She volunteered at tribal and community events. [S5] "She was very responsible. She had three jobs," her grandmother said. [S6]
 
 ![Kara Greger, with red hair, smiling in a white blouse with a black collar in a banquet hall](./kara-greger-2022-banquet.jpg "Kara Greger in an undated photo.")
 
 ## Halloween
 
-She watched shows about history. Shows about aliens. A lot of odd comedy. [S5]
-
-She sang in the shower as loud as she could. [S5]
+She watched shows about history. Shows about aliens. A lot of odd comedy. [S5] She sang in the shower as loud as she could. [S5]
 
 She was a roller skating and dancing machine, her family wrote. Nobody could keep up with her on the dance floor. [S5]
 
@@ -159,19 +140,11 @@ Her family wrote down where she went with her aunts. Fairs. Festivals. Carnivals
 
 ![Kara Greger in a flower crown and black jacket, standing in front of an Ed Sheeran official merchandise truck](./kara-greger-2022-concert.jpg "Kara Greger beside an Ed Sheeran merchandise truck, in an undated photo.")
 
-There was family bingo, with snacks. [S5]
+There was family bingo, with snacks. [S5] And there was Grandma Stephanie. [S5] The family called the two of them "our version of Thelma & Louise." You never knew if they were rummaging in some nearby town or eating at some restaurant in the area. [S5]
 
-And there was Grandma Stephanie. [S5]
+She was good with kids, her family wrote. Patient with them. Kind. [S5] She had a hearty laugh. [S5]
 
-The family called the two of them "our version of Thelma & Louise." You never knew if they were rummaging in some nearby town or eating at some restaurant in the area. [S5]
-
-She was good with kids, her family wrote. Patient with them. Kind. [S5]
-
-She had a hearty laugh. [S5]
-
-If somebody came up with a cool idea, she was in. She loved adventures. [S5]
-
-There were the Hopkins cousins and Liz Patterson. There was the whole Sioux Falls crew. [S5]
+If somebody came up with a cool idea, she was in. She loved adventures. [S5] There were the Hopkins cousins and Liz Patterson. There was the whole Sioux Falls crew. [S5]
 
 She made friends with anyone, her family wrote. She took people as they were. [S5]
 
@@ -215,7 +188,7 @@ Patterson sent her brother. [S6]
 
 The friend remembered a different part of the night. [S6]
 
-She recorded a message on her phone, nearly four minutes long, and sent it to the family. [S6] Dakota News Now quoted parts of it.
+She recorded a message on her phone, nearly four minutes long, and sent it to the family. [S6] Dakota News Now quoted parts of it. [S6]
 
 > **THE FRIEND**, recorded message to Kara's family, as quoted by Dakota News Now:
 >
@@ -227,23 +200,13 @@ The message doesn't say whose car. It doesn't say what time it was. The record d
 
 ## Elm and Railroad
 
-A call came in to the Lincoln County Sheriff's Office around 1 a.m. on Saturday, September 10. Somebody had heard gunshots. [S2, S3]
+A call came in to the Lincoln County Sheriff's Office around 1 a.m. on Saturday, September 10. Somebody had heard gunshots. [S2, S3] Witnesses said it happened at Elm Street and Railroad Avenue. [S3]
 
-Witnesses said it happened at Elm Street and Railroad Avenue. [S3]
+Deputies got there and found Kara dead. [S2, S3, S6] She was 21. [S4]
 
-Deputies got there and found Kara dead. [S2, S3, S6]
+Susan Patterson's brother was still on his way. [S6] "He made it down there too late because he's seen two sheriffs go by," she said. [S6]
 
-She was 21. [S4]
-
-Susan Patterson's brother was still on his way. [S6]
-
-"He made it down there too late because he's seen two sheriffs go by," she said. [S6]
-
-A neighbor heard the shots. [S3]
-
-The neighbor looked outside and didn't see anything. [S3]
-
-By Monday somebody had set up a vigil on the boulevard in front of a house nearby. [S3]
+A neighbor heard the shots. [S3] The neighbor looked outside and didn't see anything. [S3] By Monday somebody had set up a vigil on the boulevard in front of a house nearby. [S3]
 
 ## No foul play
 
