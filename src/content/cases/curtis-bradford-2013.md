@@ -60,7 +60,8 @@ image:
 youtubeId: null
 youtubeUploadDate: null
 # Rewritten October 22, 2026 in the house voice. No new facts. The reader question moved to
-# readerQuestion. Sections are split and reordered by date: Nikko's 2017 death sentence now comes after
+# readerQuestion. The opening's "would" lines ("One sister would stay behind...", "a cousin would say...") are
+# replaced by plain facts already in the story (S1, S5, S7). Sections are split and reordered by date: Nikko's 2017 death sentence now comes after
 # the September 2016 cell assault, and Erica's 2019 assault conviction after that.
 # Cut as narrator lines: "Before the brother and sister, the people they took from the world.", "Their
 # stories deserve more than ages, and that gap is worth naming before going further.", "Remember that.",
@@ -89,9 +90,9 @@ timeline:
   - { date: 2013-08-19, text: "Around 7 a.m., Bradford is found dead near a garage at 18th and Clark Streets. [S1]", section: "after-midnight" }
   - { date: 2013-08-21, text: "Andrea Kruger, 33, is killed on her way home from work. [S4, S7]", section: "the-people-lost-that-august" }
   - { date: 2013-08-29, text: "A Brenneke shotgun slug leads police to Nikko Jenkins. He is arrested. [S1]", section: "the-slug" }
-  - { date: 2014, text: "Nikko Jenkins pleads no contest to four counts of first-degree murder. [S7]", section: "two-juries" }
-  - { date: 2015-01-14, text: "A jury convicts Erica Jenkins of first-degree murder in Bradford's death. [S5]", section: "two-juries" }
-  - { date: 2016-08-19, text: "The Nebraska Supreme Court upholds the murder conviction. [S1]", section: "two-juries" }
+  - { date: 2014, text: "Nikko Jenkins pleads no contest to four counts of first-degree murder. [S7]", section: "verdicts" }
+  - { date: 2015-01-14, text: "A jury convicts Erica Jenkins of first-degree murder in Bradford's death. [S5]", section: "verdicts" }
+  - { date: 2016-08-19, text: "The Nebraska Supreme Court upholds the murder conviction. [S1]", section: "verdicts" }
   - { date: 2016-09-24, text: "Erica Jenkins assaults her cousin Christine Bordeaux in their prison cell. [S3]", section: "the-cousin-in-the-cell" }
   - { date: 2017-05-30, text: "A three-judge panel sentences Nikko Jenkins to death. [S7]", section: "three-judges" }
   - { date: 2020-10-06, text: "The Nebraska Court of Appeals upholds the assault conviction. [S3]", section: "york" }
@@ -109,7 +110,7 @@ Curtis Bradford, 22, sat beside him up front. [S1, S4] In the back sat two of Ni
 
 The two men were dressed in black. There was a rifle in the car, and a shortened shotgun. [S1]
 
-One sister would stay behind in the car. The other would walk up a dark driveway with her brother and Bradford. [S1] A few hours later, a cousin would say, the brother and sister were at his house, cleaning the rifle. [S1]
+By morning, Bradford was dead. [S1] Nikko later pleaded no contest to his murder and three others. [S7] Erica was convicted of Bradford's murder largely on the testimony of her own family. [S1, S5]
 
 ## The people lost that August
 
@@ -191,7 +192,7 @@ Erica, Melonie and their mother were arrested around the same time. [S1] The cou
 
 The smaller bullet could have come from a 9 mm, a .38 or a .357, and a database search turned up 26 possible guns. Bradford's DNA was strongly linked to the rifle and to blood in the car. Mixed DNA on the rifle couldn't rule out Erica or several relatives, but the analyst admitted that result carried very little weight. [S1]
 
-## Two juries
+## Verdicts
 
 Sayles first told police Nikko carried both weapons back to the car. Later she said Erica carried the rifle, and admitted she'd been trying to protect her sister. [S1]
 
@@ -242,5 +243,3 @@ In December 2024, KOLN reported that a York jury had convicted her of another as
 ## What's left
 
 Why a cooperating witness ended up in the same cell as the woman she had testified against is a question the record doesn't answer.
-
-In the public record, the four people killed that August are still little more than their ages.
