@@ -17,6 +17,27 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 | Date | Person | Town, state | Reason |
 |---|---|---|---|
 
+## Rewrites (house voice)
+
+Older stories waiting to be rewritten in the house voice. Follow "Rewriting an older story" in `agents/writer.md`. Justin assigns them in this order unless he says otherwise, and may move stories up once GA4 shows which get the most traffic. Fill in the branch or PR when one starts, and delete the row once the rewrite merges.
+
+Done so far: Ron Rudin, Pamela Dunn, Mary K. Ross (October 22, 2026).
+
+| Order | Person | File | Status | Why this spot | Branch / PR |
+|---|---|---|---|---|---|
+| 1 | Tyler Weathersby | `tyler-weathersby-2024` | missing | Missing poster with call button. Best-performing post (100k+ views). | |
+| 2 | Rachel Cyriacks | `rachel-cyriacks-2013` | missing | Missing poster. Second-best post (50k+). | |
+| 3 | Carla Anderson | `carla-anderson-1987` | missing | Missing poster. Over 4,000 words, so expect cuts. | |
+| 4 | Tammy Haas | `tammy-haas-1992` | unsolved | Short, and a style guide model for sourcing. | |
+| 5 | Curtis Bradford | `curtis-bradford-2013` | solved | | |
+| 6 | Charles Taylor | `charles-taylor-2015` | solved | | |
+| 7 | Derrick Jones | `derrick-jones-2016` | solved | | |
+| 8 | Regina Walters | `regina-walters-1990` | solved | Content note case (a child, sexual violence). Extra care on the crime section. | |
+| 9 | Kara Greger | `kara-greger-2022` | unresolved | Follows the suicide-death rules. Keeps the 988 line in the story. | |
+| 10 | Betsy Faria | `betsy-faria-2011` | in-court | Rewrite right after a court milestone, so the status is fresh. Over 4,000 words. | |
+| 11 | Christian Balke-Thompson | `christian-balke-thompson-2020` | in-court | Same as above. | |
+| 12 | Colleen Slemmer | `colleen-slemmer-1995` | in-court | Same as above. Longest story, so expect the most cuts. | |
+
 ## Published so far (as of 2026-10-18)
 
 | Person | Town, state | Status | Published | File |

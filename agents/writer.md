@@ -98,6 +98,32 @@ Fix them on the same branch, rerun the build and check, and reply in the thread 
 
 Any wording change that touches a fact, a qualifier or an attribution goes back to @Sherlock, even when the request was about style.
 
+## Rewriting an older story
+
+Stories published before October 22, 2026 predate the house voice. You can tell because they have no `readerQuestion`. Justin assigns rewrites from the "Rewrites" table in `agents/QUEUE.md`. A rewrite changes how a story reads, not what it says.
+
+1. Branch `rewrite/[slug]` from `main`. One story per PR.
+2. Check the case status first: charges, verdict, appeal, custody, parole, found or not. If anything changed since `lastChecked`, say so in the thread before you start. A status change is a fact update. It goes in its own commit, before the rewrite, with its own source, `updates` entry and `lastFactChange`. Never fold it into the rewrite.
+3. Rewrite the body in the house voice, following the style guide's rules for the story's category. Keep every fact and every source tag. No new facts and no new sources, with two exceptions:
+   - `poster` for missing cases, from the agency poster or NamUs. Add that source to `sources` if it isn't there.
+   - `readerQuestion`.
+4. In the same commit, add `readerQuestion` and take the reader question, the tip line and the "Where it stands" section out of the body. Adding `readerQuestion` switches the page to the new layout, so the body has to be ready for it in that same commit. Update timeline `section` ids to match any renamed headings.
+5. Keep the frontmatter comment block. Add a line like `# Rewritten [date] in the house voice. No new facts.`, then note any quote merges and anything you cut.
+6. Add `{ date: [today], text: "Story rewritten. No facts changed." }` to `updates`. Set `lastChecked` to today. Don't change `published` or `lastFactChange`.
+7. Length: aim for 1,200 to 3,000 words. Cut detail, never protection. Never cut an acquittal, a dismissal, a denial, a claim of innocence, an "accused" or "charged" qualifier, a line saying police didn't call someone a suspect, a source conflict, or a line saying what the record doesn't show.
+8. No new Facebook post.
+9. Run `npm run build && npm run check`, then open the page with `npm run preview` and confirm it uses the new layout: the case file after the story, and no source numbers inside the text.
+
+Title the PR `Rewrite: [Story title]`. The description has these sections:
+
+1. **Case**: person, place, status, the date you checked the status, and whether anything changed (and which commit holds the update if it did).
+2. **Cuts**: every fact you removed, quoted with its tag, and why. Write "None" if you cut nothing.
+3. **Moves and merges**: facts moved to a different section, and quotes joined into one block.
+4. **New material**: the `poster` facts with their source, and the `readerQuestion`.
+5. **Legal care**: "Unchanged" if the frontmatter notes didn't change, otherwise what changed.
+
+Then hand off to @Sherlock as usual, and say it's a rewrite.
+
 ## Never
 
 - Push to `main`, merge, or set anything that publishes.

@@ -61,6 +61,22 @@ The post reaches far more people than the story, so check it line by line:
 
 Run `npm run build && npm run check:launch` on the branch. Report failures. Then skim for the banned words and clichés in the style guide.
 
+## Rewrites (PRs titled "Rewrite:")
+
+A rewrite puts an older story into the house voice. It should say exactly what the old version said. Check that, instead of rechecking every claim from scratch:
+
+1. **Diff.** Compare the story with `main`: `git diff main -- src/content/cases/[slug].md`. For each changed sentence, confirm the facts, qualifiers and attributions are the same and the same source tags still cover them. Any wording that shifts meaning is a must-fix, even when it reads better: "said" to "admitted", "a dissent" to "one justice", "several fingerprints" to "the fingerprints".
+2. **Tags.** Every tag in the old body is still in the new body, except in cuts the PR lists. The new body cites no source the old one didn't, except a source added for `poster`.
+3. **Cuts.** Match the PR's cut list against the diff and flag any cut it doesn't list. A cut of anything protective is a must-fix: an acquittal, a dismissal, a denial, a claim of innocence, an "accused" or "charged" qualifier, a line saying police didn't call someone a suspect, a source conflict, or a line saying what the record doesn't show.
+4. **Order.** Read the new version straight through. The house voice has no transition sentences, so placement carries more weight. Flag any section order or placement that suggests guilt or a link the sources don't make.
+5. **New material.** Run Pass 1 on the `poster` facts and any new source. Check the `readerQuestion` as in Pass 2.
+6. **Status.** Confirm the Writer checked the case status and the date is current. If the status changed, the update should be its own commit before the rewrite. Run the full Pass 1 on that commit.
+7. Run Pass 2 in full and Pass 4. Confirm the page uses the new layout: the case file after the story, and no source numbers inside the text.
+
+Skip Pass 2b, since a rewrite has no new Facebook post. Run Pass 3 only on new sources.
+
+In your report, replace the claim table with a **changed sentences** table: old wording, new wording, verdict. Unchanged sentences don't need a row.
+
 ## Your report
 
 Post one comment on the PR, in this order:
