@@ -37,7 +37,7 @@ state: SD
 incidentDate: 2013-11-13
 lastSeenDate: 2013-11-13
 resolvedDate: null
-lastChecked: 2026-10-16
+lastChecked: 2026-10-22
 lastFactChange: null
 published: 2026-10-15
 agency: "the South Dakota Division of Criminal Investigation"
@@ -51,6 +51,32 @@ image:
   license: "Family photo shared in the public search for Rachel"
 youtubeId: null
 youtubeUploadDate: null
+# Rewritten October 22, 2026 in the house voice. No new facts. The tip line and reader question moved
+# out of the body, and the old "What we know now" and "Thirteen years" sections were split by date.
+# New material: the poster, from the state's missing persons clearinghouse (S17, checked October 22,
+# 2026), and readerQuestion. S17 lists her hair as brown (the body keeps "dark blonde" from S15), her
+# agency as the Sanborn County Sheriff's Office at 605-796-4511, and says she "was last seen in Mitchell."
+# The poster leaves out "Last place" because S17 conflicts with the official releases (S1, S4).
+# Wording changed for care: "the last person known to have seen Rachel alive" is now "...seen Rachel".
+# Cut as narrator commentary, not facts: "Hold onto that. It's a small thing, the kind of date that lives
+# on a kitchen calendar...", "Families learn to live with that.", "But a promise was a promise, and Mary
+# Schabot waited.", "Not a knock at the door. Not a deputy with his hat in his hands. Just a birthday that
+# went by in silence, and the sick, certain feeling...", "Missing people get turned into posters...",
+# "I won't dress up the rest.", "Let's slow down here...", "Her phone tells the rest, in pieces.",
+# "After that, the phone records stop telling the story, and Brad starts.", "You already know how that
+# went.", "Now here's the part that gets under your skin.", "Remember the quilt?...", "Of everything in
+# that house, the one thing that left with Rachel was the thing she loved.", "So the truck came back. The
+# quilt didn't. Neither did Rachel.", "Searchers have looked nearly everywhere a person could be hidden in
+# that country.", "Then, in the fall of 2023, ten years on, things moved.", "at least not anywhere I
+# could find", "Here's where the calendar comes back around.", and "The state's version holds".
+# The October 31 and November 13 lines are written for late October 2026. Update them after November 14.
+poster:
+  - { label: "Age then", text: "30 [S17]" }
+  - { label: "Height", text: "5 feet 5 [S17]" }
+  - { label: "Weight", text: "140 pounds [S17]" }
+  - { label: "Hair and eyes", text: "Brown and hazel [S17]" }
+  - { label: "Case", text: "No one has been charged in her disappearance. [S12]" }
+readerQuestion: "In 2023, the attorney general said a couple of people had information about what happened to Rachel. What would it take for them to finally pick up the phone?"
 sources:
   - { id: S1, title: "Law Enforcement Continues to Seek Public Assistance in Search for Rachel Cyriacks", publisher: "South Dakota Attorney General's Office", url: "https://atg.sd.gov/OurOffice/Media/pressreleasesdetail.aspx?id=2121", date: 2018-11-13 }
   - { id: S2, title: "New leads give investigators hope five years later in search for Rachel Cyriacks", publisher: "KSFY (Dakota News Now)", url: "https://www.dakotanewsnow.com/content/news/New-leads-give-investigators-hope-five-years-later-in-search-for-Rachel-Cyriacks-500326111.html", date: 2018-11-12 }
@@ -68,62 +94,66 @@ sources:
   - { id: S14, title: "Missing and Murdered: Search continues for Rachel Cyriacks", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2024/08/01/missing-murdered-search-continues-rachel-cyriacks/", date: 2024-07-31 }
   - { id: S15, title: "Rachel Lucille Cyriacks", publisher: "The Charley Project", url: "https://charleyproject.org/case/rachel-lucille-cyriacks", date: 2022-01-02 }
   - { id: S16, title: "3694DFSD - Rachel Lucille Cyriacks", publisher: "The Doe Network", url: "https://www.doenetwork.org/cases/3694dfsd.html", date: 2022-06-29 }
+  - { id: S17, title: "Rachel Cyriacks, South Dakota missing persons clearinghouse", publisher: "South Dakota Attorney General's Office", url: "https://missingpersons.sd.gov/", date: 2026-10-22 }
 timeline:
-  - { date: 1983-10-31, text: "Rachel Lucille Cyriacks is born. [S16]", section: "the-paperwork-nobody-wants-to-file" }
-  - { date: 2013-08, text: "Rachel files for a temporary protection order against her husband, Brad, citing domestic abuse. [S3, S7]", section: "the-paperwork-nobody-wants-to-file" }
-  - { date: 2013-10-31, text: "On her 30th birthday, Brad is jailed in Huron after a domestic violence incident. [S9, S16]", section: "the-paperwork-nobody-wants-to-file" }
-  - { date: 2013-11-13, text: "Rachel drives from Woonsocket to Huron to pick Brad up. He says she later dropped him at a friend's house. [S3, S9]", section: "the-last-morning" }
+  - { date: 1983-10-31, text: "Rachel Lucille Cyriacks is born. [S16]", section: "halloween" }
+  - { date: 2013-08, text: "Rachel files for a temporary protection order against her husband, Brad, citing domestic abuse. [S3, S7]", section: "the-protection-order" }
+  - { date: 2013-10-31, text: "On her 30th birthday, Brad is jailed in Huron after a domestic violence incident. [S9, S16]", section: "halloween" }
+  - { date: 2013-11-13, text: "Rachel drives from Woonsocket to Huron to pick Brad up. He says she later dropped him at a friend's house. [S3, S9]", section: "the-silverado" }
   - { date: 2013-11-14, text: "Rachel doesn't make the birthday call she promised her mother. [S2, S3]", section: "fourteen" }
   - { date: 2013-12, text: "The Sanborn County Sheriff's Office opens an official investigation. [S3]", section: "fourteen" }
-  - { date: 2014-01, text: "Her truck is found behind a Quonset on a bee farm near Huron. Her quilt is never found. [S3, S16]", section: "the-thing-that-went-with-her" }
-  - { date: 2021-12, text: "Years of searches have turned up nothing connected to Rachel. [S3]", section: "what-we-know-now" }
-  - { date: 2023-11-29, text: "Crews search the James River northeast of Huron. Items are sent for analysis. [S8, S10]", section: "what-we-know-now" }
-  - { date: 2023-12-19, text: "The attorney general offers a reward of up to $25,000. [S13]", section: "what-we-know-now" }
-  - { date: 2024-07, text: "The attorney general says new leads have come in and more sonar searches are planned. [S14]", section: "what-we-know-now" }
+  - { date: 2014-01, text: "Her truck is found behind a Quonset on a bee farm near Huron. Her quilt is never found. [S3, S16]", section: "the-quonset" }
+  - { date: 2021-12, text: "Years of searches have turned up nothing connected to Rachel. [S3]", section: "wells-and-junkyards" }
+  - { date: 2023-11-29, text: "Crews search the James River northeast of Huron. Items are sent for analysis. [S8, S10]", section: "the-river" }
+  - { date: 2023-12-19, text: "The attorney general offers a reward of up to $25,000. [S13]", section: "the-river" }
+  - { date: 2024-07, text: "The attorney general says new leads have come in and more sonar searches are planned. [S14]", section: "the-river" }
 updates:
   - { date: 2026-10-15, text: "Story published." }
   - { date: 2026-10-16, text: "Added Rachel's birthday, details from her phone records, and her mother's account of checking her house. [S3, S16]" }
+  - { date: 2026-10-22, text: "Story rewritten. No facts changed." }
 ---
 
 Her mother's birthday is November 14. [S3]
 
-Hold onto that. It's a small thing, the kind of date that lives on a kitchen calendar between a dentist appointment and garbage day. But in the fall of 2013, Rachel Cyriacks made her mother a promise about that date. She said she would call. [S2, S3]
+In the fall of 2013, Rachel Cyriacks made her mother a promise about that date. She said she would call. [S2, S3]
 
-It wasn't strange for Rachel to go quiet for a while. Families learn to live with that. [S3] But a promise was a promise, and Mary Schabot waited.
+It wasn't strange for Rachel to go quiet for a while. [S3] The phone never rang. [S2, S3] Mary Schabot has said that's how she knew. [S2]
 
-The phone never rang. [S2, S3]
+That was 13 years ago this November. Rachel hasn't called anyone since. [S4] Her husband was the last person known to have seen her. He has never been charged in connection with her disappearance. [S12]
 
-Mary has said that's how she knew. [S2] Not a knock at the door. Not a deputy with his hat in his hands. Just a birthday that went by in silence, and the sick, certain feeling that something had happened to her youngest child.
-
-That was thirteen years ago this November. Rachel hasn't called anyone since. [S4]
-
-## A girl who liked to be outside
-
-Missing people get turned into posters, and posters turn into wallpaper, and it helps to remember there's a person under the laminate.
+## Horses
 
 When Rachel was five or six, the family kept horses, and she loved to ride. Her mother remembers a tomboy who wanted to be outdoors for everything. [S6] She was the baby of the family. [S2]
 
 ![Rachel Cyriacks smiling outdoors in a parking lot, sunglasses on her head, wearing a black and white striped shirt](./rachel-cyriacks-2013-outside.jpg "Rachel Cyriacks in an undated family photo.")
 
-She grew into a woman nobody would call shy. Outgoing, her mother says. Fun to be around. [S5] Hazel eyes, dark blonde hair, a dimple in her right cheek, and a garden of ink on her right forearm: red flowers, stars, a tree, the initials RJ. [S15]
+She grew up outgoing, her mother says. Fun to be around. [S5]
+
+She had hazel eyes, dark blonde hair and a dimple in her right cheek. On her right forearm were tattoos of red flowers, stars, a tree and the initials RJ. [S15]
 
 ![Rachel Cyriacks taking a mirror photo, her tattooed right forearm raised as she holds the phone](./rachel-cyriacks-2013-mirror.jpg "Rachel in an undated photo, her tattooed right forearm raised.")
 
-Here's the story Mary tells when people ask who Rachel was. If a friend's kid had a birthday coming and there was no money for presents, Rachel would show up at her mother's house, because Mary kept a stash. Rachel would take what she needed and deliver it herself. She loved handing out presents. [S3]
+## A giver
+
+Mary tells a story when people ask who Rachel was. If a friend's kid had a birthday coming and there was no money for presents, Rachel would show up at her mother's house, because Mary kept a stash. Rachel would take what she needed and deliver it herself. She loved handing out presents. [S3]
 
 "She was a giver," Mary said. [S3]
 
 She had three kids. She also had a quilt she cherished, green and pink and white, that she kept at home in Woonsocket. [S3, S4, S15]
 
-I won't dress up the rest. Rachel and Brad Cyriacks married young. Both had a history with drugs, and by 2013 their three children were living with relatives. But Mary says Rachel was fighting her way back. She was seeking a divorce and working to regain custody. [S3]
+Rachel and Brad Cyriacks married young. Both had a history with drugs, and by 2013 their three children were living with relatives. Mary says Rachel was fighting her way back. She was seeking a divorce and working to regain custody. [S3]
 
 "She loved her kids," her mother said. [S3]
 
-## The paperwork nobody wants to file
+## The protection order
 
-In August 2013, Rachel filed for a temporary protection order against Brad in Sanborn County, citing domestic abuse, according to court documents. [S3, S7] Mary says that in the week before Rachel disappeared, Rachel told the family the abuse was happening again. [S6]
+In August 2013, Rachel filed for a temporary protection order against Brad in Sanborn County, citing domestic abuse, according to court documents. [S3, S7]
 
-Rachel turned thirty on October 31. [S16]
+Mary says that in the week before Rachel disappeared, Rachel told the family the abuse was happening again. [S6]
+
+## Halloween
+
+Rachel turned 30 on October 31. [S16]
 
 That same Halloween evening, according to news reports, there was a domestic violence incident, and Brad went to jail in Huron. [S3, S9]
 
@@ -131,19 +161,21 @@ Thirteen days later, he was getting out. Somebody had to go pick him up. [S9]
 
 Rachel did. [S9]
 
-## The last morning
-
-Let's slow down here, because this is the part that matters most, and it's also the part where the record runs thinnest.
+## The Silverado
 
 On Wednesday, November 13, Rachel climbed into her gray 1995 Chevy Silverado, plates 4CH634, and drove from Woonsocket to Huron. [S1, S3, S15]
 
-Her phone tells the rest, in pieces. An incoming call from a gas station in Huron. A voicemail that came in while she was passing through a dead zone. Then one outgoing call, back to a gas station in Huron. That's where investigators believe she picked Brad up. [S3]
+Her phone records show an incoming call from a gas station in Huron. A voicemail came in while she was passing through a dead zone. Then there was one outgoing call, back to a gas station in Huron. That's where investigators believe she picked Brad up. [S3]
 
-After that, the phone records stop telling the story, and Brad starts.
+A few missing persons databases list her last day as November 11 or 12. [S15, S16] The state says November 13. [S4]
 
-He told investigators they drove home to Woonsocket and stayed a short while. Then, he said, Rachel drove him back to Huron and dropped him off at a friend's house. That was the last time he saw her. [S3, S16] The phone records line up with his account. [S3]
+![An early missing poster for Rachel Cyriacks with five photos of her, saying she was last seen November 11, 2013, at a temporary job in Mitchell](./rachel-cyriacks-2013-early-poster.jpg "An early poster, made by a missing persons group, gives November 11 and a job in Mitchell. Official releases say November 13 in Woonsocket.")
 
-He is the last person known to have seen Rachel alive. He has been questioned. He has never been charged in connection with her disappearance. [S12]
+## Brad's account
+
+Brad told investigators they drove home to Woonsocket and stayed a short while. Then, he said, Rachel drove him back to Huron and dropped him off at a friend's house. That was the last time he saw her. [S3, S16] The phone records line up with his account. [S3]
+
+He is the last person known to have seen Rachel. He has been questioned. He has never been charged in connection with her disappearance. [S12]
 
 No one else has come forward to say they saw her again. [S4]
 
@@ -151,25 +183,23 @@ No one else has come forward to say they saw her again. [S4]
 
 The next day was the fourteenth.
 
-You already know how that went.
-
 Mary gave it a week. Then she took the key she had to her daughter's house and let herself in. She has said she didn't know what she was going to walk into. [S3]
 
-What she walked into was nothing. No sign of a struggle. No sign of Rachel. She called friends. She called neighbors. Nobody had seen her since the thirteenth. [S3]
+There was no sign of a struggle. There was no sign of Rachel. Mary called friends. She called neighbors. Nobody had seen Rachel since the thirteenth. [S3]
 
 Mary went back to law enforcement and kept pushing. About a month after Rachel vanished, the Sanborn County Sheriff's Office opened an official investigation. [S3]
 
-## The thing that went with her
+## The quilt
 
-Now here's the part that gets under your skin.
+The quilt was gone. [S4]
 
-Remember the quilt? Green, pink, and white. The one she cherished. [S15]
+Investigators looked for it and couldn't find it. They came to believe it disappeared at the same time she did. [S4] They put its picture on her missing poster, beside her face. [S2]
 
-It was gone. [S4]
+One database describes the quilt as red and white with green squares. [S16] The state says green, pink and white. [S4]
 
-Investigators looked for it and couldn't find it. They came to believe it disappeared at the same time she did. [S4] Of everything in that house, the one thing that left with Rachel was the thing she loved. Investigators put its picture on her missing poster, right beside her face. [S2]
+## The Quonset
 
-Then, in January 2014, the truck turned up. [S3]
+In January 2014, the truck turned up. [S3]
 
 ![A gray Chevy Silverado extended-cab pickup parked in a garage](./rachel-cyriacks-2013-truck.jpg "Rachel's 1995 Chevy Silverado, from a South Dakota Division of Criminal Investigation missing poster.")
 
@@ -177,25 +207,21 @@ It was parked behind a Quonset on a bee farm outside Huron, more or less out of 
 
 Brad and his friend told investigators they'd been working on repairs. Brad said he'd been driving the truck regularly after the thirteenth. How the truck got from Rachel's hands to that farm has never been explained. [S3]
 
-Investigators searched every inch of it. They tested it for DNA. They examined that undercarriage, wondering whether the damage had anything to do with her death. The agent on the case said all of it failed to answer any questions. [S3]
+Investigators searched every inch of it. They tested it for DNA. They examined the undercarriage, wondering whether the damage had anything to do with her death. The agent on the case said all of it failed to answer any questions. [S3]
 
 The state still has the truck. [S3]
 
-So the truck came back. The quilt didn't. Neither did Rachel.
+## Wells and junkyards
 
-## What we know now
+A tip sent searchers to the Sand Creek area near Wolsey with ground-penetrating radar. [S3] Sand Creek Township sits west of Huron, near Wolsey.
 
-Searchers have looked nearly everywhere a person could be hidden in that country. A tip sent them to the Sand Creek area near Wolsey with ground-penetrating radar. [S3] Sand Creek Township sits west of Huron, near Wolsey. They brought cadaver dogs, dive teams, sonar, and a highway patrol plane. They checked twenty wells, junkyards, and abandoned buildings, and they worked the James River where it runs through Huron. [S3]
+They brought cadaver dogs, dive teams, sonar and a highway patrol plane. They checked 20 wells, junkyards and abandoned buildings, and they worked the James River where it runs through Huron. [S3]
 
 As of late 2021, none of it had turned up a single thing connected to Rachel. [S3]
 
-Some of the record still disagrees with itself. A few missing-persons databases list her last day as November 11 or 12, and one describes the quilt as red and white with green squares. [S15, S16] The state's version holds: November 13, and green, pink, and white. [S4]
+## The river
 
-![An early missing poster for Rachel Cyriacks with five photos of her, saying she was last seen November 11, 2013, at a temporary job in Mitchell](./rachel-cyriacks-2013-early-poster.jpg "An early poster, made by a missing persons group, gives November 11 and a job in Mitchell. Official releases say November 13 in Woonsocket.")
-
-Then, in the fall of 2023, ten years on, things moved.
-
-On November 29, crews searched a farm northeast of Huron, working the banks of the James River with boats. [S8] For the first time, items were recovered and sent off for analysis. Agents began interviewing witnesses who had never been interviewed before. [S3, S10]
+On November 29, 2023, crews searched a farm northeast of Huron, working the banks of the James River with boats. [S8] For the first time, items were recovered and sent off for analysis. Agents began interviewing witnesses who had never been interviewed before. [S3, S10]
 
 In December, Attorney General Marty Jackley announced a reward of up to $25,000 for information leading to an arrest and conviction. [S13] He said investigators were close, and that a couple of people had information about what happened. [S12]
 
@@ -203,18 +229,10 @@ In December, Attorney General Marty Jackley announced a reward of up to $25,000 
 
 ![A South Dakota Division of Criminal Investigation poster offering a reward of up to $25,000 in the disappearance of Rachel Cyriacks, with her photo and description](./rachel-cyriacks-2013-reward-poster.jpg "The Division of Criminal Investigation's reward poster.")
 
-What those items from the river turned out to be has never been made public, at least not anywhere I could find. Mary doesn't believe her daughter is alive. [S14] No one has been charged. [S12] The quilt has never turned up.
+What the items from the river turned out to be has never been made public. Mary doesn't believe her daughter is alive. [S14] No one has been charged. [S12] The quilt has never turned up.
 
 ## Thirteen years
 
-Here's where the calendar comes back around.
+On October 31, Rachel would turn 43. [S16] On November 13, it will be 13 years since that drive to Huron.
 
-On October 31, two weeks from now, Rachel would turn forty-three. [S16] On November 13, it will be thirteen years since that drive to Huron.
-
-And the day after that is November 14.
-
-Her mother's birthday. The day Rachel promised to call. [S2, S3]
-
-If you were around Huron or Woonsocket in November 2013, if you saw a gray Silverado that week, or if you've ever seen a green, pink, and white quilt somewhere it didn't belong, call the South Dakota Division of Criminal Investigation at [605-773-3331](tel:+16057733331). [S4]
-
-So I'll ask you what I keep asking myself: after thirteen years, what would it take for the person who knows to finally pick up the phone?
+The day after that is November 14. Her mother's birthday. The day Rachel promised to call. [S2, S3]
