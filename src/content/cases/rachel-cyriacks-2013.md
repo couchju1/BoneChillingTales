@@ -62,7 +62,7 @@ youtubeUploadDate: null
 # Wording changed for care: "the last person known to have seen Rachel alive" is now "...seen Rachel",
 # and "would turn 43" is now "turns 43". The undercarriage line now quotes Agent Neuharth (S3), and
 # Mary's belief quotes her own words (S14). Her burial belief in S14 stays out.
-# Cut as narrator commentary, not facts: "Hold onto that. It's a small thing, the kind of date that lives
+# Cut as narrator commentary, not facts: "She grew into a woman nobody would call shy.", "Hold onto that. It's a small thing, the kind of date that lives
 # on a kitchen calendar...", "Families learn to live with that.", "But a promise was a promise, and Mary
 # Schabot waited.", "Not a knock at the door. Not a deputy with his hat in his hands. Just a birthday that
 # went by in silence, and the sick, certain feeling...", "Missing people get turned into posters...",
@@ -233,7 +233,7 @@ In December, Attorney General Marty Jackley announced a reward of up to $25,000 
 
 ![A South Dakota Division of Criminal Investigation poster offering a reward of up to $25,000 in the disappearance of Rachel Cyriacks, with her photo and description](./rachel-cyriacks-2013-reward-poster.jpg "The Division of Criminal Investigation's reward poster.")
 
-What the items from the river turned out to be has never been made public. "I mean, she's not alive," Mary told Dakota News Now in 2024. [S14] No one has been charged. [S12] The quilt has never turned up.
+In December 2023, the attorney general's office wouldn't say whether the items had been analyzed. [S13] The public record doesn't say what they were. "I mean, she's not alive," Mary told Dakota News Now in 2024. [S14] No one has been charged. [S12] As of the attorney general's November 2023 release, the quilt was still missing. [S4]
 
 ## Thirteen years
 
