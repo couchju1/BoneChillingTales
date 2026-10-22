@@ -52,7 +52,9 @@ youtubeUploadDate: null
 # Rewritten October 22, 2026 in the house voice. No new facts. The reader question moved to
 # readerQuestion. His sister-in-law's "He helped a lot of people" (S2) moved from the end into "Derrick",
 # the section about him, and the sentence, appeal and release are split by date.
-# The opening now states the verdict (S5) and the defense's toxicology claims, attributed (S8, S10).
+# The opening states the verdict (S5) and Hodge's claim about her own readings (S8). Per Shelley (Oct. 22),
+# the story no longer frames his toxicology as its central question: neutral heading, the A&E episode
+# (S9) moved into "Almost a year" without its title, and a readerQuestion about Jones himself.
 # Cut as narrator lines: "But the investigation turned up details that made this case more complicated
 # than the wreckage suggested.", "Then there was Derrick Jones's own toxicology.", "None of that changes
 # who crossed the line." (narrator judgment, the troopers' identification stays), "Still,", "His
@@ -60,7 +62,7 @@ youtubeUploadDate: null
 # took.", the summary "That is the human cost... convicted of causing his death while driving under the
 # influence. [S5]" (both facts stay elsewhere), "The jury reached its verdict. The appeals court let it
 # stand. [S7]" (the appeal stays in "Five years"), and the closing question, now readerQuestion.
-readerQuestion: "Hodge's side says evidence about Derrick Jones's toxicology never reached the jury. When more than one factor may have played a part in a crash, how should a jury decide who is criminally responsible?"
+readerQuestion: "Derrick Jones's sister-in-law said he helped a lot of people, and a lot of people loved him. What do you remember about him?"
 sources:
   - { id: S1, title: "Jacksonville man killed in a head-on crash on Heckscher Drive", publisher: "Action News Jax", url: "https://www.actionnewsjax.com/news/local/jacksonville-man-killed-in-a-head-on-crash-on-heckscher-drive/310100871/", date: 2016-05-29 }
   - { id: S2, title: "21-year-old charged with DUI manslaughter in deadly 2016 crash on Heckscher Drive", publisher: "Action News Jax", url: "https://www.actionnewsjax.com/news/local/21-year-old-charged-with-dui-manslaughter-in-deadly-2016-crash-on-heckscher-drive/524365804/", date: 2017-05-19 }
@@ -86,7 +88,7 @@ At around 3:30 in the morning, two vehicles met head-on on a Jacksonville highwa
 
 One driver never made it home. [S1] The other survived with serious injuries, and a year later she was charged with manslaughter. [S1, S2]
 
-In 2019 a jury convicted her of DUI manslaughter. [S5] Her side of the case has since pointed to the dead man's own toxicology, evidence she says the jury never heard. [S8, S10]
+In 2019 a jury convicted her of DUI manslaughter. [S5] She has said her own blood alcohol readings were below the legal limit. [S8]
 
 ## Derrick
 
@@ -114,11 +116,11 @@ Blood drawn at the hospital and by law enforcement became the center of the case
 
 It took troopers almost a year to make an arrest. In May 2017, after what they called months of extensive investigating, they arrested Hodge at a home and charged her with DUI manslaughter. [S2, S3] Her bond was set at $75,003. [S3, S4]
 
-Hodge tells it differently. In a later interview, she said her own readings were below the legal limit. [S8] Coverage of a 2025 TV episode about the case says the higher hospital result was found about a year after the crash, which led to her arrest. [S10]
+Hodge tells it differently. In a later interview, she said her own readings were below the legal limit. [S8] In 2025, A&E told her story in an episode of *Accused: Did I Do It?* [S9] Coverage of that episode says the higher hospital result was found about a year after the crash, which led to her arrest. [S10]
 
 ![Lark Hodge in a later interview, looking at the camera against a gray background](./derrick-jones-2016-lark-hodge-interview.jpg "Lark Hodge in a later interview.")
 
-## His toxicology
+## The evidence
 
 His sister-in-law told a reporter she had read his autopsy report. "I know he had alcohol in his system," she said. [S2]
 
@@ -141,7 +143,3 @@ She faced up to 15 years in Florida State Prison. [S5, S6] By her account and la
 She appealed. On July 31, 2020, Florida's First District Court of Appeal affirmed her conviction without a written opinion. [S7]
 
 By her account and later coverage, she was released in August 2023. [S8, S10]
-
-## Accused
-
-In 2025, A&E told her story in an episode of *Accused: Did I Do It?*, titled "Deadly Driver or Car Crash Survivor?" [S9]
