@@ -15,6 +15,11 @@ export function formatLooseDate(value: string): string {
     : date.toLocaleDateString("en-US", { timeZone: "UTC", month: "long", year: "numeric" });
 }
 
+/** "June 1985", for dates the record gives only to the month. */
+export function formatMonth(date: Date): string {
+  return date.toLocaleDateString("en-US", { timeZone: "UTC", month: "long", year: "numeric" });
+}
+
 export function isoDate(date: Date): string {
   return date.toISOString().slice(0, 10);
 }

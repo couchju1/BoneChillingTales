@@ -80,7 +80,8 @@ export async function toRowData(entry: Case): Promise<CaseRowData> {
   const d = entry.data;
   const thumb = d.image ? (await getImage({ src: d.image.src, width: 192, format: "webp" })).src : null;
   const counterLabel = site.statuses[d.status].counterLabel;
-  const countFrom = d.status === "missing" ? d.lastSeenDate : d.incidentDate;
+  const countFrom =
+    d.status === "missing" ? d.lastSeenDate : d.incidentDatePrecision === "month" ? null : d.incidentDate;
   const last = lastActivity(entry);
   const year = d.incidentDate.getUTCFullYear();
   return {

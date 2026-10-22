@@ -2,7 +2,7 @@
 import StatusChip from "./StatusChip.astro";
 import DaysSince from "./DaysSince.astro";
 import { site } from "../lib/config";
-import { formatDate, isoDate, daysBetween } from "../lib/dates";
+import { formatDate, formatMonth, isoDate, daysBetween } from "../lib/dates";
 import type { Case } from "../lib/content";
 
 interface Props {
@@ -11,14 +11,16 @@ interface Props {
 
 const { data } = Astro.props;
 const counterLabel = site.statuses[data.status].counterLabel;
-const countFrom = data.status === "missing" ? data.lastSeenDate : data.incidentDate;
+const monthOnly = data.incidentDatePrecision === "month";
+// A month-only incident date can't anchor a day count, so the counter is dropped.
+const countFrom = data.status === "missing" ? data.lastSeenDate : monthOnly ? null : data.incidentDate;
 
 const dateItem =
   data.status === "missing" && data.lastSeenDate
     ? { label: "Last seen", date: data.lastSeenDate }
     : data.status === "solved" && data.resolvedDate
       ? { label: "Solved", date: data.resolvedDate }
-      : { label: "Date of incident", date: data.incidentDate };
+      : { label: "Date of incident", date: data.incidentDate, month: monthOnly };
 
 const stale = daysBetween(data.lastChecked, new Date()) > site.reviewIntervalDays;
 ---
@@ -26,7 +28,9 @@ const stale = daysBetween(data.lastChecked, new Date()) > site.reviewIntervalDay
 <p class="status-line ui" data-needs-review={stale ? "" : undefined}>
   <StatusChip status={data.status} />
   <span>{data.town}, {data.state}</span>
-  <span>{dateItem.label} <time datetime={isoDate(dateItem.date)}>{formatDate(dateItem.date)}</time></span>
+  <span>{dateItem.label} {"month" in dateItem && dateItem.month
+    ? <time datetime={isoDate(dateItem.date).slice(0, 7)}>{formatMonth(dateItem.date)}</time>
+    : <time datetime={isoDate(dateItem.date)}>{formatDate(dateItem.date)}</time>}</span>
   {counterLabel && countFrom && <DaysSince since={countFrom} label={counterLabel} />}
   <span class="checked">Last checked <time datetime={isoDate(data.lastChecked)}>{formatDate(data.lastChecked)}</time></span>
 </p>

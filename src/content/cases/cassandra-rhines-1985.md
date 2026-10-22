@@ -16,7 +16,8 @@
 # Conflicts in the text: the finder was an off-duty employee (S1, S3, S4) or a deputy (S8). The address is
 # 2700 Grand Avenue South (S1) or 27th Street and Grand Avenue South (S4). Knutson's quote is worded
 # differently in S3 and S6.
-# incidentDate: the record gives only June 1985. The site needs a full date, so it is set to June 1, 1985.
+# incidentDate: the record gives only June 1985. incidentDatePrecision is "month" (added October 22, 2026), so the
+# page shows June 1985 and no day counter. The 1st of the month is a placeholder, not a sourced day.
 # Same origin: S2 and S5 mostly restate the S1 release. S3, S4 and S6 add their own reporting from the news
 # conference.
 # Left out on purpose: race (only in the BCA sheet, which could not be opened), the name of the man she lived
@@ -31,11 +32,12 @@ status: unsolved
 town: "Minneapolis"
 state: MN
 incidentDate: 1985-06-01
+incidentDatePrecision: month
 lastSeenDate: null
 resolvedDate: null
 lastChecked: 2026-10-22
 lastFactChange: null
-published: 2026-10-23
+published: 2026-10-22
 agency: "the Lake County Sheriff's Office"
 tipLine: "+12188348385"
 anonymousTips: null
@@ -63,9 +65,10 @@ timeline:
   - { date: 2016-05, text: "The sheriff says tips identified the man in the photograph, who has since died. [S7]", section: "the-photograph" }
   - { date: 2021-11, text: "The lead investigator says there are no more leads to follow. [S8]", section: "the-case-file" }
 updates:
-  - { date: 2026-10-23, text: "Story published." }
+  - { date: 2026-10-22, text: "Story published." }
+  - { date: 2026-10-22, type: correction, text: "An earlier version of this story gave the date of incident as June 1, 1985, with a day count. The record gives only June 1985. The story has been corrected." }
 ---
-On May 6, 2014, an off-duty employee of the Lake County Sheriff's Office was training his dogs in Gooseberry Falls State Park, on Minnesota's North Shore. [S1, S4] In a part of the park few people reach, he and the dogs came upon what looked like a human skull and other bones. [S1, S4]
+On May 6, 2014, an off-duty employee of the Lake County Sheriff's Office was working with dogs in Gooseberry Falls State Park, on Minnesota's North Shore. [S1, S4] In a part of the park few people reach, he and the dogs came upon what looked like a human skull and other bones. [S1, S4]
 
 That August, DNA matched them to Cassandra Rhines. She was 19 when she disappeared from Minneapolis in June 1985. [S1] Investigators say she was murdered. [S1] Her killer has not been identified. [S8]
 
