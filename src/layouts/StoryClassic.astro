@@ -1,0 +1,290 @@
+---
+// The layout from before the house voice (October 22, 2026), for stories not yet rewritten in it.
+// [slug].astro picks Story.astro instead once a story has a readerQuestion. Delete this file
+// when every story has been rewritten.
+import { Picture } from "astro:assets";
+import Base from "./Base.astro";
+import "../styles/prose.css";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CaseStatusLine from "../components/CaseStatusLine.astro";
+import ContentNote from "../components/ContentNote.astro";
+import Timeline from "../components/Timeline.astro";
+import TipBox from "../components/TipBox.astro";
+import UpdateLog from "../components/UpdateLog.astro";
+import SourceList from "../components/SourceList.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+import ShareButton from "../components/ShareButton.astro";
+import StatusChip from "../components/StatusChip.astro";
+import AdSlot from "../components/AdSlot.astro";
+import { site } from "../lib/config";
+import { STATE_NAMES, type Case } from "../lib/content";
+import { isoDate } from "../lib/dates";
+import { withCitations } from "../lib/sources";
+
+interface Props {
+  entry: Case;
+  related?: Case | undefined;
+}
+
+const { entry, related } = Astro.props;
+const { data } = entry;
+const stateName = STATE_NAMES[data.state]!;
+const url = new URL(`/cases/${entry.id}/`, site.domain).href;
+const isOpen = data.status === "unsolved" || data.status === "missing" || data.status === "unresolved";
+const hasTimeline = data.timeline.length > 0;
+
+const ogImage = `/og/${entry.id}.png`;
+
+const article = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: data.title,
+  description: data.description,
+  image: [
+    new URL(ogImage, site.domain).href,
+    ...(data.image ? [new URL(data.image.src.src, site.domain).href] : []),
+  ],
+  datePublished: isoDate(data.published),
+  dateModified: isoDate(data.lastFactChange ?? data.published),
+  author: { "@id": `${site.domain}/about/#justin` },
+  publisher: { "@id": `${site.domain}/#org` },
+  mainEntityOfPage: url,
+  about: { "@type": "Place", name: `${data.town}, ${data.state}` },
+  citation: data.sources.map((s) => s.url),
+};
+
+// Video results need an upload date, so the markup only goes out when the story has one.
+const video =
+  data.youtubeId && data.youtubeUploadDate
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: data.title,
+        description: data.description,
+        thumbnailUrl: [`https://i.ytimg.com/vi/${data.youtubeId}/hqdefault.jpg`],
+        uploadDate: isoDate(data.youtubeUploadDate),
+        embedUrl: `https://www.youtube-nocookie.com/embed/${data.youtubeId}`,
+        contentUrl: `https://www.youtube.com/watch?v=${data.youtubeId}`,
+      }
+    : null;
+---
+
+<Base
+  title={data.seoTitle}
+  description={data.description}
+  type="article"
+  image={ogImage}
+  imageAlt={data.title}
+  jsonLd={video ? [article, video] : [article]}
+  noindex={data.draft}
+>
+  <article class="story wrap" data-pagefind-body>
+    {data.draft && <p class="draft-banner ui" data-pagefind-ignore>Draft preview. This story isn't published.</p>}
+
+    <div class:list={["story-top", { "has-image": data.image }]}>
+    <header class="story-header">
+      <!-- Search shows these with each result. -->
+      <span hidden data-pagefind-ignore data-pagefind-meta="status">{site.statuses[data.status].label}</span>
+      <span hidden data-pagefind-ignore data-pagefind-meta="place">{data.town}, {data.state}</span>
+      <div data-pagefind-ignore>
+        <Breadcrumbs
+        items={[
+          { name: "Cases", href: "/cases/" },
+          { name: stateName, href: `/states/${data.state.toLowerCase()}/` },
+          { name: data.person },
+        ]}
+      />
+      </div>
+      <div data-pagefind-ignore>
+        <CaseStatusLine data={data} />
+      </div>
+      <h1>{data.title}</h1>
+      {data.summary && <p class="summary" set:html={withCitations(data.summary)} />}
+      <div data-pagefind-ignore>
+        <ShareButton title={data.title} />
+      </div>
+    </header>
+
+    {
+      data.image && (
+        <figure class="lead-image" data-pagefind-ignore>
+          <Picture
+            src={data.image.src}
+            alt={data.image.alt}
+            formats={["avif", "webp"]}
+            widths={[480, 800, 1200]}
+            sizes="(min-width: 48rem) 24rem, 100vw"
+            loading="eager"
+          />
+          <figcaption class="ui">{data.image.credit}</figcaption>
+        </figure>
+      )
+    }
+    </div>
+
+    <AdSlot position="story-after-summary" />
+
+    <div class:list={["story-grid", { "has-timeline": hasTimeline }]}>
+      <div class="story-body prose" data-read-target>
+        {
+          data.contentNote ? (
+            <ContentNote note={data.contentNote}>
+              <slot />
+            </ContentNote>
+          ) : (
+            <slot />
+          )
+        }
+      </div>
+
+      {hasTimeline && <Timeline events={data.timeline} />}
+
+      <div class="story-end" data-pagefind-ignore>
+        {isOpen && data.tipLine && (
+          <TipBox person={data.person} agency={data.agency} tipLine={data.tipLine} anonymousTips={data.anonymousTips} />
+        )}
+        <UpdateLog updates={data.updates} />
+        <AdSlot position="story-before-sources" />
+        <SourceList sources={data.sources} caseId={entry.id} />
+        <NewsletterForm
+          heading="Get updates on this case"
+          body="We'll email you when something changes. Nothing else from this form."
+          button="Get updates"
+          caseId={entry.id}
+        />
+        {
+          related && (
+            <section class="related" aria-labelledby="related-heading">
+              <h2 id="related-heading">Read next</h2>
+              <a href={`/cases/${related.id}/`} class="related-link">
+                <StatusChip status={related.data.status} />
+                <span class="related-title">{related.data.title}</span>
+                <span class="ui related-place">
+                  {related.data.town}, {related.data.state}
+                </span>
+              </a>
+            </section>
+          )
+        }
+      </div>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .story {
+    padding-top: var(--space-l);
+  }
+
+  .draft-banner {
+    margin-bottom: var(--space-m);
+    padding: var(--space-2xs) var(--space-s);
+    border: 1px dashed var(--color-lamp);
+    color: var(--color-lamp);
+  }
+
+  .story-header {
+    max-width: var(--measure);
+  }
+
+  h1 {
+    font-size: var(--step-5);
+    margin-bottom: var(--space-m);
+  }
+
+  .summary {
+    font-size: var(--step-1);
+    line-height: 1.45;
+    margin-bottom: var(--space-m);
+  }
+
+  .lead-image {
+    max-width: 24rem;
+    margin: var(--space-l) 0 0;
+  }
+
+  .lead-image :global(img) {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-m);
+  }
+
+  .lead-image figcaption {
+    margin-top: var(--space-2xs);
+    color: var(--color-ash);
+  }
+
+  .story-grid {
+    margin-top: var(--space-xl);
+  }
+
+  .story-end {
+    max-width: var(--measure);
+  }
+
+  .related {
+    margin-top: var(--space-2xl);
+  }
+
+  .related-link {
+    display: grid;
+    gap: var(--space-2xs);
+    justify-items: start;
+    padding: var(--space-m);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-m);
+    text-decoration: none;
+    color: var(--color-bone);
+  }
+
+  .related-link:hover {
+    border-color: var(--color-ember);
+  }
+
+  .related-title {
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    line-height: var(--leading-tight);
+  }
+
+  .related-place {
+    color: var(--color-ash);
+  }
+
+  /* Wide screens: the lead photo sits to the right of the headline, and the timeline sits beside
+     the story and follows the reader down. */
+  @media (min-width: 64rem) {
+    .story-top.has-image {
+      display: grid;
+      grid-template-columns: minmax(0, var(--measure)) minmax(14rem, 24rem);
+      column-gap: var(--space-2xl);
+      align-items: start;
+    }
+
+    .has-image .lead-image {
+      margin-top: 0;
+    }
+
+    .story-grid.has-timeline {
+      display: grid;
+      grid-template-columns: minmax(0, var(--measure)) minmax(14rem, 18rem);
+      column-gap: var(--space-2xl);
+      align-items: start;
+    }
+
+    .has-timeline .story-body {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .has-timeline :global(.timeline) {
+      grid-column: 2;
+      grid-row: 1;
+      align-self: stretch;
+    }
+
+    .has-timeline .story-end {
+      grid-column: 1;
+    }
+  }
+</style>

@@ -55,7 +55,8 @@ short post: copy `src/content/updates/_example.md`, set `case:` to the story's f
   and read_75. In GA4, mark newsletter_success as a key event. Add `?ga_debug=1` to any page
   URL to watch events arrive in DebugView.
 - Ads: set `ads.enabled` to true once a network approves you. Two slots sit on each story,
-  after the story and before the sources, with their height held so nothing jumps. With no
+  after the story (after the summary on stories in the older layout) and before the sources, with
+  their height held so nothing jumps. With no
   `ads.network` set they show as dashed boxes for testing. Add the network's script per its
   instructions, and re-run PageSpeed after.
 

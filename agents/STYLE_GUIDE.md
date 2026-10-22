@@ -124,7 +124,7 @@ Also avoid, even though the build won't catch them: "tragically", "brutally", "s
 - `seoTitle` 60 characters max. Pattern: `Person Name: What Happened in Town, ST`
 - `description` 155 characters max.
 - `summary` under 60 words, tagged. Who, where, when, where it stands. It shows in the case file below the story (and in the poster for missing cases), not above it.
-- `readerQuestion`: the one question for readers. Required in practice for every story, though the build doesn't enforce it.
+- `readerQuestion`: the one question for readers. Required for every story in the house voice, though the build doesn't enforce it. It is also the switch: a story with a `readerQuestion` gets the story-first layout, and one without keeps the older layout. When you rewrite an older story, add it and take the question, the tip line and "Where it stands" out of the body in the same change. Never add it to a story that hasn't been rewritten.
 - `poster` (missing cases): label and tagged text pairs from the agency poster or NamUs, like `{ label: "Height", text: "5 feet 2 [S1]" }`. Use "Age then", "Height", "Weight", "Hair and eyes", "Last place", and "Case" for a one-line legal status when someone was charged or convicted. Leave out anything the agency didn't release.
 - `title` pattern: `A Specific Hook: The [Killing/Disappearance/Death] of Person Name`
 - `tipLine` E.164 format: `+16055551234`
