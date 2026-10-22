@@ -98,7 +98,7 @@ readerQuestion: "Before Pam Hupp's trial, a judge has to decide whether to hear 
 ---
 In the driveway of Betsy Faria's house in Troy, Missouri, Pam Hupp called her husband, Mark, and put Betsy on the phone. He didn't pick up. [S2, S7] "Merry Christmas and Happy New Year!" Betsy sang into his voicemail. [S2]
 
-It was the evening of December 27, 2011. The federal court later called that voicemail the last evidence that Betsy was alive. [S7] That night she was stabbed to death in her home. She was 42. [S1, S7]
+It was the evening of December 27, 2011. In 2019, ruling on Russ's civil rights lawsuit, a federal judge called that voicemail the last evidence that Betsy was alive. At that stage of the lawsuit, the judge had to view the facts in Russ's favor, as the law requires. [S7] That night she was stabbed to death in her home. She was 42. [S1, S7]
 
 Her husband, Russ, was convicted of her murder in 2013. A judge acquitted him at a new trial in 2015. [S1] In 2021, prosecutors charged Pam Hupp with killing Betsy. She has pleaded not guilty. [S4, S9] A judge is set to hear the case in January 2028. [S11]
 
@@ -138,7 +138,7 @@ Russ worked from home that day. Around noon he texted Betsy. "Going to game and 
 
 After chemo, a new text came. "Pam Hupp wants to bring me home to bed." Her white blood cell count was low, she wrote, and she needed rest. "She is bringing you?" Russ asked. "Yes, she offered and I accepted. Didn't get much sleep. Mom snored." [S2]
 
-A federal judge later described texts in which Hupp insisted on driving Betsy home. For Hupp it meant an hour's round trip. For Russ it was a short detour. [S7] Hupp later said Betsy asked. [S2]
+The federal judge's 2019 ruling described texts in which Hupp insisted on driving Betsy home. For Hupp it meant an hour's round trip. For Russ it was a short detour. [S7] Hupp later said Betsy asked. [S2]
 
 ## Four stops
 
@@ -290,7 +290,7 @@ In the daughters' case, the judge singled out what Hupp told police the day afte
 
 The judge let Hupp keep the money. The appeals court upheld that in 2017. [S8]
 
-Russ's lawsuit had gone forward in 2019 against three detectives. A federal judge, viewing the facts in Russ's favor as the law requires at that stage, wrote that much of what McCarrick's probable cause statement said about a cleanup wasn't supported by the evidence. [S7] The suit settled in March 2020 for $2 million. [S1] The officers did not admit wrongdoing. [S9]
+Russ's lawsuit had gone forward in 2019 against three detectives. The federal judge, viewing the facts in Russ's favor as the law requires at that stage, wrote that much of what McCarrick's probable cause statement said about a cleanup wasn't supported by the evidence. [S7] The suit settled in March 2020 for $2 million. [S1] The officers did not admit wrongdoing. [S9]
 
 In July 2021, Lincoln County Prosecuting Attorney Mike Wood charged Pam Hupp with first-degree murder and armed criminal action in Betsy's death. [S4, S9] She pleaded not guilty. [S9]
 
