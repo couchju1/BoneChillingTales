@@ -41,7 +41,11 @@ agency: "the Watertown Police Department"
 tipLine: "+16058826210"
 anonymousTips: null
 contentNote: null
-image: null
+image:
+  src: "./pamela-dunn-2001.jpg"
+  alt: "Pamela Dunn, smiling, in a black leather jacket at a restaurant table"
+  credit: "Pamela Dunn in an undated photo"
+  license: "Photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 sources:
@@ -82,6 +86,8 @@ This December marks 25 years since she disappeared. [S1] A man is in prison for 
 ## Pam
 
 Pamela Jean Dunn was born on October 4, 1963, and she was 38 when she disappeared. She was 5 feet 2, about 135 pounds, with brown hair and brown eyes. [S1] She worked at Jenkins Living Center in Watertown. [S9] Her coworkers, Forum News Service reported in 2022, knew her as reliable. [S8] She had a daughter, and she had a dog. [S2, S7]
+
+![Pamela Dunn, smiling, with curled brown hair and star-shaped earrings](./pamela-dunn-2001-portrait.jpg "Pamela Dunn in an undated photo.")
 
 Deb Tarnowski was her best friend before the two of them learned they were half sisters. After that, Forum reported, they looked out for each other. [S8] As teenagers they would go to a park in Watertown together. "We used to come here just for peace and just to hang out and be kids again," Deb told KELOLAND News in 2020. [S5]
 
@@ -129,11 +135,15 @@ What stood out to investigators, Forum reported, was his lack of concern for Pam
 
 On February 7, 2002, police arrested Asmussen, accused of stalking Pam on two separate days. They didn't call him a suspect in her disappearance. [S4] He pleaded not guilty that October. [S4]
 
+![David Asmussen, in glasses and a striped jail uniform, seated in a courtroom](./pamela-dunn-2001-asmussen-court.jpg "David Asmussen in court.")
+
 Prosecutors went after the stalking case first. "The goal was to get him locked up and then proceed to work the bigger case. And we were able to do that," Foley told Forum. [S8]
 
 The stalking trial was held in Huron on August 23, 2004. Three days earlier, Asmussen had dismissed his lawyers so he could represent himself. [S2] Jurors heard parts of the messages from December 5 and 6, and Jon Bierne, an agent with the state Division of Criminal Investigation, testified that in his opinion the voice was Asmussen's. Asmussen made no opening statement and no closing argument. [S2] The jury found him guilty of two counts of stalking, and he was sentenced to 40 months in prison. [S2] The South Dakota Supreme Court upheld the conviction in April 2006. [S2]
 
 That May, he was back in a Watertown courtroom, this time charged with kidnapping her. [S4] The court ordered a mental evaluation before he could represent himself. [S4] He was found competent, and once again he acted as his own lawyer at trial. [S3] At several points he tried to raise a defense based on the Uniform Commercial Code, which the Supreme Court later called "nonsensical." The trial judge rejected it. [S3]
+
+![David Asmussen, in a striped jail uniform, is led through a courthouse by uniformed officers](./pamela-dunn-2001-asmussen-escorted.jpg "David Asmussen is led through a courthouse by officers.")
 
 With Pam still missing, prosecutors had to prove at least that he had taken Pam from her apartment against her will, Forum reported. [S8] The ring was part of their case. Asmussen's sister-in-law at the time gave it to investigators and told them he had dropped it off at her house before his 2004 sentencing, according to court documents. [S8]
 
@@ -170,6 +180,8 @@ What the record doesn't show is what happened to Pam after that night. Kidnappin
 Watertown police say they still follow up on any leads they get. [S6] Stahl has said he hopes Asmussen will one day tell them where she is. "I don't know if he will ever do that," he told KELOLAND in 2021. "In domestic relationships and situations like that, it's a power and control thing." [S6] Deb said much the same to Forum in 2022. "It doesn't give us closure," she said of the conviction. "It's the last piece of control that he has." [S8]
 
 * * *
+
+![Pamela Dunn, with brown hair, against a blue background](./pamela-dunn-2001-poster.jpg "Pamela Dunn in an undated photo.")
 
 "You know, 20 years is too long, you know, without answers, without closure. That's all that we want," Deb said in 2021. [S6] She said the best Christmas present her family could get would be answers. [S6] "Somebody out there knows and can let somebody know where she is." [S6]
 
