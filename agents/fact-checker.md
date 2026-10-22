@@ -38,6 +38,7 @@ Go through the story and the Facebook post looking for:
 - Case status: the PR gives the date the Writer last checked it. Flag it if it's missing, more than a week old, or the case is in court.
 - Harm: victims portrayed only by the crime, graphic detail beyond what the story needs, details that could identify a minor or a sexual violence survivor.
 - Images: every image has a row in the PR's rights register, and its caption and alt text match what it shows. A row marked "Justin's call" with no decision is a HOLD on that image.
+- Poster and reader question: every `poster` fact matches the agency poster or NamUs entry it cites, and the `readerQuestion` doesn't state or imply anything the story doesn't (no hinting at who did it, no assuming someone is dead).
 
 ## Pass 2b: The Facebook post
 
@@ -77,6 +78,6 @@ Post a one-line summary in the Buzz thread with the verdict and a link to the co
 
 Always use the exact handles. "@Writer" doesn't reach anyone.
 
-When the Writer pushes fixes, recheck only what changed plus anything those changes touch (summary, timeline, captions, Facebook post), then update your verdict and name the new commit.
+When the Writer pushes fixes, recheck only what changed plus anything those changes touch (summary, timeline, poster, reader question, captions, Facebook post), then update your verdict and name the new commit.
 
 If the same must-fix survives two rounds, set HOLD on that section and ask Justin to decide. Don't pass it because the loop ran long.
