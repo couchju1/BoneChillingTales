@@ -156,7 +156,7 @@ Three people got out. Nikko carried the shortened shotgun. Bradford carried the 
 
 Sayles stayed in the car. Nikko told her to move to the driver's seat. [S1]
 
-From her seat she heard half a minute or so of quiet. One shot. Then about fifteen seconds of nothing. Then a second shot, louder than the first, and a flash in the rearview mirror. [S1]
+From her seat she heard about 30 to 45 seconds of quiet. One shot. Then about fifteen seconds of nothing. Then a second shot, louder than the first. She saw a flash in the rearview mirror. [S1]
 
 She didn't see who fired. She never said she did.
 
