@@ -19,7 +19,7 @@ Launch states get priority: SD, ND, MN, IA, NE. Cases from other states are fine
 7. Say what the record doesn't show. Gaps are part of the story. ("The public record doesn't say when she left the farm.")
 8. Never publish: crime scene photos, private photos of victims without family permission, names of accused minors (unless charged as adults and named by the court), names of sexual assault victims who haven't spoken publicly, mugshots of people not convicted (unless agency-released and directly newsworthy).
 9. Violence against a child or sexual violence requires a `contentNote`.
-10. Open cases (`unsolved`, `missing`) must give the agency tip line, and the story should end by pointing readers to it.
+10. Open cases (`unsolved`, `missing`) must give the agency tip line in `tipLine`. The page shows it right after the story, and in the poster for missing cases.
 
 ## Deaths ruled suicide or no foul play
 
@@ -32,9 +32,9 @@ Some stories are about a death that officials say wasn't a crime, but the family
 - Give the method only as far as the official account and the family's questions depend on it. No details about wounds or the scene, and no step-by-step account of how it happened.
 - Don't present suicide as the result of one thing, like the fight, the breakup or the bad night, unless a source says so.
 - Set a `contentNote`, like `"a gun death that officials have called a suicide"`.
-- End with the agency line if the agency is still investigating anything, or if the family asked people to come forward. Then add the 988 Suicide and Crisis Lifeline: "If you or someone you know is struggling, call or text 988."
+- Set `tipLine` if the agency is still investigating anything, or if the family asked people to come forward. The page shows it after the story. End the story text itself with the 988 Suicide and Crisis Lifeline: "If you or someone you know is struggling, call or text 988." This is the one exception to "no tip line in the story text."
 - The Facebook post follows the same rules, and ends with the 988 line after the agency number.
-- Use `status: unresolved`. It shows as "Questions remain" with no day counter. A tip line is optional, but set one if you end with the agency line.
+- Use `status: unresolved`. It shows as "Questions remain" with no day counter. A tip line is optional.
 
 ## Sources
 
@@ -46,27 +46,69 @@ Each source in the frontmatter needs `id`, `title`, `publisher`, `url`, and `dat
 
 ## How stories sound
 
-Read two or three published stories in `src/content/cases/` before writing. Tammy Haas, Rachel Cyriacks and Curtis Bradford are good models. They predate the flow rules below, so use them for sourcing, attribution and care, and use the rules below for paragraphing and transitions.
+Justin set the house voice on October 22, 2026: stories should read like stories, not articles. It's adapted from the `mailer-true-crime` skill (Norman Mailer's *The Executioner's Song*) and replaces the "newspaper feature" flow rules from October 21. It's one voice for every story. Only the structure, the ending and the page layout change by category (below).
 
-The story should read like a good newspaper feature: one connected account that pulls the reader from paragraph to paragraph, not a stack of separate facts. Justin set this standard on October 21, 2026, using the Detroit Lakes Tribune's "20 years gone" (2007) as the model for flow. Copy its flow, not its wording. Some of its wording breaks the rules below.
+The models are the three stories rewritten in this voice: Ron Rudin (unsolved), Pamela Dunn (missing) and Mary K. Ross (solved). Read the one that matches your case before writing. Older stories predate the voice, so use them only for sourcing, attribution and care.
 
-- Paragraphs are usually two to four sentences. Keep one-line paragraphs for moments that need to land, like "Carla's door was locked from the outside." If every other paragraph is one line, nothing lands.
-- Plain words. Vary sentence length. A sentence that explains cause and effect can run 20 or 30 words with a clause or two. Then a short one. Write like you're telling a friend something serious.
-- Connect paragraphs. Each one should follow from the last: "So when she didn't show up...", "Meanwhile...", "That's part of what makes the case hard." Say how things relate when the sources say how they relate.
-- Open on a concrete moment or detail, not a summary. ("Her mother's birthday is November 14." / "On September 23, 1992, a golfer went looking for lost balls near Crofton, Nebraska.") Within the first few paragraphs, say what the mystery is and why it matters, so the reader knows the question before the details start.
-- Treat victims as people first. A section about who they were, built only from what's on the record. If the record is thin, say so and leave it there. Don't invent warmth.
-- Section headings are short and specific, pulled from the story: "The last morning", "The slug", "A pizza in Revere". Not "Background" or "Investigation".
-- Let scenes breathe. Small recorded details, told in order, carry a scene better than a list: "One of the rented movies was still in the VCR. The empty soda cup was in the garbage."
-- Quotes: let a speaker run. Quote, paraphrase, then quote them again. Keep the tag short and after the quote ("Dan said."). After the first full name, use first names for family members, and last names for officials. Say where a quote came from (the outlet and year) the first time that speaker appears in a section, not on every quote. Use it again only when the outlet or year changes.
-- Theories: give the reasoning first, attributed to whoever holds the theory, then say plainly what the evidence does and doesn't show. Don't close down a theory in the same sentence that introduces it.
-- Name each source conflict once, where it comes up in the story. Don't repeat the same conflict later.
-- Use `* * *` scene breaks sparingly. Two or three per story at most. Use a transition sentence instead when one will do. Space photos out so they don't interrupt every few paragraphs.
-- Length: 1,600 to 3,000 words.
-- Ending, for open cases: a "where it stands" section in prose. It covers what's documented, what's been suggested but not shown, and what no one has answered. Refer back to conflicts already named instead of listing them again. Then the tip line as a `tel:` link. Then one reader question.
-- Ending, for solved cases: what the outcome was, what the record still leaves open, and something that keeps the victims at the center.
-- Close with one honest question for the reader. It drives comments.
+### The voice
 
-Flow never outranks the rules above it. Every fact still gets a source tag. Accused still means accused. Don't smooth over a gap or a conflict to make a paragraph read better, and don't write a transition that claims a link between events the sources don't make. ("So" and "because" are claims.)
+- **The narrator stays out of it.** No commentary, no foreshadowing, no telling the reader what to feel or what a fact means. Never "chilling," "tragically," "little did she know," or a line like "Investigators now had a body, a burned trunk and a car." If a fact matters, place it where the reader will feel it, and leave it alone.
+- **Analysis belongs to people in the story.** A prosecutor's theory, a judge's finding, a sister's doubt. Quote or paraphrase them, attributed. Never present it in the narrator's voice.
+- **Tell each section from where someone stood.** The coworker at the apartment door, the fishermen at the lake, the juror who held out. Use what that person saw, said or testified to, and stay with them for the section. Interior thoughts only when a source records the person saying them. Otherwise describe them from the outside.
+- **Concrete details, not adjectives.** Prices, times, dollar amounts, cars, what was on the table. "He kept his Cadillac spotless" does more than "he was meticulous."
+- **Plain past tense, short sentences, fuller paragraphs.** Most sentences are under 15 words. Paragraphs are two to five sentences, about 30 to 40 words, built around one beat. Keep one-line paragraphs for moments that need to land ("The lock wasn't changed.").
+- **Documents set apart.** When the record has the actual words (a court order, a judge's ruling, a 911 transcript, a family statement, a long quote), set them as a block quote instead of summarizing. Quote, don't paraphrase, when you have the words.
+- **Disagreement stays visible.** When witnesses or sources disagree, give both, back to back, attributed, and leave it unresolved. Name each conflict once, where it comes up.
+- **The victim is a person before the crime.** A section about who they were, built only from the record. If the record is thin, say so and stop. Don't invent warmth.
+- **The crime, when there is one, is short and exact.** What the record says happened, in order, in plain sentences. No gore beyond the record, no euphemism, no wounds or scene details beyond what the site's limits allow.
+
+### Structure
+
+- **Open on a concrete moment**, not a summary. Within the first three paragraphs, the reader should know the question the story is about. Accused-means-accused still applies: if someone was acquitted, cleared or maintains innocence, say so in the opening.
+- **Sections, not transitions.** Use 8 to 15 sections with short, specific headings pulled from the story ("The Cadillac", "Hy-Vee", "The television"). The page numbers them automatically. Don't write transition sentences between sections ("First, though, someone had to find her."). The white space does that work. Within a section, sentences can connect normally.
+- **Strict time order** inside the story, with the opening as the one exception.
+- No `* * *` scene breaks. Start a new section instead.
+- **No "Where it stands" section.** The case file below the story carries the status, summary and timeline. Fold what the record still leaves open into the last section, in a sentence or two.
+- **End on a quiet fact.** No moral, no question, no tip line in the story text. The page adds the tip box and the reader question after the story.
+- Length: 1,200 to 3,000 words.
+
+### By category
+
+Same voice everywhere. These change:
+
+**Solved** (`solved`, and `in-court` once there's a verdict)
+- The fullest shape: the victim's life, the last ordinary day, the crime told briefly and exactly, the investigation, a short trial, then the aftermath, which can take up to half the story (appeals, clemency, the family).
+- A convicted person can be a viewpoint, but only through their own words on record: confessions, testimony, letters, statements to a parole board.
+- End on a survivor, usually the one with the least said for them, and a fact that ties back to the opening. (Ross ends on Kristian and the 911 call.)
+
+**Unsolved** (`unsolved`, and `in-court` before a verdict)
+- A chorus that doesn't settle. Put conflicting accounts and the evidence side by side, and never let the order of sections suggest an answer the record doesn't give.
+- Let the evidence carry the story: the objects, the places, the records.
+- Careful attribution matters most here. Anyone not convicted is described only by what the record says they did or said.
+- End on what is still open, as a fact, not a question. (Rudin ends on his written request for an investigation and the fact that no one stands convicted.)
+
+**Missing** (`missing`)
+- No crime is assumed unless a court found one. Never imply the person is dead or where they are. Family and police words about remains stay in quotes, attributed.
+- Center the last ordinary day and the people still waiting.
+- The page puts a poster above the story (photo, days missing, description, call button), so fill in `poster` from the agency poster or NamUs.
+- End close to the present: the family, the anniversary, the open search. (Dunn ends on her sister and the 25th December.)
+
+**Questions remain** (`unresolved`)
+- Follow the "Deaths ruled suicide or no foul play" rules above. Use the unsolved structure, lead with the official position, and keep the family's doubts as their questions.
+
+### Quotes
+
+Let a speaker run: quote, paraphrase, quote again. Keep the tag short and after the quote ("Dan said."). After the first full name, use first names for family members and last names for officials. Say where a quote came from (the outlet and year) the first time that speaker appears in a section. You may set two parts of one quote as a single block and drop the "she said" between them, as long as no words change. Note it in the frontmatter comments.
+
+### Sources on the page
+
+Tag every fact exactly as before: `[S1]` after the sentence. The page lifts the tags out of the sentences and lists them at the end of each section ("Sources for this section: 1, 2, 4"), so the story reads without interruptions. The tags still decide what the build and the Fact-checker check, so placement still matters.
+
+### The reader question
+
+Put the one honest question for the reader in `readerQuestion`, not in the story. It shows in a "Your take" box after the story and drives comments. It can restate the open facts in a line or two before asking.
+
+Flow never outranks the rules above it. Every fact still gets a source tag. Accused still means accused. Don't smooth over a gap or a conflict to make a section read better, and don't let the order of sections claim a link between events the sources don't make.
 
 ### Banned
 
@@ -81,7 +123,9 @@ Also avoid, even though the build won't catch them: "tragically", "brutally", "s
 
 - `seoTitle` 60 characters max. Pattern: `Person Name: What Happened in Town, ST`
 - `description` 155 characters max.
-- `summary` under 60 words, tagged. Who, where, when, where it stands.
+- `summary` under 60 words, tagged. Who, where, when, where it stands. It shows in the case file below the story (and in the poster for missing cases), not above it.
+- `readerQuestion`: the one question for readers. Required for every story in the house voice, though the build doesn't enforce it. It is also the switch: a story with a `readerQuestion` gets the story-first layout, and one without keeps the older layout. When you rewrite an older story, add it and take the question, the tip line and "Where it stands" out of the body in the same change. Never add it to a story that hasn't been rewritten.
+- `poster` (missing cases): label and tagged text pairs from the agency poster or NamUs, like `{ label: "Height", text: "5 feet 2 [S1]" }`. Use "Age then", "Height", "Weight", "Hair and eyes", "Last place", and "Case" for a one-line legal status when someone was charged or convicted. Leave out anything the agency didn't release.
 - `title` pattern: `A Specific Hook: The [Killing/Disappearance/Death] of Person Name`
 - `tipLine` E.164 format: `+16055551234`
 - Missing cases need `lastSeenDate`. Solved cases need `resolvedDate`.

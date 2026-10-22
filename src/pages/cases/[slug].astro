@@ -1,6 +1,7 @@
 ---
 import { render } from "astro:content";
 import Story from "../../layouts/Story.astro";
+import StoryClassic from "../../layouts/StoryClassic.astro";
 import { getPublishedCases, relatedCase, type Case } from "../../lib/content";
 import { daysBetween } from "../../lib/dates";
 import { site } from "../../lib/config";
@@ -39,8 +40,11 @@ for (const event of entry.data.timeline) {
 if (daysBetween(entry.data.lastChecked, new Date()) > site.reviewIntervalDays) {
   console.warn(`[needs review] ${entry.id}: last checked more than ${site.reviewIntervalDays} days ago.`);
 }
+// Stories rewritten in the house voice carry a readerQuestion and get the story-first layout.
+// The rest keep the older layout until they're rewritten.
+const Layout = entry.data.readerQuestion ? Story : StoryClassic;
 ---
 
-<Story entry={entry} related={related}>
+<Layout entry={entry} related={related}>
   <Content />
-</Story>
+</Layout>
