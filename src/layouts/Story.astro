@@ -5,6 +5,7 @@ import "../styles/prose.css";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import CaseStatusLine from "../components/CaseStatusLine.astro";
 import ContentNote from "../components/ContentNote.astro";
+import DaysSince from "../components/DaysSince.astro";
 import Timeline from "../components/Timeline.astro";
 import TipBox from "../components/TipBox.astro";
 import UpdateLog from "../components/UpdateLog.astro";
@@ -14,9 +15,9 @@ import ShareButton from "../components/ShareButton.astro";
 import StatusChip from "../components/StatusChip.astro";
 import AdSlot from "../components/AdSlot.astro";
 import { site } from "../lib/config";
-import { STATE_NAMES, type Case } from "../lib/content";
-import { isoDate } from "../lib/dates";
-import { withCitations } from "../lib/sources";
+import { STATE_NAMES, formatPhone, type Case } from "../lib/content";
+import { formatDate, isoDate } from "../lib/dates";
+import { sourcesBySection, withCitations } from "../lib/sources";
 
 interface Props {
   entry: Case;
@@ -28,7 +29,12 @@ const { data } = entry;
 const stateName = STATE_NAMES[data.state]!;
 const url = new URL(`/cases/${entry.id}/`, site.domain).href;
 const isOpen = data.status === "unsolved" || data.status === "missing" || data.status === "unresolved";
-const hasTimeline = data.timeline.length > 0;
+// A missing person's page has a job before it tells a story: the poster goes above it.
+const isMissing = data.status === "missing" && data.lastSeenDate;
+const dateline = data.incidentDate.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+
+// The story reads straight through. Its source links collect at the end of each section.
+const body = sourcesBySection(await Astro.slots.render("default"));
 
 const ogImage = `/og/${entry.id}.png`;
 
@@ -78,92 +84,145 @@ const video =
   <article class="story wrap" data-pagefind-body>
     {data.draft && <p class="draft-banner ui" data-pagefind-ignore>Draft preview. This story isn't published.</p>}
 
-    <div class:list={["story-top", { "has-image": data.image }]}>
-    <header class="story-header">
-      <!-- Search shows these with each result. -->
-      <span hidden data-pagefind-ignore data-pagefind-meta="status">{site.statuses[data.status].label}</span>
-      <span hidden data-pagefind-ignore data-pagefind-meta="place">{data.town}, {data.state}</span>
-      <div data-pagefind-ignore>
-        <Breadcrumbs
-        items={[
-          { name: "Cases", href: "/cases/" },
-          { name: stateName, href: `/states/${data.state.toLowerCase()}/` },
-          { name: data.person },
-        ]}
-      />
-      </div>
-      <div data-pagefind-ignore>
-        <CaseStatusLine data={data} />
-      </div>
-      <h1>{data.title}</h1>
-      {data.summary && <p class="summary" set:html={withCitations(data.summary)} />}
-      <div data-pagefind-ignore>
-        <ShareButton title={data.title} />
-      </div>
-    </header>
-
-    {
-      data.image && (
-        <figure class="lead-image" data-pagefind-ignore>
-          <Picture
-            src={data.image.src}
-            alt={data.image.alt}
-            formats={["avif", "webp"]}
-            widths={[480, 800, 1200]}
-            sizes="(min-width: 48rem) 24rem, 100vw"
-            loading="eager"
+    <div class:list={["story-top", { "has-image": data.image && !isMissing }]}>
+      <header class="story-header">
+        <!-- Search shows these with each result. -->
+        <span hidden data-pagefind-ignore data-pagefind-meta="status">{site.statuses[data.status].label}</span>
+        <span hidden data-pagefind-ignore data-pagefind-meta="place">{data.town}, {data.state}</span>
+        <div data-pagefind-ignore>
+          <Breadcrumbs
+            items={[
+              { name: "Cases", href: "/cases/" },
+              { name: stateName, href: `/states/${data.state.toLowerCase()}/` },
+              { name: data.person },
+            ]}
           />
-          <figcaption class="ui">{data.image.credit}</figcaption>
-        </figure>
-      )
-    }
+        </div>
+        <h1>{data.title}</h1>
+        <p class="dateline ui" data-pagefind-ignore>{data.town}, {stateName} · {dateline}</p>
+      </header>
+
+      {
+        data.image && !isMissing && (
+          <figure class="lead-image" data-pagefind-ignore>
+            <Picture
+              src={data.image.src}
+              alt={data.image.alt}
+              formats={["avif", "webp"]}
+              widths={[480, 800, 1200]}
+              sizes="(min-width: 48rem) 24rem, 100vw"
+              loading="eager"
+            />
+            <figcaption class="ui">{data.image.credit}</figcaption>
+          </figure>
+        )
+      }
     </div>
 
-    <AdSlot position="story-after-summary" />
-
-    <div class:list={["story-grid", { "has-timeline": hasTimeline }]}>
-      <div class="story-body prose" data-read-target>
-        {
-          data.contentNote ? (
-            <ContentNote note={data.contentNote}>
-              <slot />
-            </ContentNote>
-          ) : (
-            <slot />
-          )
-        }
-      </div>
-
-      {hasTimeline && <Timeline events={data.timeline} />}
-
-      <div class="story-end" data-pagefind-ignore>
-        {isOpen && data.tipLine && (
-          <TipBox person={data.person} agency={data.agency} tipLine={data.tipLine} anonymousTips={data.anonymousTips} />
-        )}
-        <UpdateLog updates={data.updates} />
-        <AdSlot position="story-before-sources" />
-        <SourceList sources={data.sources} caseId={entry.id} />
-        <NewsletterForm
-          heading="Get updates on this case"
-          body="We'll email you when something changes. Nothing else from this form."
-          button="Get updates"
-          caseId={entry.id}
-        />
-        {
-          related && (
-            <section class="related" aria-labelledby="related-heading">
-              <h2 id="related-heading">Read next</h2>
-              <a href={`/cases/${related.id}/`} class="related-link">
-                <StatusChip status={related.data.status} />
-                <span class="related-title">{related.data.title}</span>
-                <span class="ui related-place">
-                  {related.data.town}, {related.data.state}
-                </span>
+    {
+      isMissing && (
+        <section class="poster" aria-labelledby="poster-heading" data-pagefind-ignore>
+          {data.image && (
+            <figure class="poster-photo">
+              <Picture
+                src={data.image.src}
+                alt={data.image.alt}
+                formats={["avif", "webp"]}
+                widths={[320, 640]}
+                sizes="(min-width: 48rem) 14rem, 60vw"
+                loading="eager"
+              />
+            </figure>
+          )}
+          <div class="poster-facts">
+            <p class="poster-kicker ui">
+              <StatusChip status={data.status} />
+              <DaysSince since={data.lastSeenDate!} label="Missing" />
+            </p>
+            <h2 id="poster-heading">Have you seen {data.person}?</h2>
+            <dl class="ui">
+              <div>
+                <dt>Last heard from</dt>
+                <dd><time datetime={isoDate(data.lastSeenDate!)}>{formatDate(data.lastSeenDate!)}</time></dd>
+              </div>
+              {data.poster.map((p) => (
+                <div>
+                  <dt>{p.label}</dt>
+                  <dd set:html={withCitations(p.text)} />
+                </div>
+              ))}
+            </dl>
+            {data.tipLine && (
+              <a class="poster-call ui" href={`tel:${data.tipLine}`} data-tip-call>
+                Call {data.agency}: {formatPhone(data.tipLine)}
               </a>
-            </section>
-          )
-        }
-      </div>
+            )}
+          </div>
+        </section>
+      )
+    }
+
+    <div class="story-body prose" data-read-target>
+      {
+        data.contentNote ? (
+          <ContentNote note={data.contentNote}>
+            <Fragment set:html={body} />
+          </ContentNote>
+        ) : (
+          <Fragment set:html={body} />
+        )
+      }
+      <p class="end-mark" aria-hidden="true">◆</p>
+    </div>
+
+    <div class="story-end" data-pagefind-ignore>
+      {isOpen && data.tipLine && (
+        <TipBox person={data.person} agency={data.agency} tipLine={data.tipLine} anonymousTips={data.anonymousTips} />
+      )}
+
+      {
+        data.readerQuestion && (
+          <aside class="reader-question" aria-labelledby="reader-question-heading">
+            <h2 id="reader-question-heading" class="ui">Your take</h2>
+            <p>{data.readerQuestion}</p>
+          </aside>
+        )
+      }
+
+      <ShareButton title={data.title} />
+
+      <AdSlot position="story-after-summary" />
+
+      <section class="case-file" aria-labelledby="case-file-heading">
+        <h2 id="case-file-heading">Case file</h2>
+        <CaseStatusLine data={data} />
+        {data.summary && <p class="summary" set:html={withCitations(data.summary)} />}
+        {data.timeline.length > 0 && <Timeline events={data.timeline} placement="inline" />}
+        <UpdateLog updates={data.updates} />
+      </section>
+
+      <AdSlot position="story-before-sources" />
+      <SourceList sources={data.sources} caseId={entry.id} />
+      <NewsletterForm
+        heading="Get updates on this case"
+        body="We'll email you when something changes. Nothing else from this form."
+        button="Get updates"
+        caseId={entry.id}
+      />
+      {
+        related && (
+          <section class="related" aria-labelledby="related-heading">
+            <h2 id="related-heading">Read next</h2>
+            <a href={`/cases/${related.id}/`} class="related-link">
+              <StatusChip status={related.data.status} />
+              <span class="related-title">{related.data.title}</span>
+              <span class="ui related-place">
+                {related.data.town}, {related.data.state}
+              </span>
+            </a>
+          </section>
+        )
+      }
     </div>
   </article>
 </Base>
@@ -186,13 +245,13 @@ const video =
 
   h1 {
     font-size: var(--step-5);
-    margin-bottom: var(--space-m);
+    margin-bottom: var(--space-s);
   }
 
-  .summary {
-    font-size: var(--step-1);
-    line-height: 1.45;
-    margin-bottom: var(--space-m);
+  .dateline {
+    margin: 0;
+    color: var(--color-ash);
+    letter-spacing: 0.04em;
   }
 
   .lead-image {
@@ -200,7 +259,8 @@ const video =
     margin: var(--space-l) 0 0;
   }
 
-  .lead-image :global(img) {
+  .lead-image :global(img),
+  .poster-photo :global(img) {
     width: 100%;
     height: auto;
     border-radius: var(--radius-m);
@@ -211,12 +271,162 @@ const video =
     color: var(--color-ash);
   }
 
-  .story-grid {
+  /* Missing: the poster. */
+  .poster {
+    display: grid;
+    gap: var(--space-m);
+    max-width: var(--measure);
+    margin-top: var(--space-l);
+    padding: var(--space-m);
+    border: 1px solid var(--color-line);
+    border-top: 3px solid var(--color-lamp);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+  }
+
+  .poster-photo {
+    margin: 0;
+    max-width: 14rem;
+  }
+
+  .poster-kicker {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs) var(--space-s);
+    margin: 0 0 var(--space-2xs);
+  }
+
+  .poster h2 {
+    font-size: var(--step-2);
+    margin: 0 0 var(--space-s);
+  }
+
+  .poster dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: var(--space-xs) var(--space-m);
+    margin: 0 0 var(--space-m);
+  }
+
+  .poster dt {
+    color: var(--color-ash);
+    font-size: var(--step--1);
+  }
+
+  .poster dd {
+    margin: 0;
+  }
+
+  .poster dd :global(sup.cite) {
+    white-space: nowrap;
+  }
+
+  .poster-call {
+    display: inline-block;
+    padding: var(--space-2xs) var(--space-s);
+    border-radius: var(--radius-m);
+    background: var(--color-blood);
+    color: var(--color-bone);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .poster-call:hover {
+    background: var(--color-blood-hover);
+  }
+
+  @media (min-width: 48rem) {
+    .poster {
+      grid-template-columns: 14rem minmax(0, 1fr);
+    }
+  }
+
+  /* The story. Sections are numbered, and each one closes with the sources it used. */
+  .story-body {
     margin-top: var(--space-xl);
+    counter-reset: section;
+  }
+
+  .story-body :global(h2) {
+    counter-increment: section;
+    margin-top: var(--space-2xl);
+  }
+
+  .story-body :global(h2)::before {
+    content: counter(section);
+    display: block;
+    margin-bottom: var(--space-3xs);
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--color-ember);
+  }
+
+  .story-body :global(p:first-of-type)::first-letter {
+    float: left;
+    margin: 0.06em 0.08em 0 0;
+    font-family: var(--font-display);
+    font-size: 3.4em;
+    line-height: 0.8;
+    color: var(--color-bone);
+  }
+
+  .story-body :global(.section-sources) {
+    margin-top: var(--space-s);
+    font-size: var(--step--1);
+    color: var(--color-ash);
+  }
+
+  .story-body :global(.section-sources a) {
+    color: var(--color-ash);
+  }
+
+  .end-mark {
+    margin-top: var(--space-xl);
+    text-align: center;
+    color: var(--color-ember);
+    font-size: var(--step--1);
   }
 
   .story-end {
     max-width: var(--measure);
+  }
+
+  .reader-question {
+    margin-top: var(--space-xl);
+  }
+
+  .reader-question h2,
+  .case-file :global(.timeline h2) {
+    margin-bottom: var(--space-2xs);
+    color: var(--color-ash);
+    font-size: var(--step--1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .reader-question p {
+    font-size: var(--step-1);
+    line-height: 1.45;
+  }
+
+  .case-file {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-l);
+    border-top: 1px solid var(--color-line);
+  }
+
+  .case-file > h2 {
+    font-size: var(--step-3);
+    margin-bottom: var(--space-s);
+  }
+
+  .summary {
+    font-size: var(--step-0);
+    line-height: var(--leading-body);
   }
 
   .related {
@@ -248,40 +458,17 @@ const video =
     color: var(--color-ash);
   }
 
-  /* Wide screens: the lead photo sits to the right of the headline, and the timeline sits beside
-     the story and follows the reader down. */
+  /* Wide screens: the lead photo sits to the right of the headline. */
   @media (min-width: 64rem) {
     .story-top.has-image {
       display: grid;
       grid-template-columns: minmax(0, var(--measure)) minmax(14rem, 24rem);
       column-gap: var(--space-2xl);
-      align-items: start;
+      align-items: end;
     }
 
     .has-image .lead-image {
       margin-top: 0;
-    }
-
-    .story-grid.has-timeline {
-      display: grid;
-      grid-template-columns: minmax(0, var(--measure)) minmax(14rem, 18rem);
-      column-gap: var(--space-2xl);
-      align-items: start;
-    }
-
-    .has-timeline .story-body {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    .has-timeline :global(.timeline) {
-      grid-column: 2;
-      grid-row: 1;
-      align-self: stretch;
-    }
-
-    .has-timeline .story-end {
-      grid-column: 1;
     }
   }
 </style>

@@ -30,6 +30,37 @@ export function stripCitations(text: string): string {
   return text.replace(SOURCE_TAG, "").replace(/\s+([.,!?])/g, "$1").replace(/\s{2,}/g, " ").trim();
 }
 
+const CITE_HTML = /<sup class="cite"[^>]*>.*?<\/sup>/g;
+
+/**
+ * Story HTML with the superscripts lifted out of the sentences. Each section (the opening, then
+ * everything under an h2) ends with one line listing the sources it used, so the story reads
+ * without interruptions and every fact stays traceable.
+ */
+export function sourcesBySection(html: string): string {
+  return html
+    .split(/(?=<h2[\s>])/)
+    .map((part) => {
+      const ids: number[] = [];
+      for (const sup of part.match(CITE_HTML) ?? []) {
+        for (const m of sup.matchAll(/href="#source-(\d+)"/g)) {
+          const n = Number(m[1]);
+          if (!ids.includes(n)) ids.push(n);
+        }
+      }
+      if (ids.length === 0) return part;
+      const links = ids
+        .sort((a, b) => a - b)
+        .map((n) => `<a href="#${sourceAnchor(`S${n}`)}">${n}</a>`)
+        .join(", ");
+      return (
+        part.replace(CITE_HTML, "") +
+        `<p class="section-sources ui" data-pagefind-ignore>Sources for this section: ${links}</p>`
+      );
+    })
+    .join("");
+}
+
 /** Just the citation links from a piece of text, as HTML. */
 export function citationsOnly(text: string): string {
   return [...text.matchAll(SOURCE_TAG)].map((m) => citationHtml(m[1]!)).join("");

@@ -84,6 +84,10 @@ const cases = defineCollection({
         youtubeId: z.string().regex(/^[\w-]{11}$/).nullish(),
         // The day the video went up on YouTube. Needed for video search results.
         youtubeUploadDate: z.coerce.date().nullish(),
+        // Missing cases: the poster facts shown above the story, like { label: "Height", text: "5 feet 2 [S1]" }.
+        poster: z.array(z.object({ label: z.string().min(1), text: z.string().min(1) })).default([]),
+        // The one question for readers. Shown after the story, so the story can end on a fact.
+        readerQuestion: z.string().optional(),
         sources: z.array(source).default([]),
         updates: z.array(update).default([]),
         timeline: z.array(timelineEvent).default([]),
@@ -196,10 +200,12 @@ function withSourceTagCheck(inner: Loader): Loader {
               summary?: string;
               timeline?: { text: string }[];
               updates?: { text: string }[];
+              poster?: { text: string }[];
             };
             const text = [
               entry.body ?? "",
               data.summary ?? "",
+              ...(data.poster ?? []).map((p) => p.text),
               ...(data.timeline ?? []).map((t) => t.text),
               ...(data.updates ?? []).map((u) => u.text),
             ].join("\n");

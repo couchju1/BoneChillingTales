@@ -9,7 +9,7 @@ description: "How we research, source, and correct every story. Why we write \"a
 
 Every story starts with a source pack: agency press releases, court filings, public missing person records, and reporting from established local news outlets. We don't build stories from rumors or social media posts.
 
-Every fact in a story is tied to a source. The sources are listed and numbered at the bottom of each story, so you can read them yourself. When a link might disappear, we save an archived copy and link to that too.
+Every fact in a story is tied to a source. Each section of a story ends with the sources it drew on, and the full list is numbered at the bottom, so you can read them yourself. When a link might disappear, we save an archived copy and link to that too.
 
 ## How we write about people who are accused
 

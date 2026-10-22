@@ -120,7 +120,7 @@ Justin merges only when all of these are true. The Fact-checker's report shows G
 | G2 Content | The structure is settled, the Editor has passed it, and Justin's editorial decisions are applied. | Writer, with the Editor's PASS FOR FACT CHECK |
 | G3 Evidence | Every claim has a disposition. No blocking UNVERIFIED claims. Contradictions are named in the story. Case status was checked. | Fact-checker |
 | G4 Risk and rights | Legal care notes are complete, and every image has a rights row with a decision. | Writer, with Justin's decisions |
-| G5 Final proof | Build and launch check pass on the exact commit. The Facebook post, title, description, summary, captions and alt text match the checked story. The language and story-to-Facebook alignment have the Editor's acceptance. | Fact-checker, and the Editor for language and alignment |
+| G5 Final proof | Build and launch check pass on the exact commit. The Facebook post, title, description, summary, poster, reader question, captions and alt text match the checked story. The language and story-to-Facebook alignment have the Editor's acceptance. | Fact-checker, and the Editor for language and alignment |
 | G6 Release | Justin merges that commit. | GitHub |
 | G7 Live check | Justin opens the live page and confirms it matches. | Justin |
 

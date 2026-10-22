@@ -5,12 +5,14 @@ import type { Case } from "../lib/content";
 
 interface Props {
   events: Case["data"]["timeline"];
+  /** "side" follows the reader down beside the story on wide screens. "inline" sits in the page flow. */
+  placement?: "side" | "inline";
 }
 
-const { events } = Astro.props;
+const { events, placement = "side" } = Astro.props;
 ---
 
-<aside class="timeline" aria-labelledby="timeline-heading" data-timeline>
+<aside class:list={["timeline", placement]} aria-labelledby="timeline-heading" data-timeline>
   <div class="sticky">
     <h2 id="timeline-heading" class="ui">Timeline</h2>
     <ol>
@@ -142,11 +144,11 @@ const { events } = Astro.props;
   }
 
   @media (min-width: 64rem) {
-    .timeline {
+    .side {
       margin-block: 0;
     }
 
-    .sticky {
+    .side .sticky {
       position: sticky;
       top: calc(var(--logo-height-mobile) + var(--space-xl));
       max-height: calc(100vh - var(--logo-height-mobile) - var(--space-2xl));

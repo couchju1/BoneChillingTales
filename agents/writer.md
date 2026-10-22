@@ -10,25 +10,24 @@ Read these every time, not from memory:
 1. `agents/STYLE_GUIDE.md`
 2. `src/content/pages/standards.md`
 3. `src/content/cases/_example.md` (the file format)
-4. Two published stories in `src/content/cases/` for voice. Rotate which two.
+4. The model story for your case's category, for voice: `ron-rudin-1994.md` (unsolved), `pamela-dunn-2001.md` (missing) or `mary-ross-1995.md` (solved). Stories older than October 22, 2026 predate the house voice.
 5. Both posts in `agents/facebook-examples/`, before you write the Facebook post.
 
 ## Your assignment
 
 Justin picks a case in the Buzz thread. You get the person's name, the place, the year, and the Scout's notes. If any of those are missing or the case doesn't match what the Scout described, ask in the thread before writing.
 
-## The Mailer narrative skill (only when Justin asks)
+## The house voice (every story)
 
-The repo has a skill at `.claude/skills/mailer-true-crime/`, based on Norman Mailer's *The Executioner's Song*. It teaches a flat, unauthored voice that moves between the people in the story (family, victims' families, police, lawyers) instead of a narrator explaining things.
-
-Use it only when Justin asks for it in the thread ("write this one Mailer style"). If a case has an unusually deep record (trial transcripts, letters, long interviews), you can suggest it when you post the source register, but don't use it until he says yes. When you do use it, read its `SKILL.md` and `cheatsheet.md` along with the files above, and say in the PR that you used it.
+Since October 22, 2026, every story is written in the house voice in the style guide's "How stories sound" section. It's adapted from the skill at `.claude/skills/mailer-true-crime/`, based on Norman Mailer's *The Executioner's Song*: a narrator who stays out of it, sections told from where someone stood, documents set apart, and an ending on a quiet fact. Read the skill's `SKILL.md` and `cheatsheet.md` once before your first story in this voice, and again whenever a draft starts to sound like an article.
 
 The style guide and the standards page always win. Where they clash with the skill:
 
 - Every fact still gets a source tag, including facts inside a passage written from someone's point of view.
 - No invented thoughts, dialogue or scenes. Write what someone thought or said only when a source records them saying it. Otherwise, describe them from the outside. The skill's "Source-Anchored Interiority" rule is the minimum, not a license.
 - Accused means accused. Never write an uncharged, acquitted or not-yet-convicted person's actions as fact, the way the book does with a confessed killer.
-- Use the style guide's section headings, length (1,600 to 3,000 words), opening, ending, tip line and reader question. Don't use the skill's numbered sections, Parts or coda structure.
+- Use the style guide's structure: titled sections (the page numbers them), its length, opening and category endings, `readerQuestion` and `tipLine`. Don't use the skill's Parts, numbered-only sections, or a coda longer than the last section.
+- The skill's median of about 10 words a sentence is a guide, not a target. Clarity about who said what comes first.
 - No em dashes, en dashes or semicolons in the body, even where the skill's examples use them. The build checks this.
 - The skill's crime-scene restraint fits the site's rules. The site's limits on wounds, scenes and suicide details are stricter, and they win.
 - The Facebook post follows the style guide and the examples in `agents/facebook-examples/`, not the skill.
@@ -43,6 +42,8 @@ If a source you need won't open, mark it NEEDS INPUT in the thread and ask for i
 
 Note anywhere sources disagree (dates, places, spellings, ages). The story has to say so.
 
+Describe a person's criminal record (a conviction, a sentence, an offense) only from a court record, an agency release, or a report of the verdict or sentencing itself. Name the exact offense. Don't take a label like "convicted killer" from a later story's summary. (Added October 21, 2026, after the Carla Anderson story called Floyd Tapson a convicted killer on CNN's word. His sentence was for attempted murder.)
+
 Mark sources that share an origin (two outlets running the same police release are one origin, not two). Note any claim that matters to the story and rests on one source.
 
 Check the latest case status (charges, verdict, appeal, custody, parole) and write down the date you checked.
@@ -52,9 +53,11 @@ Check the latest case status (charges, verdict, appeal, custody, parole) and wri
 - Create a branch: `story/[slug]`.
 - Copy `src/content/cases/_example.md` to `src/content/cases/[slug].md`. Slug is `firstname-lastname-YEAR`.
 - Fill in every frontmatter field. Set `draft: false`, `published` to the planned publish date, `lastChecked` to today, and add `{ date: [publish date], text: "Story published." }` to `updates`.
-- Put the tip line and agency in for open cases. Get the number from the agency's own site or poster, not from a news story, and cite that source.
+- Put the tip line and agency in for open cases. Get the number from the agency's own site or poster, not from a news story, and cite that source. The page shows it after the story, so don't repeat it in the story text.
+- For missing cases, fill in `poster` from the agency poster or NamUs, tagged. See the style guide's frontmatter notes.
+- Write the reader question in `readerQuestion`, not in the story.
 - Add a `contentNote` if the case involves violence against a child or sexual violence.
-- Write the body following the style guide. Tag every fact.
+- Write the body in the house voice, following the style guide's rules for your category. Tag every fact.
 - Add a comment block at the top of the frontmatter (lines starting with `#`) noting legal care points for this case: who was acquitted, who was never charged, which claims are one person's belief. Copy the pattern in `tammy-haas-1992.md`.
 - Leave `image` and `youtubeId` as `null` unless Justin supplies them. Never pull a photo from a news site or social media. Note in the PR which agency-released photos exist, with links, so Justin can decide.
 
@@ -106,6 +109,32 @@ A fix that changes meaning, structure, tone, sensitivity, attribution or the Fac
 If the same issue is still open after two rework rounds, ask Justin to decide. Don't treat the round limit as a pass. If new evidence turns up or the case status changes, report it in the thread even if the draft hasn't changed.
 
 Any wording change that touches a fact, a qualifier or an attribution goes back to @Sherlock, even when the request was about style.
+
+## Rewriting an older story
+
+Stories published before October 22, 2026 predate the house voice. You can tell because they have no `readerQuestion`. Justin assigns rewrites from the "Rewrites" table in `agents/QUEUE.md`. A rewrite changes how a story reads, not what it says.
+
+1. Branch `rewrite/[slug]` from `main`. One story per PR.
+2. Check the case status first: charges, verdict, appeal, custody, parole, found or not. If anything changed since `lastChecked`, say so in the thread before you start. A status change is a fact update. It goes in its own commit, before the rewrite, with its own source, `updates` entry and `lastFactChange`. Never fold it into the rewrite.
+3. Rewrite the body in the house voice, following the style guide's rules for the story's category. Keep every fact and every source tag. No new facts and no new sources, with two exceptions:
+   - `poster` for missing cases, from the agency poster or NamUs. Add that source to `sources` if it isn't there.
+   - `readerQuestion`.
+4. In the same commit, add `readerQuestion` and take the reader question, the tip line and the "Where it stands" section out of the body. Adding `readerQuestion` switches the page to the new layout, so the body has to be ready for it in that same commit. Update timeline `section` ids to match any renamed headings.
+5. Keep the frontmatter comment block. Add a line like `# Rewritten [date] in the house voice. No new facts.`, then note any quote merges and anything you cut.
+6. Add `{ date: [today], text: "Story rewritten. No facts changed." }` to `updates`. Set `lastChecked` to today. Don't change `published` or `lastFactChange`.
+7. Length: aim for 1,200 to 3,000 words. Cut detail, never protection. Never cut an acquittal, a dismissal, a denial, a claim of innocence, an "accused" or "charged" qualifier, a line saying police didn't call someone a suspect, a source conflict, or a line saying what the record doesn't show.
+8. No new Facebook post.
+9. Run `npm run build && npm run check`, then open the page with `npm run preview` and confirm it uses the new layout: the case file after the story, and no source numbers inside the text.
+
+Title the PR `Rewrite: [Story title]`. The description has these sections:
+
+1. **Case**: person, place, status, the date you checked the status, and whether anything changed (and which commit holds the update if it did).
+2. **Cuts**: every fact you removed, quoted with its tag, and why. Write "None" if you cut nothing.
+3. **Moves and merges**: facts moved to a different section, and quotes joined into one block.
+4. **New material**: the `poster` facts with their source, and the `readerQuestion`.
+5. **Legal care**: "Unchanged" if the frontmatter notes didn't change, otherwise what changed.
+
+Then hand off to @Sherlock as usual, and say it's a rewrite.
 
 ## Never
 
