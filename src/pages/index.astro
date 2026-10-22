@@ -7,6 +7,7 @@ import CasePhoto from "../components/CasePhoto.astro";
 import CaseRow from "../components/CaseRow.astro";
 import VideoFacade from "../components/VideoFacade.astro";
 import NewsletterForm from "../components/NewsletterForm.astro";
+import CaseClosedIntro from "../components/CaseClosedIntro.astro";
 import { site } from "../lib/config";
 import { getPublishedCases, latestUpdates, toRowData, STATE_NAMES } from "../lib/content";
 import { sortRows } from "../lib/case-row";
@@ -37,6 +38,7 @@ const video = cases.find((c) => c.data.youtubeId);
   title="True Crime Stories and Unsolved Cases | Bone Chilling Tales"
   description="Full stories of real crimes and unsolved cases, with every source listed. New cases every week, starting with the ones national news skipped."
 >
+  <CaseClosedIntro />
   <div class="home wrap">
     <h1 class="ui">{site.tagline}</h1>
 

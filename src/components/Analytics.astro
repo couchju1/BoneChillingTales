@@ -56,6 +56,8 @@ const CONSENT_REGIONS = [
         "bct:newsletter-success": "newsletter_success",
         "bct:suggest-submit": "suggest_submit",
         "bct:video-play": "video_play",
+        "bct:game-finish": "game_finish",
+        "bct:game-share": "game_share",
       };
       for (const [from, to] of Object.entries(map)) {
         document.addEventListener(from, (e) => track(to, (e as CustomEvent).detail ?? {}));

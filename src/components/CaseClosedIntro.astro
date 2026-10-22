@@ -1,0 +1,181 @@
+---
+// Home page only. Once a day, a large blank Case Closed board appears over the
+// top of the page, holds for a beat, then shrinks into the header link.
+// Skipped for reduced motion and when JavaScript is off.
+---
+
+<a class="cc-intro" href="/case-closed/" aria-label="Play today's Case Closed" data-cc-intro hidden>
+  <span class="cc-intro-board" aria-hidden="true">
+    {Array.from({ length: 36 }, () => <span class="cell"></span>)}
+  </span>
+  <span class="cc-intro-label ui" aria-hidden="true">
+    <b>Case Closed</b>
+    <span>Today's case is open</span>
+  </span>
+</a>
+
+<script is:inline>
+  (function () {
+    var KEY = "bct-cc-intro";
+    var d = new Date();
+    var today = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+    var root = document.documentElement;
+    var intro = document.querySelector("[data-cc-intro]");
+    var link = document.querySelector("[data-cc-link]");
+    var icon = document.querySelector("[data-cc-icon]");
+    var seen = null;
+    try {
+      seen = localStorage.getItem(KEY);
+    } catch (e) {}
+    var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!intro || !link || !icon || seen === today || reduce || !intro.animate) return;
+
+    try {
+      localStorage.setItem(KEY, today);
+    } catch (e) {}
+
+    // Tells the newsletter popup to wait its turn.
+    root.setAttribute("data-cc-intro", "playing");
+    intro.hidden = false;
+
+    var board = intro.querySelector(".cc-intro-board");
+    var label = intro.querySelector(".cc-intro-label");
+    var cells = intro.querySelectorAll(".cell");
+    var finished = false;
+    var flying = null;
+
+    function done() {
+      if (finished) return;
+      finished = true;
+      intro.hidden = true;
+      link.setAttribute("data-cc-landed", "");
+      setTimeout(function () {
+        link.removeAttribute("data-cc-landed");
+      }, 700);
+      root.setAttribute("data-cc-intro", "done");
+      document.dispatchEvent(new CustomEvent("bct:intro-done"));
+    }
+
+    // Rows drop in one at a time.
+    for (var i = 0; i < cells.length; i++) {
+      cells[i].animate(
+        [
+          { opacity: 0, transform: "translateY(-10px) scale(0.85)" },
+          { opacity: 1, transform: "none" },
+        ],
+        { duration: 260, delay: Math.floor(i / 6) * 70 + (i % 6) * 18, easing: "cubic-bezier(.2,.7,.2,1)", fill: "both" }
+      );
+    }
+    label.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, delay: 350, fill: "both" });
+
+    function fly() {
+      if (finished || flying) return;
+      var from = board.getBoundingClientRect();
+      var to = icon.getBoundingClientRect();
+      // If the header link is off screen (scrolled on a phone), just fade out.
+      var visible = to.bottom > 0 && to.top < innerHeight && to.width > 0;
+      var dx = to.left + to.width / 2 - (from.left + from.width / 2);
+      var dy = to.top + to.height / 2 - (from.top + from.height / 2);
+      var s = to.width / from.width;
+      label.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180, fill: "both" });
+      // The bottom row fills in as it shrinks, so it lands looking like the header icon.
+      var gold = getComputedStyle(root).getPropertyValue("--color-lamp").trim() || "#E3A23B";
+      for (var j = 30; j < 36; j++) {
+        cells[j].animate(
+          [{ backgroundColor: gold, borderColor: gold }],
+          { duration: 300, delay: (j - 30) * 30, fill: "forwards" }
+        );
+      }
+      flying = board.animate(
+        visible
+          ? [
+              { transform: "none", opacity: 1 },
+              { transform: "translate(" + dx + "px," + dy + "px) scale(" + s + ")", opacity: 0.9, offset: 0.92 },
+              { transform: "translate(" + dx + "px," + dy + "px) scale(" + s + ")", opacity: 0 },
+            ]
+          : [
+              { transform: "none", opacity: 1 },
+              { transform: "scale(0.9)", opacity: 0 },
+            ],
+        { duration: visible ? 720 : 300, easing: "cubic-bezier(.65,0,.35,1)", fill: "forwards" }
+      );
+      flying.onfinish = done;
+    }
+
+    var timer = setTimeout(fly, 1800);
+
+    // Scrolling or pressing Escape skips straight to the shrink.
+    function skip() {
+      clearTimeout(timer);
+      fly();
+    }
+    addEventListener("scroll", skip, { once: true, passive: true });
+    addEventListener("keydown", function (e) {
+      if (e.key === "Escape") skip();
+    });
+    // Safety net: never leave the board on screen.
+    setTimeout(done, 5000);
+  })();
+</script>
+
+<style>
+  .cc-intro {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-s);
+    padding: var(--space-xl) var(--space-s);
+    pointer-events: none;
+    text-decoration: none;
+    color: var(--color-bone);
+  }
+
+  .cc-intro[hidden] {
+    display: none;
+  }
+
+  .cc-intro-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: clamp(4px, 1.2vw, 8px);
+    width: min(84vw, 30rem, 58vh);
+    padding: clamp(10px, 2.5vw, 18px);
+    background: var(--color-night);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-raised);
+    pointer-events: auto;
+    transform-origin: center;
+  }
+
+  .cell {
+    aspect-ratio: 1;
+    border: 2px solid var(--color-line);
+    background: var(--color-surface);
+  }
+
+
+  .cc-intro-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: var(--space-3xs) var(--space-xs);
+    background: var(--color-night);
+    border-radius: var(--radius-m);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .cc-intro-label b {
+    font-size: var(--step-0);
+  }
+
+  .cc-intro-label span {
+    color: var(--color-ash);
+  }
+</style>

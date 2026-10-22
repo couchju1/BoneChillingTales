@@ -26,6 +26,29 @@ const isHome = path === "/";
     </a>
     <nav class="nav ui" aria-label="Main">
       <ul>
+        <li>
+          <a
+            class="cc-link"
+            href="/case-closed/"
+            aria-current={path.startsWith("/case-closed/") ? "page" : undefined}
+            data-cc-link
+          >
+            <svg class="cc-icon" viewBox="0 0 17 17" width="17" height="17" aria-hidden="true" data-cc-icon>
+              {
+                Array.from({ length: 36 }, (_, i) => (
+                  <rect
+                    x={(i % 6) * 3}
+                    y={Math.floor(i / 6) * 3}
+                    width="2"
+                    height="2"
+                    class={i >= 30 ? "solved" : undefined}
+                  />
+                ))
+              }
+            </svg>
+            Case Closed
+          </a>
+        </li>
         {
           nav.map((item) => (
             <li>
@@ -94,6 +117,11 @@ const isHome = path === "/";
     list-style: none;
   }
 
+  /* The row scrolls on phones, so links keep their full width instead of squeezing. */
+  .nav li {
+    flex-shrink: 0;
+  }
+
   .nav a {
     display: flex;
     align-items: center;
@@ -111,6 +139,36 @@ const isHome = path === "/";
 
   .nav a:hover {
     color: var(--color-ember);
+  }
+
+  /* Daily game link: a tiny 6x6 board, bottom row solved. */
+  .cc-link {
+    gap: var(--space-2xs);
+  }
+
+  .cc-icon {
+    flex: none;
+    fill: var(--color-ash);
+    transition: transform var(--motion-base) var(--ease-out);
+  }
+
+  .cc-icon .solved {
+    fill: var(--color-lamp);
+  }
+
+  .cc-link:hover .cc-icon {
+    transform: rotate(-6deg) scale(1.1);
+  }
+
+  /* The home page intro lands here; a short pulse marks the hand-off. */
+  :global([data-cc-landed]) .cc-icon {
+    animation: cc-land 0.6s var(--ease-out);
+  }
+
+  @keyframes cc-land {
+    40% {
+      transform: scale(1.5);
+    }
   }
 
   .nav a[aria-current="page"] {

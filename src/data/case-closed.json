@@ -1,0 +1,430 @@
+{
+  "launch": "2026-10-22",
+  "cases": [
+    {
+      "word": "MOTIVE",
+      "tag": "Courtroom",
+      "note": "The reason behind a crime. Prosecutors don't have to prove motive, but juries usually want to hear one."
+    },
+    {
+      "word": "RIPPER",
+      "tag": "Historic case",
+      "note": "Jack the Ripper killed at least five women in London's Whitechapel district in 1888. He was never identified."
+    },
+    {
+      "word": "PRINTS",
+      "tag": "Forensics",
+      "note": "Scotland Yard opened its fingerprint bureau in 1901. No two people, not even identical twins, share the same prints."
+    },
+    {
+      "word": "RANSOM",
+      "tag": "Kidnapping",
+      "note": "After the 1932 Lindbergh kidnapping, Congress made taking a victim across state lines a federal crime."
+    },
+    {
+      "word": "ALIBIS",
+      "tag": "Investigation",
+      "note": "An alibi is proof a suspect was somewhere else when the crime happened. Detectives check them before they rule anyone out."
+    },
+    {
+      "word": "BORDEN",
+      "tag": "Historic case",
+      "note": "Lizzie Borden was acquitted in 1893 of killing her father and stepmother in Fall River, Massachusetts. The case was never solved."
+    },
+    {
+      "word": "TRACES",
+      "tag": "Forensics",
+      "note": "Locard's exchange principle is usually summed up as \"every contact leaves a trace.\" It's the idea behind most crime scene work."
+    },
+    {
+      "word": "LINEUP",
+      "tag": "Investigation",
+      "note": "Eyewitness misidentification is one of the leading causes of wrongful convictions later overturned by DNA."
+    },
+    {
+      "word": "ZODIAC",
+      "tag": "Historic case",
+      "note": "The Zodiac killer taunted Northern California newspapers with ciphers. His 340-character cipher went unsolved until 2020."
+    },
+    {
+      "word": "PAROLE",
+      "tag": "Corrections",
+      "note": "Supervised release from prison before a sentence ends. Break the conditions and you can be sent back."
+    },
+    {
+      "word": "SAMPLE",
+      "tag": "Forensics",
+      "note": "In 2018, a crime scene DNA sample compared through a public genealogy site led investigators to the Golden State Killer."
+    },
+    {
+      "word": "FELONY",
+      "tag": "The law",
+      "note": "A serious crime, usually one that carries more than a year in prison."
+    },
+    {
+      "word": "ESCAPE",
+      "tag": "Historic case",
+      "note": "In 1962, three men slipped out of Alcatraz on a raft made of raincoats. Their bodies were never found, and the FBI concluded they likely drowned."
+    },
+    {
+      "word": "JURORS",
+      "tag": "Courtroom",
+      "note": "Since a 2020 Supreme Court ruling, every state must have a unanimous jury to convict someone of a serious crime."
+    },
+    {
+      "word": "HOLMES",
+      "tag": "Historic case",
+      "note": "H.H. Holmes confessed to 27 murders, though only about nine are confirmed. Most of his crimes centered on Chicago in the 1890s, and he was hanged in Philadelphia in 1896."
+    },
+    {
+      "word": "VANISH",
+      "tag": "Missing",
+      "note": "Hundreds of thousands of missing-person reports are filed in the U.S. each year. Most are resolved, but thousands stay open for years."
+    },
+    {
+      "word": "DOCKET",
+      "tag": "Courtroom",
+      "note": "A court's list of scheduled cases. Following a docket is how reporters track a case through the system."
+    },
+    {
+      "word": "POISON",
+      "tag": "Historic case",
+      "note": "Arsenic was so common in poisonings that by the 1800s it was widely known as \"inheritance powder.\""
+    },
+    {
+      "word": "ARREST",
+      "tag": "The law",
+      "note": "Miranda warnings come from a 1966 Supreme Court case, Miranda v. Arizona."
+    },
+    {
+      "word": "CAPONE",
+      "tag": "Historic case",
+      "note": "Al Capone ran Chicago's bootlegging rackets, but the government finally convicted him in 1931 for tax evasion."
+    },
+    {
+      "word": "BULLET",
+      "tag": "Forensics",
+      "note": "Rifling inside a gun barrel leaves marks on a fired bullet that examiners can compare to a suspect's weapon."
+    },
+    {
+      "word": "APPEAL",
+      "tag": "Courtroom",
+      "note": "A request for a higher court to review a conviction. Appeals look for legal errors, not new evidence."
+    },
+    {
+      "word": "SEARCH",
+      "tag": "Missing",
+      "note": "Ground searches cover terrain in grids so no area gets skipped. Volunteers often join organized searches led by law enforcement."
+    },
+    {
+      "word": "BONNIE",
+      "tag": "Historic case",
+      "note": "Bonnie Parker and Clyde Barrow were killed in a police ambush in Bienville Parish, Louisiana, in May 1934."
+    },
+    {
+      "word": "SLEUTH",
+      "tag": "Investigation",
+      "note": "Another word for detective. Thousands of amateur sleuths now help put names to unidentified remains."
+    },
+    {
+      "word": "MURDER",
+      "tag": "The law",
+      "note": "The unlawful killing of another person with intent, or \"malice aforethought\" in legal terms."
+    },
+    {
+      "word": "DEPUTY",
+      "tag": "Investigation",
+      "note": "In many rural counties, the sheriff's office, not a city police department, handles major cases."
+    },
+    {
+      "word": "COOPER",
+      "tag": "Historic case",
+      "note": "In 1971, a man known as D.B. Cooper hijacked a Northwest flight, collected $200,000 and parachuted into the night. The FBI ended its active investigation in 2016."
+    },
+    {
+      "word": "LATENT",
+      "tag": "Forensics",
+      "note": "A latent print is a fingerprint you can't see until it's dusted with powder, treated with chemicals or lit with special light."
+    },
+    {
+      "word": "INDICT",
+      "tag": "Courtroom",
+      "note": "To formally charge someone with a crime. The Fifth Amendment requires a grand jury indictment for serious federal crimes."
+    },
+    {
+      "word": "SKETCH",
+      "tag": "Investigation",
+      "note": "Police sketch artists build a face from a witness's memory. The hooded Unabomber sketch became one of the most recognized ever made."
+    },
+    {
+      "word": "WARDEN",
+      "tag": "Corrections",
+      "note": "The official in charge of a prison."
+    },
+    {
+      "word": "CORPUS",
+      "tag": "The law",
+      "note": "Corpus delicti means \"body of the crime.\" It's proof a crime happened at all, and it doesn't have to be a body."
+    },
+    {
+      "word": "DALTON",
+      "tag": "Historic case",
+      "note": "In 1892, the Dalton Gang tried to rob two banks at once in Coffeyville, Kansas. Townspeople fought back, and most of the gang died in the street."
+    },
+    {
+      "word": "CANINE",
+      "tag": "Missing",
+      "note": "K-9 teams search for missing people, and trained dogs can find a scent across fields, woods and water."
+    },
+    {
+      "word": "GUILTY",
+      "tag": "Courtroom",
+      "note": "Most U.S. criminal cases never reach a jury. The large majority end with a guilty plea."
+    },
+    {
+      "word": "WHORLS",
+      "tag": "Forensics",
+      "note": "One of the three basic fingerprint patterns, with loops and arches. Loops are the most common."
+    },
+    {
+      "word": "BRINKS",
+      "tag": "Historic case",
+      "note": "The 1950 Brink's robbery in Boston took more than $2.7 million in cash and checks, the biggest robbery in U.S. history at the time."
+    },
+    {
+      "word": "WANTED",
+      "tag": "Investigation",
+      "note": "The FBI started its Ten Most Wanted Fugitives list in 1950."
+    },
+    {
+      "word": "PARDON",
+      "tag": "The law",
+      "note": "Only the president can pardon a federal crime. State crimes are pardoned by governors or state pardon boards."
+    },
+    {
+      "word": "CASING",
+      "tag": "Forensics",
+      "note": "Guns leave unique marks on fired cartridge casings. The ATF's NIBIN network compares them to link shootings across cities."
+    },
+    {
+      "word": "SCOPES",
+      "tag": "Historic case",
+      "note": "In 1925, Tennessee teacher John Scopes was convicted of teaching evolution and fined $100. The verdict was later overturned on a technicality."
+    },
+    {
+      "word": "SILENT",
+      "tag": "The law",
+      "note": "\"You have the right to remain silent\" is the first line of the Miranda warning."
+    },
+    {
+      "word": "FLYERS",
+      "tag": "Missing",
+      "note": "Missing-person flyers still matter. A photo, a last-seen location and a phone number can put a case in front of the one person who saw something."
+    },
+    {
+      "word": "HEISTS",
+      "tag": "Historic case",
+      "note": "The 1978 Lufthansa heist at New York's JFK airport took about $5 million in cash and $875,000 in jewelry."
+    },
+    {
+      "word": "MOTION",
+      "tag": "Courtroom",
+      "note": "A formal request to the judge. A motion to suppress asks the court to throw out evidence that was gathered illegally."
+    },
+    {
+      "word": "DENTAL",
+      "tag": "Forensics",
+      "note": "Dental records are one of the most reliable ways to identify unknown remains, because teeth and fillings last."
+    },
+    {
+      "word": "GIDEON",
+      "tag": "Historic case",
+      "note": "Clarence Gideon mailed a handwritten appeal to the Supreme Court. His 1963 win means anyone charged with a felony gets a lawyer, even if they can't pay."
+    },
+    {
+      "word": "BOOKED",
+      "tag": "Corrections",
+      "note": "Booking is the paperwork after an arrest: mug shot, fingerprints and a record of the charges."
+    },
+    {
+      "word": "REWARD",
+      "tag": "Investigation",
+      "note": "Crime Stoppers programs pay rewards for tips that solve cases, and callers can stay anonymous."
+    },
+    {
+      "word": "ACQUIT",
+      "tag": "Courtroom",
+      "note": "To find someone not guilty. Because of double jeopardy, prosecutors can't appeal an acquittal."
+    },
+    {
+      "word": "LOUVRE",
+      "tag": "Historic case",
+      "note": "In 1911, a man who had once worked at the Louvre walked out with the Mona Lisa wrapped in his work smock. It turned up in Florence two years later."
+    },
+    {
+      "word": "SALIVA",
+      "tag": "Forensics",
+      "note": "DNA can be recovered from saliva on a cup, a cigarette or the flap of an envelope, sometimes decades later."
+    },
+    {
+      "word": "POLICE",
+      "tag": "Investigation",
+      "note": "London's Metropolitan Police, founded in 1829, is often called the first modern police force."
+    },
+    {
+      "word": "HABEAS",
+      "tag": "The law",
+      "note": "Habeas corpus lets a prisoner ask a court whether they're being held legally."
+    },
+    {
+      "word": "SIEGEL",
+      "tag": "Historic case",
+      "note": "Mobster Bugsy Siegel helped build the Flamingo in Las Vegas. He was shot at a Beverly Hills home in 1947, and no one was ever charged."
+    },
+    {
+      "word": "DIVERS",
+      "tag": "Missing",
+      "note": "Dive teams search lakes and rivers by touch when the water is too murky to see."
+    },
+    {
+      "word": "OBJECT",
+      "tag": "Courtroom",
+      "note": "Lawyers object to stop improper questions or evidence. The judge either sustains the objection or overrules it."
+    },
+    {
+      "word": "FIBERS",
+      "tag": "Forensics",
+      "note": "Threads from clothing, carpet or a car's upholstery can tie a person or vehicle to a scene."
+    },
+    {
+      "word": "MADOFF",
+      "tag": "Historic case",
+      "note": "Bernie Madoff ran the largest Ponzi scheme in history. He was sentenced to 150 years in prison in 2009."
+    },
+    {
+      "word": "PHONES",
+      "tag": "Investigation",
+      "note": "Cell phone records show which towers a phone connected to, which can put it, and its owner, in a general area."
+    },
+    {
+      "word": "RECANT",
+      "tag": "Courtroom",
+      "note": "To take back earlier testimony. Recanted testimony has helped overturn some wrongful convictions."
+    },
+    {
+      "word": "PIRATE",
+      "tag": "Historic case",
+      "note": "Captain William Kidd was hanged for piracy in London in 1701. Rumors of his buried treasure lasted for centuries."
+    },
+    {
+      "word": "SEALED",
+      "tag": "Forensics",
+      "note": "Evidence bags are sealed and signed so any tampering shows. That's part of the chain of custody."
+    },
+    {
+      "word": "CHARGE",
+      "tag": "The law",
+      "note": "A formal accusation of a crime. Prosecutors decide what to charge, and charges can change as a case develops."
+    },
+    {
+      "word": "DRONES",
+      "tag": "Missing",
+      "note": "Search teams now use drones with thermal cameras to cover ground that would take volunteers days to walk."
+    },
+    {
+      "word": "TEAPOT",
+      "tag": "Historic case",
+      "note": "The Teapot Dome scandal of the 1920s made Albert Fall the first Cabinet secretary sent to prison, for taking bribes."
+    },
+    {
+      "word": "HOUNDS",
+      "tag": "Investigation",
+      "note": "Bloodhounds can follow a person's scent trail even after it's days old."
+    },
+    {
+      "word": "RULING",
+      "tag": "Courtroom",
+      "note": "A judge's decision on a question of law, like whether a piece of evidence can be shown to the jury."
+    },
+    {
+      "word": "PRISON",
+      "tag": "Corrections",
+      "note": "Jails hold people awaiting trial or serving short sentences. Prisons hold people serving longer ones."
+    },
+    {
+      "word": "STOLEN",
+      "tag": "Historic case",
+      "note": "In 1990, thieves dressed as police stole 13 works from Boston's Isabella Stewart Gardner Museum. None have been recovered."
+    },
+    {
+      "word": "CAMERA",
+      "tag": "Investigation",
+      "note": "Doorbell and business security cameras have become one of the most common sources of leads in modern cases."
+    },
+    {
+      "word": "WAIVER",
+      "tag": "The law",
+      "note": "Suspects can waive their Miranda rights and talk without a lawyer, and many do."
+    },
+    {
+      "word": "BARKER",
+      "tag": "Historic case",
+      "note": "Ma Barker and her son Fred were killed during a 1935 FBI shootout at a house in Ocklawaha, Florida. Historians still argue over whether she fired a shot."
+    },
+    {
+      "word": "MORGUE",
+      "tag": "Forensics",
+      "note": "Where the dead are kept until they're identified and released to family. Many unidentified people are now listed in NamUs."
+    },
+    {
+      "word": "FRAMED",
+      "tag": "Investigation",
+      "note": "Being framed means someone planted evidence or lied to make you look guilty."
+    },
+    {
+      "word": "TRIALS",
+      "tag": "Courtroom",
+      "note": "The Sixth Amendment guarantees a speedy and public trial by an impartial jury."
+    },
+    {
+      "word": "FORGER",
+      "tag": "Historic case",
+      "note": "Dutch painter Han van Meegeren sold fake Vermeers, including one to Nazi leader Hermann Goering."
+    },
+    {
+      "word": "PATROL",
+      "tag": "Investigation",
+      "note": "Traffic stops have caught major suspects. Timothy McVeigh was pulled over for a missing license plate about 90 minutes after the Oklahoma City bombing."
+    },
+    {
+      "word": "LOCKUP",
+      "tag": "Corrections",
+      "note": "Slang for a jail or holding cell."
+    },
+    {
+      "word": "RACKET",
+      "tag": "The law",
+      "note": "The 1970 RICO Act let prosecutors go after the bosses who ran criminal organizations, not just the people who did the work."
+    },
+    {
+      "word": "CIPHER",
+      "tag": "Historic case",
+      "note": "Some famous coded messages came from criminals. Two of the four Zodiac ciphers are still unsolved."
+    },
+    {
+      "word": "DETAIN",
+      "tag": "The law",
+      "note": "Police can briefly detain someone they reasonably suspect of a crime. That's different from an arrest."
+    },
+    {
+      "word": "OUTLAW",
+      "tag": "Historic case",
+      "note": "In the Old West, an outlaw was someone placed outside the protection of the law."
+    },
+    {
+      "word": "FENCES",
+      "tag": "Investigation",
+      "note": "A fence buys stolen goods and resells them. Tracking the fence often leads back to the thief."
+    }
+  ]
+}
