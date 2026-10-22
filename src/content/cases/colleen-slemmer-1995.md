@@ -24,10 +24,9 @@
 #   beyond what her lawyers stated about her arms and her condition.
 # Conflicts in the text: Peterson's sentence, probation (WVLT) or parole (UT Knoxville), both via S7.
 # S14 gives the execution times in Eastern time. S8 and S13 give the same moments in Central. The story uses Central.
-# Rewritten October 22, 2026 in the house voice. No new facts. The opening adds the three convictions (S7),
-# the death sentence (S1) and the failed execution (S6), restated from later sections. "The trial" is split
-# into "The trial", "Dr. McCoy" and "Shipp and Peterson". The * * * breaks are gone. Cut: "She never said
-# from whom" (the cleaver, S1), "Only a little of it needs to be told here", "And there were the computers",
+# Rewritten October 22, 2026 in the house voice. No new facts. The opening adds the three convictions
+# (S7, S10), the death sentence (S1) and the failed execution (S6), restated from later sections. "The trial" is split
+# into "The trial", "Dr. McCoy" and "Shipp and Peterson". The * * * breaks are gone. Cut: "Only a little of it needs to be told here", "And there were the computers",
 # the media-rights release and Talman's book talk with Carrie Ross (S10), Officer Mark Waggoner fetching the
 # gloves (S1), the Jacksonville fundraising (S5), the reporters interrupted by emergency vehicles (S8), and
 # Ed Stanton named to lead the review (S6). The outside review itself stays. The closing question moved to
@@ -107,7 +106,7 @@ readerQuestion: "A jury decided in 1996 what justice for Colleen should be. Thir
 ---
 On Halloween 1994, Colleen Slemmer said goodbye to her family in Orange Park, Florida, and headed north. [S9] She was 19. She was going to study computers in Knoxville, Tennessee. [S11] It was the last time her family saw her. [S9]
 
-Three of her fellow Job Corps students were convicted in her death, one of them as an accessory. [S7] One, Christa Pike, was sentenced to death. [S1] On September 30, 2026, Tennessee tried to execute Pike and failed. [S6]
+Three of her fellow Job Corps students were convicted in her death, one of them as an accessory. [S7, S10] One, Christa Pike, was sentenced to death. [S1] On September 30, 2026, Tennessee tried to execute Pike and failed. [S6]
 
 ## Orange Park
 
@@ -139,7 +138,7 @@ On the night of January 12, Colleen talked to her mother on the phone. The recep
 
 Around 8 p.m. that night, Kim Iloilo saw four people walking away from the center toward 17th Street. Pike. Shipp. Peterson. And Colleen. [S1]
 
-Pike had asked Colleen to go with her to the Blockbuster Music store. On the way, she told her she had a bag of weed hidden in Tyson Park. That is how Pike described it to police. [S1] She had a box cutter with her, and a miniature meat cleaver. She said she had borrowed the cleaver. [S1] They walked to the steam plant on the University of Tennessee's agricultural campus. [S1]
+Pike had asked Colleen to go with her to the Blockbuster Music store. On the way, she told her she had a bag of weed hidden in Tyson Park. That is how Pike described it to police. [S1] She had a box cutter with her, and a miniature meat cleaver. She said she had borrowed the cleaver. She never said from whom. [S1] They walked to the steam plant on the University of Tennessee's agricultural campus. [S1]
 
 Most of what is known about the next hour comes from Pike's own statement. [S1] She said she and Colleen exchanged words. Then she started hitting her. She said Colleen kept asking, "Why are you doing this to me?" [S1]
 
