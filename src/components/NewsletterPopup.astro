@@ -50,7 +50,8 @@ const ready = !isPlaceholder(formAction) && !(provider === "email" && isPlacehol
   const dialog = document.querySelector<HTMLDialogElement>("[data-newsletter-popup]");
   const saved = read();
   const snoozed = saved !== null && (saved === "joined" || Date.now() - Number(saved) < SNOOZE_MS);
-  const onNewsletterPage = location.pathname.startsWith("/newsletter");
+  // No popup on the sign-up page itself, or over someone playing Case Closed.
+  const onNewsletterPage = location.pathname.startsWith("/newsletter") || location.pathname.startsWith("/case-closed");
 
   if (dialog && typeof dialog.showModal === "function" && !snoozed && !onNewsletterPage) {
     // Counted as seen the moment it opens, so it can't follow the reader from page to page.
@@ -67,7 +68,22 @@ const ready = !isPlaceholder(formAction) && !(provider === "email" && isPlacehol
       const later = dialog.querySelector<HTMLButtonElement>(".later");
       if (later) later.textContent = "Close";
     });
-    dialog.showModal();
+    // On the home page the Case Closed intro may be playing. Let it land first.
+    const open = () => {
+      if (!dialog.open) dialog.showModal();
+    };
+    if (document.documentElement.getAttribute("data-cc-intro") === "playing") {
+      let waited = false;
+      const after = () => {
+        if (waited) return;
+        waited = true;
+        setTimeout(open, 900);
+      };
+      document.addEventListener("bct:intro-done", after, { once: true });
+      setTimeout(after, 6000);
+    } else {
+      open();
+    }
   } else if (saved !== "joined") {
     // Signing up from a form on the page also stops the popup.
     document.addEventListener("bct:newsletter-success", () => write("joined"));
