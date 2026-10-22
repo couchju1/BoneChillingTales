@@ -24,6 +24,9 @@
 #   beyond what her lawyers stated about her arms and her condition.
 # Conflicts in the text: Peterson's sentence, probation (WVLT) or parole (UT Knoxville), both via S7.
 # S14 gives the execution times in Eastern time. S8 and S13 give the same moments in Central. The story uses Central.
+# Updated October 22, 2026 from S17 and S18. S18 reports what her lawyers told TMZ, so her condition stays
+# attributed to them. A Davidson County evidence-preservation order appears in search results but no source
+# for it could be opened, so it is left out.
 # Phil Keith: police chief "when Pike was sentenced" (S11) or "during the 1995 murder" (S15). The story uses S11.
 draft: false
 title: "Four Walked Out, Three Came Back: The Murder of Colleen Slemmer"
@@ -37,8 +40,8 @@ state: TN
 incidentDate: 1995-01-12
 lastSeenDate: null
 resolvedDate: null
-lastChecked: 2026-10-18
-lastFactChange: 2026-10-18
+lastChecked: 2026-10-22
+lastFactChange: 2026-10-22
 published: 2026-10-09
 agency: "Knox County Criminal Court"
 tipLine: null
@@ -68,6 +71,8 @@ sources:
   - { id: S14, title: "Witnesses to Christa Pike's failed execution say their view was blocked multiple times", publisher: "WVLT/Gray News, via KOLD", url: "https://www.kold.com/2026/10/01/witnesses-christa-pikes-failed-execution-say-their-view-was-blocked-multiple-times/", date: 2026-10-01, archive: "http://web.archive.org/web/20261007211203/https://www.kold.com/2026/10/01/witnesses-christa-pikes-failed-execution-say-their-view-was-blocked-multiple-times/" }
   - { id: S15, title: "911 call transcript from botched Christa Pike execution released", publisher: "WSMV", url: "https://www.wsmv.com/2026/10/12/911-call-transcript-botched-christa-pike-execution-released/", date: 2026-10-12, archive: "http://web.archive.org/web/20261013122909/https://www.wsmv.com/2026/10/12/911-call-transcript-botched-christa-pike-execution-released/" }
   - { id: S16, title: "In letter, Christa Gail Pike says 'I am not afraid to die' ahead of Tennessee execution", publisher: "WVLT, via WSMV", url: "https://www.wsmv.com/2026/09/29/letter-christa-gail-pike-says-i-am-not-afraid-die-ahead-tennessee-execution/", date: 2026-09-29 }
+  - { id: S17, title: "Christa Pike hearing in Nashville chancery court cancelled", publisher: "WZTV (Fox 17 Nashville)", url: "https://fox17.com/news/local/christa-pike-hearing-in-chancery-court-cancelled", date: 2026-10-22, archive: "https://web.archive.org/web/20261022205447/https://fox17.com/news/local/christa-pike-hearing-in-chancery-court-cancelled" }
+  - { id: S18, title: "Christa Pike speaks in full sentences weeks after botched execution, lawyers say", publisher: "The National News Desk, via WBFF (Fox 45 Baltimore)", url: "https://foxbaltimore.com/news/nation-world/christa-pike-speaks-in-full-sentences-weeks-after-botched-execution-lawyers-say-lethal-injection-death-row-drug-medical-emergency-cognitive-psychological-functions-first-words-commutation-colleen-slemmer-killing", date: 2026-10-22, archive: "https://web.archive.org/web/20261022205513/https://foxbaltimore.com/news/nation-world/christa-pike-speaks-in-full-sentences-weeks-after-botched-execution-lawyers-say-lethal-injection-death-row-drug-medical-emergency-cognitive-psychological-functions-first-words-commutation-colleen-slemmer-killing" }
 timeline:
   - { date: 1975-09-20, text: "Colleen Slemmer is born in Orange Park, Florida. [S9]", section: "orange-park" }
   - { date: 1994-10-31, text: "Colleen says goodbye to her family and leaves for Job Corps in Knoxville. [S9]", section: "orange-park" }
@@ -83,10 +88,12 @@ timeline:
   - { date: 2026-09-30, text: "Tennessee's attempt to execute Pike fails. [S6]", section: "september-30" }
   - { date: 2026-10-06, text: "Pike's lawyers say she is conscious and speaking. [S8]", section: "vanderbilt" }
   - { date: 2026-10-10, text: "Pike is released from the hospital and returned to prison. [S8, S15]", section: "vanderbilt" }
+  - { date: 2026-10-22, text: "A hearing set for October 23 in Pike's chancery court case against the attorney general is taken off the docket. [S17]", section: "still-waiting" }
 updates:
   - { date: 2026-10-09, text: "Story published." }
   - { date: 2026-10-11, text: "Story rewritten, with three new sources." }
   - { date: 2026-10-18, text: "Story rewritten in a new structure, with three new sources on the September 30 execution attempt and Pike's return to prison." }
+  - { date: 2026-10-22, text: "Updated: Pike's lawyers renewed their request for commutation, and a chancery court hearing in her case against the attorney general was taken off the docket." }
 ---
 
 On Halloween 1994, Colleen Slemmer said goodbye to her family in Orange Park, Florida, and headed north. [S9]
@@ -520,6 +527,10 @@ Tadaryl Shipp is in prison. The parole board turned him down in October 2025, ci
 Shadolla Peterson has kept a private life. Where she is now isn't known. [S7]
 
 Christa Pike's death sentence still stands. [S6] As of October 4, the state hadn't said whether it would try again, her lawyer said. [S6]
+
+By October 22, her lawyers said, she was speaking in full sentences and walking better without help. Her legal team has renewed its request for Governor Lee to commute her sentence to life in prison without parole. [S18]
+
+Pike has a case in Nashville chancery court against the state attorney general, Jonathan Skrmetti. A hearing set for October 23 was taken off the docket. The judge's order says the attorney general's motion for a deadline for her to amend her complaint will be decided without oral argument. [S17]
 
 Governor Lee leaves office in January. [S6]
 
