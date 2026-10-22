@@ -22,6 +22,8 @@
 # conference.
 # Left out on purpose: race (only in the BCA sheet, which could not be opened), the name of the man she lived
 # with, and the tip-form URL from S1 (the form is no longer at that address).
+# Photos (added October 22, 2026) were supplied by Justin. The apartment photo is captioned as similar to her
+# building, not as the building itself. The photograph with the man carries no name for him.
 draft: false
 title: "The Goddaughter's Party: The Unsolved Killing of Cassandra Rhines"
 seoTitle: "Cassandra Rhines: What Happened in Minneapolis, MN"
@@ -42,7 +44,11 @@ agency: "the Lake County Sheriff's Office"
 tipLine: "+12188348385"
 anonymousTips: null
 contentNote: null
-image: null
+image:
+  src: "./cassandra-rhines-1985.jpg"
+  alt: "Cassandra Rhines smiling, with dark curly hair and a gold earring"
+  credit: "Undated photo, digitally enhanced"
+  license: "Supplied to Bone Chilling Tales"
 youtubeId: null
 youtubeUploadDate: null
 readerQuestion: "Cassandra Rhines called a friend to say she would be at her goddaughter's birthday party, then never arrived. Investigators say many of the people who might have known what happened next have died. Who else from 1985 might still remember her?"
@@ -76,6 +82,8 @@ That August, DNA matched them to Cassandra Rhines. She was 19 when she disappear
 
 Cassandra lived in a multi-unit apartment complex at 2700 Grand Avenue South, near Whittier Park in Minneapolis. [S1] WCCO later described the building's location as 27th Street and Grand Avenue South, and reported in 2015 that it looked much the same as it had in 1985. [S4]
 
+![A three-story tan brick apartment building on a corner, with trees and a lawn in front and a black car parked on the street](./cassandra-rhines-1985-apartments.jpg "An apartment building in Minneapolis, similar to the one on Grand Avenue South where Cassandra lived.")
+
 She had a sister, Janie Morris. [S5] She had a goddaughter. [S1] Her surviving family members were scattered around the country, authorities said in 2015. [S3]
 
 Little else about her life is in the public record. When the case was announced in 2015, BCA Assistant Superintendent Drew Evans said so at a news conference. [S6]
@@ -97,6 +105,8 @@ In May 2013, WCCO aired a story about the BCA's DNA laboratory. A few days later
 That year the BCA had begun asking relatives of long-missing Minnesotans for DNA samples. It had a grant from the National Institute of Justice to test remains against possible relatives. [S3] Late in 2013, Cassandra's sister gave a sample. [S3]
 
 ## The dogs
+
+![A waterfall pouring over dark rock beneath a highway bridge, with pine trees on the cliffs and brown river water below](./cassandra-rhines-1985-gooseberry-bridge.jpg "Gooseberry Falls State Park, on Minnesota's North Shore.")
 
 Gooseberry Falls is about 200 miles from Minneapolis, northeast of Two Harbors on Lake Superior. [S3, S6, S7] The spot was secluded. [S3] "Her body wasn't buried in the park, it was the years of debris since 1985 that covered up her remains," Sheriff Johnson said. [S4] Apart from some brush, there didn't appear to have been any serious attempt to hide her. [S3]
 
@@ -138,7 +148,9 @@ The BCA also said investigators believed that at the time she disappeared, she m
 
 ## The photograph
 
-Officials released a photograph of Cassandra with a man. They didn't know who he was. [S3] Investigators believed she may have been living with him, and they wanted to find him, because he might know something about the time she disappeared. [S1, S4]
+Officials released a photograph of Cassandra with a man. They didn't know who he was. [S3]
+
+![Cassandra Rhines smiling, her chin on her hand, seated at a wooden table beside a man in a gray hat and scarf, with two green bottles in front of them](./cassandra-rhines-1985-photograph.jpg "Cassandra with a man investigators asked the public to help identify in 2015.") Investigators believed she may have been living with him, and they wanted to find him, because he might know something about the time she disappeared. [S1, S4]
 
 Tips came in. By May 2016, investigators had a name for the man in the photograph. They confirmed that he had been living with her when she disappeared. He had since died. [S7] The public record doesn't call him a suspect. [S1, S7, S8]
 
@@ -157,6 +169,8 @@ In 2021, the lead investigator on the case was Sgt. Tim Luoma of the Lake County
 He kept the case file on his desk, he said, and looked at it every day. He hoped something would come up that would let him give her few remaining family members some closure. [S8]
 
 "We just don't really have any more leads to follow," Luoma said. [S8]
+
+![A waterfall spilling over rocky cliffs into dark water, with a fallen log leaning against the falls and pine trees above](./cassandra-rhines-1985-gooseberry-falls.jpg "A waterfall at Gooseberry Falls State Park.")
 
 The public record still doesn't say where she died, or how she came to be 200 miles from home. [S3, S7, S8] Her killer has not been identified. [S8]
 
