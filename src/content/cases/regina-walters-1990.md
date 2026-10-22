@@ -71,7 +71,8 @@ youtubeUploadDate: null
 # gave her back her name" (now "identified"), "Justice for Douglas and Patricia took another two decades.",
 # "Three murders. Three guilty pleas.", "Suspicion is not proof.", "What the record does show is how this
 # case came apart...", the closing question "If that trooper had driven past those blinking lights...", and
-# the "Their names" section ("They were not details in a trucker's story...", and the three names).
+# the "Their names" section ("They were not details in a trucker's story..."). The story now ends on the
+# three names and ages, after Rhoades's custody.
 readerQuestion: "A trooper's stop on Interstate 10 led police to Regina Walters, Douglas Zyskowski and Patricia Walsh. How should stories like this one remember the people they lost?"
 sources:
   - { id: S1, title: "People v. Rhoades, 323 Ill. App. 3d 644 (opinion affirming the Bond County judgment)", publisher: "Appellate Court of Illinois, Fifth District, via FindLaw", url: "https://caselaw.findlaw.com/il-court-of-appeals/1345482.html", date: 2001-07-13 }
@@ -121,6 +122,8 @@ In January 1990, Douglas's body was found beside Interstate 10 east of Ozona, Te
 
 Regina Kay Walters was last seen at her mother's apartment in Pasadena, Texas, on February 3, 1990. [S1] She had left with an 18-year-old boyfriend, who told friends the two of them planned to hitchhike to Mexico. [S2]
 
+The public record says little else about who Regina, Douglas and Patricia were.
+
 ![Color portrait of Regina Walters with curly dark hair in a navy sweater, smiling at the camera](./regina-walters-1990-portrait.webp "Regina Walters in an undated portrait. This copy has been colorized and enhanced.")
 
 ## The notebook
@@ -141,7 +144,7 @@ Some of the pictures showed her inside his truck. Others showed her standing in 
 
 The Illinois court record describes another woman, identified there only by her initials. Rhoades took her from California to Houston, the record says, and kept her chained in the back of his truck for about two weeks while he raped her. [S1] She escaped. [S1] Tucson Weekly reported she was 18, and that she got away when he failed to close a handcuff. [S4]
 
-In Houston, a woman who had escaped him told police a story of torture much like the one told in Arizona. [S2]
+Houston police also found a woman who had escaped him, and she told a story of torture much like the one told in Arizona. [S2] The reports don't say whether she is the woman in the Illinois court record.
 
 ## The barn on Interstate 70
 
@@ -188,3 +191,5 @@ Investigators have long suspected there were more victims. [S4] In 2012, the FBI
 No court has tied Rhoades to any killing beyond these three. The full count of what he did on those highways has never been established.
 
 Rhoades is still alive. As of October 2026, he is 80 and held at Menard Correctional Center in Illinois. The state lists him as ineligible for release. [S5]
+
+Regina Kay Walters was 14. [S1] Douglas Scott Zyskowski was 28. Patricia Candace Walsh was 24. [S2, S3]
