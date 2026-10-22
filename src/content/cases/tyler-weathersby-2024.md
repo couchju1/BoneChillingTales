@@ -74,7 +74,7 @@ poster:
   - { label: "Hair and eyes", text: "Black and brown [S9]" }
   - { label: "Last place", text: "Near Marion Road and West Madison Street, Sioux Falls [S4, S7]" }
   - { label: "Case", text: "Police say the case is open and active. No one has been named a suspect. [S3, S5]" }
-readerQuestion: "Tyler walked out without his phone, wallet or keys, and police say they see no sign of a crime. What do you think the public still needs to know about that morning?"
+readerQuestion: "Tyler walked out without his phone, wallet or keys, and police have said they saw no sign of a crime. What do you think the public still needs to know about that morning?"
 sources:
   - { id: S1, title: "Tyler Weathersby walked away from his South Dakota home in September and hasn't returned", publisher: "NBC News, Dateline", url: "https://www.nbcnews.com/dateline/missing-in-america/tyler-weathersby-missing-sioux-falls-rcna176891", date: 2024-10-23 }
   - { id: S2, title: "Sioux Falls Police ask public for info on Tyler Weathersby", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2024/09/19/sioux-falls-police-ask-public-info-tyler-weathersby/", date: 2024-09-19 }
@@ -104,7 +104,7 @@ By the time MonaLisa Perez got up on Wednesday, September 4, 2024, her husband h
 
 Then she pulled out of the driveway, and Tyler Weathersby started walking again. He didn't take his phone. He didn't take his wallet or his keys. [S1]
 
-More than two years later, no one has been able to say where the second walk went. [S7] Police say they have no reason to believe a crime happened. No one has been named a suspect. [S1, S3]
+More than two years later, no one has been able to say where the second walk went. [S7] Police said in 2024 that they had no reason to believe a crime had happened. No one has been named a suspect. [S1, S3]
 
 ## Two peas in a pod
 
@@ -128,8 +128,6 @@ They married in 2021. Tyler became a stepfather to MonaLisa's two children, and 
 
 "He loves to create and build and just really influence the people around him in such a positive way," MonaLisa said. [S1]
 
-He is 6 feet tall, about 155 pounds, with brown eyes. He has a scar on one leg from ankle to knee and a tattoo on his right wrist of a crown with a halo above it. [S1, S5, S6]
-
 ## The walks
 
 Tyler sometimes struggled with depression, his wife said. Walking was how he meditated and reset, how he would "revamp and rejuvenate." [S1]
@@ -148,7 +146,7 @@ That evening Tyler drove his mother to the airport. Her flight wasn't until the 
 
 ## Speaking in circles
 
-Then Gregory got his brother on the phone. Tyler didn't sound like himself, he said, and never clearly explained what had happened. [S1]
+That night, Gregory got his brother on the phone. Tyler didn't sound like himself, he said, and never clearly explained what had happened. [S1]
 
 "It was like he was speaking in circles," Gregory said. [S1]
 
@@ -164,7 +162,9 @@ She pulled away. He set out on foot. Police put the time at about 7:45 a.m. [S1,
 
 ![A red and white missing person poster for Tyler Weathersby, saying he left home for his daily walk on Wednesday, September 4, between 7:15 and 7:45 a.m.](./tyler-weathersby-2024-family-poster.jpg "A missing poster shared in the search gives a window of 7:15 to 7:45 a.m. Police put it at about 7:45.")
 
-He was last seen in a white T-shirt, black shorts and a tan stocking cap. [S5, S6] His head was shaved, and his hair and beard may have grown back since. [S1, S5, S6] Behind him, at home, were his phone, his wallet and his keys. [S1]
+He was last seen in a white T-shirt, black shorts and a tan stocking cap. [S5, S6] His head was shaved, and his hair and beard may have grown back since. [S1, S5, S6] He is 6 feet tall, about 155 pounds, with brown eyes. He has a scar on one leg from ankle to knee and a tattoo on his right wrist of a crown with a halo above it. [S1, S5, S6]
+
+Behind him, at home, were his phone, his wallet and his keys. [S1]
 
 ## 10:30
 
@@ -172,7 +172,7 @@ For the first couple of hours, MonaLisa wasn't worried. That was a normal walk f
 
 By about 10:30, it wasn't. She called her family. She searched the neighborhood. She checked the place where he went to meditate. He wasn't there. [S1]
 
-"We were called in the afternoon, maybe around 4:30 p.m.," the police spokesperson said of the missing person report. [S1]
+"We were called in the afternoon, maybe around 4:30 p.m.," Sam Clemens, the police spokesperson, told Dateline of the missing person report. [S1]
 
 The next day, MonaLisa reached Gregory, and he called their mother right away. At first Gregory thought his brother might have needed to blow off some steam. [S1]
 
@@ -182,7 +182,7 @@ Police found footage from the neighborhood and a nearby business. It showed Tyle
 
 ![A man in a white T-shirt, black shorts and dark sneakers walking along a residential sidewalk, seen from above near a parked car](./tyler-weathersby-2024-walking.jpg "A frame from surveillance video of Tyler walking on the morning of September 4, 2024.")
 
-Sam Clemens, the police spokesperson, told Dateline it did not show anyone forcing him to go anywhere. He seemed to be heading toward an interstate. Whether he reached it, or turned off somewhere, investigators said they didn't know. [S1]
+Clemens told Dateline it did not show anyone forcing him to go anywhere. He seemed to be heading toward an interstate. Whether he reached it, or turned off somewhere, investigators said they didn't know. [S1]
 
 The Charley Project places Tyler on a surveillance camera near West Madison Street and North Marion Road at 7:50 a.m., walking east toward Interstate 29. [S6]
 
@@ -190,9 +190,23 @@ Dateline described his neighborhood as northeast Sioux Falls. [S1] Dakota News N
 
 Within two weeks, police had received well over 100 tips. "We believe that somebody out there has some piece of information," Clemens said. [S2]
 
+## The first weeks
+
+In the first weeks, investigators reviewed video, talked at length with the people closest to Tyler, and flew a drone over different areas. Tips came in. None led to him. [S1]
+
+"We don't have any reason at this point to believe there was anything criminal that happened," Clemens told Dateline in October 2024. [S1]
+
+## Legal Eye
+
+The family organized searches, some with dog teams. Legal Eye Investigations, the private firm the family hired, hung posters, searched, reviewed neighbors' video and interviewed people connected to the case. [S1]
+
+Gregory started a GoFundMe to help pay for it. He said online questions about the money hurt. "I'm past being hurt. I'm angry," he said. [S1] Nothing in the reporting supports any claim of wrongdoing.
+
+His mother and his wife have both said they don't believe Tyler would hurt himself. MonaLisa thinks he's alive somewhere, just not thinking clearly. [S1]
+
 ## The silver Hyundai
 
-In February 2025, Legal Eye Investigations, the private firm his family hired, released a dashcam video from the intersection of Marion Road and West Madison Street. [S1, S4]
+In February 2025, Legal Eye released a dashcam video from the intersection of Marion Road and West Madison Street. [S1, S4]
 
 According to KXRB's description of it, Tyler is waiting to cross the street. He talks with a young boy on a bicycle. Then he approaches the driver of a silver Hyundai Santa Fe. [S7, S8]
 
@@ -208,29 +222,13 @@ Police said they'd had the dashcam video "for quite some time." It's part of the
 
 MonaLisa called the video "very helpful and eye-opening." She said she believes police have more footage of Tyler walking toward the interstate. [S4] That hasn't been confirmed.
 
-In the first weeks, investigators reviewed video, talked at length with the people closest to Tyler, and flew a drone over different areas. Tips came in. None led to him. [S1]
-
-"We don't have any reason at this point to believe there was anything criminal that happened," Clemens told Dateline in October 2024. [S1]
-
-In February 2025, Police Chief Jon Thum said the file had been reviewed by other agencies, federal and local, though he didn't name them. [S3]
-
-> "This is still an open and active investigation." [S3]
+In February 2025, Police Chief Jon Thum said the file had been reviewed by other agencies, federal and local, though he didn't name them. "This is still an open and active investigation," he said. [S3]
 
 KELOLAND reported there were no suspects and no foul play suspected. [S3]
 
-## Legal Eye
-
-The family organized searches, some with dog teams. Legal Eye hung posters, searched, reviewed neighbors' video and interviewed people connected to the case. [S1]
-
-Gregory started a GoFundMe to help pay for it. He said online questions about the money hurt. "I'm past being hurt. I'm angry," he said. [S1] Nothing in the reporting supports any claim of wrongdoing.
-
-His mother and his wife have both said they don't believe Tyler would hurt himself. MonaLisa thinks he's alive somewhere, just not thinking clearly. [S1]
-
 ## Two years
 
-In August 2025, a police spokesperson said there was no new information. [S5]
-
-> "The department is still actively investigating this case." [S5]
+In August 2025, a police spokesperson said there was no new information. "The department is still actively investigating this case." [S5]
 
 In October 2026, a community group called the Lone Wolves Initiative announced a demonstration outside the Sioux Falls Police Department for Wednesday, October 21, at 11 a.m. It called for transparency, independent reviews and digital evidence work, among other things. [S8] Those are the group's demands. They aren't findings.
 
