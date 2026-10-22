@@ -37,7 +37,8 @@ image:
 youtubeId: null
 youtubeUploadDate: null
 # Rewritten October 22, 2026 in the house voice. No new facts. The reader question moved to
-# readerQuestion. "What we know now" and "What the family asked for" are split into dated sections.
+# readerQuestion. The story ends on the 2017 appeal. The unproven-accusation line is kept in "Rex"
+# ("Nothing in the public record shows that any of it was true"). "What we know now" and "What the family asked for" are split into dated sections.
 # Marvin's "He didn't commit this crime" (S3) now follows her "let him rest" quote, from the same interview.
 # The opening adds "That November, a jury convicted Rex's widow of murder. [S5]" from the trial section.
 # Cut as narrator lines: "Then she asked for something harder.", "it's worth stopping on how little that
@@ -130,7 +131,7 @@ Charles was killed there, in his own home. [S5]
 
 ## The photograph
 
-Amanda posed for a photograph at the scene. [S5] At her trial, the lawyers argued over whether she took it herself or Ball did. [S4]
+Amanda posed for a photograph at the scene. [S5] At her trial, the lawyers argued over whether she took it herself or Ball did. The reporting never cleanly answered it. [S4]
 
 Amanda sent it to a friend, who posted it on what was described in court as a serial killer website. [S5]
 
@@ -156,7 +157,7 @@ In a 2016 phone interview with WDBJ7, she said she shot him. He survived. [S7] T
 
 In her April interview with WSLS, Hope Marvin said she did not want Amanda getting any more attention. She said she thought it was about Amanda trying to make herself look good. [S3]
 
-Then she brought the conversation back, again, to Rex.
+Then she talked about Rex again.
 
 "They need to let him rest and quit talking about him," she said. [S3] "He didn't commit this crime." [S3]
 
@@ -167,8 +168,6 @@ Amanda pleaded not guilty. At her trial, her own lawyers opened by conceding tha
 On November 12, 2015, a Montgomery County jury deliberated for less than 25 minutes and found her guilty. She was sentenced to life in prison that same evening. [S5]
 
 ![Amanda Taylor in a booking photo, with long dark hair](./charles-taylor-2015-amanda.jpg "Amanda Taylor in a booking photo.")
-
-The question of who held the camera was argued in court and never cleanly answered in the reporting. [S4]
 
 ## Sixty years
 
@@ -181,5 +180,3 @@ He admitted taking part, and he apologized to Charles's family and to his own. [
 ## The appeal
 
 In March 2017, the Virginia Court of Appeals upheld Amanda's life sentence. [S9]
-
-The accusation she made against Charles, that he had a hand in his son's addiction and death, was never proven. It survives only as her claim.
