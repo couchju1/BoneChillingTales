@@ -30,7 +30,7 @@
 # the prosecutors and the still-active line moved to "Not guilty", the line on the friend's untested account
 # and the May 2/May 3 gap line stay there (the gap line now carries [S1]), and the recap paragraph is cut as a
 # repeat. Cut: "This story's case status was last checked on October 21, 2026" (the case file shows it), the
-# tip paragraph with the coldcase@ag.iowa.gov email (S3; tipLine carries the number), and "no one yet knows
+# tip paragraph with the coldcase@ag.iowa.gov email (S3. tipLine carries the number), and "no one yet knows
 # what a jury will make of the friend's account". The 2021 "carbon copy" quote moved to "Four years of
 # searching". May 5 is now its own section, "The driveway". The reader question moved to readerQuestion.
 # Same origin: S7, S8, S9 and S10 all report S1 (and the S2 and S3 releases). They are not independent
