@@ -70,6 +70,7 @@ youtubeUploadDate: null
 # night in Wadena.", "The stolen car has stayed with people too.", "Even the jacket comes down in more
 # than one version.", "And one record disagrees about what was missing at all.", "The time of the
 # drop-off varies a little by source.", "It never was.", and the scene breaks.
+# Her mother's 1995 words about hunters and a murder are quoted from S7's account, not paraphrased.
 # Cut with the tip paragraph: the BCA tip number 877-996-6222 and "You can stay anonymous" (S1).
 poster:
   - { label: "Age then", text: "23 [S2]" }
@@ -78,7 +79,7 @@ poster:
   - { label: "Hair and eyes", text: "Strawberry blonde and blue [S2]" }
   - { label: "Last place", text: "Her apartment in Wadena, Minnesota [S1, S2]" }
   - { label: "Case", text: "No one has been arrested. A reward of up to $25,000 is offered. [S1]" }
-readerQuestion: "Dan says somebody's got to know something about that Friday night in Wadena. What would it take for that person to finally make the call?"
+readerQuestion: "Dan has said somebody's got to know something. What would it take for the person who knows what happened that Friday night to finally make the call?"
 sources:
   - { id: S1, title: "Reward offered in investigation of missing Wadena woman", publisher: "Minnesota Bureau of Criminal Apprehension (Department of Public Safety)", url: "https://dps.mn.gov/news/bca/reward-offered-investigation-missing-wadena-woman", date: 2026-06-15 }
   - { id: S2, title: "Missing Person / NamUs #MP5795: Carla Beth Anderson", publisher: "National Missing and Unidentified Persons System (NamUs), U.S. Department of Justice", url: "https://namus.nij.ojp.gov/case/MP5795", date: 2026-05-19 }
@@ -133,7 +134,7 @@ The state calls her a vulnerable adult. [S1] CNN reported that she had a learnin
 
 ![Carla Anderson smiling in a teal graduation cap and gown, holding a single white rose, in front of a brick wall](./carla-anderson-1987-graduation.jpg "Carla Anderson in a graduation cap and gown, in a family photo, digitally enhanced.")
 
-## Spud
+## A couple of blocks from work
 
 Her apartment at the Greenwood Apartments was a couple of blocks from work, so she could walk. [S6] She sometimes volunteered to come in on days she wasn't scheduled. [S6]
 
@@ -155,7 +156,7 @@ Her three brothers looked out for her, Dan said. [S3]
 
 ## Taco John's
 
-Her mother was Roberta Wells. Her stepfather was Verne Wells. They celebrated at the new Taco John's. [S6, S7]
+Her mother was Roberta Wells. Her stepfather was Verne Wells. The dinner was at the new Taco John's. [S6, S7]
 
 She would have stayed at her parents' place that weekend, Dan said. But they were working on a new house on a lake about an hour away, and Carla didn't want to go. [S3]
 
@@ -171,9 +172,9 @@ She was carrying a cup of soda from dinner. [S6, S7] She was believed to be wear
 
 Deer hunters were getting ready for opening weekend. [S6, S7] A fire was burning in a swamp on the edge of town, not far from Carla's apartment. [S6, S7] A few blocks away, someone stole a brown Plymouth Horizon. [S6]
 
-The building had a security door. That night it had been propped open by other tenants who were moving in, the Pioneer Journal reported in 2022. [S6]
-
 Nobody has ever shown that any of it had anything to do with Carla. [S3, S6]
+
+The building had a security door. That night it had been propped open by other tenants who were moving in, the Pioneer Journal reported in 2022. [S6]
 
 ## The shift
 
@@ -235,15 +236,19 @@ Plautz, the current chief, says the same. The fire could have been seen from the
 
 "We don't know if she went out for a walk, we don't know if somebody was at the front door and she went with them. We don't know any of that," Dan said. [S3]
 
-## The Horizon
+## Dental records to Boston
 
-The stolen car was never recovered. [S3, S6] In 2022, Waldahl told the Pioneer Journal he still thought there was a connection, and that the car might be in a lake or a gravel pit. [S6] "If you were to find that vehicle, you would probably find her," Carr said. [S6]
+"My mom was convinced very early on that she was not alive anymore," Dan told CNN. [S3]
 
-![A brown hatchback parked among trees](./carla-anderson-1987-horizon.jpg "A car similar to the brown Plymouth Horizon stolen in Wadena that night. It is not the stolen car.")
+"I have very slim hope that she's alive," Roberta Wells told the Pioneer Journal in 1989. [S3]
 
-"They've got to be related, but we just can't prove or disprove it, yet," Plautz said that year. [S6]
+In 1995, eight years on, she told the Pioneer Journal she doubted her daughter was alive and "hoped that hunters would help find her body," as the paper recounted in 2025. [S7] The 1995 story said that "as awful as it may be to imagine that someone murdered her only daughter," she still preferred that possibility to "someone possibly taking advantage of Carla's vulnerability." [S7] "That's just more than I can bear," she said. [S7]
 
-In 2026 she told CNN that police have never found any evidence that it was. "It could have been just a coincidence, although it also could have been part of Carla's disappearance," she said. [S3]
+By 1995, Waldahl had Carla's photo age-enhanced. He read the descriptions of bodies found and sent her dental records as far as Boston. [S3]
+
+"Carla is probably dead," he said. "The main thing now is that her body be found." [S3]
+
+Waldahl retired in 2002. [S6]
 
 ## Cleared
 
@@ -259,20 +264,6 @@ He had an alibi that cleared him. [S3, S6, S7]
 
 Plautz told CNN that police aren't ruling out anyone who was cleared in the past. Investigators are using new tools, like DNA analysis, on old and new leads, she said. [S3]
 
-## Dental records to Boston
-
-"My mom was convinced very early on that she was not alive anymore," Dan told CNN. [S3]
-
-"I have very slim hope that she's alive," Roberta Wells told the Pioneer Journal in 1989. [S3]
-
-In 1995, eight years on, she said she hoped hunters might help find her daughter's body. [S7] As awful as it was to imagine her daughter murdered, the paper wrote, she found it easier than imagining someone taking advantage of Carla. "That's just more than I can bear," she said. [S7]
-
-By 1995, Waldahl had Carla's photo age-enhanced. He read the descriptions of bodies found and sent her dental records as far as Boston. [S3]
-
-"Carla is probably dead," he said. "The main thing now is that her body be found." [S3]
-
-Waldahl retired in 2002. [S6]
-
 ## The playing cards
 
 In 2008, the BCA put Carla on its cold case playing cards. The decks went to every police department and sheriff's office in Minnesota, and more than 10,000 went to state prison inmates. [S6, S11] No solid tips came from them in her case. [S6, S7]
@@ -286,6 +277,16 @@ Verne Wells died that February. Roberta Wells died that June. [S6] A year before
 She had arranged a shared headstone for Carla and Carla's brother Scott, who died in 2007. [S3]
 
 "It's never gone away. It's always there," Waldahl said in 2022. "I hope someone finds her before I go." [S6]
+
+## The Horizon
+
+The stolen car was never recovered. [S3, S6] In 2022, Waldahl told the Pioneer Journal he still thought there was a connection, and that the car might be in a lake or a gravel pit. [S6] "If you were to find that vehicle, you would probably find her," Carr said. [S6]
+
+![A brown hatchback parked among trees](./carla-anderson-1987-horizon.jpg "A car similar to the brown Plymouth Horizon stolen in Wadena that night. It is not the stolen car.")
+
+"They've got to be related, but we just can't prove or disprove it, yet," Plautz said that year. [S6]
+
+In 2026 she told CNN that police have never found any evidence that it was. "It could have been just a coincidence, although it also could have been part of Carla's disappearance," she said. [S3]
 
 ## Spotlight on Crime
 
