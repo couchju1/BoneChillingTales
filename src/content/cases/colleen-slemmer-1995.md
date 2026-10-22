@@ -103,7 +103,7 @@ updates:
   - { date: 2026-10-18, text: "Story rewritten in a new structure, with three new sources on the September 30 execution attempt and Pike's return to prison." }
   - { date: 2026-10-22, text: "Updated: Pike's lawyers renewed their request for commutation, and a chancery court hearing in her case against the attorney general was taken off the docket." }
   - { date: 2026-10-22, text: "Story rewritten. No facts changed." }
-readerQuestion: "A jury decided in 1996 what justice for Colleen should be. Thirty years later, the sentence hasn't been carried out. As of early October, the state hadn't said whether it would try again. Pike's lawyers have since asked the governor to commute it. What do you think should happen now, and whose voice should count most?"
+readerQuestion: "A jury decided in 1996 what justice for Colleen should be. Thirty years later, the sentence hasn't been carried out. As of early October, the state hadn't said whether it would try again. Pike's lawyers have since renewed their request for the governor to commute it. What do you think should happen now, and whose voice should count most?"
 ---
 On Halloween 1994, Colleen Slemmer said goodbye to her family in Orange Park, Florida, and headed north. [S9] She was 19. She was going to study computers in Knoxville, Tennessee. [S11] It was the last time her family saw her. [S9]
 
