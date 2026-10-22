@@ -37,7 +37,7 @@ lastSeenDate: null
 resolvedDate: null
 lastChecked: 2026-10-22
 lastFactChange: null
-published: 2026-10-23
+published: 2026-10-22
 agency: "the Lake County Sheriff's Office"
 tipLine: "+12188348385"
 anonymousTips: null
@@ -65,8 +65,8 @@ timeline:
   - { date: 2016-05, text: "The sheriff says tips identified the man in the photograph, who has since died. [S7]", section: "the-photograph" }
   - { date: 2021-11, text: "The lead investigator says there are no more leads to follow. [S8]", section: "the-case-file" }
 updates:
-  - { date: 2026-10-23, text: "Story published." }
-  - { date: 2026-10-22, text: "The date of incident now shows June 1985, the month the record gives, without a day count. The finder is described as working with dogs, in WCCO's words." }
+  - { date: 2026-10-22, text: "Story published." }
+  - { date: 2026-10-22, type: correction, text: "An earlier version of this story gave the date of incident as June 1, 1985, with a day count. The record gives only June 1985. The story has been corrected." }
 ---
 On May 6, 2014, an off-duty employee of the Lake County Sheriff's Office was working with dogs in Gooseberry Falls State Park, on Minnesota's North Shore. [S1, S4] In a part of the park few people reach, he and the dogs came upon what looked like a human skull and other bones. [S1, S4]
 
