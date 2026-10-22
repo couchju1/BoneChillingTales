@@ -19,6 +19,8 @@
 # (S2) or 26 and a half (S7). S7 says the appeals court reversed the conviction. S8 and S1 say it remanded
 # and Judge Ohmer granted a new trial. S1 says Hupp kept all the money. S8 shows a $100,000 trust funded,
 # emptied ($99,700) and revoked.
+# Updated October 22, 2026: S11 (KSDK, Oct. 19, 2026) moves the trial to January 24, 2028, in St. Louis County.
+# The January 31 date in S5 and S10 is superseded. It stays in the text only as the earlier setting.
 # Photos: Hupp's booking photo sits in "Where it stands" with a neutral caption. Never caption
 # it in a way that ties it to Betsy's death as anything but a charge.
 draft: false
@@ -26,15 +28,15 @@ title: "The Friend Who Drove Her Home: The Killing of Betsy Faria"
 seoTitle: "Betsy Faria: What Happened in Troy, MO"
 description: "In 2011, Betsy Faria was killed in Troy, Missouri. Her husband was convicted, then acquitted. Now the friend who drove her home awaits trial."
 person: "Betsy Faria"
-summary: "Betsy Faria, 42, was stabbed to death at her home in Troy, Missouri, on December 27, 2011. Her husband, Russ, was convicted of her murder, then acquitted at a new trial in 2015. [S1] Her friend Pam Hupp is charged with killing her and has pleaded not guilty. A judge is set to hear the case starting January 31, 2028. [S9, S10]"
+summary: "Betsy Faria, 42, was stabbed to death at her home in Troy, Missouri, on December 27, 2011. Her husband, Russ, was convicted of her murder, then acquitted at a new trial in 2015. [S1] Her friend Pam Hupp is charged with killing her and has pleaded not guilty. A judge is set to hear the case starting January 24, 2028. [S9, S11]"
 status: in-court
 town: "Troy"
 state: MO
 incidentDate: 2011-12-27
 lastSeenDate: null
 resolvedDate: null
-lastChecked: 2026-10-18
-lastFactChange: 2026-10-18
+lastChecked: 2026-10-22
+lastFactChange: 2026-10-22
 published: 2026-10-09
 agency: "the Lincoln County Prosecuting Attorney's Office"
 tipLine: null
@@ -58,6 +60,7 @@ sources:
   - { id: S8, title: "Day v. Hupp, No. ED104168 (opinion affirming judgment in the life insurance case)", publisher: "Missouri Court of Appeals, Eastern District, via FindLaw", url: "https://caselaw.findlaw.com/court/mo-court-of-appeals/1860779.html", date: 2017-05-16, archive: "http://web.archive.org/web/20250423060209/https://caselaw.findlaw.com/court/mo-court-of-appeals/1860779.html" }
   - { id: S9, title: "Pam Hupp makes first appearance in Betsy Faria murder charge", publisher: "KSDK (5 On Your Side)", url: "https://www.ksdk.com/article/news/crime/pam-hupp-court-appearance-betsy-faria-murder-charge/63-c6f83422-fe29-4b0f-a80a-b062340aee09", date: 2021-07-27, archive: "http://web.archive.org/web/20230608030759/https://www.ksdk.com/article/news/crime/pam-hupp-court-appearance-betsy-faria-murder-charge/63-c6f83422-fe29-4b0f-a80a-b062340aee09" }
   - { id: S10, title: "Death penalty taken off the table for Pam Hupp in Betsy Faria murder case, bench trial set for 2028", publisher: "KSDK (5 On Your Side)", url: "https://www.ksdk.com/article/news/crime/death-penalty-taken-off-table-for-pam-hupp-betsy-faria-murder-case-will-face-bench-trial-in-2028/63-f7fe8c9d-cb9a-47c1-a5b0-141f8a150668", date: 2026-04-28, archive: "http://web.archive.org/web/20260428172555/https://www.ksdk.com/article/news/crime/death-penalty-taken-off-table-for-pam-hupp-betsy-faria-murder-case-will-face-bench-trial-in-2028/63-f7fe8c9d-cb9a-47c1-a5b0-141f8a150668" }
+  - { id: S11, title: "Date, location set for Pam Hupp's 2nd murder trial", publisher: "KSDK (5 On Your Side), via Yahoo News", url: "https://www.yahoo.com/news/us/articles/date-location-set-pam-hupps-183340054.html", date: 2026-10-19 }
 timeline:
   - { date: 2010-01, text: "Betsy is diagnosed with breast cancer. [S2]", section: "the-cruise" }
   - { date: 2011-11, text: "Betsy goes on a cruise and swims with dolphins. [S2]", section: "the-cruise" }
@@ -77,10 +80,12 @@ timeline:
   - { date: 2023-10, text: "Prosecutors drop and refile the charge to seek a trial closer to home. [S4]", section: "the-charge" }
   - { date: 2026-04-28, text: "Hupp gives up a jury trial and prosecutors drop the death penalty. [S10]", section: "the-charge" }
   - { date: 2026-09, text: "Hupp's lawyers ask the judge to keep out evidence about Gumpenberger. [S6]", section: "where-it-stands" }
+  - { date: 2026-10-19, text: "The trial is moved to a St. Louis County courtroom and set to start January 24, 2028. [S11]", section: "the-charge" }
 updates:
   - { date: 2026-10-09, text: "Story published." }
   - { date: 2026-10-11, text: "Story rewritten. No facts changed." }
   - { date: 2026-10-18, text: "Story rewritten in a new structure, with four new sources, including two court opinions." }
+  - { date: 2026-10-22, text: "Updated: Hupp's trial was moved to a St. Louis County courtroom and now starts January 24, 2028." }
 ---
 
 In November 2011, Betsy Faria went on a cruise. [S2]
@@ -391,7 +396,7 @@ Russ's lawsuit had settled in March 2020 for $2 million. [S1] The year before, a
 
 In October 2023, Wood dropped the charge and refiled it, to get a trial closer to Lincoln County than Springfield, four hours away. [S4]
 
-On April 28, 2026, Hupp gave up her right to a jury. Prosecutors agreed not to seek the death penalty. [S10] A judge will hear the case starting January 31, 2028. [S5, S10]
+On April 28, 2026, Hupp gave up her right to a jury. Prosecutors agreed not to seek the death penalty. [S10] A judge was set to hear the case starting January 31, 2028. [S5, S10] On October 19, 2026, the trial was moved to a St. Louis County courtroom. It is set to begin January 24, 2028, with Jefferson County Circuit Judge Joseph Rathert presiding. [S11]
 
 * * *
 
@@ -401,11 +406,11 @@ He is waiting to testify. [S6]
 
 ## Where it stands
 
-Pam Hupp is charged with killing Betsy Faria. She has pleaded not guilty and is presumed innocent. Her trial is set for January 31, 2028. [S5, S9, S10] She is already serving life without parole for Louis Gumpenberger's death. [S5]
+Pam Hupp is charged with killing Betsy Faria. She has pleaded not guilty and is presumed innocent. Her trial is set for January 24, 2028. [S9, S11] She is already serving life without parole for Louis Gumpenberger's death. [S5]
 
 ![Pam Hupp in a booking photo, wearing an orange jail uniform](./betsy-faria-2011-pam-hupp.jpg "Pam Hupp in a booking photo. Image: KSDK")
 
-In September 2026, her lawyers asked the court to keep out all evidence about Gumpenberger. A hearing was set for October 19. [S6]
+In September 2026, her lawyers asked the court to keep out all evidence about Gumpenberger. A hearing was set for October 19. [S6] The judge did not hear the defense's argument that day. [S11]
 
 Where the sources disagree: the minute of the voicemail, how long Russ's drive took, and whether the appeals court reversed his conviction or sent it back. [S1, S2, S7, S8] The Exoneration Registry says her deposition showed she had kept all the money. The appeals court record shows she funded a trust, emptied it and revoked it. [S1, S8] A civil judge let her keep the money, and the appeals court upheld that in 2017. [S8]
 
