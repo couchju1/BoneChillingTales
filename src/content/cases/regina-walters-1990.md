@@ -58,6 +58,7 @@ image:
   license: "Photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
+# Conflict named in the text (added October 22, 2026): Douglas's age is 28 in S2 and 25 in S3.
 # Rewritten October 22, 2026 in the house voice. No new facts. Sections now run in date order after the
 # Arizona opening: Douglas and Patricia (1989) before Regina (February 1990). Patricia's week of captivity
 # (S2) moved into "Two people headed east". The opening now names the three pleas (S1, S2).
@@ -108,7 +109,7 @@ His name was Robert Ben Rhoades. He was a long-haul trucker from Houston. [S1, S
 
 ## Two people headed east
 
-In November 1989, Douglas Scott Zyskowski, 28, and Patricia Walsh, 24, left Seattle together. They were newlyweds. They were hitchhiking to Georgia to preach, authorities said. [S2]
+In November 1989, Douglas Scott Zyskowski, 28, and Patricia Walsh, 24, left Seattle together. They were newlyweds. They were hitchhiking to Georgia to preach, authorities said. [S2] The Deseret News gave Douglas's age as 25. [S3]
 
 ![Yearbook-style portrait of Douglas Zyskowski as a young man with blond hair, in a dark suit and tie](./regina-walters-1990-douglas.jpg "Douglas Scott Zyskowski in an undated photo.")
 
@@ -192,4 +193,4 @@ No court has tied Rhoades to any killing beyond these three. The full count of w
 
 Rhoades is still alive. As of October 2026, he is 80 and held at Menard Correctional Center in Illinois. The state lists him as ineligible for release. [S5]
 
-Regina Kay Walters was 14. [S1] Douglas Scott Zyskowski was 28. Patricia Candace Walsh was 24. [S2, S3]
+Regina Kay Walters was 14. [S1] Douglas Scott Zyskowski was 28. [S2] Patricia Candace Walsh was 24. [S2, S3]
