@@ -35,7 +35,7 @@ state: FL
 incidentDate: 2016-05-29
 lastSeenDate: null
 resolvedDate: 2019-05-24
-lastChecked: 2026-10-15
+lastChecked: 2026-10-22
 lastFactChange: null
 published: 2026-10-15
 agency: "the Florida Highway Patrol"
@@ -49,6 +49,18 @@ image:
   license: "Photo published in coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
+# Rewritten October 22, 2026 in the house voice. No new facts. The reader question moved to
+# readerQuestion. His sister-in-law's "He helped a lot of people" (S2) moved from the end into "Derrick",
+# the section about him, and the sentence, appeal and release are split by date.
+# The opening now states the verdict (S5) and the defense's toxicology claims, attributed (S8, S10).
+# Cut as narrator lines: "But the investigation turned up details that made this case more complicated
+# than the wreckage suggested.", "Then there was Derrick Jones's own toxicology.", "None of that changes
+# who crossed the line." (narrator judgment, the troopers' identification stays), "Still,", "His
+# sister-in-law made the same point.", "For Jones's family, no courtroom could give back what the crash
+# took.", the summary "That is the human cost... convicted of causing his death while driving under the
+# influence. [S5]" (both facts stay elsewhere), "The jury reached its verdict. The appeals court let it
+# stand. [S7]" (the appeal stays in "Five years"), and the closing question, now readerQuestion.
+readerQuestion: "Hodge's side says evidence about Derrick Jones's toxicology never reached the jury. When more than one factor may have played a part in a crash, how should a jury decide who is criminally responsible?"
 sources:
   - { id: S1, title: "Jacksonville man killed in a head-on crash on Heckscher Drive", publisher: "Action News Jax", url: "https://www.actionnewsjax.com/news/local/jacksonville-man-killed-in-a-head-on-crash-on-heckscher-drive/310100871/", date: 2016-05-29 }
   - { id: S2, title: "21-year-old charged with DUI manslaughter in deadly 2016 crash on Heckscher Drive", publisher: "Action News Jax", url: "https://www.actionnewsjax.com/news/local/21-year-old-charged-with-dui-manslaughter-in-deadly-2016-crash-on-heckscher-drive/524365804/", date: 2017-05-19 }
@@ -62,36 +74,43 @@ sources:
   - { id: S10, title: "Where is Lark Hodge Today? Accused Did I Do It Update", publisher: "Moviedelic", url: "https://moviedelic.com/lark-hodge/", date: 2025-04-04 }
 timeline:
   - { date: 2016-05-29, text: "Around 3:30 a.m., Lark Hodge's Ford Escape crosses into oncoming traffic on Heckscher Drive and hits Derrick Jones's GMC Yukon. Jones dies at the scene. [S1, S2, S5]", section: "half-past-three" }
-  - { date: 2017-05, text: "After months of investigation, troopers arrest Hodge and charge her with DUI manslaughter. [S2, S3]", section: "the-blood-test" }
+  - { date: 2017-05, text: "After months of investigation, troopers arrest Hodge and charge her with DUI manslaughter. [S2, S3]", section: "almost-a-year" }
   - { date: 2019-05, text: "A Jacksonville jury finds Hodge guilty of DUI manslaughter. [S5]", section: "the-verdict" }
-  - { date: 2020-07-31, text: "Florida's First District Court of Appeal affirms her conviction. [S7]", section: "the-verdict" }
+  - { date: 2020-07-31, text: "Florida's First District Court of Appeal affirms her conviction. [S7]", section: "five-years" }
 updates:
   - { date: 2026-10-15, text: "Story published." }
+  - { date: 2026-10-22, text: "Story rewritten. No facts changed." }
 ---
 
 At around 3:30 in the morning, two vehicles met head-on on a Jacksonville highway. [S1, S5]
 
 One driver never made it home. [S1] The other survived with serious injuries, and a year later she was charged with manslaughter. [S1, S2]
 
-But the investigation turned up details that made this case more complicated than the wreckage suggested.
+In 2019 a jury convicted her of DUI manslaughter. [S5] Her side of the case has since pointed to the dead man's own toxicology, evidence she says the jury never heard. [S8, S10]
+
+## Derrick
+
+His name was Derrick Lamar Jones. He was 46. [S1]
+
+His sister-in-law remembered him simply. "He helped a lot of people, and a lot of people loved him," she said. [S2]
 
 ## Half past three
 
 It was Sunday, May 29, 2016. Lark Dana Hodge, 20, was driving a Ford Escape on Heckscher Drive in Jacksonville, Florida. [S1]
 
-According to the Florida Highway Patrol, she lost control near Heritage River Road and crossed into oncoming traffic. [S1, S2] Her Escape hit a GMC Yukon driven by Derrick Lamar Jones, 46, nearly head-on. [S1, S2]
+According to the Florida Highway Patrol, she lost control near Heritage River Road and crossed into oncoming traffic. [S1, S2] Her Escape hit a GMC Yukon driven by Jones nearly head-on. [S1, S2]
 
 The impact pushed Jones's SUV into a nearby marsh. [S4] He died at the scene. [S3, S5]
+
+## The hospital
 
 Hodge survived. She was taken to UF Health Jacksonville with serious injuries. [S1, S2]
 
 Troopers said that night that alcohol may have been a factor. [S1] Witnesses told them Hodge said she had been drinking and had fallen asleep before the crash. [S5, S6] She was under 21, too young to drink legally. [S5]
 
-## The blood test
+Blood drawn at the hospital and by law enforcement became the center of the case. [S5] According to prosecutors, medical records put Hodge's blood alcohol level at .094. [S5, S6] Florida's legal limit for drivers is .08. [S8]
 
-Blood drawn at the hospital and by law enforcement became the center of the case. [S5]
-
-According to prosecutors, medical records put Hodge's blood alcohol level at .094. [S5, S6] Florida's legal limit for drivers is .08. [S8]
+## Almost a year
 
 It took troopers almost a year to make an arrest. In May 2017, after what they called months of extensive investigating, they arrested Hodge at a home and charged her with DUI manslaughter. [S2, S3] Her bond was set at $75,003. [S3, S4]
 
@@ -99,17 +118,15 @@ Hodge tells it differently. In a later interview, she said her own readings were
 
 ![Lark Hodge in a later interview, looking at the camera against a gray background](./derrick-jones-2016-lark-hodge-interview.jpg "Lark Hodge in a later interview.")
 
-## The other driver
+## His toxicology
 
-Then there was Derrick Jones's own toxicology.
+His sister-in-law told a reporter she had read his autopsy report. "I know he had alcohol in his system," she said. [S2]
 
-His sister-in-law told a reporter she had read his autopsy report. "I know he had alcohol in his system," she said. [S2] Hodge and her defense attorney have since said more: that his level was higher than hers, and that drugs were found too. [S8, S10] Those claims come from her side of the case.
+Jones was no saint, she said, "but he ain't the one that swerved off the side of the road." [S2] Troopers identified Hodge as the driver who drove into oncoming traffic. [S2, S3]
 
-None of that changes who crossed the line. Troopers identified Hodge as the driver who drove into oncoming traffic. [S2, S3]
+Hodge and her defense attorney have since said more: that his level was higher than hers, and that drugs were found too. [S8, S10] Those claims come from her side of the case.
 
-His sister-in-law made the same point. Jones was no saint, she said, "but he ain't the one that swerved off the side of the road." [S2]
-
-Still, the defense wanted jurors to weigh other possible factors. [S9] By Hodge's account and reports on the TV episode, the judge kept that evidence out of the trial, so the jury never heard it. [S8, S10]
+The defense wanted jurors to weigh other possible factors. [S9] By Hodge's account and reports on the TV episode, the judge kept that evidence out of the trial, so the jury never heard it. [S8, S10]
 
 ## The verdict
 
@@ -117,20 +134,14 @@ In May 2019, nearly three years after the crash, a Jacksonville jury found Hodge
 
 ![Booking photo of Lark Hodge in a gray jail uniform](./derrick-jones-2016-lark-hodge-booking.jpg "Lark Hodge's booking photo.")
 
-She faced up to 15 years in Florida State Prison. [S5, S6] By her account and later coverage, she was sentenced to five years, followed by house arrest, and released in August 2023. [S8, S10]
+She faced up to 15 years in Florida State Prison. [S5, S6] By her account and later coverage, she was sentenced to five years, followed by house arrest. [S8, S10]
+
+## Five years
 
 She appealed. On July 31, 2020, Florida's First District Court of Appeal affirmed her conviction without a written opinion. [S7]
 
+By her account and later coverage, she was released in August 2023. [S8, S10]
+
+## Accused
+
 In 2025, A&E told her story in an episode of *Accused: Did I Do It?*, titled "Deadly Driver or Car Crash Survivor?" [S9]
-
-## What was lost
-
-For Jones's family, no courtroom could give back what the crash took.
-
-His sister-in-law remembered him simply. "He helped a lot of people, and a lot of people loved him," she said. [S2]
-
-That is the human cost at the center of this case. A 46-year-old man lost his life. [S1] A young woman survived a devastating crash and was convicted of causing his death while driving under the influence. [S5]
-
-The jury reached its verdict. The appeals court let it stand. [S7]
-
-But the case leaves a question worth asking: when the evidence points to more than one possible contributing factor, how should a jury decide who is criminally responsible?
