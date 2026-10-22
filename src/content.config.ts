@@ -57,6 +57,9 @@ const cases = defineCollection({
         town: z.string().min(1),
         state: z.enum(US_STATES, "state must be a 2-letter US state code, like SD"),
         incidentDate: z.coerce.date(),
+        // "month" when the record gives only a month, like "June 1985". The page then shows the month
+        // and year, and no day counter runs from incidentDate. Set incidentDate to the 1st of that month.
+        incidentDatePrecision: z.enum(["day", "month"]).default("day"),
         lastSeenDate: z.coerce.date().nullish(),
         resolvedDate: z.coerce.date().nullish(),
         lastChecked: z.coerce.date(),
