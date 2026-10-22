@@ -67,6 +67,8 @@ Run `npm run build && npm run check:launch` on the branch. Report failures. Then
 
 ## Rewrites (PRs titled "Rewrite:")
 
+Rewrites go through the Editor first, like any story. Start only after @Shelley returns PASS FOR FACT CHECK on a named commit, as in "Before you start." Until then the answer is NEEDS INPUT.
+
 A rewrite puts an older story into the house voice. It should say exactly what the old version said. Check that, instead of rechecking every claim from scratch:
 
 1. **Diff.** Compare the story with `main`: `git diff main -- src/content/cases/[slug].md`. For each changed sentence, confirm the facts, qualifiers and attributions are the same and the same source tags still cover them. Any wording that shifts meaning is a must-fix, even when it reads better: "said" to "admitted", "a dissent" to "one justice", "several fingerprints" to "the fingerprints".
