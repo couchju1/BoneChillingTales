@@ -44,7 +44,7 @@ state: IL
 incidentDate: 1990-02-03
 lastSeenDate: null
 resolvedDate: 2012-03-29
-lastChecked: 2026-10-16
+lastChecked: 2026-10-22
 lastFactChange: 2026-10-16
 published: 2026-10-16
 agency: "the Bond County Circuit Court"
@@ -58,6 +58,21 @@ image:
   license: "Photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
+# Rewritten October 22, 2026 in the house voice. No new facts. Sections now run in date order after the
+# Arizona opening: Douglas and Patricia (1989) before Regina (February 1990). Patricia's week of captivity
+# (S2) moved into "Two people headed east". The opening now names the three pleas (S1, S2).
+# Crime detail is unchanged: nothing added about restraints, wounds or her body.
+# Cut as narrator lines: "And that stop on the side of the road would open a case that ran from Arizona to
+# Texas, Illinois and Utah.", "But the truck held something else.", "By the time of Rhoades's arrest, she
+# had been gone for two months.", "Nobody knew yet where that barn was.", "The woman in Arizona was not the
+# first.", "Their accounts mattered. They showed that the restraints...", "There was one more record in the
+# case, a quieter one.", "For most of the months she was missing, she had already been dead." (an inference),
+# "Part of this case began before Regina ever left home.", "Patricia did not die with her husband.", "finally
+# gave her back her name" (now "identified"), "Justice for Douglas and Patricia took another two decades.",
+# "Three murders. Three guilty pleas.", "Suspicion is not proof.", "What the record does show is how this
+# case came apart...", the closing question "If that trooper had driven past those blinking lights...", and
+# the "Their names" section ("They were not details in a trucker's story...", and the three names).
+readerQuestion: "A trooper's stop on Interstate 10 led police to Regina Walters, Douglas Zyskowski and Patricia Walsh. How should stories like this one remember the people they lost?"
 sources:
   - { id: S1, title: "People v. Rhoades, 323 Ill. App. 3d 644 (opinion affirming the Bond County judgment)", publisher: "Appellate Court of Illinois, Fifth District, via FindLaw", url: "https://caselaw.findlaw.com/il-court-of-appeals/1345482.html", date: 2001-07-13 }
   - { id: S2, title: "'Torture dungeon' trucker pleads guilty", publisher: "Associated Press, via The Spokesman-Review", url: "https://www.spokesman.com/stories/2012/mar/30/torture-dungeon-trucker-pleads-guilty/", date: 2012-03-30 }
@@ -68,15 +83,16 @@ timeline:
   - { date: 1989-11, text: "Newlyweds Douglas Zyskowski and Patricia Walsh leave Seattle, hitchhiking to Georgia. Near El Paso they accept a ride from Rhoades. [S2]", section: "two-people-headed-east" }
   - { date: 1990-01, text: "Douglas's body is found beside Interstate 10 east of Ozona, Texas. He had been shot. [S2]", section: "two-people-headed-east" }
   - { date: 1990-02-03, text: "Regina Walters, 14, is last seen at her mother's apartment in Pasadena, Texas. [S1]", section: "a-girl-from-pasadena" }
-  - { date: 1990-04-01, text: "A trooper near Casa Grande, Arizona, finds a woman chained inside Rhoades's truck. Rhoades is arrested. [S4]", section: "the-truck-on-the-shoulder" }
+  - { date: 1990-04-01, text: "A trooper near Casa Grande, Arizona, finds a woman chained inside Rhoades's truck. Rhoades is arrested. [S4]", section: "the-notebook" }
   - { date: 1990-09-29, text: "Regina's body is found in a barn along Interstate 70 in Bond County, Illinois. [S1]", section: "the-barn-on-interstate-70" }
-  - { date: 1990-10, text: "Deer hunters find Patricia's remains in Millard County, Utah. [S3]", section: "thirteen-years-without-a-name" }
-  - { date: 1992-09-11, text: "Rhoades pleads guilty to Regina's murder and is sentenced to natural life in prison. [S1]", section: "the-pleas" }
-  - { date: 2003, text: "Dental records identify Patricia Walsh. [S2, S3]", section: "thirteen-years-without-a-name" }
-  - { date: 2012-03, text: "Rhoades pleads guilty to two counts of capital murder for Douglas and Patricia and gets two more life sentences. [S2, S3]", section: "the-pleas" }
+  - { date: 1990-10, text: "Deer hunters find Patricia's remains in Millard County, Utah. [S3]", section: "millard-county" }
+  - { date: 1992-09-11, text: "Rhoades pleads guilty to Regina's murder and is sentenced to natural life in prison. [S1]", section: "natural-life" }
+  - { date: 2003, text: "Dental records identify Patricia Walsh. [S2, S3]", section: "her-name" }
+  - { date: 2012-03, text: "Rhoades pleads guilty to two counts of capital murder for Douglas and Patricia and gets two more life sentences. [S2, S3]", section: "sutton-county" }
 updates:
   - { date: 2026-10-16, text: "Story published." }
   - { date: 2026-10-16, text: "Added Rhoades's current custody status from the Illinois Department of Corrections." }
+  - { date: 2026-10-22, text: "Story rewritten. No facts changed." }
 ---
 
 The truck was parked on the shoulder of Interstate 10, its hazard lights blinking. [S4]
@@ -87,57 +103,9 @@ When he shined his light into the cab, a woman inside screamed. She was naked, h
 
 The driver got out. By Miller's account, the man calmly told him everything was all right. [S4]
 
-His name was Robert Ben Rhoades. He was a long-haul trucker from Houston. [S1, S2] And that stop on the side of the road would open a case that ran from Arizona to Texas, Illinois and Utah.
-
-## The truck on the shoulder
-
-The woman in the truck survived. [S1] She told investigators that Rhoades had tortured and whipped her. [S2]
-
-Rhoades was arrested that day. [S4] He was later convicted in Arizona of aggravated assault, sexual assault and unlawful imprisonment. [S2]
-
-But the truck held something else. Among the things inside was a notebook. [S1]
-
-It belonged to a 14-year-old girl from Texas named Regina Kay Walters. [S1]
-
-## A girl from Pasadena
-
-Regina was last seen at her mother's apartment in Pasadena, Texas, on February 3, 1990. [S1] She had left with an 18-year-old boyfriend, who told friends the two of them planned to hitchhike to Mexico. [S2]
-
-![Color portrait of Regina Walters with curly dark hair in a navy sweater, smiling at the camera](./regina-walters-1990-portrait.webp "Regina Walters in an undated portrait. This copy has been colorized and enhanced.")
-
-By the time of Rhoades's arrest, she had been gone for two months.
-
-After the Arizona stop, investigators got a warrant to search Rhoades's home in Houston. [S1] They found women's clothing and items that could be used to restrain a person. They found photographs of women. Regina was in some of them. [S1]
-
-Some of the pictures showed her inside his truck. Others showed her standing in front of a barn. [S1]
-
-Nobody knew yet where that barn was.
-
-## The women who got away
-
-The woman in Arizona was not the first.
-
-The Illinois court record describes another woman, identified there only by her initials. Rhoades took her from California to Houston, the record says, and kept her chained in the back of his truck for about two weeks while he raped her. [S1] She escaped. [S1] Tucson Weekly reported she was 18, and that she got away when he failed to close a handcuff. [S4]
-
-In Houston, a woman who had escaped him told police a story of torture much like the one told in Arizona. [S2]
-
-Their accounts mattered. They showed that the restraints in that truck were not just objects in an evidence log. Women had lived through them, and they told police how he used them.
-
-## The barn on Interstate 70
-
-There was one more record in the case, a quieter one. Rhoades kept trip logs for his job. Those logs put him on Interstate 70 in Bond County, Illinois, in February or March 1990. [S1]
-
-On September 29, 1990, Regina's body was found in a barn along Interstate 70. [S1] It was an abandoned farm near Greenville, Illinois. [S2] She had been strangled with baling wire. [S1, S2]
-
-The photographs from Houston showed her in front of that same barn. [S1]
-
-Prosecutors later charged that she was killed sometime between February 3 and March 17, 1990. [S1] For most of the months she was missing, she had already been dead.
-
-The boy she left Texas with was never located, according to reports at the time of Rhoades's 2012 plea. [S2]
+His name was Robert Ben Rhoades. He was a long-haul trucker from Houston. [S1, S2] He later pleaded guilty to the murders of a 14-year-old girl, Regina Walters, and two newlyweds, Douglas Zyskowski and Patricia Walsh. [S1, S2]
 
 ## Two people headed east
-
-Part of this case began before Regina ever left home.
 
 In November 1989, Douglas Scott Zyskowski, 28, and Patricia Walsh, 24, left Seattle together. They were newlyweds. They were hitchhiking to Georgia to preach, authorities said. [S2]
 
@@ -145,27 +113,67 @@ In November 1989, Douglas Scott Zyskowski, 28, and Patricia Walsh, 24, left Seat
 
 Near El Paso, Texas, they accepted a ride from Rhoades. [S2]
 
+Police believe Rhoades held Patricia captive for about a week, torturing and assaulting her, before he shot her several times. [S2] That week is an investigators' estimate. No one has laid out the exact timeline in public.
+
 In January 1990, Douglas's body was found beside Interstate 10 east of Ozona, Texas, about 320 miles east of El Paso. He had been shot. [S2] He went unidentified until 1992. [S2]
 
-## Thirteen years without a name
+## A girl from Pasadena
 
-Patricia did not die with her husband.
+Regina Kay Walters was last seen at her mother's apartment in Pasadena, Texas, on February 3, 1990. [S1] She had left with an 18-year-old boyfriend, who told friends the two of them planned to hitchhike to Mexico. [S2]
 
-Police believe Rhoades held her captive for about a week, torturing and assaulting her, before he shot her several times. [S2] That week is an investigators' estimate. No one has laid out the exact timeline in public.
+![Color portrait of Regina Walters with curly dark hair in a navy sweater, smiling at the camera](./regina-walters-1990-portrait.webp "Regina Walters in an undated portrait. This copy has been colorized and enhanced.")
 
-In October 1990, deer hunters found her remains 22 miles south of Fillmore, in Millard County, Utah. [S3]
+## The notebook
 
-No one knew who she was. Her remains sat unidentified in the basement of the Millard County Sheriff's Office for 13 years. [S3] In 2003, dental records finally gave her back her name. [S2, S3]
+The woman in the truck in Arizona survived. [S1] She told investigators that Rhoades had tortured and whipped her. [S2]
 
-Patricia Candace Walsh. [S3]
+Rhoades was arrested that day. [S4] He was later convicted in Arizona of aggravated assault, sexual assault and unlawful imprisonment. [S2]
 
-## The pleas
+Among the things inside the truck was a notebook. [S1] It belonged to Regina. [S1]
 
-The Illinois case came first. In May 1992, prosecutors filed notice that they would seek the death penalty. [S1] On September 11, 1992, under a negotiated deal, Rhoades pleaded guilty to Regina's first-degree murder. He was sentenced to natural life in prison. [S1]
+## Houston
+
+After the Arizona stop, investigators got a warrant to search Rhoades's home in Houston. [S1] They found women's clothing and items that could be used to restrain a person. They found photographs of women. Regina was in some of them. [S1]
+
+Some of the pictures showed her inside his truck. Others showed her standing in front of a barn. [S1]
+
+## The women who got away
+
+The Illinois court record describes another woman, identified there only by her initials. Rhoades took her from California to Houston, the record says, and kept her chained in the back of his truck for about two weeks while he raped her. [S1] She escaped. [S1] Tucson Weekly reported she was 18, and that she got away when he failed to close a handcuff. [S4]
+
+In Houston, a woman who had escaped him told police a story of torture much like the one told in Arizona. [S2]
+
+## The barn on Interstate 70
+
+Rhoades kept trip logs for his job. Those logs put him on Interstate 70 in Bond County, Illinois, in February or March 1990. [S1]
+
+On September 29, 1990, Regina's body was found in a barn along Interstate 70. [S1] It was an abandoned farm near Greenville, Illinois. [S2] She had been strangled with baling wire. [S1, S2]
+
+The photographs from Houston showed her in front of that same barn. [S1]
+
+Prosecutors later charged that she was killed sometime between February 3 and March 17, 1990. [S1]
+
+The boy she left Texas with was never located, according to reports at the time of Rhoades's 2012 plea. [S2]
+
+## Millard County
+
+In October 1990, deer hunters found Patricia's remains 22 miles south of Fillmore, in Millard County, Utah. [S3]
+
+No one knew who she was. Her remains sat unidentified in the basement of the Millard County Sheriff's Office for 13 years. [S3]
+
+## Natural life
+
+In May 1992, Illinois prosecutors filed notice that they would seek the death penalty. [S1] On September 11, 1992, under a negotiated deal, Rhoades pleaded guilty to Regina's first-degree murder. He was sentenced to natural life in prison. [S1]
 
 He later challenged the plea and the sentence. In July 2001, the Illinois Appellate Court let the judgment stand. [S1]
 
-Justice for Douglas and Patricia took another two decades.
+## Her name
+
+In 2003, dental records identified the woman found in Millard County. [S2, S3]
+
+Patricia Candace Walsh. [S3]
+
+## Sutton County
 
 Utah charged Rhoades in Patricia's death first. That charge was dropped after Utah agreed, at the families' request, to let Texas try him for both murders. [S3] Texas authorities said that was where the couple had been kidnapped. [S2] Prosecutors planned to seek the death penalty. The trial was delayed again and again. [S2]
 
@@ -173,24 +181,10 @@ Utah charged Rhoades in Patricia's death first. That charge was dropped after Ut
 
 In March 2012, in Sutton County, Texas, Rhoades pleaded guilty to two counts of capital murder. [S3] He took two life sentences with no chance of parole, and gave up his right to appeal. [S2, S3] The Texas sentences would keep him locked up even if he were ever released in Illinois. [S2]
 
-Three murders. Three guilty pleas.
-
-Rhoades is still alive. As of October 2026, he is 80 and held at Menard Correctional Center in Illinois. The state lists him as ineligible for release. [S5]
-
-## What the record doesn't say
+## Menard
 
 Investigators have long suspected there were more victims. [S4] In 2012, the FBI said investigations involving Rhoades were continuing. [S2]
 
-Suspicion is not proof. No court has ever tied Rhoades to any killing beyond these three. The full count of what he did on those highways has never been established.
+No court has tied Rhoades to any killing beyond these three. The full count of what he did on those highways has never been established.
 
-What the record does show is how this case came apart. A woman found alive. A girl's notebook. Photographs in a Houston apartment. A trip log. Remains found in three different states. [S1, S2, S3]
-
-If that trooper had driven past those blinking lights, how long would it all have stayed hidden?
-
-## Their names
-
-Regina was 14. Douglas and Patricia were newlyweds, headed east together. Two women who lived through captivity in that truck helped police see what it was.
-
-They were not details in a trucker's story. They were people, and this is their story.
-
-Regina Kay Walters. Patricia Candace Walsh. Douglas Scott Zyskowski.
+Rhoades is still alive. As of October 2026, he is 80 and held at Menard Correctional Center in Illinois. The state lists him as ineligible for release. [S5]
