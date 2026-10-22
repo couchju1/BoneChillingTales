@@ -42,7 +42,7 @@ state: SD
 incidentDate: 2022-09-10
 lastSeenDate: null
 resolvedDate: null
-lastChecked: 2026-10-18
+lastChecked: 2026-10-22
 lastFactChange: null
 published: 2026-10-20
 agency: "the Lincoln County Sheriff's Office"
@@ -56,6 +56,16 @@ image:
   license: "Family photo, used with the family's permission"
 youtubeId: null
 youtubeUploadDate: null
+# Rewritten October 22, 2026 in the house voice. No new facts. The * * * breaks are now titled sections.
+# A new opening leads with the official position, per the suicide-death rules: the 1 a.m. call and Kara
+# found dead (S2, S3, S4, S6), "foul play was not suspected" (S2), the mayor's "suicide" (S6) and the
+# family's question (S6), all restated from later sections. "Where it stands" and the tip paragraph
+# moved out. Its open questions are one paragraph at the end. The 988 line stays as the last line of the
+# story text, the one exception the guide allows. Cut with the tip paragraph: "Don't post it in the
+# comments." Single-line paragraphs in the who-she-was sections and "Elm and Railroad" are joined
+# into fuller ones, no words or tags changed. The Greger/Gregor spelling conflict, which was only in "Where it stands", is now in
+# "Lake Andes". First-person record gaps ("we could find", "We could not find") are now impersonal.
+readerQuestion: "Kara called for a ride. It never reached her. What do you think her family deserves to know about that night?"
 sources:
   - { id: S1, title: "Fatal shooting early Saturday morning in Harrisburg", publisher: "Dakota News Now", url: "https://www.dakotanewsnow.com/2022/09/10/fatal-shooting-early-saturday-morning-harrisburg/", date: 2022-09-10, archive: "https://web.archive.org/web/20220910153127/https://www.dakotanewsnow.com/2022/09/10/fatal-shooting-early-saturday-morning-harrisburg/" }
   - { id: S2, title: "Lincoln County Sheriff: Foul play not suspected in Harrisburg death", publisher: "Sioux Falls Argus Leader, via Yahoo News", url: "https://sports.yahoo.com/lincoln-county-sheriff-foul-play-195604708.html", date: 2022-09-12, archive: "https://web.archive.org/web/20220914154239/https://sports.yahoo.com/lincoln-county-sheriff-foul-play-195604708.html" }
@@ -68,66 +78,55 @@ sources:
   - { id: S7, title: "Sheriff", publisher: "Lincoln County, South Dakota", url: "https://www.lincolncountysd.gov/198/Sheriff", date: 2026-10-18 }
 timeline:
   - { date: 2000-11-10, text: "Kara Lynn Greger is born. [S5]", section: "lake-andes" }
-  - { date: 2018, text: "Named Homecoming Queen at Andes Central and Miss Fish Days Queen. [S5]", section: "lake-andes" }
-  - { date: 2019, text: "Graduates from Wagner Community School and moves to Sioux Falls. [S5]", section: "lake-andes" }
-  - { date: 2021, text: "Moves home to Lake Andes that summer. [S5]", section: "lake-andes" }
+  - { date: 2018, text: "Named Homecoming Queen at Andes Central and Miss Fish Days Queen. [S5]", section: "andes-central" }
+  - { date: 2019, text: "Graduates from Wagner Community School and moves to Sioux Falls. [S5]", section: "andes-central" }
+  - { date: 2021, text: "Moves home to Lake Andes that summer. [S5]", section: "three-jobs" }
   - { date: 2022-09-10, text: "Deputies respond to a report of gunshots in Harrisburg around 1 a.m. and find Kara dead. [S2, S3, S6]", section: "elm-and-railroad" }
   - { date: 2022-09-12, text: "The sheriff's office says foul play is not suspected. [S2, S3]", section: "no-foul-play" }
-  - { date: 2022-09-16, text: "Funeral at the 4-H building in Lake Andes. [S4, S5]", section: "no-foul-play" }
+  - { date: 2022-09-16, text: "Funeral at the 4-H building in Lake Andes. [S4, S5]", section: "the-4-h-building" }
   - { date: 2022-10-17, text: "Her family asks people with information to come forward. [S6]", section: "a-month-later" }
 updates:
   - { date: 2026-10-20, text: "Story published." }
+  - { date: 2026-10-22, text: "Story rewritten. No facts changed." }
 ---
+
+Around 1 a.m. on Saturday, September 10, 2022, someone in Harrisburg, South Dakota, called the Lincoln County Sheriff's Office about gunshots. [S2, S3] Deputies found Kara Greger dead. She was 21. [S2, S3, S4, S6]
+
+The sheriff's office said foul play was not suspected. [S2] The mayor of Harrisburg said investigators were sure it was a suicide. [S6]
+
+Her family has asked whether a fight earlier that night had anything to do with it. [S6]
 
 ## Lake Andes
 
-Kara Greger liked to stay up late cooking. [S5]
+Kara Greger liked to stay up late cooking. [S5] She cooked and visited with her mom and her dad and her Uncle Joe Swatek. She would tell them stories, theories, observations and ideas. All night and all day, her family wrote. [S5]
 
-She cooked and visited with her mom and her dad and her Uncle Joe Swatek. She would tell them stories, theories, observations and ideas. All night and all day, her family wrote. [S5]
+She was born on November 10, 2000. Her mother was Larina. Her father was Todd. [S5] Her obituary and death notice spell her name Greger. [S4, S5] Dakota News Now uses both spellings, and its headline says Gregor. [S6]
 
-She was born on November 10, 2000. Her mother was Larina. Her father was Todd. [S5]
+She grew up in Lake Andes and Wagner and Sioux Falls. [S5, S6] For a while she lived in Wagner with her Grandma Bernadette Patterson and with Susan Patterson. [S5]
 
-She grew up in Lake Andes and Wagner and Sioux Falls. [S5, S6]
+## Andes Central
 
-For a while she lived in Wagner with her Grandma Bernadette Patterson and with Susan Patterson. [S5]
+She went to high school at Andes Central in Lake Andes. [S5] In 2018 she was the Andes Central Homecoming Queen. That same year she was the Miss Fish Days Queen. That is how her obituary has it. [S5]
 
-* * *
-
-She went to high school at Andes Central in Lake Andes. [S5]
-
-In 2018 she was the Andes Central Homecoming Queen. That same year she was the Miss Fish Days Queen. That is how her obituary has it. [S5]
-
-Her grandmother Stephanie Cournoyer had it a little different. [S6]
-
-"She was the prom queen. The Little Miss Fish Days," she told Dakota News Now. "She was very popular with everybody." [S6]
+Her grandmother Stephanie Cournoyer had it a little different. [S6] "She was the prom queen. The Little Miss Fish Days," she told Dakota News Now. "She was very popular with everybody." [S6]
 
 Kara finished her last semester at Wagner Community School. She graduated with the Class of 2019. [S5]
 
-Then she moved to Sioux Falls. Her family put it this way. She went "to live young, wild and free." [S5]
+Then she moved to Sioux Falls. Her family put it this way. She went "to live young, wild and free." [S5] That lasted until the summer of 2021. [S5]
 
-That lasted until the summer of 2021. [S5]
+## Three jobs
 
-* * *
+When she came home to Lake Andes she worked three jobs. [S5] The Lake Andes Carnegie Public Library. Knotheads Bar & Grill. The Gus Stop. [S5]
 
-When she came home to Lake Andes she worked three jobs. [S5]
+The library wasn't new. She had worked there all through high school, with Mary Jo Parker. Her family wrote that Kara absolutely adored her. [S5] Before that she had a summer youth job at the Native American Women's Health and Education Resource Center, with her good buddy Everdale Song Hawk. [S5]
 
-The Lake Andes Carnegie Public Library. Knotheads Bar & Grill. The Gus Stop. [S5]
-
-The library wasn't new. She had worked there all through high school, with Mary Jo Parker. Her family wrote that Kara absolutely adored her. [S5]
-
-Before that she had a summer youth job at the Native American Women's Health and Education Resource Center, with her good buddy Everdale Song Hawk. [S5]
-
-She volunteered at tribal and community events. [S5]
-
-"She was very responsible. She had three jobs," her grandmother said. [S6]
+She volunteered at tribal and community events. [S5] "She was very responsible. She had three jobs," her grandmother said. [S6]
 
 ![Kara Greger, with red hair, smiling in a white blouse with a black collar in a banquet hall](./kara-greger-2022-banquet.jpg "Kara Greger in an undated photo.")
 
-* * *
+## Halloween
 
-She watched shows about history. Shows about aliens. A lot of odd comedy. [S5]
-
-She sang in the shower as loud as she could. [S5]
+She watched shows about history. Shows about aliens. A lot of odd comedy. [S5] She sang in the shower as loud as she could. [S5]
 
 She was a roller skating and dancing machine, her family wrote. Nobody could keep up with her on the dance floor. [S5]
 
@@ -135,25 +134,17 @@ Halloween was the big one. The costumes, the makeup, the hair. She made sure she
 
 ![Kara Greger outdoors near a lake, her face painted with a sunset, palm tree and ocean waves](./kara-greger-2022-face-paint.jpg "Kara Greger with her face painted, in an undated photo.")
 
-* * *
+## Thelma & Louise
 
 Her family wrote down where she went with her aunts. Fairs. Festivals. Carnivals. Concerts. Powwows. [S5]
 
 ![Kara Greger in a flower crown and black jacket, standing in front of an Ed Sheeran official merchandise truck](./kara-greger-2022-concert.jpg "Kara Greger beside an Ed Sheeran merchandise truck, in an undated photo.")
 
-There was family bingo, with snacks. [S5]
+There was family bingo, with snacks. [S5] And there was Grandma Stephanie. [S5] The family called the two of them "our version of Thelma & Louise." You never knew if they were rummaging in some nearby town or eating at some restaurant in the area. [S5]
 
-And there was Grandma Stephanie. [S5]
+She was good with kids, her family wrote. Patient with them. Kind. [S5] She had a hearty laugh. [S5]
 
-The family called the two of them "our version of Thelma & Louise." You never knew if they were rummaging in some nearby town or eating at some restaurant in the area. [S5]
-
-She was good with kids, her family wrote. Patient with them. Kind. [S5]
-
-She had a hearty laugh. [S5]
-
-If somebody came up with a cool idea, she was in. She loved adventures. [S5]
-
-There were the Hopkins cousins and Liz Patterson. There was the whole Sioux Falls crew. [S5]
+If somebody came up with a cool idea, she was in. She loved adventures. [S5] There were the Hopkins cousins and Liz Patterson. There was the whole Sioux Falls crew. [S5]
 
 She made friends with anyone, her family wrote. She took people as they were. [S5]
 
@@ -171,7 +162,7 @@ Nobody on the record says who was playing. Nobody says what time they got there.
 
 ![An empty outdoor stage with drums, guitars and speakers under a lit-up Phoenix sign](./kara-greger-2022-phoenix-stage.jpg "The stage at the Phoenix Lounge, in an undated photo from the bar's Facebook page.")
 
-* * *
+## The fight
 
 A fight broke out at the bar. [S3, S6]
 
@@ -183,7 +174,7 @@ The mayor of Harrisburg said Kara was part of the altercation. He said he couldn
 
 The reporting doesn't say if Kara is the woman in the video.
 
-* * *
+## A ride
 
 The calls started after that. People in Kara's family were getting asked for a ride. [S6]
 
@@ -193,11 +184,11 @@ It was Kara. She asked for a ride. [S6]
 
 Patterson sent her brother. [S6]
 
-* * *
+## The friend's message
 
 The friend remembered a different part of the night. [S6]
 
-She recorded a message on her phone, nearly four minutes long, and sent it to the family. [S6] Dakota News Now quoted parts of it.
+She recorded a message on her phone, nearly four minutes long, and sent it to the family. [S6] Dakota News Now quoted parts of it. [S6]
 
 > **THE FRIEND**, recorded message to Kara's family, as quoted by Dakota News Now:
 >
@@ -209,27 +200,13 @@ The message doesn't say whose car. It doesn't say what time it was. The record d
 
 ## Elm and Railroad
 
-A call came in to the Lincoln County Sheriff's Office around 1 a.m. on Saturday, September 10. Somebody had heard gunshots. [S2, S3]
+A call came in to the Lincoln County Sheriff's Office around 1 a.m. on Saturday, September 10. Somebody had heard gunshots. [S2, S3] Witnesses said it happened at Elm Street and Railroad Avenue. [S3]
 
-Witnesses said it happened at Elm Street and Railroad Avenue. [S3]
+Deputies got there and found Kara dead. [S2, S3, S6] She was 21. [S4]
 
-Deputies got there and found Kara dead. [S2, S3, S6]
+Susan Patterson's brother was still on his way. [S6] "He made it down there too late because he's seen two sheriffs go by," she said. [S6]
 
-She was 21. [S4]
-
-* * *
-
-Susan Patterson's brother was still on his way. [S6]
-
-"He made it down there too late because he's seen two sheriffs go by," she said. [S6]
-
-* * *
-
-A neighbor heard the shots. [S3]
-
-The neighbor looked outside and didn't see anything. [S3]
-
-By Monday somebody had set up a vigil on the boulevard in front of a house nearby. [S3]
+A neighbor heard the shots. [S3] The neighbor looked outside and didn't see anything. [S3] By Monday somebody had set up a vigil on the boulevard in front of a house nearby. [S3]
 
 ## No foul play
 
@@ -237,19 +214,15 @@ Saturday, September 10, 2022, as Dakota News Now reported it that morning. [S1]
 
 The Lincoln County Sheriff's Office confirmed one person was fatally shot early that morning. It was believed to be an isolated incident. There was no threat to the public. [S1]
 
-* * *
-
 Monday, September 12, 2022, as the Argus Leader reported it. [S2]
 
 Sheriff Steve Swenson said in a news release that the death was being investigated as an unattended death. Foul play was not suspected. Given the nature of the death, no more details would be released. [S2, S3]
 
 No arrests were announced. [S3]
 
-Nobody from the sheriff's office used the word suicide in any statement we could find.
+Nobody from the sheriff's office used the word suicide in any statement found for this story.
 
-* * *
-
-The mayor did. [S6]
+## The mayor
 
 Derick Wenck talked to Dakota News Now just after the shooting. [S6]
 
@@ -261,9 +234,9 @@ He said the night's events began earlier in the evening, with the fight at the b
 
 He said the women from the fight would still face assault charges. He said the sheriff's office didn't believe they were "directly involved" in the death. [S6]
 
-That was the mayor talking. It isn't a court record. We could not find any public record that shows whether anyone was charged.
+That was the mayor talking. It isn't a court record. No sheriff's report, death certificate or court record found for this story confirms what he said, and no public record found shows whether anyone was charged.
 
-* * *
+## The 4-H building
 
 Wake services were set to begin that Tuesday at the 4-H Center. [S4, S5]
 
@@ -281,13 +254,9 @@ The family had questions. Was the fight connected to the shooting? Who pulled th
 
 Those were their questions. No investigator has said anyone else was involved. [S2, S3, S6]
 
-* * *
-
 By then the sheriff's office said the bar fight was still under investigation. Some of the people in it had been identified. [S6]
 
 The shooting was still an unattended death. No foul play. [S6]
-
-* * *
 
 > **STEPHANIE COURNOYER**:
 >
@@ -299,28 +268,12 @@ She didn't want it brushed under the rug. [S6]
 >
 > "We want to know the truth." [S6]
 
-* * *
-
 The family believed some people knew the identity of others involved. [S6]
 
 "I'm asking people to please come forward," her grandmother said. "This could happen to your child." [S6]
 
-That interview is the last public reporting we could find about Kara's death.
+That interview is the last public reporting found for this story about Kara's death.
 
-## Where it stands
-
-**What's documented:** Kara Greger, 21, of Lake Andes, died early on September 10, 2022, in Harrisburg. [S4, S5] Deputies responding to a report of gunshots around 1 a.m. found her dead. [S2, S3, S6] The sheriff's office said foul play was not suspected and released no more details. [S2] Earlier that night, a fight broke out at the Phoenix Lounge and Kara was told to leave. [S6] The mayor said she was part of it, but couldn't say what her role was. [S3]
-
-**Where the sources disagree:** Her obituary and death notice spell her name Greger. [S4, S5] Dakota News Now uses both spellings, and its headline says Gregor. [S6] Her obituary says Homecoming Queen and Miss Fish Days Queen in 2018. Her grandmother said prom queen and Little Miss Fish Days. [S5, S6]
-
-**What's reported but not proven:** The mayor said investigators were "100% positive" it was a suicide and that the gun had been stolen from a vehicle. [S6] He said the women in the fight would face assault charges. [S6] We could not find a sheriff's report, a death certificate or a court record that confirms any of it.
-
-**What no one has publicly answered:** Whose gun it was, and who reported it stolen. How much time passed between the fight, the calls for a ride and the gunshots. Whether the friend's offer and Kara's call to her cousin came before or after one another. Whether anyone was ever charged for the fight. And what, if anything, the people at the Phoenix Lounge that night told investigators.
-
-Her family asked people with information to come forward. [S6]
-
-If you were at the Phoenix Lounge that night, or near Elm Street and Railroad Avenue, call the Lincoln County Sheriff's Office at [605-764-5651](tel:+16057645651). [S7] Don't post it in the comments.
+No one has publicly said whose gun it was or who reported it stolen. No one has said how much time passed between the fight, the calls for a ride and the gunshots, whether anyone was charged for the fight, or what the people at the Phoenix Lounge that night told investigators.
 
 If you or someone you know is struggling, call or text 988 to reach the 988 Suicide and Crisis Lifeline.
-
-Kara called for a ride. It never reached her. What do you think her family deserves to know about that night?
