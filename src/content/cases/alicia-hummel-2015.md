@@ -28,7 +28,8 @@
 # and the sedan seen leaving on the only road come only from S14. The text attributes each to Forum News Service.
 # The phone quotes are Howe's own words in S14, and S15 reports the phone independently. The keys are in S13
 # and S16 as well as S14, so they are not single source.
-# Quotes: Svacina's two lines in "Early Head Start" keep the ellipsis from S12. No words changed.
+# Quotes: Svacina's quote in "Early Head Start" uses one ellipsis where S12 has two. The cut covers the
+# sentence between them, "She was a 29-year old female, was a great friend and a great aunt". No other words changed.
 # "Want to go fishing?" is Angel's memory of the message, as S12 prints it. "Her voice trailed off" is from S10.
 # Revised October 24, 2026 for Shelley's review of 45349fe (E1 to E8). "Time to think" stays until Justin rules.
 # Left out on purpose: the husband's and his wife's names, a friend's account of bruising at the funeral (S12),
@@ -172,7 +173,7 @@ On Tuesday, June 2, the Attorney General's office asked for information about an
 
 Late that afternoon, Howe spoke at the Clay County Courthouse. "I think it would be premature to say we have a suspect at this time," he said. [S9] Investigators had not determined whether she had company, he said, and they had not found her phone. [S10]
 
-In 2021, Forum News Service reported that the employee who found her had seen a dark sedan with a loud exhaust driving away on the only road in and out of Myron Grove. The employee couldn't name the make or model. [S14] Investigators never found the driver. [S11] "We get tips even to this day about that car," Howe said in 2021. [S14]
+In 2021, Forum News Service reported that the employee who found her had seen a dark sedan with a loud exhaust driving away on the only road in and out of Myron Grove. The employee couldn't name the make or model. [S14] Investigators never found the driver. [S11, S14] "We get tips even to this day about that car," Howe said in 2021. [S14]
 
 ## The autopsy
 
