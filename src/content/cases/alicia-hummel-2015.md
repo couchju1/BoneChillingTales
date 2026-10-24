@@ -24,9 +24,13 @@
 # Same origin: S1 to S6 are joint releases from the Attorney General and the sheriff. S9 and S10 come from the
 # same Sioux City Journal coverage of the June 2 news conference. S13 and S16 both ran on KELOLAND.
 # S14 is labeled on its page as paid for by an organization or individual who did not approve or review it.
-# Single source claims: the purse on the sandbar, the keys on the passenger seat, the sedan seen leaving on
-# the only road and the phone quotes all come from S14 and are attributed to the sheriff's 2021 interview.
+# Single source claims: the purse on the sandbar, the dock caption, the rod Snapchat, the missing items list
+# and the sedan seen leaving on the only road come only from S14. The text attributes each to Forum News Service.
+# The phone quotes are Howe's own words in S14, and S15 reports the phone independently. The keys are in S13
+# and S16 as well as S14, so they are not single source.
 # Quotes: Svacina's two lines in "Early Head Start" keep the ellipsis from S12. No words changed.
+# "Want to go fishing?" is Angel's memory of the message, as S12 prints it. "Her voice trailed off" is from S10.
+# Revised October 24, 2026 for Shelley's review of 45349fe (E1 to E8). "Time to think" stays until Justin rules.
 # Left out on purpose: the husband's and his wife's names, a friend's account of bruising at the funeral (S12),
 # the sheriff's statement about where on the bank the attack began (S14), and the wording of her text about
 # the car beyond what the story needs.
@@ -55,7 +59,7 @@ contentNote: null
 image: null
 youtubeId: null
 youtubeUploadDate: null
-readerQuestion: "Alicia Hummel texted a friend about two people in a parked car at Myron Grove. A dark sedan with a loud exhaust was seen leaving on the only road out. The sheriff says no one who was there that afternoon has ever come forward. What would it take for them to call?"
+readerQuestion: "The state asked about a dark sedan seen near Myron Grove that afternoon, and its driver was never found. The sheriff says investigators have her phone but will not say what it showed. No one has been charged. What do you think could still move this case forward?"
 sources:
   - { id: S1, title: "Law Enforcement Seeks Public's Help in Suspicious Death in Clay County", publisher: "South Dakota Attorney General's Office (news release)", url: "https://atg.sd.gov/OurOffice/Media/pressreleasesdetail.aspx?id=1369", date: 2015-06-02 }
   - { id: S2, title: "Law Enforcement Continues to Seek Public's Help in Clay County Homicide Investigation", publisher: "South Dakota Attorney General's Office (news release)", url: "https://atg.sd.gov/OurOffice/Media/pressreleasesdetail.aspx?id=1374", date: 2015-06-09 }
@@ -81,14 +85,14 @@ timeline:
   - { date: 2015-06-02, text: "Authorities ask about a dark sedan with tinted windows and a loud exhaust seen in the area. [S1]", section: "the-sedan" }
   - { date: 2015-06-24, text: "The final autopsy report gives drowning as the cause of death, with neck and head injuries contributing. [S3]", section: "the-autopsy" }
   - { date: 2015-12, text: "A reward poster offers $5,000 for information leading to an arrest and conviction. [S5]", section: "the-reward" }
-  - { date: 2016, text: "College students find her purse on a sandbar in the river, about a year after her death. [S14]", section: "the-sandbar" }
+  - { date: 2016, text: "College students find her purse on a sandbar in the river, about a year after her death, Forum News Service reports. [S14]", section: "the-sandbar" }
   - { date: 2021-12-02, text: "The sheriff says investigators have her phone. [S14]", section: "the-phone" }
-  - { date: 2023-06-02, text: "The sheriff says there are no updates to share and the case is still being investigated. [S16]", section: "the-cross" }
+  - { date: 2023-06-02, text: "The sheriff says there are no updates to share and the case is still being investigated. [S16]", section: "the-list" }
 updates:
   - { date: 2026-10-27, text: "Story published." }
 ---
 
-At 1:30 p.m. on June 1, 2015, Alicia Hummel sent a Snapchat of the boat dock at Myron Grove. [S13, S14] The dock is on the Missouri River in rural Clay County, South Dakota. [S7] Her caption read, "Finally I've been waiting since fall." [S14]
+At 1:30 p.m. on June 1, 2015, Alicia Hummel sent a Snapchat of the boat dock at Myron Grove. [S13, S14] The dock is on the Missouri River in rural Clay County, South Dakota. [S7] Her caption read, "Finally I've been waiting since fall," Forum News Service reported. [S14]
 
 She was 29, a preschool teacher from Sioux City, Iowa, and it was the first day of her summer vacation. [S12, S13] She had come to fish. [S11]
 
@@ -98,7 +102,7 @@ That afternoon she was found in the river near the same dock. [S1, S14] Her deat
 
 Alicia and her sister, Erica, were raised by their grandparents, Jan and Duane Folkers. [S11] Jan told Dateline she was proud of how much Alicia liked to learn. [S11]
 
-She graduated from South Dakota State University in 2009 and earned another degree from the University of South Dakota in 2012. [S11] Her friend Jody Hanson said she thought about a master's degree. But she "absolutely loved kids." [S11] Starting in 2013, she taught Early Head Start classes for infants and toddlers at the Siouxland Family Center in Dakota City. [S9, S10]
+She graduated from South Dakota State University in 2009 and earned another degree from the University of South Dakota in 2012. [S11] Her friend Jody Hanson said Alicia had thought about a master's degree. But she "absolutely loved kids." [S11] Starting in 2013, she taught Early Head Start classes for infants and toddlers at the Siouxland Family Center in Dakota City. [S9, S10]
 
 She skated for the Sioux City Roller Dames, then stayed on as a non-skating official, helping set up for bouts. [S9] "She was a nice gal, always smiling and giggling, helping do whatever she could," said the team's coach, Melissa Dittberner. [S9]
 
@@ -120,15 +124,15 @@ Another friend, Amanda Abraham, said Alicia was ready to move on. "She was final
 
 June 1 was a Monday, the first day of a month off work. [S1, S11, S14] She had posted on Facebook the night before and again that morning that she was going fishing. [S13, S14]
 
-She asked friends to come along. No one could, Jan told Dateline. [S11] Amanda's daughter, Angel, remembers a message from Alicia. *Want to go fishing?* Angel wrote back that she would come out later. Another message never came. [S12]
+She asked friends to come along. No one could, Jan told Dateline. [S11] Amanda's daughter, Angel, told the Journal in 2019 that she remembers Alicia messaging her, "Want to go fishing?" Angel wrote back that she would come out later. Another message never came. [S12]
 
 On her way out of the house, Alicia asked her grandfather if he would help her clean whatever fish she caught. Duane said he would. It was the last time Jan and Duane saw her. [S11]
 
-She sent friends a Snapchat of her fishing rod on the passenger seat, its tip sticking out of the sunroof. [S14]
+She sent friends a Snapchat of her fishing rod on the passenger seat, its tip sticking out of the sunroof, Forum News Service reported. [S14]
 
 ## The license
 
-Shortly before 1 p.m. she sent a message. She couldn't find her tackle box, so she was starting over. [S13]
+Shortly before 1 p.m. she sent a message saying she couldn't find her tackle box. [S13]
 
 At 1:06 p.m. she stopped at the Walmart in Vermillion to buy a fishing license. [S13] At 1:19 she texted about the old man who sold it to her. He had told her he hoped she "caught a big one." [S13]
 
@@ -138,15 +142,15 @@ Myron Grove is also known as the Highline Area of Clay County. [S1] Reports put 
 
 She sent the Snapchat of the dock at 1:30. [S13, S14]
 
-While she was there, she texted a friend that two people were having sex in a parked car. [S13, S14] Forum News Service reported the text was sent at 1:45 p.m. and did not describe the car. [S14] A 2023 KELOLAND report gives the 1:30 Snapchat as her last contact. [S16]
+While she was there, she texted a friend that two people were having sex in a parked car. [S13, S14] Forum News Service reported that she sent the text at 1:45 p.m. Her text did not describe the car, Forum reported. [S14] A 2023 KCAU report gives the 1:30 Snapchat as her last contact. [S16]
 
 ## The ramp attendant
 
-A state employee who tended the boat ramps found her in the water near the shore. [S10] "State parks have an employee that tends to those ramps, and that was the employee who found her," Clay County Sheriff Andy Howe said the next day. [S10] Other reports call him a Game, Fish and Parks employee or officer. [S13, S14, S16] Howe told Dateline he reported it right away. [S11]
+A state employee who tended the boat ramps found her in the water near the shore. [S10] "State parks have an employee that tends to those ramps, and that was the employee who found her," Clay County Sheriff Andy Howe said the next day. [S10] Other reports call him a Game, Fish and Parks employee or officer. [S13, S14, S16] Howe told Dateline the employee reported it right away. [S11]
 
-The sources give different times. The Sioux City Journal reported about 2 p.m. [S10, S12] Howe gave roughly 2 p.m. in 2021. [S14] He told Dateline about 2:20. [S11] A Vermillion police captain said about 3 p.m. [S9] KELOLAND reported 3:30. [S13, S16] The state's releases said "late afternoon." [S1, S6]
+The sources give different times. The Sioux City Journal reported about 2 p.m. [S10, S12] Howe gave roughly 2 p.m. in 2021. [S14] He told Dateline about 2:20. [S11] A Vermillion police captain said about 3 p.m. [S9] KELOLAND in 2021 and KCAU in 2023 reported 3:30. [S13, S16] The state's releases said "late afternoon." [S1, S6]
 
-Her car was parked in the lot by the dock. Her keys were on the front passenger seat. [S9, S14] Investigators listed her purse, her phone and her fishing pole as missing, Forum News Service reported. [S14]
+Her car was parked in the lot by the dock. [S14] Her keys were on the front seat, KELOLAND reported in 2021. [S13, S14, S16] Investigators listed her purse, her phone and her fishing pole as missing, Forum News Service reported. [S14]
 
 The employee was never named publicly. Howe said in 2021 that he was questioned at length and "was very helpful." [S14]
 
@@ -156,7 +160,7 @@ Early that afternoon, Amanda had gotten a Snapchat of Alicia holding her fishing
 
 "She was one of those people who was attached to her phone," Amanda told the Journal. [S10] She hoped Alicia had dropped it in the river. "That would be like her. She could be kind of clumsy," she said. "I figured I'd get a picture of her with all the fish she caught later." [S10]
 
-Her family and friends reported her missing at 5:20 p.m. Her family was told at 10:30 that night. [S13]
+Her family and friends reported her missing at 5:20 p.m. Her family was told of her death at 10:30 that night. [S13]
 
 ## The sedan
 
@@ -168,7 +172,7 @@ On Tuesday, June 2, the Attorney General's office asked for information about an
 
 Late that afternoon, Howe spoke at the Clay County Courthouse. "I think it would be premature to say we have a suspect at this time," he said. [S9] Investigators had not determined whether she had company, he said, and they had not found her phone. [S10]
 
-Years later, Howe said the employee who found her had seen a dark sedan with a loud exhaust driving away on the only road in and out of Myron Grove. The employee couldn't name the make or model. [S14] Investigators never found the driver. [S11] "We get tips even to this day about that car," Howe said in 2021. [S14]
+In 2021, Forum News Service reported that the employee who found her had seen a dark sedan with a loud exhaust driving away on the only road in and out of Myron Grove. The employee couldn't name the make or model. [S14] Investigators never found the driver. [S11] "We get tips even to this day about that car," Howe said in 2021. [S14]
 
 ## The autopsy
 
@@ -190,17 +194,19 @@ The state issued a reward poster in December 2015. [S5]
 
 > "A $5000.00 reward is offered for information leading to the arrest and conviction of the person (s) involved." [S5]
 
-The state called it an anonymous reward. [S4, S6] In 2018, Dateline reported that Jan and Duane were offering $5,000. [S11]
-
-That year Howe told Dateline there had been "hundreds and hundreds" of tips, but no suspects or persons of interest. [S11] In 2019 he told the Journal that several suspects were still being investigated. He didn't name any. [S12] In 2021 he said there had been suspects over the years, but no case had gone to the county prosecutor. [S14]
-
-"Not one person has come forward to us to tell us they were there," Howe said in 2019. "But yet traffic goes in and out of there all the time." [S12]
-
-In 2021 he spoke about the car in Alicia's text. "Whether they were involved or not, I would very much appreciate visiting with them," he said. "No such person has ever approached us." [S14]
+The state called it an anonymous reward. [S4, S6]
 
 ## The sandbar
 
-About a year after she died, local college students found her purse on a sandbar in the river. The cash and credit cards were still inside. The phone was not. [S14]
+About a year after she died, local college students found her purse on a sandbar in the river, Forum News Service reported in 2021. The cash and credit cards were still inside. The phone was not. [S14]
+
+## The cross
+
+In 2018, Dateline reported that Jan and Duane were offering $5,000. [S11] Every year they went to the dock and put up a cross. [S11] "We can't get her back, so finding answers is all we have left," Jan told Dateline. [S11]
+
+That year Howe told Dateline there had been "hundreds and hundreds" of tips, but no suspects or persons of interest. [S11] In 2019 he told the Journal that several suspects were still being investigated. He didn't name any. [S12]
+
+"Not one person has come forward to us to tell us they were there," Howe said in 2019. "But yet traffic goes in and out of there all the time." [S12]
 
 ## The phone
 
@@ -210,12 +216,12 @@ On the sixth anniversary, the phone was still thought to be missing. [S14] In De
 
 He would not say when, how or where it was found. He would not say whether her fishing pole had turned up. [S14] Four days later, KTIV reported that investigators said the phone was found at the scene. Howe would not say how or when, or what it showed. [S15]
 
+Howe told Forum there had been suspects over the years, but no case had gone to the county prosecutor. [S14] He also spoke about the car in Alicia's text. "Whether they were involved or not, I would very much appreciate visiting with them," he said. "No such person has ever approached us." [S14]
+
 "We've been seeking digital records pretty much since the first day," Howe said. [S14] "I'm optimistic as I sit here today that we're going to clear this case." [S14]
 
-## The cross
+## The list
 
-In June 2023, Howe said he had no updates to share. A state agent from the Division of Criminal Investigation met with him regularly to review the case. [S16] "The case is active in our minds here and actively discussed," he said. [S16]
-
-In 2018, Dateline reported that Jan and Duane went to the dock every year and put up a cross. [S11] "We can't get her back, so finding answers is all we have left," Jan told Dateline in 2018. [S11]
+In June 2023, Howe told KCAU he had no updates to share. A state agent from the Division of Criminal Investigation met with him regularly to review the case. [S16] "The case is active in our minds here and actively discussed," he said. [S16]
 
 Her name is still on the state's list of unresolved cases, under June 2015. [S7]
