@@ -6,6 +6,9 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 
 | Date | Person | Town, state | Status | Why now | Notes |
 |---|---|---|---|---|---|
+| 2026-10-24 | Alicia Hummel | Myron Grove, near Vermillion, SD | unsolved | Evergreen. No public update found after about 2023 | Clay County Sheriff + SD DCI (on DCI unresolved list). Uncharged estranged husband and his current wife named in 2021 coverage. Sheriff declined to say whether there was a sexual assault. Risk High. |
+| 2026-10-24 | Angela "Angie" Buck | Waterloo, IA | in-court | Kelly Grant charged with first-degree murder, arrested Oct. 15 or 16, 2026 (sources differ) | Black Hawk County Sheriff + Iowa DCI + AG Cold Case Unit. Most coverage comes from one release and the complaint. Drug activity is in the motive. No court dates found yet. Risk High. |
+| 2026-10-24 | Michelle Martinko | Cedar Rapids, IA | solved | 47th anniversary Dec. 19. Jerry Burns filed a new ineffective-counsel challenge in May 2026 | Cedar Rapids PD. Iowa Supreme Court affirmed 5-2 (No. 20-1150, Mar. 31, 2023). Burns maintains innocence. His 2026 filing points to the victim's then-boyfriend, who was never charged. Risk High. |
 
 ## Picked
 
