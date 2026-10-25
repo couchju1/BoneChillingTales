@@ -34,10 +34,10 @@
 # Quotes are exact. No two quotes were joined. The Neff quote follows S7. S8 and S9 open it "This arrest is a
 # great example" and S9 gives only that first sentence, so the quote is tagged S7 alone.
 # published is a placeholder for Justin's release date.
-# Photos: supplied by Justin on October 25, 2026. Justin identified the two photos of Kelly Grant: the
-# booking photo from his October 2026 arrest and a photo of him in a courtroom. Both captions repeat that he
-# is charged, not convicted, and has denied it. The court photo is undated, and no source reviewed reports a
-# hearing, so its caption gives no date or place. The reward poster is from the Waterloo Police and Cedar
+# Photos: supplied by Justin on October 25, 2026. Justin identified the booking photo of Kelly Grant from
+# his October 2026 arrest. Its caption repeats that he is charged, not convicted, and has denied it. A
+# courtroom photo supplied with these turned out to show a different man and was removed. Never use it.
+# The reward poster is from the Waterloo Police and Cedar
 # Valley Crime Stoppers and was issued while the case was unsolved. Its tip numbers are not the sheriff's
 # line in tipLine. The Waterloo photo shows downtown and the Cedar River, not a place in the story.
 draft: false
@@ -205,8 +205,6 @@ The sheriff's office says the arrest was on Friday, October 16. [S3, S5] The Att
 > "A criminal charge is merely an accusation, and the defendant is presumed innocent unless and until proven guilty." [S1]
 
 ## Without bond
-
-![Kelly Grant, with a shaved head and a short beard, seated in a courtroom in a dark green jail uniform](./angela-buck-1995-kelly-grant-court.jpg "Kelly Grant in a courtroom. He is presumed innocent.")
 
 After his arrest, Grant was held without bond. [S6] On October 17, the Des Moines Register reported that no court dates had been set. [S8] No source reviewed for this story reports a plea, a hearing, or his return to Iowa.
 
