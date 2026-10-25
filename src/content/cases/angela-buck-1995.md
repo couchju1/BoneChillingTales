@@ -34,6 +34,12 @@
 # Quotes are exact. No two quotes were joined. The Neff quote follows S7. S8 and S9 open it "This arrest is a
 # great example" and S9 gives only that first sentence, so the quote is tagged S7 alone.
 # published is a placeholder for Justin's release date.
+# Photos: supplied by Justin on October 25, 2026. Justin identified the booking photo of Kelly Grant from
+# his October 2026 arrest. Its caption repeats that he is charged, not convicted, and has denied it. A
+# courtroom photo supplied with these turned out to show a different man and was removed. Never use it.
+# The reward poster is from the Waterloo Police and Cedar
+# Valley Crime Stoppers and was issued while the case was unsolved. Its tip numbers are not the sheriff's
+# line in tipLine. The Waterloo photo shows downtown and the Cedar River, not a place in the story.
 draft: false
 title: "Poynter Creek: The Killing of Angie Buck"
 seoTitle: "Angela Buck: What Happened in Waterloo, IA"
@@ -53,7 +59,11 @@ agency: "the Black Hawk County Sheriff's Office"
 tipLine: "+13192912587"
 anonymousTips: null
 contentNote: "a shooting death and an alleged kidnapping"
-image: null
+image:
+  src: "./angela-buck-1995.jpg"
+  alt: "Angie Buck smiling, with feathered dark brown hair, in a portrait against a gray background"
+  credit: "Angela Buck in an undated photo"
+  license: "Photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 readerQuestion: "According to the complaint, several people were at the house on Cottage Street that night. Thirty-one years later, the sheriff says the investigation is still open. What could still bring their accounts forward?"
@@ -91,6 +101,8 @@ She was Angela Renee Buck, 37, of Waterloo, and she had been shot. [S1] Thirty-o
 ## Evansdale
 
 Her name was Angela, and people called her Angie. [S1] She was born in Waterloo on April 17, 1958. Her mother, Lorene, served on the Evansdale City Council. [S10]
+
+![A covered pedestrian bridge crossing a wide river, with brick and stone buildings of downtown Waterloo behind it at sunset](./angela-buck-1995-waterloo.jpg "Downtown Waterloo and the Cedar River.")
 
 In 1970, at 12, Angie was voted Evansdale Junior Miss. She played violin in the school orchestra, and she loved horseback riding. [S10]
 
@@ -156,6 +168,8 @@ Mike Kubik retired as Black Hawk County sheriff in December 2008, after five ter
 
 He told the Courier that, for all the cases solved over the years, he still thought about two that hadn't been. One was Angie Buck's. [S10] Investigators hadn't given up on bringing the people responsible to justice, he said. [S10]
 
+![A black and yellow poster from the Waterloo Police and Cedar Valley Crime Stoppers headed Unsolved Homicide, offering a $1,500 reward, with Angie Buck's photo and tip numbers](./angela-buck-1995-poster.jpg "A reward poster from the Waterloo Police and Cedar Valley Crime Stoppers, issued while the case was unsolved.")
+
 ## A ride
 
 In March 2025, Grant sat for another interview. [S4]
@@ -181,6 +195,8 @@ From those points, the complaint concludes that Grant "did participate in the ki
 By 2026, Kelly Joseph Grant was 59 and living in Bertha, Minnesota, in Todd County, northwest of the Twin Cities. [S1, S3, S9] Black Hawk County deputies and agents of the Iowa Division of Criminal Investigation arrested him, with help from the Minnesota Bureau of Criminal Apprehension and the Todd County Sheriff's Office. [S1, S5]
 
 The sheriff's office says the arrest was on Friday, October 16. [S3, S5] The Attorney General's office gives the date as October 15. [S1] He was charged with first-degree murder. [S1, S7]
+
+![Kelly Grant, with short graying hair and a gray beard, in a navy T-shirt against a white wall](./angela-buck-1995-kelly-grant.jpg "Kelly Grant in a booking photo after his October 2026 arrest. He is charged, not convicted, and has denied any part in her death.")
 
 "This is a great example that highlights the cooperation and tenacity of multiple agencies working together to bring closure to a case that is over 30 years old," Sheriff Nate Neff said. "I would also like to credit the retired deputies who originally worked this case. This arrest would not have happened without their efforts." [S7]
 
