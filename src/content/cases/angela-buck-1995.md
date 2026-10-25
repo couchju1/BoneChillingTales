@@ -7,6 +7,10 @@
 # not independent confirmation. The complaint itself has not been opened by the Writer (NEEDS INPUT).
 # The witness keeps the complaint's own words. The witness saw "a person who looked like Grant" (S4). S9
 # says the witness saw Grant. The text uses S4's wording and gives S9's version as the Courier's.
+# In its list of the points behind its conclusion, the complaint words it as "a male matching Grant's
+# description" (S3). That phrase appears only as a quote, in that list.
+# The complaint's conclusion runs inline, attributed, with his denial and the presumption line in the
+# same paragraph. It is never set as a block quote.
 # The second man: the complaint calls him "another identified male." No source names him or reports a
 # charge against him. Never name him or guess at him. The associate from January 1996 is also unnamed.
 # The motive: the complaint says she was "falsely perceived" as an informant. Keep the word falsely
@@ -49,7 +53,7 @@ contentNote: "a shooting death and an alleged kidnapping"
 image: null
 youtubeId: null
 youtubeUploadDate: null
-readerQuestion: "According to the complaint, several people were at the house on Cottage Street that night, and a witness saw two men take Angie out to a car. Thirty-one years later, the sheriff says the investigation is still open. What would it take for someone else who was there to talk?"
+readerQuestion: "According to the complaint, several people were at the house on Cottage Street that night. Thirty-one years later, the sheriff says the investigation is still open. What could still bring their accounts forward?"
 sources:
   - { id: S1, title: "Attorney General Brenna Bird Praises Black Hawk County Arrest in 31-Year-Old Case with Assistance from Iowa Division of Criminal Investigation and the Cold Case Unit", publisher: "Iowa Attorney General", url: "https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-praises-black-hawk-county-arrest-in-31-year-old-case-with-assistance-fr", date: 2026-10-16, archive: "https://web.archive.org/web/20261025001534/https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-praises-black-hawk-county-arrest-in-31-year-old-case-with-assistance-fr" }
   - { id: S2, title: "Contact Us", publisher: "Black Hawk County Sheriff's Office", url: "https://www.bhcso.org/contact-us", date: 2026-10-24, archive: "https://web.archive.org/web/20261025002154/https://www.bhcso.org/contact-us" }
@@ -91,17 +95,17 @@ She had four children. [S10] She worked as a nurse's aide, and later at Ravenwoo
 
 ## Cottage Street
 
-What is known about her last night comes from the criminal complaint filed against Grant in October 2026. The sheriff's office released it with its announcement, and news outlets quoted it. [S5] It is an accusation, and none of it has been proven in court. [S1]
+Everything here about her last night comes from the criminal complaint filed against Grant in October 2026. The sheriff's office released it with its announcement, and news outlets quoted it. [S5] It is an accusation, and none of it has been proven in court. [S1]
 
 Investigators determined that Angie didn't own a car or have use of one. [S4] According to the complaint, she spent the late evening of Thursday, August 10, and the early hours of Friday at a house in the 300 block of Cottage Street in Waterloo. [S4] Several people were there. The complaint lists Grant, who was 28, and a man it calls "another identified male." [S4, S8]
 
 The complaint says Angie, Grant and a third person got into a fight, and Angie was assaulted. [S3]
 
-A witness told investigators what came next. According to the complaint, the witness saw a person who looked like Grant, and another man, "forcibly removing Buck from the residence and forcing Buck into a vehicle before driving away." [S4] The Courier, describing the same court records, wrote that the witness saw Grant and the other man force her into Grant's car. [S9] The witness has not been named. [S8]
+The complaint also cites a witness. According to the complaint, the witness told investigators they saw a person who looked like Grant, and another man, "forcibly removing Buck from the residence and forcing Buck into a vehicle before driving away." [S4] The Courier, describing the same court records, wrote that the witness saw Grant and the other man force her into Grant's car. [S9] The witness has not been named. [S8]
 
 ## Poynter Creek
 
-The two men went to a nearby farmhouse to call the police. [S10] The sheriff's office says it got the report at about 10:40 a.m. [S7]
+The two tannery workers went to a nearby farmhouse to call the police. [S10] The sheriff's office says it got the report at about 10:40 a.m. [S7]
 
 Deputies found her along the creek bank on the east side of the bridge. [S5, S7] The creek was Poynter Creek, and she lay on its north bank. [S6] The bridge is in the 900 block of Pilot Grove Road, about five miles east of Waterloo. [S3, S9] That is about eight miles east of the house on Cottage Street. [S4]
 
@@ -119,7 +123,7 @@ In the Courier that Monday, her cousin Rick Luchtenburg talked about her. [S10]
 
 He said her mother's death had been hard on her. [S10] An aunt said Angie had lived with her mother in Evansdale, and began to drift after she died. [S10]
 
-The summer before, Angie had rented the bottom three rooms of a duplex on Prince Street in Waterloo, for about four months. Her landlord, Betty Stewart, lived upstairs. [S10] By then Angie's children were living with their father. Stewart said Angie talked about them often, missed them terribly and wanted Stewart to meet them. She moved out before Stewart did. [S10]
+In 1994, Angie rented the bottom three rooms of a duplex on Prince Street in Waterloo for about four months, and left in the fall. Her landlord, Betty Stewart, lived upstairs. [S10] By then Angie's children were living with their father. Stewart said Angie talked about them often, missed them terribly and wanted Stewart to meet them. Angie moved away before that could happen. [S10]
 
 "She was just a good person mixed up," Stewart told the Courier. [S10]
 
@@ -127,7 +131,7 @@ The memorial service was held on Thursday, August 17, 1995, in the chapel at Wat
 
 ## January 1996
 
-In January 1996, an associate of Grant's talked to law enforcement. [S4] According to the complaint, Grant had insinuated to this person that he and the other man from the witness's account had killed Angie because they believed she had stolen from them. [S4] The associate said Grant said she "wouldn't be doing this to anyone else again." [S4] Forum News Service, reporting on the same complaint, wrote that Grant believed she had stolen from him. [S5]
+In January 1996, an associate of Grant's talked to law enforcement. [S4] According to the complaint, Grant had insinuated to this person that he and the other man the witness described had killed Angie because they believed she had stolen from them. [S4] The associate said Grant said she "wouldn't be doing this to anyone else again." [S4] Forum News Service, reporting on the same complaint, wrote that Grant believed she had stolen from him. [S5]
 
 A sheriff's deputy then interviewed Grant. The complaint says he "initially denied knowing the identified male." Then he changed his account and admitted "knowing and hanging out with the identified male in the summer of 1995." [S4] He said he hadn't talked to the man since. He denied spending time in the Sumner and Cottage Street area. [S4]
 
@@ -159,15 +163,15 @@ He said the man, the woman and the other men got into his car. He said he droppe
 
 He denied any involvement in her death. [S5, S9]
 
-## Falsely perceived
+## An additional motive
 
 Also in 2025, the complaint says, investigators "learned of an additional motive." [S3]
 
 According to the complaint, Angie was "falsely perceived to be providing information to law enforcement regarding drug activity" in the area of the Cottage Street house. [S3] The complaint itself calls the belief false. [S3, S5]
 
-The complaint lists what brought investigators to their conclusion. It names that motive, the witness who saw a man matching Grant's description, what Grant was said to have told an associate, and his changing stories, including the one that put Angie and the other man in his car. [S3] It ends this way.
+The complaint then lists the points behind its conclusion. They are that motive, the witness's account of "a male matching Grant's description" taking part in forcibly removing Angie from the house, what Grant was said to have told an associate, and his changing stories. [S3] Among those stories, it counts what it calls "Grant's admission which placed Buck and the identified male inside Grant's vehicle." [S3] In that 2025 interview, Grant had described a woman he said resembled Buck. [S4]
 
-> "Kelly Grant did participate in the kidnapping and murder of Angela Buck on or around August 11, 1995." [S3]
+From those points, the complaint concludes that Grant "did participate in the kidnapping and murder of Angela Buck on or around August 11, 1995." [S3] Grant has denied any involvement in her death. [S5, S9] He is presumed innocent. [S1]
 
 ## Bertha
 
@@ -185,6 +189,6 @@ The sheriff's office says the arrest was on Friday, October 16. [S3, S5] The Att
 
 After his arrest, Grant was held without bond. [S6] On October 17, the Des Moines Register reported that no court dates had been set. [S8] No source reviewed for this story reports a plea, a hearing, or his return to Iowa.
 
-The sheriff's office says the investigation is still going. [S7] The Courier reported that court records point to the possibility a second man was involved. [S9] No source reviewed for this story names him or reports a charge against anyone else.
+The Courier reported that court records point to the possibility a second man was involved. [S9] No source reviewed for this story names him or reports a charge against anyone else.
 
-In the reports on the complaint, the witness who saw two men take Angie from the house on Cottage Street has not been named. Neither has the second man. [S4, S8]
+In the reports on the complaint, the witness it describes has not been named. [S4, S8] The sheriff's office says the investigation is still going. [S7]
