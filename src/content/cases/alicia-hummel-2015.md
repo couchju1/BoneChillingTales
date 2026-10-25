@@ -37,7 +37,9 @@
 # the car beyond what the story needs.
 # KELOLAND pages (S13, S16) return 403 to automated reads. They were read in full on KELO's own mirror,
 # digital-release.keloland.com. Their archive links are earlier Wayback captures of the keloland.com pages.
-# Photos: none used. The DCI page (S7) and the reward poster (S5) carry agency photos. Justin decides.
+# Photos: supplied by Justin on October 24, 2026. The portrait is the photo on the reward poster (S5). The two
+# Snapchat images match the dock caption (S14) and the rod through the sunroof (S14). The memorial cross
+# caption says only what the photo shows. S11 says her grandparents put up a cross at the dock each year.
 draft: false
 title: "The Dock at Myron Grove: The Unsolved Killing of Alicia Hummel"
 seoTitle: "Alicia Hummel: What Happened in Vermillion, SD"
@@ -57,7 +59,11 @@ agency: "the Clay County Sheriff's Office"
 tipLine: "+16056777100"
 anonymousTips: { name: "the Clay County Sheriff's online tip form", url: "https://portal-sd-clay-so.centralsquarecloudgov.com/submit_tip" }
 contentNote: null
-image: null
+image:
+  src: "./alicia-hummel-2015.jpg"
+  alt: "Alicia Hummel smiling, with dark red and purple hair and blue eyes, in a close-up"
+  credit: "Alicia Hummel in an undated photo"
+  license: "Photo published on the 2015 reward poster and in coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 readerQuestion: "The state asked about a dark sedan seen near Myron Grove that afternoon, and its driver was never found. The sheriff says investigators have her phone but will not say what it showed. No one has been charged. What do you think could still move this case forward?"
@@ -107,6 +113,8 @@ She graduated from South Dakota State University in 2009 and earned another degr
 
 She skated for the Sioux City Roller Dames, then stayed on as a non-skating official, helping set up for bouts. [S9] "She was a nice gal, always smiling and giggling, helping do whatever she could," said the team's coach, Melissa Dittberner. [S9]
 
+![Alicia Hummel taking a selfie on a grassy slope, in a gray top with lace trim, with a river and a dam behind her](./alicia-hummel-2015-dam.jpg "Alicia Hummel in an undated photo.")
+
 Her friends told the Sioux City Journal what they remembered. Jean shorts with cowboy boots. Luke Bryan on the car radio. Cheetah print. Pink was her favorite color. [S12] On nights out with friends she would have one drink, something fruity. [S12]
 
 "She wasn't just somebody off the street ... What happened to her should not define her," Bethany Svacina, a friend since kindergarten, told the Journal in 2019. [S12]
@@ -114,6 +122,8 @@ Her friends told the Sioux City Journal what they remembered. Jean shorts with c
 ## Time to think
 
 In 2011, while still in college, Alicia married. [S11] Bethany told Dateline the couple separated in 2014, and that Alicia "was finally coming to terms with moving on, becoming independent and finding herself again." [S11]
+
+![Alicia Hummel smiling, in a purple top, in front of store shelves stacked with basketballs](./alicia-hummel-2015-purple.jpg "Alicia Hummel in an undated photo.")
 
 She was living with her grandmother then. [S11] Jan told Dateline why Alicia wanted the time away.
 
@@ -131,6 +141,8 @@ On her way out of the house, Alicia asked her grandfather if he would help her c
 
 She sent friends a Snapchat of her fishing rod on the passenger seat, its tip sticking out of the sunroof, Forum News Service reported. [S14]
 
+![A Snapchat on a phone screen showing a fishing rod angled up through a car's open sunroof, with the caption 'When your pole doesn't fit in ur car'](./alicia-hummel-2015-sunroof-snapchat.jpg "The Snapchat of her fishing rod through the sunroof, shown on a phone.")
+
 ## The license
 
 Shortly before 1 p.m. she sent a message saying she couldn't find her tackle box. [S13]
@@ -139,11 +151,15 @@ At 1:06 p.m. she stopped at the Walmart in Vermillion to buy a fishing license. 
 
 ## The dock
 
+![A concrete boat ramp leading to a small dock on a wide river, with wooded bluffs on the far bank](./alicia-hummel-2015-myron-grove.jpg "The boat ramp and dock at Myron Grove.")
+
 Myron Grove is also known as the Highline Area of Clay County. [S1] Reports put it about 7, 10 or 11 miles from Vermillion. [S9, S12, S13, S14]
 
 She sent the Snapchat of the dock at 1:30. [S13, S14]
 
-While she was there, she texted a friend that two people were having sex in a parked car. [S13, S14] Forum News Service reported that she sent the text at 1:45 p.m. Her text did not describe the car, Forum reported. [S14] A 2023 KCAU report gives the 1:30 Snapchat as her last contact. [S16]
+![A Snapchat on a phone screen showing a dirt boat ramp, a sign board and a dock on the river, with the caption 'Finally I've been waiting since fall'](./alicia-hummel-2015-dock-snapchat.jpg "The Snapchat Alicia sent from the dock at Myron Grove, shown on a phone.")
+
+While she was there, she texted a friend that two people were having sex in a parked car. [S13, S14] Forum News Service reported the text was sent at 1:45 p.m. and did not describe the car. [S14] A 2023 KELOLAND report gives the 1:30 Snapchat as her last contact. [S16]
 
 ## The ramp attendant
 
@@ -189,13 +205,17 @@ Her friends had planned her 30th birthday party for June 13. [S10] Amanda got a 
 
 Alicia was buried at Memorial Park Cemetery in Sioux City. Her casket was pink. [S12]
 
+![A bronze grave marker reading Alicia Marie Folkers Hummel, June 27, 1985, June 1, 2015, with pink and purple flowers](./alicia-hummel-2015-grave.jpg "Alicia's grave marker.")
+
 ## The reward
 
 The state issued a reward poster in December 2015. [S5]
 
 > "A $5000.00 reward is offered for information leading to the arrest and conviction of the person (s) involved." [S5]
 
-The state called it an anonymous reward. [S4, S6]
+![A red and white reward poster dated December 2015 with Alicia Hummel's photo, offering $5,000 and listing the Clay County Sheriff's Office number](./alicia-hummel-2015-poster.jpg "The December 2015 reward poster.")
+
+The state called it an anonymous reward. [S4, S6] In 2018, Dateline reported that Jan and Duane were offering $5,000. [S11]
 
 ## The sandbar
 
@@ -224,5 +244,7 @@ Howe told Forum there had been suspects over the years, but no case had gone to 
 ## The list
 
 In June 2023, Howe told KCAU he had no updates to share. A state agent from the Division of Criminal Investigation met with him regularly to review the case. [S16] "The case is active in our minds here and actively discussed," he said. [S16]
+
+![A wooden memorial cross with an American flag, flowers and a pinwheel on a grassy riverbank, with the river behind it](./alicia-hummel-2015-memorial.jpg "A memorial cross for Alicia on the riverbank.")
 
 Her name is still on the state's list of unresolved cases, under June 2015. [S7]
