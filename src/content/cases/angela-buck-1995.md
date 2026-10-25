@@ -1,5 +1,7 @@
 ---
-# Researched and written October 24, 2026 by Poe. Case status checked October 24, 2026.
+# Researched and written October 24, 2026 by Poe. Case status rechecked October 25, 2026. Nothing newer than
+# S8 and S9 opens. WeAreIowa reportedly lists an October 26 appearance, but the page returns 403, so that
+# date is UNVERIFIED and stays out of the text. Recheck after October 26.
 # Legal care: Kelly Joseph Grant is CHARGED with first-degree murder, not convicted. No plea is reported.
 # In his interviews with investigators he denied any part in her death (S4, S5, S9). Never state or imply
 # he killed Angie. Everything about the night, the 1996 associate, his interviews and the motive comes from
@@ -29,7 +31,8 @@
 # Buck, Grant and a third person were in a fight and Buck was assaulted. The text follows S3.
 # Distances: about 8 miles east of the Cottage Street house (S4) and about 5 miles east of Waterloo (S9).
 # These measure from different places and both are used.
-# Quotes are exact. No two quotes were joined.
+# Quotes are exact. No two quotes were joined. The Neff quote follows S7. S8 and S9 open it "This arrest is a
+# great example" and S9 gives only that first sentence, so the quote is tagged S7 alone.
 # published is a placeholder for Justin's release date.
 draft: false
 title: "Poynter Creek: The Killing of Angie Buck"
@@ -43,7 +46,7 @@ state: IA
 incidentDate: 1995-08-11
 lastSeenDate: null
 resolvedDate: null
-lastChecked: 2026-10-24
+lastChecked: 2026-10-25
 lastFactChange: null
 published: 2026-10-28
 agency: "the Black Hawk County Sheriff's Office"
@@ -75,13 +78,13 @@ timeline:
   - { date: 2001-07, text: "Grant tells investigators he was living in Florida, then changes his account, the complaint says. [S4]", section: "florida" }
   - { date: 2008-12, text: "Sheriff Mike Kubik retires, still thinking about her case. [S10]", section: "two-cases" }
   - { date: 2025-03, text: "Grant describes giving a ride to a woman he said resembled Buck, the complaint says. He denies any involvement. [S4, S5]", section: "a-ride" }
-  - { date: 2026-10-16, text: "Grant is arrested and charged with first-degree murder. [S1, S3]", section: "bertha" }
+  - { date: 2026-10-16, text: "Grant is arrested and charged with first-degree murder, the sheriff's office says. The Attorney General's office gives October 15. [S1, S3]", section: "bertha" }
 updates:
   - { date: 2026-10-28, text: "Story published." }
 ---
 Two men finished the third shift at Eagle Tanning in Waterloo, Iowa, around 10 a.m. on Friday, August 11, 1995. They decided to go looking for places to set turtle traps. [S10]
 
-They crossed the bridge on North Pilot Grove Road, east of town, around 10:45. A woman lay on the creek bank below, about six feet from the water. [S10] "We just kind of looked at each other, with goosebumps," one of them told the Waterloo Courier. [S10]
+They crossed the bridge on North Pilot Grove Road, east of town, around 10:45, the Waterloo Courier reported. A woman lay on the creek bank below, about six feet from the water. [S10] "We just kind of looked at each other, with goosebumps," one of them told the Courier. [S10]
 
 She was Angela Renee Buck, 37, of Waterloo, and she had been shot. [S1] Thirty-one years later, in October 2026, a Minnesota man named Kelly Grant was charged with first-degree murder in her death. [S1, S9] In his interviews with investigators, he denied any part in it. [S4, S5] The charge is an accusation, and he is presumed innocent. [S1]
 
@@ -105,7 +108,7 @@ The complaint also cites a witness. According to the complaint, the witness told
 
 ## Poynter Creek
 
-The two tannery workers went to a nearby farmhouse to call the police. [S10] The sheriff's office says it got the report at about 10:40 a.m. [S7]
+The two tannery workers went to a nearby farmhouse to call the police. [S10] The sheriff's office says it got the report at about 10:40 a.m. [S7] That is five minutes before the time the Courier gave for the crossing. [S7, S10]
 
 Deputies found her along the creek bank on the east side of the bridge. [S5, S7] The creek was Poynter Creek, and she lay on its north bank. [S6] The bridge is in the 900 block of Pilot Grove Road, about five miles east of Waterloo. [S3, S9] That is about eight miles east of the house on Cottage Street. [S4]
 
@@ -113,7 +116,7 @@ Twenty investigators worked the scene until dark that Friday. They searched the 
 
 On Saturday, two deputies were posted at the scene. They stopped passing cars and wrote down names and license plate numbers. [S10]
 
-The state medical examiner performed the autopsy that day. [S10] She had died of a gunshot wound, and her death was classified as a homicide. [S1] Fingerprints and dental records identified her. The sheriff's office released her name on Sunday, after it had reached her family. [S10] Sheriff Mike Kubik said officials weren't sure whether she had died at the creek or had been left there. [S10]
+The state medical examiner performed the autopsy that day. [S10] She had died of a gunshot wound, and her death was classified as a homicide. [S1] Fingerprints and dental records identified her. The sheriff's office released her name on Sunday, after it had reached her family. [S10] Sheriff Mike Kubik said officials weren't sure whether she had died at the creek or had been left there. No arrests had been made, he said. [S10]
 
 ## Memorial Park
 
@@ -175,11 +178,11 @@ From those points, the complaint concludes that Grant "did participate in the ki
 
 ## Bertha
 
-By 2026, Kelly Joseph Grant was living in Bertha, Minnesota, in Todd County, northwest of the Twin Cities. [S3, S9] Black Hawk County deputies and agents of the Iowa Division of Criminal Investigation arrested him, with help from the Minnesota Bureau of Criminal Apprehension and the Todd County Sheriff's Office. [S1, S5]
+By 2026, Kelly Joseph Grant was 59 and living in Bertha, Minnesota, in Todd County, northwest of the Twin Cities. [S1, S3, S9] Black Hawk County deputies and agents of the Iowa Division of Criminal Investigation arrested him, with help from the Minnesota Bureau of Criminal Apprehension and the Todd County Sheriff's Office. [S1, S5]
 
 The sheriff's office says the arrest was on Friday, October 16. [S3, S5] The Attorney General's office gives the date as October 15. [S1] He was charged with first-degree murder. [S1, S7]
 
-"This is a great example that highlights the cooperation and tenacity of multiple agencies working together to bring closure to a case that is over 30 years old," Sheriff Nate Neff said. "I would also like to credit the retired deputies who originally worked this case. This arrest would not have happened without their efforts." [S7, S9]
+"This is a great example that highlights the cooperation and tenacity of multiple agencies working together to bring closure to a case that is over 30 years old," Sheriff Nate Neff said. "I would also like to credit the retired deputies who originally worked this case. This arrest would not have happened without their efforts." [S7]
 
 "After 31 years, Angie Buck's family is getting answers," Attorney General Brenna Bird said. [S1] Her office's release added this.
 
