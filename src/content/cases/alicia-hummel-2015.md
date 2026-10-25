@@ -7,13 +7,14 @@
 # - No one has been charged, and no source names a suspect. Never imply who killed her.
 # - Her estranged husband and his current wife appear in S9, S10 and S14. Neither is named here. S9 and S10
 #   quote the sheriff saying the husband was not a suspect, and S14 says he had an alibi. The story mentions
-#   only that she married in 2011, separated in 2014 and expected a divorce, in her family's and friends' words.
-#   Justin decides whether that context stays.
+#   that she married in 2011, separated in 2014 and expected a divorce, in her family's and friends' words.
+#   Justin ruled on October 25, 2026 (E9, option C) to keep that context, with the sheriff's 2015 line that
+#   the husband was not a suspect (S9, S10) and Forum's 2021 alibi line (S14) right after it. He stays unnamed.
 # - The employee who found her is unnamed in every source. Keep him unnamed. S14 says he was questioned at
 #   length and was helpful. Never frame him as anything else.
 # - The two people in the parked car come only from her own text, as reported in S13 and S14. The sheriff
 #   says no one has come forward and that he wants to talk to them "whether they were involved or not" (S14).
-#   Never suggest they were involved.
+#   Never suggest they were involved. Justin ruled on October 25, 2026 (E10) to keep the line.
 # - The sheriff declined to say whether she was sexually assaulted (S14). Say nothing about it.
 # - Injuries: only the autopsy wording from the state (S2, S3). No scene detail, and nothing about the funeral
 #   beyond the cemetery and the casket color (S12).
@@ -23,7 +24,8 @@
 # The sheriff said "no suspects" in 2018 (S11) and "several suspects" in 2019 (S12). Both are given.
 # Same origin: S1 to S6 are joint releases from the Attorney General and the sheriff. S9 and S10 come from the
 # same Sioux City Journal coverage of the June 2 news conference. S13 and S16 both ran on KELOLAND.
-# S14 is labeled on its page as paid for by an organization or individual who did not approve or review it.
+# S14 carries a "paid for" sentence that Sherlock found is part of an ad slot in Forum's page template, not a
+# label on the article. Justin accepted S14 as a source on October 25, 2026.
 # Single source claims: the purse on the sandbar, the dock caption, the rod Snapchat, the missing items list
 # and the sedan seen leaving on the only road come only from S14. The text attributes each to Forum News Service.
 # The phone quotes are Howe's own words in S14, and S15 reports the phone independently. The keys are in S13
@@ -31,7 +33,8 @@
 # Quotes: Svacina's quote in "Early Head Start" uses one ellipsis where S12 has two. The cut covers the
 # sentence between them, "She was a 29-year old female, was a great friend and a great aunt". No other words changed.
 # "Want to go fishing?" is Angel's memory of the message, as S12 prints it. "Her voice trailed off" is from S10.
-# Revised October 24, 2026 for Shelley's review of 45349fe (E1 to E8). "Time to think" stays until Justin rules.
+# Revised October 24, 2026 for Shelley's review of 45349fe (E1 to E8). Revised October 25, 2026 for Justin's
+# rulings on E9, E10, S14, the published date and the photos.
 # Left out on purpose: the husband's and his wife's names, a friend's account of bruising at the funeral (S12),
 # the sheriff's statement about where on the bank the attack began (S14), and the wording of her text about
 # the car beyond what the story needs.
@@ -40,6 +43,7 @@
 # Photos: supplied by Justin on October 24, 2026. The portrait is the photo on the reward poster (S5). The two
 # Snapchat images match the dock caption (S14) and the rod through the sunroof (S14). The memorial cross
 # caption says only what the photo shows. S11 says her grandparents put up a cross at the dock each year.
+# Justin approved all nine photos on October 25, 2026. The rights register is in the PR.
 draft: false
 title: "The Dock at Myron Grove: The Unsolved Killing of Alicia Hummel"
 seoTitle: "Alicia Hummel: What Happened in Vermillion, SD"
@@ -54,7 +58,7 @@ lastSeenDate: null
 resolvedDate: null
 lastChecked: 2026-10-24
 lastFactChange: null
-published: 2026-10-27
+published: 2026-10-24
 agency: "the Clay County Sheriff's Office"
 tipLine: "+16056777100"
 anonymousTips: { name: "the Clay County Sheriff's online tip form", url: "https://portal-sd-clay-so.centralsquarecloudgov.com/submit_tip" }
@@ -96,7 +100,7 @@ timeline:
   - { date: 2021-12-02, text: "The sheriff says investigators have her phone. [S14]", section: "the-phone" }
   - { date: 2023-06-02, text: "The sheriff says there are no updates to share and the case is still being investigated. [S16]", section: "the-list" }
 updates:
-  - { date: 2026-10-27, text: "Story published." }
+  - { date: 2026-10-24, text: "Story published." }
 ---
 
 At 1:30 p.m. on June 1, 2015, Alicia Hummel sent a Snapchat of the boat dock at Myron Grove. [S13, S14] The dock is on the Missouri River in rural Clay County, South Dakota. [S7] Her caption read, "Finally I've been waiting since fall," Forum News Service reported. [S14]
@@ -129,6 +133,8 @@ She was living with her grandmother then. [S11] Jan told Dateline why Alicia wan
 
 > "She knew the divorce was coming closer and just wanted some time away for herself to think." [S11]
 
+The day after Alicia died, Clay County Sheriff Andy Howe said her husband was not a suspect at that time, the Sioux City Journal reported. [S9, S10] In 2021, Forum News Service reported that he had been questioned, as spouses are in most murder investigations. His location at the time of her death put him more than 200 miles from the scene, Forum reported, "a solid alibi for law enforcement officials." [S14]
+
 Another friend, Amanda Abraham, said Alicia was ready to move on. "She was finally on the path to find her own happiness," Amanda told the Journal in 2019. [S12]
 
 ## A month off
@@ -159,7 +165,7 @@ She sent the Snapchat of the dock at 1:30. [S13, S14]
 
 ![A Snapchat on a phone screen showing a dirt boat ramp, a sign board and a dock on the river, with the caption 'Finally I've been waiting since fall'](./alicia-hummel-2015-dock-snapchat.jpg "The Snapchat Alicia sent from the dock at Myron Grove, shown on a phone.")
 
-While she was there, she texted a friend that two people were having sex in a parked car. [S13, S14] Forum News Service reported the text was sent at 1:45 p.m. and did not describe the car. [S14] A 2023 KELOLAND report gives the 1:30 Snapchat as her last contact. [S16]
+While she was there, she texted a friend that two people were having sex in a parked car. [S13, S14] Forum News Service reported the text was sent at 1:45 p.m. and did not describe the car. [S14] A 2023 KCAU report gives the 1:30 Snapchat as her last contact. [S16]
 
 ## The ramp attendant
 
@@ -215,7 +221,7 @@ The state issued a reward poster in December 2015. [S5]
 
 ![A red and white reward poster dated December 2015 with Alicia Hummel's photo, offering $5,000 and listing the Clay County Sheriff's Office number](./alicia-hummel-2015-poster.jpg "The December 2015 reward poster.")
 
-The state called it an anonymous reward. [S4, S6] In 2018, Dateline reported that Jan and Duane were offering $5,000. [S11]
+The state called it an anonymous reward. [S4, S6]
 
 ## The sandbar
 
