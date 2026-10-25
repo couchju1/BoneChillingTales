@@ -43,7 +43,7 @@ lastSeenDate: 2021-06-16
 resolvedDate: null
 lastChecked: 2026-10-25
 lastFactChange: null
-published: 2026-10-27
+published: 2026-10-25
 agency: "Nebraska Crime Stoppers"
 tipLine: "+18004221494"
 anonymousTips: { name: "Nebraska Crime Stoppers", url: "https://www.nebraskacrimestoppers.com/" }
@@ -86,7 +86,7 @@ timeline:
   - { date: 2022-03-27, text: "NSP says the search covered more than 1,100 acres and that investigators are confident she is not in that area. [S11]", section: "three-days" }
   - { date: 2026-09-01, text: "NSP renews its call for information. The investigation remains open. [S12]", section: "five-years" }
 updates:
-  - { date: 2026-10-27, text: "Story published." }
+  - { date: 2026-10-25, text: "Story published." }
 ---
 
 In the early morning hours of Wednesday, June 16, 2021, Linda Dillard was seen in the rural Table Rock area of Pawnee County, in southeast Nebraska. She was 55. [S2]
