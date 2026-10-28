@@ -38,6 +38,12 @@
 # death: dead by 3 p.m. Tuesday (Teigen, found not credible), alive early Wednesday (Cook), Wednesday at the
 # earliest (the entomologist, S2), July 15 (the obituary, S14). Plea date: S9 is dated March 31, 2009. S10,
 # dated April 2, says "Wednesday." The story gives "that spring."
+# Mother's name: the obituary (S14) gives Anita (Joyce) Hinsch-Klug. The Black Hills Pioneer (S12) calls her
+# Joyce Klug. The story uses the obituary form and notes the Pioneer's form once.
+# Ending: the latest sourced survivor fact is the obituary's list of survivors (S14, June 2009). No later
+# survivor fact was found. So the post-plea hearing and the time of death section comes before Sheep
+# Mountain, and the November 2010 ruling on Corean's appeal is in the case file timeline, not the body.
+# S2 gives the hearing as after Teigen's plea. Its exact date still needs checking against S2.
 # Not used: the Charley Project page, which misspells Teigen and gets the charging history wrong.
 # Photos: Justin supplied five photos on October 27, 2026, each larger than any published copy found, so
 # they appear to be enlarged. Three are used. The portrait matches the obituary photo on S14. The Teigen and
@@ -47,9 +53,9 @@
 draft: false
 title: "The Garage in Belle Fourche: The Killing of Troy Klug"
 seoTitle: "Troy Klug: What Happened in Rapid City, SD"
-description: "In July 2004, Troy Klug, 26, was kidnapped in Rapid City and held in a car trunk and a garage toolbox. Five years later his killer led police to his grave."
+description: "In July 2004, Troy Klug, 26, was kidnapped in Rapid City and held in a car trunk and a garage toolbox. Five years later his killer helped find his grave."
 person: "Troy Klug"
-summary: "Troy Klug, 26, of Rapid City, was kidnapped on July 12, 2004, and held in a car trunk and a toolbox in a Belle Fourche garage. [S1, S2] Tory Teigen was convicted of kidnapping him and later pleaded guilty to his murder. [S1, S2] In May 2009, Teigen led investigators to his grave in eastern Montana. [S11]"
+summary: "Troy Klug, 26, of Rapid City, was kidnapped on July 12, 2004, and held in a car trunk and a toolbox in a Belle Fourche garage. [S1, S2] Tory Teigen was convicted of kidnapping him and later pleaded guilty to his murder. [S1, S2] In May 2009, Teigen helped investigators find his grave in eastern Montana. [S11]"
 status: solved
 town: "Rapid City"
 state: SD
@@ -70,7 +76,7 @@ image:
   license: "Family photo published with his obituary by Osheim & Schmidt Funeral Home"
 youtubeId: null
 youtubeUploadDate: null
-readerQuestion: "A friend testified that she urged Corean, more than once, to help the man in the garage and to call the police. What do you think it takes for a witness to make that call themselves?"
+readerQuestion: "Years later, Teigen testified that Klug was dead by Tuesday afternoon. An entomologist put his death on Wednesday at the earliest, and the circuit court found Teigen not credible. How much weight do you think a convicted man's account should get, years after the crime?"
 sources:
   - { id: S1, title: "State v. Tiegen, 2008 SD 6, 744 N.W.2d 578", publisher: "South Dakota Supreme Court, via CourtListener", url: "https://www.courtlistener.com/opinion/901798/state-v-tiegen/", date: 2008-01-16 }
   - { id: S2, title: "State v. Corean, 2010 S.D. 85, 791 N.W.2d 44", publisher: "South Dakota Supreme Court, via CourtListener", url: "https://www.courtlistener.com/opinion/901935/state-v-corean/", date: 2010-11-03 }
@@ -100,7 +106,7 @@ timeline:
   - { date: 2008-09-09, text: "Corean is sentenced to a mandatory life term. [S7]", section: "sanctuary" }
   - { date: 2008-11-18, text: "Teigen is indicted for first-degree murder. [S2]", section: "the-plea" }
   - { date: 2009-03-31, text: "The Rapid City Journal reports that Teigen has pleaded guilty to murder and been sentenced to life without parole. [S9]", section: "the-plea" }
-  - { date: 2009-05, text: "Teigen leads investigators to the grave in the Sheep Mountain Range of Carter County, Montana. [S11]", section: "sheep-mountain" }
+  - { date: 2009-05, text: "Teigen leads investigators to a spot about 100 feet from the grave in the Sheep Mountain Range of Carter County, Montana. [S11]", section: "sheep-mountain" }
   - { date: 2010-11-03, text: "The South Dakota Supreme Court upholds Corean's convictions and life sentence. [S2]", section: "a-raw-deal" }
 updates:
   - { date: 2026-10-28, text: "Story published." }
@@ -112,7 +118,7 @@ Later that day he sent her a text. He asked if her brother, Robert, was with her
 
 As the day went on, he didn't come home. She called his cellphone and left messages. After 7 p.m. his voice mailbox was full. [S1]
 
-He was 26. In 2005 a jury convicted Tory Teigen of kidnapping him. In 2009 Teigen pleaded guilty to his murder and led investigators to his grave in eastern Montana. [S1, S2, S11]
+He was 26. In 2005 a jury convicted Tory Teigen of kidnapping him. In 2009 Teigen pleaded guilty to his murder and helped investigators find his grave in eastern Montana. [S1, S2, S11]
 
 ## Tuxedos
 
@@ -124,7 +130,7 @@ He hunted, fished, camped and hiked with his father and his friends. Most of the
 
 His family remembered how much he loved getting ready for proms. The tuxedo, the flowers, dinner, the dance. [S14]
 
-He was his mother's only son, the Rapid City Journal reported. [S5] That September, the Journal reported that he had never been embarrassed to tell her he loved her. [S3] His father died before him. [S14]
+He was his mother's only son, the Rapid City Journal reported. [S5] In September 2004, the Journal reported that he had never been embarrassed to tell her he loved her. [S3] His father died before him. [S14]
 
 ## The front
 
@@ -132,7 +138,7 @@ That Monday, Klug and Beebe's brother, Robert Highley, went to Cynthia Kindall's
 
 Beebe testified that Klug wanted the drugs "as a front," so he could pay off a drug debt to Kindall. A front, she explained, is drugs handed over without money, paid back later. [S2] Kindall later said he had owed her money for drugs for two or three years. [S2] The 2008 opinion describes an alleged debt of $300. [S1]
 
-Tory Teigen had been staying at Kindall's house. [S2] The courts spell his last name Tiegen. Newspapers spelled it Teigen. [S1, S2, S8]
+Tory Teigen had been staying at Kindall's house. [S2] The courts spell his last name Tiegen. Newspapers spell it Teigen. [S1, S2, S8]
 
 Highley was asked to leave. He drove off in Klug's car. Kindall left soon after. [S2]
 
@@ -170,7 +176,7 @@ Teigen later testified that he put Klug in a toolbox in the garage that morning.
 
 Corean testified that after she went to work, she came back to see if Teigen was gone. He was. She locked the garage. [S2]
 
-## The porch
+## Six-thirty
 
 On the drive home that afternoon, Kusick told Eric Haar that Teigen had left Klug at the house, and asked him to check the toolbox. [S2]
 
@@ -198,7 +204,7 @@ A man was inside, face down. His hands, feet and head were bound with duct tape.
 
 Cook asked what Teigen was going to do. Teigen said they would either "go to Denver and turn him in or go to North Dakota and dig a hole." [S1]
 
-Teigen and Kindall later said that visit came on Tuesday, not Wednesday. Kindall conceded she didn't remember the dates well. [S2] Cook said four times on the stand that it was Wednesday. He remembered because he was leaving that Friday for a race track in Denver. The jury had to decide. [S2]
+Teigen and Kindall later said that visit came on Tuesday, not Wednesday. Kindall conceded she didn't remember the dates well. [S2] Cook said four times on the stand that it was Wednesday. He remembered because he was leaving that Friday for a race track in Denver. [S2]
 
 ## No water
 
@@ -212,7 +218,7 @@ That evening Kusick and Corean were at the house with DeJong and Haar. Kusick sa
 
 He also remembered hearing Corean say they needed an alibi. [S2]
 
-Teigen came back to Cook's house on Thursday morning, July 15. He told Cook he had put the man in a toolbox and left him there all day. It had been hot. Cook asked if he had given him any water. [S1, S2]
+Teigen came back to Cook's house on Thursday morning, July 15. He told Cook he had put the man in a toolbox and left him there all day. Cook asked if he had given him any water. [S1, S2]
 
 > "No, I didn't give him any water, too late for that anyway." [S2]
 
@@ -252,7 +258,7 @@ In the jail, Teigen was put in the cell next to Cook's. Inmates passed notes bet
 
 Teigen called Cook "Chopper." Cook called Teigen "Mad Hatter." [S1]
 
-The three of them were arraigned together on August 16. Cook testified that he saw one of Klug's family members crying in court, and felt the weight of what had happened. He suggested to his lawyer that he cooperate. [S1]
+Teigen and Cook were among those arraigned together on August 16. Cook testified that he saw one of Klug's family members crying in court, and felt the weight of what had happened. He suggested to his lawyer that he cooperate. [S1]
 
 On September 30, Cook and his lawyer met with investigators. He told them about the man in the trunk, and he turned over some of the notes. A plea agreement followed. [S1] One note read:
 
@@ -302,20 +308,6 @@ That spring, in a Belle Fourche courtroom, Teigen pleaded guilty to first-degree
 
 ![A man in a navy T-shirt over a white long-sleeved shirt, in handcuffs and a belly chain, walking down a ramp behind a sheriff's officer in a black vest](./troy-klug-2004-teigen.jpg "Tory Teigen, right, pleaded guilty to the murder of Troy Klug and led authorities to his remains. Rapid City Journal file photo by Milo Dailey.")
 
-## Sheep Mountain
-
-In May 2009, Teigen took authorities to eastern Montana. [S11]
-
-That Tuesday he led investigators to a spot about 100 feet from where the grave was found, in the Sheep Mountain Range of Carter County, a prosecutor told the AP. [S11]
-
-An assistant South Dakota attorney general said the remains needed to be tested. Personal items were found with them, including a wallet with Klug's picture. [S11]
-
-His mother, Joyce Klug, had gone almost five years without knowing where her son's body was, the Black Hills Pioneer reported. [S12]
-
-On May 12, the Journal reported that the remains had been identified as his. [S13]
-
-Visitation was set for Friday, June 5, 2009, at Osheim & Schmidt Funeral Home. The funeral was the next afternoon. Burial was to follow at Mt. Calvary Cemetery in Rapid City. [S14]
-
 ## A raw deal
 
 After his plea, Teigen testified at a hearing on Corean's request for a new trial. He said Corean "never indicated" that she knew about the kidnapping. He said Klug was dead by 3 p.m. that Tuesday. [S2]
@@ -328,6 +320,20 @@ Kindall testified that during the kidnapping, Teigen had been using methamphetam
 
 The circuit court found Teigen's testimony biased and not credible. An entomologist, Dr. Neal Haskell, had found that Klug died on Wednesday, July 14, at the earliest. [S2] Corean argued that the entomologist had worked from a wrong date the prosecution gave him. [S2]
 
-On November 3, 2010, the South Dakota Supreme Court upheld Corean's convictions and her life sentence. [S2]
-
 His family's obituary gives the date of his death as July 15, 2004. [S14]
+
+## Sheep Mountain
+
+In May 2009, Teigen took authorities to eastern Montana. [S11]
+
+That Tuesday he led investigators to a spot about 100 feet from where the grave was found, in the Sheep Mountain Range of Carter County, a prosecutor told the AP. [S11]
+
+An assistant South Dakota attorney general said the remains needed to be tested. Personal items were found with them, including a wallet with Klug's picture. [S11]
+
+His mother had gone almost five years without knowing where her son's body was, the Black Hills Pioneer reported. The paper called her Joyce Klug. [S12]
+
+On May 12, the Journal reported that the remains had been identified as his. [S13]
+
+Visitation was set for Friday, June 5, 2009, at Osheim & Schmidt Funeral Home. The funeral was the next afternoon. Burial was to follow at Mt. Calvary Cemetery in Rapid City. [S14]
+
+The first survivor the obituary named was his mother, Anita (Joyce) Hinsch-Klug, of Florence. [S14]
