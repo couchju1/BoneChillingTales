@@ -29,6 +29,9 @@
 # Photos: both were released by the Nebraska State Patrol with its missing person record (S1) and
 # its 2021 releases. Justin approved using them on October 25, 2026. The second photo is cropped at
 # the left edge to remove part of another person. Nothing else was changed.
+# Justin supplied two more photos on October 28, 2026: the Aware Foundation flyer, which repeats the
+# July 7 release (S2) and its first outfit, and the Table Rock Wildlife Management Area sign. Origin
+# of the sign photo not recorded. Both added as supplied, the sign converted from WebP to JPEG.
 draft: false
 title: "Not in This Area: The Disappearance of Linda Dillard"
 seoTitle: "Linda Dillard: What Happened in Table Rock, NE"
@@ -41,7 +44,7 @@ state: NE
 incidentDate: 2021-06-16
 lastSeenDate: 2021-06-16
 resolvedDate: null
-lastChecked: 2026-10-25
+lastChecked: 2026-10-28
 lastFactChange: null
 published: 2026-10-25
 agency: "Nebraska Crime Stoppers"
@@ -121,6 +124,8 @@ Linda was reported missing four days after she was last seen, KLZA reported in 2
 
 On July 7, the patrol asked the public for help. Its release said she was "believed to be missing under suspicious circumstances." [S2] It said she was last seen in a white tank top, jean shorts, a white and purple wig, and brown, lace-up sandal boots. [S2] Nebraska Crime Stoppers offered a reward of up to $1,000. [S2]
 
+![A missing person flyer from the Aware Foundation headed Linda Dillard, with two photos of her, her description, the patrol's July 2021 description of what she was wearing, and the Nebraska Crime Stoppers number](./linda-dillard-2021-poster.jpg "A flyer from the Aware Foundation that repeats the patrol's July 7 release. The patrol later revised the outfit it describes.")
+
 On July 23, the patrol asked again. The investigation remained ongoing, it said. [S3]
 
 ## A different outfit
@@ -155,7 +160,9 @@ The patrol had held off on a search this large because the vegetation was so thi
 
 The search began on Thursday, March 24, near the Table Rock State Wildlife Management Area. [S7, S8] The patrol said the area had been identified as part of the investigation. [S7]
 
-Nearly 150 people took part. Some rode horses. There were K-9 teams and drones. [S8, S10] Anthropology students from the University of Nebraska-Lincoln came to help. [S10] Teams came from Nebraska and Kansas, including NecroSearch International and units from three Kansas counties. [S7]
+![A brown wooden sign with yellow letters reading Table Rock Wildlife Management Area, hanging from a wooden post in front of a field of dry grass](./linda-dillard-2021-wildlife-area.jpg "The entrance sign at the Table Rock Wildlife Management Area.")
+
+Nearly 150 people took part. Some rode horses. There were K-9 teams and drones. [S8, S10] Anthropology students from the University of Nebraska-Lincoln came to help. [S10] Teams came from several states, including NecroSearch International and units from three Kansas counties. [S7]
 
 Jones was the lead investigator. He said new information had led the patrol to believe she may have been the victim of a crime. [S9] That information, and the conditions on the ground, made it the right time and place for a search, he said. He would not discuss leads. [S9]
 
@@ -169,7 +176,7 @@ Winterstar told KOLN she was thankful. [S8]
 
 ## Three days
 
-The search ran three days. [S11] Teams covered more than 1,100 acres in and around the wildlife area. They walked 24 miles of roadside ditches, 1.5 miles of river, two local farms and a lake area. [S11] There were 44 law enforcement officers, 65 volunteers and support staff, 15 mounted patrol teams and eight dog teams "trained for human remains detection," the patrol said. [S11]
+The search ran three days. [S11] Teams covered more than 1,100 acres in and around the wildlife area. They searched 24 miles of roadside ditches, 1.5 miles of river, two local farms and a lake area. [S11] There were 44 law enforcement officers, 65 volunteers and support staff, 15 mounted patrol teams and eight dog teams "trained for human remains detection," the patrol said. [S11]
 
 They didn't find her. [S11] On March 27, the patrol released a statement from Jones. [S11]
 
