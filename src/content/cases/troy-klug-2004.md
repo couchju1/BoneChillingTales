@@ -9,41 +9,44 @@
 # - Jamie Corean was convicted by a jury of accessory to murder and aiding and abetting aggravated
 #   kidnapping, and the conviction was affirmed (S2). She maintained her innocence at sentencing (S7). That
 #   line stays in.
-# - Cynthia Kindall: the only readable report of her outcome is the free opening of S6 ("sentenced ... to 20
-#   years in prison for her role in the kidnapping and death"). The exact offense is behind the Journal's
-#   paywall, so the story names no offense and attributes the sentence to the Journal. Her acts come from the
-#   court's account in S2 and her own statements as the courts give them. Open question for Justin.
+# - Cynthia Kindall pleaded guilty but mentally ill to kidnapping and was sentenced to 20 years in prison (S6,
+#   read in full from its archived copy, and S7). Her acts come from the court's account in S2 and her own
+#   statements as the courts give them.
 # - Tell Cook pleaded guilty to misprision of a felony (S1), a misdemeanor (S2), and got probation (S4).
 #   Teigen later testified that Cook drove Klug to a gravel road and struck him. Cook denied it (S2, note 3).
 #   Cook was never charged with that, so the claim is left out on purpose.
 # - James Kusick, Eric Haar and Abby DeJong appear only as witnesses, by what they testified. S2 says Haar
-#   and DeJong had plea agreements, were not charged and were given immunity. Kusick's own case outcome is
-#   only in paywalled Journal coverage, so the story says nothing about it. Never imply a charge or a clearing.
+#   and DeJong had plea agreements, were not charged and were given immunity. The archived S7 says Kusick
+#   pleaded guilty to accessory to murder. The story keeps him as a witness only until Justin decides whether
+#   to add that. Never imply a charge or a clearing beyond what a source says.
 # - Duanna Beebe, Robert Highley, Jamie Keefe and the North Dakota homeowner were never shown to be charged.
 #   The homeowner (named in S1) is left unnamed. Keep each person's part to what the record says.
 # - "Snitch" and "rat" are Teigen's and Kindall's words as witnesses gave them (S1, S2). No source shows that
 #   Klug gave information to police. The drug debt is Kindall's and Beebe's account (S1 calls it alleged).
 # - Left out on purpose: the trunk details beyond the binding, the condition of the car beyond bleach and the
 #   stain, Teigen's account of facial injuries, and the jail notes about "fish food." All are in S1 or S2.
-# - Rapid City Journal sources (S3 to S7, S9, S13) are paywalled. Only the headline, subhead and free first
-#   paragraph of each were read, and nothing else from them is used. Black Hills Pioneer sources (S10, S12)
-#   are the same: only the free first paragraphs were read.
+# - Rapid City Journal sources are paywalled. S6, S7, S9 and S13 were read in full from the archived copies
+#   linked below. For S3, S4, S5 and S15 only the headline and free first paragraph were read, and nothing
+#   else from them is used. Black Hills Pioneer sources (S10, S12) are the same. Only the free first
+#   paragraphs were read.
 # - S14 is the family's obituary on the funeral home's site. The page is undated. Its date here is the
 #   visitation date it announces.
 # Quote edits: the judge's words at Corean's sentencing (S2) contain a semicolon, which the build bans. Only
 # the first clause is quoted.
+# The cologne line: S1 gives it to Teigen in its account of the facts and to Kindall in its account of
+# Beebe's trial testimony. The story names both.
 # Conflicts in the text: "Tiegen" (S1, S2) or "Teigen" (news). "Duanna" (S1) or "Duana" (S2) Beebe. "Jamie"
 # (S2) or "Jamee" (S7) Corean. Beebe's first visit at 9:30 p.m. (S1) or around 9 (S2). Cook's first visit at
 # 3 a.m. (S1) or around 2 (S2), and Wednesday (Cook) or Tuesday (Teigen and Kindall) per S2 note 3. Time of
 # death: dead by 3 p.m. Tuesday (Teigen, found not credible), alive early Wednesday (Cook), Wednesday at the
-# earliest (the entomologist, S2), July 15 (the obituary, S14). Plea date: S9 is dated March 31, 2009. S10,
-# dated April 2, says "Wednesday." The story gives "that spring."
+# earliest (the entomologist, S2), July 15 (the obituary, S14). Plea date: S9's page is dated March 31, 2009, but its text says
+# "Wednesday," as S10 does, and S13 says April 1. The story and resolvedDate use April 1, 2009.
 # Mother's name: the obituary (S14) gives Anita (Joyce) Hinsch-Klug. The Black Hills Pioneer (S12) calls her
 # Joyce Klug. The story uses the obituary form and notes the Pioneer's form once.
-# Ending: the latest sourced survivor fact is the obituary's list of survivors (S14, June 2009). No later
-# survivor fact was found. So the post-plea hearing and the time of death section comes before Sheep
-# Mountain, and the November 2010 ruling on Corean's appeal is in the case file timeline, not the body.
-# S2 gives the hearing as after Teigen's plea. Its exact date still needs checking against S2.
+# Order: S2 gives no date for the hearing on Corean's new trial request, only that it came after Teigen's
+# plea. The Journal reported the circuit court's denial on January 20, 2010 (S15). So "A raw deal" comes
+# after Sheep Mountain, and the story ends on the rulings. The obituary's survivor list (June 2009) can't
+# be the ending without breaking time order. Editor's call, see the PR.
 # Not used: the Charley Project page, which misspells Teigen and gets the charging history wrong.
 # Photos: Justin supplied five photos on October 27, 2026, each larger than any published copy found, so
 # they appear to be enlarged. Three are used. The portrait matches the obituary photo on S14. The Teigen and
@@ -61,7 +64,7 @@ town: "Rapid City"
 state: SD
 incidentDate: 2004-07-12
 lastSeenDate: null
-resolvedDate: 2009-03-31
+resolvedDate: 2009-04-01
 lastChecked: 2026-10-27
 lastFactChange: null
 published: 2026-10-28
@@ -80,18 +83,19 @@ readerQuestion: "Years later, Teigen testified that Klug was dead by Tuesday aft
 sources:
   - { id: S1, title: "State v. Tiegen, 2008 SD 6, 744 N.W.2d 578", publisher: "South Dakota Supreme Court, via CourtListener", url: "https://www.courtlistener.com/opinion/901798/state-v-tiegen/", date: 2008-01-16 }
   - { id: S2, title: "State v. Corean, 2010 S.D. 85, 791 N.W.2d 44", publisher: "South Dakota Supreme Court, via CourtListener", url: "https://www.courtlistener.com/opinion/901935/state-v-corean/", date: 2010-11-03 }
-  - { id: S3, title: "A mother holds onto memories of missing son", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/article_03a8a15d-1477-55b1-ba56-a6effba2141b.html", date: 2004-09-24 }
-  - { id: S4, title: "Man gets probation in kidnap case", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/article_a47f18ba-b240-59b0-aa9e-08b7d8717e14.html", date: 2005-07-11 }
-  - { id: S5, title: "Kidnapper gets 100 years", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/article_7f034e46-c325-52e0-ac70-7322c9066098.html", date: 2005-08-01 }
-  - { id: S6, title: "Kindall faces victim's mother at sentencing", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/top-stories/article_7277899f-383f-5072-844a-2a1d0d827c19.html", date: 2007-01-11 }
-  - { id: S7, title: "Belle Fourche woman gets life for aiding in kidnapping", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/article_414b77ae-31d8-55d7-ba61-6a5fdf9dc36e.html", date: 2008-09-09 }
-  - { id: S8, title: "Murder charge in '04 disappearance (AP)", publisher: "Mitchell Republic", url: "https://www.mitchellrepublic.com/news/murder-charge-in-04-disappearance", date: 2008-11-21 }
-  - { id: S9, title: "Tory Teigen admits to murder, gets life without possibility of parole", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/top-stories/article_0cba59df-422d-5cd5-9af0-2e1ce49fd089.html", date: 2009-03-31 }
-  - { id: S10, title: "Rapid City man pleads guilty to 2004 murder (AP)", publisher: "Black Hills Pioneer", url: "https://www.bhpioneer.com/local_news/rapid-city-man-pleads-guilty-to-2004-murder/article_39e4e01c-8a7b-56e5-8ee4-a3e27e886403.html", date: 2009-04-02 }
+  - { id: S3, title: "A mother holds onto memories of missing son", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/article_03a8a15d-1477-55b1-ba56-a6effba2141b.html", date: 2004-09-24, archive: "https://web.archive.org/web/20261028023714/https://rapidcityjournal.com/news/local/article_03a8a15d-1477-55b1-ba56-a6effba2141b.html" }
+  - { id: S4, title: "Man gets probation in kidnap case", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/article_a47f18ba-b240-59b0-aa9e-08b7d8717e14.html", date: 2005-07-11, archive: "https://web.archive.org/web/20261028023738/https://rapidcityjournal.com/news/local/article_a47f18ba-b240-59b0-aa9e-08b7d8717e14.html" }
+  - { id: S5, title: "Kidnapper gets 100 years", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/article_7f034e46-c325-52e0-ac70-7322c9066098.html", date: 2005-08-01, archive: "https://web.archive.org/web/20261028023802/https://rapidcityjournal.com/news/article_7f034e46-c325-52e0-ac70-7322c9066098.html" }
+  - { id: S6, title: "Kindall faces victim's mother at sentencing", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/top-stories/article_7277899f-383f-5072-844a-2a1d0d827c19.html", date: 2007-01-11, archive: "https://web.archive.org/web/20250726121749/https://rapidcityjournal.com/news/local/top-stories/article_7277899f-383f-5072-844a-2a1d0d827c19.html" }
+  - { id: S7, title: "Belle Fourche woman gets life for aiding in kidnapping", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/article_414b77ae-31d8-55d7-ba61-6a5fdf9dc36e.html", date: 2008-09-09, archive: "https://web.archive.org/web/20100831104309/http://www.rapidcityjournal.com:80/news/local/article_414b77ae-31d8-55d7-ba61-6a5fdf9dc36e.html" }
+  - { id: S8, title: "Murder charge in '04 disappearance (AP)", publisher: "Mitchell Republic", url: "https://www.mitchellrepublic.com/news/murder-charge-in-04-disappearance", date: 2008-11-21, archive: "https://web.archive.org/web/20261028023827/https://www.mitchellrepublic.com/news/murder-charge-in-04-disappearance" }
+  - { id: S9, title: "Tory Teigen admits to murder, gets life without possibility of parole", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/top-stories/article_0cba59df-422d-5cd5-9af0-2e1ce49fd089.html", date: 2009-03-31, archive: "https://web.archive.org/web/20100831103630/http://www.rapidcityjournal.com:80/news/local/top-stories/article_0cba59df-422d-5cd5-9af0-2e1ce49fd089.html" }
+  - { id: S10, title: "Rapid City man pleads guilty to 2004 murder (AP)", publisher: "Black Hills Pioneer", url: "https://www.bhpioneer.com/local_news/rapid-city-man-pleads-guilty-to-2004-murder/article_39e4e01c-8a7b-56e5-8ee4-a3e27e886403.html", date: 2009-04-02, archive: "https://web.archive.org/web/20261028023934/https://www.bhpioneer.com/local_news/rapid-city-man-pleads-guilty-to-2004-murder/article_39e4e01c-8a7b-56e5-8ee4-a3e27e886403.html" }
   - { id: S11, title: "Man's body found in Montana (AP)", publisher: "The Dickinson Press", url: "https://www.thedickinsonpress.com/news/mans-body-found-in-montana", date: 2009-05-06 }
   - { id: S12, title: "Klug case resolution a relief to many", publisher: "Black Hills Pioneer", url: "https://www.bhpioneer.com/news/klug-case-resolution-a-relief-to-many/article_56540489-7303-5ae0-b46e-43891d47e41a.html", date: 2009-05-07 }
-  - { id: S13, title: "Montana remains identified as Troy Klug's", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/top-stories/article_e25bc4fb-e9ad-5d07-b753-39184f99c4cc.html", date: 2009-05-12 }
+  - { id: S13, title: "Montana remains identified as Troy Klug's", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/top-stories/article_e25bc4fb-e9ad-5d07-b753-39184f99c4cc.html", date: 2009-05-12, archive: "https://web.archive.org/web/20091107171052/http://www.rapidcityjournal.com:80/news/local/top-stories/article_e25bc4fb-e9ad-5d07-b753-39184f99c4cc.html" }
   - { id: S14, title: "Troy Jason Klug obituary", publisher: "Osheim & Schmidt Funeral Home", url: "https://www.osheimschmidt.com/obituaries/troy-klug", date: 2009-06-05 }
+  - { id: S15, title: "Belle Fourche woman's request for new trial denied in meth murder case", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/belle-fourche-womans-request-for-new-trial-denied-in-meth-murder-case/article_86952a06-0640-11df-9cc8-001cc4c03286.html", date: 2010-01-20 }
 timeline:
   - { date: 1978-05-27, text: "Troy Jason Klug is born in Rapid City. [S14]", section: "tuxedos" }
   - { date: 2004-07-12, text: "Klug goes to Cynthia Kindall's house in Rapid City. By the court's account, Teigen binds him and he is put in the trunk of Kindall's car. [S2]", section: "the-front" }
@@ -101,12 +105,13 @@ timeline:
   - { date: 2004-07-23, text: "Teigen is charged with kidnapping Klug. [S1]", section: "pound-the-pavement" }
   - { date: 2004-09-30, text: "Cook meets with investigators and turns over notes from Teigen. A plea agreement follows. [S1]", section: "kites" }
   - { date: 2005-06-20, text: "Teigen's kidnapping trial begins. He is convicted and sentenced to 100 years. [S1]", section: "the-verdict" }
-  - { date: 2007-01, text: "Kindall is sentenced to 20 years in prison, the Rapid City Journal reports. [S6]", section: "sanctuary" }
+  - { date: 2007-01, text: "Kindall, who pleaded guilty but mentally ill to kidnapping, is sentenced to 20 years in prison. [S6]", section: "sanctuary" }
   - { date: 2008-01-16, text: "The South Dakota Supreme Court upholds Teigen's kidnapping conviction. [S1]", section: "sanctuary" }
   - { date: 2008-09-09, text: "Corean is sentenced to a mandatory life term. [S7]", section: "sanctuary" }
   - { date: 2008-11-18, text: "Teigen is indicted for first-degree murder. [S2]", section: "the-plea" }
-  - { date: 2009-03-31, text: "The Rapid City Journal reports that Teigen has pleaded guilty to murder and been sentenced to life without parole. [S9]", section: "the-plea" }
+  - { date: 2009-04-01, text: "Teigen pleads guilty to first-degree murder and is sentenced to life without parole. [S9, S13]", section: "the-plea" }
   - { date: 2009-05, text: "Teigen leads investigators to a spot about 100 feet from the grave in the Sheep Mountain Range of Carter County, Montana. [S11]", section: "sheep-mountain" }
+  - { date: 2010-01-20, text: "The Rapid City Journal reports that the circuit court has denied Corean's request for a new trial. [S15]", section: "a-raw-deal" }
   - { date: 2010-11-03, text: "The South Dakota Supreme Court upholds Corean's convictions and life sentence. [S2]", section: "a-raw-deal" }
 updates:
   - { date: 2026-10-28, text: "Story published." }
@@ -136,7 +141,7 @@ He was his mother's only son, the Rapid City Journal reported. [S5] In September
 
 That Monday, Klug and Beebe's brother, Robert Highley, went to Cynthia Kindall's house in Rapid City to get methamphetamine, the South Dakota Supreme Court wrote. [S2]
 
-Beebe testified that Klug wanted the drugs "as a front," so he could pay off a drug debt to Kindall. A front, she explained, is drugs handed over without money, paid back later. [S2] Kindall later said he had owed her money for drugs for two or three years. [S2] The 2008 opinion describes an alleged debt of $300. [S1]
+Beebe testified that Klug wanted the drugs "as a front," so he could pay off a drug debt to Kindall. A front, she explained, is drugs handed over without money, paid back later. [S2] Kindall admitted selling him drugs. The 2010 opinion says he had owed her money for drugs for about two to three years. [S2] The 2008 opinion describes an alleged debt of $300. [S1]
 
 Tory Teigen had been staying at Kindall's house. [S2] The courts spell his last name Tiegen. Newspapers spell it Teigen. [S1, S2, S8]
 
@@ -150,9 +155,11 @@ Around 9 that night, Kindall and Teigen showed up at the house Beebe shared with
 
 They came upstairs to her bedroom. She asked if they knew where Klug was. Kindall said he had come to her house and she had told him to leave. [S1]
 
-Beebe testified that the two of them went through his things. Teigen picked up a bottle of his cologne. [S1]
+Beebe testified that the two of them went through his things. One of them picked up a bottle of his cologne. [S1]
 
 > "Well, if it's Troy's, it's ours now." [S1]
+
+The 2008 opinion's account of the facts gives those words to Teigen. Its account of Beebe's trial testimony gives them to Kindall. [S1]
 
 She pressed them. Kindall said Klug was no longer a problem. "Isn't that right, Tory," she said, and Teigen said yes. Beebe said they were smirking. [S1]
 
@@ -258,7 +265,7 @@ In the jail, Teigen was put in the cell next to Cook's. Inmates passed notes bet
 
 Teigen called Cook "Chopper." Cook called Teigen "Mad Hatter." [S1]
 
-Teigen and Cook were among those arraigned together on August 16. Cook testified that he saw one of Klug's family members crying in court, and felt the weight of what had happened. He suggested to his lawyer that he cooperate. [S1]
+Cook, Teigen and Kindall were arraigned together on August 16. Cook testified that he saw one of Klug's family members crying in court, and felt the weight of what had happened. He suggested to his lawyer that he cooperate. [S1]
 
 On September 30, Cook and his lawyer met with investigators. He told them about the man in the trunk, and he turned over some of the notes. A plea agreement followed. [S1] One note read:
 
@@ -286,7 +293,7 @@ The judge sentenced Teigen to 100 years in prison. [S1]
 
 ## Sanctuary
 
-Kindall was later found competent. [S1] In January 2007 she was sentenced to 20 years in prison for her role in the kidnapping and death of Troy Klug, the Journal reported. [S6]
+Kindall was later found competent. [S1] She pleaded guilty but mentally ill to kidnapping. In January 2007 she was sentenced to 20 years in prison for her role in the kidnapping and death of Troy Klug, the Journal reported. [S6]
 
 On January 16, 2008, the South Dakota Supreme Court upheld Teigen's conviction. It found that one of Kindall's statements should not have been admitted, but that the error didn't change the outcome, given what it called "overwhelming evidence." [S1]
 
@@ -294,7 +301,7 @@ That year a jury convicted Corean of accessory to murder and of aiding and abett
 
 The trial court found that Corean had provided her home "as a sanctuary" while Klug was held there. [S2]
 
-![Four people walking out of a doorway in a brick building, among them a man in a sheriff's uniform and cap](./troy-klug-2004-corean.jpg "Jamie Corean leaves the Butte County Courthouse in March 2008 after pleading not guilty to kidnapping charges. Rapid City Journal photo by Heidi Bell Gease.")
+![Four people walking out of a doorway in a brick building, among them a man in a sheriff's uniform and cap](./troy-klug-2004-corean.jpg "Jamie Corean, in a Rapid City Journal photo by Heidi Bell Gease.")
 
 On September 9, 2008, she was sentenced to a mandatory term of life in prison. She maintained her innocence, the Journal reported. [S7] "There is no discretion," the judge said. [S2]
 
@@ -302,25 +309,11 @@ On September 9, 2008, she was sentenced to a mandatory term of life in prison. S
 
 On November 18, 2008, Teigen was indicted for Klug's murder. [S2] He pleaded not guilty to alternate counts of first-degree murder, felony murder and two counts of second-degree murder, the Associated Press reported. He could have faced the death penalty. [S8]
 
-The state later offered him a plea agreement that took the death penalty off the table. For a time he turned it down. [S2]
+Teigen later testified that by the time of Corean's trial in 2008, the state had already offered him a plea agreement that took the death penalty off the table. He said he chose not to accept it then. [S2]
 
-That spring, in a Belle Fourche courtroom, Teigen pleaded guilty to first-degree murder. [S2, S9] He cried as he acknowledged beating Klug over an unpaid drug debt and locking him in a large toolbox in 100-degree heat, which killed him, the AP reported. [S10, S11] He was sentenced to life without the possibility of parole, according to the Journal. [S9]
+On April 1, 2009, in a Belle Fourche courtroom, Teigen pleaded guilty to first-degree murder. [S2, S10, S13] He cried as he acknowledged beating Klug over an unpaid drug debt and locking him in a large toolbox in 100-degree heat, which killed him, the AP reported. [S10, S11] He was sentenced to life without the possibility of parole, according to the Journal. [S9]
 
-![A man in a navy T-shirt over a white long-sleeved shirt, in handcuffs and a belly chain, walking down a ramp behind a sheriff's officer in a black vest](./troy-klug-2004-teigen.jpg "Tory Teigen, right, pleaded guilty to the murder of Troy Klug and led authorities to his remains. Rapid City Journal file photo by Milo Dailey.")
-
-## A raw deal
-
-After his plea, Teigen testified at a hearing on Corean's request for a new trial. He said Corean "never indicated" that she knew about the kidnapping. He said Klug was dead by 3 p.m. that Tuesday. [S2]
-
-Asked whether he was rewarding her for her loyalty, he said no. He said he felt she "really got a raw deal." [S2]
-
-The Supreme Court wrote that he had essentially conceded bias. His plea agreement included an offer to Corean, and she was the only one who had not testified against him, the court said. [S2]
-
-Kindall testified that during the kidnapping, Teigen had been using methamphetamine, had been awake for about a week, and wasn't thinking clearly. [S2]
-
-The circuit court found Teigen's testimony biased and not credible. An entomologist, Dr. Neal Haskell, had found that Klug died on Wednesday, July 14, at the earliest. [S2] Corean argued that the entomologist had worked from a wrong date the prosecution gave him. [S2]
-
-His family's obituary gives the date of his death as July 15, 2004. [S14]
+![A man in a navy T-shirt over a white long-sleeved shirt, in handcuffs and a belly chain, walking down a ramp behind a sheriff's officer in a black vest](./troy-klug-2004-teigen.jpg "Tory Teigen, right, pleaded guilty to the murder of Troy Klug and helped investigators find his grave. Rapid City Journal file photo by Milo Dailey.")
 
 ## Sheep Mountain
 
@@ -337,3 +330,19 @@ On May 12, the Journal reported that the remains had been identified as his. [S1
 Visitation was set for Friday, June 5, 2009, at Osheim & Schmidt Funeral Home. The funeral was the next afternoon. Burial was to follow at Mt. Calvary Cemetery in Rapid City. [S14]
 
 The first survivor the obituary named was his mother, Anita (Joyce) Hinsch-Klug, of Florence. [S14]
+
+## A raw deal
+
+After his plea, Teigen testified at a hearing on Corean's request for a new trial. The 2010 opinion doesn't give the date of the hearing. [S2] He said Corean "never indicated" that she knew about the kidnapping. He said Klug was dead by 3 p.m. that Tuesday. [S2]
+
+Asked whether he was rewarding her for her loyalty, he said, "I wouldn't put it that way." He said he felt she "really got a raw deal." [S2]
+
+The Supreme Court wrote that he had essentially conceded bias. His plea agreement included an offer to Corean, and she was the only one who had not testified against him, the court said. [S2]
+
+Kindall testified that during the kidnapping, Teigen had been using methamphetamine, had been awake for about a week, and wasn't thinking clearly. [S2]
+
+The circuit court found Teigen's testimony biased and not credible. An entomologist, Dr. Neal Haskell, had found that Klug died on Wednesday, July 14, at the earliest. [S2] Corean argued that the entomologist had worked from a wrong date the prosecution gave him. [S2]
+
+His family's obituary gives the date of his death as July 15, 2004. [S14]
+
+In January 2010, the Journal reported that the circuit court had denied her request. [S15] On November 3, 2010, the South Dakota Supreme Court upheld her convictions and her life sentence. [S2]
