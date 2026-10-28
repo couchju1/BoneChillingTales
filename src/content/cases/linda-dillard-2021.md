@@ -32,6 +32,9 @@
 # Justin supplied two more photos on October 28, 2026: the Aware Foundation flyer, which repeats the
 # July 7 release (S2) and its first outfit, and the Table Rock Wildlife Management Area sign. Origin
 # of the sign photo not recorded. Both added as supplied, the sign converted from WebP to JPEG.
+# Rewritten October 27, 2026 at Justin's request, to read more like the Hummel and Buck stories.
+# Same facts, sources and tags. The opening now starts on the March 2022 search (from "Table Rock"),
+# "Linda" is renamed "Fairbury", and two narrator asides were cut. Status checked the same day: still missing.
 draft: false
 title: "Not in This Area: The Disappearance of Linda Dillard"
 seoTitle: "Linda Dillard: What Happened in Table Rock, NE"
@@ -90,39 +93,50 @@ timeline:
   - { date: 2026-09-01, text: "NSP renews its call for information. The investigation remains open. [S12]", section: "five-years" }
 updates:
   - { date: 2026-10-25, text: "Story published." }
+  - { date: 2026-10-27, text: "Story rewritten. No facts changed." }
 ---
 
-In the early morning hours of Wednesday, June 16, 2021, Linda Dillard was seen in the rural Table Rock area of Pawnee County, in southeast Nebraska. She was 55. [S2]
+On Thursday, March 24, 2022, nearly 150 people began searching near the Table Rock State Wildlife Management Area in southeast Nebraska. [S7, S8] Some rode horses. There were K-9 teams and drones. [S8, S10]
+
+They were looking for Linda Dillard. [S8] In the early morning hours of Wednesday, June 16, 2021, she had been seen in the rural Table Rock area of Pawnee County. She was 55. [S2]
 
 It is the last time anyone is known to have seen her. [S2, S12]
 
-The Nebraska State Patrol believes she may have been the victim of a crime. [S11] In 2022, KLKN reported that authorities also believed she could have fallen in a wildlife area near Table Rock. She had hip problems, KLKN said. [S10] More than five years later, the investigation is still open, and searches have not found her. [S12]
+The Nebraska State Patrol believes she may have been the victim of a crime. [S11] KLKN reported that authorities also believed she could have fallen in the wildlife area. She had hip problems, KLKN said. [S10] More than five years later, the investigation is still open, and searches have not found her. [S12]
 
-## Linda
+## Fairbury
 
-Linda Marie Dillard was from Fairbury, in Jefferson County, the patrol says. [S1, S2, S12] KOLN reported in 2021 that she lived near Fairbury. [S5] The patrol describes her as 5 feet tall, with blue eyes. [S1, S2] The patrol's 2021 description put her at 130 pounds. The state's missing persons record says 125. [S1, S2]
+Linda Marie Dillard was from Fairbury, in Jefferson County, the patrol says. [S1, S2, S12] KOLN reported in 2021 that she lived near Fairbury. [S5]
 
-Her hair was harder to pin down. The 2021 release called it brown, possibly dyed blonde. [S2] The state record says it was naturally blonde, and that she might dye it, wear a wig or wear hair extensions. [S1]
+She was 5 feet tall, with blue eyes. [S1, S2] The patrol's 2021 description put her at 130 pounds. The state's missing persons record says 125. [S1, S2]
 
-She usually wore a lot of jewelry. [S1] The words "Heaven's Door" were tattooed under her chin. She had two dark wings on her chest and two Derringer pistols on her abdomen. [S1] A medical condition made it hard for her to walk long distances, and sometimes she used a cane. [S2]
+The 2021 release called her hair brown, possibly dyed blonde. [S2] The state record says it was naturally blonde, and that she might dye it, wear a wig or wear hair extensions. [S1]
+
+She usually wore a lot of jewelry. [S1] The words "Heaven's Door" were tattooed under her chin. She had two dark wings on her chest and two Derringer pistols on her abdomen. [S1]
+
+A medical condition made it hard for her to walk long distances. Sometimes she used a cane. [S2]
+
+The public record says little more about her life.
 
 Her daughter is Winterstar Schaber. [S8] "I want everyone to remember that Linda has a family, she's a mother, she's a grandmother," Lt. Eric Jones of the patrol said in 2022, Nebraska Public Media reported. [S9]
-
-The sources for this story say little more about her life than that.
 
 ![Linda Dillard, smiling, with long dark curly hair, pink sunglasses pushed up on her head and a pendant necklace](./linda-dillard-2021-sunglasses.jpg "Linda Dillard in a photo released by the Nebraska State Patrol.")
 
 ## The farmstead
 
-According to court records, as KOLN 10/11 reported them in October 2021, the patrol believes Linda left in mid-June to join friends at a farmstead in Pawnee County. According to those records, the group drank and smoked meth there. [S5]
+According to court records, as KOLN 10/11 reported them in October 2021, the patrol believes Linda left in mid-June to join friends at a farmstead in Pawnee County. The group drank and smoked meth there, according to those records. [S5]
 
-People who were at the farm told investigators that Linda and a man at the property had an argument, according to the patrol. [S5] Then, they said, she left. She has not been seen since. [S5]
+People who were at the farm told investigators that Linda and a man at the property had an argument, according to the patrol. [S5] Then, they said, she left. [S5]
+
+She has not been seen since. [S5]
 
 ## Four days
 
 Linda was reported missing four days after she was last seen, KLZA reported in 2026. [S13]
 
-On July 7, the patrol asked the public for help. Its release said she was "believed to be missing under suspicious circumstances." [S2] It said she was last seen in a white tank top, jean shorts, a white and purple wig, and brown, lace-up sandal boots. [S2] Nebraska Crime Stoppers offered a reward of up to $1,000. [S2]
+On July 7, the patrol asked the public for help. She was "believed to be missing under suspicious circumstances," its release said. [S2]
+
+She had last been seen in a white tank top, jean shorts, a white and purple wig, and brown, lace-up sandal boots, the release said. [S2] Nebraska Crime Stoppers offered a reward of up to $1,000. [S2]
 
 ![A missing person flyer from the Aware Foundation headed Linda Dillard, with two photos of her, her description, the patrol's July 2021 description of what she was wearing, and the Nebraska Crime Stoppers number](./linda-dillard-2021-poster.jpg "A flyer from the Aware Foundation that repeats the patrol's July 7 release. The patrol later revised the outfit it describes.")
 
@@ -152,23 +166,23 @@ Search warrants were filed in Lancaster and Pawnee counties, according to KLZA. 
 
 On March 18, 2022, the patrol renewed its request for information. Multiple searches had been made where she was last seen, it said. Investigators believed she may have been the victim of a crime "which led to her disappearance." [S6]
 
-The patrol had held off on a search this large because the vegetation was so thick, KLKN reported. [S10] When the next search began, Jones told KOLN about the earlier attempts near Table Rock. [S8]
+The patrol had held off on a search this large because the vegetation was so thick, KLKN reported. [S10] Jones was the lead investigator. When the big search began, he told KOLN about the earlier attempts near Table Rock. [S8, S9]
 
 > "We were out here in July and several other occasions throughout the fall months, but as you can imagine, the grass was high, the corn was tall and it just wasn't conducive to doing a really thorough search of the area." [S8]
 
 ## Table Rock
 
-The search began on Thursday, March 24, near the Table Rock State Wildlife Management Area. [S7, S8] The patrol said the area had been identified as part of the investigation. [S7]
+The patrol said the wildlife area had been identified as part of the investigation. [S7] Anthropology students from the University of Nebraska-Lincoln came to help. [S10] Teams came from several states, including NecroSearch International and units from three Kansas counties. [S7]
 
-![A brown wooden sign with yellow letters reading Table Rock Wildlife Management Area, hanging from a wooden post in front of a field of dry grass](./linda-dillard-2021-wildlife-area.jpg "The entrance sign at the Table Rock Wildlife Management Area.")
-
-Nearly 150 people took part. Some rode horses. There were K-9 teams and drones. [S8, S10] Anthropology students from the University of Nebraska-Lincoln came to help. [S10] Teams came from several states, including NecroSearch International and units from three Kansas counties. [S7]
-
-Jones was the lead investigator. He said new information had led the patrol to believe she may have been the victim of a crime. [S9] That information, and the conditions on the ground, made it the right time and place for a search, he said. He would not discuss leads. [S9]
+New information had led the patrol to believe she may have been the victim of a crime, Jones said. [S9] That information, and the conditions on the ground, made it the right time and place for a search, he said. He would not discuss leads. [S9]
 
 KLKN reported a second possibility. Authorities believed Linda, who had hip problems and hip dysplasia, could have fallen somewhere in the area. [S10] The wildlife area has creeks and heavy woods. She may have fallen into one and been unable to get back up, KLKN reported. [S10]
 
-The size of the search was given three ways that morning. KLKN said about 600 acres. [S10] KOLN said 600 to 700. [S8] Jones said it would include the wildlife area and "200-300 acres of private ground surrounding that area." [S9] KLKN also reported that Linda's residence was not far from the wildlife area, and that this was why the patrol searched there. [S10]
+![A brown wooden sign with yellow letters reading Table Rock Wildlife Management Area, hanging from a wooden post in front of a field of dry grass](./linda-dillard-2021-wildlife-area.jpg "The entrance sign at the Table Rock Wildlife Management Area.")
+
+The size of the search was given three ways that morning. KLKN said about 600 acres. [S10] KOLN said 600 to 700. [S8] Jones said it would include the wildlife area and "200-300 acres of private ground surrounding that area." [S9]
+
+KLKN also reported that Linda's residence was not far from the wildlife area, and that this was why the patrol searched there. [S10]
 
 Winterstar told KOLN she was thankful. [S8]
 
@@ -176,9 +190,13 @@ Winterstar told KOLN she was thankful. [S8]
 
 ## Three days
 
-The search ran three days. [S11] Teams covered more than 1,100 acres in and around the wildlife area. They searched 24 miles of roadside ditches, 1.5 miles of river, two local farms and a lake area. [S11] There were 44 law enforcement officers, 65 volunteers and support staff, 15 mounted patrol teams and eight dog teams "trained for human remains detection," the patrol said. [S11]
+The search ran three days. [S11] Teams covered more than 1,100 acres in and around the wildlife area. They searched 24 miles of roadside ditches, 1.5 miles of river, two local farms and a lake area. [S11]
 
-They didn't find her. [S11] On March 27, the patrol released a statement from Jones. [S11]
+There were 44 law enforcement officers, 65 volunteers and support staff, 15 mounted patrol teams and eight dog teams "trained for human remains detection," the patrol said. [S11]
+
+They didn't find her. [S11]
+
+On March 27, the patrol released a statement from Jones. [S11]
 
 > "What our investigators learned this week directs the case into the next phase. We are now confident that Linda is not in this large area. Our investigators continue to believe Linda may have been the victim of a crime. We urge anyone with information or anyone who was involved in her disappearance to come forward." [S11]
 
@@ -190,7 +208,7 @@ On September 1, 2026, the patrol asked again. "It has now been over five years s
 
 The release gave her age as 58. [S12] The state's missing persons record gives it as 55 when she went missing, and 59 now. [S1]
 
-In 2021, KOLN reported that no arrests had been made. [S5] The 2026 release doesn't mention an arrest. [S12] What the record doesn't show is where Linda went after she was last seen. [S2, S12]
+In 2021, KOLN reported that no arrests had been made. [S5] The 2026 release doesn't mention an arrest. [S12] The record doesn't show where Linda went after she was last seen. [S2, S12]
 
 In 2022, as the search began, Winterstar told KOLN what her family wanted. [S8]
 
