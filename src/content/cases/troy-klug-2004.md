@@ -15,10 +15,12 @@
 # - Tell Cook pleaded guilty to misprision of a felony (S1), a misdemeanor (S2), and got probation (S4).
 #   Tiegen later testified that Cook drove Klug to a gravel road and struck him. Cook denied it (S2, note 3).
 #   Cook was never charged with that, so the claim is left out on purpose.
-# - James Kusick, Eric Haar and Abby DeJong appear only as witnesses, by what they testified. S2 says Haar
-#   and DeJong had plea agreements, were not charged and were given immunity. The archived S7 says Kusick
-#   pleaded guilty to accessory to murder. The story keeps him as a witness only until Justin decides whether
-#   to add that. Never imply a charge or a clearing beyond what a source says.
+# - Eric Haar and Abby DeJong appear only as witnesses, by what they testified. S2 says they had plea
+#   agreements, were not charged and were given immunity. Never imply a charge.
+# - James Kusick: the archived S7 (September 2008) says he pleaded guilty to accessory to murder and perjury
+#   and was serving 20 years. Neither court opinion mentions his plea, so this rests on S7 alone and is
+#   attributed to the Journal. Added October 28, 2026, on Justin's decision. His other acts stay as
+#   testimony.
 # - Duanna Beebe, Robert Highley, Jamie Keefe and the North Dakota homeowner were never shown to be charged.
 #   The homeowner (named in S1) is left unnamed. Keep each person's part to what the record says.
 # - "Snitch" and "rat" are Tiegen's and Kindall's words as witnesses gave them (S1, S2). No source shows that
@@ -306,6 +308,8 @@ The trial court found that Corean had provided her home "as a sanctuary" while K
 ![Four people walking out of a doorway in a brick building, among them a man in a sheriff's uniform and cap](./troy-klug-2004-corean.jpg "Jamie Corean, in a Rapid City Journal photo by Heidi Bell Gease. Digitally enhanced.")
 
 On September 9, 2008, she was sentenced to a mandatory term of life in prison. She maintained her innocence, the Journal reported. [S7] "There is no discretion," the judge said. [S2]
+
+By then, the Journal reported, Kusick had pleaded guilty to accessory to murder and perjury, and was serving 20 years in prison. [S7]
 
 ## The plea
 
