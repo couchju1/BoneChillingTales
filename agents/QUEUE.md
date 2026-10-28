@@ -6,6 +6,9 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 
 | Date | Person | Town, state | Status | Why now | Notes |
 |---|---|---|---|---|---|
+| 2026-10-27 | Terry Brisk | Belle Prairie Township, near Little Falls, MN | unsolved | 10th anniversary Nov. 7, 2026. Sheriff renewed its appeal on the 9th anniversary (Nov. 7, 2025), $30,000 reward | Morrison County Sheriff + BCA. Adult victim, no suspect named. His son, then 15, found him (keep to the record). Reward amount varies by year ($20K in 2016, $30K now). Risk Elevated. |
+| 2026-10-27 | Mary Kay Heese | Wahoo, NE | solved | Evergreen. About one year since Joseph Ambroz's release (Nov. 15, 2025) after a no-contest plea to conspiracy | Saunders County Sheriff + County Attorney, NSP cold case unit earlier. Victim was 17. Ambroz maintains innocence. Plea named Wayne Greaser (died 1977, never charged) as co-conspirator. Family objected to the plea. Spelled Heese and Hesse. Risk High. |
+| 2026-10-27 | "Baby Rebecca" (newborn, unnamed at birth) | Valley City, ND | in-court | Dispositional conference Dec. 3, 2026. No trial date | Valley City PD + ND BCI, Barnes County State's Attorney. Nancy Trottier charged with murder Apr. 13, 2026, pleaded not guilty. Infant victim (contentNote). Mother accused. Custody reports conflict. No agency or court page opened yet. Risk High. |
 
 ## Picked
 
