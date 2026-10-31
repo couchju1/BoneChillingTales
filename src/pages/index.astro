@@ -8,8 +8,9 @@ import CaseRow from "../components/CaseRow.astro";
 import VideoFacade from "../components/VideoFacade.astro";
 import NewsletterForm from "../components/NewsletterForm.astro";
 import CaseClosedIntro from "../components/CaseClosedIntro.astro";
+import CaseMap from "../components/CaseMap.astro";
 import { site } from "../lib/config";
-import { getPublishedCases, latestUpdates, toRowData, STATE_NAMES } from "../lib/content";
+import { getPublishedCases, latestUpdates, toRowData } from "../lib/content";
 import { sortRows } from "../lib/case-row";
 import { formatDate, isoDate } from "../lib/dates";
 import { stripCitations } from "../lib/sources";
@@ -23,12 +24,6 @@ const stillOpen = sortRows(
   "latest",
 ).slice(0, 6);
 
-// Launch states always show, Upper Midwest first. Other states show once they have a case.
-const counts = cases.reduce<Record<string, number>>((acc, c) => ({ ...acc, [c.data.state]: (acc[c.data.state] ?? 0) + 1 }), {});
-const others = Object.keys(counts)
-  .filter((s) => !site.launchStates.includes(s))
-  .sort((a, b) => STATE_NAMES[a]!.localeCompare(STATE_NAMES[b]!));
-const states = [...site.launchStates, ...others].map((code) => ({ code, name: STATE_NAMES[code]!, count: counts[code] ?? 0 }));
 
 const updates = await latestUpdates(cases, 5);
 const video = cases.find((c) => c.data.youtubeId);
@@ -99,16 +94,10 @@ const video = cases.find((c) => c.data.youtubeId);
         <section class="section" aria-labelledby="by-state">
           <h2 id="by-state" class="section-heading ui">Cases by state</h2>
           <p class="section-intro">
-            We started close to home in the Upper Midwest. More states are added as stories are finished.
+            We started close to home in the Upper Midwest and add states as stories are finished. Pick a state to see
+            its cases.
           </p>
-          <ul class="states">
-            {states.map((s) => (
-              <li>
-                {s.count > 0 ? <a href={`/states/${s.code.toLowerCase()}/`}>{s.name}</a> : <span>{s.name}</span>}
-                <span class="ui count">{s.count > 0 ? (s.count === 1 ? "1 case" : `${s.count} cases`) : "Coming soon"}</span>
-              </li>
-            ))}
-          </ul>
+          <CaseMap cases={cases} />
         </section>
       )
     }
@@ -284,32 +273,6 @@ const video = cases.find((c) => c.data.youtubeId);
     display: inline-flex;
     align-items: center;
     min-height: 44px;
-  }
-
-  .states {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-    gap: 0 var(--space-l);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .states li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-s);
-    min-height: 44px;
-    border-bottom: 1px solid var(--color-line);
-  }
-
-  .states span:not(.count) {
-    color: var(--color-ash);
-  }
-
-  .count {
-    color: var(--color-ash);
   }
 
   .feed {

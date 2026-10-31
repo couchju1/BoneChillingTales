@@ -51,8 +51,9 @@ short post: copy `src/content/updates/_example.md`, set `case:` to the story's f
   Visitors in the EU, UK and Switzerland start with analytics cookies off (Google Consent Mode v2),
   and anyone with Global Privacy Control on, or who taps "Turn off analytics" in the footer, is
   never tracked. gtag.js loads after the page finishes, so it never slows the story.
-- Events: newsletter_submit, newsletter_success, suggest_submit, video_play, outbound_tip_call
-  and read_75. In GA4, mark newsletter_success as a key event. Add `?ga_debug=1` to any page
+- Events: newsletter_submit, newsletter_success, suggest_submit, video_play, outbound_tip_call,
+  case_map_select (a state picked on the home page map) and read_75. In GA4, mark
+  newsletter_success as a key event. Add `?ga_debug=1` to any page
   URL to watch events arrive in DebugView.
 - Ads: set `ads.enabled` to true once a network approves you. Two slots sit on each story,
   after the story (after the summary on stories in the older layout) and before the sources, with
