@@ -103,13 +103,18 @@ if ($handle !== false && flock($handle, LOCK_EX)) {
     fclose($handle);
 }
 
-$subject = "Newsletter sign-up: {$firstName} {$lastName} ({$city}, {$state})";
-$body = "New newsletter sign-up\n\n"
+// "Follow this case" sign-ups ask for news on one story only.
+$follow = $story !== '' && ($_POST['intent'] ?? '') === 'follow';
+
+$subject = $follow
+    ? "Case follow ({$story}): {$firstName} {$lastName} ({$city}, {$state})"
+    : "Newsletter sign-up: {$firstName} {$lastName} ({$city}, {$state})";
+$body = ($follow ? "New follower for one case. Email them only when this case has news.\n\n" : "New newsletter sign-up\n\n")
     . "Name:  {$firstName} {$lastName}\n"
     . "Email: {$email}\n"
     . "City:  {$city}\n"
     . "State: {$state}\n\n"
-    . ($story ? "Signed up from the story: https://www.{$domain}/cases/{$story}/\n" : '')
+    . ($story ? ($follow ? "Following: " : "Signed up from the story: ") . "https://www.{$domain}/cases/{$story}/\n" : '')
     . "\n-- Sent from the newsletter form, " . gmdate('Y-m-d H:i') . " UTC\n";
 
 $headers = [

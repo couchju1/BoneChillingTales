@@ -1,4 +1,10 @@
 ---
+interface Props {
+  /** On followable stories, the second slot follows the case instead of the weekly email. */
+  follow?: boolean;
+}
+
+const { follow = false } = Astro.props;
 const path = Astro.url.pathname;
 ---
 
@@ -10,7 +16,18 @@ const path = Astro.url.pathname;
     </svg>
     Search
   </a>
-  <a class="subscribe" href="/newsletter/" aria-current={path.startsWith("/newsletter/") ? "page" : undefined}>
+  {
+    follow && (
+      <button type="button" class="subscribe follow-btn" data-follow-open="mobile-bar" hidden>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+          <path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+          <path d="M10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span data-follow-label>Follow this case</span>
+      </button>
+    )
+  }
+  <a class="subscribe" href="/newsletter/" data-follow-swap={follow ? "" : undefined} aria-current={path.startsWith("/newsletter/") ? "page" : undefined}>
     <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
       <rect x="3" y="5.5" width="18" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"></rect>
       <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
@@ -67,6 +84,32 @@ const path = Astro.url.pathname;
 
   .subscribe {
     background: var(--color-blood);
+  }
+
+  .mobile-bar .follow-btn {
+    gap: var(--space-2xs);
+    min-height: 56px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: var(--color-blood);
+    color: var(--color-bone);
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  .mobile-bar .follow-btn svg {
+    color: currentColor;
+  }
+
+  .mobile-bar .follow-btn[data-following] {
+    background: var(--color-surface);
+    color: var(--color-ash);
+  }
+
+  .mobile-bar .follow-btn[hidden],
+  .mobile-bar a[hidden] {
+    display: none;
   }
 
   .subscribe:active {

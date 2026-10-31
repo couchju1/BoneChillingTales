@@ -14,6 +14,7 @@ import NewsletterForm from "../components/NewsletterForm.astro";
 import ShareButton from "../components/ShareButton.astro";
 import StatusChip from "../components/StatusChip.astro";
 import AdSlot from "../components/AdSlot.astro";
+import FollowCase from "../components/FollowCase.astro";
 import { site } from "../lib/config";
 import { STATE_NAMES, formatPhone, type Case } from "../lib/content";
 import { formatDate, isoDate } from "../lib/dates";
@@ -29,6 +30,8 @@ const { data } = entry;
 const stateName = STATE_NAMES[data.state]!;
 const url = new URL(`/cases/${entry.id}/`, site.domain).href;
 const isOpen = data.status === "unsolved" || data.status === "missing" || data.status === "unresolved";
+// Cases that can still change get a "Follow this case" button.
+const followable = isOpen || data.status === "in-court";
 // A missing person's page has a job before it tells a story: the poster goes above it.
 const isMissing = data.status === "missing" && data.lastSeenDate;
 const dateline = data.incidentDate.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
@@ -80,6 +83,7 @@ const video =
   imageAlt={data.title}
   jsonLd={video ? [article, video] : [article]}
   noindex={data.draft}
+  follow={followable}
 >
   <article class="story wrap" data-pagefind-body>
     {data.draft && <p class="draft-banner ui" data-pagefind-ignore>Draft preview. This story isn't published.</p>}
@@ -100,6 +104,17 @@ const video =
         </div>
         <h1>{data.title}</h1>
         <p class="dateline ui" data-pagefind-ignore>{data.town}, {stateName} · {dateline}</p>
+        {
+          followable && (
+            <button type="button" class="follow-top" data-follow-open="header" hidden data-pagefind-ignore>
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+              <path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              <path d="M10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+              <span data-follow-label>Follow this case</span>
+            </button>
+          )
+        }
       </header>
 
       {
@@ -172,7 +187,7 @@ const video =
           <Fragment set:html={body} />
         )
       }
-      <p class="end-mark" aria-hidden="true">◆</p>
+      <p class="end-mark" aria-hidden="true" data-story-end>◆</p>
     </div>
 
     <div class="story-end" data-pagefind-ignore>
@@ -185,6 +200,22 @@ const video =
           <aside class="reader-question" aria-labelledby="reader-question-heading">
             <h2 id="reader-question-heading" class="ui">Your take</h2>
             <p>{data.readerQuestion}</p>
+          </aside>
+        )
+      }
+
+      {
+        followable && (
+          <aside class="follow-card" aria-labelledby="follow-card-heading" data-follow-card hidden>
+            <h2 id="follow-card-heading">This case isn't over</h2>
+            <p>Get an email when something changes for {data.person}. Nothing else.</p>
+            <button type="button" data-follow-open="story-end">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+              <path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              <path d="M10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+              <span data-follow-label>Follow this case</span>
+            </button>
           </aside>
         )
       }
@@ -208,6 +239,7 @@ const video =
         body="We'll email you when something changes. Nothing else from this form."
         button="Get updates"
         caseId={entry.id}
+        intent={followable ? "follow" : undefined}
       />
       {
         related && (
@@ -225,6 +257,7 @@ const video =
       }
     </div>
   </article>
+  {followable && <FollowCase entry={entry} />}
 </Base>
 
 <style>
@@ -381,6 +414,28 @@ const video =
 
   .story-body :global(.section-sources a) {
     color: var(--color-ash);
+  }
+
+  .follow-top {
+    margin-top: var(--space-s);
+  }
+
+  .follow-card {
+    margin-block: var(--space-l);
+    padding: var(--space-m) var(--space-l);
+    border: 1px solid var(--color-line);
+    border-left: 3px solid var(--color-lamp);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+  }
+
+  .follow-card h2 {
+    margin: 0;
+    font-size: var(--step-2);
+  }
+
+  .follow-card p {
+    margin: var(--space-2xs) 0 var(--space-s);
   }
 
   .end-mark {

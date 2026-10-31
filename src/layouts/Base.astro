@@ -17,9 +17,11 @@ interface Props {
   type?: "website" | "article";
   jsonLd?: object[];
   noindex?: boolean;
+  /** The page offers "Follow this case", which takes the sign-up popup's place. */
+  follow?: boolean;
 }
 
-const { jsonLd = [], ...seo } = Astro.props;
+const { jsonLd = [], follow = false, ...seo } = Astro.props;
 
 const org = {
   "@context": "https://schema.org",
@@ -68,7 +70,7 @@ const verification = site.analytics.searchConsoleVerification;
       <slot />
     </main>
     <Footer />
-    <MobileBar />
-    <NewsletterPopup />
+    <MobileBar follow={follow} />
+    {!follow && <NewsletterPopup />}
   </body>
 </html>

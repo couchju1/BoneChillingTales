@@ -1,0 +1,279 @@
+---
+// "Follow this case" on open and in-court stories. Any button with data-follow-open opens the
+// dialog. The dialog also opens once on its own when the reader reaches the end of the story,
+// in place of the site-wide sign-up popup, and on the same 30-day snooze.
+import NewsletterForm from "./NewsletterForm.astro";
+import CasePhoto from "./CasePhoto.astro";
+import DaysSince from "./DaysSince.astro";
+import { site, isPlaceholder } from "../lib/config";
+import type { Case } from "../lib/content";
+
+interface Props {
+  entry: Case;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const { provider, formAction } = site.newsletter;
+const ready = !isPlaceholder(formAction) && !(provider === "email" && isPlaceholder(site.forms.suggestTo));
+const counterLabel = site.statuses[data.status].counterLabel;
+const monthOnly = data.incidentDatePrecision === "month";
+const countFrom = data.status === "missing" ? data.lastSeenDate : monthOnly ? null : data.incidentDate;
+const first = data.person.split(" ")[0];
+---
+
+{
+  ready && (
+    <dialog class="follow" aria-labelledby={`follow-${entry.id}-heading`} data-follow-dialog data-case={entry.id}>
+      <button type="button" class="close" aria-label="Close" data-follow-close>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="who">
+        <CasePhoto entry={entry} widths={[96, 192]} sizes="96px" class="follow-photo" />
+        <p class="ui">
+          <span class="name">{data.person}</span>
+          <span>
+            {data.town}, {data.state}
+          </span>
+          {counterLabel && countFrom && <DaysSince since={countFrom} label={counterLabel} />}
+        </p>
+      </div>
+      <NewsletterForm
+        idPrefix="follow"
+        bare
+        intent="follow"
+        caseId={entry.id}
+        heading={`Follow ${first}'s case`}
+        body="When something changes in this case, we'll email you. Nothing else comes from this form, and you can stop any time."
+        button="Follow this case"
+      />
+      <button type="button" class="later ui" data-follow-close>
+        Not now
+      </button>
+    </dialog>
+  )
+}
+
+<script>
+  const KEY = "bct-newsletter-popup";
+  const FOLLOWING = "bct-following";
+  const SNOOZE_MS = 30 * 24 * 60 * 60 * 1000;
+
+  const read = (key: string) => {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  };
+  const write = (key: string, value: string) => {
+    try {
+      localStorage.setItem(key, value);
+    } catch {
+      // Blocked storage: the reader may be asked again next visit.
+    }
+  };
+
+  const dialog = document.querySelector<HTMLDialogElement>("[data-follow-dialog]");
+  if (dialog && typeof dialog.showModal === "function") {
+    const id = dialog.dataset.case!;
+    const triggers = [...document.querySelectorAll<HTMLButtonElement>("[data-follow-open]")];
+    const following = () => (read(FOLLOWING) ?? "").split(",").includes(id);
+
+    const markFollowing = () => {
+      for (const t of triggers) {
+        t.dataset.following = "";
+        const label = t.querySelector("[data-follow-label]");
+        if (label) label.textContent = "Following";
+      }
+    };
+    if (following()) markFollowing();
+
+    const open = (source: string) => {
+      if (dialog.open) return;
+      dialog.showModal();
+      document.dispatchEvent(new CustomEvent("bct:follow-open", { detail: { case_id: id, source } }));
+    };
+
+    for (const swap of document.querySelectorAll<HTMLElement>("[data-follow-swap]")) swap.hidden = true;
+    for (const card of document.querySelectorAll<HTMLElement>("[data-follow-card]")) card.hidden = false;
+    for (const t of triggers) {
+      t.hidden = false;
+      t.addEventListener("click", () => open(t.dataset.followOpen || "button"));
+    }
+    for (const b of dialog.querySelectorAll("[data-follow-close]")) b.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+
+    document.addEventListener("bct:newsletter-success", (e) => {
+      const d = (e as CustomEvent).detail ?? {};
+      if (d.form_intent !== "follow" || d.case_id !== id) return;
+      const list = (read(FOLLOWING) ?? "").split(",").filter(Boolean);
+      if (!list.includes(id)) write(FOLLOWING, [...list, id].join(","));
+      markFollowing();
+      const later = dialog.querySelector<HTMLButtonElement>(".later");
+      if (later) later.textContent = "Close";
+    });
+
+    // Asks once, when the reader gets to the end of the story. Shares the sign-up popup's snooze.
+    const saved = read(KEY);
+    const snoozed = saved !== null && (saved === "joined" || Date.now() - Number(saved) < SNOOZE_MS);
+    const end = document.querySelector("[data-story-end]");
+    if (!snoozed && !following() && end && "IntersectionObserver" in window) {
+      const seen = new IntersectionObserver((entries) => {
+        if (!entries.some((x) => x.isIntersecting)) return;
+        seen.disconnect();
+        write(KEY, String(Date.now()));
+        setTimeout(() => open("story-end"), 600);
+      });
+      seen.observe(end);
+    }
+  }
+</script>
+
+<style>
+  .follow {
+    width: min(34rem, calc(100vw - 2rem));
+    max-height: calc(100dvh - 2rem);
+    overflow-y: auto;
+    padding: var(--space-l) var(--space-l) var(--space-m);
+    border: 1px solid var(--color-line);
+    border-top: 3px solid var(--color-lamp);
+    border-radius: var(--radius-m);
+    background: var(--color-surface);
+    color: var(--color-bone);
+    box-shadow: var(--shadow-raised);
+  }
+
+  .follow::backdrop {
+    background: rgb(0 0 0 / 0.7);
+  }
+
+  .follow[open] {
+    animation: follow-in var(--motion-base) var(--ease-out);
+  }
+
+  @keyframes follow-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .follow[open] {
+      animation: none;
+    }
+  }
+
+  .who {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    padding-right: var(--space-l);
+    margin-bottom: var(--space-s);
+  }
+
+  .who :global(.follow-photo) {
+    flex: none;
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-s);
+    filter: grayscale(0.35);
+  }
+
+  .who :global(.follow-photo .mark) {
+    font-size: var(--step-1);
+  }
+
+  .who :global(.follow-photo .place) {
+    display: none;
+  }
+
+  .who p {
+    display: grid;
+    gap: 2px;
+    margin: 0;
+    color: var(--color-ash);
+    font-size: var(--step--1);
+  }
+
+  .name {
+    color: var(--color-bone);
+    font-weight: 600;
+  }
+
+  .follow :global(h2) {
+    margin-top: 0;
+  }
+
+  .close {
+    position: absolute;
+    top: var(--space-2xs);
+    right: var(--space-2xs);
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: var(--radius-m);
+    background: none;
+    color: var(--color-ash);
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: var(--color-bone);
+  }
+
+  .later {
+    display: block;
+    min-height: 44px;
+    margin: var(--space-2xs) auto 0;
+    padding: 0 var(--space-s);
+    border: 0;
+    background: none;
+    color: var(--color-ash);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* The buttons that open the dialog live in the story header, after the story and in the phone bar. */
+  :global([data-follow-open]) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2xs);
+    min-height: 44px;
+    padding: 0 var(--space-s);
+    border: 1px solid var(--color-lamp);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--color-bone);
+    font-family: var(--font-ui);
+    font-size: var(--step--1);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--motion-fast) var(--ease-out);
+  }
+
+  :global([data-follow-open][hidden]) {
+    display: none;
+  }
+
+  :global([data-follow-open]:hover) {
+    background: rgb(227 162 59 / 0.12);
+  }
+
+  :global([data-follow-open] svg) {
+    color: var(--color-lamp);
+  }
+
+  :global([data-follow-open][data-following]) {
+    border-color: var(--color-line);
+    color: var(--color-ash);
+  }
+</style>

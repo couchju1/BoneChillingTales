@@ -43,6 +43,11 @@ short post: copy `src/content/updates/_example.md`, set `case:` to the story's f
 - Suggest a case: set `forms.suggestTo` to the inbox that should get suggestions. The build writes
   it into `api/config.php`, which `public/api/suggest.php` reads. Mail goes out through PHP `mail()`
   from `noreply@` your domain, so set up SPF and DKIM for the domain at Hostinger.
+- Follow this case: open, missing, unresolved and in-court stories show a "Follow this case" button
+  in the header, after the story and in the phone bar. It opens a box with the sign-up form, and the
+  email subject starts "Case follow (slug)" so you know to write to them only about that case. On
+  those pages the box opens once when the reader reaches the end of the story, in place of the
+  arrival popup, on the same 30-day snooze.
 - Spam guards: a hidden honeypot field, a 3 second minimum, and 5 sends per IP per hour.
 
 ## Analytics and ads
@@ -52,7 +57,9 @@ short post: copy `src/content/updates/_example.md`, set `case:` to the story's f
   and anyone with Global Privacy Control on, or who taps "Turn off analytics" in the footer, is
   never tracked. gtag.js loads after the page finishes, so it never slows the story.
 - Events: newsletter_submit, newsletter_success, suggest_submit, video_play, outbound_tip_call,
-  case_map_select (a state picked on the home page map) and read_75. In GA4, mark
+  case_map_select (a state picked on the home page map), follow_open (the "Follow this case"
+  box opened, with where from) and read_75. Follow sign-ups send newsletter_success with
+  form_intent "follow" and the case_id. In GA4, mark
   newsletter_success as a key event. Add `?ga_debug=1` to any page
   URL to watch events arrive in DebugView.
 - Ads: set `ads.enabled` to true once a network approves you. Two slots sit on each story,

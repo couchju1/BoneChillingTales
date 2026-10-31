@@ -13,9 +13,11 @@ interface Props {
   idPrefix?: string;
   /** Drops the bordered box, for forms that sit inside the popup. */
   bare?: boolean;
+  /** "follow" marks a sign-up for news on one case (needs caseId). */
+  intent?: "follow";
 }
 
-const { heading, body, button = "Get the weekly email", caseId, idPrefix = "nl", bare = false } = Astro.props;
+const { heading, body, button = "Get the weekly email", caseId, idPrefix = "nl", bare = false, intent } = Astro.props;
 const { provider, formAction: action, caseField } = site.newsletter;
 const byEmail = provider === "email";
 // Email sign-ups go to the Suggest-a-case inbox, so they wait on that address too.
@@ -35,7 +37,15 @@ const textFields = [
 <section class:list={["newsletter", { bare }]} aria-labelledby={`${uid}-heading`}>
   <h2 id={`${uid}-heading`}>{heading}</h2>
   <p>{body}</p>
-  <form method="post" action={ready ? action : undefined} novalidate data-newsletter-form data-provider={provider}>
+  <form
+    method="post"
+    action={ready ? action : undefined}
+    novalidate
+    data-newsletter-form
+    data-provider={provider}
+    data-intent={intent}
+    data-case={caseId}
+  >
     <fieldset disabled={!ready} data-fields>
       <div class="grid">
         {
@@ -84,6 +94,7 @@ const textFields = [
             <input id={`${uid}-${site.forms.honeypotField}`} name={site.forms.honeypotField} type="text" tabindex="-1" autocomplete="off" />
           </div>
           {caseId && <input type="hidden" name="story" value={caseId} />}
+          {caseId && intent && <input type="hidden" name="intent" value={intent} />}
           <input type="hidden" name="started" value="" data-started />
         </>
       )
@@ -102,6 +113,7 @@ const textFields = [
     success: "You're in. Check your inbox to confirm.",
     joined: "You're on the list. The next weekly email will come to your inbox.",
     already: "You're already on the list.",
+    following: "You're following this case. We'll email you when something changes.",
     error: "That didn't go through. Try again in a minute.",
   };
 
@@ -116,6 +128,7 @@ const textFields = [
     const message = form.querySelector<HTMLElement>("[data-message]")!;
     const byEmail = form.dataset.provider === "email";
     const started = form.querySelector<HTMLInputElement>("[data-started]");
+    const detail = form.dataset.intent ? { form_intent: form.dataset.intent, case_id: form.dataset.case } : {};
     if (started) started.value = String(Date.now());
     const say = (text: string, tone: "success" | "error" | "") => {
       message.textContent = text;
@@ -155,7 +168,7 @@ const textFields = [
         return;
       }
 
-      document.dispatchEvent(new CustomEvent("bct:newsletter-submit"));
+      document.dispatchEvent(new CustomEvent("bct:newsletter-submit", { detail }));
       setBusy(button, true);
       try {
         const res = await fetch(form.action, {
@@ -167,12 +180,12 @@ const textFields = [
         const text = JSON.stringify(data).toLowerCase();
         if (res.ok && data.status === "success") {
           fields.hidden = true;
-          say(byEmail ? COPY.joined : COPY.success, "success");
-          document.dispatchEvent(new CustomEvent("bct:newsletter-success"));
+          say(form.dataset.intent === "follow" ? COPY.following : byEmail ? COPY.joined : COPY.success, "success");
+          document.dispatchEvent(new CustomEvent("bct:newsletter-success", { detail }));
         } else if (text.includes("already")) {
           fields.hidden = true;
           say(COPY.already, "success");
-          document.dispatchEvent(new CustomEvent("bct:newsletter-success"));
+          document.dispatchEvent(new CustomEvent("bct:newsletter-success", { detail }));
         } else if (text.includes("email")) {
           setFieldError(email, COPY.invalid);
           email.focus();
