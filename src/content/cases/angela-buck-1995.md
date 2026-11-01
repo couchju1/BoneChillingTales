@@ -34,6 +34,12 @@
 # Quotes are exact. No two quotes were joined. The Neff quote follows S7. S8 and S9 open it "This arrest is a
 # great example" and S9 gives only that first sentence, so the quote is tagged S7 alone.
 # published is a placeholder for Justin's release date.
+# Updated November 1, 2026: Lindell Andre Jackson Sr., 50, of Waterloo, was charged with first-degree murder
+# on October 28 (S11, S12). He is CHARGED, not convicted. No plea or denial on this charge is reported. S12 says
+# he denied being in Waterloo that weekend in a 1996 interview. Everything about his role comes from the
+# complaint against him as described by S11 and S12. No source says he is the "identified male" in Grant's
+# complaint, so the text never links the two. Grant is now held in the Black Hawk County Jail (S11, S12).
+# The October 16 "Never name him" rule above is superseded by the charge.
 # Photos: supplied by Justin on October 25, 2026. Justin identified the booking photo of Kelly Grant from
 # his October 2026 arrest. Its caption repeats that he is charged, not convicted, and has denied it. A
 # courtroom photo supplied with these turned out to show a different man and was removed. Never use it.
@@ -43,17 +49,17 @@
 draft: false
 title: "Poynter Creek: The Killing of Angie Buck"
 seoTitle: "Angela Buck: What Happened in Waterloo, IA"
-description: "Angie Buck, 37, was found shot by a creek east of Waterloo, Iowa, in 1995. In 2026, a Minnesota man was charged with her murder. He has denied it."
+description: "Angie Buck, 37, was found shot by a creek east of Waterloo, Iowa, in 1995. In 2026, two men were charged with her murder. Both are presumed innocent."
 person: "Angela Buck"
-summary: "Angela \"Angie\" Buck, 37, was found dead of a gunshot wound by a creek east of Waterloo, Iowa, on August 11, 1995. [S1] In October 2026, Kelly Grant of Bertha, Minnesota, was charged with first-degree murder. He has denied any part in her death and is presumed innocent. [S1, S5] No court dates had been set as of October 17. [S8]"
+summary: "Angela \"Angie\" Buck, 37, was found dead of a gunshot wound by a creek east of Waterloo, Iowa, on August 11, 1995. [S1] In October 2026, Kelly Grant of Bertha, Minnesota, and Lindell Jackson of Waterloo were charged with first-degree murder. [S1, S11] Grant has denied any part in her death. [S5] Both men are presumed innocent."
 status: in-court
 town: "Waterloo"
 state: IA
 incidentDate: 1995-08-11
 lastSeenDate: null
 resolvedDate: null
-lastChecked: 2026-10-25
-lastFactChange: null
+lastChecked: 2026-11-01
+lastFactChange: 2026-11-01
 published: 2026-10-28
 agency: "the Black Hawk County Sheriff's Office"
 tipLine: "+13192912587"
@@ -78,6 +84,8 @@ sources:
   - { id: S8, title: "Minnesota man arrested for 31-year-old Iowa cold case", publisher: "Des Moines Register, via Yahoo News", url: "https://www.yahoo.com/news/us/articles/minnesota-man-arrested-31-old-155945411.html", date: 2026-10-17 }
   - { id: S9, title: "Minnesota man charged in 1995 cold case murder of Angela Buck in Waterloo", publisher: "Waterloo-Cedar Falls Courier", url: "https://wcfcourier.com/news/local/crime-courts/article_600f2589-d01d-4e8f-8b43-f46483fd06b3.html", date: 2026-10-19, archive: "https://web.archive.org/web/20261025001552/https://wcfcourier.com/news/local/crime-courts/article_600f2589-d01d-4e8f-8b43-f46483fd06b3.html" }
   - { id: S10, title: "Angela Buck (case summary)", publisher: "Iowa Cold Cases", url: "https://iowacoldcases.org/case-summaries/angela-buck/", date: 2026-10-16, archive: "https://web.archive.org/web/20261025002134/https://iowacoldcases.org/case-summaries/angela-buck/" }
+  - { id: S11, title: "Second murder suspect identified in 1995 shooting", publisher: "KCRG", url: "https://www.kcrg.com/2026/10/29/second-murder-suspect-identified-1995-shooting/", date: 2026-10-29 }
+  - { id: S12, title: "Black Hawk County cold case: second arrest made in Angela Buck murder", publisher: "KWWL (via KIMT)", url: "https://www.kimt.com/news/black-hawk-county-cold-case-second-arrest-made-in-angela-buck-murder/article_b6513a51-7cf0-523f-872d-0cfc5f4a3ed9.html", date: 2026-10-29 }
 timeline:
   - { date: 1958-04-17, text: "Angela Renee Buck is born in Waterloo. [S10]", section: "evansdale" }
   - { date: 1992, text: "Her mother, Lorene, dies after a long illness. [S10]", section: "evansdale" }
@@ -89,14 +97,16 @@ timeline:
   - { date: 2008-12, text: "Sheriff Mike Kubik retires, still thinking about her case. [S10]", section: "two-cases" }
   - { date: 2025-03, text: "Grant describes giving a ride to a woman he said resembled Buck, the complaint says. He denies any involvement. [S4, S5]", section: "a-ride" }
   - { date: 2026-10-16, text: "Grant is arrested and charged with first-degree murder, the sheriff's office says. The Attorney General's office gives October 15. [S1, S3]", section: "bertha" }
+  - { date: 2026-10-28, text: "Lindell Jackson of Waterloo is charged with first-degree murder in her death. [S11, S12]", section: "a-second-charge" }
 updates:
   - { date: 2026-10-28, text: "Story published." }
+  - { date: 2026-11-01, text: "Updated: a second man, Lindell Jackson of Waterloo, was charged with first-degree murder on October 28. Grant is now held in the Black Hawk County Jail." }
 ---
 Two men finished the third shift at Eagle Tanning in Waterloo, Iowa, around 10 a.m. on Friday, August 11, 1995. They decided to go looking for places to set turtle traps. [S10]
 
 They crossed the bridge on North Pilot Grove Road, east of town, around 10:45, the Waterloo Courier reported. A woman lay on the creek bank below, about six feet from the water. [S10] "We just kind of looked at each other, with goosebumps," one of them told the Courier. [S10]
 
-She was Angela Renee Buck, 37, of Waterloo, and she had been shot. [S1] Thirty-one years later, in October 2026, a Minnesota man named Kelly Grant was charged with first-degree murder in her death. [S1, S9] In his interviews with investigators, he denied any part in it. [S4, S5] The charge is an accusation, and he is presumed innocent. [S1]
+She was Angela Renee Buck, 37, of Waterloo, and she had been shot. [S1] Thirty-one years later, in October 2026, a Minnesota man named Kelly Grant was charged with first-degree murder in her death. [S1, S9] In his interviews with investigators, he denied any part in it. [S4, S5] Twelve days after his arrest, a Waterloo man named Lindell Jackson was charged too. [S11, S12] The charges are accusations, and both men are presumed innocent. [S1]
 
 ## Evansdale
 
@@ -206,8 +216,18 @@ The sheriff's office says the arrest was on Friday, October 16. [S3, S5] The Att
 
 ## Without bond
 
-After his arrest, Grant was held without bond. [S6] On October 17, the Des Moines Register reported that no court dates had been set. [S8] No source reviewed for this story reports a plea, a hearing, or his return to Iowa.
+After his arrest, Grant was held without bond. [S6] By October 29, court records showed he had been brought back from Minnesota and was being held in the Black Hawk County Jail. [S11, S12] No source reviewed for this story reports a plea or a trial date.
 
-The Courier reported that court records point to the possibility a second man was involved. [S9] No source reviewed for this story names him or reports a charge against anyone else.
+The Courier had reported that court records pointed to the possibility a second man was involved. [S9]
 
-In the reports on the complaint, the witness it describes has not been named. [S4, S8] The sheriff's office says the investigation is still going. [S7]
+## A second charge
+
+On Wednesday, October 28, the sheriff's office charged Lindell Andre Jackson Sr., 50, of Waterloo, with first-degree murder. He was already in jail on an unrelated case. [S11, S12] He made his first court appearance the next morning. [S11]
+
+According to the complaint against him, as KCRG and KWWL describe it, Jackson was at the house on Cottage Street that night with Angie and Grant. A witness said two men matching their descriptions took her from the house. [S11, S12]
+
+Investigators interviewed him in January 1996, October 1997, March 2025 and September 2026. [S12] In that first interview, KWWL reports, he denied being in Waterloo the weekend she was killed. [S12] Investigators say his account changed from one interview to the next. [S11]
+
+No source reviewed for this story reports a plea from him. Like Grant, he is presumed innocent.
+
+Two men are now charged. Neither has stood trial. In the reports on the complaints, the witness has not been named. [S4, S8] The sheriff's office said in October that the investigation is still going. [S7]
