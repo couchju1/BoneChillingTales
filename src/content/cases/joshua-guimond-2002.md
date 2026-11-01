@@ -47,7 +47,7 @@ lastSeenDate: 2002-11-09
 resolvedDate: null
 lastChecked: 2026-10-31
 lastFactChange: null
-published: 2026-11-09
+published: 2026-10-31
 agency: "the Stearns County Sheriff's Office"
 tipLine: "+13202514240"
 anonymousTips: null
@@ -97,7 +97,7 @@ timeline:
   - { date: 2023-11-09, text: "The sheriff's office says the case is still an active investigation. [S14]", section: "somebody-knows" }
   - { date: 2025-08, text: "The sheriff's office says it has received more than 200 tips since the Netflix episode. [S15]", section: "somebody-knows" }
 updates:
-  - { date: 2026-11-09, text: "Story published." }
+  - { date: 2026-10-31, text: "Story published." }
 ---
 
 On the night of Saturday, November 9, 2002, Joshua Guimond sat down to play cards with friends at Metten Court, on the north end of the St. John's University campus. [S6, S7] He got up and left the room at about 11:45 p.m., the sheriff's office says. Many of the people there didn't notice he had gone. [S1]
