@@ -30,7 +30,7 @@
 # Photos: supplied by Justin on October 31, 2026. The lead portrait is the one on the family's missing poster.
 # On November 1, 2026, Justin sent sharper copies of the lead portrait, the navy pullover portrait and the
 # graduation photo, which replace the earlier files, and two more: the glasses photo (also on the missing
-# poster) and the red polo portrait.
+# poster) and the red polo portrait. Justin asked that all five photos of Josh be marked digitally enhanced.
 # The graduation photo is cropped to Josh alone; the others in the frame are unidentified. The campus map is
 # Justin's, built on OpenStreetMap data, with its "Last seen" label removed so the map doesn't place him anywhere
 # after Metten Court. The abbey church photo is Bobak Ha'Eri's, CC BY 3.0, on Wikimedia Commons.
@@ -58,7 +58,7 @@ contentNote: null
 image:
   src: "./joshua-guimond-2002.jpg"
   alt: "Joshua Guimond smiling, with short blond hair, in a white collared shirt and a dark sweater, in a studio portrait"
-  credit: "Joshua Guimond in an undated portrait"
+  credit: "Joshua Guimond in an undated portrait. Digitally enhanced."
   license: "Family photo published on his missing poster and in coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
@@ -113,7 +113,7 @@ The Stearns County Sheriff's Office says no one has seen him since. [S1] Investi
 
 Josh grew up in Maple Lake, Minnesota. [S7] He was class president at Maple Lake High School, and his classmates voted him most likely to succeed. He was planning on a life in politics and law. [S6]
 
-![Joshua Guimond smiling in a green graduation cap and gown with a gold stole and a dark tie](./joshua-guimond-2002-graduation.jpg "Josh in a cap and gown, in an undated photo.")
+![Joshua Guimond smiling in a green graduation cap and gown with a gold stole and a dark tie](./joshua-guimond-2002-graduation.jpg "Josh in a cap and gown, in an undated photo. Digitally enhanced.")
 
 His father, Brian Guimond, raised him Catholic and made sure he was in a pew every Sunday, WCCO reported in 2017. WCCO called that another reason St. John's, a Catholic college, made sense for him. [S6] By the fall of 2002 he was 20, a junior majoring in political science. [S1, S7]
 
@@ -143,7 +143,7 @@ About 15 minutes later, his friends called his apartment. No one answered. They 
 
 The next day, Josh didn't show up for mock trial practice. [S7, S13] Forum reported it was in the morning. [S9] FOX 9 put it in the afternoon. [S12]
 
-![Joshua Guimond with a slight smile, in wire-rimmed glasses, a white T-shirt and an open green button-up shirt, against a dark background](./joshua-guimond-2002-glasses.jpg "Josh in an undated photo.")
+![Joshua Guimond with a slight smile, in wire-rimmed glasses, a white T-shirt and an open green button-up shirt, against a dark background](./joshua-guimond-2002-glasses.jpg "Josh in an undated photo. Digitally enhanced.")
 
 WCCO reported in 2017 that Brian learned that same day that Josh hadn't been seen. [S6]
 
@@ -203,7 +203,7 @@ He told MPR News that few leads were still coming in. [S7]
 
 Brian had his own view. He told MPR he was convinced Josh had been taken against his will. "It's like I said from day 1. He was set up and grabbed," he said. [S7] He started a GoFundMe to pay for a private investigator. [S7]
 
-![Joshua Guimond smiling, with short blond hair, in a red polo shirt over a white T-shirt, in a studio portrait](./joshua-guimond-2002-red-shirt.jpg "Josh in an undated portrait.")
+![Joshua Guimond smiling, with short blond hair, in a red polo shirt over a white T-shirt, in a studio portrait](./joshua-guimond-2002-red-shirt.jpg "Josh in an undated portrait. Digitally enhanced.")
 
 Hydukovich, the roommate, went on to practice law. [S6] He told WCCO:
 
@@ -243,7 +243,7 @@ Brian said no one had told him the photos were coming. He believed investigators
 
 ## Somebody knows
 
-![Joshua Guimond smiling, with parted blond hair, in a white T-shirt and a navy zip-up pullover, in a studio portrait](./joshua-guimond-2002-portrait.jpg "Josh in an undated portrait.")
+![Joshua Guimond smiling, with parted blond hair, in a white T-shirt and a navy zip-up pullover, in a studio portrait](./joshua-guimond-2002-portrait.jpg "Josh in an undated portrait. Digitally enhanced.")
 
 On November 9, 2022, the 20th anniversary, the sheriff's office said Josh's disappearance remained an active investigation. It thanked the public for the many tips sent in over the previous weeks. [S2] A year later, it said the same thing again. [S14] By 2025, Sorenson told Forum, the office had received more than 200 tips since the Netflix episode, and it was following up on them. [S15]
 
