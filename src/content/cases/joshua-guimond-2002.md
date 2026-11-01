@@ -22,11 +22,13 @@
 # A CNN anchor said he vanished on a Sunday (S4). November 9, 2002 was a Saturday (S6).
 # Tip line: 320 259 3700, from the sheriff's own October 2022 release (S1). Other numbers in the record are dispatch
 # (S2, S3), the investigator's direct line (S14) and a records line (S15).
-# The 24 years line is written for November 2026. Update it after November 9, 2027.
+# The 24 years line names November 9, 2026, so it stays true after that date and needs no update.
+# "Walk home" appears only as the state bulletin's words (S3), the early lake theory (S9), Lisa's belief (S4)
+# and what friends assumed (S9). The story never states where he went after he left Metten Court.
 draft: false
-title: "The Three-Minute Walk: The Disappearance of Joshua Guimond"
+title: "Three Minutes Away: The Disappearance of Joshua Guimond"
 seoTitle: "Joshua Guimond: What Happened in Collegeville, MN"
-description: "Joshua Guimond, 20, left a card party at St. John's University in Collegeville, MN, in November 2002 for a short walk home. He was never seen again."
+description: "Joshua Guimond, 20, left a party at St. John's University in Collegeville, MN, in 2002. His apartment was three minutes away. He hasn't been seen since."
 person: "Joshua Guimond"
 summary: "Joshua Guimond, 20, a St. John's University junior, left a small party on the Collegeville, Minnesota, campus late on November 9, 2002, and has not been seen since. [S1, S7] Searches of the campus lakes found nothing. [S9, S13] The Stearns County Sheriff's Office calls it an active investigation and has named no suspects. [S9, S14]"
 status: missing
@@ -51,7 +53,7 @@ poster:
   - { label: "Weight", text: "176 pounds, per the sheriff. The state bulletin says 160. [S1, S3]" }
   - { label: "Hair and eyes", text: "Blond and blue [S1, S3]" }
   - { label: "Last place", text: "A party at Metten Court, St. John's University, Collegeville, Minnesota [S1]" }
-readerQuestion: "Josh left a small party for a three-minute walk home, and no one has seen him since. Someone on that campus in 2002 may still remember something small from that night. What would it take for them to call?"
+readerQuestion: "Josh left a small party three minutes from his own apartment, and no one has seen him since. Someone on that campus in 2002 may still remember something small from that night. What would it take for them to call?"
 sources:
   - { id: S1, title: "News Release: Missing Person", publisher: "Stearns County Sheriff's Office", url: "https://content.govdelivery.com/accounts/STEARNS/bulletins/333989f", date: 2022-10-21, archive: "https://web.archive.org/web/20261101013442/https://content.govdelivery.com/accounts/STEARNS/bulletins/333989f" }
   - { id: S2, title: "News Release: Missing Person", publisher: "Stearns County Sheriff's Office", url: "https://content.govdelivery.com/accounts/STEARNS/bulletins/336fe1f", date: 2022-11-09, archive: "https://web.archive.org/web/20261101013501/https://content.govdelivery.com/accounts/STEARNS/bulletins/336fe1f" }
@@ -86,7 +88,7 @@ updates:
   - { date: 2026-11-09, text: "Story published." }
 ---
 
-On the night of Saturday, November 9, 2002, Joshua Guimond sat down to play cards with friends at Metten Court, on the north end of the St. John's University campus. [S6, S7] At about 11:45 p.m., he got up and left the room. Many of the people there didn't notice he had gone. [S1]
+On the night of Saturday, November 9, 2002, Joshua Guimond sat down to play cards with friends at Metten Court, on the north end of the St. John's University campus. [S6, S7] The sheriff's office puts the time at about 11:45 p.m. He got up and left the room. Many of the people there didn't notice he had gone. [S1]
 
 His own apartment, in St. Maur House, was about three minutes away on foot. [S6, S9]
 
@@ -96,7 +98,7 @@ The Stearns County Sheriff's Office says no one has seen him since. [S1] Investi
 
 Josh grew up in Maple Lake, Minnesota. [S7] He was class president at Maple Lake High School, and his classmates voted him most likely to succeed. He was planning on a life in politics and law. [S6]
 
-His father, Brian Guimond, raised him Catholic and made sure he was in a pew every Sunday, WCCO reported in 2017. St. John's, a Catholic college, made sense for him. [S6] By the fall of 2002 he was 20, a junior majoring in political science. [S1, S7]
+His father, Brian Guimond, raised him Catholic and made sure he was in a pew every Sunday, WCCO reported in 2017. WCCO called that another reason St. John's, a Catholic college, made sense for him. [S6] By the fall of 2002 he was 20, a junior majoring in political science. [S1, S7]
 
 His roommate, Nick Hydukovich, was likely the closest friend he had on campus, WCCO reported. The two of them were in music groups and on the mock trial team together. [S6]
 
@@ -108,15 +110,13 @@ His mother, Lisa Cheney, talked to him on Halloween, a Thursday. They traded ema
 
 That weekend was the opening of deer season, and hunting with his dad was a yearly tradition. Homework kept Josh in Collegeville instead. [S6]
 
-According to the Netflix episode, as FOX 9 described it, he went into his apartment for the last time at 11:06 p.m. [S12] When he left for the party, he didn't take his wallet, his glasses or his car keys. [S12] Forum News Service reported in 2021 that his keys, his glasses, his contact lenses and his wallet, with his credit cards and identification, were all later found in the apartment. [S9] He didn't take a jacket. [S6]
-
-His car was found on campus. [S3]
+FOX 9, in its account of the Netflix episode about the case, reported that he went into his apartment at 11:06 p.m. [S12] When he left for the party, he didn't take his wallet, his glasses or his car keys. [S12] Forum News Service reported in 2021 that his keys, his glasses, his contact lenses and his wallet, with his credit cards and identification, were all later found in the apartment. [S9] He didn't take a jacket. [S6]
 
 ## Metten Court
 
 The party was small. [S13] There was alcohol. Those who were with him said they didn't see him drunk. [S9]
 
-Accounts differ on how he left. Forum reported that his friends thought he had slipped out to use the bathroom. [S9] FOX 9 reported that he got up and left without saying anything. [S12] The sheriff's office gives the time as about 11:45 p.m. [S1] The state's missing person bulletin says about midnight. [S3]
+Accounts differ on how he left. Forum reported that his friends thought he had slipped out to use the bathroom. [S9] FOX 9 reported that he got up and left without saying anything. [S12] The sheriff's office gives the time as about 11:45 p.m. [S1] The state's missing person bulletin says about midnight. [S3] The bulletin says he left to walk home to his apartment, and that he was last seen in blue jeans and a gray St. John's sweatshirt. [S3]
 
 About 15 minutes later, his friends called his apartment. No one answered. They assumed he had gone to bed, Forum reported. [S9]
 
@@ -124,9 +124,11 @@ About 15 minutes later, his friends called his apartment. No one answered. They 
 
 The next day, Josh didn't show up for mock trial practice. [S7, S13] FOX 9 put the practice in the afternoon. [S12]
 
-"I got home about 8 o'clock and one of his buddies calls and right then it's like you get a pit in your stomach. I knew something was wrong," he told WCCO in 2017. [S6]
+Brian told WCCO in 2017 about the phone call that reached him. WCCO's report doesn't say which day it came. [S6]
 
-That evening, with Josh gone 24 hours, his friends reported him missing to the sheriff's office, according to Forum. [S9] Family and friends told investigators it was very unusual for him to be out of touch, the state bulletin says. It describes a 4-inch vertical scar on his shoulder, and says he was last seen in blue jeans and a gray St. John's sweatshirt. [S3]
+"I got home about 8 o'clock and one of his buddies calls and right then it's like you get a pit in your stomach. I knew something was wrong," Brian said. [S6]
+
+That evening, his friends reported him missing to the sheriff's office, according to Forum. [S9] Family and friends told investigators it was very unusual for him to be out of touch, the state bulletin says. It also says his car was found on campus, and it describes a 4-inch vertical scar on his shoulder. [S3]
 
 ## Stumpf Lake
 
@@ -134,17 +136,17 @@ An organized search began on Monday, November 11. Deputies, members of the Natio
 
 Divers worked Stumpf Lake, which lies between St. Maur House and Metten Court. [S9] (WCCO's reports spell it Stump Lake.) [S5, S6]
 
-The sheriff then was Jim Kostreba. [S9] In those first days, his office focused on the theory that Josh had fallen into one of the campus lakes on the walk home. Investigators considered alcohol a factor. [S9] Investigators believed he might have drowned, MPR News reported later. Several searches never found him. [S13]
+The sheriff then was Jim Kostreba. [S9] In those first days, his office focused on the theory that Josh had fallen into one of the campus lakes on the walk home. Investigators considered alcohol a factor. [S9] Several searches never found him, MPR News reported later. [S13]
 
 ## The cap
 
 Ten days after he disappeared, Brian, Lisa and Josh's uncle, Paul Cheney, sat down for a CNN interview in New York. [S4]
 
-Paul said the bloodhounds had followed Josh's scent "down to the edge of the water, between the dorm that he left and the dorm that he was going to." [S4]
+Paul told CNN that the bloodhounds had followed Josh's scent "down to the edge of the water, between the dorm that he left and the dorm that he was going to." [S4] He went on.
 
 > "They've dived three times. They've dragged that lake. They haven't found Josh. So that tells us he's probably not there and you need to move on." [S4]
 
-Brian said two deer hunters had found a hat with a St. John's logo the Saturday before. Paul said the family had heard two versions. One was a navy baseball cap with a white "SJU" logo, which he said was Josh's favorite hat. The other was a stocking cap. [S4] No source reviewed for this story says what came of it.
+Brian said two deer hunters had found a hat with a St. John's logo "Saturday night." He didn't give a date. Paul said the family had heard two versions. One was a navy baseball cap with a white "SJU" logo, which he said was Josh's favorite hat. The other was a stocking cap. [S4] The public record doesn't say what came of it.
 
 CNN's anchor said Josh was one of four young people who had gone missing in Minnesota and Wisconsin since October 30. [S4] On air, he read a statement from the Stearns County sheriff. [S4]
 
@@ -158,13 +160,13 @@ Lisa told CNN what she believed.
 
 ## Trident
 
-Brian believed investigators were too focused on the lake. [S7] "I couldn't even get them to put out an Amber Alert out. 'Nope, he's in Stump Lake,'" he told WCCO in 2014. [S5]
+Brian believed investigators were too focused on the lake. [S7] "I couldn't even get them to put out an Amber Alert out. 'Nope, he's in Stump Lake,'" he told WCCO in 2014. [S5] He told Forum News Service in 2021:
 
 > "The first twenty-four hours are the most critical, and they just kept saying, 'He's in the lake.' Well, where's your evidence? They just kept saying, 'He's in the lake.' They just kept repeating it." [S9]
 
 The family brought in the Trident Foundation, a group that investigates crimes involving water. [S5, S9] With approval from the Stearns County Board and St. John's, Trident searched all three campus lakes in May 2003. It found no evidence connected to Josh's disappearance. [S9] Its executive director, Scott Romme, said afterward that the searches should steer the family, the community and law enforcement toward other avenues, Forum reported. [S9]
 
-For two years, according to Forum, Sheriff Sanner, who later led the office, held that Josh had not been abducted. In 2005, Sanner said Josh was considered a missing person and that he could have been abducted. [S9]
+For two years, Forum reported, Sheriff Sanner held that Josh had not been abducted. In 2005, Sanner said Josh was considered a missing person and that he could have been abducted. [S9] Forum didn't say which two years.
 
 ## Fifteen years
 
@@ -230,4 +232,4 @@ Brian spoke to WCCO in the fall of 2022, a few weeks before the anniversary. [S1
 
 > "All it's going to take is one person. One person to get a conscience. Somebody knows. There's people who know exactly what happened." [S11]
 
-The public record doesn't show where Josh went after he left Metten Court. [S1] On November 9, it will be 24 years. [S1]
+The public record doesn't show where Josh went after he left Metten Court. [S1] November 9, 2026, marks 24 years. [S1]
