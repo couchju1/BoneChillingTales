@@ -28,6 +28,9 @@
 # "Walk home" appears only as the state bulletin's words (S3), the early lake theory (S9), Lisa's belief (S4)
 # and what friends assumed (S9). The story never states where he went after he left Metten Court.
 # Photos: supplied by Justin on October 31, 2026. The lead portrait is the one on the family's missing poster.
+# On November 1, 2026, Justin sent sharper copies of the lead portrait, the navy pullover portrait and the
+# graduation photo, which replace the earlier files, and two more: the glasses photo (also on the missing
+# poster) and the red polo portrait.
 # The graduation photo is cropped to Josh alone; the others in the frame are unidentified. The campus map is
 # Justin's, built on OpenStreetMap data, with its "Last seen" label removed so the map doesn't place him anywhere
 # after Metten Court. The abbey church photo is Bobak Ha'Eri's, CC BY 3.0, on Wikimedia Commons.
@@ -140,6 +143,8 @@ About 15 minutes later, his friends called his apartment. No one answered. They 
 
 The next day, Josh didn't show up for mock trial practice. [S7, S13] Forum reported it was in the morning. [S9] FOX 9 put it in the afternoon. [S12]
 
+![Joshua Guimond with a slight smile, in wire-rimmed glasses, a white T-shirt and an open green button-up shirt, against a dark background](./joshua-guimond-2002-glasses.jpg "Josh in an undated photo.")
+
 WCCO reported in 2017 that Brian learned that same day that Josh hadn't been seen. [S6]
 
 "I got home about 8 o'clock and one of his buddies calls and right then it's like you get a pit in your stomach. I knew something was wrong," Brian said. [S6]
@@ -197,6 +202,8 @@ He told MPR News that few leads were still coming in. [S7]
 > "There's no evidence to point that it is an abduction or it isn't an abduction. Joshua went missing or was last seen at a social gathering on the north end of campus, and pretty much the good concrete evidence stops at that point." [S7]
 
 Brian had his own view. He told MPR he was convinced Josh had been taken against his will. "It's like I said from day 1. He was set up and grabbed," he said. [S7] He started a GoFundMe to pay for a private investigator. [S7]
+
+![Joshua Guimond smiling, with short blond hair, in a red polo shirt over a white T-shirt, in a studio portrait](./joshua-guimond-2002-red-shirt.jpg "Josh in an undated portrait.")
 
 Hydukovich, the roommate, went on to practice law. [S6] He told WCCO:
 
