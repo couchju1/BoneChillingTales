@@ -124,13 +124,13 @@ About 15 minutes later, his friends called his apartment. No one answered. They 
 
 ## Mock trial
 
-The next day, Josh didn't show up for mock trial practice. [S7, S13] FOX 9 put the practice in the afternoon. [S12]
+The next day, Josh didn't show up for mock trial practice. [S7, S13] Forum reported it was the next morning. [S9] FOX 9 put it in the afternoon. [S12]
 
-Brian told WCCO in 2017 about the phone call that reached him. WCCO's report doesn't say which day it came. [S6]
+WCCO reported in 2017 that Brian learned the next day that Josh hadn't been seen. [S6]
 
 "I got home about 8 o'clock and one of his buddies calls and right then it's like you get a pit in your stomach. I knew something was wrong," Brian said. [S6]
 
-That evening, his friends reported him missing to the sheriff's office, according to Forum. [S9] Family and friends told investigators it was very unusual for him to be out of touch, the state bulletin says. It also says his car was found on campus, and it describes a 4-inch vertical scar on his shoulder. [S3]
+That evening, his friends reported him missing to the sheriff's office, according to Forum. [S9] Family and friends say it is very unusual for him to be out of contact, the state bulletin says. It also says his car was found on campus, and it describes a 4-inch vertical scar on his shoulder. [S3]
 
 ## Stumpf Lake
 
@@ -148,7 +148,7 @@ Paul told CNN that the bloodhounds had followed Josh's scent "down to the edge o
 
 > "They've dived three times. They've dragged that lake. They haven't found Josh. So that tells us he's probably not there and you need to move on." [S4]
 
-Brian said two deer hunters had found a hat with a St. John's logo "Saturday night." He didn't give a date. Paul said the family had heard two versions. One was a navy baseball cap with a white "SJU" logo, which he said was Josh's favorite hat. The other was a stocking cap. [S4] The public record doesn't say what came of it.
+Brian said a couple of deer hunters had found a hat with a St. John's logo "Saturday night." He didn't give a date. Paul said the family had heard two versions. One was a navy baseball cap with a white "SJU" logo, which he said was Josh's favorite hat. The other was a stocking cap. [S4] The public record doesn't say what came of it.
 
 CNN's anchor said Josh was one of four young people who had gone missing in Minnesota and Wisconsin since October 30. [S4] On air, he read a statement from the Stearns County sheriff. [S4]
 
