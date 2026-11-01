@@ -27,6 +27,12 @@
 # The 24 years line names November 9, 2026, so it stays true after that date and needs no update.
 # "Walk home" appears only as the state bulletin's words (S3), the early lake theory (S9), Lisa's belief (S4)
 # and what friends assumed (S9). The story never states where he went after he left Metten Court.
+# Photos: supplied by Justin on October 31, 2026. The lead portrait is the one on the family's missing poster.
+# The graduation photo is cropped to Josh alone; the others in the frame are unidentified. The campus map is
+# Justin's, built on OpenStreetMap data, with its "Last seen" label removed so the map doesn't place him anywhere
+# after Metten Court. The abbey church photo is Bobak Ha'Eri's, CC BY 3.0, on Wikimedia Commons.
+# Not used: the 28 images the sheriff released (see above), the 1-800-CRIME-TV poster, whose tip line is not
+# the sheriff's, and the Pontiac Sunfire show car photo, since no source here names Josh's car.
 draft: false
 title: "Three Minutes Away: The Disappearance of Joshua Guimond"
 seoTitle: "Joshua Guimond: What Happened in Collegeville, MN"
@@ -46,7 +52,11 @@ agency: "the Stearns County Sheriff's Office"
 tipLine: "+13202514240"
 anonymousTips: null
 contentNote: null
-image: null
+image:
+  src: "./joshua-guimond-2002.jpg"
+  alt: "Joshua Guimond smiling, with short blond hair, in a white collared shirt and a dark sweater, in a studio portrait"
+  credit: "Joshua Guimond in an undated portrait"
+  license: "Family photo published on his missing poster and in coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 poster:
@@ -100,7 +110,11 @@ The Stearns County Sheriff's Office says no one has seen him since. [S1] Investi
 
 Josh grew up in Maple Lake, Minnesota. [S7] He was class president at Maple Lake High School, and his classmates voted him most likely to succeed. He was planning on a life in politics and law. [S6]
 
+![Joshua Guimond smiling in a green graduation cap and gown with a gold stole and a dark tie](./joshua-guimond-2002-graduation.jpg "Josh in a cap and gown, in an undated photo.")
+
 His father, Brian Guimond, raised him Catholic and made sure he was in a pew every Sunday, WCCO reported in 2017. WCCO called that another reason St. John's, a Catholic college, made sense for him. [S6] By the fall of 2002 he was 20, a junior majoring in political science. [S1, S7]
+
+![A large concrete church with a bell banner cut with a cross, above a wall of hexagonal windows, behind a wide green lawn](./joshua-guimond-2002-abbey-church.jpg "The abbey church at St. John's University in Collegeville. Photo by Bobak Ha'Eri, CC BY 3.0, via Wikimedia Commons.")
 
 His roommate, Nick Hydukovich, was likely the closest friend he had on campus, WCCO reported. The two of them were in music groups and on the mock trial team together. [S6]
 
@@ -137,6 +151,8 @@ That evening, his friends reported him missing to the sheriff's office, accordin
 An organized search began on Monday, November 11. Deputies, members of the National Guard and volunteers went through parts of the 2,500 acres of woods around campus, on foot and on horseback. [S9] Dogs were brought in. [S14]
 
 Divers worked Stumpf Lake, which lies between St. Maur House and Metten Court. [S9] (WCCO's reports spell it Stump Lake.) [S5, S6]
+
+![A street map of the north end of the St. John's campus, with Metten Court on the north shore of Stumpf Lake, St. Maur House to the south, County Road 159 crossing between Stumpf Lake and East Gemini Lake, and Saint John's Abbey at the bottom](./joshua-guimond-2002-campus-map.png "Metten Court, St. Maur House and Stumpf Lake on the St. John's campus. Map data © OpenStreetMap contributors.")
 
 The sheriff then was Jim Kostreba. [S9] In those first days, his office focused on the theory that Josh had fallen into one of the campus lakes on the walk home. Investigators considered alcohol a factor. [S9] Several searches never found him, MPR News reported later. [S13]
 
@@ -219,6 +235,8 @@ Four days later, Netflix released an "Unsolved Mysteries" episode about the case
 Brian said no one had told him the photos were coming. He believed investigators had had them since the computer was taken as evidence in the early 2000s. [S11] "This is new information? Give me a break," he told Forum. [S15] Sorenson, by then a lieutenant, called it "a strategic investigative decision to release these at this time to see if we could get those people identified as we haven't been able to." [S15]
 
 ## Somebody knows
+
+![Joshua Guimond smiling, with parted blond hair, in a white T-shirt and a navy zip-up pullover, in a studio portrait](./joshua-guimond-2002-portrait.jpg "Josh in an undated portrait.")
 
 On November 9, 2022, the 20th anniversary, the sheriff's office said Josh's disappearance remained an active investigation. It thanked the public for the many tips sent in over the previous weeks. [S2] A year later, it said the same thing again. [S14] By 2025, Sorenson told Forum, the office had received more than 200 tips since the Netflix episode, and it was following up on them. [S15]
 
