@@ -38,8 +38,9 @@
 # The cologne line: S1 gives it to Teigen in its account of the facts and to Kindall in its account of
 # Beebe's trial testimony. The story names both.
 # Name: Justin chose the court spelling, Tiegen, on October 28, 2026. On November 1, 2026, he changed it to
-# Teigen after confirming that spelling on the South Dakota Department of Corrections website. Court case
-# titles (S1, S2) keep the court spelling, Tiegen.
+# Teigen after confirming that spelling on the South Dakota Department of Corrections website (S16). Court
+# case titles (S1, S2) keep the court spelling, Tiegen. S16's record page has no stable link, so the source
+# links to the locator search. Search the last name Teigen or DOC number 20389. Only the spelling is used.
 # Conflicts in the text: "Tiegen" (S1, S2) or "Teigen" (news, DOC). "Duanna" (S1) or "Duana" (S2) Beebe. "Jamie"
 # (S2) or "Jamee" (S7) Corean. Beebe's first visit at 9:30 p.m. (S1) or around 9 (S2). Cook's first visit at
 # 3 a.m. (S1) or around 2 (S2), and Wednesday (Cook) or Tuesday (Teigen and Kindall) per S2 note 3. Time of
@@ -102,6 +103,7 @@ sources:
   - { id: S13, title: "Montana remains identified as Troy Klug's", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/local/top-stories/article_e25bc4fb-e9ad-5d07-b753-39184f99c4cc.html", date: 2009-05-12, archive: "https://web.archive.org/web/20091107171052/http://www.rapidcityjournal.com:80/news/local/top-stories/article_e25bc4fb-e9ad-5d07-b753-39184f99c4cc.html" }
   - { id: S14, title: "Troy Jason Klug obituary", publisher: "Osheim & Schmidt Funeral Home", url: "https://www.osheimschmidt.com/obituaries/troy-klug", date: 2009-06-05 }
   - { id: S15, title: "Belle Fourche woman's request for new trial denied in meth murder case", publisher: "Rapid City Journal", url: "https://rapidcityjournal.com/news/belle-fourche-womans-request-for-new-trial-denied-in-meth-murder-case/article_86952a06-0640-11df-9cc8-001cc4c03286.html", date: 2010-01-20, archive: "https://web.archive.org/web/20261028024158/https://rapidcityjournal.com/news/belle-fourche-womans-request-for-new-trial-denied-in-meth-murder-case/article_86952a06-0640-11df-9cc8-001cc4c03286.html" }
+  - { id: S16, title: "Offender Locator: Teigen, Tory G., DOC #20389", publisher: "South Dakota Department of Corrections", url: "https://docadultlookup.sd.gov/adult/lookup/", date: 2026-11-01 }
 timeline:
   - { date: 1978-05-27, text: "Troy Jason Klug is born in Rapid City. [S14]", section: "tuxedos" }
   - { date: 2004-07-12, text: "Klug goes to Cynthia Kindall's house in Rapid City. By the court's account, Teigen binds him and he is put in the trunk of Kindall's car. [S2]", section: "the-front" }
@@ -149,7 +151,7 @@ That Monday, Klug and Beebe's brother, Robert Highley, went to Cynthia Kindall's
 
 Beebe testified that Klug wanted the drugs "as a front," so he could pay off a drug debt to Kindall. A front, she explained, is drugs handed over without money, paid back later. [S2] Kindall admitted selling him drugs. The 2010 opinion says he had owed her money for drugs for about two to three years. [S2] The 2008 opinion describes an alleged debt of $300. [S1]
 
-Tory Teigen had been staying at Kindall's house. [S2] The court opinions spell his last name Tiegen. Newspapers spell it Teigen, as this story does. [S1, S2, S8]
+Tory Teigen had been staying at Kindall's house. [S2] The court opinions spell his last name Tiegen. Newspapers and the South Dakota Department of Corrections spell it Teigen, as this story does. [S1, S2, S8, S16]
 
 Highley was asked to leave. He drove off in Klug's car. Kindall left soon after. [S2]
 
