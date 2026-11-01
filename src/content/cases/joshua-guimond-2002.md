@@ -22,8 +22,8 @@
 # bathroom (S9) versus he left without saying anything (S12).
 # Known source errors not repeated: S15 dates the Netflix episode to October 2023. FOX 9 gives October 25, 2022 (S12).
 # A CNN anchor said he vanished on a Sunday (S4). November 9, 2002 was a Saturday (S6).
-# Tip line: 320 259 3700, from the sheriff's own October 2022 release (S1). Other numbers in the record are dispatch
-# (S2, S3), the investigator's direct line (S14) and a records line (S15).
+# Tip line: 320 251 4240, sheriff's dispatch, chosen by Justin on November 1, 2026. The sheriff's own November 2022
+# release gives it for tips (S2), and so does the state bulletin (S3). 320 259 3700 is the records line (S1, S2).
 # The 24 years line names November 9, 2026, so it stays true after that date and needs no update.
 # "Walk home" appears only as the state bulletin's words (S3), the early lake theory (S9), Lisa's belief (S4)
 # and what friends assumed (S9). The story never states where he went after he left Metten Court.
@@ -43,7 +43,7 @@ lastChecked: 2026-10-31
 lastFactChange: null
 published: 2026-11-09
 agency: "the Stearns County Sheriff's Office"
-tipLine: "+13202593700"
+tipLine: "+13202514240"
 anonymousTips: null
 contentNote: null
 image: null
@@ -124,13 +124,13 @@ About 15 minutes later, his friends called his apartment. No one answered. They 
 
 ## Mock trial
 
-The next day, Josh didn't show up for mock trial practice. [S7, S13] Forum reported it was the next morning. [S9] FOX 9 put it in the afternoon. [S12]
+The next day, Josh didn't show up for mock trial practice. [S7, S13] Forum reported it was in the morning. [S9] FOX 9 put it in the afternoon. [S12]
 
-WCCO reported in 2017 that Brian learned the next day that Josh hadn't been seen. [S6]
+WCCO reported in 2017 that Brian learned that same day that Josh hadn't been seen. [S6]
 
 "I got home about 8 o'clock and one of his buddies calls and right then it's like you get a pit in your stomach. I knew something was wrong," Brian said. [S6]
 
-That evening, his friends reported him missing to the sheriff's office, according to Forum. [S9] Family and friends say it is very unusual for him to be out of contact, the state bulletin says. It also says his car was found on campus, and it describes a 4-inch vertical scar on his shoulder. [S3]
+That evening, his friends reported him missing to the sheriff's office, according to Forum. [S9] The state bulletin says family and friends consider it very unusual for him to be out of contact. It also says his car was found on campus, and it describes a 4-inch vertical scar on his shoulder. [S3]
 
 ## Stumpf Lake
 
