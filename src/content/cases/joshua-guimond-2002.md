@@ -8,7 +8,9 @@
 # "Set up and grabbed" is Brian Guimond's belief (S7, S11). His criticisms of the sheriff's office are his, attributed.
 # The 28 people in the photos the sheriff released are unidentified. They are not suspects. Never describe them
 # beyond the sheriff's words, and never republish the images.
-# Lt. Vic Weiss's lines about the computer come from the Netflix episode as FOX 9 reported it (S12). Attribute both.
+# Cut November 1, 2026, on Justin's E1 decision: Lt. Vic Weiss's "secrets" quote and the internet washing program
+# line (S12), including "anyone in the apartment could have used the computer." The online meeting theory stays
+# only as the sheriff's on record "not ruled out" (S13), and is not in the Facebook post.
 # Keep Josh's private life to the investigators' exact words. No characterization of it beyond that.
 # Left out on purpose: the St. John's Abbey abuse settlement and the monks (S6, S9, S15). The sheriff's office says it
 # has no evidence any staff or monks were involved (S9), and the university called the link rumor (S6). Also left out:
@@ -88,7 +90,7 @@ updates:
   - { date: 2026-11-09, text: "Story published." }
 ---
 
-On the night of Saturday, November 9, 2002, Joshua Guimond sat down to play cards with friends at Metten Court, on the north end of the St. John's University campus. [S6, S7] The sheriff's office puts the time at about 11:45 p.m. He got up and left the room. Many of the people there didn't notice he had gone. [S1]
+On the night of Saturday, November 9, 2002, Joshua Guimond sat down to play cards with friends at Metten Court, on the north end of the St. John's University campus. [S6, S7] He got up and left the room at about 11:45 p.m., the sheriff's office says. Many of the people there didn't notice he had gone. [S1]
 
 His own apartment, in St. Maur House, was about three minutes away on foot. [S6, S9]
 
@@ -213,12 +215,6 @@ There were 28 images. [S11, S12] Steve Soyka was the sheriff by then. [S13] "The
 Four days later, Netflix released an "Unsolved Mysteries" episode about the case. [S12] One theory it raised, MPR reported, was that Josh may have been chatting with men online and gone to meet someone that night. Soyka said investigators had not ruled it out. [S13]
 
 "We're open to all kinds of possibilities," he said. "A college kid typically just doesn't disappear from the campus." [S13]
-
-In the episode, as FOX 9 reported it, Lt. Vic Weiss of the sheriff's office spoke about the computer. [S12]
-
-> "The examination of Joshua's computer leads me to believe he might have had some secrets he didn't want to share with people." [S12]
-
-Weiss said someone had run an internet washing program on it within days of the disappearance. The episode noted that Josh's room was never sealed as a crime scene, and that anyone in the apartment could have used the computer. [S12]
 
 Brian said no one had told him the photos were coming. He believed investigators had had them since the computer was taken as evidence in the early 2000s. [S11] "This is new information? Give me a break," he told Forum. [S15] Sorenson, by then a lieutenant, called it "a strategic investigative decision to release these at this time to see if we could get those people identified as we haven't been able to." [S15]
 
