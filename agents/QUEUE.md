@@ -6,6 +6,9 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 
 | Date | Person | Town, state | Status | Why now | Notes |
 |---|---|---|---|---|---|
+| 2026-10-31 | Joshua Guimond | Collegeville (St. John's University), MN | missing | 24th anniversary Nov. 9, 2026. No 2023 to 2026 update found | Stearns County Sheriff. Adult (20). No one accused. Netflix "Unsolved Mysteries" theory (online chats with men) and the father's "set up" belief stay attributed. Unidentified people in the 2022 sheriff photos are not to be republished. Risk Elevated. |
+| 2026-10-31 | Wilma June Nissen | Rock Rapids, Lyon County, IA | unsolved | Evergreen. Found Oct. 4, 1978, identified 2006. Daughter launched a case website in 2025 | Lyon County Sheriff + Iowa AG Cold Case Unit. Sex work in the record. Sheriff released a photo of an unnamed woman it believes responsible (2016). A named person's 2009 perjury charges were dismissed. Cause of death never released. Risk High. |
+| 2026-10-31 | Jessica O'Grady | Omaha, NE | solved | Evergreen. 20th year since she disappeared (May 10, 2006). Body never found | Omaha PD, Douglas County. Christopher Edwards convicted 2007 (2nd-degree murder), maintains innocence. Kofoed evidence-planting claims rejected (294 Neb. 1, 2016). Graphic blood evidence and dismemberment in the record. Risk High. |
 
 ## Picked
 
