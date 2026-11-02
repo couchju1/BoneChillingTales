@@ -34,6 +34,7 @@
 # Vansice's photos sit in "Monday" and "Two days later", never beside the "knew her" or "responsible" lines. The close-up caption
 # repeats that he was never charged and denied any involvement (S5). The party photo's caption doesn't tie it to the June 10 party.
 # The color portrait became the lead image on November 1, 2026, at Justin's request. The black and white portrait moved to "Billboards".
+# The Econoline photo (added November 2, 2026, supplied by Justin) is a similar van, not the one seen. Its caption says so. Source not confirmed.
 # Not used: two photos of a young man Justin described on November 2, 2026, as possible suspects. He decided to drop both. No one
 # has been charged, so photos of uncharged suspects stay out of this story.
 # Left out: a second-generation Miata (1998 or later, so it can't be her 1991 car), the red shoe in a chalk circle (STYLE_GUIDE rule 8,
@@ -204,6 +205,8 @@ He said police had interviewed him twice and given him no sign that he was a sus
 ## The van
 
 On July 1, police held a press conference. They were looking for a mid-1980s white Ford Econoline van that a passerby had reported seeing in the lot that morning. [S4] Stearns said in 2013 that it was never recovered. [S6] Coworkers wondered about an angry or obsessed fan, and investigators searched her desk at KIMT. [S4]
+
+![A white full-size Ford Econoline van with rectangular headlights, parked in a lot](./jodi-huisentruit-1995-van.jpg "A white Ford Econoline from the same era, similar to the van police described. It is not the van seen that morning.")
 
 In 2013, Stearns told Fox News he believed one person was responsible, likely someone who knew her. JoAnn told Fox News she wasn't convinced it was only one person. She said Jodi's landlord reported hearing "two different male voices" in the lot at that time and a loud muffler. [S6]
 
