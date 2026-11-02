@@ -28,6 +28,13 @@
 # Quote edits: dashes and semicolons in quotes are replaced because the build rejects them. Stearns's "FBI, DCI" line
 # (S7) and Kuns's roses line (S7) replace a dash with a comma or period. Martinson's line (S7) is split at its semicolon. Kuns's 2026 line (S16) drops "Kuns said" between two parts.
 # Brinkley's two lines (S5) are separate quotes in the release. The family's March 2025 statement (S12) starts mid sentence, marked with an ellipsis. No words changed.
+# Photos: supplied by Justin on November 1, 2026, with the instruction to place them in the story. That is the rights decision ("Justin's call")
+# for each one. Captions say only what the photo shows. None gives a date, because none of the photos came with one.
+# Held, pending Justin: two photos of a young man (one booking or ID style, which STYLE_GUIDE rule 8 bars for anyone not convicted),
+# a party photo and a close-up of an older man (unidentified, so neither is captioned or placed), and a red first-generation Miata
+# with a FindJodi watermark (not confirmed as her car).
+# Left out: a second-generation Miata (1998 or later, so it can't be her 1991 car), the red shoe in a chalk circle (STYLE_GUIDE rule 8,
+# crime scene), and a Missing People in America poster (it gives her age now as 56, where S1 gives 58).
 # Time order exceptions: the opening, the palm print's 2025 correction, the first weeks as Stearns recalled them in 2010, the 2013 recollections in The van, the polygraph months after the Wolfram interview, Brinkley's 2018 line on the 2017 warrant,
 # and the appeal withdrawn in December 2025. Each sentence gives its date.
 draft: false
@@ -49,7 +56,11 @@ agency: "the Mason City Police Department"
 tipLine: "+16414213636"
 anonymousTips: null
 contentNote: null
-image: null
+image:
+  src: "./jodi-huisentruit-1995.jpg"
+  alt: "Jodi Huisentruit smiling, with chin-length blond hair and bangs, in a dark jacket, in a black and white portrait"
+  credit: "Jodi Huisentruit in an undated portrait"
+  license: "Photo published in news coverage of the case"
 youtubeId: null
 youtubeUploadDate: null
 poster:
@@ -93,6 +104,7 @@ timeline:
   - { date: 2026-06-27, text: "A memorial at KIMT marks 31 years. An investigator says the case remains active. [S16]", section: "thirty-one-years" }
 updates:
   - { date: 2026-11-02, text: "Story published." }
+  - { date: 2026-11-02, text: "Photos added." }
 ---
 
 At about 4 a.m. on Tuesday, June 27, 1995, Amy Kuns called Jodi Huisentruit from KIMT-TV in Mason City, Iowa. Jodi, 27, was the station's morning anchor, and she hadn't come in. [S7, S8] Fox News later put the call at 4:10. [S6]
@@ -109,11 +121,17 @@ Her sister, JoAnn Nathe, remembers someone who liked golf, bicycles, boats and i
 
 "She brought so much joy to the family," JoAnn told the St. Paul Pioneer Press in 2015. "She was just our sunshine." [S8]
 
+![Two smiling blond women sitting close together and holding hands, one in a white striped blouse and one in an orange top with a gold necklace](./jodi-huisentruit-1995-friend.jpg "Jodi with a friend, in an undated photo.")
+
 Jodi graduated from St. Cloud State University. [S9] She worked briefly as a flight attendant before she went into news, Fox News reported. [S6] Then came TV jobs in Alexandria, Minnesota, and Cedar Rapids, Iowa. [S8]
+
+![Jodi Huisentruit laughing and waving from a red scooter in a city parking lot, in a gray blazer](./jodi-huisentruit-1995-scooter.jpg "Jodi on a scooter, in an undated photo.")
 
 ## KIMT
 
 She moved to Mason City two years before she disappeared, to anchor the morning and noon news. [S9] She usually reported to work by 3:30 a.m. for "DayBreak," which aired at 6. [S4] She hoped to land a TV job in the Twin Cities someday. [S8]
+
+![Jodi Huisentruit on the air in a red jacket, in front of a blue set and a glass block wall](./jodi-huisentruit-1995-kimt.jpg "Jodi on the air, in an undated still from a newscast.")
 
 Doug Merbach was her boss. "She was probably one of the most personable people that I've ever worked with," he said in 2026. He said she gave viewers her time when she went out to meet them. [S16] Tim McCleary directed the station's weekend newscast. "She was always looking to have fun," he told Fox News in 2013. "I never heard anyone say a negative comment about her." [S6]
 
@@ -145,7 +163,10 @@ Steve Martinson was the station's sales manager then. "When I came in that morni
 
 ## The parking lot
 
-Jodi lived at the Key Apartments, 600 N. Kentucky Ave. [S7] Julie Birkedal was a Globe Gazette reporter. She wrote later about what she saw there. [S7]
+Jodi lived at the Key Apartments, 600 N. Kentucky Ave. [S7]
+
+![A tan apartment building with the words Key Apt's, No. Kentucky Ave., Office 600 on its wall, and cars parked in front](./jodi-huisentruit-1995-key-apartments-1995.jpg "The Key Apartments in Mason City, in a frame from CBS's 48 Hours.")
+ Julie Birkedal was a Globe Gazette reporter. She wrote later about what she saw there. [S7]
 
 > "Beyond the police officer keeping curious reporters and passers-by at bay were a pair of red pumps sitting on the ground near her car. When I went back later, a chalk line marked the place in the parking lot where the shoes had been." [S7]
 
@@ -191,6 +212,8 @@ Jodi was legally declared dead in May 2001. [S6]
 
 Her family and friends started Jodi's Network of Hope. It has given more than $40,000 in scholarships since 2005, CBS reported. In her memory, it placed a granite bench on the 10th hole at the Long Prairie Country Club. [S4]
 
+![Jodi Huisentruit smiling, with her blond hair pinned up, in a black and white top, seated on a light leather couch](./jodi-huisentruit-1995-smiling.jpg "Jodi in an undated photo.")
+
 Kuns told the Globe Gazette in 2010 that she held her own service after the 10th anniversary, behind the apartments, by the river. "I floated three roses on the river, one for the past, one for the present and one for the future," she said. She said she feared Jodi's mother would die without knowing. [S7]
 
 In 2006, a woman from Anoka, Minnesota, reported seeing Jodi killed. She later admitted she had made it up, and she was fined and given 30 days in jail for filing a false report. [S7]
@@ -214,6 +237,8 @@ Mason City Police Chief Jeff Brinkley told "48 Hours" in 2018 that the warrant h
 ## Billboards
 
 On June 5, 2018, Jodi's 50th birthday, FindJodi dedicated billboards around Mason City. They carried her photo and the words "Somebody knows something...is it YOU?" [S10]
+
+![Jodi Huisentruit smiling, with shoulder-length blond hair and large earrings, in a black blouse with red, blue and orange shapes](./jodi-huisentruit-1995-portrait.jpg "Jodi in an undated portrait.")
 
 That December, "48 Hours" aired an hour on the case. [S10] "We have never closed the case," Brinkley said. "It's never been a cold case for us." He said, "I'm not ready to quit yet." [S5] Afterward, he said the department received at least two dozen calls and emails. [S10]
 
@@ -252,5 +277,7 @@ On June 27, 2026, FindJodi held a memorial at KIMT. Prochaska told those who cam
 Colleen Devine of FindJodi read the family's statement. [S16]
 
 > "We implore you: if you know something, say something. Help us finally bring Jodi home." [S16]
+
+![The Key Apartments, a tan building with a brown roof, with cars in the lot and autumn trees behind it](./jodi-huisentruit-1995-key-apartments.jpg "The Key Apartments in a later photo.")
 
 The public record doesn't show what happened in the parking lot of the Key Apartments, or where she is. [S3, S19] The state of Iowa still lists her on its missing persons page. Last contact date: 06/27/1995. Age now: 58. [S1]
