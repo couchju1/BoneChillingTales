@@ -34,7 +34,8 @@
 # Vansice's photos sit in "Monday" and "Two days later", never beside the "knew her" or "responsible" lines. The close-up caption
 # repeats that he was never charged and denied any involvement (S5). The party photo's caption doesn't tie it to the June 10 party.
 # The color portrait became the lead image on November 1, 2026, at Justin's request. The black and white portrait moved to "Billboards".
-# Held, pending Justin: two photos of a young man (one booking or ID style, which STYLE_GUIDE rule 8 bars for anyone not convicted).
+# Not used: two photos of a young man Justin described on November 2, 2026, as possible suspects. He decided to drop both. No one
+# has been charged, so photos of uncharged suspects stay out of this story.
 # Left out: a second-generation Miata (1998 or later, so it can't be her 1991 car), the red shoe in a chalk circle (STYLE_GUIDE rule 8,
 # crime scene), and a Missing People in America poster (it gives her age now as 56, where S1 gives 58).
 # Time order exceptions: the opening, the palm print's 2025 correction, the first weeks as Stearns recalled them in 2010, the 2013 recollections in The van, the polygraph months after the Wolfram interview, Brinkley's 2018 line on the 2017 warrant,
