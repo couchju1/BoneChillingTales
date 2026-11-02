@@ -30,9 +30,11 @@
 # Brinkley's two lines (S5) are separate quotes in the release. The family's March 2025 statement (S12) starts mid sentence, marked with an ellipsis. No words changed.
 # Photos: supplied by Justin on November 1, 2026, with the instruction to place them in the story. That is the rights decision ("Justin's call")
 # for each one. Captions say only what the photo shows. None gives a date, because none of the photos came with one.
-# Held, pending Justin: two photos of a young man (one booking or ID style, which STYLE_GUIDE rule 8 bars for anyone not convicted),
-# a party photo and a close-up of an older man (unidentified, so neither is captioned or placed), and a red first-generation Miata
-# with a FindJodi watermark (not confirmed as her car).
+# Justin identified the party photo and the close-up as John Vansice, and the FindJodi Miata as her car, on November 1, 2026.
+# Vansice's photos sit in "Monday" and "Two days later", never beside the "knew her" or "responsible" lines. The close-up caption
+# repeats that he was never charged and denied any involvement (S5). The party photo's caption doesn't tie it to the June 10 party.
+# The color portrait became the lead image on November 1, 2026, at Justin's request. The black and white portrait moved to "Billboards".
+# Held, pending Justin: two photos of a young man (one booking or ID style, which STYLE_GUIDE rule 8 bars for anyone not convicted).
 # Left out: a second-generation Miata (1998 or later, so it can't be her 1991 car), the red shoe in a chalk circle (STYLE_GUIDE rule 8,
 # crime scene), and a Missing People in America poster (it gives her age now as 56, where S1 gives 58).
 # Time order exceptions: the opening, the palm print's 2025 correction, the first weeks as Stearns recalled them in 2010, the 2013 recollections in The van, the polygraph months after the Wolfram interview, Brinkley's 2018 line on the 2017 warrant,
@@ -58,7 +60,7 @@ anonymousTips: null
 contentNote: null
 image:
   src: "./jodi-huisentruit-1995.jpg"
-  alt: "Jodi Huisentruit smiling, with chin-length blond hair and bangs, in a dark jacket, in a black and white portrait"
+  alt: "Jodi Huisentruit smiling, with shoulder-length blond hair and large earrings, in a black blouse with red, blue and orange shapes"
   credit: "Jodi Huisentruit in an undated portrait"
   license: "Photo published in news coverage of the case"
 youtubeId: null
@@ -143,6 +145,8 @@ Accounts don't match on what happened in the fall of 1994. CBS later reported th
 
 A few weeks before that June morning, she bought a red 1991 Mazda Miata. [S4]
 
+![A red Mazda Miata convertible with its top down, parked at a curb](./jodi-huisentruit-1995-miata.jpg "Jodi's Miata, in a later photo. Photo by FindJodi.")
+
 ## Monday
 
 Two nights before she disappeared, she wrote in her journal about "a road trip to Iowa City ... oh, we had fun!" [S7]
@@ -150,6 +154,8 @@ Two nights before she disappeared, she wrote in her journal about "a road trip t
 On Monday she played in a golf tournament. JoAnn suspects that's why she overslept. "Maybe she was just exhausted," JoAnn said. [S8]
 
 That night, according to John Vansice, she came by his home. He said they watched a video of a surprise birthday party he had helped arrange for her on June 10. [S4, S5] He later told police he was the last person to see her. [S5] CBS called him a friend. The Globe Gazette, in 2010, called him a man she was seeing socially. [S4, S7] CBS reported in 2018 that police had never called him a suspect, and that he denied any involvement. [S5]
+
+![Jodi Huisentruit, John Vansice and a woman smiling together in party hats](./jodi-huisentruit-1995-party.jpg "Jodi, left, and John Vansice, center, at a party, in an undated photo.")
 
 ## Daybreak
 
@@ -187,6 +193,8 @@ The fire department searched the Winnebago River behind the apartments. There wa
 ## Two days later
 
 KIMT anchor Robin Wolfram interviewed Vansice two days after Jodi disappeared. She told "48 Hours" what he said. [S4]
+
+![John Vansice, a man with short light hair, in a blue collared shirt outdoors](./jodi-huisentruit-1995-vansice.jpg "John Vansice in an undated photo. He was never charged and denied any involvement.")
 
 > "Jodi was like a daughter to me. She was just like my own child." [S4]
 
@@ -238,7 +246,7 @@ Mason City Police Chief Jeff Brinkley told "48 Hours" in 2018 that the warrant h
 
 On June 5, 2018, Jodi's 50th birthday, FindJodi dedicated billboards around Mason City. They carried her photo and the words "Somebody knows something...is it YOU?" [S10]
 
-![Jodi Huisentruit smiling, with shoulder-length blond hair and large earrings, in a black blouse with red, blue and orange shapes](./jodi-huisentruit-1995-portrait.jpg "Jodi in an undated portrait.")
+![Jodi Huisentruit smiling, with chin-length blond hair and bangs, in a dark jacket, in a black and white portrait](./jodi-huisentruit-1995-bw.jpg "Jodi in an undated portrait.")
 
 That December, "48 Hours" aired an hour on the case. [S10] "We have never closed the case," Brinkley said. "It's never been a cold case for us." He said, "I'm not ready to quit yet." [S5] Afterward, he said the department received at least two dozen calls and emails. [S10]
 
