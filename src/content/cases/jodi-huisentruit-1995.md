@@ -6,7 +6,9 @@
 # John Vansice was never charged and died in December 2024 (S13). The court file calls him a person of interest "rather than a suspect" (S3).
 # CBS reported in 2018 that police had never called him a suspect, and that he denied any involvement (S5). He passed a polygraph (S4).
 # Several news reports call him a "suspect" (S13, S14). This story doesn't. Keep lines about someone who "knew her" or is "responsible" away from
-# his name. His name is not in the Facebook post (Shelley E4, pending Justin).
+# his name. Justin decided on November 1, 2026 (Central time) to name him. I read that as the story and the Facebook post, which is how the question was put.
+# Tip line: 641 421 3636, Mason City police, first on the list Justin gave on November 1, 2026, and the number in S2, S13, S15 and S19. S9 gave 641 494 3564 in 2022.
+# The Facebook post also gives the state clearinghouse, 515 725 6036 (S1).
 # Left out on purpose: JoAnn Nathe's statements that she thinks he is linked to the case and was obsessed with her sister (S5, S6, S10). They are
 # a family member's accusation against a man never charged. Also his line about men's clothes in her apartment (S5, S10), "bad temper" (S6),
 # Stearns's 2010 and 2013 "person of interest" lines (S6, S7), his age gap (S4), the 48 Hours visit to his door (S10), and his help to producers (S4).
