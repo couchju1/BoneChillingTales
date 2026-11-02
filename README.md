@@ -46,8 +46,8 @@ short post: copy `src/content/updates/_example.md`, set `case:` to the story's f
 - Follow this case: open, missing, unresolved and in-court stories show a "Follow this case" button
   in the header, after the story and in the phone bar. It opens a box with the sign-up form, and the
   email subject starts "Case follow (slug)" so you know to write to them only about that case. On
-  those pages the box opens once when the reader reaches the end of the story, in place of the
-  arrival popup, on the same 30-day snooze.
+  those pages the box opens once when the reader reaches the end of the story, then stays away for 30 days.
+  There is no sign-up popup on arrival; readers sign up from the forms on the page.
 - Spam guards: a hidden honeypot field, a 3 second minimum, and 5 sends per IP per hour.
 
 ## Analytics and ads

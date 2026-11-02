@@ -9,9 +9,9 @@ interface Props {
   button?: string;
   /** Story id. Sent with email sign-ups, and to Kit when newsletter.caseField is set. */
   caseId?: string;
-  /** Makes field ids unique when the same story has more than one form (the popup). */
+  /** Makes field ids unique when the same story has more than one form (the follow box). */
   idPrefix?: string;
-  /** Drops the bordered box, for forms that sit inside the popup. */
+  /** Drops the bordered box, for forms that sit inside a dialog. */
   bare?: boolean;
   /** "follow" marks a sign-up for news on one case (needs caseId). */
   intent?: "follow";

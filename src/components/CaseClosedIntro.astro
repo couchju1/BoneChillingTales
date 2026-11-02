@@ -34,7 +34,7 @@
       localStorage.setItem(KEY, today);
     } catch (e) {}
 
-    // Tells the newsletter popup to wait its turn.
+    // Marks the intro as playing while it runs.
     root.setAttribute("data-cc-intro", "playing");
     intro.hidden = false;
 

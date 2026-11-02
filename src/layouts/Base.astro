@@ -5,7 +5,6 @@ import Seo from "../components/Seo.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import MobileBar from "../components/MobileBar.astro";
-import NewsletterPopup from "../components/NewsletterPopup.astro";
 import Analytics from "../components/Analytics.astro";
 import { site, isPlaceholder } from "../lib/config";
 
@@ -17,7 +16,7 @@ interface Props {
   type?: "website" | "article";
   jsonLd?: object[];
   noindex?: boolean;
-  /** The page offers "Follow this case", which takes the sign-up popup's place. */
+  /** The page offers "Follow this case" (adds it to the phone bar). */
   follow?: boolean;
 }
 
@@ -71,6 +70,5 @@ const verification = site.analytics.searchConsoleVerification;
     </main>
     <Footer />
     <MobileBar follow={follow} />
-    {!follow && <NewsletterPopup />}
   </body>
 </html>
