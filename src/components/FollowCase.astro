@@ -1,7 +1,7 @@
 ---
 // "Follow this case" on open and in-court stories. Any button with data-follow-open opens the
 // dialog. The dialog also opens once on its own when the reader reaches the end of the story,
-// in place of the site-wide sign-up popup, and on the same 30-day snooze.
+// then stays away for 30 days.
 import NewsletterForm from "./NewsletterForm.astro";
 import CasePhoto from "./CasePhoto.astro";
 import DaysSince from "./DaysSince.astro";
@@ -118,7 +118,7 @@ const first = data.person.split(" ")[0];
       if (later) later.textContent = "Close";
     });
 
-    // Asks once, when the reader gets to the end of the story. Shares the sign-up popup's snooze.
+    // Asks once, when the reader gets to the end of the story. Then snoozes for 30 days.
     const saved = read(KEY);
     const snoozed = saved !== null && (saved === "joined" || Date.now() - Number(saved) < SNOOZE_MS);
     const end = document.querySelector("[data-story-end]");
