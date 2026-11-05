@@ -38,6 +38,8 @@
 # has been charged, so photos of uncharged suspects stay out of this story.
 # Left out: a second-generation Miata (1998 or later, so it can't be her 1991 car), the red shoe in a chalk circle (STYLE_GUIDE rule 8,
 # crime scene), and a Missing People in America poster (it gives her age now as 56, where S1 gives 58).
+# Fixes after Sherlock's November 5, 2026 check: the warrant trip is now dated to February, S9 is added to the no charge tags,
+# the 1998 timeline entry now names the jail mate's tip, and the Key Apartments image has its own paragraph. No facts changed.
 # Time order exceptions: the opening, the palm print's 2025 correction, the first weeks as Stearns recalled them in 2010, the 2013 recollections in The van, the polygraph months after the Wolfram interview, Brinkley's 2018 line on the 2017 warrant,
 # and the appeal withdrawn in December 2025. Each sentence gives its date.
 draft: false
@@ -45,7 +47,7 @@ title: "Daybreak: The Disappearance of Jodi Huisentruit"
 seoTitle: "Jodi Huisentruit: What Happened in Mason City, IA"
 description: "Jodi Huisentruit, 27, told a coworker she had overslept and was on her way to KIMT-TV in June 1995. She never got there. No one has been charged."
 person: "Jodi Huisentruit"
-summary: "Jodi Huisentruit, 27, a KIMT-TV morning anchor, told a coworker she had overslept early on June 27, 1995, in Mason City, Iowa. [S7] She never reached the station. Police believe she was abducted outside her apartment. [S8] She was legally declared dead in 2001. No one has been charged. [S6, S19]"
+summary: "Jodi Huisentruit, 27, a KIMT-TV morning anchor, told a coworker she had overslept early on June 27, 1995, in Mason City, Iowa. [S7] She never reached the station. Police believe she was abducted outside her apartment. [S8] She was legally declared dead in 2001. No one has been charged. [S6, S9, S19]"
 status: missing
 town: "Mason City"
 state: IA
@@ -72,7 +74,7 @@ poster:
   - { label: "Weight", text: "110 pounds, per the state. NamUs says 110 to 120. [S1, S2]" }
   - { label: "Hair and eyes", text: "Blond and brown [S1, S2]" }
   - { label: "Last place", text: "The Key Apartments, 600 N. Kentucky Ave., Mason City, Iowa [S7]" }
-  - { label: "Case", text: "No one has been charged. She was legally declared dead in May 2001. [S6, S19]" }
+  - { label: "Case", text: "No one has been charged. She was legally declared dead in May 2001. [S6, S9, S19]" }
 readerQuestion: "Amy Kuns believes someone is still \"harboring a horrible secret.\" After 31 years, what do you think it would take for that person to come forward?"
 sources:
   - { id: S1, title: "Jodi Sue Huisentruit", publisher: "Iowa Missing Person Information Clearinghouse, Iowa Division of Criminal Investigation", url: "https://missingpersons.iowa.gov/divisions/criminal-investigation/missing-persons/jodi-sue-huisentruit", date: 2026-11-01 }
@@ -97,7 +99,7 @@ timeline:
   - { date: 1995-06-27, text: "Jodi answers a call from Amy Kuns at about 4 a.m. and says she overslept. She never reaches KIMT-TV. [S7]", section: "daybreak" }
   - { date: 1995-06-27, text: "KIMT asks police to check on her at 7:13 a.m. Officers find her belongings by her car. [S4, S6]", section: "the-parking-lot" }
   - { date: 1995-07-01, text: "Police say they are looking for a mid-1980s white Ford Econoline van. [S4]", section: "the-van" }
-  - { date: 1998, text: "A silo site near Tiffin, Iowa, is searched with cadaver dogs. The lead goes nowhere. [S4]", section: "tiffin" }
+  - { date: 1998, text: "A former jail mate's tip leads to a search of a silo site near Tiffin, Iowa, with cadaver dogs. The lead goes nowhere. [S4, S7]", section: "tiffin" }
   - { date: 1999, text: "Mason City police say the man tied to that lead is not considered a viable suspect. [S4]", section: "tiffin" }
   - { date: 2001-05, text: "Jodi is legally declared dead. [S6]", section: "three-roses" }
   - { date: 2017-02-28, text: "An investigator applies for a warrant to put GPS trackers on two vehicles. It is granted, and the file is sealed. [S3]", section: "the-warrant" }
@@ -114,7 +116,7 @@ At about 4 a.m. on Tuesday, June 27, 1995, Amy Kuns called Jodi Huisentruit from
 
 Jodi answered. She said she had overslept. [S7] She said she would race to the station and be there for the 6 a.m. broadcast. [S8]
 
-It was the last anyone heard from her. [S8] Police found signs of a struggle outside her apartment building and believe she was abducted. [S19] She has not been seen since, and no one has been charged. [S3, S19]
+It was the last anyone heard from her. [S8] Police found signs of a struggle outside her apartment building and believe she was abducted. [S19] She has not been seen since, and no one has been charged. [S3, S9, S19]
 
 ## Long Prairie
 
@@ -173,7 +175,8 @@ Steve Martinson was the station's sales manager then. "When I came in that morni
 Jodi lived at the Key Apartments, 600 N. Kentucky Ave. [S7]
 
 ![A tan apartment building with the words Key Apt's, No. Kentucky Ave., Office 600 on its wall, and cars parked in front](./jodi-huisentruit-1995-key-apartments-1995.jpg "The Key Apartments in Mason City, in a frame from CBS's 48 Hours.")
- Julie Birkedal was a Globe Gazette reporter. She wrote later about what she saw there. [S7]
+
+Julie Birkedal was a Globe Gazette reporter. She wrote later about what she saw there. [S7]
 
 > "Beyond the police officer keeping curious reporters and passers-by at bay were a pair of red pumps sitting on the ground near her car. When I went back later, a chalk line marked the place in the parking lot where the shoes had been." [S7]
 
@@ -239,7 +242,7 @@ Imogene Huisentruit, Jodi's mother, died in December 2014, at 91. "She so wanted
 
 ## The warrant
 
-On February 28, 2017, Investigator Prochaska applied for a warrant to "surreptitiously" put GPS trackers on two vehicles registered to Vansice's address. By then Vansice lived in Arizona, and officers had learned he would be driving to Iowa later that month. It was granted, and the file was sealed at the state's request. [S3]
+On February 28, 2017, Investigator Prochaska applied for a warrant to "surreptitiously" put GPS trackers on two vehicles registered to Vansice's address. By then Vansice lived in Arizona. Earlier that month, officers had learned he would be driving to Iowa later in February. It was granted, and the file was sealed at the state's request. [S3]
 
 Mason City Police Chief Jeff Brinkley told "48 Hours" in 2018 that the warrant hadn't produced useful information. "That piece didn't pan out like we'd hoped," he said. [S10]
 
