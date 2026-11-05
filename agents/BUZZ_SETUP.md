@@ -35,13 +35,13 @@ Create each agent once and reuse it for every story. Paste the prompt as the age
 |---|---|
 | @Phantom | Read `agents/scout.md` in `couchju1/BoneChillingTales` on `main` and follow it. Re-read it every run. |
 | @Poe | Read `agents/writer.md` in `couchju1/BoneChillingTales` on `main` and follow it. Re-read it every run. |
-| @Shelley | You are the Editor. Read `agents/OPERATIONS.md`, `agents/STYLE_GUIDE.md` and `src/content/pages/standards.md` in `couchju1/BoneChillingTales` on `main` every run, and follow the Editor rules in `OPERATIONS.md`. For video PRs, review only when Justin asks. |
+| @Shelley | Read `agents/editor.md` in `couchju1/BoneChillingTales` on `main` and follow it. Re-read it every run. |
 | @Sherlock | Read `agents/fact-checker.md` in `couchju1/BoneChillingTales` on `main` and follow it. Re-read it every run. |
 | @Scribe | Read `agents/script-adapter.md` in `couchju1/BoneChillingTales` on `main` and follow it. Re-read it every run. Never start without Justin's `APPROVED FOR VIDEO` line naming a commit. |
 | @Reese | Read `agents/visual-planner.md` in `couchju1/BoneChillingTales` on `main` and follow it. Re-read it every run. Never start before Sherlock's `SCRIPTS PASS`. |
 | @Pressley | Read `agents/publishing-prep.md` in `couchju1/BoneChillingTales` on `main` and follow it. Re-read it every run. Never post, upload or schedule anything. |
 
-If Scribe, Reese or Pressley already have long instructions in Buzz, replace them with these. The old versions conflict with the repo in four places: Scribe didn't require an approved commit, nobody checked the scripts, Reese added a fixed "1970s to 1990s Midwest" look, and Pressley wasn't barred from posting.
+If Shelley, Scribe, Reese or Pressley already have long instructions in Buzz, replace them with these. The old versions conflict with the repo in four places: Scribe didn't require an approved commit, nobody checked the scripts, Reese added a fixed "1970s to 1990s Midwest" look, and Pressley wasn't barred from posting.
 
 **Access.**
 

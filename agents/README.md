@@ -8,7 +8,7 @@ Instructions for the Buzz agents that research and write Bone Chilling Tales sto
 |---|---|---|---|---|
 | Scout | @Phantom | `scout.md` | Suggests three cases, keeps `QUEUE.md` | A cheaper model is fine |
 | Writer | @Poe | `writer.md` | Researches the picked case, writes the story and Facebook post, opens a PR | Claude (via Claude Code in Buzz) |
-| Editor | @Shelley | None yet. Reads `STYLE_GUIDE.md` and the standards page | Reviews structure, pacing, voice, tone, victim sensitivity, and story-to-Facebook consistency. Comments only | Separate agent from the Writer |
+| Editor | @Shelley | `editor.md` | Reviews structure, pacing, voice, tone, victim sensitivity, and story-to-Facebook consistency. Comments only | Separate agent from the Writer |
 | Fact-checker | @Sherlock | `fact-checker.md` | Checks every tagged claim against its source, plus legal and build checks | Claude, separate agent from the Writer |
 | Script adapter | @Scribe | `script-adapter.md` | Adapts the approved story commit into short and long narration scripts | Claude |
 | Visual planner | @Reese | `visual-planner.md` | Scene breakdown, shot list and b-roll prompts matched to the story's real time and place | Claude |
@@ -17,7 +17,7 @@ Instructions for the Buzz agents that research and write Bone Chilling Tales sto
 
 Always tag agents by their Buzz name. "@Writer" doesn't reach anyone.
 
-The Scout, Writer, Fact-checker, Script adapter, Visual planner and Publishing prep agents read `STYLE_GUIDE.md` and `OPERATIONS.md` every run. The Editor reads `STYLE_GUIDE.md` and the standards page. It doesn't have an instruction file in this folder. Change the rules there, and every agent picks them up on the next run.
+Every agent reads its own file, `STYLE_GUIDE.md` and `OPERATIONS.md` every run. Change the rules there, and every agent picks them up on the next run.
 
 `OPERATIONS.md` applies the Buzz Editorial Operations Manual (full text in `reference/`) to this team: who holds each role, the assignment states, PASS / REWORK / NEEDS INPUT / HOLD, risk levels, the handoff message, the photo rights register and the release gates. It also lists the parts of the manual we haven't adopted yet, and why.
 

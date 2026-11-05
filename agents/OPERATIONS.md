@@ -12,7 +12,7 @@ Every story is a **NARRATIVE** assignment (manual section 8). The book and news 
 | Backup release authority | None named yet | Justin decides. Until then, nothing merges without Justin. |
 | Editorial Director | Justin | Routes cases, accepts handoffs, settles disagreements between agents. Agents can't act as Director, because the Director recommends release. |
 | Researcher, author, structural, line and copy editor | Writer (@Poe) | Makes every story and Facebook change. One agent may do these in sequence. The manual allows it. |
-| Editor (editorial reviewer) | Editor (@Shelley) | Reviews structure, pacing, clarity, repetition, voice, tone, victim sensitivity, style, and story-to-Facebook consistency. Comments only. Doesn't rewrite files, push commits or certify facts. |
+| Editor (editorial reviewer) | Editor (@Shelley) | Reviews structure, pacing, clarity, repetition, voice, tone, victim sensitivity, style, and story-to-Facebook consistency. Comments only. Doesn't rewrite files, push commits or certify facts. `editor.md` |
 | Fact Checker | Fact-checker (@Sherlock) | Must be a different agent from the Writer. Starts after the Editor passes the PR. |
 | Final proof | Editor and Fact-checker | The Editor's final read covers language and story-to-Facebook alignment. The Fact-checker covers facts, the build and the launch check. Justin accepts. |
 | Case intake | Scout (@Phantom) | Suggests cases and records the first risk level. |
@@ -183,4 +183,3 @@ These parts of the manual don't fit how the site runs today. Each one is listed 
 6. **Style sheet per assignment.** `agents/STYLE_GUIDE.md` is the house style. Case-specific spelling and name decisions go in the story's frontmatter comment block, which already serves as the assignment's style sheet.
 7. **Training-case test run (manual sections 19 and 21).** Not run. Justin can ask the agents to run the five cases in section 18, and the section 21 test PR, against these files.
 8. **Role mentions @Fact-checker and @Writer (manual v1.1 profile).** The manual says to keep these role mentions and to check in Buzz that they reach the intended agents. On October 20, 2026, a Buzz name lookup found no profile named "Fact-checker" or "Writer". It did find Sherlock, Shelley and Justin. Until Justin changes the Buzz setup, agents tag by Buzz name: @Phantom, @Poe, @Shelley, @Sherlock, @Scribe, @Reese, @Pressley and @Justin.
-9. **An Editor instruction file.** The manual says the Editor reads an instruction file only if Justin configures one. There isn't one. This file's Editor rules reach Shelley only if Justin adds `agents/OPERATIONS.md` to Shelley's required reads.
