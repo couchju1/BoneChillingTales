@@ -242,7 +242,7 @@ Imogene Huisentruit, Jodi's mother, died in December 2014, at 91. "She so wanted
 
 ## The warrant
 
-On February 28, 2017, Investigator Prochaska applied for a warrant to "surreptitiously" put GPS trackers on two vehicles registered to Vansice's address. By then Vansice lived in Arizona. Earlier that month, officers had learned he would be driving to Iowa later in February. It was granted, and the file was sealed at the state's request. [S3]
+On February 28, 2017, Investigator Prochaska applied for a warrant to "surreptitiously" put GPS trackers on two vehicles registered to Vansice's address. By then Vansice lived in Arizona. Earlier that month, officers had learned he would be driving to Iowa later in February. The warrant was granted, and the file was sealed at the state's request. [S3]
 
 Mason City Police Chief Jeff Brinkley told "48 Hours" in 2018 that the warrant hadn't produced useful information. "That piece didn't pan out like we'd hoped," he said. [S10]
 
