@@ -12,10 +12,13 @@ Every story is a **NARRATIVE** assignment (manual section 8). The book and news 
 | Backup release authority | None named yet | Justin decides. Until then, nothing merges without Justin. |
 | Editorial Director | Justin | Routes cases, accepts handoffs, settles disagreements between agents. Agents can't act as Director, because the Director recommends release. |
 | Researcher, author, structural, line and copy editor | Writer (@Poe) | Makes every story and Facebook change. One agent may do these in sequence. The manual allows it. |
-| Editor (editorial reviewer) | Editor (@Shelley) | Reviews structure, pacing, clarity, repetition, voice, tone, victim sensitivity, style, and story-to-Facebook consistency. Comments only. Doesn't rewrite files, push commits or certify facts. |
+| Editor (editorial reviewer) | Editor (@Shelley) | Reviews structure, pacing, clarity, repetition, voice, tone, victim sensitivity, style, and story-to-Facebook consistency. Comments only. Doesn't rewrite files, push commits or certify facts. `editor.md` |
 | Fact Checker | Fact-checker (@Sherlock) | Must be a different agent from the Writer. Starts after the Editor passes the PR. |
 | Final proof | Editor and Fact-checker | The Editor's final read covers language and story-to-Facebook alignment. The Fact-checker covers facts, the build and the launch check. Justin accepts. |
 | Case intake | Scout (@Phantom) | Suggests cases and records the first risk level. |
+| Script adapter | Script adapter (@Scribe) | Adapts the approved story commit into short and long narration scripts. Adds no facts. `script-adapter.md` |
+| Visual planner | Visual planner (@Reese) | Scene breakdown, shot list and generated b-roll prompts, matched to the story's real time and place. `visual-planner.md` |
+| Publishing prep | Publishing prep (@Pressley) | Titles, descriptions, captions, thumbnails and metadata. Prepares only. Never posts. `publishing-prep.md` |
 | Release operator | Hostinger auto-deploy | Merging to `main` publishes. Justin confirms the live page. |
 | Specialist and legal reviewer | None | See "Not adopted yet". |
 
@@ -36,6 +39,12 @@ Use these words in the thread and in PRs, so anyone can see where a story is.
 | APPROVED FOR RELEASE | Justin merges that exact commit. |
 | PUBLISHED | The page is live and Justin has checked it. |
 | CORRECTION REVIEW | A complaint, an error or a change in the case reopened a published story. |
+| APPROVED FOR VIDEO | Justin posted `APPROVED FOR VIDEO: [slug] @ [commit]`. Scribe can start. See "Video production". |
+| READY FOR SCRIPT CHECK | Scribe's scripts are in a `video/[slug]` PR and Sherlock has been tagged. |
+| SCRIPTS PASS | Sherlock passed both scripts on a named commit. Reese and Pressley can start. |
+| PACKAGE READY | Reese's shot list and Pressley's publishing package are in the PR. Sherlock checks the package wording. |
+| READY FOR VIDEO RELEASE | Sherlock's PACKAGE PASS covers the current head commit. Justin decides. |
+| VIDEO PUBLISHED | Justin uploaded and posted, and recorded the URLs in the production record. |
 
 ## Stage statuses
 
@@ -132,6 +141,29 @@ The Editor numbers its issues E1, E2. The Fact-checker numbers its issues M1, M2
 
 If the same material defect survives two rework rounds, the reviewer who raised it sets HOLD on that section and asks Justin to decide: find more evidence, narrow the claim, cut it, change the approach, or drop the story. Never pass something just because the loop ran long.
 
+## Video production
+
+The video pipeline starts from one approved story commit and adds two checks. Nothing in it touches the website or posts anywhere. `production/` isn't deployed. Merging a `video/[slug]` PR only records the package.
+
+1. **Approval.** Justin posts `APPROVED FOR VIDEO: [slug] @ [commit]` in the story's Buzz thread or project. Usually the commit is the one he merged. A merge isn't video approval on its own, and no agent's PASS is.
+2. **Scripts.** @Scribe branches `video/[slug]` from `main`, writes `production/[slug]/script-short.md` and `script-long.md` from that commit only, opens a `Video scripts:` PR, and tags @Sherlock.
+3. **Script check.** @Sherlock checks both scripts against the story at the approved commit (`fact-checker.md`, "Video scripts and packages"). The verdict is `SCRIPTS PASS @ [commit]` or fixes for @Scribe. Same rework rules as a story.
+4. **Production package, in parallel.** After SCRIPTS PASS, @Reese writes `shots.md` and @Pressley writes `publishing.md` on the same branch. They don't depend on each other. Neither changes the scripts. A script change goes back through @Scribe and @Sherlock.
+5. **Package check.** @Sherlock checks every public line in `publishing.md` and every text card in `shots.md` against the story, and posts `PACKAGE PASS @ [commit]`.
+6. **Release.** Justin approves the assets, records, uploads and posts. He merges the `video/[slug]` PR, adds `youtubeId` to the story frontmatter in a separate PR, and records the URLs in the production record.
+
+**Video gates.**
+
+| Gate | What has to be true | Shown by |
+|---|---|---|
+| V1 Source | `APPROVED FOR VIDEO` names a commit, and the scripts name the same one. | Justin, then Scribe |
+| V2 Scripts | SCRIPTS PASS covers the scripts' current commit. | Sherlock |
+| V3 Visuals and rights | Every case photo in `shots.md` has a rights decision. Every generated shot is labeled and shows no person, scene or evidence. | Reese, with Justin's decisions |
+| V4 Package | PACKAGE PASS covers the current head commit, and every flag in "Flags for Justin" has his decision. | Sherlock and Pressley, with Justin's decisions |
+| V5 Release | Justin publishes and records the URLs. | Justin |
+
+**A story change reopens the video.** If the story gets a correction, an update or a status change after the approved commit, every script and package built from it is stale. Scribe compares them with the new commit and the whole chain is rechecked. A published video that's now wrong goes to CORRECTION REVIEW like the story.
+
 ## After publication
 
 - An update adds new information. A correction fixes an error. Justin chooses which one, and approves the wording. Corrections follow the standards page: a dated note in `updates` and a line on the corrections page. Never quietly change a fact.
@@ -150,5 +182,4 @@ These parts of the manual don't fit how the site runs today. Each one is listed 
 5. **Version file names** (`ASSIGNMENTID_stage_vNN`). Git commit hashes do this. The branch name is the assignment ID.
 6. **Style sheet per assignment.** `agents/STYLE_GUIDE.md` is the house style. Case-specific spelling and name decisions go in the story's frontmatter comment block, which already serves as the assignment's style sheet.
 7. **Training-case test run (manual sections 19 and 21).** Not run. Justin can ask the agents to run the five cases in section 18, and the section 21 test PR, against these files.
-8. **Role mentions @Fact-checker and @Writer (manual v1.1 profile).** The manual says to keep these role mentions and to check in Buzz that they reach the intended agents. On October 20, 2026, a Buzz name lookup found no profile named "Fact-checker" or "Writer". It did find Sherlock, Shelley and Justin. Until Justin changes the Buzz setup, agents tag by Buzz name: @Poe, @Shelley, @Sherlock and @Justin.
-9. **An Editor instruction file.** The manual says the Editor reads an instruction file only if Justin configures one. There isn't one. This file's Editor rules reach Shelley only if Justin adds `agents/OPERATIONS.md` to Shelley's required reads.
+8. **Role mentions @Fact-checker and @Writer (manual v1.1 profile).** The manual says to keep these role mentions and to check in Buzz that they reach the intended agents. On October 20, 2026, a Buzz name lookup found no profile named "Fact-checker" or "Writer". It did find Sherlock, Shelley and Justin. Until Justin changes the Buzz setup, agents tag by Buzz name: @Phantom, @Poe, @Shelley, @Sherlock, @Scribe, @Reese, @Pressley and @Justin.

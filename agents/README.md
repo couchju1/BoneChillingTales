@@ -8,13 +8,16 @@ Instructions for the Buzz agents that research and write Bone Chilling Tales sto
 |---|---|---|---|---|
 | Scout | @Phantom | `scout.md` | Suggests three cases, keeps `QUEUE.md` | A cheaper model is fine |
 | Writer | @Poe | `writer.md` | Researches the picked case, writes the story and Facebook post, opens a PR | Claude (via Claude Code in Buzz) |
-| Editor | @Shelley | None yet. Reads `STYLE_GUIDE.md` and the standards page | Reviews structure, pacing, voice, tone, victim sensitivity, and story-to-Facebook consistency. Comments only | Separate agent from the Writer |
+| Editor | @Shelley | `editor.md` | Reviews structure, pacing, voice, tone, victim sensitivity, and story-to-Facebook consistency. Comments only | Separate agent from the Writer |
 | Fact-checker | @Sherlock | `fact-checker.md` | Checks every tagged claim against its source, plus legal and build checks | Claude, separate agent from the Writer |
+| Script adapter | @Scribe | `script-adapter.md` | Adapts the approved story commit into short and long narration scripts | Claude |
+| Visual planner | @Reese | `visual-planner.md` | Scene breakdown, shot list and b-roll prompts matched to the story's real time and place | Claude |
+| Publishing prep | @Pressley | `publishing-prep.md` | Titles, descriptions, captions and metadata. Prepares only, never posts | Claude |
 | Editorial Director and final approver | @Justin | None (human) | Picks cases, settles disagreements, reviews the final PR, merges and publishes | Human |
 
 Always tag agents by their Buzz name. "@Writer" doesn't reach anyone.
 
-The Scout, Writer and Fact-checker read `STYLE_GUIDE.md` and `OPERATIONS.md`. The Editor reads `STYLE_GUIDE.md` and the standards page. It doesn't have an instruction file in this folder. Change the rules there, and every agent picks them up on the next run.
+Every agent reads its own file, `STYLE_GUIDE.md` and `OPERATIONS.md` every run. Change the rules there, and every agent picks them up on the next run.
 
 `OPERATIONS.md` applies the Buzz Editorial Operations Manual (full text in `reference/`) to this team: who holds each role, the assignment states, PASS / REWORK / NEEDS INPUT / HOLD, risk levels, the handoff message, the photo rights register and the release gates. It also lists the parts of the manual we haven't adopted yet, and why.
 
@@ -34,11 +37,26 @@ The Scout, Writer and Fact-checker read `STYLE_GUIDE.md` and `OPERATIONS.md`. Th
 
 Two human checkpoints: picking the case and merging the PR. Nothing goes public without both.
 
+## How the video moves
+
+After the story is live, the same story becomes a short and a long video. Details are in `OPERATIONS.md` under "Video production" and in `../production/README.md`.
+
+12. **Justin** posts `APPROVED FOR VIDEO: [slug] @ [commit]`.
+13. **Script adapter (@Scribe)** writes both scripts from that commit on a `video/[slug]` branch and tags @Sherlock.
+14. **Fact-checker (@Sherlock)** checks the scripts against the story and posts `SCRIPTS PASS @ [commit]`, tagging @Reese and @Pressley.
+15. **Visual planner (@Reese)** and **Publishing prep (@Pressley)** work at the same time on the shot list and the publishing package.
+16. **Fact-checker** checks the package wording and posts `PACKAGE PASS @ [commit]`.
+17. **Justin** approves the assets, publishes, and records the URLs in `production/[slug]/record.md`.
+
+Two more human checkpoints: approving the commit for video and publishing it.
+
+Buzz setup (channels, canvases, agent prompts, workflows) is in `BUZZ_SETUP.md`.
+
 ## One-time setup
 
 1. **Protect `main` on GitHub.** Settings → Branches → add a rule for `main`: require a pull request before merging. That way no agent can publish by pushing directly, even by mistake.
 2. **Give the agents repo access in Buzz** with permission to create branches and open PRs, but not to merge.
-3. **Create the four agents in Buzz** and point each at its instruction file in this folder. Paste in "Read `agents/[name].md` in the repo and follow it" rather than copying the text, so edits here take effect without updating Buzz.
+3. **Create the agents in Buzz** and point each at its instruction file in this folder. Paste in "Read `agents/[name].md` in the repo and follow it" rather than copying the text, so edits here take effect without updating Buzz.
 4. **Make one channel** for the pipeline. One thread per case.
 5. **Start small.** For the first two or three stories, pick the case yourself and tag @Poe directly. The Fact-checker runs on every story from the start. Bring in the Scout after that.
 

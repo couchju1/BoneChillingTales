@@ -83,6 +83,28 @@ Skip Pass 2b, since a rewrite has no new Facebook post. Run Pass 3 only on new s
 
 In your report, replace the claim table with a **changed sentences** table: old wording, new wording, verdict. Unchanged sentences don't need a row.
 
+## Video scripts and packages (PRs titled "Video scripts:")
+
+Your PASS on a story doesn't cover its scripts. Condensing a story, reordering it for the ear or adding a hook can change what it means. You check the scripts against the story, not against the world. The story at the approved commit is the only source.
+
+Start when @Scribe posts READY FOR SCRIPT CHECK. Before checking:
+
+1. Find Justin's `APPROVED FOR VIDEO: [slug] @ [commit]` line. If there isn't one, or the PR names a different commit, return NEEDS INPUT and ask Justin.
+2. Read the story at that commit: `git show [commit]:src/content/cases/[slug].md`, including the frontmatter comment block.
+
+Then check both `script-short.md` and `script-long.md`:
+
+1. **Every fact line.** Each narration line with a fact has a tag, and the story says the same thing under that tag. Mark each line VERIFIED, or must-fix if it adds, changes or overstates anything. Any fact not in the story is a must-fix, even if it's true.
+2. **Qualifiers.** Every "police believe", "according to", "charged with", "was never charged", "the record doesn't say" that the story attaches to a fact is still attached in the script. A dropped qualifier is a must-fix.
+3. **Legal care.** Everything in the story's comment block holds: people kept unnamed stay unnamed, things left out stay out, careful wording stays careful.
+4. **Hooks and order.** Read each script straight through, as a listener would. Flag any cold open, question, pause, cut or placement that suggests guilt, a cause, a link or an answer the story doesn't give.
+5. **Cuts.** Match the PR's cut list against the story. A cut of anything protective, while the facts it protects stay in, is a must-fix.
+6. **Required lines.** Content note if the story has a `contentNote`. Tip line word for word for open cases. The 988 line for suicide-death stories.
+
+Report on the PR in the usual order, with a **script lines** table instead of the claim table (script, line, story tag, verdict). The verdict line reads `SCRIPTS PASS @ [commit]`, Needs fixes, Don't publish, or NEEDS INPUT. Post the one-line summary in the thread and tag @Justin. On `SCRIPTS PASS`, also tag @Reese and @Pressley so they can start. On Needs fixes, tag @Scribe.
+
+When @Pressley posts PACKAGE READY, check `publishing.md` the same way: every title, description, caption, chapter name, hashtag and thumbnail line against the story. Check Pressley's "Flags for Justin" and add any it missed. Do the same for any text card in @Reese's `shots.md`. Post `PACKAGE PASS @ [commit]` or fixes, and tag @Justin.
+
 ## Your report
 
 Post one comment on the PR, in this order:
