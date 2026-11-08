@@ -96,7 +96,7 @@ Image to video, on the approved Midjourney stills only. 5 second clips, then slo
 | L39 | "Brian lost the lawsuit… May 2022." | Card: "May 2022" | TEXT CARD | [S15] | none |
 | L40 | The computer: the release | Quote card with the sheriff's release words. **No images** | TEXT CARD | [S1] | none |
 | L41 | 28 images, Soyka's quotes | Quote cards | TEXT CARD | [S11, S12, S13] | none |
-| L42 | Netflix, the theory, "not ruled out" | Plain card with Soyka's quote only. No music change. See Q2 in `WORKFLOW.md` | TEXT CARD | [S13] | none |
+| L42 | Netflix, the theory, "not ruled out" | Plain card with Soyka's quote only. No music change. Kept on Justin's November 8 decision | TEXT CARD | [S13] | none |
 | L43 | Brian's reaction, Sorenson's reply | Quote cards | TEXT CARD | [S11, S15] | none |
 | L44 | Somebody knows: anniversaries, 200 tips | Navy pullover portrait | CASE PHOTO | portrait | none |
 | L45 | Brian's "Somebody knows" quote | Quote card, held | TEXT CARD | [S11] | none |
@@ -137,6 +137,6 @@ Every prompt ends with the required line. Add the parameters from "Midjourney se
 
 ## Photo suggestions for Justin
 
-- **Your own footage of the campus.** St. John's is a public campus. Daytime or dusk shots of Stumpf Lake, the woods and the abbey church that you film yourself would be LOCATION shots with a clean rights basis, and better than anything generated. Don't film Metten Court or St. Maur House residents, and keep people out of frame.
+- **Campus footage:** not available (Justin, November 8). The plan stays with the seven case images, text cards and the ten generated shots. Don't substitute campus footage from news, Netflix, YouTube or social media.
 - **The family's missing poster.** Not planned. It would need a rights decision, and the 1-800-CRIME-TV poster is out because its tip line isn't the sheriff's.
 - Nothing from news sites, Netflix, social media or family pages.

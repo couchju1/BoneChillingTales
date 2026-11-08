@@ -42,7 +42,11 @@ Prepared only. Nothing here is posted, uploaded or scheduled until Justin does i
 - **Tags**: Joshua Guimond, Josh Guimond, St. John's University, Collegeville Minnesota, Stearns County, Maple Lake Minnesota, missing person, Minnesota missing persons, unsolved disappearance, true crime, Bone Chilling Tales
 - **Pinned comment**:
 
-  > Josh Guimond was last seen at Metten Court on the St. John's campus on November 9, 2002. If you were on campus that weekend and remember anything, the Stearns County Sheriff's Office is at 320 251 4240. The full story and every source: https://www.bonechillingtales.com/cases/joshua-guimond-2002/
+  > Josh Guimond was last seen at Metten Court on the St. John's campus on November 9, 2002. If you were on campus that weekend and remember anything, the Stearns County Sheriff's Office is at 320 251 4240.
+  >
+  > In 2022, the sheriff's office released images found on Josh's computer. In its words: "These individuals remain unidentified, and they may be able to provide information related to Joshua's disappearance." If you recognize anyone, call the number above. The release: https://content.govdelivery.com/accounts/STEARNS/bulletins/333989f
+  >
+  > The full story and every source: https://www.bonechillingtales.com/cases/joshua-guimond-2002/
 
 ## YouTube Shorts
 
@@ -74,4 +78,5 @@ After upload, Justin adds to the story frontmatter in its own PR: `youtubeId: "[
 1. **"No one has seen him since"** in titles and captions. The story attributes it to the sheriff's office [S1]. The YouTube description keeps "The Stearns County Sheriff's Office says". The Reels captions shorten it. Safer option if you want it everywhere: "The sheriff's office says no one has seen him since."
 2. **Short title "left a party three minutes from home."** True to the story [S6, S9], but "home" is his campus apartment, not Maple Lake. Safer: "Joshua Guimond's apartment was three minutes away".
 3. **The Netflix theory** is left out of every caption, title and the thumbnail, as the story's comment block requires for the Facebook post. Keep it that way.
-4. Checked: no banned words, no "shocking", no question titles, no suspect implied, no one but Josh named in any public line, tip line matches `tipLine` in every caption.
+4. **The sheriff's release link** in the pinned comment (Justin's November 8 decision). The comment describes the people only in the sheriff's own words and calls no one a suspect. Don't add any description of them in replies either. If someone in the comments claims to know a person in the images, don't confirm or name anyone. Point them to the sheriff's office.
+5. Checked: no banned words, no "shocking", no question titles, no suspect implied, no one but Josh named in any public line, tip line matches `tipLine` in every caption.

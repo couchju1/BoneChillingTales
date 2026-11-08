@@ -14,7 +14,7 @@
 
 | Written | Say | Note |
 |---|---|---|
-| Guimond | GHEE-mund | [VERIFY] Justin to confirm from a broadcast clip before recording |
+| Guimond | GHEE-mund | Confirmed by Justin, November 8, 2026 |
 | Hydukovich | hy-DOO-kuh-vitch | [VERIFY] |
 | Metten Court | MET-en Court | |
 | St. Maur House | Saint MOR House | [VERIFY] |
@@ -162,7 +162,7 @@ On October 21, 2022, the sheriff's office sent out a release. [S1]
 
 There were 28 images. [S11, S12] Steve Soyka was the sheriff by then. [S13] "These are people that we've exhausted all other resources to try and identify," he told MPR News. [S13] He said investigators didn't know why the photos were on the computer, or why they had been saved. [S13]
 
-Four days later, Netflix released an "Unsolved Mysteries" episode about the case. [S12] One theory it raised, MPR reported, was that Josh may have been chatting with men online and gone to meet someone that night. Soyka said investigators had not ruled it out. [S13] [VERIFY: Justin's call, see open question Q2]
+Four days later, Netflix released an "Unsolved Mysteries" episode about the case. [S12] One theory it raised, MPR reported, was that Josh may have been chatting with men online and gone to meet someone that night. Soyka said investigators had not ruled it out. [S13]
 
 "We're open to all kinds of possibilities," he said. "A college kid typically just doesn't disappear from the campus." [S13]
 

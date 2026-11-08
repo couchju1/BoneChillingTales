@@ -16,19 +16,19 @@ Your checklist, in order. The files it points to are all in this folder.
 2. **Have @Sherlock check the scripts** against the story (`agents/fact-checker.md`, "Video scripts and packages"). Don't record until SCRIPTS PASS. A fix after recording means paying ElevenLabs twice.
 3. **Answer the open questions** below.
 
-### Open questions for Justin
+### Decided (November 8, 2026)
 
-- **Q1. Pronunciation of "Guimond"** and "Hydukovich", "St. Maur", "Kostreba", "Romme". The script guesses (GHEE-mund). Check a WCCO or FOX 9 clip before you record. Everything else falls apart if the name is wrong.
-- **Q2. The online meeting theory** in "The computer" section. The script keeps it exactly as the story words it ("One theory it raised, MPR reported… Soyka said investigators had not ruled it out"). It's allowed by the story's rules, but in audio it lands harder than in print. Keep it as is, or cut those two sentences and keep only Soyka's "We're open to all kinds of possibilities" quote. My lean: keep, because the sheriff put it on record, and the visual stays a plain text card with no music change.
-- **Q3. Linking the sheriff's release of the 28 images** in the pinned comment. It could help someone identify a person, which is what the sheriff asked for. The video itself never shows them either way. Your call.
-- **Q4. Film your own campus footage?** One visit to St. John's at dusk (the lakes, the woods, the abbey church, no people) would replace half the generated shots with real places. See `shots.md`, "Photo suggestions".
+- **"Guimond" is GHEE-mund.** In the ElevenLabs dictionary. The other names in the table at the top of `script-long.md` are still best guesses. Listen to them and fix any that sound wrong.
+- **The online meeting theory stays** in "The computer", as the story words it, with a plain text card and no music change.
+- **The pinned comment links the sheriff's release** of the 28 images. The video itself still never shows them.
+- **No campus footage.** The visuals are the seven case images, the text cards and the ten generated shots.
 
 ## Step 1. Voice in ElevenLabs (about 1 hour)
 
 1. **Pick one voice** and keep it for every Bone Chilling Tales video. Look in the Voice Library for a calm, low, measured American documentary narrator. Avoid anything tagged "horror", "creepy" or "dramatic trailer". The house voice is a careful reporter, not a ghost story.
 2. **Model:** Eleven v3 or Multilingual v2. Test a paragraph on both and keep the one that reads quotes more naturally.
 3. **Settings to start from:** Stability 55 to 65, Similarity 75, Style 0 to 10, Speaker boost on, speed 0.95. Higher stability keeps the tone even across 13 minutes.
-4. **Pronunciation dictionary:** add the names from the table at the top of `script-long.md` as aliases (for example `Guimond` → `GHEE-mund`, once Q1 is settled).
+4. **Pronunciation dictionary:** add the names from the table at the top of `script-long.md` as aliases (`Guimond` → `GHEE-mund`, then the rest).
 5. **Generate one section at a time** from `narration-long.txt` (paste the text between the `=== ===` lines). Short chunks are easier to redo and keep the voice steady.
 6. **Listen for:** names, numbers ("eleven forty-five p.m.", "twenty-five hundred", the tip line), and that quotes sound like quotes. Regenerate any line that rushes a name or adds drama.
 7. **Rules:** one narrator only. Never clone or imitate Brian, Lisa, Paul, Nick or any official. Quotes are read by the narrator, with "he said" as written.
@@ -84,4 +84,4 @@ The lead portrait (`joshua-guimond-2002.jpg`) and "THREE MINUTES AWAY". Small co
 4. Post the short, the Reel and the Facebook Reel with their captions.
 5. Add `youtubeId` to the story frontmatter in its own PR, and record every URL in `record.md`.
 
-Timing note: November 9 is the 24th anniversary. If you want it out that day, the voice and stills need to be done by about November 7.
+Timing note: November 9 is the 24th anniversary. If the long video can't be ready by then, the short (about 65 seconds, two Midjourney and Higgsfield shots plus photos and cards) can go out that day, and the long one can follow. Both still need @Sherlock's checks first.

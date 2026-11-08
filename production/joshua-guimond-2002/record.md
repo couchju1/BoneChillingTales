@@ -36,7 +36,10 @@ Keep this current. It's the copy of record for the Buzz canvas. If they disagree
 ## Justin's decisions
 
 - 2026-11-05: asked for the YouTube video. To confirm: `APPROVED FOR VIDEO: joshua-guimond-2002 @ 22d95aa`
-- Open: Q1 to Q4 in `WORKFLOW.md`
+- 2026-11-08: "Guimond" is pronounced GHEE-mund.
+- 2026-11-08: keep the online meeting theory in the long script, as the story words it.
+- 2026-11-08: link the sheriff's release of the 28 images in the YouTube pinned comment.
+- 2026-11-08: no campus footage. Generated shots, case photos and text cards only.
 
 ## Published
 
