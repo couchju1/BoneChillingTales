@@ -6,11 +6,14 @@ The Scout adds suggestions here. Justin moves them to Picked or Passed. Publishe
 
 | Date | Person | Town, state | Status | Why now | Notes |
 |---|---|---|---|---|---|
+| 2026-10-31 | Wilma June Nissen | Rock Rapids, Lyon County, IA | unsolved | Evergreen. Found Oct. 4, 1978, identified 2006. Daughter launched a case website in 2025 | Lyon County Sheriff + Iowa AG Cold Case Unit. Sex work in the record. Sheriff released a photo of an unnamed woman it believes responsible (2016). A named person's 2009 perjury charges were dismissed. Cause of death never released. Risk High. |
+| 2026-10-31 | Jessica O'Grady | Omaha, NE | solved | Evergreen. 20th year since she disappeared (May 10, 2006). Body never found | Omaha PD, Douglas County. Christopher Edwards convicted 2007 (2nd-degree murder), maintains innocence. Kofoed evidence-planting claims rejected (294 Neb. 1, 2016). Graphic blood evidence and dismemberment in the record. Risk High. |
 
 ## Picked
 
 | Date | Person | Town, state | Status | Branch / PR |
 |---|---|---|---|---|
+| 2026-11-01 | Joshua Guimond | Collegeville (St. John's University), MN | missing | Picked by Justin 2026-11-01. Handed to Poe. Branch and PR pending |
 
 ## Passed
 
